@@ -148,7 +148,7 @@ export const belovedLessons: Lesson[] = [
           },
           {
             kind: "p",
-            text: "Alt version: Download a blank version and have the group create their own wheel for discussion. More information available from the MIT Open Learning Library.",
+            text: "Alt version: Download a blank version and have the group create their own wheel for discussion. More information available from the [MIT Open Learning Library](https://openlearning.mit.edu/).",
           },
         ],
       },

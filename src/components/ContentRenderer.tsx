@@ -1,11 +1,26 @@
 import type { ContentBlock } from "@/data/types";
 
-const linkRegex = /(https?:\/\/[^\s)]+)/g;
+// Matches either [label](url) or a bare https?:// URL
+const tokenRegex = /(\[[^\]]+\]\(https?:\/\/[^)]+\)|https?:\/\/[^\s)]+)/g;
 
 function renderText(text: string) {
-  const parts = text.split(linkRegex);
+  const parts = text.split(tokenRegex);
   return parts.map((part, i) => {
-    if (linkRegex.test(part)) {
+    const mdLink = part.match(/^\[([^\]]+)\]\((https?:\/\/[^)]+)\)$/);
+    if (mdLink) {
+      return (
+        <a
+          key={i}
+          href={mdLink[2]}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline decoration-fg underline-offset-2 hover:text-accent hover:decoration-accent transition-colors"
+        >
+          {mdLink[1]}
+        </a>
+      );
+    }
+    if (/^https?:\/\//.test(part)) {
       return (
         <a
           key={i}
