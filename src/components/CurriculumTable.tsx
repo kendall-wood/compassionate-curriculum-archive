@@ -113,9 +113,10 @@ function ActivityLine({
   activity: Activity;
   isFirst: boolean;
 }) {
-  // The whole sub-row is one hover group: hovering anywhere on the line lights
-  // up every <Mark> inside it. Only the type itself gets painted — gaps,
-  // empty cells, and the space between A# and its title stay untouched.
+  // The whole sub-row is one hover group. Each column produces ONE continuous
+  // bar within its own column: Lesson hugs the L# text, Title hugs the title
+  // text (cloned per wrapped line), and Activity covers A# + gap + title as a
+  // single unbroken block. The bar never crosses into another column.
   return (
     <div
       className="group grid items-start text-fg"
@@ -145,16 +146,19 @@ function ActivityLine({
 }
 
 function ActivityCell({ activity }: { activity: Activity }) {
-  // `items-baseline` keeps the A# label visually on the same baseline as the
-  // first line of the activity title, so the two highlights line up cleanly.
-  // Both texts use leading-[1.3] for matching line metrics.
+  // `inline-flex` shrinks the container to its own content so the hover bar
+  // hugs the activity exactly: it starts at A#, runs through the 36px gap,
+  // and ends at the right edge of the title. `max-w-[383px]` forces the
+  // title to wrap inside the activity column, keeping the bar from leaking
+  // sideways. `items-baseline` keeps A# visually on the same baseline as
+  // the first line of its title so both halves of the bar line up.
   return (
-    <div className="flex gap-[36px] items-baseline w-[383px] max-w-full">
+    <div className="inline-flex gap-[36px] items-baseline max-w-[383px] group-hover:bg-accent group-hover:text-black transition-colors duration-100">
       <p className="text-[20px] tracking-[-0.4px] leading-[1.3] w-[24px] shrink-0">
-        <Mark>{activity.label}</Mark>
+        {activity.label}
       </p>
       <p className="text-[20px] tracking-[-0.4px] leading-[1.3]">
-        <Mark>{activity.title}</Mark>
+        {activity.title}
       </p>
     </div>
   );
@@ -163,8 +167,8 @@ function ActivityCell({ activity }: { activity: Activity }) {
 /**
  * Inline highlight applied to actual type. `display: inline` plus
  * `box-decoration-break: clone` makes the background hug each line of text
- * when it wraps, so a multi-line title gets a marker bar per visible line and
- * the surrounding whitespace, gaps, and empty cells stay clean.
+ * when it wraps, so a long title gets a continuous bar per visible line that
+ * stays inside its column.
  */
 function Mark({ children }: { children: React.ReactNode }) {
   return (
