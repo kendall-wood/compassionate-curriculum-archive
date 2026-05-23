@@ -38,7 +38,7 @@ export default function LessonPage({
 
   return (
     <div className="cc-page bg-bg text-fg min-h-screen pl-[32px] pr-[32px] pt-[27px] pb-[80px]">
-      <div className="flex flex-col gap-[36px] w-full max-w-[1376px]">
+      <div className="flex flex-col gap-[36px] w-full">
         <Toolbar showBack backHref={`/${section.id}`} />
 
         <LessonHero

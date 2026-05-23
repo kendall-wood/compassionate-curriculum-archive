@@ -7,7 +7,7 @@ export const metadata = {
 export default function ContactPage() {
   return (
     <div className="cc-page bg-bg text-fg min-h-screen pl-[32px] pr-[32px] pt-[27px] pb-[80px]">
-      <div className="flex flex-col gap-[36px] w-full max-w-[1376px]">
+      <div className="flex flex-col gap-[36px] w-full">
         <Toolbar />
         <h1 className="text-[72px] leading-[1.05] tracking-[-2.16px] text-fg font-normal">
           Contact

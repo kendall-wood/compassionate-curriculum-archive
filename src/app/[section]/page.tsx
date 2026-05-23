@@ -27,7 +27,7 @@ export default function SectionPage({
 
   return (
     <div className="cc-page bg-bg text-fg min-h-screen pl-[32px] pr-[32px] pt-[27px] pb-[80px]">
-      <div className="flex flex-col gap-[36px] w-full max-w-[1376px]">
+      <div className="flex flex-col gap-[36px] w-full">
         <Toolbar />
 
         <h1 className="text-[72px] leading-[1.05] tracking-[-2.16px] text-fg font-normal whitespace-nowrap">
@@ -40,7 +40,7 @@ export default function SectionPage({
           Introduction
         </h2>
 
-        <p className="text-[32px] leading-[1.25] tracking-[-0.64px] text-fg max-w-[1264px] font-normal">
+        <p className="text-[32px] leading-[1.25] tracking-[-0.64px] text-fg font-normal">
           {section.overview}
         </p>
 
