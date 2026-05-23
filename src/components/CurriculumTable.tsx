@@ -83,10 +83,10 @@ function LessonRow({ sectionId, lesson }: { sectionId: string; lesson: Lesson })
 
         {/* No outer link — L#/title and each activity have their own links */}
         <div
-          className="pt-[2.0625rem] pb-[2.0625rem]"
+          className="pt-[1.25rem] pb-[1.25rem]"
         >
           <div
-            className="flex flex-col gap-[2.0625rem]"
+            className="flex flex-col gap-[1.25rem]"
             style={{ paddingRight: "203px" }}
             onMouseEnter={onEnter}
             onMouseLeave={onLeave}

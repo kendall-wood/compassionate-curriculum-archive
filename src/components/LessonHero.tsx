@@ -29,10 +29,10 @@ export function LessonHero({
         <p className="text-[1.25rem] tracking-[-0.02em] leading-none text-fg">
           {sectionHref ? (
             <Link href={sectionHref} className="hover:text-accent transition-colors">
-              / {sectionLabel}
+              /{sectionLabel}
             </Link>
           ) : (
-            `/ ${sectionLabel}`
+            `/${sectionLabel}`
           )}
         </p>
       ) : null}
