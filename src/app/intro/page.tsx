@@ -1,5 +1,9 @@
+import Link from "next/link";
 import { Toolbar } from "@/components/Toolbar";
 import { SectionTabs } from "@/components/SectionTabs";
+
+const sectionPill =
+  "inline-flex items-baseline gap-[0.375rem] px-[0.625rem] py-[0.25rem] border border-fg text-fg hover:bg-accent hover:text-black transition-colors align-baseline";
 
 export const metadata = {
   title: "Introduction — Compassionate Curriculum Archive",
@@ -46,17 +50,27 @@ export default function IntroPage() {
           </p>
 
           <p className="text-[2rem] leading-[1.25] tracking-[-0.02em] text-fg font-normal">
-            The curriculum has three connected sections. Beloved Community
+            The curriculum has three connected sections.{" "}
+            <Link href="/beloved-community" className={sectionPill}>
+              Beloved Community <span aria-hidden="true">↗</span>
+            </Link>{" "}
             focuses on identity, belonging, emotional fluency, and historical
             trauma. It helps participants better understand themselves, their
             relationships, and the wider systems that shape how they move
-            through the world. Restorative Practice introduces circles, active
-            listening, reauthoring, and other tools that support trust,
-            reflection, accountability, and shared responsibility. Media,
-            Narrative and Futuring explores storytelling, representation, and
-            imagination. It invites participants to examine dominant narratives,
-            tell fuller stories about themselves, and build imaginative capacity
-            for creative problem solving and future making.
+            through the world.{" "}
+            <Link href="/restorative-practices" className={sectionPill}>
+              Restorative Practice <span aria-hidden="true">↗</span>
+            </Link>{" "}
+            introduces circles, active listening, reauthoring, and other tools
+            that support trust, reflection, accountability, and shared
+            responsibility.{" "}
+            <Link href="/media-narrative-futuring" className={sectionPill}>
+              Media, Narrative and Futuring <span aria-hidden="true">↗</span>
+            </Link>{" "}
+            explores storytelling, representation, and imagination. It invites
+            participants to examine dominant narratives, tell fuller stories
+            about themselves, and build imaginative capacity for creative
+            problem solving and future making.
           </p>
 
           <p className="text-[2rem] leading-[1.25] tracking-[-0.02em] text-fg font-normal">
