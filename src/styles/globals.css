@@ -34,6 +34,9 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* Hanging punctuation for every text element — inherited by all descendants
+     so headings, paragraphs, lists, and captions all benefit. */
+  hanging-punctuation: first last;
 }
 
 * {
@@ -76,13 +79,6 @@ body,
 * {
   scrollbar-color: color-mix(in srgb, var(--color-accent) 55%, transparent) transparent;
   scrollbar-width: thin;
-}
-
-/* Hanging punctuation for all body copy and list items */
-p,
-li,
-blockquote {
-  hanging-punctuation: first last;
 }
 
 button,

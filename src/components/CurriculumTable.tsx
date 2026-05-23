@@ -174,9 +174,12 @@ function ActivityLine({
         onMouseLeave={onLtLeave}
       >
         {isFirst ? (
-          <p className={`${TYPE} py-[0.125rem] max-w-[438px]`}>
+          // pl-[0.375rem] on the <p> means the span's left padding edge lines
+          // up exactly with the column boundary, so the title bar connects
+          // flush to the L# bar without any visible taper or gap.
+          <p className={`${TYPE} pl-[0.375rem] py-[0.125rem] max-w-[438px]`}>
             <span
-              className={`${ltActive ? "bg-accent text-black" : ""} px-[0.375rem] py-[0.125rem] transition-colors duration-100`}
+              className={`${ltActive ? "bg-accent text-black" : ""} pr-[0.375rem] py-[0.125rem] transition-colors duration-100`}
               style={{
                 boxDecorationBreak: "clone",
                 WebkitBoxDecorationBreak: "clone",

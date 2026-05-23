@@ -19,9 +19,17 @@ export function ActivityTabs({
   activities,
   activeActivityId,
 }: ActivityTabsProps) {
-  const tabStyle = (isActive: boolean) =>
+  // Cumulative highlight: every tab up to and including the active one is lit.
+  // Overview is always included once any activity is active.
+  const activeIndex = activeActivityId
+    ? activities.findIndex((a) => a.id === activeActivityId)
+    : -1; // -1 = on overview page, nothing highlighted beyond Overview itself
+
+  const overviewFilled = activeIndex >= 0 || !activeActivityId;
+
+  const tabStyle = (filled: boolean) =>
     `${baseTab} ${
-      isActive
+      filled
         ? "text-black"
         : "text-fg bg-bg hover:bg-accent hover:text-black"
     }`;
@@ -36,21 +44,21 @@ export function ActivityTabs({
         href={`/${sectionId}/${lessonId}`}
         role="tab"
         aria-selected={!activeActivityId}
-        className={tabStyle(!activeActivityId)}
-        style={!activeActivityId ? { background: "var(--color-accent)" } : undefined}
+        className={tabStyle(overviewFilled)}
+        style={overviewFilled ? { background: "var(--color-accent)" } : undefined}
       >
         Overview
       </Link>
-      {activities.map((a) => {
-        const isActive = a.id === activeActivityId;
+      {activities.map((a, i) => {
+        const filled = activeIndex >= 0 && i <= activeIndex;
         return (
           <Link
             key={a.id}
             href={`/${sectionId}/${lessonId}/${a.id}`}
             role="tab"
-            aria-selected={isActive}
-            className={tabStyle(isActive)}
-            style={isActive ? { background: "var(--color-accent)" } : undefined}
+            aria-selected={a.id === activeActivityId}
+            className={tabStyle(filled)}
+            style={filled ? { background: "var(--color-accent)" } : undefined}
           >
             {a.label}
           </Link>
