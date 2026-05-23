@@ -17,7 +17,7 @@ export function ActivityBlock({
   return (
     <section
       id={id}
-      className="flex flex-col gap-[2.5rem] w-full scroll-mt-[7.5rem]"
+      className="flex flex-col gap-[1.5rem] w-full scroll-mt-[7.5rem]"
       aria-labelledby={`${id}-heading`}
     >
       <div className="flex flex-col">
@@ -27,7 +27,7 @@ export function ActivityBlock({
         >
           {heading}
         </h2>
-        <div className="mt-[2.875rem] border-t border-fg w-full" />
+        <div className="mt-[1.25rem] border-t border-fg w-full" />
       </div>
 
       <div
@@ -51,7 +51,7 @@ export function FacilitatorBlock({ blocks }: { blocks: ContentBlock[] }) {
   return (
     <section
       id="overview"
-      className="flex flex-col gap-[2.5rem] w-full scroll-mt-[7.5rem]"
+      className="flex flex-col gap-[1.5rem] w-full scroll-mt-[7.5rem]"
       aria-labelledby="overview-heading"
     >
       <div className="flex flex-col">
@@ -61,7 +61,7 @@ export function FacilitatorBlock({ blocks }: { blocks: ContentBlock[] }) {
         >
           For Facilitators
         </h2>
-        <div className="mt-[2.875rem] border-t border-fg w-full" />
+        <div className="mt-[1.25rem] border-t border-fg w-full" />
       </div>
 
       <div
@@ -100,7 +100,7 @@ export function ActivityWithImage({
   return (
     <section
       id={id}
-      className="flex flex-col gap-[2.5rem] w-full scroll-mt-[7.5rem]"
+      className="flex flex-col gap-[1.5rem] w-full scroll-mt-[7.5rem]"
       aria-labelledby={`${id}-heading`}
     >
       <div className="flex flex-col">
@@ -110,7 +110,7 @@ export function ActivityWithImage({
         >
           {heading}
         </h2>
-        <div className="mt-[2.875rem] border-t border-fg w-full" />
+        <div className="mt-[1.25rem] border-t border-fg w-full" />
       </div>
 
       {heroImage ? (
