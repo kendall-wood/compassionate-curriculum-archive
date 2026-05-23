@@ -8,6 +8,9 @@
   --color-accent: #fff75d;
   --color-active: #5dff8d;
   --zoom: 1;
+  /* Set at runtime by ThemeProvider; falls back to default arrow until the
+     SVG cursor is generated. */
+  --cc-cursor: auto;
 }
 
 html.dark {
@@ -25,7 +28,19 @@ body {
 }
 
 * {
-  border-radius: 0 !important;
+  border-radius: 0;
+}
+
+/* Custom circle cursor everywhere, color comes from --cc-cursor (set by
+   ThemeProvider whenever the accent changes). !important is needed to beat
+   per-element defaults like `cursor: text` on inputs and `cursor: pointer`
+   on buttons / links. */
+html,
+body,
+*,
+*::before,
+*::after {
+  cursor: var(--cc-cursor, auto) !important;
 }
 
 button,

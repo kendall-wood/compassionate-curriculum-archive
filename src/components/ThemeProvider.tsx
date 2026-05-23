@@ -90,6 +90,14 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
 
   useEffect(() => {
     document.documentElement.style.setProperty("--color-accent", accent);
+
+    // Build a circular SVG cursor that matches the current accent and stash
+    // it in --cc-cursor; globals.css applies it to every element via the
+    // universal selector. Hot-spot is the centre of the circle (16, 16).
+    const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><circle cx="16" cy="16" r="10" fill="${accent}" stroke="rgba(0,0,0,0.45)" stroke-width="1"/></svg>`;
+    const url = `url("data:image/svg+xml;utf8,${encodeURIComponent(svg)}") 16 16, auto`;
+    document.documentElement.style.setProperty("--cc-cursor", url);
+
     try {
       localStorage.setItem(STORAGE_KEYS.accent, accent);
     } catch {

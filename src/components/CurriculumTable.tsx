@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import { useState } from "react";
 import type { Activity, Lesson } from "@/data/types";
 
 const headerCell =
@@ -62,9 +65,6 @@ function LessonRow({ sectionId, lesson }: { sectionId: string; lesson: Lesson })
   return (
     <>
       <div className="col-span-4 relative" role="row">
-        {/* Image floats on the right side, vertically aligned with the first
-            activity sub-row. It sits outside the hover system so the highlight
-            bar never paints over the image. */}
         {lesson.thumbnail ? (
           <div className="absolute right-0 top-[33px] w-[201px] h-[112px] pointer-events-none">
             {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -81,9 +81,6 @@ function LessonRow({ sectionId, lesson }: { sectionId: string; lesson: Lesson })
           className="block pt-[33px] pb-[33px]"
           aria-label={`Open lesson ${lesson.label}: ${lesson.title}`}
         >
-          {/* Reserve room for the image on the right (203px = image col width).
-              Each activity becomes its own sub-row whose hover paints a single
-              continuous accent bar across Lesson, Title, and Activities only. */}
           <div
             className="flex flex-col gap-[26px]"
             style={{ paddingRight: "203px" }}
@@ -113,73 +110,89 @@ function ActivityLine({
   activity: Activity;
   isFirst: boolean;
 }) {
-  // The whole sub-row is one hover group. Each column produces ONE continuous
-  // bar within its own column: Lesson hugs the L# text, Title hugs the title
-  // text (cloned per wrapped line), and Activity covers A# + gap + title as a
-  // single unbroken block. The bar never crosses into another column.
+  // Two independent hover groups per sub-row:
+  //   • LT  – Lesson + Title cells light up together as one continuous bar.
+  //   • ACT – Activity cell lights up on its own as one continuous bar.
+  // Hovering one group never lights up the other, so you only ever see
+  // *either* the lesson/title bar *or* the activity bar – never both.
+  const [ltHover, setLtHover] = useState(false);
+  const [actHover, setActHover] = useState(false);
+
+  const ltActive = isFirst && ltHover;
+  const ltHoverClass = ltActive
+    ? "bg-accent text-black"
+    : "";
+  const actHoverClass = actHover ? "bg-accent text-black" : "";
+
+  const onLtEnter = isFirst ? () => setLtHover(true) : undefined;
+  const onLtLeave = isFirst ? () => setLtHover(false) : undefined;
+
   return (
     <div
-      className="group grid items-start text-fg"
+      className="grid items-start text-fg"
       style={{ gridTemplateColumns: SUB_ROW_COLS }}
     >
-      <div className="self-stretch">
+      {/* Lesson cell. On LT hover the bar fills the entire column so it
+          touches the right edge — that lets it visually connect to the
+          adjacent Title-cell bar with no gap, producing one continuous
+          highlight across the two columns. */}
+      <div
+        className="self-start"
+        onMouseEnter={onLtEnter}
+        onMouseLeave={onLtLeave}
+      >
         {isFirst ? (
-          <p className="font-bold text-[20px] tracking-[-0.4px] leading-none">
-            <Mark>{lesson.label}</Mark>
+          <p
+            className={`font-bold text-[20px] tracking-[-0.4px] leading-[1.3] block ${ltHoverClass} transition-colors duration-100`}
+          >
+            {lesson.label}
           </p>
         ) : null}
       </div>
-      <div className="self-stretch">
+
+      {/* Title cell. The bar hugs the actual title text via box-decoration-
+          break so wrapped titles get a clean per-line bar; combined with the
+          full-width Lesson bar above this forms one continuous highlight
+          from L# through the end of the title. */}
+      <div
+        className="self-start"
+        onMouseEnter={onLtEnter}
+        onMouseLeave={onLtLeave}
+      >
         {isFirst ? (
-          <div className="w-[438px] max-w-full">
-            <p className="text-[20px] tracking-[-0.4px] leading-[1.4]">
-              <Mark>{lesson.title}</Mark>
-            </p>
-          </div>
+          <p className="text-[20px] tracking-[-0.4px] leading-[1.3] max-w-[438px]">
+            <span
+              className={`${ltHoverClass} transition-colors duration-100`}
+              style={{
+                boxDecorationBreak: "clone",
+                WebkitBoxDecorationBreak: "clone",
+              }}
+            >
+              {lesson.title}
+            </span>
+          </p>
         ) : null}
       </div>
-      <div className="self-stretch">
-        <ActivityCell activity={activity} />
+
+      {/* Activity cell. Its own hover group, painted as one continuous bar
+          that runs from A# through the 36px gap to the end of the activity
+          title. */}
+      <div
+        className="self-start"
+        onMouseEnter={() => setActHover(true)}
+        onMouseLeave={() => setActHover(false)}
+      >
+        <div
+          className={`inline-flex gap-[36px] items-baseline max-w-[383px] ${actHoverClass} transition-colors duration-100`}
+        >
+          <p className="text-[20px] tracking-[-0.4px] leading-[1.3] w-[24px] shrink-0">
+            {activity.label}
+          </p>
+          <p className="text-[20px] tracking-[-0.4px] leading-[1.3]">
+            {activity.title}
+          </p>
+        </div>
       </div>
     </div>
-  );
-}
-
-function ActivityCell({ activity }: { activity: Activity }) {
-  // `inline-flex` shrinks the container to its own content so the hover bar
-  // hugs the activity exactly: it starts at A#, runs through the 36px gap,
-  // and ends at the right edge of the title. `max-w-[383px]` forces the
-  // title to wrap inside the activity column, keeping the bar from leaking
-  // sideways. `items-baseline` keeps A# visually on the same baseline as
-  // the first line of its title so both halves of the bar line up.
-  return (
-    <div className="inline-flex gap-[36px] items-baseline max-w-[383px] group-hover:bg-accent group-hover:text-black transition-colors duration-100">
-      <p className="text-[20px] tracking-[-0.4px] leading-[1.3] w-[24px] shrink-0">
-        {activity.label}
-      </p>
-      <p className="text-[20px] tracking-[-0.4px] leading-[1.3]">
-        {activity.title}
-      </p>
-    </div>
-  );
-}
-
-/**
- * Inline highlight applied to actual type. `display: inline` plus
- * `box-decoration-break: clone` makes the background hug each line of text
- * when it wraps, so a long title gets a continuous bar per visible line that
- * stays inside its column.
- */
-function Mark({ children }: { children: React.ReactNode }) {
-  return (
-    <span
-      className="group-hover:bg-accent group-hover:text-black transition-colors duration-100"
-      style={{
-        boxDecorationBreak: "clone",
-        WebkitBoxDecorationBreak: "clone",
-      }}
-    >
-      {children}
-    </span>
   );
 }
