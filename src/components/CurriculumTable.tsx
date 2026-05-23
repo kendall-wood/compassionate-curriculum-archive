@@ -62,9 +62,7 @@ export function CurriculumTable({
 }
 
 function LessonRow({ sectionId, lesson }: { sectionId: string; lesson: Lesson }) {
-  const href = `/${sectionId}/${lesson.id}`;
-  // anyHover = true whenever the cursor is anywhere over this lesson's rows.
-  // Passed down so L# lights up regardless of which activity row is hovered.
+  const lessonHref = `/${sectionId}/${lesson.id}`;
   const [anyHover, setAnyHover] = useState(false);
   const onEnter = useCallback(() => setAnyHover(true), []);
   const onLeave = useCallback(() => setAnyHover(false), []);
@@ -83,10 +81,9 @@ function LessonRow({ sectionId, lesson }: { sectionId: string; lesson: Lesson })
           </div>
         ) : null}
 
-        <Link
-          href={href}
-          className="block pt-[2.0625rem] pb-[2.0625rem]"
-          aria-label={`Open lesson ${lesson.label}: ${lesson.title}`}
+        {/* No outer link — L#/title and each activity have their own links */}
+        <div
+          className="pt-[2.0625rem] pb-[2.0625rem]"
         >
           <div
             className="flex flex-col gap-[2.0625rem]"
@@ -97,6 +94,8 @@ function LessonRow({ sectionId, lesson }: { sectionId: string; lesson: Lesson })
             {lesson.activities.map((activity, i) => (
               <ActivityLine
                 key={activity.id}
+                sectionId={sectionId}
+                lessonHref={lessonHref}
                 lesson={lesson}
                 activity={activity}
                 isFirst={i === 0}
@@ -104,7 +103,7 @@ function LessonRow({ sectionId, lesson }: { sectionId: string; lesson: Lesson })
               />
             ))}
           </div>
-        </Link>
+        </div>
       </div>
       <div className="col-span-4 border-b border-fg" />
     </>
@@ -112,18 +111,20 @@ function LessonRow({ sectionId, lesson }: { sectionId: string; lesson: Lesson })
 }
 
 function ActivityLine({
+  sectionId,
+  lessonHref,
   lesson,
   activity,
   isFirst,
   lActive,
 }: {
+  sectionId: string;
+  lessonHref: string;
   lesson: Lesson;
   activity: Activity;
   isFirst: boolean;
-  lActive: boolean; // lifted from LessonRow: true when any row in this lesson is hovered
+  lActive: boolean;
 }) {
-  // ltHover  = cursor is over the Lesson or Title cell (title highlight)
-  // actHover = cursor is over the Activity cell (activity highlight)
   const [ltHover, setLtHover] = useState(false);
   const [actHover, setActHover] = useState(false);
 
@@ -135,77 +136,67 @@ function ActivityLine({
   const onLtEnter = isFirst ? () => setLtHover(true) : undefined;
   const onLtLeave = isFirst ? () => setLtHover(false) : undefined;
 
-  // Shared type styles for L#, title, A#, and activity title — same font
-  // size, tracking and line-height so all four pieces of type sit on the
-  // exact same baseline inside the row.
   const TYPE = "text-[1.25rem] tracking-[-0.02em] leading-[1.3]";
+  const activityHref = `/${sectionId}/${lesson.id}/${activity.id}`;
 
   return (
-    // `items-baseline` on the grid locks the L#, Title, A# and first line of
-    // the activity title to the same text baseline regardless of the cell's
-    // box height; each cell still gets its own bar via `self-start`-style
-    // padding below.
     <div
       className="grid items-baseline text-fg"
       style={{ gridTemplateColumns: SUB_ROW_COLS }}
     >
-      {/* Lesson cell — inline-block so the highlight hugs only the L# text,
-          not the full 234 px column. Lights up whenever the cursor is over
-          either the title cell or the activity cell. */}
-      <div
-        onMouseEnter={onLtEnter}
-        onMouseLeave={onLtLeave}
-      >
+      {/* L# — links to lesson overview */}
+      <div onMouseEnter={onLtEnter} onMouseLeave={onLtLeave}>
         {isFirst ? (
-          <p
-            className={`font-bold ${TYPE} inline-block px-[0.375rem] py-[0.125rem] transition-colors duration-100 ${
-              lActive ? "bg-accent text-black" : ""
-            }`}
-          >
-            {lesson.label}
-          </p>
+          <Link href={lessonHref} tabIndex={-1} aria-hidden="true">
+            <p
+              className={`font-bold ${TYPE} inline-block px-[0.375rem] py-[0.125rem] transition-colors duration-100 ${
+                lActive ? "bg-accent text-black" : ""
+              }`}
+            >
+              {lesson.label}
+            </p>
+          </Link>
         ) : null}
       </div>
 
-      {/* Title cell — span gets full px padding (same as activity) so the
-          highlight rectangle has the same breathing room on both sides. */}
-      <div
-        onMouseEnter={onLtEnter}
-        onMouseLeave={onLtLeave}
-      >
+      {/* Title — links to lesson overview */}
+      <div onMouseEnter={onLtEnter} onMouseLeave={onLtLeave}>
         {isFirst ? (
-          <p className={`${TYPE} py-[0.125rem] max-w-[438px]`}>
+          <Link href={lessonHref} aria-label={`Open lesson: ${lesson.title}`}>
+            <p className={`${TYPE} py-[0.125rem] max-w-[438px]`}>
+              <span
+                className={`${ltActive ? "bg-accent text-black" : ""} px-[0.375rem] py-[0.125rem] transition-colors duration-100`}
+                style={{
+                  boxDecorationBreak: "clone",
+                  WebkitBoxDecorationBreak: "clone",
+                }}
+              >
+                {lesson.title}
+              </span>
+            </p>
+          </Link>
+        ) : null}
+      </div>
+
+      {/* Activity — links directly to the activity page */}
+      <div
+        onMouseEnter={() => setActHover(true)}
+        onMouseLeave={() => setActHover(false)}
+      >
+        <Link href={activityHref} aria-label={`${activity.label}: ${activity.title}`}>
+          <p className={`${TYPE} py-[0.125rem] max-w-[383px]`}>
             <span
-              className={`${ltActive ? "bg-accent text-black" : ""} px-[0.375rem] py-[0.125rem] transition-colors duration-100`}
+              className={`inline-flex gap-[2.25rem] items-baseline ${actHoverClass} transition-colors duration-100`}
               style={{
                 boxDecorationBreak: "clone",
                 WebkitBoxDecorationBreak: "clone",
               }}
             >
-              {lesson.title}
+              <span className="w-[1.5rem] shrink-0">{activity.label}</span>
+              <span>{activity.title}</span>
             </span>
           </p>
-        ) : null}
-      </div>
-
-      {/* Activity cell — inline-flex span so the highlight hugs only the
-          A# + title text (content-width), not the full column width. */}
-      <div
-        onMouseEnter={() => setActHover(true)}
-        onMouseLeave={() => setActHover(false)}
-      >
-        <p className={`${TYPE} py-[0.125rem] max-w-[383px]`}>
-          <span
-            className={`inline-flex gap-[2.25rem] items-baseline ${actHoverClass} transition-colors duration-100`}
-            style={{
-              boxDecorationBreak: "clone",
-              WebkitBoxDecorationBreak: "clone",
-            }}
-          >
-            <span className="w-[1.5rem] shrink-0">{activity.label}</span>
-            <span>{activity.title}</span>
-          </span>
-        </p>
+        </Link>
       </div>
     </div>
   );

@@ -34,9 +34,10 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* Hanging punctuation for every text element — inherited by all descendants
-     so headings, paragraphs, lists, and captions all benefit. */
-  hanging-punctuation: first last;
+  /* Hanging punctuation for every text element — inherited by all descendants.
+     first last: opening/closing quotes hang. allow-end: trailing commas and
+     periods may hang at line ends for optical alignment. */
+  hanging-punctuation: first allow-end last;
 }
 
 * {

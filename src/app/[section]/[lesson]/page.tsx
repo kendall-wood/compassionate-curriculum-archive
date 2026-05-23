@@ -41,6 +41,8 @@ export default function LessonPage({
           title={lesson.title}
           image={lesson.heroImage}
           imageAlt={`${lesson.title} hero image`}
+          sectionHref={`/${section.id}`}
+          sectionLabel={section.title}
         />
 
         <ActivityTabs

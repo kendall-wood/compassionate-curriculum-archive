@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import { sections, getSection, getLesson, getActivity } from "@/data/curriculum";
 import { Toolbar } from "@/components/Toolbar";
@@ -51,9 +52,16 @@ export default function ActivityPage({
       <div className="flex flex-col gap-[2.25rem] w-full">
         <Toolbar showBack backHref={`/${section.id}/${lesson.id}`} />
 
-        <h1 className="text-[5.375rem] leading-[1.05] tracking-[-0.03em] text-fg font-normal">
-          {lesson.title}
-        </h1>
+        <div className="flex flex-col gap-[1.5rem]">
+          <p className="text-[1.25rem] tracking-[-0.02em] leading-none text-fg">
+            <Link href={`/${section.id}`} className="hover:text-accent transition-colors">
+              / {section.title}
+            </Link>
+          </p>
+          <h1 className="text-[5.375rem] leading-[1.05] tracking-[-0.03em] text-fg font-normal">
+            {lesson.title}
+          </h1>
+        </div>
 
         <ActivityTabs
           sectionId={section.id}
