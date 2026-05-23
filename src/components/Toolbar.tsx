@@ -70,6 +70,7 @@ export function Toolbar({ showBack = false, backHref = "/" }: ToolbarProps) {
             className={navBtn}
             aria-expanded={showUtilityRow}
             aria-controls="cc-utility-row"
+            style={showUtilityRow ? { background: "var(--color-active)", color: "#000" } : undefined}
           >
             Settings &amp; Accessibility
           </button>
