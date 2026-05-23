@@ -1,7 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname, useRouter } from "next/navigation";
+import { useRouter } from "next/navigation";
+import { useState } from "react";
 import { ACCENT_SWATCHES, useTheme } from "./ThemeProvider";
 import { LeafIcon, MoonIcon, SunIcon } from "./icons";
 
@@ -18,13 +19,12 @@ const utilBtn =
 
 export function Toolbar({ showBack = false, backHref = "/" }: ToolbarProps) {
   const router = useRouter();
-  const pathname = usePathname();
   const { theme, toggleTheme, accent, setAccent, zoomIn, zoomOut, zoomLabel } =
     useTheme();
 
-  // Per spec, the utility row (theme toggle, zoom controls, accent swatches,
-  // custom color picker) is only shown on the Settings & Accessibility page.
-  const showUtilityRow = pathname === "/accessibility";
+  // Settings & Accessibility now toggles the utility row inline instead of
+  // navigating to a dedicated page.
+  const [showUtilityRow, setShowUtilityRow] = useState(false);
 
   return (
     <div className="cc-toolbar w-full flex flex-col gap-[18px]">
@@ -59,14 +59,23 @@ export function Toolbar({ showBack = false, backHref = "/" }: ToolbarProps) {
           <Link href="/contact" className={navBtn}>
             Contact
           </Link>
-          <Link href="/accessibility" className={navBtn}>
+          <button
+            type="button"
+            onClick={() => setShowUtilityRow((v) => !v)}
+            className={navBtn}
+            aria-expanded={showUtilityRow}
+            aria-controls="cc-utility-row"
+          >
             Settings &amp; Accessibility
-          </Link>
+          </button>
         </nav>
       </div>
 
       {showUtilityRow ? (
-        <div className="flex gap-[8px] items-center justify-end w-full">
+        <div
+          id="cc-utility-row"
+          className="flex gap-[8px] items-center justify-end w-full"
+        >
           <button
             type="button"
             onClick={toggleTheme}
