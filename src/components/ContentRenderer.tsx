@@ -12,7 +12,7 @@ function renderText(text: string) {
           href={part}
           target="_blank"
           rel="noopener noreferrer"
-          className="underline decoration-fg underline-offset-2 hover:opacity-80"
+          className="underline decoration-fg underline-offset-2 hover:text-accent hover:decoration-accent transition-colors"
         >
           {part}
         </a>
