@@ -55,7 +55,7 @@ export default function ActivityPage({
         <div className="flex flex-col gap-[1.5rem]">
           <p className="text-[1.25rem] tracking-[-0.02em] leading-none text-fg">
             <Link href={`/${section.id}`} className="hover:text-accent transition-colors">
-              /{section.title}
+              / {section.title}
             </Link>
           </p>
           <h1 className="text-[5.375rem] leading-[1.05] tracking-[-0.03em] text-fg font-normal">

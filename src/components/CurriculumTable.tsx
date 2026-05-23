@@ -5,7 +5,7 @@ import { useState, useCallback } from "react";
 import type { Activity, Lesson } from "@/data/types";
 
 const headerCell =
-  "inline-flex items-center justify-center px-[0.625rem] py-[0.375rem] border border-fg text-[1.25rem] tracking-[-0.02em] leading-none";
+  "text-[1.25rem] tracking-[-0.02em] leading-none";
 
 // PRD column offsets at 1440 design width: Lesson 0 / Title 234 / Activities 704 / Links 1173.
 // Title column flexes (1fr) so the table fills the available width on screens wider
@@ -37,16 +37,16 @@ export function CurriculumTable({
         aria-label="Curriculum"
       >
         <div className="contents" role="row">
-          <div className="flex justify-start" role="columnheader">
+          <div role="columnheader">
             <span className={headerCell}>Lesson</span>
           </div>
-          <div className="flex justify-start" role="columnheader">
+          <div role="columnheader">
             <span className={headerCell}>Title</span>
           </div>
-          <div className="flex justify-start" role="columnheader">
+          <div role="columnheader">
             <span className={headerCell}>Activities</span>
           </div>
-          <div className="flex justify-start" role="columnheader">
+          <div role="columnheader">
             <span className={headerCell}>Links &amp; Images</span>
           </div>
         </div>
