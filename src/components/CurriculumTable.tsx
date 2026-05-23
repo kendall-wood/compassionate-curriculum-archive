@@ -111,21 +111,15 @@ function ActivityLine({
   activity: Activity;
   isFirst: boolean;
 }) {
-  // Two independent hover groups per sub-row:
-  //   • LT  – Lesson + Title cells light up together as one continuous bar.
-  //   • ACT – Activity cell lights up on its own as one continuous bar.
-  // Hovering one group never lights up the other, so you only ever see
-  // *either* the lesson/title bar *or* the activity bar – never both.
+  // ltHover  = cursor is over the Lesson or Title cell
+  // actHover = cursor is over the Activity cell
+  // L# lights up on ANY hover (title OR activity); title only on ltHover;
+  // activity only on actHover.
   const [ltHover, setLtHover] = useState(false);
   const [actHover, setActHover] = useState(false);
 
-  const ltActive = isFirst && ltHover;
-  // `px-[0.375rem] py-[0.125rem]` gives the bar a small breathing room around
-  // the type so the highlight reads as a clean rectangle rather than
-  // tight-cropped to letterforms; rem-based so it scales with type.
-  const ltHoverClass = ltActive
-    ? "bg-accent text-black px-[0.375rem] py-[0.125rem]"
-    : "px-[0.375rem] py-[0.125rem]";
+  const lActive  = isFirst && (ltHover || actHover); // L# responds to both
+  const ltActive = isFirst && ltHover;               // title only on lt hover
   const actHoverClass = actHover
     ? "bg-accent text-black px-[0.375rem] py-[0.125rem]"
     : "px-[0.375rem] py-[0.125rem]";
@@ -147,17 +141,18 @@ function ActivityLine({
       className="grid items-baseline text-fg"
       style={{ gridTemplateColumns: SUB_ROW_COLS }}
     >
-      {/* Lesson cell. On LT hover the bar fills the entire column so it
-          touches the right edge — that lets it visually connect to the
-          adjacent Title-cell bar with no gap, producing one continuous
-          highlight across the two columns. */}
+      {/* Lesson cell — inline-block so the highlight hugs only the L# text,
+          not the full 234 px column. Lights up whenever the cursor is over
+          either the title cell or the activity cell. */}
       <div
         onMouseEnter={onLtEnter}
         onMouseLeave={onLtLeave}
       >
         {isFirst ? (
           <p
-            className={`font-bold ${TYPE} block ${ltHoverClass} transition-colors duration-100`}
+            className={`font-bold ${TYPE} inline-block px-[0.375rem] py-[0.125rem] transition-colors duration-100 ${
+              lActive ? "bg-accent text-black" : ""
+            }`}
           >
             {lesson.label}
           </p>
