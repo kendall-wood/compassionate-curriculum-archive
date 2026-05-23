@@ -18,13 +18,13 @@ html.dark {
   --color-fg: #ffffff;
 }
 
-/* Root font-size scales with --zoom. Every component uses rem-based units so
-   text, padding, gaps, image dimensions and the toolbar all grow together as
-   one – a true "zoom of the whole UI". The curriculum table is the one
-   intentional exception: its grid columns stay in px so titles re-wrap inside
-   their columns instead of pushing the page sideways. */
+/* Root font-size is viewport-fluid × accessibility zoom.
+   clamp(10px, 1.5vw, 16px) scales from 10 px on phones up to the full 16 px
+   at ≥1067 px (the 1440 design width hits max naturally). Multiplying by
+   --zoom means the Settings +/- slider always works proportionally on top of
+   whatever size the viewport naturally gives. */
 html {
-  font-size: calc(16px * var(--zoom));
+  font-size: calc(clamp(10px, 1.5vw, 16px) * var(--zoom));
 }
 
 html,
@@ -71,6 +71,10 @@ a:focus-visible {
   .cc-section-tabs,
   .cc-activity-tabs {
     display: none !important;
+  }
+
+  html {
+    font-size: 16px !important; /* bypass clamp + zoom for print */
   }
 
   :root {

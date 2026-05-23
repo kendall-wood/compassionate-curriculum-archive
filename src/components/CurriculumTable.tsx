@@ -29,7 +29,7 @@ export function CurriculumTable({
   lessons: Lesson[];
 }) {
   return (
-    <div className="w-full">
+    <div className="w-full overflow-x-auto">
       <div
         className="grid items-start"
         style={{ gridTemplateColumns: GRID_COLS, rowGap: 0 }}
