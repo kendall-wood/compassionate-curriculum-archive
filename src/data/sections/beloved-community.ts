@@ -1,0 +1,415 @@
+import type { Lesson } from "../types";
+
+export const belovedLessons: Lesson[] = [
+  {
+    id: "identity",
+    label: "L1",
+    title: "Identity: Helping to know ourselves",
+    sectionId: "beloved-community",
+    heroImage: "/images/l1-hero.png",
+    thumbnail: "/images/l1-thumb.png",
+    facilitatorBlocks: [
+      {
+        kind: "p",
+        bold: true,
+        text: '"Beloved community is formed not by the eradication of difference but by its affirmation, by each of us claiming the identities and cultural legacies that shape who we are and how we live in the world." (bell hooks)',
+      },
+      {
+        kind: "p",
+        text: "Identity work should begin with self reflection. There are real differences between groups of people, and we are entitled to explore these. But we must start with ourselves because our identities impact others and our environment. Participants are more likely to engage thoughtfully with the identities of others if they have first considered their own. Encouraging reflective self-talk is essential for understanding ourselves and key to wellbeing. The goal is not to arrive at a fixed definition of self, but to recognize identity as layered, relational, and changing. This section may also be used to introduce intersectionality as a way of understanding how different aspects of identity interact, and how these interactions shape experience.",
+      },
+      {
+        kind: "p",
+        bold: true,
+        text: "'Identity is such a fundamental part of being a successful human, it is often said that you cannot do anything until you know who you are. As social creatures, part of knowing who we are is knowing what group we belong to, what characteristics, values, or beliefs we share with others, which others and why' (Hirsch 2018:21).",
+      },
+      {
+        kind: "p",
+        bold: true,
+        text: "'The key to wellbeing is to understand yourself and to take notice of your identity, as it has an enormous influence on our experiences' (Cousins 2019:41).",
+      },
+      {
+        kind: "p",
+        text: "'The habit of checking in with yourself is a powerful vehicle for self-care and self-nurturing when society offers everyday complex challenges. As with any habit, it takes practice, perseverance, and patience to embed newly discovered awareness and follow this through into our daily lives; however, if you can begin to create opportunities for a positive identity you will be making an investment in your wellbeing and life satisfaction that is immeasurable' (Cousin 2019:41).",
+      },
+    ],
+    activities: [
+      {
+        id: "a1",
+        label: "A1",
+        title: "Developing intersectional mindfulness",
+        blocks: [
+          {
+            kind: "image",
+            src: "/images/l1-a1.png",
+            alt: "Hands holding a wrist as a gesture of care",
+            width: 672,
+            height: 376,
+          },
+          {
+            kind: "p",
+            bold: true,
+            text: "Begin by discussing your own identity as a facilitator. Model openness, complexity, and self awareness. Then invite participants to reflect on questions from Susan Cousins (2019:41):",
+          },
+          {
+            kind: "ul",
+            items: [
+              "How would you describe your identity?",
+              "Who are you?",
+              "What aspects of your identity feel most important to you?",
+              "Who or what has shaped your understanding of yourself?",
+              "Who or what has shaped your understanding of other identities?",
+              "How do you feel about the identities you carry?",
+              "How would you describe yourself racially, and how do you feel about that part of your identity?",
+              "If you imagine moving through the world with a different racial or cultural identity, what might change? What might be lost? What, if anything, might feel different?",
+            ],
+          },
+        ],
+      },
+      {
+        id: "a2",
+        label: "A2",
+        title: "Intersectionality as practice",
+        blocks: [
+          {
+            kind: "p",
+            text: "Introduce intersectionality as a way of understanding how systems of power affect lived experience. This can be supported through short video material, discussion, or diagrams that show how privilege and oppression can overlap.",
+          },
+          {
+            kind: "ul",
+            items: [
+              "Professor Kimberle Crenshaw (2018) https://youtu.be/ViDtnfQ9FHc — who coined the term intersectionality, which enables us to explore how experiences are affected by different competing identities and how these impact to exclude individuals in society (Bhopal, 2018:47).",
+              "Tasneem Chopra (2023) 'The pursuit of intersectional feminism' https://youtu.be/h4Us1dCRfFI",
+            ],
+          },
+          { kind: "p", bold: true, text: "Possible discussion prompts:" },
+          {
+            kind: "ul",
+            items: [
+              "How do different parts of your identity affect each other?",
+              "Where do you experience privilege?",
+              "Where do you experience exclusion or discrimination?",
+              "How does intersectionality help us understand our own lives and the lives of others?",
+            ],
+          },
+          {
+            kind: "p",
+            text: "For further critique, consider this diagram of the intersecting axis of privilege, domination and oppression from Kathryn Pauly Morgan (1996), that helps explain how people are positioned differently in relation to power. We all exist on an axis of oppression and domination. Some positions come with greater access, recognition, and advantage, while others are shaped by discrimination and exclusion. These positions are not fixed — our identities intersect and shift across different contexts, creating complex, layered experiences. Understanding this helps us become more aware of both our own position and the unequal conditions others may be navigating.",
+          },
+        ],
+      },
+      {
+        id: "a3",
+        label: "A3",
+        title: "Nature of Bias",
+        blocks: [
+          {
+            kind: "p",
+            text: "Introduce the idea that everyone has bias, including unconscious bias and affinity bias. Invite participants to reflect on how people are often drawn toward those who feel familiar, and how this affects perception and behavior.",
+          },
+          {
+            kind: "p",
+            text: "Watch the video by Dr Jennifer Eberhardt for insights on unconscious bias from her book, Biased: Uncovering the hidden prejudice that shapes what we see, think and do. https://www.youtube.com/watch?v=-ri1IFCqGjQ",
+          },
+          { kind: "p", bold: true, text: "Potential prompts:" },
+          {
+            kind: "ul",
+            items: [
+              "What kinds of bias do you see in everyday life?",
+              "How do bias and stereotypes flatten people into a single story?",
+              "What are the risks of allowing one story to stand in for a whole group?",
+            ],
+          },
+          { kind: "p", bold: true, text: "Background" },
+          {
+            kind: "p",
+            text: "Unconscious bias is simply our unintentional preferences. Bias is often decided in less than one tenth of a second, many times faster than we can process an image. People often associate bias with racial bias, though bias takes many forms. An affinity bias means we prefer those who are like us. It makes us feel warm and fuzzy when we have people to reconfirm our thoughts, fears and background. We also prefer those who have the same education, career background, accent, ethnicity, etc. If you have a brain you have bias.",
+          },
+        ],
+      },
+      {
+        id: "a4",
+        label: "A4",
+        title: "Social Identity Wheel",
+        blocks: [
+          {
+            kind: "p",
+            text: "Based on the social identity wheel, participants map out their identities and consider the questions below.",
+          },
+          {
+            kind: "ul",
+            items: [
+              "Which identities do you think about most often?",
+              "Which identities do you think about least often?",
+              "Which of your own identities would you like to learn more about?",
+              "Which identities have the strongest effect on how you perceive yourself?",
+              "Which identities have the strongest effect on how others perceive you?",
+            ],
+          },
+          {
+            kind: "p",
+            text: "Alt version: Download a blank version and have the group create their own wheel for discussion. More information available from the MIT Open Learning Library.",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: "finding-your-people",
+    label: "L2",
+    title: "Finding your people, finding your squad",
+    sectionId: "beloved-community",
+    heroImage: "/images/l2-thumb.png",
+    thumbnail: "/images/l2-thumb.png",
+    facilitatorBlocks: [
+      {
+        kind: "p",
+        text: "This lesson focuses on community, belonging, and the power of relationships. It asks how people find support, build trust, and create forms of collective care. It is grounded in traditions of collectivism, mutual support, and radical healing.",
+      },
+      {
+        kind: "p",
+        text: "This is about understanding all the systems of oppression that impact our wellness. A remedy to this is finding your crew, your people. Black women have always built collectives, from the Combahee River Collective to the Liverpool Black Sisters to The Goddess Projects. Therefore, we encourage you to figure out ways to survive, laugh, love, and heal in ways that are connected to people, as there is power in people.",
+      },
+      {
+        kind: "p",
+        text: "Frame this lesson around the idea that the self does not stand alone. Encourage participants to think about community not only as something they belong to, but as something they help create. Community may be built through shared identity, shared experience, shared values, or shared effort.",
+      },
+    ],
+    activities: [
+      {
+        id: "a1",
+        label: "A1",
+        title: "Community in practice",
+        blocks: [
+          {
+            kind: "p",
+            text: "Invite participants to reflect on examples of community building, especially those rooted in mutual support, collective care, and grassroots organizing. Watch these two videos:",
+          },
+          {
+            kind: "ul",
+            items: [
+              "Nikotris Perkins (2019), an urban studies doctoral student who presented a talk on Black women and community: https://youtu.be/e78v42tz4eY",
+              "Doug Shipman, TEDX Atlanta: https://youtu.be/cP5PAul3H4E",
+            ],
+          },
+          { kind: "p", bold: true, text: "Potential prompts:" },
+          {
+            kind: "ul",
+            items: [
+              "Who are you in community with?",
+              "What does community mean to you?",
+              "What can we learn from existing collectives and support networks?",
+              "How do we make friends? How do we engage with other communities?",
+              "Can we make beloved community together?",
+              "How do we begin to build community across difference?",
+            ],
+          },
+        ],
+      },
+      {
+        id: "a2",
+        label: "A2",
+        title: "Finding your squad!",
+        blocks: [
+          {
+            kind: "p",
+            text: "Participants should identify and map who is in their support network — their squad.",
+          },
+          { kind: "p", bold: true, text: "Potential prompts:" },
+          {
+            kind: "ul",
+            items: [
+              "Who is already in your squad?",
+              "Who are your key people? What qualities do they have?",
+              "Who is missing?",
+              "What communities or groups might you need to join?",
+              "What makes it hard to reach out?",
+              "What qualities might you need to cultivate to find your people?",
+            ],
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: "developing-your-language",
+    label: "L3",
+    title: "Developing your language",
+    sectionId: "beloved-community",
+    heroImage: "/images/l3-thumb.png",
+    thumbnail: "/images/l3-thumb.png",
+    facilitatorBlocks: [
+      {
+        kind: "p",
+        text: "This lesson focuses on emotional fluency: the ability to notice, name, understand, and work with emotion. It supports participants in developing language for what they feel, where they feel it, and how emotions shape relationships, leadership, and healing.",
+      },
+      {
+        kind: "p",
+        text: "This lesson may be especially meaningful for participants who have been discouraged from expressing vulnerability, or who have been taught that certain emotions are unacceptable. Encourage participants to approach emotions without shame. The goal is not to eliminate difficult feelings, but to coexist with them more consciously and compassionately.",
+      },
+      { kind: "p", bold: true, text: "Background" },
+      {
+        kind: "p",
+        text: "Emotional Fluency describes the relationships we have with our emotions. It allows us to listen more effectively and respond appropriately during tense conversations, recognising what others might be feeling and if they are reaching out to connect. Being aware of our emotions allows us to start understanding where they come from and what thoughts trigger them. Developing emotional fluency goes beyond just recognizing and labelling our emotions — it means learning to coexist with them without feeling the need to push them away. Our beloved communities help us discuss and co-exist with our intersectional, lived experiences.",
+      },
+    ],
+    activities: [
+      {
+        id: "a1",
+        label: "A1",
+        title: "Emotional fluency",
+        blocks: [
+          {
+            kind: "p",
+            text: "Introduce emotional fluency as the ability to sense, name, and work with emotions in a healthy and productive way.",
+          },
+          { kind: "p", bold: true, text: "Key ideas:" },
+          {
+            kind: "ul",
+            items: [
+              "Emotions are not problems in themselves",
+              "Judgment, shame, and suppression often make emotions harder to live with",
+              "Naming emotions can help people move from reactivity to reflection",
+              "Emotional fluency supports trust, empathy, and leadership",
+            ],
+          },
+          { kind: "p", bold: true, text: "Potential prompts:" },
+          {
+            kind: "ul",
+            items: [
+              "What emotions do you find easy to name?",
+              "Which emotions feel harder to acknowledge?",
+              "Where did you learn which emotions are acceptable or unacceptable?",
+              "How do your emotions show up in your body?",
+              "Can you name the emotions you are experiencing now?",
+              "What do these emotions feel like? Describe where and what you are feeling, and how this state of mind is unfolding throughout your body without judgement.",
+              "Work down your body from head to toe, and be factual about where you feel the emotion. Reassure yourself that everything is okay and that you are safe.",
+            ],
+          },
+          {
+            kind: "p",
+            text: "Negative emotions often engage the primal brain. We need to engage the thinking brain, and labelling what you feel helps to do that. It also helps us focus on what we can control. For example, if my jaw is clenched, I need to relax it, and I need to breathe more slowly and deeply.",
+          },
+        ],
+      },
+      {
+        id: "a2",
+        label: "A2",
+        title: "Emotional Wheel",
+        blocks: [
+          {
+            kind: "p",
+            text: "Consider the emotions wheel developed by the Black Emotional and Mental Health Collective (BEAM), an organization which aims to dismantle systemic barriers to mental health support through peer-led training programs. On your own or with a partner:",
+          },
+          {
+            kind: "ul",
+            items: [
+              "Make a list of the emotions you often feel and the physical sensations you feel in association with them.",
+              "Which emotions feel familiar?",
+              "Which emotions do you resist?",
+              "Where do you feel certain emotions in your body?",
+              "What judgments do you attach to certain feelings?",
+              "How do these judgments affect your relationships and empathy?",
+            ],
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: "understanding-historical-trauma",
+    label: "L4",
+    title: "Understanding historical trauma of others",
+    sectionId: "beloved-community",
+    heroImage: "/images/l4-thumb.png",
+    thumbnail: "/images/l4-thumb.png",
+    facilitatorBlocks: [
+      {
+        kind: "p",
+        text: "This lesson introduces historical trauma as a collective and intergenerational form of harm shaped by colonization, racism, violence, and systemic oppression. It asks participants to reflect on how trauma is transmitted, how it shapes present life, and how greater awareness can support empathy and healing.",
+      },
+      {
+        kind: "p",
+        text: "Historical trauma can be difficult and activating material. Go slowly. Encourage reflection, care, and grounded discussion. Participants may carry both personal and inherited trauma, and may respond in different ways. Make space for complexity.",
+      },
+      { kind: "p", bold: true, text: "Background" },
+      {
+        kind: "p",
+        text: "Trauma may be a significant one-off event or the consequence of ongoing insidious actions, microaggressions, or being constantly treated differently. Hartmann and Gone (2014) describe historical trauma as differing from common lifetime psychological trauma in four key ways: it is colonial in origin, collective in impact, cumulative across adverse events, and cross-generational in transmission of risk and vulnerability.",
+      },
+      {
+        kind: "p",
+        text: "Examples include the experiences of First Nation people in North America, Aboriginal Australians and anti-Black racism amongst the African diaspora. The imprints of historical trauma are often deeply ingrained, and many people may not even be aware of its presence (Mate, 2022). This can lead to negative emotions and physical ill health, including psychosomatic illness. Historical intergenerational trauma is often intensified by day-to-day acute chronic stress, resulting in damaging physical and emotional consequences.",
+      },
+    ],
+    activities: [
+      {
+        id: "a1",
+        label: "A1",
+        title: "How Do People Experience Historical Trauma?",
+        blocks: [
+          {
+            kind: "p",
+            text: "1. Watch the video How Do People Experience Historical Trauma: https://youtu.be/sjJUQlodh0g",
+          },
+          { kind: "p", bold: true, text: "In pairs, discuss the following questions:" },
+          {
+            kind: "ul",
+            items: [
+              "What examples of historical trauma do you know about?",
+              "How does learning about historical trauma affect the way you think about race, identity, and culture?",
+              "How is historical trauma carried into the present?",
+              "What is the relationship between historical trauma and microaggressions?",
+              "How can cultural celebration and community support help counter harm?",
+              "How can you encourage and support cultural celebration?",
+            ],
+          },
+          {
+            kind: "p",
+            text: "2. Watch Dr Gabor Mate, video https://youtu.be/ak_nLWQ8EtY — discuss trauma and how it affects the authentic self.",
+          },
+        ],
+      },
+      {
+        id: "a2",
+        label: "A2",
+        title: "Practice self-reflection",
+        blocks: [
+          {
+            kind: "ul",
+            items: [
+              "What aspects of your life do you feel good about? (positive attributes/strengths)",
+              "What aspects of your life fill you up? (spaces in which you feel enriched)",
+              "How are the effects of historical or direct trauma showing up in you? (Identify vulnerabilities).",
+              "What are you doing to overcome your personal/historical or direct trauma?",
+            ],
+          },
+          {
+            kind: "p",
+            text: "Active listening YouTube video: https://youtu.be/Qg8PIK74KO4",
+          },
+        ],
+      },
+      {
+        id: "a3",
+        label: "A3",
+        title: "Grounding Exercise",
+        blocks: [
+          { kind: "p", bold: true, text: "Practise letting go of the past and being open to receive:" },
+          {
+            kind: "p",
+            text: "Breath in, stepping forward with one foot and turn your palms downward; Breath out, lifting your arms up to horizontal position, letting go of all tension and negativity. Breath in, turning palms upward and drawing them back in towards the chest, breathing in peace and healing.",
+          },
+          {
+            kind: "p",
+            text: "Repeat with the other foot forward. Breathe out pain. Breath in calm and the opportunity to heal.",
+          },
+          {
+            kind: "p",
+            text: "This lesson may conclude with reflection on racial trauma, intergenerational survival strategies, and the need for community, justice, and institutional change. Dr. Shelley Harrell's six-level framework helps describe the physical and emotional effects that can follow exposure to racism, including racism-related life events, vicarious racism, daily racist micro-stressors, chronic contextual stressors, collective experiences of racism, and transgenerational transmission of trauma.",
+          },
+        ],
+      },
+    ],
+  },
+];
