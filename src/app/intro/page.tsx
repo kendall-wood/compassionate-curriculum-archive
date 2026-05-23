@@ -52,20 +52,20 @@ export default function IntroPage() {
           <p className="text-[2rem] leading-[1.25] tracking-[-0.02em] text-fg font-normal">
             The curriculum has three connected sections.{" "}
             <Link href="/beloved-community" className={sectionPill}>
-              Beloved Community <span aria-hidden="true" className="text-[1rem]">↗</span>
+              Beloved Community <span aria-hidden="true">↗</span>
             </Link>{" "}
             focuses on identity, belonging, emotional fluency, and historical
             trauma. It helps participants better understand themselves, their
             relationships, and the wider systems that shape how they move
             through the world.{" "}
             <Link href="/restorative-practices" className={sectionPill}>
-              Restorative Practice <span aria-hidden="true" className="text-[1rem]">↗</span>
+              Restorative Practice <span aria-hidden="true">↗</span>
             </Link>{" "}
             introduces circles, active listening, reauthoring, and other tools
             that support trust, reflection, accountability, and shared
             responsibility.{" "}
             <Link href="/media-narrative-futuring" className={sectionPill}>
-              Media, Narrative and Futuring <span aria-hidden="true" className="text-[1rem]">↗</span>
+              Media, Narrative and Futuring <span aria-hidden="true">↗</span>
             </Link>{" "}
             explores storytelling, representation, and imagination. It invites
             participants to examine dominant narratives, tell fuller stories

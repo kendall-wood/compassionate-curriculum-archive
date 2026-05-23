@@ -89,7 +89,7 @@ function LessonRow({ sectionId, lesson }: { sectionId: string; lesson: Lesson })
           aria-label={`Open lesson ${lesson.label}: ${lesson.title}`}
         >
           <div
-            className="flex flex-col gap-[1.625rem]"
+            className="flex flex-col gap-[2.0625rem]"
             style={{ paddingRight: "203px" }}
             onMouseEnter={onEnter}
             onMouseLeave={onLeave}

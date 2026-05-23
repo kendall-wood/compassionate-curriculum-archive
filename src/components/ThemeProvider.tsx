@@ -103,12 +103,10 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
   useEffect(() => {
     document.documentElement.style.setProperty("--color-accent", accent);
 
-    // Build a circular SVG cursor that matches the current accent. Slightly
-    // smaller now (28px circle inside a 36px viewport, leaving room for the
-    // drop shadow) and stashed in --cc-cursor — globals.css applies it to
-    // every element via the universal selector. Hot-spot is the centre.
-    const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36"><defs><filter id="ds" x="-50%" y="-50%" width="200%" height="200%"><feDropShadow dx="0" dy="1" stdDeviation="1.4" flood-color="#000" flood-opacity="0.35"/></filter></defs><circle cx="18" cy="18" r="14" fill="${accent}" filter="url(#ds)"/></svg>`;
-    const url = `url("data:image/svg+xml;utf8,${encodeURIComponent(svg)}") 18 18, auto`;
+    // Circular SVG cursor matching the current accent, no drop shadow.
+    // Hot-spot is the centre.
+    const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28"><circle cx="14" cy="14" r="14" fill="${accent}"/></svg>`;
+    const url = `url("data:image/svg+xml;utf8,${encodeURIComponent(svg)}") 14 14, auto`;
     document.documentElement.style.setProperty("--cc-cursor", url);
 
     try {
