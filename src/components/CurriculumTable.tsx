@@ -113,44 +113,31 @@ function ActivityLine({
   activity: Activity;
   isFirst: boolean;
 }) {
-  // The first activity line owns the lesson label and title cells, so hovering
-  // anywhere on that line paints one continuous bar across Lesson / Title /
-  // Activities. Subsequent lines (A2, A3, ...) have no lesson or title content,
-  // so the bar only covers the activity column itself — starting at A# and
-  // running through the right edge of the column.
-  if (isFirst) {
-    return (
-      <div
-        className="grid items-start text-fg hover:bg-accent hover:text-black transition-colors duration-100"
-        style={{ gridTemplateColumns: SUB_ROW_COLS }}
-      >
-        <div className="self-stretch">
-          <p className="font-bold text-[20px] tracking-[-0.4px] leading-none">
-            {lesson.label}
-          </p>
-        </div>
-        <div className="self-stretch">
-          <div className="w-[438px] max-w-full">
-            <p className="text-[20px] tracking-[-0.4px] leading-[1.4]">
-              {lesson.title}
-            </p>
-          </div>
-        </div>
-        <div className="self-stretch">
-          <ActivityCell activity={activity} />
-        </div>
-      </div>
-    );
-  }
-
+  // The whole sub-row is one hover group: hovering anywhere on the line lights
+  // up every <Mark> inside it. Only the type itself gets painted — gaps,
+  // empty cells, and the space between A# and its title stay untouched.
   return (
     <div
-      className="grid items-start"
+      className="group grid items-start text-fg"
       style={{ gridTemplateColumns: SUB_ROW_COLS }}
     >
-      <div className="self-stretch" aria-hidden="true" />
-      <div className="self-stretch" aria-hidden="true" />
-      <div className="self-stretch text-fg hover:bg-accent hover:text-black transition-colors duration-100">
+      <div className="self-stretch">
+        {isFirst ? (
+          <p className="font-bold text-[20px] tracking-[-0.4px] leading-none">
+            <Mark>{lesson.label}</Mark>
+          </p>
+        ) : null}
+      </div>
+      <div className="self-stretch">
+        {isFirst ? (
+          <div className="w-[438px] max-w-full">
+            <p className="text-[20px] tracking-[-0.4px] leading-[1.4]">
+              <Mark>{lesson.title}</Mark>
+            </p>
+          </div>
+        ) : null}
+      </div>
+      <div className="self-stretch">
         <ActivityCell activity={activity} />
       </div>
     </div>
@@ -158,14 +145,37 @@ function ActivityLine({
 }
 
 function ActivityCell({ activity }: { activity: Activity }) {
+  // `items-baseline` keeps the A# label visually on the same baseline as the
+  // first line of the activity title, so the two highlights line up cleanly.
+  // Both texts use leading-[1.3] for matching line metrics.
   return (
-    <div className="flex gap-[36px] items-start w-[383px] max-w-full">
-      <p className="text-[20px] tracking-[-0.4px] leading-none w-[24px] shrink-0">
-        {activity.label}
+    <div className="flex gap-[36px] items-baseline w-[383px] max-w-full">
+      <p className="text-[20px] tracking-[-0.4px] leading-[1.3] w-[24px] shrink-0">
+        <Mark>{activity.label}</Mark>
       </p>
       <p className="text-[20px] tracking-[-0.4px] leading-[1.3]">
-        {activity.title}
+        <Mark>{activity.title}</Mark>
       </p>
     </div>
+  );
+}
+
+/**
+ * Inline highlight applied to actual type. `display: inline` plus
+ * `box-decoration-break: clone` makes the background hug each line of text
+ * when it wraps, so a multi-line title gets a marker bar per visible line and
+ * the surrounding whitespace, gaps, and empty cells stay clean.
+ */
+function Mark({ children }: { children: React.ReactNode }) {
+  return (
+    <span
+      className="group-hover:bg-accent group-hover:text-black transition-colors duration-100"
+      style={{
+        boxDecorationBreak: "clone",
+        WebkitBoxDecorationBreak: "clone",
+      }}
+    >
+      {children}
+    </span>
   );
 }
