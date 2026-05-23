@@ -40,7 +40,7 @@ export function ActivityBlock({
           <p className="text-[1.25rem] font-bold tracking-[-0.02em] text-fg leading-none">
             {label}
           </p>
-          <span className="inline-flex items-center justify-center px-[0.625rem] py-[0.375rem] border border-fg text-fg bg-bg text-[1.25rem] tracking-[-0.02em] leading-none whitespace-nowrap">
+          <span className="inline-flex items-center justify-center px-[0.625rem] py-[0.375rem] border border-fg text-fg bg-bg text-[1.25rem] tracking-[-0.02em] leading-[1.2]">
             {pillLabel}
           </span>
         </div>
@@ -77,7 +77,7 @@ export function FacilitatorBlock({ blocks }: { blocks: ContentBlock[] }) {
           <p className="text-[1.25rem] font-bold tracking-[-0.02em] text-fg leading-none">
             L1
           </p>
-          <span className="inline-flex items-center justify-center px-[0.625rem] py-[0.375rem] border border-fg text-fg bg-bg text-[1.25rem] tracking-[-0.02em] leading-none whitespace-nowrap">
+          <span className="inline-flex items-center justify-center px-[0.625rem] py-[0.375rem] border border-fg text-fg bg-bg text-[1.25rem] tracking-[-0.02em] leading-[1.2]">
             Intro
           </span>
         </div>
@@ -143,7 +143,7 @@ export function ActivityWithImage({
           <p className="text-[1.25rem] font-bold tracking-[-0.02em] text-fg leading-none">
             {label}
           </p>
-          <span className="inline-flex items-center justify-center px-[0.625rem] py-[0.375rem] border border-fg text-fg bg-bg text-[1.25rem] tracking-[-0.02em] leading-none whitespace-nowrap">
+          <span className="inline-flex items-center justify-center px-[0.625rem] py-[0.375rem] border border-fg text-fg bg-bg text-[1.25rem] tracking-[-0.02em] leading-[1.2]">
             {pillLabel}
           </span>
         </div>

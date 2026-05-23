@@ -13,11 +13,14 @@ type ToolbarProps = {
 
 // All sizing in rem (or em where it should track the local font size) so the
 // toolbar grows uniformly with the type-scale slider.
+// `leading-[1.2]` (not `leading-none`) so multi-line wrapping at large zoom
+// levels looks clean. `whitespace-nowrap` is intentionally absent — buttons
+// should reflow inside their flex containers when type is scaled up.
 const navBtn =
-  "inline-flex items-center justify-center px-[0.625rem] py-[0.375rem] border border-fg text-fg bg-bg text-[1.25rem] tracking-[-0.02em] leading-none whitespace-nowrap hover:bg-accent hover:text-black transition-colors";
+  "inline-flex items-center justify-center px-[0.625rem] py-[0.375rem] border border-fg text-fg bg-bg text-[1.25rem] tracking-[-0.02em] leading-[1.2] hover:bg-accent hover:text-black transition-colors";
 
 const utilBtn =
-  "inline-flex items-center justify-center px-[0.625rem] py-[0.375rem] border border-fg text-fg bg-bg text-[1.25rem] tracking-[-0.02em] leading-none whitespace-nowrap";
+  "inline-flex items-center justify-center px-[0.625rem] py-[0.375rem] border border-fg text-fg bg-bg text-[1.25rem] tracking-[-0.02em] leading-[1.2]";
 
 export function Toolbar({ showBack = false, backHref = "/" }: ToolbarProps) {
   const router = useRouter();
@@ -30,8 +33,8 @@ export function Toolbar({ showBack = false, backHref = "/" }: ToolbarProps) {
 
   return (
     <div className="cc-toolbar w-full flex flex-col gap-[1.125rem]">
-      <div className="flex items-center justify-between w-full">
-        <div className="flex gap-[1rem] items-center">
+      <div className="flex items-center justify-between w-full flex-wrap gap-y-[1rem]">
+        <div className="flex gap-[1rem] items-center flex-wrap">
           {showBack ? (
             <button
               type="button"
@@ -46,7 +49,7 @@ export function Toolbar({ showBack = false, backHref = "/" }: ToolbarProps) {
             Home
           </Link>
         </div>
-        <nav className="flex gap-[0.75rem] items-center" aria-label="Primary">
+        <nav className="flex gap-[0.75rem] items-center flex-wrap" aria-label="Primary">
           <Link href="/about" className={navBtn}>
             About
           </Link>
@@ -76,7 +79,7 @@ export function Toolbar({ showBack = false, backHref = "/" }: ToolbarProps) {
       {showUtilityRow ? (
         <div
           id="cc-utility-row"
-          className="flex gap-[0.5rem] items-center justify-end w-full"
+          className="flex gap-[0.5rem] items-center justify-end w-full flex-wrap"
         >
           <button
             type="button"

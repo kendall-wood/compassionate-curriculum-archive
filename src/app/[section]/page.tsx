@@ -30,7 +30,7 @@ export default function SectionPage({
       <div className="flex flex-col gap-[2.25rem] w-full">
         <Toolbar />
 
-        <h1 className="text-[4.5rem] leading-[1.05] tracking-[-0.03em] text-fg font-normal whitespace-nowrap">
+        <h1 className="text-[4.5rem] leading-[1.05] tracking-[-0.03em] text-fg font-normal">
           Compassionate Curriculum Archive
         </h1>
 

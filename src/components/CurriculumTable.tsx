@@ -133,9 +133,18 @@ function ActivityLine({
   const onLtEnter = isFirst ? () => setLtHover(true) : undefined;
   const onLtLeave = isFirst ? () => setLtHover(false) : undefined;
 
+  // Shared type styles for L#, title, A#, and activity title — same font
+  // size, tracking and line-height so all four pieces of type sit on the
+  // exact same baseline inside the row.
+  const TYPE = "text-[1.25rem] tracking-[-0.02em] leading-[1.3]";
+
   return (
+    // `items-baseline` on the grid locks the L#, Title, A# and first line of
+    // the activity title to the same text baseline regardless of the cell's
+    // box height; each cell still gets its own bar via `self-start`-style
+    // padding below.
     <div
-      className="grid items-start text-fg"
+      className="grid items-baseline text-fg"
       style={{ gridTemplateColumns: SUB_ROW_COLS }}
     >
       {/* Lesson cell. On LT hover the bar fills the entire column so it
@@ -143,32 +152,31 @@ function ActivityLine({
           adjacent Title-cell bar with no gap, producing one continuous
           highlight across the two columns. */}
       <div
-        className="self-start"
         onMouseEnter={onLtEnter}
         onMouseLeave={onLtLeave}
       >
         {isFirst ? (
           <p
-            className={`font-bold text-[1.25rem] tracking-[-0.02em] leading-[1.3] block ${ltHoverClass} transition-colors duration-100`}
+            className={`font-bold ${TYPE} block ${ltHoverClass} transition-colors duration-100`}
           >
             {lesson.label}
           </p>
         ) : null}
       </div>
 
-      {/* Title cell. The bar hugs the actual title text via box-decoration-
-          break so wrapped titles get a clean per-line bar; combined with the
-          full-width Lesson bar above this forms one continuous highlight
-          from L# through the end of the title. */}
+      {/* Title cell. Same vertical padding on the <p> as the L# cell so the
+          line box sits at the same y-position; the inner <span> gets the
+          actual hover bar so the highlight hugs the title text instead of
+          spanning the whole column. box-decoration-break: clone keeps each
+          wrapped line a clean rectangle. */}
       <div
-        className="self-start"
         onMouseEnter={onLtEnter}
         onMouseLeave={onLtLeave}
       >
         {isFirst ? (
-          <p className="text-[1.25rem] tracking-[-0.02em] leading-[1.3] max-w-[438px]">
+          <p className={`${TYPE} py-[0.125rem] max-w-[438px]`}>
             <span
-              className={`${ltHoverClass} transition-colors duration-100`}
+              className={`${ltActive ? "bg-accent text-black" : ""} px-[0.375rem] py-[0.125rem] transition-colors duration-100`}
               style={{
                 boxDecorationBreak: "clone",
                 WebkitBoxDecorationBreak: "clone",
@@ -183,19 +191,14 @@ function ActivityLine({
       {/* Activity cell. Its own hover group, painted as one continuous bar
           that runs from A# through the gap to the end of the activity title. */}
       <div
-        className="self-start"
         onMouseEnter={() => setActHover(true)}
         onMouseLeave={() => setActHover(false)}
       >
         <div
           className={`inline-flex gap-[2.25rem] items-baseline max-w-[383px] ${actHoverClass} transition-colors duration-100`}
         >
-          <p className="text-[1.25rem] tracking-[-0.02em] leading-[1.3] w-[1.5rem] shrink-0">
-            {activity.label}
-          </p>
-          <p className="text-[1.25rem] tracking-[-0.02em] leading-[1.3]">
-            {activity.title}
-          </p>
+          <p className={`${TYPE} w-[1.5rem] shrink-0`}>{activity.label}</p>
+          <p className={TYPE}>{activity.title}</p>
         </div>
       </div>
     </div>
