@@ -37,8 +37,8 @@ export default function LessonPage({
   if (!section || !lesson) return notFound();
 
   return (
-    <div className="cc-page bg-bg text-fg min-h-screen pl-[32px] pr-[32px] pt-[27px] pb-[80px]">
-      <div className="flex flex-col gap-[36px] w-full">
+    <div className="cc-page bg-bg text-fg min-h-screen pl-[2rem] pr-[2rem] pt-[1.6875rem] pb-[5rem]">
+      <div className="flex flex-col gap-[2.25rem] w-full">
         <Toolbar showBack backHref={`/${section.id}`} />
 
         <LessonHero
@@ -51,7 +51,7 @@ export default function LessonPage({
 
         <FacilitatorBlock blocks={lesson.facilitatorBlocks} />
 
-        <div className="flex flex-col gap-[80px] w-full">
+        <div className="flex flex-col gap-[5rem] w-full">
           {lesson.activities.map((activity) => {
             const hasImage = activity.blocks.some((b) => b.kind === "image");
             const Block = hasImage ? ActivityWithImage : ActivityBlock;

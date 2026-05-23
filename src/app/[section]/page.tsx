@@ -26,26 +26,26 @@ export default function SectionPage({
   if (!section) return notFound();
 
   return (
-    <div className="cc-page bg-bg text-fg min-h-screen pl-[32px] pr-[32px] pt-[27px] pb-[80px]">
-      <div className="flex flex-col gap-[36px] w-full">
+    <div className="cc-page bg-bg text-fg min-h-screen pl-[2rem] pr-[2rem] pt-[1.6875rem] pb-[5rem]">
+      <div className="flex flex-col gap-[2.25rem] w-full">
         <Toolbar />
 
-        <h1 className="text-[72px] leading-[1.05] tracking-[-2.16px] text-fg font-normal whitespace-nowrap">
+        <h1 className="text-[4.5rem] leading-[1.05] tracking-[-0.03em] text-fg font-normal whitespace-nowrap">
           Compassionate Curriculum Archive
         </h1>
 
         <SectionTabs activeId={section.id} />
 
-        <h2 className="text-[24px] font-bold tracking-[-0.48px] leading-none text-fg">
+        <h2 className="text-[1.5rem] font-bold tracking-[-0.02em] leading-none text-fg">
           Introduction
         </h2>
 
-        <p className="text-[32px] leading-[1.25] tracking-[-0.64px] text-fg font-normal">
+        <p className="text-[2rem] leading-[1.25] tracking-[-0.02em] text-fg font-normal">
           {section.overview}
         </p>
 
-        <div className="flex flex-col gap-[48px] w-full">
-          <h2 className="text-[24px] font-bold tracking-[-0.48px] leading-none text-fg">
+        <div className="flex flex-col gap-[3rem] w-full">
+          <h2 className="text-[1.5rem] font-bold tracking-[-0.02em] leading-none text-fg">
             Curriculum
           </h2>
           <CurriculumTable sectionId={section.id} lessons={section.lessons} />

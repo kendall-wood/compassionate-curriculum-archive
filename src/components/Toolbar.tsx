@@ -11,11 +11,13 @@ type ToolbarProps = {
   backHref?: string;
 };
 
+// All sizing in rem (or em where it should track the local font size) so the
+// toolbar grows uniformly with the type-scale slider.
 const navBtn =
-  "inline-flex items-center justify-center px-[10px] py-[6px] border border-fg text-fg bg-bg text-[20px] tracking-[-0.4px] leading-none whitespace-nowrap hover:bg-accent hover:text-black transition-colors";
+  "inline-flex items-center justify-center px-[0.625rem] py-[0.375rem] border border-fg text-fg bg-bg text-[1.25rem] tracking-[-0.02em] leading-none whitespace-nowrap hover:bg-accent hover:text-black transition-colors";
 
 const utilBtn =
-  "inline-flex items-center justify-center px-[10px] py-[6px] border border-fg text-fg bg-bg text-[20px] tracking-[-0.4px] leading-none whitespace-nowrap";
+  "inline-flex items-center justify-center px-[0.625rem] py-[0.375rem] border border-fg text-fg bg-bg text-[1.25rem] tracking-[-0.02em] leading-none whitespace-nowrap";
 
 export function Toolbar({ showBack = false, backHref = "/" }: ToolbarProps) {
   const router = useRouter();
@@ -27,9 +29,9 @@ export function Toolbar({ showBack = false, backHref = "/" }: ToolbarProps) {
   const [showUtilityRow, setShowUtilityRow] = useState(false);
 
   return (
-    <div className="cc-toolbar w-full flex flex-col gap-[18px]">
-      <div className="flex items-center justify-between w-full h-[35px]">
-        <div className="flex gap-[16px] items-center">
+    <div className="cc-toolbar w-full flex flex-col gap-[1.125rem]">
+      <div className="flex items-center justify-between w-full">
+        <div className="flex gap-[1rem] items-center">
           {showBack ? (
             <button
               type="button"
@@ -44,7 +46,7 @@ export function Toolbar({ showBack = false, backHref = "/" }: ToolbarProps) {
             Home
           </Link>
         </div>
-        <nav className="flex gap-[12px] items-center" aria-label="Primary">
+        <nav className="flex gap-[0.75rem] items-center" aria-label="Primary">
           <Link href="/about" className={navBtn}>
             About
           </Link>
@@ -74,7 +76,7 @@ export function Toolbar({ showBack = false, backHref = "/" }: ToolbarProps) {
       {showUtilityRow ? (
         <div
           id="cc-utility-row"
-          className="flex gap-[8px] items-center justify-end w-full"
+          className="flex gap-[0.5rem] items-center justify-end w-full"
         >
           <button
             type="button"
@@ -84,7 +86,7 @@ export function Toolbar({ showBack = false, backHref = "/" }: ToolbarProps) {
               theme === "dark" ? "Switch to light mode" : "Switch to dark mode"
             }
           >
-            <span className="size-[20px] inline-flex items-center justify-center">
+            <span className="size-[1.25rem] inline-flex items-center justify-center">
               {theme === "dark" ? (
                 <MoonIcon className="size-full" />
               ) : (
@@ -94,14 +96,14 @@ export function Toolbar({ showBack = false, backHref = "/" }: ToolbarProps) {
           </button>
 
           <span
-            className="inline-flex items-center justify-center px-[10px] py-[6px] border text-black"
+            className="inline-flex items-center justify-center px-[0.625rem] py-[0.375rem] border text-black"
             style={{
               background: "var(--color-active)",
               borderColor: "var(--color-bg)",
             }}
             aria-label="Active accent indicator"
           >
-            <LeafIcon className="size-[17.6px]" />
+            <LeafIcon className="size-[1.1rem]" />
           </span>
 
           <button
@@ -125,7 +127,7 @@ export function Toolbar({ showBack = false, backHref = "/" }: ToolbarProps) {
           </button>
 
           <div
-            className="inline-flex items-center justify-center gap-[10px] px-[10px] py-[6px] border border-fg bg-bg"
+            className="inline-flex items-center justify-center gap-[0.625rem] px-[0.625rem] py-[0.375rem] border border-fg bg-bg"
             role="group"
             aria-label="Accent color swatches"
           >
@@ -138,7 +140,7 @@ export function Toolbar({ showBack = false, backHref = "/" }: ToolbarProps) {
                   onClick={() => setAccent(color)}
                   aria-label={`Use accent color ${color}`}
                   aria-pressed={isActive}
-                  className="size-[19px] inline-block border border-fg"
+                  className="size-[1.1875rem] inline-block border border-fg"
                   style={{
                     background: color,
                     borderRadius: "9999px",
@@ -154,7 +156,7 @@ export function Toolbar({ showBack = false, backHref = "/" }: ToolbarProps) {
                 as a circular rainbow chip so it sits visually with the
                 preset swatches. */}
             <label
-              className="size-[19px] inline-flex items-center justify-center relative overflow-hidden border border-fg"
+              className="size-[1.1875rem] inline-flex items-center justify-center relative overflow-hidden border border-fg"
               style={{
                 borderRadius: "9999px",
                 background:

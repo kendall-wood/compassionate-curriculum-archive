@@ -19,29 +19,32 @@ export function ActivityBlock({
   return (
     <section
       id={id}
-      className="flex flex-col gap-[40px] w-full scroll-mt-[120px]"
+      className="flex flex-col gap-[2.5rem] w-full scroll-mt-[7.5rem]"
       aria-labelledby={`${id}-heading`}
     >
       <div className="flex flex-col">
         <h2
           id={`${id}-heading`}
-          className="text-[24px] font-bold leading-[1.2] tracking-[-0.48px] text-fg"
+          className="text-[1.5rem] font-bold leading-[1.2] tracking-[-0.02em] text-fg"
         >
           {heading}
         </h2>
-        <div className="mt-[46px] border-t border-fg w-full" />
+        <div className="mt-[2.875rem] border-t border-fg w-full" />
       </div>
 
-      <div className="grid items-start" style={{ gridTemplateColumns: "234px 1fr" }}>
-        <div className="flex flex-col items-start gap-[20px] pt-[20px]">
-          <p className="text-[20px] font-bold tracking-[-0.4px] text-fg leading-none">
+      <div
+        className="grid items-start"
+        style={{ gridTemplateColumns: "14.625rem 1fr" }}
+      >
+        <div className="flex flex-col items-start gap-[1.25rem] pt-[1.25rem]">
+          <p className="text-[1.25rem] font-bold tracking-[-0.02em] text-fg leading-none">
             {label}
           </p>
-          <span className="inline-flex items-center justify-center px-[10px] py-[6px] border border-fg text-fg bg-bg text-[20px] tracking-[-0.4px] leading-none whitespace-nowrap">
+          <span className="inline-flex items-center justify-center px-[0.625rem] py-[0.375rem] border border-fg text-fg bg-bg text-[1.25rem] tracking-[-0.02em] leading-none whitespace-nowrap">
             {pillLabel}
           </span>
         </div>
-        <div className="pt-[20px] max-w-[1142px]">
+        <div className="pt-[1.25rem] max-w-[71.375rem]">
           <ContentRenderer blocks={blocks} />
         </div>
       </div>
@@ -53,29 +56,32 @@ export function FacilitatorBlock({ blocks }: { blocks: ContentBlock[] }) {
   return (
     <section
       id="overview"
-      className="flex flex-col gap-[40px] w-full scroll-mt-[120px]"
+      className="flex flex-col gap-[2.5rem] w-full scroll-mt-[7.5rem]"
       aria-labelledby="overview-heading"
     >
       <div className="flex flex-col">
         <h2
           id="overview-heading"
-          className="text-[24px] font-bold leading-[1.2] tracking-[-0.48px] text-fg"
+          className="text-[1.5rem] font-bold leading-[1.2] tracking-[-0.02em] text-fg"
         >
           For Facilitators
         </h2>
-        <div className="mt-[46px] border-t border-fg w-full" />
+        <div className="mt-[2.875rem] border-t border-fg w-full" />
       </div>
 
-      <div className="grid items-start" style={{ gridTemplateColumns: "234px 1fr" }}>
-        <div className="flex flex-col items-start gap-[20px] pt-[20px]">
-          <p className="text-[20px] font-bold tracking-[-0.4px] text-fg leading-none">
+      <div
+        className="grid items-start"
+        style={{ gridTemplateColumns: "14.625rem 1fr" }}
+      >
+        <div className="flex flex-col items-start gap-[1.25rem] pt-[1.25rem]">
+          <p className="text-[1.25rem] font-bold tracking-[-0.02em] text-fg leading-none">
             L1
           </p>
-          <span className="inline-flex items-center justify-center px-[10px] py-[6px] border border-fg text-fg bg-bg text-[20px] tracking-[-0.4px] leading-none whitespace-nowrap">
+          <span className="inline-flex items-center justify-center px-[0.625rem] py-[0.375rem] border border-fg text-fg bg-bg text-[1.25rem] tracking-[-0.02em] leading-none whitespace-nowrap">
             Intro
           </span>
         </div>
-        <div className="pt-[20px] max-w-[1142px]">
+        <div className="pt-[1.25rem] max-w-[71.375rem]">
           <ContentRenderer blocks={blocks} />
         </div>
       </div>
@@ -103,17 +109,17 @@ export function ActivityWithImage({
   return (
     <section
       id={id}
-      className="flex flex-col gap-[40px] w-full scroll-mt-[120px]"
+      className="flex flex-col gap-[2.5rem] w-full scroll-mt-[7.5rem]"
       aria-labelledby={`${id}-heading`}
     >
       <div className="flex flex-col">
         <h2
           id={`${id}-heading`}
-          className="text-[24px] font-bold leading-[1.2] tracking-[-0.48px] text-fg"
+          className="text-[1.5rem] font-bold leading-[1.2] tracking-[-0.02em] text-fg"
         >
           {heading}
         </h2>
-        <div className="mt-[46px] border-t border-fg w-full" />
+        <div className="mt-[2.875rem] border-t border-fg w-full" />
       </div>
 
       {heroImage ? (
@@ -122,20 +128,26 @@ export function ActivityWithImage({
           src={heroImage.src}
           alt={heroImage.alt}
           className="object-cover max-w-full"
-          style={{ width: heroImage.width ?? 672, height: heroImage.height ?? 376 }}
+          style={{
+            width: `${(heroImage.width ?? 672) / 16}rem`,
+            height: `${(heroImage.height ?? 376) / 16}rem`,
+          }}
         />
       ) : null}
 
-      <div className="grid items-start" style={{ gridTemplateColumns: "234px 1fr" }}>
-        <div className="flex flex-col items-start gap-[20px] pt-[20px]">
-          <p className="text-[20px] font-bold tracking-[-0.4px] text-fg leading-none">
+      <div
+        className="grid items-start"
+        style={{ gridTemplateColumns: "14.625rem 1fr" }}
+      >
+        <div className="flex flex-col items-start gap-[1.25rem] pt-[1.25rem]">
+          <p className="text-[1.25rem] font-bold tracking-[-0.02em] text-fg leading-none">
             {label}
           </p>
-          <span className="inline-flex items-center justify-center px-[10px] py-[6px] border border-fg text-fg bg-bg text-[20px] tracking-[-0.4px] leading-none whitespace-nowrap">
+          <span className="inline-flex items-center justify-center px-[0.625rem] py-[0.375rem] border border-fg text-fg bg-bg text-[1.25rem] tracking-[-0.02em] leading-none whitespace-nowrap">
             {pillLabel}
           </span>
         </div>
-        <div className="pt-[20px] max-w-[1142px]">
+        <div className="pt-[1.25rem] max-w-[71.375rem]">
           <ContentRenderer blocks={remaining} />
         </div>
       </div>

@@ -5,7 +5,7 @@ import { useState } from "react";
 import type { Activity, Lesson } from "@/data/types";
 
 const headerCell =
-  "inline-flex items-center justify-center px-[10px] py-[6px] border border-fg text-[20px] tracking-[-0.4px] leading-none";
+  "inline-flex items-center justify-center px-[0.625rem] py-[0.375rem] border border-fg text-[1.25rem] tracking-[-0.02em] leading-none";
 
 // PRD column offsets at 1440 design width: Lesson 0 / Title 234 / Activities 704 / Links 1173.
 // Title column flexes (1fr) so the table fills the available width on screens wider
@@ -13,11 +13,12 @@ const headerCell =
 // widths. Title is floored at 470px (its design width) so the table never collapses
 // below the intended layout; on narrower viewports the page is allowed to scroll
 // horizontally (the design is desktop-first per PRD).
+//
+// IMPORTANT: these columns are kept in absolute pixels even though the rest of the
+// UI is rem-based. When the type-scale slider grows the type, titles re-wrap inside
+// the fixed columns instead of pushing the table sideways – that's the explicit
+// "wrap" overflow behavior the design wants for this table.
 const GRID_COLS = "234px minmax(470px, 1fr) 469px 203px";
-
-// Sub-row grid for each activity line inside a lesson. Three columns matching the
-// outer grid's first three (Lesson / Title / Activities). The Image column is left
-// out so the hover bar never paints over the image or the right whitespace.
 const SUB_ROW_COLS = "234px minmax(470px, 1fr) 469px";
 
 export function CurriculumTable({
@@ -50,7 +51,7 @@ export function CurriculumTable({
           </div>
         </div>
 
-        <div className="col-span-4 mt-[13px] border-t border-fg" />
+        <div className="col-span-4 mt-[0.8125rem] border-t border-fg" />
 
         {lessons.map((lesson) => (
           <LessonRow key={lesson.id} sectionId={sectionId} lesson={lesson} />
@@ -78,11 +79,11 @@ function LessonRow({ sectionId, lesson }: { sectionId: string; lesson: Lesson })
 
         <Link
           href={href}
-          className="block pt-[33px] pb-[33px]"
+          className="block pt-[2.0625rem] pb-[2.0625rem]"
           aria-label={`Open lesson ${lesson.label}: ${lesson.title}`}
         >
           <div
-            className="flex flex-col gap-[26px]"
+            className="flex flex-col gap-[1.625rem]"
             style={{ paddingRight: "203px" }}
           >
             {lesson.activities.map((activity, i) => (
@@ -119,10 +120,15 @@ function ActivityLine({
   const [actHover, setActHover] = useState(false);
 
   const ltActive = isFirst && ltHover;
+  // `px-[0.375rem] py-[0.125rem]` gives the bar a small breathing room around
+  // the type so the highlight reads as a clean rectangle rather than
+  // tight-cropped to letterforms; rem-based so it scales with type.
   const ltHoverClass = ltActive
-    ? "bg-accent text-black"
-    : "";
-  const actHoverClass = actHover ? "bg-accent text-black" : "";
+    ? "bg-accent text-black px-[0.375rem] py-[0.125rem]"
+    : "px-[0.375rem] py-[0.125rem]";
+  const actHoverClass = actHover
+    ? "bg-accent text-black px-[0.375rem] py-[0.125rem]"
+    : "px-[0.375rem] py-[0.125rem]";
 
   const onLtEnter = isFirst ? () => setLtHover(true) : undefined;
   const onLtLeave = isFirst ? () => setLtHover(false) : undefined;
@@ -143,7 +149,7 @@ function ActivityLine({
       >
         {isFirst ? (
           <p
-            className={`font-bold text-[20px] tracking-[-0.4px] leading-[1.3] block ${ltHoverClass} transition-colors duration-100`}
+            className={`font-bold text-[1.25rem] tracking-[-0.02em] leading-[1.3] block ${ltHoverClass} transition-colors duration-100`}
           >
             {lesson.label}
           </p>
@@ -160,7 +166,7 @@ function ActivityLine({
         onMouseLeave={onLtLeave}
       >
         {isFirst ? (
-          <p className="text-[20px] tracking-[-0.4px] leading-[1.3] max-w-[438px]">
+          <p className="text-[1.25rem] tracking-[-0.02em] leading-[1.3] max-w-[438px]">
             <span
               className={`${ltHoverClass} transition-colors duration-100`}
               style={{
@@ -175,20 +181,19 @@ function ActivityLine({
       </div>
 
       {/* Activity cell. Its own hover group, painted as one continuous bar
-          that runs from A# through the 36px gap to the end of the activity
-          title. */}
+          that runs from A# through the gap to the end of the activity title. */}
       <div
         className="self-start"
         onMouseEnter={() => setActHover(true)}
         onMouseLeave={() => setActHover(false)}
       >
         <div
-          className={`inline-flex gap-[36px] items-baseline max-w-[383px] ${actHoverClass} transition-colors duration-100`}
+          className={`inline-flex gap-[2.25rem] items-baseline max-w-[383px] ${actHoverClass} transition-colors duration-100`}
         >
-          <p className="text-[20px] tracking-[-0.4px] leading-[1.3] w-[24px] shrink-0">
+          <p className="text-[1.25rem] tracking-[-0.02em] leading-[1.3] w-[1.5rem] shrink-0">
             {activity.label}
           </p>
-          <p className="text-[20px] tracking-[-0.4px] leading-[1.3]">
+          <p className="text-[1.25rem] tracking-[-0.02em] leading-[1.3]">
             {activity.title}
           </p>
         </div>

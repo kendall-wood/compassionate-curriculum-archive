@@ -24,14 +24,14 @@ function renderText(text: string) {
 
 export function ContentRenderer({ blocks }: { blocks: ContentBlock[] }) {
   return (
-    <div className="flex flex-col gap-[24px] text-fg">
+    <div className="flex flex-col gap-[1.5rem] text-fg">
       {blocks.map((block, i) => {
         switch (block.kind) {
           case "p":
             return (
               <p
                 key={i}
-                className={`text-[32px] leading-[1.25] tracking-[-0.64px] ${
+                className={`text-[2rem] leading-[1.25] tracking-[-0.02em] ${
                   block.bold ? "font-bold" : "font-normal"
                 }`}
               >
@@ -42,12 +42,12 @@ export function ContentRenderer({ blocks }: { blocks: ContentBlock[] }) {
             return (
               <ul
                 key={i}
-                className="list-disc pl-[1.5em] flex flex-col gap-[12px]"
+                className="list-disc pl-[1.5em] flex flex-col gap-[0.75rem]"
               >
                 {block.items.map((item, j) => (
                   <li
                     key={j}
-                    className="text-[32px] leading-[1.4] tracking-[-0.64px]"
+                    className="text-[2rem] leading-[1.4] tracking-[-0.02em]"
                   >
                     {renderText(item)}
                   </li>
@@ -58,12 +58,12 @@ export function ContentRenderer({ blocks }: { blocks: ContentBlock[] }) {
             return (
               <ol
                 key={i}
-                className="list-decimal pl-[1.5em] flex flex-col gap-[12px]"
+                className="list-decimal pl-[1.5em] flex flex-col gap-[0.75rem]"
               >
                 {block.items.map((item, j) => (
                   <li
                     key={j}
-                    className="text-[32px] leading-[1.4] tracking-[-0.64px]"
+                    className="text-[2rem] leading-[1.4] tracking-[-0.02em]"
                   >
                     {renderText(item)}
                   </li>
@@ -74,7 +74,7 @@ export function ContentRenderer({ blocks }: { blocks: ContentBlock[] }) {
             return (
               <h3
                 key={i}
-                className="text-[24px] font-bold leading-[1.2] tracking-[-0.48px]"
+                className="text-[1.5rem] font-bold leading-[1.2] tracking-[-0.02em]"
               >
                 {block.text}
               </h3>
@@ -89,7 +89,10 @@ export function ContentRenderer({ blocks }: { blocks: ContentBlock[] }) {
                 width={block.width ?? 672}
                 height={block.height ?? 376}
                 className="object-cover max-w-full"
-                style={{ width: block.width ?? 672, height: block.height ?? 376 }}
+                style={{
+                  width: `${(block.width ?? 672) / 16}rem`,
+                  height: `${(block.height ?? 376) / 16}rem`,
+                }}
               />
             );
           default:

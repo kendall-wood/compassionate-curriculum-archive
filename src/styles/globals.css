@@ -18,6 +18,15 @@ html.dark {
   --color-fg: #ffffff;
 }
 
+/* Root font-size scales with --zoom. Every component uses rem-based units so
+   text, padding, gaps, image dimensions and the toolbar all grow together as
+   one – a true "zoom of the whole UI". The curriculum table is the one
+   intentional exception: its grid columns stay in px so titles re-wrap inside
+   their columns instead of pushing the page sideways. */
+html {
+  font-size: calc(16px * var(--zoom));
+}
+
 html,
 body {
   background: var(--color-bg);
@@ -54,7 +63,7 @@ a:focus-visible {
 }
 
 .cc-page {
-  font-size: calc(16px * var(--zoom));
+  /* page text inherits root font-size, no further scaling needed here */
 }
 
 @media print {

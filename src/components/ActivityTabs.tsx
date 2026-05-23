@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import type { Activity } from "@/data/types";
 
 const baseTab =
-  "inline-flex items-center justify-center px-[10px] py-[6px] border border-fg text-[20px] tracking-[-0.4px] leading-none whitespace-nowrap transition-colors";
+  "inline-flex items-center justify-center px-[0.625rem] py-[0.375rem] border border-fg text-[1.25rem] tracking-[-0.02em] leading-none whitespace-nowrap transition-colors";
 
 export function ActivityTabs({ activities }: { activities: Activity[] }) {
   const [active, setActive] = useState<string>("overview");
@@ -51,7 +51,7 @@ export function ActivityTabs({ activities }: { activities: Activity[] }) {
   };
 
   return (
-    <div className="cc-activity-tabs flex gap-[8px] items-center w-full">
+    <div className="cc-activity-tabs flex gap-[0.5rem] items-center w-full">
       {tab("overview", "Overview")}
       {activities.map((a) => tab(a.id, a.label))}
     </div>

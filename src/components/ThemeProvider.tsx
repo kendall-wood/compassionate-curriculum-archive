@@ -22,7 +22,19 @@ export const ACCENT_SWATCHES = [
   "#FF9F1C",
 ] as const;
 
-const ZOOM_STEPS = [0.75, 1, 1.25, 1.5];
+// Continuous type-scale range. Each click of +/- moves by ZOOM_STEP within
+// [ZOOM_MIN, ZOOM_MAX]. Stored as a multiplier and applied to the root font
+// size so every rem-based dimension grows or shrinks together.
+const ZOOM_MIN = 0.8;
+const ZOOM_MAX = 2.0;
+const ZOOM_STEP = 0.1;
+
+function clampZoom(z: number): number {
+  if (Number.isNaN(z)) return 1;
+  // Round to nearest step to avoid floating-point drift across reloads.
+  const stepped = Math.round(z / ZOOM_STEP) * ZOOM_STEP;
+  return Math.min(ZOOM_MAX, Math.max(ZOOM_MIN, Number(stepped.toFixed(2))));
+}
 
 type ThemeContextValue = {
   theme: Theme;
@@ -57,7 +69,7 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
       if (t === "dark" || t === "light") setThemeState(t);
       if (z) {
         const parsed = parseFloat(z);
-        if (ZOOM_STEPS.includes(parsed)) setZoom(parsed);
+        if (!Number.isNaN(parsed)) setZoom(clampZoom(parsed));
       }
       if (a) setAccentState(a);
     } catch {
@@ -91,11 +103,12 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
   useEffect(() => {
     document.documentElement.style.setProperty("--color-accent", accent);
 
-    // Build a circular SVG cursor that matches the current accent and stash
-    // it in --cc-cursor; globals.css applies it to every element via the
-    // universal selector. Hot-spot is the centre of the circle (24, 24).
-    const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><circle cx="24" cy="24" r="20" fill="${accent}"/></svg>`;
-    const url = `url("data:image/svg+xml;utf8,${encodeURIComponent(svg)}") 24 24, auto`;
+    // Build a circular SVG cursor that matches the current accent. Slightly
+    // smaller now (28px circle inside a 36px viewport, leaving room for the
+    // drop shadow) and stashed in --cc-cursor — globals.css applies it to
+    // every element via the universal selector. Hot-spot is the centre.
+    const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36"><defs><filter id="ds" x="-50%" y="-50%" width="200%" height="200%"><feDropShadow dx="0" dy="1" stdDeviation="1.4" flood-color="#000" flood-opacity="0.35"/></filter></defs><circle cx="18" cy="18" r="14" fill="${accent}" filter="url(#ds)"/></svg>`;
+    const url = `url("data:image/svg+xml;utf8,${encodeURIComponent(svg)}") 18 18, auto`;
     document.documentElement.style.setProperty("--cc-cursor", url);
 
     try {
@@ -112,19 +125,11 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
   );
 
   const zoomIn = useCallback(() => {
-    setZoom((z) => {
-      const idx = ZOOM_STEPS.indexOf(z);
-      const next = idx === -1 ? 1 : Math.min(ZOOM_STEPS.length - 1, idx + 1);
-      return ZOOM_STEPS[next];
-    });
+    setZoom((z) => clampZoom(z + ZOOM_STEP));
   }, []);
 
   const zoomOut = useCallback(() => {
-    setZoom((z) => {
-      const idx = ZOOM_STEPS.indexOf(z);
-      const next = idx === -1 ? 1 : Math.max(0, idx - 1);
-      return ZOOM_STEPS[next];
-    });
+    setZoom((z) => clampZoom(z - ZOOM_STEP));
   }, []);
 
   const setAccent = useCallback((color: string) => setAccentState(color), []);

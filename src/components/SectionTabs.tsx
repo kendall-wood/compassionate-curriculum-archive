@@ -6,14 +6,14 @@ import { sections } from "@/data/curriculum";
 export function SectionTabs({ activeId }: { activeId: string }) {
   return (
     <div
-      className="cc-section-tabs flex gap-[8px] items-center w-full h-[35px]"
+      className="cc-section-tabs flex gap-[0.5rem] items-center w-full"
       role="tablist"
       aria-label="Curriculum sections"
     >
       {sections.map((s) => {
         const isActive = s.id === activeId;
         const base =
-          "inline-flex items-center justify-center px-[10px] py-[6px] border text-[20px] tracking-[-0.4px] leading-none whitespace-nowrap transition-colors";
+          "inline-flex items-center justify-center px-[0.625rem] py-[0.375rem] border text-[1.25rem] tracking-[-0.02em] leading-none whitespace-nowrap transition-colors";
         const styles = isActive
           ? "border-fg text-black"
           : "border-fg text-fg bg-bg hover:bg-accent hover:text-black";
