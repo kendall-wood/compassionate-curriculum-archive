@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useCallback } from "react";
 import type { Activity, Lesson } from "@/data/types";
 
 const headerCell =
@@ -63,6 +63,12 @@ export function CurriculumTable({
 
 function LessonRow({ sectionId, lesson }: { sectionId: string; lesson: Lesson }) {
   const href = `/${sectionId}/${lesson.id}`;
+  // anyHover = true whenever the cursor is anywhere over this lesson's rows.
+  // Passed down so L# lights up regardless of which activity row is hovered.
+  const [anyHover, setAnyHover] = useState(false);
+  const onEnter = useCallback(() => setAnyHover(true), []);
+  const onLeave = useCallback(() => setAnyHover(false), []);
+
   return (
     <>
       <div className="col-span-4 relative" role="row">
@@ -85,6 +91,8 @@ function LessonRow({ sectionId, lesson }: { sectionId: string; lesson: Lesson })
           <div
             className="flex flex-col gap-[1.625rem]"
             style={{ paddingRight: "203px" }}
+            onMouseEnter={onEnter}
+            onMouseLeave={onLeave}
           >
             {lesson.activities.map((activity, i) => (
               <ActivityLine
@@ -92,6 +100,7 @@ function LessonRow({ sectionId, lesson }: { sectionId: string; lesson: Lesson })
                 lesson={lesson}
                 activity={activity}
                 isFirst={i === 0}
+                lActive={anyHover}
               />
             ))}
           </div>
@@ -106,20 +115,19 @@ function ActivityLine({
   lesson,
   activity,
   isFirst,
+  lActive,
 }: {
   lesson: Lesson;
   activity: Activity;
   isFirst: boolean;
+  lActive: boolean; // lifted from LessonRow: true when any row in this lesson is hovered
 }) {
-  // ltHover  = cursor is over the Lesson or Title cell
-  // actHover = cursor is over the Activity cell
-  // L# lights up on ANY hover (title OR activity); title only on ltHover;
-  // activity only on actHover.
+  // ltHover  = cursor is over the Lesson or Title cell (title highlight)
+  // actHover = cursor is over the Activity cell (activity highlight)
   const [ltHover, setLtHover] = useState(false);
   const [actHover, setActHover] = useState(false);
 
-  const lActive  = isFirst && (ltHover || actHover); // L# responds to both
-  const ltActive = isFirst && ltHover;               // title only on lt hover
+  const ltActive = isFirst && ltHover;
   const actHoverClass = actHover
     ? "bg-accent text-black px-[0.375rem] py-[0.125rem]"
     : "px-[0.375rem] py-[0.125rem]";
