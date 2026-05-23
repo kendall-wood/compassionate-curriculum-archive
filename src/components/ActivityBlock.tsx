@@ -3,7 +3,6 @@ import { ContentRenderer } from "./ContentRenderer";
 
 type ActivityBlockProps = {
   id: string;
-  label: string;
   pillLabel: string;
   heading: string;
   blocks: ContentBlock[];
@@ -11,7 +10,6 @@ type ActivityBlockProps = {
 
 export function ActivityBlock({
   id,
-  label,
   pillLabel,
   heading,
   blocks,
@@ -37,9 +35,6 @@ export function ActivityBlock({
         style={{ gridTemplateColumns: "14.625rem 1fr" }}
       >
         <div className="flex flex-col items-start gap-[1.25rem] pt-[1.25rem]">
-          <p className="text-[1.25rem] font-bold tracking-[-0.02em] text-fg leading-none">
-            {label}
-          </p>
           <span className="inline-flex items-center justify-center px-[0.625rem] py-[0.375rem] border border-fg text-fg bg-bg text-[1.25rem] tracking-[-0.02em] leading-[1.2]">
             {pillLabel}
           </span>
@@ -74,9 +69,6 @@ export function FacilitatorBlock({ blocks }: { blocks: ContentBlock[] }) {
         style={{ gridTemplateColumns: "14.625rem 1fr" }}
       >
         <div className="flex flex-col items-start gap-[1.25rem] pt-[1.25rem]">
-          <p className="text-[1.25rem] font-bold tracking-[-0.02em] text-fg leading-none">
-            L1
-          </p>
           <span className="inline-flex items-center justify-center px-[0.625rem] py-[0.375rem] border border-fg text-fg bg-bg text-[1.25rem] tracking-[-0.02em] leading-[1.2]">
             Intro
           </span>
@@ -91,7 +83,6 @@ export function FacilitatorBlock({ blocks }: { blocks: ContentBlock[] }) {
 
 export function ActivityWithImage({
   id,
-  label,
   pillLabel,
   heading,
   blocks,
@@ -140,9 +131,6 @@ export function ActivityWithImage({
         style={{ gridTemplateColumns: "14.625rem 1fr" }}
       >
         <div className="flex flex-col items-start gap-[1.25rem] pt-[1.25rem]">
-          <p className="text-[1.25rem] font-bold tracking-[-0.02em] text-fg leading-none">
-            {label}
-          </p>
           <span className="inline-flex items-center justify-center px-[0.625rem] py-[0.375rem] border border-fg text-fg bg-bg text-[1.25rem] tracking-[-0.02em] leading-[1.2]">
             {pillLabel}
           </span>

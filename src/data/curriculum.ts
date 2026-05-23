@@ -40,3 +40,8 @@ export function getLesson(sectionId: string, lessonId: string) {
   const s = getSection(sectionId);
   return s?.lessons.find((l) => l.id === lessonId);
 }
+
+export function getActivity(sectionId: string, lessonId: string, activityId: string) {
+  const l = getLesson(sectionId, lessonId);
+  return l?.activities.find((a) => a.id === activityId);
+}

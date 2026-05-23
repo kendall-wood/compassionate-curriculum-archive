@@ -3,11 +3,7 @@ import { sections, getSection, getLesson } from "@/data/curriculum";
 import { Toolbar } from "@/components/Toolbar";
 import { LessonHero } from "@/components/LessonHero";
 import { ActivityTabs } from "@/components/ActivityTabs";
-import {
-  ActivityBlock,
-  ActivityWithImage,
-  FacilitatorBlock,
-} from "@/components/ActivityBlock";
+import { FacilitatorBlock } from "@/components/ActivityBlock";
 
 export function generateStaticParams() {
   return sections.flatMap((s) =>
@@ -47,26 +43,13 @@ export default function LessonPage({
           imageAlt={`${lesson.title} hero image`}
         />
 
-        <ActivityTabs activities={lesson.activities} />
+        <ActivityTabs
+          sectionId={section.id}
+          lessonId={lesson.id}
+          activities={lesson.activities}
+        />
 
         <FacilitatorBlock blocks={lesson.facilitatorBlocks} />
-
-        <div className="flex flex-col gap-[5rem] w-full">
-          {lesson.activities.map((activity) => {
-            const hasImage = activity.blocks.some((b) => b.kind === "image");
-            const Block = hasImage ? ActivityWithImage : ActivityBlock;
-            return (
-              <Block
-                key={activity.id}
-                id={activity.id}
-                label="A1"
-                pillLabel={activity.label}
-                heading={activity.title}
-                blocks={activity.blocks}
-              />
-            );
-          })}
-        </div>
       </div>
     </div>
   );
