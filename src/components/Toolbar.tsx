@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { useState } from "react";
+
 import { ACCENT_SWATCHES, useTheme } from "./ThemeProvider";
 import { MoonIcon, SunIcon } from "./icons";
 
@@ -24,12 +24,8 @@ const utilBtn =
 
 export function Toolbar({ showBack = false, backHref = "/" }: ToolbarProps) {
   const router = useRouter();
-  const { theme, toggleTheme, accent, setAccent, zoomIn, zoomOut, zoomLabel } =
+  const { theme, toggleTheme, accent, setAccent, zoomIn, zoomOut, zoomLabel, showUtilityRow, setShowUtilityRow } =
     useTheme();
-
-  // Settings & Accessibility now toggles the utility row inline instead of
-  // navigating to a dedicated page.
-  const [showUtilityRow, setShowUtilityRow] = useState(false);
 
   return (
     <div className="cc-toolbar w-full flex flex-col gap-[1.125rem]">
@@ -70,7 +66,7 @@ export function Toolbar({ showBack = false, backHref = "/" }: ToolbarProps) {
             className={navBtn}
             aria-expanded={showUtilityRow}
             aria-controls="cc-utility-row"
-            style={showUtilityRow ? { background: "var(--color-active)", color: "#000" } : undefined}
+            style={showUtilityRow ? { background: "var(--color-accent)", color: "var(--color-accent-fg)" } : undefined}
           >
             Settings &amp; Accessibility
           </button>

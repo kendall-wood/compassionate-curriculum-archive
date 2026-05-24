@@ -186,14 +186,13 @@ function ActivityLine({
         <Link href={activityHref} aria-label={`${activity.label}: ${activity.title}`}>
           <p className={`${TYPE} py-[0.125rem] max-w-[383px]`}>
             <span
-              className={`inline-flex gap-[2.25rem] items-baseline ${actHoverClass} transition-colors duration-100`}
+              className={`inline ${actHoverClass} transition-colors duration-100`}
               style={{
                 boxDecorationBreak: "clone",
                 WebkitBoxDecorationBreak: "clone",
               }}
             >
-              <span className="w-[1.5rem] shrink-0">{activity.label}</span>
-              <span>{activity.title}</span>
+              <span className="inline-block w-[1.5rem] mr-[2.25rem]">{activity.label}</span>{activity.title}
             </span>
           </p>
         </Link>

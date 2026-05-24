@@ -58,7 +58,10 @@ type ThemeContextValue = {
   zoom: number;
   zoomIn: () => void;
   zoomOut: () => void;
+  zoomReset: () => void;
   zoomLabel: string;
+  showUtilityRow: boolean;
+  setShowUtilityRow: (v: boolean | ((prev: boolean) => boolean)) => void;
 };
 
 const ThemeContext = createContext<ThemeContextValue | null>(null);
@@ -73,6 +76,7 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
   const [theme, setThemeState] = useState<Theme>("light");
   const [zoom, setZoom] = useState<number>(1);
   const [accent, setAccentState] = useState<string>("#fff75d");
+  const [showUtilityRow, setShowUtilityRow] = useState(false);
 
   useEffect(() => {
     try {
@@ -144,6 +148,31 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
     setZoom((z) => clampZoom(z - ZOOM_STEP));
   }, []);
 
+  const zoomReset = useCallback(() => {
+    setZoom(1);
+  }, []);
+
+  useEffect(() => {
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (!e.metaKey && !e.ctrlKey) return;
+      if (e.key === "=" || e.key === "+") {
+        e.preventDefault();
+        setShowUtilityRow(true);
+        zoomIn();
+      } else if (e.key === "-") {
+        e.preventDefault();
+        setShowUtilityRow(true);
+        zoomOut();
+      } else if (e.key === "0") {
+        e.preventDefault();
+        setShowUtilityRow(true);
+        zoomReset();
+      }
+    };
+    window.addEventListener("keydown", onKeyDown);
+    return () => window.removeEventListener("keydown", onKeyDown);
+  }, [zoomIn, zoomOut, zoomReset]);
+
   const setAccent = useCallback((color: string) => setAccentState(color), []);
 
   const value = useMemo<ThemeContextValue>(
@@ -156,9 +185,12 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
       zoom,
       zoomIn,
       zoomOut,
+      zoomReset,
       zoomLabel: `${Math.round(zoom * 100)}%`,
+      showUtilityRow,
+      setShowUtilityRow,
     }),
-    [theme, setTheme, toggleTheme, accent, setAccent, zoom, zoomIn, zoomOut]
+    [theme, setTheme, toggleTheme, accent, setAccent, zoom, zoomIn, zoomOut, zoomReset, showUtilityRow, setShowUtilityRow]
   );
 
   return <ThemeContext.Provider value={value}>{children}</ThemeContext.Provider>;
