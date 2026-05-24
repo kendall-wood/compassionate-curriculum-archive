@@ -3,7 +3,7 @@ import { Toolbar } from "@/components/Toolbar";
 import { SectionTabs } from "@/components/SectionTabs";
 
 const sectionPill =
-  "inline-flex items-baseline gap-[0.375rem] px-[0.625rem] py-[0.25rem] border border-fg text-fg hover:bg-accent hover:text-black transition-colors align-baseline text-[1.875rem] leading-snug";
+  "inline-flex items-baseline gap-[0.375rem] px-[0.625rem] py-[0.25rem] border border-fg text-fg hover:bg-accent hover:text-accent-fg transition-colors align-baseline text-[1.875rem] leading-snug";
 
 export const metadata = {
   title: "Introduction — Compassionate Curriculum Archive",

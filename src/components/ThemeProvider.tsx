@@ -13,14 +13,27 @@ import {
 export type Theme = "light" | "dark";
 
 export const ACCENT_SWATCHES = [
-  "#fff75d",
-  "#FF6B6B",
-  "#FFD93D",
-  "#6BCB77",
-  "#4D96FF",
-  "#C77DFF",
-  "#FF9F1C",
+  "#FF0000",
+  "#FF7F00",
+  "#FFFF00",
+  "#00FF00",
+  "#0000FF",
+  "#7F00FF",
+  "#FF007F",
 ] as const;
+
+/** Returns #000000 or #ffffff — whichever is more legible on top of `hex`. */
+function contrastFor(hex: string): string {
+  try {
+    const r = parseInt(hex.slice(1, 3), 16) / 255;
+    const g = parseInt(hex.slice(3, 5), 16) / 255;
+    const b = parseInt(hex.slice(5, 7), 16) / 255;
+    const luminance = 0.299 * r + 0.587 * g + 0.114 * b;
+    return luminance > 0.45 ? "#000000" : "#ffffff";
+  } catch {
+    return "#000000";
+  }
+}
 
 // Continuous type-scale range. Each click of +/- moves by ZOOM_STEP within
 // [ZOOM_MIN, ZOOM_MAX]. Stored as a multiplier and applied to the root font
@@ -102,6 +115,7 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
 
   useEffect(() => {
     document.documentElement.style.setProperty("--color-accent", accent);
+    document.documentElement.style.setProperty("--color-accent-fg", contrastFor(accent));
 
     // Circular SVG cursor matching the current accent, no drop shadow.
     // Hot-spot is the centre.

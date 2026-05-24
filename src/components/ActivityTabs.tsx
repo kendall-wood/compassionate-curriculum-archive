@@ -30,8 +30,8 @@ export function ActivityTabs({
   const tabStyle = (filled: boolean) =>
     `${baseTab} ${
       filled
-        ? "text-black"
-        : "text-fg bg-bg hover:bg-accent hover:text-black"
+        ? "text-accent-fg"
+        : "text-fg bg-bg hover:bg-accent hover:text-accent-fg"
     }`;
 
   return (

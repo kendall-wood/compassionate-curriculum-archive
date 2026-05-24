@@ -10,7 +10,7 @@ export function SectionTabs({ activeId }: { activeId: string }) {
   const tabStyle = (id: string) => {
     const isActive = id === activeId;
     return {
-      className: `${base} ${isActive ? "border-fg text-black" : "border-fg text-fg bg-bg hover:bg-accent hover:text-black"}`,
+      className: `${base} ${isActive ? "border-fg text-accent-fg" : "border-fg text-fg bg-bg hover:bg-accent hover:text-accent-fg"}`,
       style: isActive ? { background: "var(--color-accent)" } : undefined,
     };
   };

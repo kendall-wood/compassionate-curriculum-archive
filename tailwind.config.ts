@@ -13,6 +13,7 @@ const config: Config = {
         bg: "var(--color-bg)",
         fg: "var(--color-fg)",
         accent: "var(--color-accent)",
+        "accent-fg": "var(--color-accent-fg)",
         active: "var(--color-active)",
       },
       fontFamily: {

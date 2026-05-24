@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { ACCENT_SWATCHES, useTheme } from "./ThemeProvider";
-import { LeafIcon, MoonIcon, SunIcon } from "./icons";
+import { MoonIcon, SunIcon } from "./icons";
 
 type ToolbarProps = {
   showBack?: boolean;
@@ -17,7 +17,7 @@ type ToolbarProps = {
 // levels looks clean. `whitespace-nowrap` is intentionally absent — buttons
 // should reflow inside their flex containers when type is scaled up.
 const navBtn =
-  "inline-flex items-center justify-center px-[0.625rem] py-[0.375rem] border border-fg text-fg bg-bg text-[1.25rem] tracking-[-0.02em] leading-[1.2] hover:bg-accent hover:text-black transition-colors";
+  "inline-flex items-center justify-center px-[0.625rem] py-[0.375rem] border border-fg text-fg bg-bg text-[1.25rem] tracking-[-0.02em] leading-[1.2] hover:bg-accent hover:text-accent-fg transition-colors";
 
 const utilBtn =
   "inline-flex items-center justify-center px-[0.625rem] py-[0.375rem] border border-fg text-fg bg-bg text-[1.25rem] tracking-[-0.02em] leading-[1.2]";
@@ -99,17 +99,6 @@ export function Toolbar({ showBack = false, backHref = "/" }: ToolbarProps) {
             </span>
           </button>
 
-          <span
-            className="inline-flex items-center justify-center px-[0.625rem] py-[0.375rem] border text-black"
-            style={{
-              background: "var(--color-active)",
-              borderColor: "var(--color-bg)",
-            }}
-            aria-label="Active accent indicator"
-          >
-            <LeafIcon className="size-[1.1rem]" />
-          </span>
-
           <button
             type="button"
             onClick={zoomOut}
@@ -155,6 +144,22 @@ export function Toolbar({ showBack = false, backHref = "/" }: ToolbarProps) {
                 />
               );
             })}
+
+            {/* Monochrome swatch — sets accent to black in light mode, white in dark */}
+            <button
+              type="button"
+              onClick={() => setAccent(theme === "dark" ? "#ffffff" : "#000000")}
+              aria-label="Use monochrome accent"
+              className="size-[1.1875rem] inline-block border border-fg shrink-0"
+              style={{
+                borderRadius: "9999px",
+                background: "linear-gradient(to right, #000000 50%, #ffffff 50%)",
+                boxShadow:
+                  accent === (theme === "dark" ? "#ffffff" : "#000000")
+                    ? "0 0 0 2px var(--color-fg) inset"
+                    : undefined,
+              }}
+            />
 
             {/* Custom color picker — uses a native <input type="color"> styled
                 as a circular rainbow chip so it sits visually with the

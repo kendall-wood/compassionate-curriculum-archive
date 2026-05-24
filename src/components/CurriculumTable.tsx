@@ -128,9 +128,9 @@ function ActivityLine({
   const [ltHover, setLtHover] = useState(false);
   const [actHover, setActHover] = useState(false);
 
-  const ltActive = isFirst && ltHover;
+  const ltActive = isFirst && (ltHover || lActive);
   const actHoverClass = actHover
-    ? "bg-accent text-black px-[0.375rem] py-[0.125rem]"
+    ? "bg-accent text-accent-fg px-[0.375rem] py-[0.125rem]"
     : "px-[0.375rem] py-[0.125rem]";
 
   const onLtEnter = isFirst ? () => setLtHover(true) : undefined;
@@ -150,7 +150,7 @@ function ActivityLine({
           <Link href={lessonHref} tabIndex={-1} aria-hidden="true">
             <p
               className={`font-bold ${TYPE} inline-block px-[0.375rem] py-[0.125rem] transition-colors duration-100 ${
-                lActive ? "bg-accent text-black" : ""
+                lActive ? "bg-accent text-accent-fg" : ""
               }`}
             >
               {lesson.label}
@@ -165,7 +165,7 @@ function ActivityLine({
           <Link href={lessonHref} aria-label={`Open lesson: ${lesson.title}`}>
             <p className={`${TYPE} py-[0.125rem] max-w-[438px]`}>
               <span
-                className={`${ltActive ? "bg-accent text-black" : ""} px-[0.375rem] py-[0.125rem] transition-colors duration-100`}
+                className={`${ltActive ? "bg-accent text-accent-fg" : ""} px-[0.375rem] py-[0.125rem] transition-colors duration-100`}
                 style={{
                   boxDecorationBreak: "clone",
                   WebkitBoxDecorationBreak: "clone",
