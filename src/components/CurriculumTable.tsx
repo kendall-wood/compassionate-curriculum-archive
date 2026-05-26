@@ -5,7 +5,7 @@ import { useState, useCallback } from "react";
 import type { Activity, Lesson } from "@/data/types";
 
 const headerCell =
-  "text-[1.25rem] tracking-[-0.02em] leading-none";
+  "text-[1.25rem] tracking-[-0.02em] leading-none pl-[0.375rem]";
 
 // PRD column offsets at 1440 design width: Lesson 0 / Title 234 / Activities 704 / Links 1173.
 // Title column flexes (1fr) so the table fills the available width on screens wider
@@ -18,8 +18,8 @@ const headerCell =
 // UI is rem-based. When the type-scale slider grows the type, titles re-wrap inside
 // the fixed columns instead of pushing the table sideways – that's the explicit
 // "wrap" overflow behavior the design wants for this table.
-const GRID_COLS = "234px minmax(470px, 1fr) 469px 203px";
-const SUB_ROW_COLS = "234px minmax(470px, 1fr) 469px";
+const GRID_COLS = "234px minmax(560px, 1fr) 469px 203px";
+const SUB_ROW_COLS = "234px minmax(560px, 1fr) 469px";
 
 export function CurriculumTable({
   sectionId,
@@ -37,16 +37,16 @@ export function CurriculumTable({
         aria-label="Curriculum"
       >
         <div className="contents" role="row">
-          <div role="columnheader" className="pl-[0.375rem]">
+          <div role="columnheader">
             <span className={headerCell}>Lesson</span>
           </div>
-          <div role="columnheader" className="pl-[0.375rem]">
+          <div role="columnheader">
             <span className={headerCell}>Title</span>
           </div>
           <div role="columnheader">
             <span className={headerCell}>Activities</span>
           </div>
-          <div role="columnheader" className="pl-[0.375rem]">
+          <div role="columnheader">
             <span className={headerCell}>Links &amp; Images</span>
           </div>
         </div>
@@ -129,7 +129,9 @@ function ActivityLine({
   const [actHover, setActHover] = useState(false);
 
   const ltActive = isFirst && (ltHover || lActive);
-  const actHoverClass = actHover ? "bg-accent text-accent-fg" : "";
+  const actHoverClass = actHover
+    ? "bg-accent text-accent-fg px-[0.375rem] py-[0.125rem]"
+    : "px-[0.375rem] py-[0.125rem]";
 
   const onLtEnter = isFirst ? () => setLtHover(true) : undefined;
   const onLtLeave = isFirst ? () => setLtHover(false) : undefined;
@@ -161,7 +163,7 @@ function ActivityLine({
       <div onMouseEnter={onLtEnter} onMouseLeave={onLtLeave}>
         {isFirst ? (
           <Link href={lessonHref} aria-label={`Open lesson: ${lesson.title}`}>
-            <p className={`${TYPE} py-[0.125rem] max-w-[438px]`}>
+            <p className={`${TYPE} py-[0.125rem] max-w-[528px]`}>
               <span
                 className={`${ltActive ? "bg-accent text-accent-fg" : ""} px-[0.375rem] py-[0.125rem] transition-colors duration-100`}
                 style={{
@@ -182,12 +184,20 @@ function ActivityLine({
         onMouseLeave={() => setActHover(false)}
       >
         <Link href={activityHref} aria-label={`${activity.label}: ${activity.title}`}>
-          <div
-            className={`inline-flex items-baseline gap-[0.75rem] py-[0.125rem] max-w-[383px] ${TYPE} ${actHoverClass} transition-colors duration-100`}
+          <p
+            className={`${TYPE} py-[0.125rem] max-w-[383px]`}
+            style={{ paddingLeft: "2.25rem", textIndent: "-2.25rem" }}
           >
-            <span className="w-[1.5rem] shrink-0 font-bold">{activity.label}</span>
-            <span>{activity.title}</span>
-          </div>
+            <span
+              className={`inline ${actHoverClass} transition-colors duration-100`}
+              style={{
+                boxDecorationBreak: "clone",
+                WebkitBoxDecorationBreak: "clone",
+              }}
+            >
+              <span className="inline-block w-[1.5rem] mr-[0.75rem]">{activity.label}</span>{activity.title}
+            </span>
+          </p>
         </Link>
       </div>
     </div>

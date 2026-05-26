@@ -38,9 +38,11 @@ function contrastFor(hex: string): string {
 // Continuous type-scale range. Each click of +/- moves by ZOOM_STEP within
 // [ZOOM_MIN, ZOOM_MAX]. Stored as a multiplier and applied to the root font
 // size so every rem-based dimension grows or shrinks together.
-const ZOOM_MIN = 0.8;
-const ZOOM_MAX = 2.0;
+// ZOOM_DEFAULT is the "100%" reference — the label is shown relative to it.
+const ZOOM_MIN = 0.5;
+const ZOOM_MAX = 2.5;
 const ZOOM_STEP = 0.1;
+const ZOOM_DEFAULT = 1.5;
 
 function clampZoom(z: number): number {
   if (Number.isNaN(z)) return 1;
@@ -74,7 +76,7 @@ const STORAGE_KEYS = {
 
 export function ThemeProvider({ children }: { children: ReactNode }) {
   const [theme, setThemeState] = useState<Theme>("light");
-  const [zoom, setZoom] = useState<number>(1);
+  const [zoom, setZoom] = useState<number>(ZOOM_DEFAULT);
   const [accent, setAccentState] = useState<string>("#fff75d");
   const [showUtilityRow, setShowUtilityRow] = useState(false);
 
@@ -149,7 +151,7 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
   }, []);
 
   const zoomReset = useCallback(() => {
-    setZoom(1);
+    setZoom(ZOOM_DEFAULT);
   }, []);
 
   useEffect(() => {
@@ -186,7 +188,7 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
       zoomIn,
       zoomOut,
       zoomReset,
-      zoomLabel: `${Math.round(zoom * 100)}%`,
+      zoomLabel: `${Math.round((zoom / ZOOM_DEFAULT) * 100)}%`,
       showUtilityRow,
       setShowUtilityRow,
     }),
