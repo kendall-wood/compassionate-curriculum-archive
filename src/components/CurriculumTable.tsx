@@ -37,16 +37,16 @@ export function CurriculumTable({
         aria-label="Curriculum"
       >
         <div className="contents" role="row">
-          <div role="columnheader">
+          <div role="columnheader" className="pl-[0.375rem]">
             <span className={headerCell}>Lesson</span>
           </div>
-          <div role="columnheader">
+          <div role="columnheader" className="pl-[0.375rem]">
             <span className={headerCell}>Title</span>
           </div>
           <div role="columnheader">
             <span className={headerCell}>Activities</span>
           </div>
-          <div role="columnheader">
+          <div role="columnheader" className="pl-[0.375rem]">
             <span className={headerCell}>Links &amp; Images</span>
           </div>
         </div>
@@ -129,9 +129,7 @@ function ActivityLine({
   const [actHover, setActHover] = useState(false);
 
   const ltActive = isFirst && (ltHover || lActive);
-  const actHoverClass = actHover
-    ? "bg-accent text-accent-fg px-[0.375rem] py-[0.125rem]"
-    : "px-[0.375rem] py-[0.125rem]";
+  const actHoverClass = actHover ? "bg-accent text-accent-fg" : "";
 
   const onLtEnter = isFirst ? () => setLtHover(true) : undefined;
   const onLtLeave = isFirst ? () => setLtHover(false) : undefined;
@@ -184,17 +182,12 @@ function ActivityLine({
         onMouseLeave={() => setActHover(false)}
       >
         <Link href={activityHref} aria-label={`${activity.label}: ${activity.title}`}>
-          <p className={`${TYPE} py-[0.125rem] max-w-[383px]`}>
-            <span
-              className={`inline ${actHoverClass} transition-colors duration-100`}
-              style={{
-                boxDecorationBreak: "clone",
-                WebkitBoxDecorationBreak: "clone",
-              }}
-            >
-              <span className="inline-block w-[1.5rem] mr-[2.25rem]">{activity.label}</span>{activity.title}
-            </span>
-          </p>
+          <div
+            className={`inline-flex items-baseline gap-[0.75rem] py-[0.125rem] max-w-[383px] ${TYPE} ${actHoverClass} transition-colors duration-100`}
+          >
+            <span className="w-[1.5rem] shrink-0 font-bold">{activity.label}</span>
+            <span>{activity.title}</span>
+          </div>
         </Link>
       </div>
     </div>
