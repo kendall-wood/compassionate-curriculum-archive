@@ -1,10 +1,10 @@
 "use client";
 
-import Link from "next/link";
-import { useRouter } from "next/navigation";
+import { Link, useRouter } from "@/i18n/routing";
 
 import { ACCENT_SWATCHES, useTheme } from "./ThemeProvider";
 import { MoonIcon, SunIcon } from "./icons";
+import { LanguageSwitcher } from "./LanguageSwitcher";
 
 type ToolbarProps = {
   showBack?: boolean;
@@ -78,6 +78,8 @@ export function Toolbar({ showBack = false, backHref = "/" }: ToolbarProps) {
           id="cc-utility-row"
           className="flex gap-[0.5rem] items-center justify-end w-full flex-wrap"
         >
+          <LanguageSwitcher />
+
           <button
             type="button"
             onClick={toggleTheme}

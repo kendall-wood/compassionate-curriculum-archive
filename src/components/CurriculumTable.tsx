@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 import { useState, useCallback } from "react";
 import type { Activity, Lesson } from "@/data/types";
 import { sections } from "@/data/curriculum";

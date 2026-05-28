@@ -1,6 +1,7 @@
-import Link from "next/link";
 import { notFound } from "next/navigation";
+import { setRequestLocale } from "next-intl/server";
 import { sections, getSection, getLesson, getActivity } from "@/data/curriculum";
+import { Link, routing } from "@/i18n/routing";
 import { Toolbar } from "@/components/Toolbar";
 import { ActivityTabs } from "@/components/ActivityTabs";
 import {
@@ -9,39 +10,57 @@ import {
 } from "@/components/ActivityBlock";
 
 export function generateStaticParams() {
-  return sections.flatMap((s) =>
-    s.lessons.flatMap((l) =>
-      l.activities.map((a) => ({
-        section: s.id,
-        lesson: l.id,
-        activity: a.id,
-      }))
+  return routing.locales.flatMap((locale) =>
+    sections.flatMap((s) =>
+      s.lessons.flatMap((l) =>
+        l.activities.map((a) => ({
+          locale,
+          section: s.id,
+          lesson: l.id,
+          activity: a.id,
+        }))
+      )
     )
   );
 }
 
-export function generateMetadata({
+export async function generateMetadata({
   params,
 }: {
-  params: { section: string; lesson: string; activity: string };
+  params: Promise<{
+    locale: string;
+    section: string;
+    lesson: string;
+    activity: string;
+  }>;
 }) {
-  const activity = getActivity(params.section, params.lesson, params.activity);
-  const lesson = getLesson(params.section, params.lesson);
-  if (!activity || !lesson)
+  const { section, lesson, activity: activityId } = await params;
+  const a = getActivity(section, lesson, activityId);
+  const l = getLesson(section, lesson);
+  if (!a || !l)
     return { title: "Activity — Compassionate Curriculum Archive" };
   return {
-    title: `${activity.title} — ${lesson.title} — Compassionate Curriculum Archive`,
+    title: `${a.title} — ${l.title} — Compassionate Curriculum Archive`,
   };
 }
 
-export default function ActivityPage({
+export default async function ActivityPage({
   params,
 }: {
-  params: { section: string; lesson: string; activity: string };
+  params: Promise<{
+    locale: string;
+    section: string;
+    lesson: string;
+    activity: string;
+  }>;
 }) {
-  const section = getSection(params.section);
-  const lesson = getLesson(params.section, params.lesson);
-  const activity = getActivity(params.section, params.lesson, params.activity);
+  const { locale, section: sectionId, lesson: lessonId, activity: activityId } =
+    await params;
+  setRequestLocale(locale);
+
+  const section = getSection(sectionId);
+  const lesson = getLesson(sectionId, lessonId);
+  const activity = getActivity(sectionId, lessonId, activityId);
   if (!section || !lesson || !activity) return notFound();
 
   const hasImage = activity.blocks.some((b) => b.kind === "image");

@@ -1,0 +1,5 @@
+{
+  "_meta": {
+    "comment": "Source catalog. UI strings will be extracted into this file in Phase 2; the translation script reads from here and writes the other locale files."
+  }
+}

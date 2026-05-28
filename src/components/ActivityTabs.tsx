@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 import type { Activity } from "@/data/types";
 
 const baseTab =

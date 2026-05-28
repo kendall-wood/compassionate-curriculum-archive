@@ -1,4 +1,5 @@
-import Link from "next/link";
+import { setRequestLocale } from "next-intl/server";
+import { Link } from "@/i18n/routing";
 import { Toolbar } from "@/components/Toolbar";
 import { SectionTabs } from "@/components/SectionTabs";
 
@@ -11,7 +12,14 @@ export const metadata = {
     "A Practice of Hope. The Compassionate Curriculum is a participatory framework for learning, reflection, and collective growth.",
 };
 
-export default function IntroPage() {
+export default async function IntroPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+
   return (
     <div className="cc-page bg-bg text-fg min-h-screen pl-[2rem] pr-[2rem] pt-[1.6875rem] pb-[5rem]">
       <div className="flex flex-col gap-[2.25rem] w-full">

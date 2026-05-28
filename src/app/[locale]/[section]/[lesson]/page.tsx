@@ -1,35 +1,43 @@
 import { notFound } from "next/navigation";
+import { setRequestLocale } from "next-intl/server";
 import { sections, getSection, getLesson } from "@/data/curriculum";
+import { routing } from "@/i18n/routing";
 import { Toolbar } from "@/components/Toolbar";
 import { LessonHero } from "@/components/LessonHero";
 import { ActivityTabs } from "@/components/ActivityTabs";
 import { FacilitatorBlock } from "@/components/ActivityBlock";
 
 export function generateStaticParams() {
-  return sections.flatMap((s) =>
-    s.lessons.map((l) => ({ section: s.id, lesson: l.id }))
+  return routing.locales.flatMap((locale) =>
+    sections.flatMap((s) =>
+      s.lessons.map((l) => ({ locale, section: s.id, lesson: l.id }))
+    )
   );
 }
 
-export function generateMetadata({
+export async function generateMetadata({
   params,
 }: {
-  params: { section: string; lesson: string };
+  params: Promise<{ locale: string; section: string; lesson: string }>;
 }) {
-  const lesson = getLesson(params.section, params.lesson);
+  const { section, lesson: lessonId } = await params;
+  const lesson = getLesson(section, lessonId);
   if (!lesson) return { title: "Lesson — Compassionate Curriculum Archive" };
   return {
     title: `${lesson.title} — Compassionate Curriculum Archive`,
   };
 }
 
-export default function LessonPage({
+export default async function LessonPage({
   params,
 }: {
-  params: { section: string; lesson: string };
+  params: Promise<{ locale: string; section: string; lesson: string }>;
 }) {
-  const section = getSection(params.section);
-  const lesson = getLesson(params.section, params.lesson);
+  const { locale, section: sectionId, lesson: lessonId } = await params;
+  setRequestLocale(locale);
+
+  const section = getSection(sectionId);
+  const lesson = getLesson(sectionId, lessonId);
   if (!section || !lesson) return notFound();
 
   return (

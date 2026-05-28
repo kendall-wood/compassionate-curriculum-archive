@@ -1,15 +1,24 @@
 import { notFound } from "next/navigation";
+import { setRequestLocale } from "next-intl/server";
 import { sections, getSection } from "@/data/curriculum";
+import { routing } from "@/i18n/routing";
 import { Toolbar } from "@/components/Toolbar";
 import { SectionTabs } from "@/components/SectionTabs";
 import { CurriculumTable } from "@/components/CurriculumTable";
 
 export function generateStaticParams() {
-  return sections.map((s) => ({ section: s.id }));
+  return routing.locales.flatMap((locale) =>
+    sections.map((s) => ({ locale, section: s.id }))
+  );
 }
 
-export function generateMetadata({ params }: { params: { section: string } }) {
-  const section = getSection(params.section);
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string; section: string }>;
+}) {
+  const { section: sectionId } = await params;
+  const section = getSection(sectionId);
   if (!section) return { title: "Compassionate Curriculum Archive" };
   return {
     title: `${section.label} — Compassionate Curriculum Archive`,
@@ -17,12 +26,15 @@ export function generateMetadata({ params }: { params: { section: string } }) {
   };
 }
 
-export default function SectionPage({
+export default async function SectionPage({
   params,
 }: {
-  params: { section: string };
+  params: Promise<{ locale: string; section: string }>;
 }) {
-  const section = getSection(params.section);
+  const { locale, section: sectionId } = await params;
+  setRequestLocale(locale);
+
+  const section = getSection(sectionId);
   if (!section) return notFound();
 
   return (

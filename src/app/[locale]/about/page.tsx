@@ -1,10 +1,18 @@
+import { setRequestLocale } from "next-intl/server";
 import { Toolbar } from "@/components/Toolbar";
 
 export const metadata = {
   title: "About — Compassionate Curriculum Archive",
 };
 
-export default function AboutPage() {
+export default async function AboutPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+
   return (
     <div className="cc-page bg-bg text-fg min-h-screen pl-[2rem] pr-[2rem] pt-[1.6875rem] pb-[5rem]">
       <div className="flex flex-col gap-[2.25rem] w-full">

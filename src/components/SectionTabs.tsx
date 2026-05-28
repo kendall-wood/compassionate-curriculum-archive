@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 import { sections } from "@/data/curriculum";
 
 export function SectionTabs({ activeId }: { activeId: string }) {
