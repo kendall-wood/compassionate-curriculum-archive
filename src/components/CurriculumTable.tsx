@@ -63,14 +63,13 @@ export function CurriculumTable({
           <div role="columnheader">
             <span className={headerCell}>{t("activities")}</span>
           </div>
-          {/* Right-aligned + padding-inline-end so the header sits flush
-              with the right edge of the 203px column, lining up with the
-              thumbnails directly below it (the images also fill the
-              column edge-to-edge). No wrapping span — text-end requires
-              the displayed element to span the cell's full width. */}
+          {/* Flush with the left edge of the 203px column so the header
+              starts where the thumbnails directly below it start (the
+              images fill the column edge-to-edge). No inner span; the
+              text styles sit on the columnheader cell itself. */}
           <div
             role="columnheader"
-            className="text-[1.25rem] tracking-[-0.02em] leading-none text-end pe-[0.375rem]"
+            className="text-[1.25rem] tracking-[-0.02em] leading-none"
           >
             {t("linksAndImages")}
           </div>
