@@ -3,7 +3,7 @@
 import { useLocale, useTranslations } from "next-intl";
 import { useTransition } from "react";
 import { usePathname, useRouter } from "@/i18n/routing";
-import { LOCALES } from "@/i18n/locales";
+import { READY_LOCALES } from "@/i18n/locales";
 
 // A plain <select> rather than a custom popover so screen readers and
 // keyboard users get the native experience for free in 30 languages.
@@ -31,7 +31,7 @@ export function LanguageSwitcher() {
         }}
         className="bg-transparent text-fg outline-none text-[1.25rem] tracking-[-0.02em] leading-[1.2]"
       >
-        {LOCALES.map((l) => (
+        {READY_LOCALES.map((l) => (
           <option key={l.code} value={l.code}>
             {l.nativeName}
           </option>

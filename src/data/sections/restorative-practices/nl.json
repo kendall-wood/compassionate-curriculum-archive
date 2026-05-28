@@ -1,0 +1,688 @@
+{
+  "id": "restorative-practices",
+  "label": "II. Herstelgerichte praktijken",
+  "title": "Herstelgerichte praktijken",
+  "overview": "Deze sectie introduceert herstelgerichte praktijk als een participatieve en relationele vorm van leren. Het richt zich op mondelinge verhalen, luisteren, gezamenlijk schrijverschap en collectieve verantwoordelijkheid. De praktijken in deze sectie helpen deelnemers vertrouwen op te bouwen, na te denken over hun ervaringen en meer empathische manieren van samenzijn te ontwikkelen.",
+  "lessons": [
+    {
+      "id": "entering-the-circle",
+      "label": "L1",
+      "title": "De cirkel binnengaan",
+      "sectionId": "restorative-practices",
+      "facilitatorBlocks": [
+        {
+          "kind": "p",
+          "text": "Deze activiteit introduceert deelnemers aan herstelgerichte praktijk en de basisonderdelen van cirkelwerk. Cirkels zijn de voornaamste herstelgerichte praktijk die in dit curriculum wordt gebruikt. Zoals Kay Pranis en Carolyn Boyes-Watson beschrijven in Circle Forward, werken ze het beste wanneer groepen beginnen met elkaar leren kennen, gedeelde waarden vaststellen en vertrouwen opbouwen voordat ze diepere discussies aangaan. Cirkels kunnen voor veel doeleinden worden gebruikt, waaronder genezing, rouw, ondersteuning, conflictoplossing, reïntegratie en viering."
+        },
+        {
+          "kind": "p",
+          "text": "Een sprekend voorwerp is een object dat in de cirkel wordt doorgegeven en aangeeft wie spreekt en herinnert anderen om actief te luisteren; het stelt ook elke deelnemer in staat om te passen. Een mantel is een doek of centrale ruimte waar betekenisvolle objecten kunnen worden geplaatst om de cirkel als opzettelijk en onderscheidend te markeren. Een landverkenning is één manier om de histories, volkeren en lopende erfenissen te benoemen die de plek waar een cirkel plaatsvindt, vormgeven."
+        },
+        {
+          "kind": "p",
+          "text": "Zet de ruimte in een cirkel in, indien mogelijk, met voldoende ruimte tussen bijdragen zodat deelnemers elkaar duidelijk kunnen zien. Wees vooraf aandachtig voor toegankelijkheidsbehoeften. Houd papier en pen in de buurt voor notities of vervolgwaarnemingen, en zorg dat je een groot vel papier of een ezel hebt als je van plan bent gemeenschapsafspraken op te nemen."
+        },
+        {
+          "kind": "p",
+          "bold": true,
+          "text": "Een cirkel volgt meestal de volgende reeks:"
+        },
+        {
+          "kind": "ul",
+          "items": [
+            "welkom en doel",
+            "opening of ijsbreker en waar van toepassing, landverkenning",
+            "gemeenschapsafspraken",
+            "check-in",
+            "discussieronden",
+            "check-out en sluiting"
+          ]
+        }
+      ],
+      "activities": [
+        {
+          "id": "a1",
+          "label": "A1",
+          "title": "Welkom, opening en gemeenschapsafspraken",
+          "blocks": [
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Welkom en doel:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "de cirkelbewaarder stelt zichzelf en het sprekende voorwerp voor;",
+                "als deelnemers nieuw zijn voor herstelgerichte praktijk, legt de cirkelbewaarder uit wat hun rol is en hoe het sprekende voorwerp wordt gebruikt;",
+                "als je een mantel gebruikt, leg uit wat het is en waarom de objecten belangrijk zijn."
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Opening en ijsbreker"
+            },
+            {
+              "kind": "p",
+              "text": "Begin met een eenvoudige inleidende vraag om deelnemers te helpen de ruimte in te gaan en te verwerken. Sommige vragen kunnen meer vertrouwen en openheid vereisen, dus niet iedereen zal voor elke groep geschikt zijn. Voorbeelden:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Als je één superkracht kon hebben, wat zou het zijn?",
+                "Wie zijn je helden en waarom?",
+                "Eén doel voor je tijd in deze workshop is...",
+                "Iets wat je niet over mij zou weten door naar me te kijken is...",
+                "Eén aspect van mijn identiteit dat belangrijk voelt om in de cirkel mee te nemen is..."
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Gemeenschapsafspraken"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "De cirkelbewaarder, die het sprekende voorwerp vasthoudt, nodigt deelnemers uit om te zeggen wat ze nodig hebben om zich op hun gemak te voelen om open en eerlijk in de cirkel te spreken.",
+                "Voorbeeldaanleiding: Welke afspraken zijn belangrijk voor jou om ervoor te zorgen dat jij persoonlijk je braver voelt bij het open en eerlijk spreken in deze cirkel?",
+                "Het sprekende voorwerp wordt naar links doorgegeven, zodat elke deelnemer de gelegenheid heeft om iets toe te voegen of te passen.",
+                "Noteer antwoorden en bezoek ze zo nodig opnieuw. Sommige cirkelbewaarders kunnen deelnemers uitnodigen om de definitieve afspraken te ondertekenen."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a2",
+          "label": "A2",
+          "title": "Check-in en discussieronden",
+          "blocks": [
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Check-in"
+            },
+            {
+              "kind": "p",
+              "text": "Na de welkom en afspraken, doe je een eenvoudige check-inronde verbonden aan het thema van de dag. Voorbeelden kunnen zijn: \"hoe gaat het vandaag met je, op een schaal van 1-10, en waarom?\""
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Discussieronden"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Mogen alleen plaatsvinden nadat deelnemers hebben ingecheckt, het doel van de cirkel begrijpen en weten wie aanwezig is.",
+                "Vragen moeten open-ended, opzettelijk en verbonden met persoonlijke ervaring zijn.",
+                "Controleer altijd na een ronde en geef het sprekende voorwerp opnieuw door voor het geval iemand die aanvankelijk passeerde, toch iets wil zeggen."
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Voor het herstellen van relaties:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Wie denk je dat door deze situatie is getroffen, en op welke specifieke manieren zijn ze beïnvloed?",
+                "Wat was het moeilijkste deel van deze ervaring voor je persoonlijk?",
+                "Wat moet er nu gebeuren om de zaken zo goed mogelijk voor iedereen betrokken te maken?"
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Voor organisatorische verandering en verwerking van overgangen:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Welke zorgen hou je vast met betrekking tot onze aanstaande verschuiving? Wat zijn je angsten?",
+                "Wat is één praktische hulpbron of ondersteuning die je nodig hebt om deze verandering succesvol te navigeren?"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a3",
+          "label": "A3",
+          "title": "De cirkel sluiten",
+          "blocks": [
+            {
+              "kind": "p",
+              "text": "Sluit af met een ronde reacties op reflectieve aanleidingen die deelnemers helpen de cirkel met zorg en voornemen te verlaten."
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Mogelijke aanleidingen:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Wat neem je mee van vandaag?",
+                "Hoe zul je vandaag zelfzorg praktiseren?",
+                "Wat is een verbintenis die je bereid bent vandaag te doen op basis van onze cirkel vandaag?"
+              ]
+            },
+            {
+              "kind": "p",
+              "text": "Na de sluitingsronde kan de cirkelbewaarder een korte grondingsoefen leiden, zoals ademen, beweging, een gedicht, een lied of een call-and-response."
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Optioneel vervolgwerk: Sprekende voorwerpen"
+            },
+            {
+              "kind": "p",
+              "text": "Na de tweede cirkel, zodra deelnemers meer vertrouwdheid met elkaar hebben opgebouwd, kan de cirkelbewaarder hen uitnodigen om een object van persoonlijke betekenis mee te nemen als een sprekend voorwerp en, als zij dat wensen, delen waarom het voor hen betekenisvol is. In digitale cirkels kunnen het sprekende voorwerp en de mantel symbolisch in plaats van fysiek zijn, maar dezelfde principes gelden nog steeds."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reauthoring-circles",
+      "label": "L2",
+      "title": "Circkels voor herschrijving",
+      "sectionId": "restorative-practices",
+      "facilitatorBlocks": [
+        {
+          "kind": "p",
+          "text": "Herschrijving is een manier om te begrijpen hoe de verhalen die we over onszelf vertellen, worden gevormd door grotere sociale krachten, waaronder instellingen, cultuur en machtssystemen. De term werd voor het eerst ontwikkeld door Michael White en David Epston (1990) als onderdeel van Narratieve Therapie. In dit curriculum is herschrijving geen therapie. Het is een gemeenschappelijke praktijk die mensen helpt na te denken over hoe dominante mythen over ras, klasse, geslacht, handicap, criminalisering en thuishoort identiteit vormen, en hoe die mythen kunnen worden betwist."
+        },
+        {
+          "kind": "p",
+          "text": "Herschrijvingspraktijk zoekt naar wat soms probleem-verzadigde narratieven worden genoemd: verhalen waarin een persoon wordt gedefinieerd door tegenspoed, stigma of een enkele ervaring. Herschrijving vraagt: wat anders is waar? Welke sterke punten, waarden, kennis en inzicht zijn al aanwezig naast tegenspoed, stigma of een enkel definiërend verhaal? Het weigert het enige verhaal en maakt ruimte voor een volledigere rekening."
+        },
+        {
+          "kind": "p",
+          "bold": true,
+          "text": "Een herschrijvingscirkel is een gestructureerd gesprek met drie rollen:"
+        },
+        {
+          "kind": "ul",
+          "items": [
+            "verteller: één persoon deelt een verhaal, uitdaging of vraag",
+            "getuigen: de groep luistert en weerspiegelt krachten, waarden en mogelijkheden",
+            "cirkelbewaarder: de persoon die de structuur vasthoudt en het proces ondersteunt"
+          ]
+        },
+        {
+          "kind": "p",
+          "text": "Het doel is niet om te oordelen, op te lossen of advies te geven. Het is om samen te luisteren naar wat belangrijk is, wat is overleefd en wat is geleerd."
+        }
+      ],
+      "activities": [
+        {
+          "id": "a1",
+          "label": "A1",
+          "title": "Krachtige vragen",
+          "blocks": [
+            {
+              "kind": "p",
+              "text": "Voordat je begint, vraagt de cirkelbewaarder een vrijwilliger verteller die bereid is een uitdaging, vraag of moment van groei te delen, en controleert met hen om zeker te zijn van toestemming. Introduceer het proces duidelijk: één persoon zal delen, anderen zullen luisteren en weerspiegelen wat ze horen, de groep luistert naar sterkte en wat belangrijk is, geen advies wordt gegeven."
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Voorbeelden van goede vragen:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Wat heb je op dat moment over jezelf opgemerkt?",
+                "Wat zegt dit je over wat belangrijk voor je is?",
+                "Wat kostte het je om daardoor heen te gaan?",
+                "Wat had je op dat moment nodig?",
+                "Wat zou je kunnen helpen om hier anders over na te denken?"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a2",
+          "label": "A2",
+          "title": "Getuigenis",
+          "blocks": [
+            {
+              "kind": "p",
+              "text": "Getuigenis betekent luisteren naar veerkracht, capaciteit erkennen en kennis, en deze weerspiegelen. Het doel is niet om op te lossen, maar om te benoemen wat al aanwezig is."
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Voorbeelden van getuigenis:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Wat ik hoor is dat je...",
+                "Je bleef doorgaan ondanks...",
+                "Ik zie de strategieën die je hebt ontwikkeld om met dat om te gaan...",
+                "Het lijkt erop dat zorg, waardigheid of billijkheid echt belangrijk voor je zijn",
+                "Ik hoor een diepe toewijding aan...",
+                "Je hebt iets belangrijks geleerd door die ervaring",
+                "Wat ik hoor is een verhaal over hoe je zorgde, je verzette of onderweg leerde"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a3",
+          "label": "A3",
+          "title": "Proces en sluitende reflectie",
+          "blocks": [
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Proces"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "De cirkelbewaarder roept de opening van de cirkel bijeen.",
+                "De verteller deelt terwijl hij het sprekende voorwerp vasthoudt.",
+                "De groep pauzeert.",
+                "Het sprekende voorwerp wordt in de cirkel doorgegeven. Getuigen weerspiegelen wat ze hebben gehoord.",
+                "Wanneer het sprekende voorwerp terugkeert bij de verteller, vraag je om reflectie."
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Sluitende reflectie aanleidingen:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Wat heb je gehoord?",
+                "Wat voelde waar?",
+                "Wat verraste je?",
+                "Wat wil je meenemen?",
+                "Wat viel je op?",
+                "Wat voelde mogelijk in dit proces?",
+                "Waar zou je dit kunnen gebruiken in je eigen werk?",
+                "Welke ondersteuning zou je helpen om je zelfverzekerder te voelen bij het faciliteren ervan?"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sharing-our-stories",
+      "label": "L3",
+      "title": "Onze verhalen delen",
+      "sectionId": "restorative-practices",
+      "facilitatorBlocks": [
+        {
+          "kind": "p",
+          "text": "Deze activiteit kan beginnen als journaalhouden, in of tussen sessies, en later overgaan naar cirkeldeling. De taak is om \"je verhaal\" te schrijven."
+        },
+        {
+          "kind": "p",
+          "text": "Afhankelijk van de groepsgrootte kan deze activiteit zich over meerdere sessies ontplooien. Het kan helpen als één van de cirkelbewaarders eerst deelt om de activiteit te modelleren, of als enkele deelnemers van tevoren zijn voorbereid, om te zien of zij vroeg comfortabel zouden kunnen delen. Deelnemers moeten altijd de mogelijkheid hebben om te passen. Zorg voor pauzes tussen verhalen. Deze cirkels kunnen intens zijn, en pauzes helpen de groep aanwezig voor elkaar te blijven."
+        }
+      ],
+      "activities": [
+        {
+          "id": "a1",
+          "label": "A1",
+          "title": "Journaalaanleidingen",
+          "blocks": [
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Aanleidingen:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Wat is je naam?",
+                "Waar woon je? Heb je daar altijd gewoond?",
+                "Waar ben je opgegroeid?",
+                "Welke herinneringen uit je kindertijd blijven bij je?",
+                "Met wie woon je?",
+                "Heb je broers of zussen? Hoe is je relatie met hen?",
+                "Hoe is je relatie met je ouders of voogden?",
+                "Wat voor moeilijkheden ben je tegengekomen? Welke obstakels heb je overwonnen?",
+                "Welke prestaties ben je trots op?",
+                "Hoe ben je tot dit werk gekomen?",
+                "Waarom is dit werk belangrijk voor je?",
+                "Hoe zul je activeren wat je leert?",
+                "Wat zijn je hartstochten en lange termijn doelen?"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "land-ancestor-acknowledgement",
+      "label": "L4",
+      "title": "Land- en voorouderverkenning",
+      "sectionId": "restorative-practices",
+      "facilitatorBlocks": [
+        {
+          "kind": "p",
+          "text": "Deze activiteit nodigt deelnemers uit om na te denken over de histories, plaatsen, voorouders en afstammingslijnen die de ruimte waarin ze zijn vormen. Het is gebaseerd op bronnen van Native Land Digital om verder te gaan dan performatieve of transactionele kaders."
+        },
+        {
+          "kind": "p",
+          "text": "Onderzoek voordat u deze activiteit faciliteert, van wie het land waarop de cirkel plaatsvindt, wie daar in het verleden leefde en wie daar nu leeft. Dit kan formeel onderzoek en gesprekken met gemeenschapsleden vereisen."
+        },
+        {
+          "kind": "p",
+          "text": "Dit kan een moeilijke activiteit zijn. Deelnemers kunnen adoptiefkinderen zijn, kennen hun histories misschien niet, of kunnen trauma dragen met betrekking tot familie, slavernij, kolonisatie, migratie of verplaatsing. Ga langzaam. Maak pauzes in."
+        }
+      ],
+      "activities": [
+        {
+          "id": "a1",
+          "label": "A1",
+          "title": "Reflectieaanleidingen",
+          "blocks": [
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Mogelijke aanleidingen"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Wie zijn de voorouders en volkeren die we moeten waarderen terwijl we samenkomen?",
+                "Wat is je migratieverhaal?",
+                "Wie zijn je ouderlingen, levend en overgegaan, en hoe zijn zij aanwezig in jou?"
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Vervolgopties"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "schrijf je eigen landverkenning",
+                "deel het in cirkel",
+                "ontwikkel een gezamenlijke verkenning in kleine groepen of als hele groep"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a2",
+          "label": "A2",
+          "title": "Voorbeeldverkenning",
+          "blocks": [
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Voorbeeld uit Lenapehoking (NJ, oostelijk PA, zuidoostelijk NY):"
+            },
+            {
+              "kind": "p",
+              "text": "\"Ik wil beginnen met een erkenning dat we op het niet-afgestaan grondgebied van het Lenape-volk verblijven. Ik wil de Lenape-voorouders en huidige en toekomstige generaties op dit thuisland, evenals in de gehele Lenape-diaspora, erkennen en mijn respect betonen. Ik wil deze erkenning ook uitbreiden naar alle Inheemse volkeren die nu en in de toekomst deze Lenape-thuislanden, Lenapehoking, hun thuis noemen. Deze erkenning is een verbintenis om de lopende erfenissen van koloniaal settlement, racisme, massaal opsluiting en het gevangenisindustrieel complex aan te pakken.\""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "circle-questions",
+      "label": "L5",
+      "title": "Cirkelvragen en luisterpraktijken",
+      "sectionId": "restorative-practices",
+      "facilitatorBlocks": [
+        {
+          "kind": "p",
+          "text": "Bronmateriaal omvat Mediators Beyond Borders en The Art of Powerful Questions van Eric E. Vogt, Juanita Brown en David Isaacs. In de cirkelpraktijk worden vragen aanleidingen genoemd en zorgvuldig in volgorde gezet, gaande van vragen met lage kwetsbaarheid (om veiligheid op te bouwen) naar vragen met hoge kwetsbaarheid (om het kernonderwerp aan te pakken) en eindigen met reflectie."
+        },
+        {
+          "kind": "p",
+          "bold": true,
+          "text": "Snelle facilitatortips voor rondevragen"
+        },
+        {
+          "kind": "ul",
+          "items": [
+            "Houd ze open-ended: vermijd vragen die met een simpel \"ja\" of \"nee\" kunnen worden beantwoord. Gebruik Wat, Hoe of Kun je beschrijven... in plaats van Waarom.",
+            "Model de aanleiding: als facilitator is het vaak handig om eerst op de vraag antwoord te geven als je hem introduceert.",
+            "Passen is altijd een optie: herinner deelnemers eraan dat wanneer het sprekende voorwerp naar hen komt, ze kunnen kiezen om te passen, het in stilte vast te houden of te spreken."
+          ]
+        }
+      ],
+      "activities": [
+        {
+          "id": "a1",
+          "label": "A1",
+          "title": "Opening- en verdiepingsvragen",
+          "blocks": [
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Openingsvragen — Zeg je naam en..."
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "deel iets wat je hoopt te ervaren of te leren terwijl je hier bent",
+                "deel iets wat je blij zou maken dat je hebt gekozen deel te nemen",
+                "zeg wat je tot deze onderzoek trekt",
+                "noem iets wat je hebt achtergelaten om hier vandaag te zijn"
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Verdiepingsvragen"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Wat is het hart van deze kwestie voor jou?",
+                "Welke hopen, angsten, zorgen of onvervulde behoeften zijn voor jou aanwezig rond deze kwestie?",
+                "Welke dilemma's of kansen zie je?"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a2",
+          "label": "A2",
+          "title": "Verwerkings-, vooruitbewegings- en sluitingsvragen",
+          "blocks": [
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Verwerkingsvragen"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Wat wordt hier vorm?",
+                "Wat hoor je onder de verscheidenheid aan meningen die worden uitgesproken?",
+                "Wat had echte betekenis voor jou in wat je hoorde?",
+                "Is er iets wat we niet duidelijk zien?"
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Vooruitbewegende vragen"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Wat zou kunnen gebeuren dat je zich volledig in dit werk betrokken zou voelen?",
+                "Wat is mogelijk hier, en wie geeft om?",
+                "Welke vervolgstappen zou je graag individueel of gezamenlijk willen nemen?",
+                "Hoe kunnen we elkaar ondersteunen bij het nemen van die stappen?",
+                "Welke zaadje zouden we samen kunnen planten dat het meeste verschil voor de toekomst van deze situatie zou kunnen maken?"
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Sluitingsvragen"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Wat neem je mee uit deze cirkel?",
+                "Wat heb je bijgedragen, of wilde je hebben bijgedragen?",
+                "Welke vervolgstappen hoop je te nemen?",
+                "Welke vragen hoop je dat deze groep vervolgens aanpakt?",
+                "Welke ondersteuning heb je nodig, of wil je aanbieden, als je weggaat?"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a3",
+          "label": "A3",
+          "title": "Vaardigheden voor actief luisteren",
+          "blocks": [
+            {
+              "kind": "ul",
+              "items": [
+                "Lichaamstaal: behoud een open lichaamstaal en aandacht. Handhaaf oogcontact waar passend, kijk naar de spreker, zorg voor een ontspannen houding en vermijd multitasking.",
+                "Volgen: geef de spreker ruimte om te spreken zonder onderbreking. Dit betekent het verminderen van onnodige vragen, het tolereren van stilte en het laten ontplooien van een gedachte.",
+                "Parafraseren en weerspiegelen: vat samen wat je hoorde, inclusief zowel inhoud als gevoel. Bijvoorbeeld: \"Wat ik hoor is...\"",
+                "Stel open-ended vragen: die reflectie uitnodigen in plaats van ja/nee-antwoorden.",
+                "Validatie: ga ervan uit dat wat ook wordt gedeeld, hoe duidelijk of onvolmaakt ook, voortkomt uit iets echts in de ervaring van de spreker."
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Een mindful luisteractiviteit:"
+            },
+            {
+              "kind": "p",
+              "text": "Sluit je ogen en: let op hoeveel geluiden je rond je kunt horen en in je; merk beoordelingen op die ontstaan zonder je eraan vast te hechten; concentreer je op het geluid, de stroom en het ritme van je ademhaling; doe een somatische inventarisatie, bewegend door het lichaam en ontspannend elk deel."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "grounding-activities",
+      "label": "L6",
+      "title": "Grondingsoefeningen",
+      "sectionId": "restorative-practices",
+      "facilitatorBlocks": [
+        {
+          "kind": "p",
+          "text": "Grondingsoefeningen zijn technieken ontworpen om je snel weg te trekken van angst, paniek of flashbacks door jezelf opnieuw te verbinden met het huidige moment en je fysieke omgeving. Ze kunnen onderdeel uitmaken van het stellen van bedoelingen voor een workshop evenals contact maken met groepsleden."
+        }
+      ],
+      "activities": [
+        {
+          "id": "a1",
+          "label": "A1",
+          "title": "Verbinding met het land",
+          "blocks": [
+            {
+              "kind": "p",
+              "text": "Het tempo is hier belangrijk. Zorg voor de beweging voor zowel het zitten als ademen. De facilitator zegt: \"Vind een plaats waar je comfortabel zit of kunt zitten.\""
+            },
+            {
+              "kind": "p",
+              "text": "\"Als je je daar goed bij voelt, sluit dan je ogen. Als je dat niet wilt, zoek dan gewoon een plaats voor je uit waar je zachtjes kunt focussen. Neem nu vier diepe adems. Voel je borst rijzen en dalen terwijl je de lucht inneemt en uitblaast. Elke keer dat je inadeemt, stel je voor dat je een kalm, vredig gevoel inneemt. Terwijl je uitadeemt, laat alle stress je lichaam verlaten. Laat je schouders ontspannen en versoepelen. Laat je ogen en gezicht ontspannen en versoepelen. Laat alle stress je hele lichaam verlaten. Voel de verbinding met onze voorouders, de heiligheid van de ruimte en de verbinding met het land.\""
+            }
+          ]
+        },
+        {
+          "id": "a2",
+          "label": "A2",
+          "title": "Sensoriële bewustzijn (5-4-3-2-1)",
+          "blocks": [
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Doel: snelle herstelling van hersenen"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "5: Kijk naar 5 dingen die je om je heen kunt zien (bijv. een stoel, een plant, de hemel).",
+                "4: Concentreer je op 4 dingen die je kunt aanraken (bijv. je haar, het bureau, de vloer).",
+                "3: Luister naar 3 dingen die je kunt horen (bijv. verkeer, vogels, je adem).",
+                "2: Identificeer 2 dingen die je kunt ruiken (bijv. zeep, lucht, voedsel).",
+                "1: Let op 1 ding dat je kunt proeven (bijv. tandpasta, koffie)."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a3",
+          "label": "A3",
+          "title": "Fysieke en tactiele grounding",
+          "blocks": [
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Doel: Bewustzijn van je lichaam en de verbinding ervan met de omgeving"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Duw je hakken in: concentreer je op je voeten tegen de grond en merk het gewicht op.",
+                "Temperatuurverandering: laat koud of warm water over je handen stromen.",
+                "Spanned/ontspannen: spann je vuisten, houd 5-10 seconden vast, ontspan en voel de ontspanning.",
+                "Draag een kalmerend object: draag een klein steentje, stof of sieraad in je zak met je mee om aan te raken.",
+                "Strekken: strek je armen en benen uit om gevoelens van spanning en ontspanning te voelen.",
+                "Vlinder tikken: tik zachtjes op je borst of schouders met je handen, afwisselend zijden."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a4",
+          "label": "A4",
+          "title": "Meditatie met liefdevolle vriendelijkheid",
+          "blocks": [
+            {
+              "kind": "p",
+              "text": "Meditatie met liefdevolle vriendelijkheid (ook bekend als Metta) is een mindfulness praktijk ontworpen om compassie, warmte en goede wil te cultiveren. Plaats een hand op je hart als je emotioneel verzet voelt. Er is geen goede manier om te voelen — simpelweg iemand goed toe te wensen draagt dezelfde mentale voordelen."
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Jezelf"
+            },
+            {
+              "kind": "p",
+              "text": "\"Mag ik gelukkig zijn. Mag ik gezond zijn. Mag ik veilig zijn. Mag ik met gemak leven.\""
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Een geliefde"
+            },
+            {
+              "kind": "p",
+              "text": "\"Mag jij gelukkig zijn. Mag jij gezond zijn. Mag jij veilig zijn. Mag je met gemak leven.\""
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Alle wezens"
+            },
+            {
+              "kind": "p",
+              "text": "\"Mag alle wezens overal gelukkig, gezond en vrij zijn.\""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

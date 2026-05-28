@@ -1,0 +1,463 @@
+{
+  "id": "beloved-community",
+  "label": "I. Geliefde Gemeenschap",
+  "title": "Geliefde Gemeenschap",
+  "overview": "Deze sectie onderzoekt hoe mensen zichzelf leren kennen, gemeenschap vinden, taal voor pijn en genezing ontwikkelen, en beter begrijpen wat voor historisch trauma anderen en jezelf dragen. Het is gebaseerd op het idee dat persoonlijk welzijn en collectieve bevrijding diep met elkaar verbonden zijn. De sectie begint met zelfbezinning en breidt zich uit naar relaties, emotionele vaardigheid en historisch begrip.",
+  "lessons": [
+    {
+      "id": "identity",
+      "label": "L1",
+      "title": "Identiteit: Onszelf beter leren kennen",
+      "sectionId": "beloved-community",
+      "heroImage": "/images/l1-hero.png",
+      "thumbnail": "/images/l1-thumb.png",
+      "facilitatorBlocks": [
+        {
+          "kind": "p",
+          "bold": true,
+          "text": "\"Geliefde gemeenschap wordt niet gevormd door het uitwissen van verschillen, maar door het erkennen ervan, doordat ieder van ons de identiteiten en culturele erfenissen die we dragen en die bepalen hoe we in de wereld leven, omarmt.\" (bell hooks)"
+        },
+        {
+          "kind": "p",
+          "text": "Identiteitswerk moet beginnen met zelfbezinning. Er zijn echte verschillen tussen groepen mensen, en we hebben het recht om deze te onderzoeken. Maar we moeten met onszelf beginnen omdat onze identiteiten anderen en onze omgeving beïnvloeden. Deelnemers zullen waarschijnlijker goed nadenken over de identiteiten van anderen als ze eerst de hunne hebben overwogen. Het aanmoedigen van reflectief zelfgesprek is essentieel voor zelfkennis en cruciaal voor welzijn. Het doel is niet om tot een vaste definitie van jezelf te komen, maar om identiteit als gelaagd, relationeel en veranderlijk te zien. Deze sectie kan ook gebruikt worden om intersectionaliteit in te voeren als een manier om te begrijpen hoe verschillende aspecten van identiteit met elkaar interageren en hoe deze interacties je ervaring vormen."
+        },
+        {
+          "kind": "p",
+          "bold": true,
+          "text": "'Identiteit is zó'n fundamenteel deel van het succesvol mens-zijn dat vaak gezegd wordt dat je niks kunt doen totdat je weet wie je bent. Als sociale wezens, betekent het weten wie we zijn ook dat we weten tot welke groep we behoren, welke kenmerken, waarden of overtuigingen we met anderen delen, welke anderen en waarom' (Hirsch 2018:21)."
+        },
+        {
+          "kind": "p",
+          "bold": true,
+          "text": "'De sleutel tot welzijn is jezelf begrijpen en aandacht besteden aan je identiteit, omdat het een enorme invloed heeft op onze ervaringen' (Cousins 2019:41)."
+        },
+        {
+          "kind": "p",
+          "text": "'De gewoonte om jezelf regelmatig in te checken is een krachtig middel voor zelfzorg en zelf-voeding wanneer de maatschappij dagelijks complexe uitdagingen biedt. Net als elke gewoonte vergt het oefening, volharding en geduld om nieuw ontdekte bewustwording in te bedden en dit in ons dagelijks leven door te voeren; maar als je kunt beginnen met het creëren van mogelijkheden voor een positieve identiteit, dan investeer je in je welzijn en levenstevredenheid op een manier die onmetelijk is' (Cousin 2019:41)."
+        }
+      ],
+      "activities": [
+        {
+          "id": "a1",
+          "label": "A1",
+          "title": "Intersectionele mindfulness ontwikkelen",
+          "blocks": [
+            {
+              "kind": "image",
+              "src": "/images/l1-a1.png",
+              "alt": "Handen die een pols vasthouden als gebaar van zorg",
+              "width": 672,
+              "height": 376
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Begin met het bespreken van je eigen identiteit als begeleider. Model openheid, complexiteit en zelfbewustzijn. Nodig deelnemers dan uit om na te denken over vragen van Susan Cousins (2019:41):"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Hoe zou je je identiteit beschrijven?",
+                "Wie ben je?",
+                "Welke aspecten van je identiteit voelen het belangrijkst voor je?",
+                "Wie of wat heeft je begrip van jezelf vorm gegeven?",
+                "Wie of wat heeft je begrip van andere identiteiten vorm gegeven?",
+                "Hoe voel je je over de identiteiten die je draagt?",
+                "Hoe zou je jezelf in raciale termen beschrijven, en hoe voel je je over dat deel van je identiteit?",
+                "Als je je voorstelt dat je door de wereld gaat met een andere raciale of culturele identiteit, wat zou kunnen veranderen? Wat zou verloren kunnen gaan? Wat, zo ja, zou zich anders kunnen voelen?"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a2",
+          "label": "A2",
+          "title": "Intersectionaliteit als praktijk",
+          "blocks": [
+            {
+              "kind": "p",
+              "text": "Introduceer intersectionaliteit als een manier om te begrijpen hoe machtssystemen de ervaring van mensen beïnvloeden. Dit kan worden ondersteund door korte videomateriaal, discussie of diagrammen die laten zien hoe privileges en onderdrukking kunnen overlappen."
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Professor Kimberle Crenshaw (2018) https://youtu.be/ViDtnfQ9FHc — die de term intersectionaliteit bedacht, waarmee we kunnen onderzoeken hoe ervaringen worden beïnvloed door verschillende concurrerende identiteiten en hoe deze mensen in de maatschappij uitsluiten (Bhopal, 2018:47).",
+                "Tasneem Chopra (2023) 'The pursuit of intersectional feminism' https://youtu.be/h4Us1dCRfFI"
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Mogelijke discussie-aanzetten:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Hoe beïnvloeden verschillende delen van je identiteit elkaar?",
+                "Waar ervaar je privilege?",
+                "Waar ervaar je uitsluiting of discriminatie?",
+                "Hoe helpt intersectionaliteit ons om onze eigen leven en dat van anderen te begrijpen?"
+              ]
+            },
+            {
+              "kind": "p",
+              "text": "Voor verdere kritiek, overweeg dit diagram van de snijdende assen van privilege, dominatie en onderdrukking van Kathryn Pauly Morgan (1996), dat helpt uit te leggen hoe mensen anders in relatie tot macht worden gepositioneerd. We bestaan allemaal op een as van onderdrukking en dominatie. Sommige posities gaan gepaard met meer toegang, erkenning en voordeel, terwijl anderen door discriminatie en uitsluiting worden bepaald. Deze posities zijn niet vast — onze identiteiten snijden elkaar en verschuiven in verschillende contexten, waardoor complexe, gelaagde ervaringen ontstaan. Het begrijpen hiervan helpt ons meer bewust te worden van zowel onze eigen positie als de ongelijke omstandigheden die anderen kunnen navigeren."
+            }
+          ]
+        },
+        {
+          "id": "a3",
+          "label": "A3",
+          "title": "De aard van vooroordeel",
+          "blocks": [
+            {
+              "kind": "p",
+              "text": "Introduceer het idee dat iedereen vooroordelen heeft, inclusief onbewuste vooroordelen en affiniteitvooroordelen. Nodig deelnemers uit om na te denken over hoe mensen vaak aangetrokken worden tot degenen die vertrouwd voelen, en hoe dit perceptie en gedrag beïnvloedt."
+            },
+            {
+              "kind": "p",
+              "text": "Kijk de video van Dr Jennifer Eberhardt voor inzichten over onbewust vooroordeel uit haar boek, Biased: Uncovering the hidden prejudice that shapes what we see, think and do. https://www.youtube.com/watch?v=-ri1IFCqGjQ"
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Mogelijke aanzetten:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Wat voor soorten vooroordelen zie je in het dagelijks leven?",
+                "Hoe vlakken vooroordelen en stereotypen mensen af tot één verhaal?",
+                "Wat zijn de risico's van het laten staan van één verhaal voor een hele groep?"
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Achtergrond"
+            },
+            {
+              "kind": "p",
+              "text": "Onbewust vooroordeel is simpelweg onze onbedoelde voorkeur. Vooroordeel wordt vaak in minder dan een tiende van een seconde bepaald, veel sneller dan we een afbeelding kunnen verwerken. Mensen associëren vooroordeel vaak met racistisch vooroordeel, hoewel vooroordeel veel vormen aanneemt. Affiniteitvooroordeel betekent dat we degenen voorkeur geven die op ons lijken. Het voelt warm en fijn wanneer we mensen hebben die onze gedachten, angsten en achtergrond bevestigen. We geven ook voorkeur aan degenen die dezelfde opleiding, carrièreachtergrond, accent, etniciteit enzovoort hebben. Als je een hersenen hebt, heb je vooroordeel."
+            }
+          ]
+        },
+        {
+          "id": "a4",
+          "label": "A4",
+          "title": "Maatschappelijke identiteitswiel",
+          "blocks": [
+            {
+              "kind": "p",
+              "text": "Op basis van het maatschappelijke identiteitswiel stellen deelnemers hun identiteiten in kaart en overwegen de onderstaande vragen."
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Welke identiteiten denk je het meest over?",
+                "Welke identiteiten denk je het minst over?",
+                "Welke van je eigen identiteiten zou je graag beter willen begrijpen?",
+                "Welke identiteiten hebben het sterkste effect op hoe je jezelf percepeert?",
+                "Welke identiteiten hebben het sterkste effect op hoe anderen jou percipiëren?"
+              ]
+            },
+            {
+              "kind": "p",
+              "text": "Alternatieve versie: Download een blanco versie en laat de groep hun eigen wiel voor discussie creëren. Meer informatie is beschikbaar in de [MIT Open Learning Library](https://openlearning.mit.edu/)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "finding-your-people",
+      "label": "L2",
+      "title": "Je mensen vinden, je groep vinden",
+      "sectionId": "beloved-community",
+      "heroImage": "/images/l2-thumb.png",
+      "thumbnail": "/images/l2-thumb.png",
+      "facilitatorBlocks": [
+        {
+          "kind": "p",
+          "text": "Deze les richt zich op gemeenschap, samenhang en de kracht van relaties. Het vraagt hoe mensen steun vinden, vertrouwen opbouwen en vormen van collectieve zorg creëren. Het is gebaseerd op tradities van collectivisme, wederzijdse steun en radicale genezing."
+        },
+        {
+          "kind": "p",
+          "text": "Het gaat erom alle systemen van onderdrukking te begrijpen die ons welzijn beïnvloeden. Een geneesmiddel hiervoor is het vinden van je crew, je mensen. Zwarte vrouwen hebben altijd collectieven gebouwd, van de Combahee River Collective tot de Liverpool Black Sisters tot The Goddess Projects. Daarom moedigen we je aan om manieren te vinden om op een manier te overleven, lachen, liefde hebben en te genezen die verbonden is met mensen, want er is macht in mensen."
+        },
+        {
+          "kind": "p",
+          "text": "Formuleer deze les rond het idee dat het zelf niet alleen staat. Moedig deelnemers aan om gemeenschap niet alleen als iets waartoe ze behoren te zien, maar als iets wat ze helpen creëren. Gemeenschap kan worden gebouwd door gedeelde identiteit, gedeelde ervaring, gedeelde waarden of gezamenlijke inspanning."
+        }
+      ],
+      "activities": [
+        {
+          "id": "a1",
+          "label": "A1",
+          "title": "Gemeenschap in de praktijk",
+          "blocks": [
+            {
+              "kind": "p",
+              "text": "Nodig deelnemers uit om na te denken over voorbeelden van gemeenschapsvorming, vooral die gebaseerd op wederzijdse steun, collectieve zorg en grassroots-organisatie. Kijk naar deze twee video's:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Nikotris Perkins (2019), een doctoraalstudentte stedenbouw die een lezing gaf over zwarte vrouwen en gemeenschap: https://youtu.be/e78v42tz4eY",
+                "Doug Shipman, TEDX Atlanta: https://youtu.be/cP5PAul3H4E"
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Mogelijke aanzetten:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Met wie zit je in gemeenschap?",
+                "Wat betekent gemeenschap voor jou?",
+                "Wat kunnen we leren van bestaande collectieven en ondersteningsnetwerken?",
+                "Hoe maken we vrienden? Hoe doen we met andere gemeenschappen?",
+                "Kunnen we samen geliefde gemeenschap bouwen?",
+                "Hoe beginnen we gemeenschap te bouwen over verschillen heen?"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a2",
+          "label": "A2",
+          "title": "Je groep vinden!",
+          "blocks": [
+            {
+              "kind": "p",
+              "text": "Deelnemers moeten bepalen en in kaart brengen wie in hun steunnetwerk zit — hun groep."
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Mogelijke aanzetten:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Wie zit al in je groep?",
+                "Wie zijn je sleutelpeople? Welke kwaliteiten hebben ze?",
+                "Wie ontbreekt?",
+                "Welke gemeenschappen of groepen zou je willen lid van worden?",
+                "Wat maakt het moeilijk om contact op te nemen?",
+                "Welke kwaliteiten zou je moeten cultiveren om je mensen te vinden?"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "developing-your-language",
+      "label": "L3",
+      "title": "Je taal ontwikkelen",
+      "sectionId": "beloved-community",
+      "heroImage": "/images/l3-thumb.png",
+      "thumbnail": "/images/l3-thumb.png",
+      "facilitatorBlocks": [
+        {
+          "kind": "p",
+          "text": "Deze les richt zich op emotionele vaardigheid: het vermogen om emotie waar te nemen, te benoemen, te begrijpen en mee om te gaan. Het ondersteunt deelnemers bij het ontwikkelen van taal voor wat ze voelen, waar ze het voelen en hoe emoties relaties, leiderschap en genezing beïnvloeden."
+        },
+        {
+          "kind": "p",
+          "text": "Deze les kan vooral zinvol zijn voor deelnemers die zijn ontmoedigd in het uiten van kwetsbaarheid, of aan wie is geleerd dat bepaalde emoties onaanvaardbaar zijn. Moedig deelnemers aan om emoties zonder schaamte te benaderen. Het doel is niet om moeilijke gevoelens uit te bannen, maar om er meer bewust en begripvol mee samen te leven."
+        },
+        {
+          "kind": "p",
+          "bold": true,
+          "text": "Achtergrond"
+        },
+        {
+          "kind": "p",
+          "text": "Emotionele vaardigheid beschrijft de relatie die we met onze emoties hebben. Het stelt ons in staat om effectiever te luisteren en passend te reageren tijdens gespannen conversaties, opmerking wat anderen kunnen voelen en of ze out bereikt om contact te maken. Bewust zijn van onze emoties stelt ons in staat om te begrijpen waar ze vandaan komen en welke gedachten ze triggeren. Emotionele vaardigheid ontwikkelen gaat verder dan alleen emoties herkennen en benoemen — het betekent leren om er zonder het gevoel ze af te duwen mee samen te leven. Onze geliefde gemeenschappen helpen ons onze intersectionele, geleefde ervaringen bespreken en mee samen te leven."
+        }
+      ],
+      "activities": [
+        {
+          "id": "a1",
+          "label": "A1",
+          "title": "Emotionele vaardigheid",
+          "blocks": [
+            {
+              "kind": "p",
+              "text": "Introduceer emotionele vaardigheid als het vermogen om emoties op een gezonde en productieve manier waar te nemen, te benoemen en mee om te gaan."
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Kernideeën:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Emoties zijn niet zelf problematisch",
+                "Oordeel, schaamte en onderdrukking maken emoties vaak moeilijker om mee te leven",
+                "Het benoemen van emoties kan mensen helpen van reactiviteit naar reflectie te gaan",
+                "Emotionele vaardigheid ondersteunt vertrouwen, empathie en leiderschap"
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Mogelijke aanzetten:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Welke emoties vind je makkelijk om te benoemen?",
+                "Welke emoties voelen moeilijker om te erkennen?",
+                "Waar heb je geleerd welke emoties aanvaardbaar of onaanvaardbaar zijn?",
+                "Hoe tonen je emoties zich in je lichaam?",
+                "Kun je de emoties die je nu ervaart benoemen?",
+                "Wat voelen deze emoties als? Beschrijf waar en wat je voelt, en hoe deze toestand zich zonder oordeel door je lichaam ontvouwt.",
+                "Werk van boven naar beneden je lichaam af, en wees feitelijk over waar je de emotie voelt. Verzeker jezelf ervan dat alles goed is en dat je veilig bent."
+              ]
+            },
+            {
+              "kind": "p",
+              "text": "Negatieve emoties activeren vaak de primitieve hersenen. We moeten de denkende hersenen activeren, en het benoemen van wat je voelt helpt daarbij. Het helpt ons ook te focussen op wat we kunnen controleren. Bijvoorbeeld, als mijn kaakspieren gespannen zijn, moet ik ze ontspannen, en ik moet langzamer en dieper ademen."
+            }
+          ]
+        },
+        {
+          "id": "a2",
+          "label": "A2",
+          "title": "Emotiewiel",
+          "blocks": [
+            {
+              "kind": "p",
+              "text": "Overweeg het emotiewiel dat is ontwikkeld door het Black Emotional and Mental Health Collective (BEAM), een organisatie die tot doel heeft systemische barrières voor geestelijke gezondheidszorg af te breken door ledengerichte trainingen. Alleen of met een partner:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Maak een lijst van de emoties die je vaak voelt en de fysieke gevoelens die ermee gepaard gaan.",
+                "Welke emoties voelen vertrouwd?",
+                "Welke emoties verzet je je tegen?",
+                "Waar voel je bepaalde emoties in je lichaam?",
+                "Welke oordelen hecht je aan bepaalde gevoelens?",
+                "Hoe beïnvloeden deze oordelen je relaties en empathie?"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "understanding-historical-trauma",
+      "label": "L4",
+      "title": "Het begrip van historisch trauma van anderen",
+      "sectionId": "beloved-community",
+      "heroImage": "/images/l4-thumb.png",
+      "thumbnail": "/images/l4-thumb.png",
+      "facilitatorBlocks": [
+        {
+          "kind": "p",
+          "text": "Deze les introduceert historisch trauma als een collectieve en intergenerationele vorm van schade gevormd door kolonisatie, racisme, geweld en systemische onderdrukking. Het vraagt deelnemers om na te denken over hoe trauma wordt doorgegeven, hoe het het huidige leven vormt, en hoe groter bewustzijn empathie en genezing kan ondersteunen."
+        },
+        {
+          "kind": "p",
+          "text": "Historisch trauma kan moeilijk en activerend materiaal zijn. Ga langzaam. Moedig reflectie, zorg en gegronde discussie aan. Deelnemers kunnen zowel persoonlijk als geërfd trauma dragen, en kunnen op verschillende manieren reageren. Maak plaats voor complexiteit."
+        },
+        {
+          "kind": "p",
+          "bold": true,
+          "text": "Achtergrond"
+        },
+        {
+          "kind": "p",
+          "text": "Trauma kan een significant eenmalig gebeurtenis zijn of het gevolg van aanhoudende sluipende acties, microaggressies, of constant anders behandeld worden. Hartmann en Gone (2014) beschrijven historisch trauma als verschillend van gewoon psychologisch trauma gedurende het leven op vier sleutels: het is koloniaal van oorsprong, collectief in impact, cumulatief over schadelijke gebeurtenissen, en intergenerationeel in transmissie van risico en kwetsbaarheid."
+        },
+        {
+          "kind": "p",
+          "text": "Voorbeelden zijn onder meer de ervaringen van First Nation-mensen in Noord-Amerika, Aboriginal Australians en anti-Zwart racisme onder de Afrikaanse diaspora. De sporen van historisch trauma zijn vaak diep ingebakken, en veel mensen zijn zich er misschien niet eens van bewust (Mate, 2022). Dit kan tot negatieve emoties en slechte gezondheid leiden, inclusief psychosomatische ziekte. Historisch intergenerationeel trauma wordt vaak verergerd door acute chronische stress van dag tot dag, wat tot schadelijke fysieke en emotionele gevolgen leidt."
+        }
+      ],
+      "activities": [
+        {
+          "id": "a1",
+          "label": "A1",
+          "title": "Hoe ervaren mensen historisch trauma?",
+          "blocks": [
+            {
+              "kind": "p",
+              "text": "1. Kijk de video How Do People Experience Historical Trauma: https://youtu.be/sjJUQlodh0g"
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Bespreek in tweetallen de volgende vragen:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Wat zijn voorbeelden van historisch trauma die je kent?",
+                "Hoe beïnvloedt het leren over historisch trauma de manier waarop je over ras, identiteit en cultuur denkt?",
+                "Hoe wordt historisch trauma in het heden gedragen?",
+                "Wat is de relatie tussen historisch trauma en microaggressies?",
+                "Hoe kunnen culturele viering en gemeenschapssteun helpen om schade tegen te gaan?",
+                "Hoe kunt u culturele viering aanmoedigen en ondersteunen?"
+              ]
+            },
+            {
+              "kind": "p",
+              "text": "2. Kijk naar Dr Gabor Mate, video https://youtu.be/ak_nLWQ8EtY — bespreek trauma en hoe het het authentieke zelf beïnvloedt."
+            }
+          ]
+        },
+        {
+          "id": "a2",
+          "label": "A2",
+          "title": "Zelfbezinning oefenen",
+          "blocks": [
+            {
+              "kind": "ul",
+              "items": [
+                "Welke aspecten van je leven voel je goed over? (positieve kenmerken/sterktes)",
+                "Welke aspecten van je leven vullen je op? (ruimtes waarin je je verrijkt voelt)",
+                "Hoe tonen de effecten van historisch of direct trauma zich in jou? (Bepaal kwetsbaarheden).",
+                "Wat doe je om je persoonlijke/historische of direct trauma te overwinnen?"
+              ]
+            },
+            {
+              "kind": "p",
+              "text": "Actief luisteren YouTube video: https://youtu.be/Qg8PIK74KO4"
+            }
+          ]
+        },
+        {
+          "id": "a3",
+          "label": "A3",
+          "title": "Grondingsoefening",
+          "blocks": [
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Oefen het loslaten van het verleden en wees open om te ontvangen:"
+            },
+            {
+              "kind": "p",
+              "text": "Adem in, zet één voet naar voren en draai je handpalmen naar beneden; Adem uit, til je armen tot horizontale positie, laat alle spanning en negativiteit los. Adem in, draai je handpalmen naar boven en trek ze terug naar je borst, adem vrede en genezing in."
+            },
+            {
+              "kind": "p",
+              "text": "Herhaal met de andere voet naar voren. Adem pijn uit. Adem kalmte en de mogelijkheid om te genezen in."
+            },
+            {
+              "kind": "p",
+              "text": "Deze les kan concluderen met reflectie op racistisch trauma, intergenerationele overlevingsstrategieën, en de behoefte aan gemeenschap, gerechtigheid en institutionele verandering. Het raamwerk van Dr. Shelley Harrell op zes niveaus helpt de fysieke en emotionele effecten te beschrijven die kunnen volgen op blootstelling aan racisme, inclusief op racisme gebaseerde levensgebeurtenissen, vicariërend racisme, dagelijkse racistische micro-stressoren, chronische contextuele stressoren, collectieve ervaringen van racisme, en transgenerationele transmissie van trauma."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

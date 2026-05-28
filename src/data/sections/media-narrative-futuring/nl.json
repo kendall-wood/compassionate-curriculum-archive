@@ -1,0 +1,372 @@
+{
+  "id": "media-narrative-futuring",
+  "label": "III. Media, Narratief en Toekomstvisie",
+  "title": "Media, Narratief en Toekomstvisie",
+  "overview": "Dit gedeelte ondersteunt deelnemers bij het vertellen van volledigere verhalen over zichzelf, het analyseren van verhalen verteld door media, en het opbouwen van creatieve capaciteit voor toekomstvorming. Het begint met individuele reflectie, beweegt zich door embodied storytelling en visuele analyse, en eindigt met participatieve toekomstvisie.",
+  "lessons": [
+    {
+      "id": "individual-reflection",
+      "label": "L1",
+      "title": "Individuele Reflectie, Zelfportret",
+      "sectionId": "media-narrative-futuring",
+      "facilitatorBlocks": [
+        {
+          "kind": "p",
+          "text": "Deze oefeningen helpen deelnemers na te denken over identiteit, geheugen, stemming en zelfbeschrijving door middel van kleur, geluid, schrijven en beeld."
+        },
+        {
+          "kind": "p",
+          "text": "Hoe kunnen gebrek aan middelen, culturele marginalisering en de ervaring van trauma het vermogen of de bereidheid om zich voor te stellen belemmeren, of het geloof in het belang van verbeelding zelf? Dit gedeelte begint vanuit het inzicht dat dominante cultuur identiteit vaak platslaat. Mensen die gekriminaliseerd of gestereotypeerd worden, kunnen beginnen zichzelf te beschrijven door beperkende narratieven in plaats van door de volledige complexiteit van hun leven."
+        },
+        {
+          "kind": "p",
+          "text": "Verbeelding is een praktijk van hoop. Het gaat erom huidige ideeën in nieuwe mogelijke combinaties te herschikken. Voor mensen wier ervaring van keuzevrijheid beperkt is geweest, kan het begrijpelijk moeilijk zijn om te hopen dat enige vorm van toekomstige zeggenschap mogelijk zou zijn. Begin met laagdrempelige vormen van reflectie en storytelling, en bouw geleidelijk op naar mediaanalyse en toekomstvisie."
+        }
+      ],
+      "activities": [
+        {
+          "id": "a1",
+          "label": "A1",
+          "title": "Kleurenwiel",
+          "blocks": [
+            {
+              "kind": "ul",
+              "items": [
+                "Nodigen deelnemers uit om naar een afbeelding van een kleurenwiel te kijken, of zich er een voor te stellen en de associaties te beschrijven die zij met elke kleur hebben. Associaties kunnen betrekking hebben op een emotie, een herinnering of een verhaal dat zij willen vertellen.",
+                "Optioneel: maak op een groot stuk papier of whiteboard een gemeenschappelijk kleurenwiel of kleurenkaart dat naar aanvoelen van deelnemers de hele groep vertegenwoordigt. Dit kan betrekking hebben op vorm, voorkomen, kleuren naar keuze of geschreven taal, zoals gewenst."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a2",
+          "label": "A2",
+          "title": "Kleurveld Portret (naar Mark Rothko)",
+          "blocks": [
+            {
+              "kind": "ul",
+              "items": [
+                "Maak een zelfportret met behulp van een stapeling van 2-3 kleurvelden.",
+                "Deelnemers kunnen nadenken over verschillende manieren om de stapeling op te bouwen en hun ontwerpkeuzes met een partner delen.",
+                "Bijvoorbeeld: zijn de kleurvelden omgeven door een grotere achtergrond van een ander kleur? Zijn er ruimtes tussen de velden en zo ja, hoe groot zijn die?"
+              ]
+            },
+            {
+              "kind": "p",
+              "text": "Opmerking facilitator: U kunt eraan denken Mark Rothko's kleurveld schilderijen te laten zien, zowel voor als na de oefening, als onderdeel van de discussie."
+            }
+          ]
+        },
+        {
+          "id": "a3",
+          "label": "A3",
+          "title": "Leven in 3 Nummers",
+          "blocks": [
+            {
+              "kind": "ul",
+              "items": [
+                "Nodigen deelnemers uit om 3 nummers te bedenken die hun leven beschrijven.",
+                "Speel elk nummer af en besteed 1-2 minuten voor of na elk nummer om het belang ervan uit te leggen.",
+                "Maak en deel de afspeellijst.",
+                "Met toestemming, neem elke intro op, gevolgd door het nummer."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a4",
+          "label": "A4",
+          "title": "Ik kom uit Gedicht",
+          "blocks": [
+            {
+              "kind": "ul",
+              "items": [
+                "Gebruik George Ella Lyon's 'Ik kom uit' format om deelnemers te helpen geheugen en dagelijks detail in poëtische vorm om te zetten; kopieer naar blanco vellen papier als nodig. http://www.georgeellalyon.com/where.html",
+                "Deel uit en neem, met toestemming, op hoe mensen hardop lezen.",
+                "Overweeg hoe de gedichten tot verder schrijven kunnen leiden; bijv. vermeldingen van een plaats kunnen leiden tot schrijven over de herinnering aan een gebeurtenis die daar heeft plaatsgevonden; vermeldingen van muziek of voedsel kunnen leiden tot schrijven over mensen, plaatsen of gebeurtenissen in verband met die dingen."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "embodied-storytelling",
+      "label": "L2",
+      "title": "Embodied Storytelling",
+      "sectionId": "media-narrative-futuring",
+      "facilitatorBlocks": [
+        {
+          "kind": "p",
+          "text": "Deze oefeningen vertalen persoonlijke ervaring in gebaar, tableau, stem en beeld. Ze stellen deelnemers in staat om emotioneel geheugen en gedeelde interpretatie te verkennen zonder volledige openbaring te vereisen."
+        }
+      ],
+      "activities": [
+        {
+          "id": "a1",
+          "label": "A1",
+          "title": "Story Swap > Image Theater (naar Augusto Boal)",
+          "blocks": [
+            {
+              "kind": "ul",
+              "items": [
+                "In paren beschrijven deelnemers een scène of gebeurtenis uit hun leven alsof deze in de tijd bevroren was, die zij onthouden op basis van een emotionele aanwijzing.",
+                "Mogelijke prompts zijn: obstakel, hoop, ontsnapping, isolatie, stilte vinden.",
+                "Beschrijf alles wat mogelijk is op basis van sensorische herinnering: Welk seizoen was het en hoe laat op de dag? Buiten, wat waren de omliggende gebouwen of het landschap? Binnen, hoe zag het interieur eruit? Hoe klonken en roken dingen? Wat waren de kleuren en het licht?",
+                "Beschrijf relaties: was iemand anders aanwezig? Zo ja, wie waren zij, hoe waren zij met u gerelateerd en wat gebeurde er?",
+                "De luisteraar denkt na over wat zij als het hart van het verhaal zien, zijn emotionele of conceptuele kern.",
+                "Met toestemming van hun partner vertegenwoordigt de luisteraar het verhaal met een enkel bevroren gebaar.",
+                "Andere deelnemers bespreken wat zij zien. Indien de verteller dat kiest, kunnen zij details van het oorspronkelijke verhaal openbaren."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a2",
+          "label": "A2",
+          "title": "Innerlijke Monoloog",
+          "blocks": [
+            {
+              "kind": "ul",
+              "items": [
+                "Op basis van de vorige oefening plaatst de verteller anderen in een tableau (een groep mensen staand in \"bevroren beeld\") om het kernmoment van het verhaal te vertegenwoordigen.",
+                "De Verteller geeft deelnemers de minimale contextinformatie die nodig is om te begrijpen waar en wie zij zijn, bijv.: \"We zijn buiten, in een stad, in 1992. U bent een man van ongeveer 35 jaar oud.\"",
+                "Elke deelnemer stelt zich voor wat hun karakter denkt, en om de beurt spreekt die innerlijke monoloog uit."
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Optionele documentatie, met toestemming:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Fotografeer deelnemers in tableau",
+                "Neem audio van de stemmen op",
+                "Video terwijl u rond de groep loopt als deelnemers hun monoloog spreken"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a3",
+          "label": "A3",
+          "title": "Sensorische Triptiek",
+          "blocks": [
+            {
+              "kind": "ul",
+              "items": [
+                "Nodigen deelnemers uit om zich voor te stellen dat zij zich door een toekomstige ruimte bewegen die zij graag zouden willen bewonen.",
+                "Deelnemers moeten kritieke sensorische details beschrijven van zicht, geluid, geur, tast en hoe hun lichaam zich voelt terwijl het zich in relatie tot de ruimte beweegt.",
+                "Deelnemers maken drie afbeeldingen die drie belangrijke delen van het verhaal vertegenwoordigen, zoals een begin, midden en einde, 3 verschillende sensorische percepties, 3 emoties enz.",
+                "Deelnemers observeren elkaars afbeeldingen en beschrijven associaties.",
+                "Deze activiteit kan worden gecombineerd met Photovoice- of Participatieve Toekomstvisie oefeningen."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "media-analysis",
+      "label": "L3",
+      "title": "Mediaanalyse en Visueel Verhalen",
+      "sectionId": "media-narrative-futuring",
+      "facilitatorBlocks": [
+        {
+          "kind": "p",
+          "text": "Deze oefeningen helpen deelnemers te analyseren hoe verhalen over mensen in media verteld worden, en creëren visuele reacties geworteld in hun eigen ervaring."
+        }
+      ],
+      "activities": [
+        {
+          "id": "a1",
+          "label": "A1",
+          "title": "Afbeelding Herlabelen",
+          "blocks": [
+            {
+              "kind": "p",
+              "text": "Het doel van deze activiteit is om suggestieve of ambigue afbeeldingen uit populaire media op verschillende manieren te analyseren, om als prompts voor discussie te gebruiken. Het kan mediaanalyse faciliteren, om te begrijpen en critici hoe media berichten overbrengt die negatieve stereotypen ondersteunen; of om discussie van de persoonlijke ervaring van deelnemers op gang te brengen."
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Prompts voor het markeren van afbeeldingen:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Wat zie je? Analyseer kleur en vormen; domineren er enige? Zijn er patronen?",
+                "Wat is het achtergrondverhaal van deze afbeelding? Wat is gebeurd tot dit moment? Markeer eerdere stadia van het verhaal.",
+                "Wie is hier en wat doen zij?",
+                "Wat zijn de machtsverhoudingen in deze afbeelding? Markeer de relatie van mensen met andere mensen, objecten, gebouwen, landschap.",
+                "Wat is niet zichtbaar versus wat zichtbaar is? Wordt iets geïmpliceerd maar niet weergegeven?",
+                "Wie zou deze afbeelding genomen kunnen hebben, vanuit welk standpunt?",
+                "Wat zou volgende kunnen gebeuren? Markeer mogelijke toekomstige stadia van het verhaal."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a2",
+          "label": "A2",
+          "title": "Photovoice",
+          "blocks": [
+            {
+              "kind": "p",
+              "text": "Photovoice is een participatieve visuele methode waarin een groep een vraag over een onderwerp dat hun gemeenschap betreft definieert, foto's ter reactie maakt, en deze afbeeldingen gebruikt om discussie op gang te brengen. Het proces ondersteunt deelnemers bij het reflecteren op persoonlijke ervaring, het identificeren van onderwerpen die zij willen veranderen, en het verkennen van mogelijke vormen van actie."
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Proces"
+            },
+            {
+              "kind": "ol",
+              "items": [
+                "Definieer samen het probleem dat u als groep wilt aanpakken",
+                "Maak uw leidende vraag (wees persoonlijk, concentreer je op één probleem, bepaal een goed bereik)",
+                "Foto's maken — deelnemers maken afbeeldingen ter reactie op de vraag die hun perspectief uitdrukken",
+                "Bespreken met behulp van de SHMIR-methode: See (Zien), Happening (Gebeuren), Meaning (Betekenis), Issue (Probleem), Response (Antwoord)",
+                "Synthetiseren — identificeer belangrijkste thema's, patronen of gedeelde ervaringen",
+                "Verspreiden (optioneel) — zine, tentoonstelling, online, openbare presentatie",
+                "Reflecteren — wat viel op? Wat werkte of zou beter kunnen? Wat voelde betekenisvol?"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "participatory-futuring",
+      "label": "L4",
+      "title": "Participatieve Toekomstvisie en Wereldbouw",
+      "sectionId": "media-narrative-futuring",
+      "facilitatorBlocks": [
+        {
+          "kind": "p",
+          "text": "Deze oefeningen ondersteunen deelnemers bij het zich voorstellen van alternatieve toekomsten, het experimenteren met mogelijkheden, en het verbinden van toekomstvisie met huidige actie."
+        },
+        {
+          "kind": "p",
+          "bold": true,
+          "text": "Inhoud"
+        },
+        {
+          "kind": "ul",
+          "items": [
+            "Backcasting — deelnemers stellen zich gezamenlijk ontwerpen uit een werkende toekomst voor, om te zien of deze inspiratie kunnen bieden voor dingen die in het heden gebouwd worden",
+            "Wereldbouw — stelt zich de logica voor van een toekomstige samenleving waarin mogelijk verandering gemodelleerd kan worden",
+            "Toekomstskegels — faciliteert het zich voorstellen van jezelf positief bestaand in de toekomst"
+          ]
+        }
+      ],
+      "activities": [
+        {
+          "id": "a1",
+          "label": "A1",
+          "title": "Backcasting (Gezamenlijke Verbeelding)",
+          "blocks": [
+            {
+              "kind": "p",
+              "text": "Op basis van de toekomstvisieoefening Prescriptions for Just Communities ontwikkeld door Melanie Crean met Ayodamola Okunseinde, nodigt deze activiteit deelnemers uit zich een toekomst voor te stellen, ongeveer 10-15 jaar vanaf nu, waar een specifiek sociaal probleem is opgelost."
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Voorbeeldprompts:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Stel je een toekomst voor waar transities van opsluiting of militaire dienst naar burgerleven soepel verlopen.",
+                "Stel je een wereld voor zonder gevangenissen, waar gemeenschappen zowel veilig als rechtvaardig zijn."
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Voorbereiding"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "De groep besluit op een probleem dat zij wil aanpakken.",
+                "Overweeg een toekomst ~10-15 jaar vanaf nu waarin dat probleem niet meer bestaat.",
+                "Verdeel in groepen van 2-3, geef elk papier, iets om mee te tekenen, en drie kaartprompts: een Sociaal of emotioneel mentaliteit, een Onderwerp, een Ontwerpeigenschap."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a2",
+          "label": "A2",
+          "title": "Wereldbouw",
+          "blocks": [
+            {
+              "kind": "p",
+              "text": "Wereldbouw is een creatieve methode om alternatieve manieren van bestaan voor te stellen door middel van storytelling. Door een fictieve of speculatieve wereld te construeren, kunnen deelnemers verkennen hoe systemen, relaties en machtstructuren werken, en overwegen hoe zij getransformeerd zouden kunnen worden."
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Proces"
+            },
+            {
+              "kind": "ol",
+              "items": [
+                "Aardrijkskunde, Klimaat en Ecologie — stel je een wereld voor als een onderling verbonden systeem",
+                "Cultuur en Overtuigingssystemen — creëer minstens twee verschillende culturen die in deze wereld naast elkaar bestaan",
+                "Macht en Conflict — overweeg hoe macht werkt",
+                "Karakters en Perspectief — creëer minstens twee karakters in deze wereld",
+                "Ritueel en Reflectie — creëer een ritueel, traditie of gebeurtenis die een kernovertuiging onthult",
+                "Reflectie — hoe vormt uw eigen persoonlijke ervaring hoe u deze wereld hebt geconstrueerd?"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a3",
+          "label": "A3",
+          "title": "Toekomstskegels",
+          "blocks": [
+            {
+              "kind": "p",
+              "text": "Aangepast van een oefening door Ashley Jane Lewis gebaseerd op Stuart Candy's Future Cone. Deze oefening leidt deelnemers erin om zichzelf drie tot vijf jaar in de toekomst in te stellen. Met behulp van een Toekomstskegeldiagram verkennen zij wat waarschijnlijk, aannemelijk, mogelijk en wenselijk is in hun eigen toekomstige ontwikkeling."
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "De Toekomstskegel is een hulpmiddel om je meerdere mogelijke toekomsten voor te stellen:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Waarschijnlijk: Wat waarschijnlijk zal gebeuren op basis van huidige trajecten.",
+                "Aannemelijk: Wat realistisch zou kunnen gebeuren, zelfs als minder waarschijnlijk.",
+                "Mogelijk: Wat zou kunnen gebeuren, inclusief onverwachte ideeën.",
+                "Wenselijk: De meest overtuigende, betekenisvolle resultaten — uw gewenste toekomst."
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Stappen:"
+            },
+            {
+              "kind": "ol",
+              "items": [
+                "Opstellingen — teken een kleine cirkel aan de linkerkant met het label \"Jij\" of \"Nu\" en een grotere cirkel aan de rechterkant met het label van een toekomstig jaar. Verbind ze om een horizontale kegel te vormen.",
+                "Markeer het Waarschijnlijke — schrijf 2-3 dingen op die je waarschijnlijk over een paar jaar zult doen.",
+                "Stel je het Mogelijke voor — noem 8-20 \"Mogelijkheden\": gereedschappen, praktijken, media, samenwerkingen, residentieprogramma's, ambities.",
+                "Identificeer het Aannemelijke — kies 3-5 items uit de \"Mogelijkheden\" lijst die realistisch aanvoelen over de volgende 1-2 jaar.",
+                "Definieer het Wenselijke — cirkel 1-2 items uit de Aannemelijke ring die zich het meest opwindend, betekenisvol of afgestemd op uw waarden voelen."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
