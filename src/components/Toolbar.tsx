@@ -83,8 +83,6 @@ export function Toolbar({ showBack = false, backHref = "/" }: ToolbarProps) {
           id="cc-utility-row"
           className="flex gap-[0.5rem] items-center justify-end w-full flex-wrap"
         >
-          <LanguageSwitcher />
-
           <button
             type="button"
             onClick={toggleTheme}
@@ -187,6 +185,8 @@ export function Toolbar({ showBack = false, backHref = "/" }: ToolbarProps) {
               />
             </label>
           </div>
+
+          <LanguageSwitcher />
         </div>
       ) : null}
     </div>
