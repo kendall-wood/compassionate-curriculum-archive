@@ -17,7 +17,9 @@ export function LanguageSwitcher() {
 
   return (
     <label
-      className="inline-flex items-center gap-[0.5rem] border border-fg bg-bg text-fg px-[0.625rem] py-[0.375rem] text-[1.25rem] tracking-[-0.02em] leading-[1.2]"
+      // Height kept in sync with Toolbar's UTIL_H so every item in the
+      // utility row shares the same vertical rhythm.
+      className="inline-flex items-center gap-[0.5rem] border border-fg bg-bg text-fg px-[0.625rem] text-[1.25rem] tracking-[-0.02em] leading-[1.2] h-[2.375rem]"
       aria-label={t("language")}
     >
       <span className="sr-only">{t("language")}</span>
@@ -29,7 +31,7 @@ export function LanguageSwitcher() {
             router.replace(pathname, { locale: next });
           });
         }}
-        className="bg-transparent text-fg outline-none text-[1.25rem] tracking-[-0.02em] leading-[1.2]"
+        className="bg-transparent text-fg outline-none text-[1.25rem] tracking-[-0.02em] leading-[1.2] h-full"
       >
         {READY_LOCALES.map((l) => (
           <option key={l.code} value={l.code}>

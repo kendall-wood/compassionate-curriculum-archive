@@ -20,8 +20,14 @@ type ToolbarProps = {
 const navBtn =
   "inline-flex items-center justify-center px-[0.625rem] py-[0.375rem] border border-fg text-fg bg-bg text-[1.25rem] tracking-[-0.02em] leading-[1.2] hover:bg-accent hover:text-accent-fg transition-colors";
 
+// Shared height for every item in the utility (Settings & Accessibility)
+// row so the row reads as one rhythm. 2.375rem lines up with the native
+// <select> in LanguageSwitcher, which has the tallest intrinsic height
+// of any item (its inner select has user-agent padding we can't shrink).
+const UTIL_H = "h-[2.375rem]";
+
 const utilBtn =
-  "inline-flex items-center justify-center px-[0.625rem] py-[0.375rem] border border-fg text-fg bg-bg text-[1.25rem] tracking-[-0.02em] leading-[1.2]";
+  `inline-flex items-center justify-center px-[0.625rem] border border-fg text-fg bg-bg text-[1.25rem] tracking-[-0.02em] leading-[1.2] ${UTIL_H}`;
 
 export function Toolbar({ showBack = false, backHref = "/" }: ToolbarProps) {
   const router = useRouter();
@@ -121,7 +127,7 @@ export function Toolbar({ showBack = false, backHref = "/" }: ToolbarProps) {
           </button>
 
           <div
-            className="inline-flex items-center justify-center gap-[0.625rem] px-[0.625rem] py-[0.375rem] border border-fg bg-bg"
+            className={`inline-flex items-center justify-center gap-[0.625rem] px-[0.625rem] border border-fg bg-bg ${UTIL_H}`}
             role="group"
             aria-label={t("accentSwatchesLabel")}
           >
