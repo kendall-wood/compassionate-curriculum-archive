@@ -118,10 +118,10 @@ export function ActivityWithImage({
         <img
           src={heroImage.src}
           alt={heroImage.alt}
-          className="object-cover max-w-full"
+          className="object-cover max-w-full h-auto"
           style={{
             width: `${(heroImage.width ?? 672) / 16}rem`,
-            height: `${(heroImage.height ?? 376) / 16}rem`,
+            aspectRatio: `${heroImage.width ?? 672} / ${heroImage.height ?? 376}`,
           }}
         />
       ) : null}

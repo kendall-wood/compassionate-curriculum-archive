@@ -18,11 +18,14 @@ export function LessonHero({
   return (
     <div className="flex flex-col gap-[1.5rem] w-full">
       {image ? (
+        // aspect-ratio preserves the 1140×634 design ratio when the viewport
+        // is narrower than the hero's natural width, so the image always
+        // fits its frame instead of stretching tall.
         // eslint-disable-next-line @next/next/no-img-element
         <img
           src={image}
           alt={imageAlt}
-          className="w-[71.25rem] max-w-full h-[39.625rem] object-cover"
+          className="w-[71.25rem] max-w-full aspect-[1140/634] object-cover"
         />
       ) : null}
       {sectionLabel ? (

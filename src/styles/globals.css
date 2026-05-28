@@ -8,7 +8,7 @@
   --color-accent: #fff75d;
   --color-accent-fg: #000000;
   --color-active: #5dff8d;
-  --zoom: 1;
+  --zoom: 0.9;
   /* Pre-built with the default accent so no flash before ThemeProvider fires. */
   --cc-cursor: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='28' viewBox='0 0 28 28'%3E%3Ccircle cx='14' cy='14' r='14' fill='%23fff75d'/%3E%3C/svg%3E") 14 14, auto;
 }

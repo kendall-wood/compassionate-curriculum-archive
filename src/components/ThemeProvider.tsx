@@ -42,7 +42,10 @@ function contrastFor(hex: string): string {
 const ZOOM_MIN = 0.5;
 const ZOOM_MAX = 2.5;
 const ZOOM_STEP = 0.1;
-const ZOOM_DEFAULT = 1.5;
+// 0.9 is the new "100%" reference — chosen because it matches the previous
+// 60% rendering (0.9 / 1.5 = 0.6) which proved to be the most comfortable
+// default for the site's typography.
+const ZOOM_DEFAULT = 0.9;
 
 function clampZoom(z: number): number {
   if (Number.isNaN(z)) return 1;

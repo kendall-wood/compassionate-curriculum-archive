@@ -94,22 +94,28 @@ export function ContentRenderer({ blocks }: { blocks: ContentBlock[] }) {
                 {block.text}
               </h3>
             );
-          case "image":
+          case "image": {
+            const w = block.width ?? 672;
+            const h = block.height ?? 376;
             return (
+              // aspect-ratio + max-w-full keeps the image fitted to its
+              // natural ratio even when the viewport shrinks below the
+              // configured rem width.
               // eslint-disable-next-line @next/next/no-img-element
               <img
                 key={i}
                 src={block.src}
                 alt={block.alt}
-                width={block.width ?? 672}
-                height={block.height ?? 376}
-                className="object-cover max-w-full"
+                width={w}
+                height={h}
+                className="object-cover max-w-full h-auto"
                 style={{
-                  width: `${(block.width ?? 672) / 16}rem`,
-                  height: `${(block.height ?? 376) / 16}rem`,
+                  width: `${w / 16}rem`,
+                  aspectRatio: `${w} / ${h}`,
                 }}
               />
             );
+          }
           default:
             return null;
         }

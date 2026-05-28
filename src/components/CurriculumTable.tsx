@@ -69,9 +69,37 @@ function LessonRow({ sectionId, lesson }: { sectionId: string; lesson: Lesson })
 
   return (
     <>
-      <div className="col-span-4 relative" role="row">
+      {/* Activities content occupies columns 1–3 (Lesson, Title, Activities)
+          of the outer grid. Because the inner SUB_ROW_COLS use the same
+          widths (234 / 1fr / 469) as the outer first three columns, the
+          inner activity lines line up exactly with the headers above. */}
+      <div className="col-span-3 pt-[1.25rem] pb-[1.25rem]" role="row">
+        <div
+          className="flex flex-col gap-[1.25rem]"
+          onMouseEnter={onEnter}
+          onMouseLeave={onLeave}
+        >
+          {lesson.activities.map((activity, i) => (
+            <ActivityLine
+              key={activity.id}
+              sectionId={sectionId}
+              lessonHref={lessonHref}
+              lesson={lesson}
+              activity={activity}
+              isFirst={i === 0}
+              lActive={anyHover}
+            />
+          ))}
+        </div>
+      </div>
+
+      {/* Thumbnail lives in the Links & Images column as a real grid cell, so
+          the lesson row's height naturally expands to contain it instead of
+          being absolutely positioned over the next row. Empty cell when the
+          lesson has no thumbnail to keep grid auto-placement aligned. */}
+      <div className="pt-[1.25rem] pb-[1.25rem]" role="cell">
         {lesson.thumbnail ? (
-          <div className="absolute right-0 top-[33px] w-[201px] h-[112px] pointer-events-none">
+          <div className="w-[203px] aspect-[201/112]">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src={lesson.thumbnail}
@@ -80,31 +108,8 @@ function LessonRow({ sectionId, lesson }: { sectionId: string; lesson: Lesson })
             />
           </div>
         ) : null}
-
-        {/* No outer link — L#/title and each activity have their own links */}
-        <div
-          className="pt-[1.25rem] pb-[1.25rem]"
-        >
-          <div
-            className="flex flex-col gap-[1.25rem]"
-            style={{ paddingRight: "203px" }}
-            onMouseEnter={onEnter}
-            onMouseLeave={onLeave}
-          >
-            {lesson.activities.map((activity, i) => (
-              <ActivityLine
-                key={activity.id}
-                sectionId={sectionId}
-                lessonHref={lessonHref}
-                lesson={lesson}
-                activity={activity}
-                isFirst={i === 0}
-                lActive={anyHover}
-              />
-            ))}
-          </div>
-        </div>
       </div>
+
       <div className="col-span-4 border-b border-fg" />
     </>
   );
@@ -129,9 +134,6 @@ function ActivityLine({
   const [actHover, setActHover] = useState(false);
 
   const ltActive = isFirst && (ltHover || lActive);
-  const actHoverClass = actHover
-    ? "bg-accent text-accent-fg px-[0.375rem] py-[0.125rem]"
-    : "px-[0.375rem] py-[0.125rem]";
 
   const onLtEnter = isFirst ? () => setLtHover(true) : undefined;
   const onLtLeave = isFirst ? () => setLtHover(false) : undefined;
@@ -178,26 +180,34 @@ function ActivityLine({
         ) : null}
       </div>
 
-      {/* Activity — links directly to the activity page */}
+      {/* Activity — links directly to the activity page.
+          Uses a 2-col flex layout (A# label + title) so wrapped title lines
+          hang-indent under the title's first line and the hover highlight
+          hugs just the title text. The previous implementation used
+          `text-indent: -2.25rem` on the wrapping <p>, which inherited into
+          the inline-block A# label and rendered "A1" 36px to the left of
+          its own box. */}
       <div
         onMouseEnter={() => setActHover(true)}
         onMouseLeave={() => setActHover(false)}
       >
         <Link href={activityHref} aria-label={`${activity.label}: ${activity.title}`}>
-          <p
-            className={`${TYPE} py-[0.125rem] max-w-[383px]`}
-            style={{ paddingLeft: "2.25rem", textIndent: "-2.25rem" }}
-          >
-            <span
-              className={`inline ${actHoverClass} transition-colors duration-100`}
-              style={{
-                boxDecorationBreak: "clone",
-                WebkitBoxDecorationBreak: "clone",
-              }}
-            >
-              <span className="inline-block w-[1.5rem] mr-[0.75rem]">{activity.label}</span>{activity.title}
+          <div className="flex items-baseline gap-x-[0.75rem] max-w-[383px] pl-[0.375rem]">
+            <span className={`${TYPE} shrink-0 w-[1.5rem] py-[0.125rem]`}>
+              {activity.label}
             </span>
-          </p>
+            <p className={`${TYPE} py-[0.125rem] min-w-0`}>
+              <span
+                className={`${actHover ? "bg-accent text-accent-fg" : ""} px-[0.375rem] py-[0.125rem] transition-colors duration-100`}
+                style={{
+                  boxDecorationBreak: "clone",
+                  WebkitBoxDecorationBreak: "clone",
+                }}
+              >
+                {activity.title}
+              </span>
+            </p>
+          </div>
         </Link>
       </div>
     </div>
