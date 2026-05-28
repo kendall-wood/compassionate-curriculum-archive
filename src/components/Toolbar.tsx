@@ -24,7 +24,7 @@ const utilBtn =
 
 export function Toolbar({ showBack = false, backHref = "/" }: ToolbarProps) {
   const router = useRouter();
-  const { theme, toggleTheme, accent, setAccent, zoomIn, zoomOut, zoomLabel, showUtilityRow, setShowUtilityRow } =
+  const { theme, toggleTheme, accent, setAccent, mono, setMono, zoomIn, zoomOut, zoomLabel, showUtilityRow, setShowUtilityRow } =
     useTheme();
 
   return (
@@ -121,7 +121,8 @@ export function Toolbar({ showBack = false, backHref = "/" }: ToolbarProps) {
             aria-label="Accent color swatches"
           >
             {ACCENT_SWATCHES.map((color) => {
-              const isActive = accent.toLowerCase() === color.toLowerCase();
+              const isActive =
+                !mono && accent.toLowerCase() === color.toLowerCase();
               return (
                 <button
                   key={color}
@@ -141,19 +142,19 @@ export function Toolbar({ showBack = false, backHref = "/" }: ToolbarProps) {
               );
             })}
 
-            {/* Monochrome swatch — sets accent to black in light mode, white in dark */}
+            {/* Monochrome swatch — locks the accent to white-in-dark /
+                black-in-light. Unlike the colored swatches it tracks the
+                theme, so toggling dark/light flips the accent automatically. */}
             <button
               type="button"
-              onClick={() => setAccent(theme === "dark" ? "#ffffff" : "#000000")}
+              onClick={setMono}
               aria-label="Use monochrome accent"
+              aria-pressed={mono}
               className="size-[1.1875rem] inline-block border border-fg shrink-0"
               style={{
                 borderRadius: "9999px",
                 background: "linear-gradient(to right, #000000 50%, #ffffff 50%)",
-                boxShadow:
-                  accent === (theme === "dark" ? "#ffffff" : "#000000")
-                    ? "0 0 0 2px var(--color-fg) inset"
-                    : undefined,
+                boxShadow: mono ? "0 0 0 2px var(--color-fg) inset" : undefined,
               }}
             />
 

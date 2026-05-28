@@ -60,6 +60,11 @@ type ThemeContextValue = {
   toggleTheme: () => void;
   accent: string;
   setAccent: (color: string) => void;
+  /** True when the user has selected the monochrome swatch. While true, the
+   *  accent is always white in dark mode and black in light mode, and
+   *  follows the theme automatically. Picking any colored swatch clears it. */
+  mono: boolean;
+  setMono: () => void;
   zoom: number;
   zoomIn: () => void;
   zoomOut: () => void;
@@ -75,12 +80,18 @@ const STORAGE_KEYS = {
   theme: "cc-theme",
   zoom: "cc-zoom",
   accent: "cc-accent",
+  mono: "cc-mono",
 } as const;
+
+function monoAccentFor(theme: Theme): string {
+  return theme === "dark" ? "#ffffff" : "#000000";
+}
 
 export function ThemeProvider({ children }: { children: ReactNode }) {
   const [theme, setThemeState] = useState<Theme>("light");
   const [zoom, setZoom] = useState<number>(ZOOM_DEFAULT);
   const [accent, setAccentState] = useState<string>("#fff75d");
+  const [mono, setMonoState] = useState<boolean>(false);
   const [showUtilityRow, setShowUtilityRow] = useState(false);
 
   useEffect(() => {
@@ -88,12 +99,18 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
       const t = localStorage.getItem(STORAGE_KEYS.theme) as Theme | null;
       const z = localStorage.getItem(STORAGE_KEYS.zoom);
       const a = localStorage.getItem(STORAGE_KEYS.accent);
+      const m = localStorage.getItem(STORAGE_KEYS.mono);
       if (t === "dark" || t === "light") setThemeState(t);
       if (z) {
         const parsed = parseFloat(z);
         if (!Number.isNaN(parsed)) setZoom(clampZoom(parsed));
       }
-      if (a) setAccentState(a);
+      if (m === "1") {
+        setMonoState(true);
+        setAccentState(monoAccentFor(t === "dark" ? "dark" : "light"));
+      } else if (a) {
+        setAccentState(a);
+      }
     } catch {
       /* ignore */
     }
@@ -122,6 +139,16 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
     }
   }, [zoom]);
 
+  // When mono mode is on, keep accent locked to white-on-dark / black-on-light
+  // whenever the theme flips. This is what makes the monochrome swatch
+  // "follow" the theme instead of stranding the user with e.g. black text on
+  // a black background after toggling to dark mode.
+  useEffect(() => {
+    if (!mono) return;
+    const next = monoAccentFor(theme);
+    setAccentState((prev) => (prev === next ? prev : next));
+  }, [mono, theme]);
+
   useEffect(() => {
     document.documentElement.style.setProperty("--color-accent", accent);
     document.documentElement.style.setProperty("--color-accent-fg", contrastFor(accent));
@@ -138,6 +165,14 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
       /* ignore */
     }
   }, [accent]);
+
+  useEffect(() => {
+    try {
+      localStorage.setItem(STORAGE_KEYS.mono, mono ? "1" : "0");
+    } catch {
+      /* ignore */
+    }
+  }, [mono]);
 
   const setTheme = useCallback((t: Theme) => setThemeState(t), []);
   const toggleTheme = useCallback(
@@ -178,7 +213,18 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
     return () => window.removeEventListener("keydown", onKeyDown);
   }, [zoomIn, zoomOut, zoomReset]);
 
-  const setAccent = useCallback((color: string) => setAccentState(color), []);
+  // Picking a specific color always exits mono mode — the user has chosen a
+  // concrete hue, so the accent should stop tracking the theme.
+  const setAccent = useCallback((color: string) => {
+    setMonoState(false);
+    setAccentState(color);
+  }, []);
+
+  // Enter mono mode and set the accent to whatever matches the current theme.
+  const setMono = useCallback(() => {
+    setMonoState(true);
+    setAccentState(monoAccentFor(theme));
+  }, [theme]);
 
   const value = useMemo<ThemeContextValue>(
     () => ({
@@ -187,6 +233,8 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
       toggleTheme,
       accent,
       setAccent,
+      mono,
+      setMono,
       zoom,
       zoomIn,
       zoomOut,
@@ -195,7 +243,7 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
       showUtilityRow,
       setShowUtilityRow,
     }),
-    [theme, setTheme, toggleTheme, accent, setAccent, zoom, zoomIn, zoomOut, zoomReset, showUtilityRow, setShowUtilityRow]
+    [theme, setTheme, toggleTheme, accent, setAccent, mono, setMono, zoom, zoomIn, zoomOut, zoomReset, showUtilityRow, setShowUtilityRow]
   );
 
   return <ThemeContext.Provider value={value}>{children}</ThemeContext.Provider>;
