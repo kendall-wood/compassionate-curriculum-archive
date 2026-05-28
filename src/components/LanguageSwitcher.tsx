@@ -1,6 +1,6 @@
 "use client";
 
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { useTransition } from "react";
 import { usePathname, useRouter } from "@/i18n/routing";
 import { LOCALES } from "@/i18n/locales";
@@ -13,13 +13,14 @@ export function LanguageSwitcher() {
   const router = useRouter();
   const pathname = usePathname();
   const [, startTransition] = useTransition();
+  const t = useTranslations("toolbar");
 
   return (
     <label
       className="inline-flex items-center gap-[0.5rem] border border-fg bg-bg text-fg px-[0.625rem] py-[0.375rem] text-[1.25rem] tracking-[-0.02em] leading-[1.2]"
-      aria-label="Language"
+      aria-label={t("language")}
     >
-      <span className="sr-only">Language</span>
+      <span className="sr-only">{t("language")}</span>
       <select
         value={locale}
         onChange={(e) => {

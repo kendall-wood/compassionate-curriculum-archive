@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
-import { setRequestLocale } from "next-intl/server";
-import { sections, getSection, getLesson } from "@/data/curriculum";
+import { setRequestLocale, getTranslations } from "next-intl/server";
+import { sections, loadSection, loadLesson } from "@/data/curriculum";
 import { routing } from "@/i18n/routing";
 import { Toolbar } from "@/components/Toolbar";
 import { LessonHero } from "@/components/LessonHero";
@@ -20,11 +20,12 @@ export async function generateMetadata({
 }: {
   params: Promise<{ locale: string; section: string; lesson: string }>;
 }) {
-  const { section, lesson: lessonId } = await params;
-  const lesson = getLesson(section, lessonId);
-  if (!lesson) return { title: "Lesson — Compassionate Curriculum Archive" };
+  const { locale, section, lesson: lessonId } = await params;
+  const lesson = await loadLesson(section, lessonId, locale);
+  const t = await getTranslations({ locale, namespace: "site" });
+  if (!lesson) return { title: t("title") };
   return {
-    title: `${lesson.title} — Compassionate Curriculum Archive`,
+    title: `${lesson.title} — ${t("title")}`,
   };
 }
 
@@ -36,8 +37,8 @@ export default async function LessonPage({
   const { locale, section: sectionId, lesson: lessonId } = await params;
   setRequestLocale(locale);
 
-  const section = getSection(sectionId);
-  const lesson = getLesson(sectionId, lessonId);
+  const section = await loadSection(sectionId, locale);
+  const lesson = await loadLesson(sectionId, lessonId, locale);
   if (!section || !lesson) return notFound();
 
   return (

@@ -1,5 +1,6 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/routing";
 import { useState, useCallback } from "react";
 import type { Activity, Lesson } from "@/data/types";
@@ -42,6 +43,7 @@ export function CurriculumTable({
   lessons: Lesson[];
 }) {
   const offset = lessonNumberOffset(sectionId);
+  const t = useTranslations("table");
 
   return (
     <div className="w-full overflow-x-auto">
@@ -49,20 +51,20 @@ export function CurriculumTable({
         className="grid items-start"
         style={{ gridTemplateColumns: GRID_COLS, rowGap: 0 }}
         role="table"
-        aria-label="Curriculum"
+        aria-label={t("label")}
       >
         <div className="contents" role="row">
           <div role="columnheader">
-            <span className={headerCell}>Lesson</span>
+            <span className={headerCell}>{t("lesson")}</span>
           </div>
           <div role="columnheader">
-            <span className={headerCell}>Title</span>
+            <span className={headerCell}>{t("title")}</span>
           </div>
           <div role="columnheader">
-            <span className={headerCell}>Activities</span>
+            <span className={headerCell}>{t("activities")}</span>
           </div>
           <div role="columnheader">
-            <span className={headerCell}>Links &amp; Images</span>
+            <span className={headerCell}>{t("linksAndImages")}</span>
           </div>
         </div>
 
@@ -161,6 +163,7 @@ function ActivityLine({
   isFirst: boolean;
   lActive: boolean;
 }) {
+  const t = useTranslations("table");
   const [ltHover, setLtHover] = useState(false);
   const [actHover, setActHover] = useState(false);
 
@@ -195,7 +198,10 @@ function ActivityLine({
       {/* Title — links to lesson overview */}
       <div onMouseEnter={onLtEnter} onMouseLeave={onLtLeave}>
         {isFirst ? (
-          <Link href={lessonHref} aria-label={`Open lesson: ${lesson.title}`}>
+          <Link
+            href={lessonHref}
+            aria-label={t("openLesson", { title: lesson.title })}
+          >
             <p className={`${TYPE} py-[0.125rem] max-w-[528px]`}>
               <span
                 className={`${ltActive ? "bg-accent text-accent-fg" : ""} px-[0.375rem] py-[0.125rem] transition-colors duration-100`}
@@ -222,7 +228,13 @@ function ActivityLine({
         onMouseEnter={() => setActHover(true)}
         onMouseLeave={() => setActHover(false)}
       >
-        <Link href={activityHref} aria-label={`${activity.label}: ${activity.title}`}>
+        <Link
+          href={activityHref}
+          aria-label={t("activityAria", {
+            label: activity.label,
+            title: activity.title,
+          })}
+        >
           <div className="flex items-baseline gap-x-[0.75rem] max-w-[383px] pl-[0.375rem]">
             <span className={`${TYPE} shrink-0 w-[1.5rem] py-[0.125rem]`}>
               {activity.label}

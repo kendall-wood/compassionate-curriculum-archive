@@ -1,47 +1,100 @@
 import type { Section } from "./types";
-import { belovedLessons } from "./sections/beloved-community";
-import { restorativeLessons } from "./sections/restorative-practices";
-import { mediaLessons } from "./sections/media-narrative-futuring";
+import { DEFAULT_LOCALE } from "@/i18n/locales";
 
-const beloved: Section = {
-  id: "beloved-community",
-  label: "I. Beloved Community",
-  title: "Beloved Community",
-  overview:
-    "This section explores how people come to know themselves, find community, develop language for pain and healing, and better understand the historical trauma carried by others and by themselves. It is grounded in the idea that personal well being and collective liberation are deeply connected. The section begins with self reflection, then moves outward toward relationships, emotional fluency, and historical understanding.",
-  lessons: belovedLessons,
+// All section JSON files are pre-known so the bundler can statically
+// resolve them. A dynamic `import(`./sections/${id}/${locale}.json`)`
+// would also work at runtime but breaks server-side static analysis.
+// New section? Add it here (and create matching JSON files).
+//
+// English is always imported eagerly so we can fall back synchronously
+// when a non-English catalog is missing a section.
+
+import belovedEn from "./sections/beloved-community/en.json";
+import restorativeEn from "./sections/restorative-practices/en.json";
+import mediaEn from "./sections/media-narrative-futuring/en.json";
+
+const EN_SECTIONS: Record<string, Section> = {
+  "beloved-community": belovedEn as Section,
+  "restorative-practices": restorativeEn as Section,
+  "media-narrative-futuring": mediaEn as Section,
 };
 
-const restorative: Section = {
-  id: "restorative-practices",
-  label: "II. Restorative Practices",
-  title: "Restorative Practices",
-  overview:
-    "This section introduces restorative practice as a participatory and relational mode of learning. It centers oral storytelling, listening, shared authorship, and collective responsibility. The practices in this section help participants build trust, reflect on experience, and develop more compassionate ways of being together.",
-  lessons: restorativeLessons,
-};
+// Display order of sections in nav/curriculum. Locale-independent.
+export const SECTION_ORDER = [
+  "beloved-community",
+  "restorative-practices",
+  "media-narrative-futuring",
+] as const;
 
-const media: Section = {
-  id: "media-narrative-futuring",
-  label: "III. Media, Narrative, & Futuring",
-  title: "Media, Narrative & Futuring",
-  overview:
-    "This section supports participants in telling fuller stories about themselves, analyzing the stories told by the media, and building imaginative capacity for future making. It begins with individual reflection, moves through embodied storytelling and visual analysis, and ends with participatory futuring.",
-  lessons: mediaLessons,
-};
+export type SectionId = (typeof SECTION_ORDER)[number];
 
-export const sections: Section[] = [beloved, restorative, media];
-
-export function getSection(id: string): Section | undefined {
-  return sections.find((s) => s.id === id);
+// Async loader: pulls the locale-specific JSON if it exists, else falls
+// back to English. The translation script populates `<id>/<locale>.json`
+// for every locale, so in production the fallback is rarely hit.
+export async function loadSection(
+  id: string,
+  locale: string = DEFAULT_LOCALE
+): Promise<Section | undefined> {
+  if (!(id in EN_SECTIONS)) return undefined;
+  if (locale === DEFAULT_LOCALE) return EN_SECTIONS[id];
+  try {
+    const mod = await import(`./sections/${id}/${locale}.json`);
+    return mod.default as Section;
+  } catch {
+    return EN_SECTIONS[id];
+  }
 }
 
-export function getLesson(sectionId: string, lessonId: string) {
-  const s = getSection(sectionId);
+export async function loadAllSections(
+  locale: string = DEFAULT_LOCALE
+): Promise<Section[]> {
+  const loaded = await Promise.all(
+    SECTION_ORDER.map((id) => loadSection(id, locale))
+  );
+  return loaded.filter((s): s is Section => Boolean(s));
+}
+
+export async function loadLesson(
+  sectionId: string,
+  lessonId: string,
+  locale: string = DEFAULT_LOCALE
+) {
+  const s = await loadSection(sectionId, locale);
   return s?.lessons.find((l) => l.id === lessonId);
 }
 
-export function getActivity(sectionId: string, lessonId: string, activityId: string) {
-  const l = getLesson(sectionId, lessonId);
+export async function loadActivity(
+  sectionId: string,
+  lessonId: string,
+  activityId: string,
+  locale: string = DEFAULT_LOCALE
+) {
+  const l = await loadLesson(sectionId, lessonId, locale);
   return l?.activities.find((a) => a.id === activityId);
+}
+
+// --- Locale-independent metadata (for static generation, navigation) ---
+
+export const sections: Section[] = SECTION_ORDER.map(
+  (id) => EN_SECTIONS[id]
+);
+
+// Backwards-compatible sync getters (English). Used by static param
+// generators and any client-side code that just needs IDs/counts.
+export function getSection(id: string): Section | undefined {
+  return EN_SECTIONS[id];
+}
+
+export function getLesson(sectionId: string, lessonId: string) {
+  return getSection(sectionId)?.lessons.find((l) => l.id === lessonId);
+}
+
+export function getActivity(
+  sectionId: string,
+  lessonId: string,
+  activityId: string
+) {
+  return getLesson(sectionId, lessonId)?.activities.find(
+    (a) => a.id === activityId
+  );
 }

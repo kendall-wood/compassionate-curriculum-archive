@@ -1,6 +1,11 @@
 import { notFound } from "next/navigation";
-import { setRequestLocale } from "next-intl/server";
-import { sections, getSection, getLesson, getActivity } from "@/data/curriculum";
+import { setRequestLocale, getTranslations } from "next-intl/server";
+import {
+  sections,
+  loadSection,
+  loadLesson,
+  loadActivity,
+} from "@/data/curriculum";
 import { Link, routing } from "@/i18n/routing";
 import { Toolbar } from "@/components/Toolbar";
 import { ActivityTabs } from "@/components/ActivityTabs";
@@ -34,13 +39,13 @@ export async function generateMetadata({
     activity: string;
   }>;
 }) {
-  const { section, lesson, activity: activityId } = await params;
-  const a = getActivity(section, lesson, activityId);
-  const l = getLesson(section, lesson);
-  if (!a || !l)
-    return { title: "Activity — Compassionate Curriculum Archive" };
+  const { locale, section, lesson, activity: activityId } = await params;
+  const a = await loadActivity(section, lesson, activityId, locale);
+  const l = await loadLesson(section, lesson, locale);
+  const t = await getTranslations({ locale, namespace: "site" });
+  if (!a || !l) return { title: t("title") };
   return {
-    title: `${a.title} — ${l.title} — Compassionate Curriculum Archive`,
+    title: `${a.title} — ${l.title} — ${t("title")}`,
   };
 }
 
@@ -58,9 +63,9 @@ export default async function ActivityPage({
     await params;
   setRequestLocale(locale);
 
-  const section = getSection(sectionId);
-  const lesson = getLesson(sectionId, lessonId);
-  const activity = getActivity(sectionId, lessonId, activityId);
+  const section = await loadSection(sectionId, locale);
+  const lesson = await loadLesson(sectionId, lessonId, locale);
+  const activity = await loadActivity(sectionId, lessonId, activityId, locale);
   if (!section || !lesson || !activity) return notFound();
 
   const hasImage = activity.blocks.some((b) => b.kind === "image");

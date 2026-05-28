@@ -1,9 +1,20 @@
-"use client";
-
+import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/routing";
-import { sections } from "@/data/curriculum";
+import { loadAllSections } from "@/data/curriculum";
 
-export function SectionTabs({ activeId }: { activeId: string }) {
+// Server component. Loads section labels for the current locale at render
+// time so /es shows "I. Comunidad Amada" instead of falling back to the
+// English title. The list of sections (and their order) is locale-
+// independent — only the visible labels differ.
+export async function SectionTabs({
+  activeId,
+  locale,
+}: {
+  activeId: string;
+  locale: string;
+}) {
+  const t = await getTranslations({ locale });
+  const sections = await loadAllSections(locale);
   const base =
     "inline-flex items-center justify-center px-[0.625rem] py-[0.375rem] border text-[1.25rem] tracking-[-0.02em] leading-[1.2] transition-colors";
 
@@ -19,7 +30,7 @@ export function SectionTabs({ activeId }: { activeId: string }) {
     <div
       className="cc-section-tabs flex gap-[0.5rem] items-center w-full flex-wrap"
       role="tablist"
-      aria-label="Curriculum sections"
+      aria-label={t("nav.sectionsLabel")}
     >
       <Link
         href="/intro"
@@ -27,7 +38,7 @@ export function SectionTabs({ activeId }: { activeId: string }) {
         aria-selected={activeId === "intro"}
         {...tabStyle("intro")}
       >
-        Intro
+        {t("nav.intro")}
       </Link>
       {sections.map((s) => (
         <Link

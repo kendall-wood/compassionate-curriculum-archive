@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
-import { setRequestLocale } from "next-intl/server";
-import { sections, getSection } from "@/data/curriculum";
+import { setRequestLocale, getTranslations } from "next-intl/server";
+import { sections, loadSection } from "@/data/curriculum";
 import { routing } from "@/i18n/routing";
 import { Toolbar } from "@/components/Toolbar";
 import { SectionTabs } from "@/components/SectionTabs";
@@ -17,11 +17,12 @@ export async function generateMetadata({
 }: {
   params: Promise<{ locale: string; section: string }>;
 }) {
-  const { section: sectionId } = await params;
-  const section = getSection(sectionId);
+  const { locale, section: sectionId } = await params;
+  const section = await loadSection(sectionId, locale);
   if (!section) return { title: "Compassionate Curriculum Archive" };
+  const t = await getTranslations({ locale, namespace: "site" });
   return {
-    title: `${section.label} — Compassionate Curriculum Archive`,
+    title: `${section.label} — ${t("title")}`,
     description: section.overview,
   };
 }
@@ -34,8 +35,11 @@ export default async function SectionPage({
   const { locale, section: sectionId } = await params;
   setRequestLocale(locale);
 
-  const section = getSection(sectionId);
+  const section = await loadSection(sectionId, locale);
   if (!section) return notFound();
+
+  const t = await getTranslations("section");
+  const site = await getTranslations("site");
 
   return (
     <div className="cc-page bg-bg text-fg min-h-screen pl-[2rem] pr-[2rem] pt-[1.6875rem] pb-[5rem]">
@@ -43,13 +47,13 @@ export default async function SectionPage({
         <Toolbar />
 
         <h1 className="text-[4.5rem] leading-[1.05] tracking-[-0.03em] text-fg font-normal">
-          Compassionate Curriculum Archive
+          {site("title")}
         </h1>
 
-        <SectionTabs activeId={section.id} />
+        <SectionTabs activeId={section.id} locale={locale} />
 
         <h2 className="text-[1.5rem] font-bold tracking-[-0.02em] leading-none text-fg">
-          Introduction
+          {t("introduction")}
         </h2>
 
         <p className="text-[2rem] leading-[1.25] tracking-[-0.02em] text-fg font-normal">
@@ -58,7 +62,7 @@ export default async function SectionPage({
 
         <div className="flex flex-col gap-[3rem] w-full">
           <h2 className="text-[1.5rem] font-bold tracking-[-0.02em] leading-none text-fg">
-            Curriculum
+            {t("curriculum")}
           </h2>
           <CurriculumTable sectionId={section.id} lessons={section.lessons} />
         </div>

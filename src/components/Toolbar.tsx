@@ -1,5 +1,6 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import { Link, useRouter } from "@/i18n/routing";
 
 import { ACCENT_SWATCHES, useTheme } from "./ThemeProvider";
@@ -24,6 +25,7 @@ const utilBtn =
 
 export function Toolbar({ showBack = false, backHref = "/" }: ToolbarProps) {
   const router = useRouter();
+  const t = useTranslations("toolbar");
   const { theme, toggleTheme, accent, setAccent, mono, setMono, zoomIn, zoomOut, zoomLabel, showUtilityRow, setShowUtilityRow } =
     useTheme();
 
@@ -36,29 +38,32 @@ export function Toolbar({ showBack = false, backHref = "/" }: ToolbarProps) {
               type="button"
               onClick={() => router.push(backHref)}
               className={navBtn}
-              aria-label="Back"
+              aria-label={t("back")}
             >
-              Back
+              {t("back")}
             </button>
           ) : null}
-          <Link href="/" className={navBtn} aria-label="Home">
-            Home
+          <Link href="/" className={navBtn} aria-label={t("home")}>
+            {t("home")}
           </Link>
         </div>
-        <nav className="flex gap-[0.75rem] items-center flex-wrap" aria-label="Primary">
+        <nav
+          className="flex gap-[0.75rem] items-center flex-wrap"
+          aria-label={t("primaryNav")}
+        >
           <Link href="/about" className={navBtn}>
-            About
+            {t("about")}
           </Link>
           <button
             type="button"
             onClick={() => window.print()}
             className={navBtn}
-            aria-label="Print"
+            aria-label={t("print")}
           >
-            Print
+            {t("print")}
           </button>
           <Link href="/contact" className={navBtn}>
-            Contact
+            {t("contact")}
           </Link>
           <button
             type="button"
@@ -68,7 +73,7 @@ export function Toolbar({ showBack = false, backHref = "/" }: ToolbarProps) {
             aria-controls="cc-utility-row"
             style={showUtilityRow ? { background: "var(--color-accent)", color: "var(--color-accent-fg)" } : undefined}
           >
-            Settings &amp; Accessibility
+            {t("settings")}
           </button>
         </nav>
       </div>
@@ -85,7 +90,7 @@ export function Toolbar({ showBack = false, backHref = "/" }: ToolbarProps) {
             onClick={toggleTheme}
             className={utilBtn}
             aria-label={
-              theme === "dark" ? "Switch to light mode" : "Switch to dark mode"
+              theme === "dark" ? t("switchToLight") : t("switchToDark")
             }
           >
             <span className="size-[1.25rem] inline-flex items-center justify-center">
@@ -101,7 +106,7 @@ export function Toolbar({ showBack = false, backHref = "/" }: ToolbarProps) {
             type="button"
             onClick={zoomOut}
             className={utilBtn}
-            aria-label="Decrease zoom"
+            aria-label={t("decreaseZoom")}
           >
             -
           </button>
@@ -112,7 +117,7 @@ export function Toolbar({ showBack = false, backHref = "/" }: ToolbarProps) {
             type="button"
             onClick={zoomIn}
             className={utilBtn}
-            aria-label="Increase zoom"
+            aria-label={t("increaseZoom")}
           >
             +
           </button>
@@ -120,7 +125,7 @@ export function Toolbar({ showBack = false, backHref = "/" }: ToolbarProps) {
           <div
             className="inline-flex items-center justify-center gap-[0.625rem] px-[0.625rem] py-[0.375rem] border border-fg bg-bg"
             role="group"
-            aria-label="Accent color swatches"
+            aria-label={t("accentSwatchesLabel")}
           >
             {ACCENT_SWATCHES.map((color) => {
               const isActive =
@@ -130,7 +135,7 @@ export function Toolbar({ showBack = false, backHref = "/" }: ToolbarProps) {
                   key={color}
                   type="button"
                   onClick={() => setAccent(color)}
-                  aria-label={`Use accent color ${color}`}
+                  aria-label={t("useAccentColor", { color })}
                   aria-pressed={isActive}
                   className="size-[1.1875rem] inline-block border border-fg"
                   style={{
@@ -150,7 +155,7 @@ export function Toolbar({ showBack = false, backHref = "/" }: ToolbarProps) {
             <button
               type="button"
               onClick={setMono}
-              aria-label="Use monochrome accent"
+              aria-label={t("useMonochrome")}
               aria-pressed={mono}
               className="size-[1.1875rem] inline-block border border-fg shrink-0"
               style={{
@@ -170,15 +175,15 @@ export function Toolbar({ showBack = false, backHref = "/" }: ToolbarProps) {
                 background:
                   "conic-gradient(from 0deg, #ff0000, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff, #ff0000)",
               }}
-              aria-label="Pick a custom accent color"
-              title="Pick a custom accent color"
+              aria-label={t("pickCustomColor")}
+              title={t("pickCustomColor")}
             >
               <input
                 type="color"
                 value={normalizeHex(accent)}
                 onChange={(e) => setAccent(e.target.value)}
                 className="absolute inset-0 opacity-0"
-                aria-label="Custom accent color picker"
+                aria-label={t("customColorPicker")}
               />
             </label>
           </div>

@@ -1,5 +1,6 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/routing";
 import type { Activity } from "@/data/types";
 
@@ -19,6 +20,7 @@ export function ActivityTabs({
   activities,
   activeActivityId,
 }: ActivityTabsProps) {
+  const t = useTranslations("activityTabs");
   // Cumulative highlight: every tab up to and including the active one is lit.
   // Overview is always included once any activity is active.
   const activeIndex = activeActivityId
@@ -38,7 +40,7 @@ export function ActivityTabs({
     <div
       className="cc-activity-tabs flex gap-[0.5rem] items-center w-full flex-wrap"
       role="tablist"
-      aria-label="Lesson activities"
+      aria-label={t("label")}
     >
       <Link
         href={`/${sectionId}/${lessonId}`}
@@ -47,7 +49,7 @@ export function ActivityTabs({
         className={tabStyle(overviewFilled)}
         style={overviewFilled ? { background: "var(--color-accent)" } : undefined}
       >
-        Overview
+        {t("overview")}
       </Link>
       {activities.map((a, i) => {
         const filled = activeIndex >= 0 && i <= activeIndex;

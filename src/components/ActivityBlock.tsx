@@ -1,3 +1,4 @@
+import { getTranslations } from "next-intl/server";
 import type { Activity, ContentBlock } from "@/data/types";
 import { ContentRenderer } from "./ContentRenderer";
 
@@ -47,7 +48,8 @@ export function ActivityBlock({
   );
 }
 
-export function FacilitatorBlock({ blocks }: { blocks: ContentBlock[] }) {
+export async function FacilitatorBlock({ blocks }: { blocks: ContentBlock[] }) {
+  const t = await getTranslations("activityBlock");
   return (
     <section
       id="overview"
@@ -59,7 +61,7 @@ export function FacilitatorBlock({ blocks }: { blocks: ContentBlock[] }) {
           id="overview-heading"
           className="text-[1.5rem] font-bold leading-[1.2] tracking-[-0.02em] text-fg"
         >
-          For Facilitators
+          {t("forFacilitators")}
         </h2>
         <div className="mt-[1.25rem] border-t border-fg w-full" />
       </div>
@@ -70,7 +72,7 @@ export function FacilitatorBlock({ blocks }: { blocks: ContentBlock[] }) {
       >
         <div className="flex flex-col items-start gap-[1.25rem] pt-[1.25rem]">
           <span className="inline-flex items-center justify-center px-[0.625rem] py-[0.375rem] border border-fg text-fg bg-bg text-[1.25rem] tracking-[-0.02em] leading-[1.2]">
-            Intro
+            {t("intro")}
           </span>
         </div>
         <div className="pt-[1.25rem] max-w-[71.375rem]">
