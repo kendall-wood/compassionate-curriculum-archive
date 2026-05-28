@@ -1,1 +1,82 @@
-{"_meta":{"comment":"Stub. Populated by `npm run translate`."}}
+{
+  "site": {
+    "title": "Archivo de Currículo Compasivo",
+    "description": "Un archivo interactivo y accesible del Currículo Compasivo — un marco participativo para el aprendizaje, la reflexión y el crecimiento colectivo."
+  },
+  "toolbar": {
+    "back": "Atrás",
+    "home": "Inicio",
+    "about": "Acerca de",
+    "print": "Imprimir",
+    "contact": "Contacto",
+    "settings": "Configuración y accesibilidad",
+    "language": "Idioma",
+    "switchToDark": "Cambiar a modo oscuro",
+    "switchToLight": "Cambiar a modo claro",
+    "decreaseZoom": "Reducir zoom",
+    "increaseZoom": "Aumentar zoom",
+    "accentSwatchesLabel": "Muestras de color de acento",
+    "useAccentColor": "Usar color de acento {color}",
+    "useMonochrome": "Usar acento monocromático",
+    "pickCustomColor": "Elegir un color de acento personalizado",
+    "customColorPicker": "Selector de color de acento personalizado",
+    "primaryNav": "Principal"
+  },
+  "section": {
+    "introduction": "Introducción",
+    "curriculum": "Currículo"
+  },
+  "nav": {
+    "intro": "Intro",
+    "sectionsLabel": "Secciones del currículo"
+  },
+  "table": {
+    "lesson": "Lección",
+    "title": "Título",
+    "activities": "Actividades",
+    "linksAndImages": "Enlaces e imágenes",
+    "label": "Currículo",
+    "openLesson": "Abrir lección: {title}",
+    "activityAria": "{label}: {title}"
+  },
+  "activityTabs": {
+    "label": "Actividades de la lección",
+    "overview": "Descripción general"
+  },
+  "activityBlock": {
+    "forFacilitators": "Para facilitadores",
+    "intro": "Intro"
+  },
+  "intro": {
+    "metaTitle": "Introducción — Archivo de Currículo Compasivo",
+    "metaDescription": "Una práctica de esperanza. El Currículo Compasivo es un marco participativo para el aprendizaje, la reflexión y el crecimiento colectivo.",
+    "heading": "Introducción: Una práctica de esperanza",
+    "p1": "El Currículo Compasivo es un marco participativo para el aprendizaje, la reflexión y el crecimiento colectivo, diseñado con y para personas con experiencia vivida de trauma o cualquier forma de daño estructural. Se basa en la idea de que la experiencia vivida es una forma de conocimiento, y que la sanación, la comprensión crítica y la imaginación son todas necesarias para construir futuros más justos.",
+    "p2": "En lugar de pedir a los participantes simplemente que reciban información, el currículo los invita a dar forma conjunta al significado. Se fundamenta en la autoría compartida, la ayuda mutua y una ética de responsabilidad. También es basado en fortalezas. El trabajo no comienza desde lo que les falta a las personas, sino desde lo que ya saben, han sobrevivido y pueden construir juntos. A lo largo del currículo, se alienta a los participantes a reflexionar sobre su propia experiencia, escucharse mutuamente y practicar formas de aprendizaje colectivo que puedan apoyar tanto la transformación personal como el cambio social más amplio.",
+    "p3Intro": "El currículo tiene tres secciones conectadas.",
+    "p3PillBeloved": "I. Comunidad amada",
+    "p3MidBeloved": "se enfoca en la identidad, la pertenencia, la fluidez emocional y el trauma histórico. Ayuda a los participantes a entenderse mejor a sí mismos, sus relaciones y los sistemas más amplios que moldean cómo se desplazan por el mundo.",
+    "p3PillRestorative": "II. Práctica restaurativa",
+    "p3MidRestorative": "introduce círculos, escucha activa, reescritura de narrativas y otras herramientas que apoyan la confianza, la reflexión, la responsabilidad y la responsabilidad compartida.",
+    "p3PillMedia": "III. Medios, narrativa y futuridad",
+    "p3MidMedia": "explora la narración de historias, la representación y la imaginación. Invita a los participantes a examinar las narrativas dominantes, contar historias más completas sobre sí mismos y desarrollar capacidad imaginativa para la resolución creativa de problemas y la creación del futuro.",
+    "p4": "El Currículo Compasivo está diseñado como un marco abierto y vivo. Puede utilizarse en universidades, organizaciones comunitarias, espacios de defensa, contextos de investigación y otros grupos donde los facilitadores quieran apoyar la pertenencia, el diálogo y el aprendizaje colaborativo. Algunos grupos pueden utilizarlo como una serie estructurada de talleres. Otros pueden extraer secciones o actividades individuales y adaptarlas a las necesidades locales.",
+    "p5": "En esencia, el currículo se guía por la participación, la encarnación, la narración de historias y el aprendizaje multimodal. Su objetivo es crear condiciones en las que las personas puedan pensar críticamente, conectar a través de las diferencias e imaginar de manera diferente juntas. En este sentido, el Currículo Compasivo no es solo un conjunto de ejercicios, sino una forma de practicar el apoyo mutuo, la investigación compartida y la esperanza en común."
+  },
+  "about": {
+    "metaTitle": "Acerca de — Archivo de Currículo Compasivo",
+    "heading": "Acerca de",
+    "p1": "El Currículo Compasivo es un marco participativo para el aprendizaje, la reflexión y el crecimiento colectivo, diseñado con y para personas con experiencia vivida de trauma o cualquier forma de daño estructural. Se basa en la idea de que la experiencia vivida es una forma de conocimiento, y que la sanación, la comprensión crítica y la imaginación son todas necesarias para construir futuros más justos.",
+    "p2": "En lugar de pedir a los participantes simplemente que reciban información, el currículo los invita a dar forma conjunta al significado. Se fundamenta en la autoría compartida, la ayuda mutua y una ética de responsabilidad."
+  },
+  "contact": {
+    "metaTitle": "Contacto — Archivo de Currículo Compasivo",
+    "heading": "Contacto",
+    "p1": "Para preguntas, colaboraciones o para compartir cómo ha utilizado el currículo, póngase en contacto con el equipo del proyecto."
+  },
+  "notFound": {
+    "heading": "Página no encontrada",
+    "body": "No se pudo localizar la página que busca.",
+    "returnHome": "Volver a inicio"
+  }
+}

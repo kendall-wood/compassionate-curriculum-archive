@@ -110,24 +110,50 @@ Rules:
 7. Use the target language naturally and respectfully. Trauma-related vocabulary should match how that community would speak about it, not a literal calque. Honorifics and grammatical gender should follow the target language's conventions.
 8. If a string has special characters like ↗ or — keep them.`;
 
-async function translate({ source, locale, localeName }) {
-  const userMessage = `Translate the values in this JSON catalog from English into ${localeName} (${locale}). Follow every rule. Return only the translated JSON, no other text.
+async function translateOnce({ source, locale, localeName, attempt }) {
+  const userMessage = `Translate the values in this JSON catalog from English into ${localeName} (${locale}). Follow every rule. Return only the translated JSON, starting with { and nothing else — no prose, no markdown fences, no commentary.${
+    attempt > 1
+      ? "\n\nIMPORTANT: a previous attempt produced invalid JSON. Be extra careful to escape any double quotes inside string values as \\\" and any backslashes as \\\\."
+      : ""
+  }
 
 ${source}`;
 
+  // Prefill the assistant's reply with `{` so Claude continues writing
+  // JSON rather than wrapping the output in prose or fences.
   const response = await anthropic.messages.create({
     model: MODEL,
     max_tokens: 16000,
     system: SYSTEM,
-    messages: [{ role: "user", content: userMessage }],
+    messages: [
+      { role: "user", content: userMessage },
+      { role: "assistant", content: "{" },
+    ],
   });
 
   const block = response.content.find((b) => b.type === "text");
   if (!block) throw new Error("no text content in response");
-  let text = block.text.trim();
-  // Strip accidental code fences just in case
-  text = text.replace(/^```(?:json)?\s*/i, "").replace(/```\s*$/i, "");
+  let text = "{" + block.text;
+  text = text.trim().replace(/^```(?:json)?\s*/i, "").replace(/```\s*$/i, "");
   return text;
+}
+
+async function translate(opts) {
+  const MAX_ATTEMPTS = 3;
+  let lastErr;
+  for (let attempt = 1; attempt <= MAX_ATTEMPTS; attempt++) {
+    try {
+      const text = await translateOnce({ ...opts, attempt });
+      JSON.parse(text); // validate
+      return text;
+    } catch (err) {
+      lastErr = err;
+      if (attempt < MAX_ATTEMPTS) {
+        process.stdout.write(`retry ${attempt + 1}… `);
+      }
+    }
+  }
+  throw lastErr;
 }
 
 async function processLocale(locale) {
@@ -137,41 +163,43 @@ async function processLocale(locale) {
     return;
   }
   const cache = forceFlag ? {} : loadHashCache(locale);
-  let translatedAny = false;
 
-  for (const target of TARGETS) {
+  // The 4 files for this locale are independent → translate them in
+  // parallel. Anthropic accepts plenty of concurrent requests per key;
+  // 4 at a time stays comfortably under the rate limit.
+  const work = TARGETS.map((target) => {
     const source = readFileSync(target.src, "utf8");
     const srcHash = hash(source);
-    const cacheKey = target.name;
-
-    if (cache[cacheKey] === srcHash) {
+    if (cache[target.name] === srcHash) {
       console.log(`  [skip] ${target.name} (unchanged)`);
-      continue;
+      return null;
     }
+    return { target, source, srcHash };
+  }).filter(Boolean);
 
-    process.stdout.write(`  [translate] ${target.name}… `);
-    let result;
-    try {
-      result = await translate({
-        source,
-        locale,
-        localeName: cfg.englishName,
-      });
-      JSON.parse(result); // validate
-    } catch (err) {
-      console.log(`FAILED: ${err.message}`);
-      continue;
-    }
+  if (work.length === 0) return;
 
-    const out = target.outFor(locale);
-    mkdirSync(dirname(out), { recursive: true });
-    writeFileSync(out, result.endsWith("\n") ? result : result + "\n");
-    cache[cacheKey] = srcHash;
-    translatedAny = true;
-    console.log("ok");
-  }
+  await Promise.all(
+    work.map(async ({ target, source, srcHash }) => {
+      const tag = `  [translate] ${target.name}`;
+      try {
+        const result = await translate({
+          source,
+          locale,
+          localeName: cfg.englishName,
+        });
+        const out = target.outFor(locale);
+        mkdirSync(dirname(out), { recursive: true });
+        writeFileSync(out, result.endsWith("\n") ? result : result + "\n");
+        cache[target.name] = srcHash;
+        console.log(`${tag} ok`);
+      } catch (err) {
+        console.log(`${tag} FAILED: ${err.message}`);
+      }
+    })
+  );
 
-  if (translatedAny) saveHashCache(locale, cache);
+  saveHashCache(locale, cache);
 }
 
 const targetLocales = onlyLocale

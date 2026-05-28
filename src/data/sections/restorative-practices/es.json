@@ -1,0 +1,688 @@
+{
+  "id": "restorative-practices",
+  "label": "II. Prácticas Restaurativas",
+  "title": "Prácticas Restaurativas",
+  "overview": "Esta sección introduce la práctica restaurativa como un modo de aprendizaje participativo y relacional. Centra el relato oral, la escucha, la autoría compartida y la responsabilidad colectiva. Las prácticas en esta sección ayudan a los participantes a construir confianza, reflexionar sobre sus experiencias y desarrollar formas más compasivas de estar juntos.",
+  "lessons": [
+    {
+      "id": "entering-the-circle",
+      "label": "L1",
+      "title": "Entrando en el Círculo",
+      "sectionId": "restorative-practices",
+      "facilitatorBlocks": [
+        {
+          "kind": "p",
+          "text": "Esta actividad introduce a los participantes en la práctica restaurativa y los elementos básicos del trabajo en círculo. Los círculos son la práctica restaurativa principal utilizada en este currículo. Como describe Kay Pranis y Carolyn Boyes-Watson en Circle Forward, funcionan mejor cuando los grupos comienzan conociendo, estableciendo valores compartidos y construyendo confianza antes de pasar a discusiones más profundas. Los círculos se pueden utilizar para muchos propósitos, incluyendo sanación, duelo, apoyo, resolución de conflictos, reintegración y celebración."
+        },
+        {
+          "kind": "p",
+          "text": "Un objeto de palabra es un objeto que se pasa alrededor del círculo que marca quién está hablando y recuerda a los otros escuchar activamente; también permite que cualquier participante pase. Un manto es un paño o espacio central donde objetos significativos pueden colocarse para ayudar a marcar el círculo como intencional y distinto. Un reconocimiento de la tierra es una forma de nombrar las historias, pueblos y legados continuos que dan forma al lugar donde se lleva a cabo un círculo."
+        },
+        {
+          "kind": "p",
+          "text": "Configura la sala en un círculo si es posible, con suficiente espacio entre intervenciones para que los participantes puedan verse claramente entre sí. Presta atención a las necesidades de accesibilidad con anticipación. Mantén papel y bolígrafo cerca para notas u observaciones de seguimiento, y ten lista una hoja grande de papel o un caballete si planeas registrar los acuerdos comunitarios."
+        },
+        {
+          "kind": "p",
+          "bold": true,
+          "text": "Un círculo generalmente se moverá a través de la siguiente secuencia:"
+        },
+        {
+          "kind": "ul",
+          "items": [
+            "bienvenida y propósito",
+            "apertura o rompehielo y, donde sea apropiado, reconocimiento de la tierra",
+            "acuerdos comunitarios",
+            "verifi­cación de entrada",
+            "rondas de discusión",
+            "verifi­cación de salida y cierre"
+          ]
+        }
+      ],
+      "activities": [
+        {
+          "id": "a1",
+          "label": "A1",
+          "title": "Bienvenida, Apertura y Acuerdos Comunitarios",
+          "blocks": [
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Bienvenida y propósito:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "el facilitador de círculo se presenta a sí mismo y el objeto de palabra;",
+                "si los participantes son nuevos en la práctica restaurativa, el facilitador explica su rol y cómo se utiliza el objeto de palabra;",
+                "si usa un manto, explica qué es y por qué los objetos importan."
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Apertura y Rompehielo"
+            },
+            {
+              "kind": "p",
+              "text": "Comienza con una pregunta introductoria simple para ayudar a los participantes a entrar en el espacio y procesarlo. Algunas preguntas pueden requerir más confianza y apertura, por lo que no todas serán apropiadas para cada grupo. Ejemplos:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Si pudieras tener un superpoder, ¿cuál sería?",
+                "¿Quiénes son tus héroes y por qué?",
+                "Un objetivo para tu tiempo en este taller es...",
+                "Una cosa que no sabrías sobre mí solo viéndome es...",
+                "Un aspecto de mi identidad que siento importante traer al círculo es..."
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Acuerdos comunitarios"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "El facilitador de círculo, sosteniendo el objeto de palabra, invita a los participantes a nombrar qué necesitan para sentirse capaces de hablar abierta y honestamente en el círculo.",
+                "Ejemplo de pregunta: ¿Qué acuerdos son importantes para ti para asegurar que personalmente te sientas más valiente hablando abierta y honestamente en este círculo?",
+                "El objeto de palabra se pasa a la izquierda, para que cada participante tenga la oportunidad de añadir o pasar.",
+                "Registra respuestas y revisítalas según sea necesario. Algunos facilitadores pueden invitar a los participantes a firmar los acuerdos finales."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a2",
+          "label": "A2",
+          "title": "Verificación de Entrada y Rondas de Discusión",
+          "blocks": [
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Verificación de entrada"
+            },
+            {
+              "kind": "p",
+              "text": "Después de la bienvenida y los acuerdos, haz una ronda simple de verificación conectada al tema del día. Los ejemplos podrían ser: \"¿cómo estás hoy, en una escala del 1 al 10, y por qué?\""
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Rondas de discusión"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Solo deben ocurrir después de que los participantes se hayan verificado, entiendan el propósito del círculo y sepan quién está presente.",
+                "Las preguntas deben ser abiertas, intencionales y conectadas a la experiencia personal.",
+                "Siempre verifi­ca después de una ronda y pasa el objeto de palabra nuevamente en caso de que alguien que inicialmente pasó desee hablar."
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Para reparar relaciones:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "¿Quién crees que ha sido afectado por esta situación y de qué formas específicas han sido impactados?",
+                "¿Cuál ha sido la parte más difícil de esta experiencia para ti personalmente?",
+                "¿Qué necesita suceder ahora para hacer las cosas lo más bien posible para todos los involucrados?"
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Para cambio organizacional y procesamiento de transiciones:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "¿Qué preocupaciones estás sosteniendo ahora respecto a nuestro próximo cambio? ¿Cuáles son tus miedos?",
+                "¿Cuál es un recurso práctico o apoyo que necesitas para navegar exitosamente este cambio?"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a3",
+          "label": "A3",
+          "title": "Cerrando el Círculo",
+          "blocks": [
+            {
+              "kind": "p",
+              "text": "Cierra con una ronda de respuestas a indicaciones reflexivas que ayuda a los participantes a salir del círculo con cuidado e intención."
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Posibles preguntas:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "¿Qué te llevas de hoy?",
+                "¿Cómo practicarás el autocuidado hoy?",
+                "¿Cuál es un compromiso que estás dispuesto a hacer hoy basándote en nuestro círculo de hoy?"
+              ]
+            },
+            {
+              "kind": "p",
+              "text": "Después de la ronda de cierre, el facilitador puede guiar un breve ejercicio de enraizamiento como respiración, movimiento, un poema, una canción o un llamado y respuesta."
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Opcional de seguimiento: Objetos de Palabra"
+            },
+            {
+              "kind": "p",
+              "text": "Después del segundo círculo, una vez que los participantes se hayan familiarizado más entre sí, el facilitador puede invitarlos a traer un objeto de importancia personal para servir como objeto de palabra y, si lo desean, compartir por qué es significativo para ellos. En círculos digitales, el objeto de palabra y el manto pueden ser simbólicos en lugar de físicos, pero los mismos principios aún se aplican."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reauthoring-circles",
+      "label": "L2",
+      "title": "Círculos de Reautor­ía",
+      "sectionId": "restorative-practices",
+      "facilitatorBlocks": [
+        {
+          "kind": "p",
+          "text": "La reautor­ía es una forma de entender cómo las historias que contamos sobre nosotros mismos están formadas por fuerzas sociales más amplias, incluyendo instituciones, cultura y sistemas de poder. El término fue desarrollado por primera vez por Michael White y David Epston (1990) como parte de la Terapia Narrativa. En este currículo, la reautor­ía no es terapia. Es una práctica comunitaria que ayuda a las personas a reflexionar sobre cómo los mitos dominantes sobre raza, clase, género, discapacidad, criminalización y pertenencia moldean la identidad y cómo esos mitos podrían desafiarse."
+        },
+        {
+          "kind": "p",
+          "text": "La práctica de reautor­ía busca lo que a veces se llama narrativas saturadas de problemas: historias en las que una persona se define por dificultades, estigma o una sola experiencia. La reautor­ía pregunta: ¿qué más es verdad? ¿Qué fortalezas, valores, conocimientos e insights ya están presentes junto a la dificultad, el estigma o una sola historia definitoria? Se niega la historia única y se abre espacio para un relato más completo."
+        },
+        {
+          "kind": "p",
+          "bold": true,
+          "text": "Un círculo de reautor­ía es una conversación estructurada con tres roles:"
+        },
+        {
+          "kind": "ul",
+          "items": [
+            "narrador: una persona comparte una historia, desafío o pregunta",
+            "testigos: el grupo escucha y refleja fortalezas, valores y posibilidades",
+            "facilitador de círculo: la persona que sostiene la estructura y apoya el proceso"
+          ]
+        },
+        {
+          "kind": "p",
+          "text": "El objetivo no es juzgar, arreglar o dar consejos. Es escuchar juntos lo que importa, lo que se ha sobrevivido y lo que se ha aprendido."
+        }
+      ],
+      "activities": [
+        {
+          "id": "a1",
+          "label": "A1",
+          "title": "Preguntas Poderosas",
+          "blocks": [
+            {
+              "kind": "p",
+              "text": "Antes de comenzar, el facilitador de círculo pide un voluntario narrador dispuesto a compartir un desafío, pregunta o momento de crecimiento, y verifi­ca con él o ella para asegurar consentimiento. Introduce el proceso claramente: una persona compartirá, otros escucharán y reflejarán lo que escuchan, el grupo escucha fortaleza y lo que importa, no se da consejo."
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Ejemplos de buenas preguntas:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "¿Qué notaste sobre ti mismo en ese momento?",
+                "¿Qué te dice esto sobre lo que te importa?",
+                "¿Qué se necesitó para pasar por eso?",
+                "¿Qué necesitabas en ese momento?",
+                "¿Qué podría ayudarte a pensar en esto de manera diferente?"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a2",
+          "label": "A2",
+          "title": "Testimonio",
+          "blocks": [
+            {
+              "kind": "p",
+              "text": "Testificar significa escuchar la resiliencia, reconocer el conocimiento y la capacidad, y reflejarlos. El objetivo no es arreglar, sino nombrar lo que ya está presente."
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Ejemplos de testimonio:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Lo que estoy escuchando es que tú...",
+                "Seguiste adelante a pesar de...",
+                "Estoy notando las estrategias que desarrollaste para lidiar con eso...",
+                "Parece que el cuidado, la dignidad o la justicia realmente te importan",
+                "Estoy escuchando un profundo compromiso con...",
+                "Aprendiste algo importante a través de esa experiencia",
+                "Lo que estoy escuchando es una historia sobre cómo cuidaste, resististe o aprendiste en el camino"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a3",
+          "label": "A3",
+          "title": "Proceso y Reflexión de Cierre",
+          "blocks": [
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Proceso"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "El facilitador convoca la apertura del círculo.",
+                "El narrador comparte mientras sostiene el objeto de palabra.",
+                "El grupo hace una pausa.",
+                "El objeto de palabra se pasa alrededor del círculo. Los testigos reflejan lo que escucharon.",
+                "Cuando el objeto de palabra vuelve al narrador, invita a la reflexión."
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Indicaciones de reflexión de cierre:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "¿Qué escuchaste?",
+                "¿Qué se sintió verdadero?",
+                "¿Qué te sorprendió?",
+                "¿Qué quieres llevar adelante?",
+                "¿Qué se destacó para ti?",
+                "¿Qué se sintió posible en este proceso?",
+                "¿Dónde podrías usar esto en tu propio trabajo?",
+                "¿Qué apoyo te ayudaría a sentirte más confiado facilitándolo?"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sharing-our-stories",
+      "label": "L3",
+      "title": "Compartiendo Nuestras Historias",
+      "sectionId": "restorative-practices",
+      "facilitatorBlocks": [
+        {
+          "kind": "p",
+          "text": "Esta actividad puede comenzar como diario, ya sea en sesiones o entre ellas, y luego pasar al círculo compartido. La tarea es escribir \"tu historia\"."
+        },
+        {
+          "kind": "p",
+          "text": "Dependiendo del tamaño del grupo, esta actividad puede desarrollarse a lo largo de varias sesiones. Puede ayudar si uno de los facilitadores comparte primero para modelar la actividad, o si algunos participantes se preparan con anticipación, para ver si se sienten cómodos compartiendo temprano. Los participantes siempre deben tener la opción de pasar. Permite descansos entre historias. Estos círculos pueden ser intensos y las pausas ayudan al grupo a permanecer presentes el uno para el otro."
+        }
+      ],
+      "activities": [
+        {
+          "id": "a1",
+          "label": "A1",
+          "title": "Indicaciones de Diario",
+          "blocks": [
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Indicaciones:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "¿Cuál es tu nombre?",
+                "¿Dónde vives? ¿Siempre viviste ahí?",
+                "¿Dónde creciste?",
+                "¿Qué recuerdos de la infancia se quedan contigo?",
+                "¿Con quién vives?",
+                "¿Tienes hermanos? ¿Cuál es tu relación con ellos?",
+                "¿Cuál es tu relación con tus padres o tutores?",
+                "¿Qué dificultades has enfrentado? ¿Qué obstáculos has superado?",
+                "¿Cuáles son los logros de los que estás orgulloso?",
+                "¿Cómo llegaste a este trabajo?",
+                "¿Por qué este trabajo es importante para ti?",
+                "¿Cómo activarás lo que estás aprendiendo?",
+                "¿Cuáles son tus pasiones y metas a largo plazo?"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "land-ancestor-acknowledgement",
+      "label": "L4",
+      "title": "Reconocimiento de la Tierra y los Antepasados",
+      "sectionId": "restorative-practices",
+      "facilitatorBlocks": [
+        {
+          "kind": "p",
+          "text": "Esta actividad invita a los participantes a reflexionar sobre las historias, lugares, antepasados y linajes que dan forma al espacio en que se encuentran. Se basa en los recursos de Native Land Digital para ir más allá de marcos performativos o transaccionales."
+        },
+        {
+          "kind": "p",
+          "text": "Antes de facilitar esta actividad, investiga la tierra sobre la que se lleva a cabo el círculo, quién vivía ahí en el pasado y quién vive ahora. Esto puede requerir investigación formal así como conversaciones con miembros de la comunidad."
+        },
+        {
+          "kind": "p",
+          "text": "Esta puede ser una actividad difícil. Los participantes pueden ser adoptados, pueden no conocer sus historias, o pueden llevar trauma relacionado con la familia, esclavitud, colonización, migración o desplazamiento. Hazlo lentamente. Construye pausas."
+        }
+      ],
+      "activities": [
+        {
+          "id": "a1",
+          "label": "A1",
+          "title": "Indicaciones de Reflexión",
+          "blocks": [
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Posibles indicaciones"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "¿Quiénes son los antepasados y pueblos que debemos apreciar mientras nos reunimos?",
+                "¿Cuál es tu historia de migración?",
+                "¿Quiénes son tus mayores, vivos y transicionados, y cómo están presentes en ti?"
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Opciones de seguimiento"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "escribe tu propio reconocimiento de la tierra",
+                "compártelo en círculo",
+                "desarrolla un reconocimiento colectivo en pequeños grupos o como grupo completo"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a2",
+          "label": "A2",
+          "title": "Ejemplo de Reconocimiento",
+          "blocks": [
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Ejemplo de Lenapehoking (NJ, PA oriental, sureste de NY):"
+            },
+            {
+              "kind": "p",
+              "text": "\"Quiero comenzar con un reconocimiento de que estamos en el territorio no cedido del pueblo Lenape. Me gustaría reconocer y rendir respeto a los antepasados Lenape y a las generaciones presentes y futuras en esta patria, así como en toda la diáspora Lenape. También me gustaría extender este reconocimiento a todos los pueblos indígenas que ahora y en el futuro llamen hogar a estas tierras ancestrales Lenape, Lenapehoking. Este reconocimiento es un compromiso para abordar los legados continuos del colonialismo de colonos, racismo, encarcelamiento masivo y el complejo carcelario industrial.\""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "circle-questions",
+      "label": "L5",
+      "title": "Preguntas de Círculo y Prácticas de Escucha",
+      "sectionId": "restorative-practices",
+      "facilitatorBlocks": [
+        {
+          "kind": "p",
+          "text": "El material de fuente incluye Mediators Beyond Borders y The Art of Powerful Questions de Eric E. Vogt, Juanita Brown y David Isaacs. En la práctica del Círculo, las preguntas se llaman indicaciones y se secuencian cuidadosamente pasando de preguntas de baja vulnerabilidad (para construir seguridad) a preguntas de alta vulnerabilidad (para abordar el tema central) y terminan con reflexión."
+        },
+        {
+          "kind": "p",
+          "bold": true,
+          "text": "Consejos Rápidos del Facilitador para Preguntas de Ronda"
+        },
+        {
+          "kind": "ul",
+          "items": [
+            "Mantenlas abiertas: evita preguntas que puedan responderse con un simple \"sí\" o \"no\". Usa Qué, Cómo o Puedes describir... en lugar de Por qué.",
+            "Modela la indicación: como facilitador, a menudo es útil responder la pregunta primero cuando la introduces.",
+            "Pasar siempre es una opción: recuerda a los participantes que cuando el objeto de palabra llega a ellos, pueden elegir pasar, sostenerlo en silencio o hablar."
+          ]
+        }
+      ],
+      "activities": [
+        {
+          "id": "a1",
+          "label": "A1",
+          "title": "Preguntas de Apertura y Profundización",
+          "blocks": [
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Preguntas de apertura — Por favor di tu nombre y..."
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "comparte algo que esperas experimentar o aprender mientras estés aquí",
+                "comparte algo que te haría alegre haber elegido participar",
+                "di qué te atrae a esta indagación",
+                "nombra algo que dejaste atrás para estar aquí hoy"
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Preguntas de profundización"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "¿Qué está en el corazón de este asunto para ti?",
+                "¿Qué esperanzas, miedos, preocupaciones o necesidades insatisfechas están presentes para ti alrededor de este asunto?",
+                "¿Qué dilemas u oportunidades ves?"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a2",
+          "label": "A2",
+          "title": "Preguntas de Procesamiento, Movimiento hacia Adelante y Cierre",
+          "blocks": [
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Preguntas de procesamiento"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "¿Qué se está tomando forma aquí?",
+                "¿Qué estás escuchando debajo de la variedad de opiniones que se expresan?",
+                "¿Qué tuvo significado real para ti en lo que escuchaste?",
+                "¿Hay algo que no estamos viendo claramente?"
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Preguntas de movimiento hacia adelante"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "¿Qué podría suceder que te ayudaría a sentirte completamente comprometido en este trabajo?",
+                "¿Qué es posible aquí y a quién le importa?",
+                "¿Qué próximos pasos te gustaría dar, individualmente o colectivamente?",
+                "¿Cómo podemos apoyarnos mutuamente al dar esos pasos?",
+                "¿Qué semilla podríamos plantar juntos que pudiera marcar la mayor diferencia para el futuro de esta situación?"
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Preguntas de cierre"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "¿Qué te llevas de este círculo?",
+                "¿Qué contribuiste o desearías haber contribuido?",
+                "¿Qué próximos pasos esperas tomar?",
+                "¿Qué preguntas esperas que este grupo aborde próximamente?",
+                "¿Qué apoyo necesitas o deseas ofrecer mientras te vas?"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a3",
+          "label": "A3",
+          "title": "Habilidades para la Escucha Activa",
+          "blocks": [
+            {
+              "kind": "ul",
+              "items": [
+                "Lenguaje corporal: mantén lenguaje corporal abierto y atención. Mantén contacto visual donde sea apropiado, enfrenta al que habla, adopta una postura relajada y evita realizar múltiples tareas.",
+                "Seguimiento: permite al que habla espacio para hablar sin interrupción. Esto significa reducir preguntas innecesarias, tolerar el silencio y dejar que un pensamiento se despliegue.",
+                "Parafraseo y reflexión: resume lo que escuchaste, incluyendo contenido y sentimiento. Por ejemplo: \"Lo que estoy escuchando es...\"",
+                "Haz preguntas abiertas: que inviten la reflexión en lugar de respuestas sí/no.",
+                "Validación: asume que lo que sea que se esté compartiendo, por más clara o imperfectamente, proviene de algo real en la experiencia del que habla."
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Una actividad de escucha atenta:"
+            },
+            {
+              "kind": "p",
+              "text": "Cierra los ojos y: nota cuántos sonidos puedes escuchar alrededor tuyo y dentro de ti; observa los juicios que surgen sin apegarte a ellos; enfócate en el sonido, el flujo y el ritmo de tu respiración; haz un inventario somático, moviéndote lentamente a través del cuerpo y relajando cada parte."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "grounding-activities",
+      "label": "L6",
+      "title": "Actividades de Enraizamiento",
+      "sectionId": "restorative-practices",
+      "facilitatorBlocks": [
+        {
+          "kind": "p",
+          "text": "Los ejercicios de enraizamiento son técnicas diseñadas para alejarte rápidamente de la ansiedad, pánico o flashbacks reconectándote al momento presente y tus alrededores físicos. Pueden ser parte del establecimiento de intenciones para un taller así como conectar con miembros de un grupo."
+        }
+      ],
+      "activities": [
+        {
+          "id": "a1",
+          "label": "A1",
+          "title": "Conectando con la Tierra",
+          "blocks": [
+            {
+              "kind": "p",
+              "text": "El ritmo es importante aquí. Permite el movimiento tanto para sentarse como para respirar. El facilitador dice: \"Encuentra un lugar donde estés sentado o puedas sentarte cómodamente.\""
+            },
+            {
+              "kind": "p",
+              "text": "\"Si te sientes cómodo hacerlo, cierra los ojos. Si no quieres, entonces simplemente encuentra un lugar frente a ti donde puedas enfocarte suavemente. Ahora toma cuatro respiraciones profundas. Siente tu pecho subir y bajar mientras tomas aire y lo dejas salir. Cada vez que respiras, imagina tomar una sensación de calma y paz. Mientras respiras, deja que todo el estrés salga de tu cuerpo. Deja que tus hombros se relajen y suavicen. Deja que tus ojos y cara se relajen y suavicen. Deja que todo el estrés salga de tu cuerpo entero. Siente la conexión con nuestros antepasados, la sacralidad del espacio y la conexión con la tierra.\""
+            }
+          ]
+        },
+        {
+          "id": "a2",
+          "label": "A2",
+          "title": "Conciencia Sensorial (5-4-3-2-1)",
+          "blocks": [
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Propósito: reinicio rápido del cerebro"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "5: Busca 5 cosas que puedas ver a tu alrededor (p. ej., una silla, una planta, el cielo).",
+                "4: Enfócate en 4 cosas que puedas tocar (p. ej., tu cabello, el escritorio, el piso).",
+                "3: Escucha 3 cosas que puedas escuchar (p. ej., tráfico, pájaros, tu respiración).",
+                "2: Identifica 2 cosas que puedas oler (p. ej., jabón, aire, comida).",
+                "1: Nota 1 cosa que puedas probar (p. ej., pasta de dientes, café)."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a3",
+          "label": "A3",
+          "title": "Enraizamiento Físico y Táctil",
+          "blocks": [
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Propósito: Conciencia de tu cuerpo y su conexión con el entorno"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Clava los talones: enfócate en tus pies contra el suelo, notando el peso.",
+                "Cambio de temperatura: deja correr agua fría o tibia sobre tus manos.",
+                "Aprieta/Libera: aprieta los puños, mantén durante 5-10 segundos, luego libera y siente la relajación.",
+                "Lleva un objeto calmante: lleva una pequeña piedra, tela o joya en tu bolsillo para tocar.",
+                "Estira: extiende brazos y piernas para sentir sensaciones de tensión y liberación.",
+                "Toque de mariposa: toca tu pecho o hombros suavemente con tus manos, alternando lados."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a4",
+          "label": "A4",
+          "title": "Meditación de Bondad Amorosa",
+          "blocks": [
+            {
+              "kind": "p",
+              "text": "La meditación de bondad amorosa (también conocida como Metta) es una práctica de atención plena diseñada para cultivar compasión, calidez y buena voluntad. Coloca una mano sobre tu corazón si sientes resistencia emocional. No hay forma correcta de sentir — simplemente la intención de desearle bien a alguien lleva los mismos beneficios mentales."
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "A Ti Mismo"
+            },
+            {
+              "kind": "p",
+              "text": "\"Que sea feliz. Que sea saludable. Que sea seguro. Que viva con facilidad.\""
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "A Alguien Amado"
+            },
+            {
+              "kind": "p",
+              "text": "\"Que seas feliz. Que seas saludable. Que seas seguro. Que vivas con facilidad.\""
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "A Todos los Seres"
+            },
+            {
+              "kind": "p",
+              "text": "\"Que todos los seres en todas partes sean felices, saludables y libres.\""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

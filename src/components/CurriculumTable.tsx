@@ -7,7 +7,7 @@ import type { Activity, Lesson } from "@/data/types";
 import { sections } from "@/data/curriculum";
 
 const headerCell =
-  "text-[1.25rem] tracking-[-0.02em] leading-none pl-[0.375rem]";
+  "text-[1.25rem] tracking-[-0.02em] leading-none ps-[0.375rem]";
 
 // PRD column offsets at 1440 design width: Lesson 0 / Title 234 / Activities 704 / Links 1173.
 // Title column flexes (1fr) so the table fills the available width on screens wider
@@ -235,7 +235,7 @@ function ActivityLine({
             title: activity.title,
           })}
         >
-          <div className="flex items-baseline gap-x-[0.75rem] max-w-[383px] pl-[0.375rem]">
+          <div className="flex items-baseline gap-x-[0.75rem] max-w-[383px] ps-[0.375rem]">
             <span className={`${TYPE} shrink-0 w-[1.5rem] py-[0.125rem]`}>
               {activity.label}
             </span>

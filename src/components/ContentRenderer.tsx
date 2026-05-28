@@ -57,7 +57,7 @@ export function ContentRenderer({ blocks }: { blocks: ContentBlock[] }) {
             return (
               <ul
                 key={i}
-                className="list-disc pl-[1.5em] flex flex-col gap-[0.75rem]"
+                className="list-disc ps-[1.5em] flex flex-col gap-[0.75rem]"
               >
                 {block.items.map((item, j) => (
                   <li
@@ -73,7 +73,7 @@ export function ContentRenderer({ blocks }: { blocks: ContentBlock[] }) {
             return (
               <ol
                 key={i}
-                className="list-decimal pl-[1.5em] flex flex-col gap-[0.75rem]"
+                className="list-decimal ps-[1.5em] flex flex-col gap-[0.75rem]"
               >
                 {block.items.map((item, j) => (
                   <li
