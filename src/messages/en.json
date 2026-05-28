@@ -20,7 +20,9 @@
     "useMonochrome": "Use monochrome accent",
     "pickCustomColor": "Pick a custom accent color",
     "customColorPicker": "Custom accent color picker",
-    "primaryNav": "Primary"
+    "primaryNav": "Primary",
+    "enableVoiceover": "Enable voiceover (hold Option and hover over text)",
+    "disableVoiceover": "Disable voiceover"
   },
   "section": {
     "introduction": "Introduction",

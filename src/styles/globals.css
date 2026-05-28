@@ -96,6 +96,29 @@ a:focus-visible {
   /* page text inherits root font-size, no further scaling needed here */
 }
 
+/* Voiceover mode — wraps each word in a <span class="cc-vo-word"> at hover
+   time. `.cc-vo-spoken` is added as the SpeechSynthesis boundary event
+   advances, so the highlight accumulates left-to-right and the whole
+   paragraph is accent-colored by the time speech ends. box-decoration-break
+   makes the highlight wrap cleanly across line breaks. */
+.cc-vo-word {
+  transition: background-color 80ms linear, color 80ms linear;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+.cc-vo-spoken {
+  background: var(--color-accent);
+  color: var(--color-accent-fg);
+}
+
+/* When voiceover is on and the user is holding Option/Alt, give the cursor
+   a hint that hover will trigger speech. We can't easily detect Alt from
+   pure CSS, so we just nudge the cursor for the whole page-content region
+   while VO is on; the gesture itself is gated in JS. */
+html[data-cc-voiceover="on"] :where(p, li, h1, h2, h3, h4, h5, h6, blockquote, a, button, summary) {
+  cursor: var(--cc-cursor, help) !important;
+}
+
 @media print {
   .cc-toolbar,
   .cc-section-tabs,

@@ -4,7 +4,7 @@ import { useTranslations } from "next-intl";
 import { Link, useRouter } from "@/i18n/routing";
 
 import { ACCENT_SWATCHES, useTheme } from "./ThemeProvider";
-import { MoonIcon, SunIcon } from "./icons";
+import { EarIcon, MoonIcon, SunIcon } from "./icons";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 
 type ToolbarProps = {
@@ -32,7 +32,7 @@ const utilBtn =
 export function Toolbar({ showBack = false, backHref = "/" }: ToolbarProps) {
   const router = useRouter();
   const t = useTranslations("toolbar");
-  const { theme, toggleTheme, accent, setAccent, mono, setMono, zoomIn, zoomOut, zoomLabel, showUtilityRow, setShowUtilityRow } =
+  const { theme, toggleTheme, accent, setAccent, mono, setMono, zoomIn, zoomOut, zoomLabel, showUtilityRow, setShowUtilityRow, voiceover, toggleVoiceover } =
     useTheme();
 
   return (
@@ -87,6 +87,10 @@ export function Toolbar({ showBack = false, backHref = "/" }: ToolbarProps) {
       {showUtilityRow ? (
         <div
           id="cc-utility-row"
+          // data-cc-no-vo opts every control in this row out of voiceover
+          // mode — these are accessibility chrome, not page content the
+          // user would want read back to them.
+          data-cc-no-vo=""
           className="flex gap-[0.5rem] items-center justify-end w-full flex-wrap"
         >
           <button
@@ -103,6 +107,24 @@ export function Toolbar({ showBack = false, backHref = "/" }: ToolbarProps) {
               ) : (
                 <SunIcon className="size-full" />
               )}
+            </span>
+          </button>
+
+          <button
+            type="button"
+            onClick={toggleVoiceover}
+            className={utilBtn}
+            aria-label={voiceover ? t("disableVoiceover") : t("enableVoiceover")}
+            aria-pressed={voiceover}
+            title={voiceover ? t("disableVoiceover") : t("enableVoiceover")}
+            style={
+              voiceover
+                ? { background: "var(--color-accent)", color: "var(--color-accent-fg)" }
+                : undefined
+            }
+          >
+            <span className="size-[1.25rem] inline-flex items-center justify-center">
+              <EarIcon className="size-full" />
             </span>
           </button>
 

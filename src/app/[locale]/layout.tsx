@@ -5,6 +5,7 @@ import { getMessages, setRequestLocale } from "next-intl/server";
 
 import "../../styles/globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
+import { VoiceoverManager } from "@/components/VoiceoverManager";
 import { routing } from "@/i18n/routing";
 import { getLocaleConfig } from "@/i18n/locales";
 
@@ -48,7 +49,10 @@ export default async function LocaleLayout({
       </head>
       <body>
         <NextIntlClientProvider messages={messages}>
-          <ThemeProvider>{children}</ThemeProvider>
+          <ThemeProvider>
+            <VoiceoverManager />
+            {children}
+          </ThemeProvider>
         </NextIntlClientProvider>
       </body>
     </html>

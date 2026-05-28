@@ -72,6 +72,13 @@ type ThemeContextValue = {
   zoomLabel: string;
   showUtilityRow: boolean;
   setShowUtilityRow: (v: boolean | ((prev: boolean) => boolean)) => void;
+  /** Voiceover mode. When true, the global VoiceoverManager listens for
+   *  Option/Alt-hover (desktop) or tap (touch) on speakable text and reads
+   *  it aloud via Web Speech API, progressively highlighting each spoken
+   *  word with the current accent color. */
+  voiceover: boolean;
+  toggleVoiceover: () => void;
+  setVoiceover: (v: boolean) => void;
 };
 
 const ThemeContext = createContext<ThemeContextValue | null>(null);
@@ -81,6 +88,7 @@ const STORAGE_KEYS = {
   zoom: "cc-zoom",
   accent: "cc-accent",
   mono: "cc-mono",
+  voiceover: "cc-voiceover",
 } as const;
 
 function monoAccentFor(theme: Theme): string {
@@ -93,6 +101,7 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
   const [accent, setAccentState] = useState<string>("#fff75d");
   const [mono, setMonoState] = useState<boolean>(false);
   const [showUtilityRow, setShowUtilityRow] = useState(false);
+  const [voiceover, setVoiceoverState] = useState<boolean>(false);
 
   useEffect(() => {
     try {
@@ -111,6 +120,8 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
       } else if (a) {
         setAccentState(a);
       }
+      const v = localStorage.getItem(STORAGE_KEYS.voiceover);
+      if (v === "1") setVoiceoverState(true);
     } catch {
       /* ignore */
     }
@@ -174,6 +185,21 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
     }
   }, [mono]);
 
+  useEffect(() => {
+    try {
+      localStorage.setItem(STORAGE_KEYS.voiceover, voiceover ? "1" : "0");
+    } catch {
+      /* ignore */
+    }
+    // Mirror onto <html> so the VoiceoverManager (and any CSS hooks like
+    // an alt-held cursor swap) can react via attribute selectors without
+    // needing to subscribe to context.
+    document.documentElement.setAttribute(
+      "data-cc-voiceover",
+      voiceover ? "on" : "off"
+    );
+  }, [voiceover]);
+
   const setTheme = useCallback((t: Theme) => setThemeState(t), []);
   const toggleTheme = useCallback(
     () => setThemeState((prev) => (prev === "dark" ? "light" : "dark")),
@@ -226,6 +252,11 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
     setAccentState(monoAccentFor(theme));
   }, [theme]);
 
+  const toggleVoiceover = useCallback(() => {
+    setVoiceoverState((v) => !v);
+  }, []);
+  const setVoiceover = useCallback((v: boolean) => setVoiceoverState(v), []);
+
   const value = useMemo<ThemeContextValue>(
     () => ({
       theme,
@@ -242,8 +273,11 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
       zoomLabel: `${Math.round((zoom / ZOOM_DEFAULT) * 100)}%`,
       showUtilityRow,
       setShowUtilityRow,
+      voiceover,
+      toggleVoiceover,
+      setVoiceover,
     }),
-    [theme, setTheme, toggleTheme, accent, setAccent, mono, setMono, zoom, zoomIn, zoomOut, zoomReset, showUtilityRow, setShowUtilityRow]
+    [theme, setTheme, toggleTheme, accent, setAccent, mono, setMono, zoom, zoomIn, zoomOut, zoomReset, showUtilityRow, setShowUtilityRow, voiceover, toggleVoiceover, setVoiceover]
   );
 
   return <ThemeContext.Provider value={value}>{children}</ThemeContext.Provider>;
