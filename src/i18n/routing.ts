@@ -14,6 +14,12 @@ export const routing = defineRouting({
   // English, /es/beloved-community for Spanish, etc.) which is the modern
   // SEO recommendation and avoids breaking existing inbound links.
   localePrefix: "as-needed",
+  // Always serve English at the unprefixed root. Without this the
+  // middleware peeks at the Accept-Language header and redirects users
+  // with non-English browsers — surprising behavior given the site's
+  // content is authored in English first. Users opt into a different
+  // language via the picker, and the choice persists via cookie.
+  localeDetection: false,
 });
 
 export const { Link, redirect, usePathname, useRouter, getPathname } =
