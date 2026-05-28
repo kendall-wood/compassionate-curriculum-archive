@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useState, useCallback } from "react";
 import type { Activity, Lesson } from "@/data/types";
+import { sections } from "@/data/curriculum";
 
 const headerCell =
   "text-[1.25rem] tracking-[-0.02em] leading-none pl-[0.375rem]";
@@ -21,6 +22,18 @@ const headerCell =
 const GRID_COLS = "234px minmax(560px, 1fr) 469px 203px";
 const SUB_ROW_COLS = "234px minmax(560px, 1fr) 469px";
 
+// Lessons are numbered cumulatively across the whole curriculum (L1–L14)
+// so a reader scanning Section II sees L5/L6/… continuing from where
+// Section I left off, instead of every section restarting at L1.
+function lessonNumberOffset(sectionId: string): number {
+  let offset = 0;
+  for (const s of sections) {
+    if (s.id === sectionId) return offset;
+    offset += s.lessons.length;
+  }
+  return offset;
+}
+
 export function CurriculumTable({
   sectionId,
   lessons,
@@ -28,6 +41,8 @@ export function CurriculumTable({
   sectionId: string;
   lessons: Lesson[];
 }) {
+  const offset = lessonNumberOffset(sectionId);
+
   return (
     <div className="w-full overflow-x-auto">
       <div
@@ -53,15 +68,28 @@ export function CurriculumTable({
 
         <div className="col-span-4 mt-[0.8125rem] border-t border-fg" />
 
-        {lessons.map((lesson) => (
-          <LessonRow key={lesson.id} sectionId={sectionId} lesson={lesson} />
+        {lessons.map((lesson, i) => (
+          <LessonRow
+            key={lesson.id}
+            sectionId={sectionId}
+            lesson={lesson}
+            lessonLabel={`L${offset + i + 1}`}
+          />
         ))}
       </div>
     </div>
   );
 }
 
-function LessonRow({ sectionId, lesson }: { sectionId: string; lesson: Lesson }) {
+function LessonRow({
+  sectionId,
+  lesson,
+  lessonLabel,
+}: {
+  sectionId: string;
+  lesson: Lesson;
+  lessonLabel: string;
+}) {
   const lessonHref = `/${sectionId}/${lesson.id}`;
   const [anyHover, setAnyHover] = useState(false);
   const onEnter = useCallback(() => setAnyHover(true), []);
@@ -85,6 +113,7 @@ function LessonRow({ sectionId, lesson }: { sectionId: string; lesson: Lesson })
               sectionId={sectionId}
               lessonHref={lessonHref}
               lesson={lesson}
+              lessonLabel={lessonLabel}
               activity={activity}
               isFirst={i === 0}
               lActive={anyHover}
@@ -119,6 +148,7 @@ function ActivityLine({
   sectionId,
   lessonHref,
   lesson,
+  lessonLabel,
   activity,
   isFirst,
   lActive,
@@ -126,6 +156,7 @@ function ActivityLine({
   sectionId: string;
   lessonHref: string;
   lesson: Lesson;
+  lessonLabel: string;
   activity: Activity;
   isFirst: boolean;
   lActive: boolean;
@@ -155,7 +186,7 @@ function ActivityLine({
                 lActive ? "bg-accent text-accent-fg" : ""
               }`}
             >
-              {lesson.label}
+              {lessonLabel}
             </p>
           </Link>
         ) : null}
