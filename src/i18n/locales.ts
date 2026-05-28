@@ -54,9 +54,16 @@ export const LOCALES = [
 // operates on the full LOCALES list so stub locales get filled in
 // over time without code changes — flip `ready: true` once content
 // is verified to ship them.
+//
+// `as const` + TS 5.5's inferred type predicates on .filter means
+// `READY_LOCALES` is statically the subset whose `ready` literal is
+// `true`, and `LOCALE_CODES` is the literal union of just those codes.
+// `Locale` is derived from that subset so routing and any code that
+// stores a locale at the type level can only hold a code we actually
+// ship — assigning a stub code is a compile error.
 export const READY_LOCALES = LOCALES.filter((l) => l.ready);
 export const LOCALE_CODES = READY_LOCALES.map((l) => l.code);
-export type Locale = (typeof LOCALES)[number]["code"];
+export type Locale = (typeof LOCALE_CODES)[number];
 
 export const DEFAULT_LOCALE: Locale = "en";
 
