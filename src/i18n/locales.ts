@@ -34,7 +34,7 @@ export const LOCALES = [
   { code: "it", englishName: "Italian", nativeName: "Italiano", dir: "ltr", ready: true },
   { code: "pl", englishName: "Polish", nativeName: "Polski", dir: "ltr", ready: true },
   { code: "uk", englishName: "Ukrainian", nativeName: "Українська", dir: "ltr", ready: true },
-  { code: "nl", englishName: "Dutch", nativeName: "Nederlands", dir: "ltr", ready: false },
+  { code: "nl", englishName: "Dutch", nativeName: "Nederlands", dir: "ltr", ready: true },
   { code: "tl", englishName: "Tagalog", nativeName: "Tagalog", dir: "ltr", ready: false },
   { code: "ht", englishName: "Haitian Creole", nativeName: "Kreyòl Ayisyen", dir: "ltr", ready: false },
   { code: "sw", englishName: "Swahili", nativeName: "Kiswahili", dir: "ltr", ready: false },
