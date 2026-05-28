@@ -63,10 +63,9 @@ export function CurriculumTable({
           <div role="columnheader">
             <span className={headerCell}>{t("activities")}</span>
           </div>
-          {/* Flush with the left edge of the 203px column so the header
-              starts where the thumbnails directly below it start (the
-              images fill the column edge-to-edge). No inner span; the
-              text styles sit on the columnheader cell itself. */}
+          {/* No ps-[0.375rem] indent here (and no inner <span> wrapper): the
+              thumbnail below sits flush at the column's left edge, so the
+              header text needs to line up to that same edge. */}
           <div
             role="columnheader"
             className="text-[1.25rem] tracking-[-0.02em] leading-none"
