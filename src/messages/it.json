@@ -1,1 +1,82 @@
-{"_meta":{"comment":"Stub. Populated by `npm run translate`."}}
+{
+  "site": {
+    "title": "Archivio del Curriculum Compassionevole",
+    "description": "Un archivio interattivo e accessibile del Curriculum Compassionevole — un framework partecipativo per l'apprendimento, la riflessione e la crescita collettiva."
+  },
+  "toolbar": {
+    "back": "Indietro",
+    "home": "Home",
+    "about": "Chi siamo",
+    "print": "Stampa",
+    "contact": "Contatti",
+    "settings": "Impostazioni e Accessibilità",
+    "language": "Lingua",
+    "switchToDark": "Passa alla modalità scura",
+    "switchToLight": "Passa alla modalità chiara",
+    "decreaseZoom": "Riduci zoom",
+    "increaseZoom": "Aumenta zoom",
+    "accentSwatchesLabel": "Campioni di colore accentato",
+    "useAccentColor": "Usa colore accentato {color}",
+    "useMonochrome": "Usa accentato monocromatico",
+    "pickCustomColor": "Scegli un colore accentato personalizzato",
+    "customColorPicker": "Selettore colore accentato personalizzato",
+    "primaryNav": "Principale"
+  },
+  "section": {
+    "introduction": "Introduzione",
+    "curriculum": "Curriculum"
+  },
+  "nav": {
+    "intro": "Intro",
+    "sectionsLabel": "Sezioni del curriculum"
+  },
+  "table": {
+    "lesson": "Lezione",
+    "title": "Titolo",
+    "activities": "Attività",
+    "linksAndImages": "Link e Immagini",
+    "label": "Curriculum",
+    "openLesson": "Apri lezione: {title}",
+    "activityAria": "{label}: {title}"
+  },
+  "activityTabs": {
+    "label": "Attività della lezione",
+    "overview": "Panoramica"
+  },
+  "activityBlock": {
+    "forFacilitators": "Per i Facilitatori",
+    "intro": "Intro"
+  },
+  "intro": {
+    "metaTitle": "Introduzione — Archivio del Curriculum Compassionevole",
+    "metaDescription": "Una Pratica di Speranza. Il Curriculum Compassionevole è un framework partecipativo per l'apprendimento, la riflessione e la crescita collettiva.",
+    "heading": "Introduzione: Una Pratica di Speranza",
+    "p1": "Il Curriculum Compassionevole è un framework partecipativo per l'apprendimento, la riflessione e la crescita collettiva, progettato con e per persone con esperienza diretta di trauma o qualsiasi forma di danno strutturale. Si basa sull'idea che l'esperienza diretta è una forma di conoscenza, e che la guarigione, la comprensione critica e l'immaginazione sono tutti necessari per costruire futuri più giusti.",
+    "p2": "Piuttosto che chiedere ai partecipanti semplicemente di ricevere informazioni, il curriculum li invita a costruire significato insieme. Si fonda sulla co-creazione, sull'aiuto reciproco e su un'etica della responsabilità. È anche basato sui punti di forza. Il lavoro non inizia da ciò che le persone mancano, ma da ciò che già conoscono, hanno superato e possono costruire insieme. In tutto il curriculum, i partecipanti sono incoraggiati a riflettere sulla propria esperienza, ascoltare gli altri e praticare forme di apprendimento collettivo che possono supportare sia la trasformazione personale che il cambiamento sociale più ampio.",
+    "p3Intro": "Il curriculum ha tre sezioni interconnesse.",
+    "p3PillBeloved": "I. Comunità Cara",
+    "p3MidBeloved": "si concentra sull'identità, l'appartenenza, la fluidità emotiva e il trauma storico. Aiuta i partecipanti a comprendere meglio se stessi, le loro relazioni e i sistemi più ampi che modellano come si muovono nel mondo.",
+    "p3PillRestorative": "II. Pratica Riparativa",
+    "p3MidRestorative": "introduce cerchi, ascolto attivo, rinarrazione e altri strumenti che supportano fiducia, riflessione, responsabilità e responsabilità condivisa.",
+    "p3PillMedia": "III. Media, Narrativa e Futuri",
+    "p3MidMedia": "esplora la narrativa, la rappresentazione e l'immaginazione. Invita i partecipanti a esaminare le narrative dominanti, raccontare storie più complete su se stessi e costruire capacità immaginativa per la risoluzione creativa dei problemi e la creazione del futuro.",
+    "p4": "Il Curriculum Compassionevole è progettato come un framework aperto e vivo. Può essere utilizzato in università, organizzazioni comunitarie, spazi di advocacy, contesti di ricerca e altri contesti di gruppo in cui i facilitatori desiderano supportare l'appartenenza, il dialogo e l'apprendimento collaborativo. Alcuni gruppi potrebbero usarlo come una serie strutturata di laboratori. Altri potrebbero attingere da singole sezioni o attività e adattarle alle esigenze locali.",
+    "p5": "Al suo nucleo, il curriculum è guidato dalla partecipazione, dall'embodiment, dalla narrativa e dall'apprendimento multimodale. Mira a creare condizioni in cui le persone possono pensare criticamente, connettersi attraverso le differenze e immaginare diversamente insieme. In questo senso, il Curriculum Compassionevole non è solo una serie di esercizi, ma un modo di praticare il sostegno reciproco, l'indagine condivisa e la speranza in comune."
+  },
+  "about": {
+    "metaTitle": "Chi siamo — Archivio del Curriculum Compassionevole",
+    "heading": "Chi siamo",
+    "p1": "Il Curriculum Compassionevole è un framework partecipativo per l'apprendimento, la riflessione e la crescita collettiva, progettato con e per persone con esperienza diretta di trauma o qualsiasi forma di danno strutturale. Si basa sull'idea che l'esperienza diretta è una forma di conoscenza, e che la guarigione, la comprensione critica e l'immaginazione sono tutti necessari per costruire futuri più giusti.",
+    "p2": "Piuttosto che chiedere ai partecipanti semplicemente di ricevere informazioni, il curriculum li invita a costruire significato insieme. Si fonda sulla co-creazione, sull'aiuto reciproco e su un'etica della responsabilità."
+  },
+  "contact": {
+    "metaTitle": "Contatti — Archivio del Curriculum Compassionevole",
+    "heading": "Contatti",
+    "p1": "Per domande, collaborazioni o per condividere come hai utilizzato il curriculum, contatta il team del progetto."
+  },
+  "notFound": {
+    "heading": "Pagina non trovata",
+    "body": "La pagina che stai cercando non è stata trovata.",
+    "returnHome": "Torna alla Home"
+  }
+}

@@ -1,0 +1,463 @@
+{
+  "id": "beloved-community",
+  "label": "I. Comunidade Amada",
+  "title": "Comunidade Amada",
+  "overview": "Esta seção explora como as pessoas chegam a se conhecerem, encontram comunidade, desenvolvem linguagem para a dor e a cura, e compreendem melhor o trauma histórico carregado por outros e por si mesmos. É fundamentada na ideia de que o bem-estar pessoal e a libertação coletiva estão profundamente conectados. A seção começa com autorreflexão e depois se move em direção a relacionamentos, fluência emocional e compreensão histórica.",
+  "lessons": [
+    {
+      "id": "identity",
+      "label": "L1",
+      "title": "Identidade: Ajudando a nos conhecermos",
+      "sectionId": "beloved-community",
+      "heroImage": "/images/l1-hero.png",
+      "thumbnail": "/images/l1-thumb.png",
+      "facilitatorBlocks": [
+        {
+          "kind": "p",
+          "bold": true,
+          "text": "\"A comunidade amada é formada não pela erradicação da diferença, mas pela sua afirmação, por cada um de nós reivindicando as identidades e heranças culturais que moldam quem somos e como vivemos no mundo.\" (bell hooks)"
+        },
+        {
+          "kind": "p",
+          "text": "O trabalho de identidade deve começar com autorreflexão. Existem diferenças reais entre grupos de pessoas, e temos o direito de explorá-las. Mas devemos começar conosco mesmos porque nossas identidades impactam outros e nosso ambiente. Os participantes têm maior probabilidade de se envolver thoughtfully com as identidades de outros se primeiro tiverem considerado as suas próprias. Encorajar o diálogo reflexivo consigo mesmo é essencial para nos compreendermos e fundamental para o bem-estar. O objetivo não é chegar a uma definição fixa de si mesmo, mas reconhecer a identidade como em camadas, relacional e mutável. Esta seção também pode ser usada para introduzir interseccionalidade como uma forma de entender como diferentes aspectos da identidade interagem, e como essas interações moldam a experiência."
+        },
+        {
+          "kind": "p",
+          "bold": true,
+          "text": "'A identidade é uma parte tão fundamental de ser um ser humano bem-sucedido que frequentemente se diz que você não pode fazer nada até que saiba quem você é. Como criaturas sociais, parte de saber quem somos é saber a que grupo pertencemos, que características, valores ou crenças compartilhamos com outros, quais outros e por quê' (Hirsch 2018:21)."
+        },
+        {
+          "kind": "p",
+          "bold": true,
+          "text": "'A chave para o bem-estar é entender a si mesmo e estar atento à sua identidade, pois isso tem uma influência enorme em nossas experiências' (Cousins 2019:41)."
+        },
+        {
+          "kind": "p",
+          "text": "'O hábito de conferir com você mesmo é um veículo poderoso para o autocuidado e o auto-fortalecimento quando a sociedade oferece desafios complexos cotidianos. Como em qualquer hábito, é preciso prática, perseverança e paciência para incorporar a conscientização recém-descoberta e seguir isso em nossas vidas diárias; no entanto, se você conseguir começar a criar oportunidades para uma identidade positiva, estará fazendo um investimento em seu bem-estar e satisfação de vida que é incomensurável' (Cousin 2019:41)."
+        }
+      ],
+      "activities": [
+        {
+          "id": "a1",
+          "label": "A1",
+          "title": "Desenvolvendo atenção plena interseccional",
+          "blocks": [
+            {
+              "kind": "image",
+              "src": "/images/l1-a1.png",
+              "alt": "Mãos segurando um pulso como um gesto de cuidado",
+              "width": 672,
+              "height": 376
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Comece discutindo sua própria identidade como facilitador. Modele abertura, complexidade e consciência de si mesmo. Depois convide os participantes a refletir sobre questões de Susan Cousins (2019:41):"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Como você descreveria sua identidade?",
+                "Quem é você?",
+                "Quais aspectos de sua identidade parecem mais importantes para você?",
+                "Quem ou o quê molda sua compreensão de si mesmo?",
+                "Quem ou o quê molda sua compreensão de outras identidades?",
+                "Como você se sente sobre as identidades que carrega?",
+                "Como você descreveria a si mesmo racialmente, e como se sente sobre essa parte de sua identidade?",
+                "Se você imaginar se mover pelo mundo com uma identidade racial ou cultural diferente, o que poderia mudar? O que poderia ser perdido? O que, se algo, poderia parecer diferente?"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a2",
+          "label": "A2",
+          "title": "Interseccionalidade como prática",
+          "blocks": [
+            {
+              "kind": "p",
+              "text": "Introduza a interseccionalidade como uma forma de entender como sistemas de poder afetam a experiência vivida. Isso pode ser apoiado através de material de vídeo curto, discussão ou diagramas que mostram como privilégio e opressão podem se sobrepor."
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Professora Kimberle Crenshaw (2018) https://youtu.be/ViDtnfQ9FHc — que cunhou o termo interseccionalidade, que nos permite explorar como as experiências são afetadas por diferentes identidades concorrentes e como isso impacta para excluir indivíduos da sociedade (Bhopal, 2018:47).",
+                "Tasneem Chopra (2023) 'A busca pelo feminismo interseccional' https://youtu.be/h4Us1dCRfFI"
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Possíveis perguntas para discussão:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Como diferentes partes de sua identidade se afetam?",
+                "Onde você experimenta privilégio?",
+                "Onde você experimenta exclusão ou discriminação?",
+                "Como a interseccionalidade nos ajuda a entender nossas próprias vidas e as vidas de outros?"
+              ]
+            },
+            {
+              "kind": "p",
+              "text": "Para uma crítica adicional, considere este diagrama dos eixos intersectantes de privilégio, dominação e opressão de Kathryn Pauly Morgan (1996), que ajuda a explicar como as pessoas estão posicionadas de forma diferente em relação ao poder. Todos nós existimos em um eixo de opressão e dominação. Algumas posições vêm com maior acesso, reconhecimento e vantagem, enquanto outras são moldadas pela discriminação e exclusão. Essas posições não são fixas — nossas identidades se intersectam e mudam em diferentes contextos, criando experiências complexas e em camadas. Entender isso nos ajuda a nos tornarmos mais conscientes tanto de nossa própria posição quanto das condições desiguais que outros podem estar navegando."
+            }
+          ]
+        },
+        {
+          "id": "a3",
+          "label": "A3",
+          "title": "Natureza do Viés",
+          "blocks": [
+            {
+              "kind": "p",
+              "text": "Introduza a ideia de que todos têm viés, incluindo viés inconsciente e viés de afinidade. Convide os participantes a refletir sobre como as pessoas são frequentemente atraídas por aqueles que se sentem familiares, e como isso afeta a percepção e o comportamento."
+            },
+            {
+              "kind": "p",
+              "text": "Assista ao vídeo da Dra. Jennifer Eberhardt para insights sobre viés inconsciente de seu livro, Biased: Uncovering the hidden prejudice that shapes what we see, think and do. https://www.youtube.com/watch?v=-ri1IFCqGjQ"
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Possíveis perguntas:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Que tipos de viés você vê na vida cotidiana?",
+                "Como viés e estereótipos achatam pessoas em uma única história?",
+                "Quais são os riscos de permitir que uma história fale por um grupo inteiro?"
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Informações de contexto"
+            },
+            {
+              "kind": "p",
+              "text": "O viés inconsciente é simplesmente nossas preferências não intencionais. O viés é frequentemente decidido em menos de um décimo de segundo, muitas vezes mais rápido do que podemos processar uma imagem. As pessoas frequentemente associam viés com viés racial, embora o viés assuma muitas formas. Um viés de afinidade significa que preferimos aqueles que são como nós. Nos faz sentir calorosos e fuzzy quando temos pessoas para reconfirmar nossos pensamentos, medos e origem. Também preferimos aqueles que têm a mesma educação, background de carreira, sotaque, etnia, etc. Se você tem um cérebro, você tem viés."
+            }
+          ]
+        },
+        {
+          "id": "a4",
+          "label": "A4",
+          "title": "Roda de Identidade Social",
+          "blocks": [
+            {
+              "kind": "p",
+              "text": "Com base na roda de identidade social, os participantes mapeiam suas identidades e consideram as questões abaixo."
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "De quais identidades você pensa com mais frequência?",
+                "De quais identidades você pensa com menos frequência?",
+                "Sobre qual de suas próprias identidades você gostaria de aprender mais?",
+                "Quais identidades têm o efeito mais forte em como você se percebe?",
+                "Quais identidades têm o efeito mais forte em como outros o percebem?"
+              ]
+            },
+            {
+              "kind": "p",
+              "text": "Versão alternativa: Baixe uma versão em branco e tenha o grupo criar sua própria roda para discussão. Mais informações disponíveis na [MIT Open Learning Library](https://openlearning.mit.edu/)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "finding-your-people",
+      "label": "L2",
+      "title": "Encontrando suas pessoas, encontrando seu time",
+      "sectionId": "beloved-community",
+      "heroImage": "/images/l2-thumb.png",
+      "thumbnail": "/images/l2-thumb.png",
+      "facilitatorBlocks": [
+        {
+          "kind": "p",
+          "text": "Esta lição se concentra em comunidade, pertencimento e o poder dos relacionamentos. Ela questiona como as pessoas encontram apoio, construem confiança e criam formas de cuidado coletivo. É fundamentada em tradições de coletivismo, apoio mútuo e cura radical."
+        },
+        {
+          "kind": "p",
+          "text": "Isso é sobre entender todos os sistemas de opressão que impactam nosso bem-estar. Um remédio para isso é encontrar seu time, suas pessoas. As mulheres negras sempre construíram coletivos, desde o Combahee River Collective até as Liverpool Black Sisters até The Goddess Projects. Portanto, encorajamos você a descobrir formas de sobreviver, rir, amar e curar de maneiras que estão conectadas a pessoas, pois há poder nas pessoas."
+        },
+        {
+          "kind": "p",
+          "text": "Enquadre esta lição em torno da ideia de que o eu não se apresenta sozinho. Encoraje os participantes a pensar em comunidade não apenas como algo a que pertençam, mas como algo que ajudam a criar. A comunidade pode ser construída através de identidade compartilhada, experiência compartilhada, valores compartilhados ou esforço compartilhado."
+        }
+      ],
+      "activities": [
+        {
+          "id": "a1",
+          "label": "A1",
+          "title": "Comunidade na prática",
+          "blocks": [
+            {
+              "kind": "p",
+              "text": "Convide os participantes a refletir sobre exemplos de construção de comunidade, especialmente aqueles enraizados em apoio mútuo, cuidado coletivo e organização de base. Assista a esses dois vídeos:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Nikotris Perkins (2019), uma estudante de doutorado em estudos urbanos que apresentou uma palestra sobre mulheres negras e comunidade: https://youtu.be/e78v42tz4eY",
+                "Doug Shipman, TEDX Atlanta: https://youtu.be/cP5PAul3H4E"
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Possíveis perguntas:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Em que comunidade você está?",
+                "O que comunidade significa para você?",
+                "O que podemos aprender com coletivos e redes de apoio existentes?",
+                "Como fazemos amigos? Como nos envolvemos com outras comunidades?",
+                "Podemos fazer comunidade amada juntos?",
+                "Como começamos a construir comunidade através da diferença?"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a2",
+          "label": "A2",
+          "title": "Encontrando seu time!",
+          "blocks": [
+            {
+              "kind": "p",
+              "text": "Os participantes devem identificar e mapear quem está em sua rede de apoio — seu time."
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Possíveis perguntas:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Quem já está em seu time?",
+                "Quem são suas pessoas-chave? Que qualidades elas têm?",
+                "Quem falta?",
+                "Que comunidades ou grupos você pode precisar se juntar?",
+                "O que torna difícil alcançar?",
+                "Que qualidades você pode precisar cultivar para encontrar suas pessoas?"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "developing-your-language",
+      "label": "L3",
+      "title": "Desenvolvendo sua linguagem",
+      "sectionId": "beloved-community",
+      "heroImage": "/images/l3-thumb.png",
+      "thumbnail": "/images/l3-thumb.png",
+      "facilitatorBlocks": [
+        {
+          "kind": "p",
+          "text": "Esta lição se concentra em fluência emocional: a capacidade de notar, nomear, entender e trabalhar com emoção. Ela apoia os participantes no desenvolvimento de linguagem para o que sentem, onde sentem e como as emoções moldam relacionamentos, liderança e cura."
+        },
+        {
+          "kind": "p",
+          "text": "Esta lição pode ser especialmente significativa para participantes que foram desestimulados de expressar vulnerabilidade ou que foram ensinados que certas emoções são inaceitáveis. Encoraje os participantes a abordar emoções sem vergonha. O objetivo não é eliminar sentimentos difíceis, mas coexistir com eles de forma mais consciente e compassiva."
+        },
+        {
+          "kind": "p",
+          "bold": true,
+          "text": "Informações de contexto"
+        },
+        {
+          "kind": "p",
+          "text": "Fluência Emocional descreve os relacionamentos que temos com nossas emoções. Nos permite ouvir mais efetivamente e responder adequadamente durante conversas tensas, reconhecendo o que outros podem estar sentindo e se estão alcançando para se conectar. Estar ciente de nossas emoções nos permite começar a entender de onde vêm e que pensamentos as desencadeiam. Desenvolver fluência emocional vai além de apenas reconhecer e rotular nossas emoções — significa aprender a coexistir com elas sem sentir a necessidade de afastá-las. Nossas comunidades amadas nos ajudam a discutir e coexistir com nossas experiências interseccionais vividas."
+        }
+      ],
+      "activities": [
+        {
+          "id": "a1",
+          "label": "A1",
+          "title": "Fluência emocional",
+          "blocks": [
+            {
+              "kind": "p",
+              "text": "Introduza a fluência emocional como a capacidade de sentir, nomear e trabalhar com emoções de forma saudável e produtiva."
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Ideias-chave:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Emoções não são problemas em si mesmas",
+                "Julgamento, vergonha e supressão frequentemente tornam as emoções mais difíceis de viver",
+                "Nomear emoções pode ajudar as pessoas a passar da reatividade para a reflexão",
+                "Fluência emocional apoia confiança, empatia e liderança"
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Possíveis perguntas:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Quais emoções você acha fácil nomear?",
+                "Quais emoções parecem mais difíceis de reconhecer?",
+                "Onde você aprendeu quais emoções são aceitáveis ou inaceitáveis?",
+                "Como suas emoções aparecem em seu corpo?",
+                "Você consegue nomear as emoções que está experimentando agora?",
+                "Como se parecem essas emoções? Descreva onde e o que você está sentindo, e como esse estado mental está se desdobrando em todo seu corpo sem julgamento.",
+                "Trabalhe para baixo em seu corpo de cima para baixo, e seja factual sobre onde você sente a emoção. Reassegure-se de que tudo está bem e que você está seguro."
+              ]
+            },
+            {
+              "kind": "p",
+              "text": "Emoções negativas frequentemente envolvem o cérebro primitivo. Precisamos envolver o cérebro pensante, e rotular o que você sente ajuda a fazer isso. Também nos ajuda a focar no que podemos controlar. Por exemplo, se meu queixo está cerrado, preciso relaxá-lo e preciso respirar mais lentamente e profundamente."
+            }
+          ]
+        },
+        {
+          "id": "a2",
+          "label": "A2",
+          "title": "Roda Emocional",
+          "blocks": [
+            {
+              "kind": "p",
+              "text": "Considere a roda de emoções desenvolvida pelo Black Emotional and Mental Health Collective (BEAM), uma organização que visa desmantelar as barreiras sistêmicas ao apoio à saúde mental através de programas de treinamento liderados por pares. Sozinho ou com um parceiro:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Faça uma lista das emoções que você frequentemente sente e as sensações físicas que você sente em associação com elas.",
+                "Quais emoções parecem familiares?",
+                "Quais emoções você resiste?",
+                "Onde você sente certas emoções em seu corpo?",
+                "Quais julgamentos você anexa a certos sentimentos?",
+                "Como esses julgamentos afetam seus relacionamentos e empatia?"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "understanding-historical-trauma",
+      "label": "L4",
+      "title": "Compreendendo o trauma histórico de outros",
+      "sectionId": "beloved-community",
+      "heroImage": "/images/l4-thumb.png",
+      "thumbnail": "/images/l4-thumb.png",
+      "facilitatorBlocks": [
+        {
+          "kind": "p",
+          "text": "Esta lição introduz trauma histórico como uma forma de dano coletivo e intergeracional moldado por colonização, racismo, violência e opressão sistêmica. Ela pede aos participantes que reflitam sobre como o trauma é transmitido, como molda a vida presente, e como uma maior consciência pode apoiar a empatia e a cura."
+        },
+        {
+          "kind": "p",
+          "text": "Trauma histórico pode ser material difícil e ativador. Vá devagar. Encoraje reflexão, cuidado e discussão fundamentada. Os participantes podem carregar trauma pessoal e herdado, e podem responder de diferentes formas. Crie espaço para complexidade."
+        },
+        {
+          "kind": "p",
+          "bold": true,
+          "text": "Informações de contexto"
+        },
+        {
+          "kind": "p",
+          "text": "Trauma pode ser um evento único significativo ou consequência de ações insidiosas contínuas, microagressões ou ser constantemente tratado diferentemente. Hartmann e Gone (2014) descrevem trauma histórico como diferindo do trauma psicológico de vida comum em quatro maneiras importantes: é colonial em origem, coletivo em impacto, cumulativo em eventos adversos, e transgeracional na transmissão de risco e vulnerabilidade."
+        },
+        {
+          "kind": "p",
+          "text": "Exemplos incluem as experiências de povos das Primeiras Nações na América do Norte, Australianos aborígenes e racismo anti-Negro entre a diáspora africana. Os indícios de trauma histórico são frequentemente profundamente incorporados, e muitas pessoas podem nem estar cientes de sua presença (Mate, 2022). Isso pode levar a emoções negativas e doenças físicas, incluindo doença psicossomática. O trauma histórico intergeracional é frequentemente intensificado pelo estresse crônico agudo do dia a dia, resultando em consequências físicas e emocionais prejudiciais."
+        }
+      ],
+      "activities": [
+        {
+          "id": "a1",
+          "label": "A1",
+          "title": "Como as Pessoas Experimentam Trauma Histórico?",
+          "blocks": [
+            {
+              "kind": "p",
+              "text": "1. Assista ao vídeo How Do People Experience Historical Trauma: https://youtu.be/sjJUQlodh0g"
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Em pares, discuta as seguintes questões:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Que exemplos de trauma histórico você conhece?",
+                "Como aprender sobre trauma histórico afeta a forma como você pensa sobre raça, identidade e cultura?",
+                "Como o trauma histórico é carregado para o presente?",
+                "Qual é a relação entre trauma histórico e microagressões?",
+                "Como a celebração cultural e o apoio da comunidade podem ajudar a contra-atacar o dano?",
+                "Como você pode encorajar e apoiar a celebração cultural?"
+              ]
+            },
+            {
+              "kind": "p",
+              "text": "2. Assista ao Dr. Gabor Mate, vídeo https://youtu.be/ak_nLWQ8EtY — discuta trauma e como afeta o eu autêntico."
+            }
+          ]
+        },
+        {
+          "id": "a2",
+          "label": "A2",
+          "title": "Praticar autorreflexão",
+          "blocks": [
+            {
+              "kind": "ul",
+              "items": [
+                "Quais aspectos de sua vida você se sente bem? (atributos positivos/forças)",
+                "Quais aspectos de sua vida o preenchem? (espaços em que você se sente enriquecido)",
+                "Como os efeitos do trauma histórico ou direto estão se mostrando em você? (Identifique vulnerabilidades).",
+                "O que você está fazendo para superar seu trauma pessoal/histórico ou direto?"
+              ]
+            },
+            {
+              "kind": "p",
+              "text": "Vídeo de escuta ativa YouTube: https://youtu.be/Qg8PIK74KO4"
+            }
+          ]
+        },
+        {
+          "id": "a3",
+          "label": "A3",
+          "title": "Exercício de Fundamentação",
+          "blocks": [
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Pratique deixar ir o passado e estar aberto para receber:"
+            },
+            {
+              "kind": "p",
+              "text": "Respire, pisando para frente com um pé e virando as palmas para baixo; Respire para fora, levantando os braços para a posição horizontal, deixando ir toda tensão e negatividade. Respire dentro, virando as palmas para cima e puxando-as de volta em direção ao peito, respirando paz e cura."
+            },
+            {
+              "kind": "p",
+              "text": "Repita com o outro pé para frente. Respire para fora a dor. Respire a calma e a oportunidade de curar."
+            },
+            {
+              "kind": "p",
+              "text": "Esta lição pode concluir com reflexão sobre trauma racial, estratégias de sobrevivência intergeracional e a necessidade de comunidade, justiça e mudança institucional. O framework de seis níveis do Dr. Shelley Harrell ajuda a descrever os efeitos físicos e emocionais que podem seguir a exposição ao racismo, incluindo eventos de vida relacionados ao racismo, racismo vicário, microstressores racistas diários, estressores contextuais crônicos, experiências coletivas de racismo e transmissão transgeracional de trauma."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

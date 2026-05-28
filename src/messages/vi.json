@@ -1,1 +1,82 @@
-{"_meta":{"comment":"Stub. Populated by `npm run translate`."}}
+{
+  "site": {
+    "title": "Kho Lưu Trữ Chương Trình Giáo Dục Từ Bi",
+    "description": "Một kho lưu trữ tương tác, dễ tiếp cận của Chương Trình Giáo Dục Từ Bi — một khuôn khổ tham gia cho học tập, suy ngẫm, và phát triển tập thể."
+  },
+  "toolbar": {
+    "back": "Quay lại",
+    "home": "Trang chủ",
+    "about": "Giới thiệu",
+    "print": "In",
+    "contact": "Liên hệ",
+    "settings": "Cài đặt & Khả năng tiếp cận",
+    "language": "Ngôn ngữ",
+    "switchToDark": "Chuyển sang chế độ tối",
+    "switchToLight": "Chuyển sang chế độ sáng",
+    "decreaseZoom": "Giảm phóng to",
+    "increaseZoom": "Tăng phóng to",
+    "accentSwatchesLabel": "Mẫu màu nhấn",
+    "useAccentColor": "Sử dụng màu nhấn {color}",
+    "useMonochrome": "Sử dụng màu nhấn đơn sắc",
+    "pickCustomColor": "Chọn một màu nhấn tùy chỉnh",
+    "customColorPicker": "Công cụ chọn màu nhấn tùy chỉnh",
+    "primaryNav": "Chính"
+  },
+  "section": {
+    "introduction": "Giới thiệu",
+    "curriculum": "Chương trình giáo dục"
+  },
+  "nav": {
+    "intro": "Giới thiệu",
+    "sectionsLabel": "Các phần của chương trình giáo dục"
+  },
+  "table": {
+    "lesson": "Bài học",
+    "title": "Tiêu đề",
+    "activities": "Hoạt động",
+    "linksAndImages": "Liên kết & Hình ảnh",
+    "label": "Chương trình giáo dục",
+    "openLesson": "Mở bài học: {title}",
+    "activityAria": "{label}: {title}"
+  },
+  "activityTabs": {
+    "label": "Hoạt động bài học",
+    "overview": "Tổng quan"
+  },
+  "activityBlock": {
+    "forFacilitators": "Cho người Tạo điều kiện",
+    "intro": "Giới thiệu"
+  },
+  "intro": {
+    "metaTitle": "Giới thiệu — Kho Lưu Trữ Chương Trình Giáo Dục Từ Bi",
+    "metaDescription": "Một Thực Hành Hy Vọng. Chương Trình Giáo Dục Từ Bi là một khuôn khổ tham gia cho học tập, suy ngẫm, và phát triển tập thể.",
+    "heading": "Giới thiệu: Một Thực Hành Hy Vọng",
+    "p1": "Chương Trình Giáo Dục Từ Bi là một khuôn khổ tham gia cho học tập, suy ngẫm, và phát triển tập thể, được thiết kế với và cho những người có kinh nghiệm sống với chấn thương hoặc bất kỳ hình thức tổn hại cấu trúc nào. Nó dựa trên ý tưởng rằng kinh nghiệm sống là một hình thức kiến thức, và rằng chữa lành, hiểu biết phê phán, và trí tưởng tượng đều cần thiết để xây dựng những tương lai công bằng hơn.",
+    "p2": "Thay vì chỉ yêu cầu những người tham gia đơn thuần tiếp nhận thông tin, chương trình này mời họ hình thành ý nghĩa cùng nhau. Nó dựa trên quyền tác giả chung, hỗ trợ lẫn nhau, và một đạo đức về trách nhiệm. Nó cũng dựa trên điểm mạnh. Công việc không bắt đầu từ những gì mọi người thiếu, mà từ những gì họ đã biết, đã vượt qua, và có thể xây dựng cùng nhau. Trong toàn bộ chương trình, những người tham gia được khuyến khích suy ngẫm về kinh nghiệm của riêng họ, lắng nghe lẫn nhau, và thực hành các hình thức học tập tập thể có thể hỗ trợ cả sự biến đổi cá nhân và sự thay đổi xã hội rộng lớn hơn.",
+    "p3Intro": "Chương trình có ba phần được kết nối.",
+    "p3PillBeloved": "I. Cộng Đồng Thương Yêu",
+    "p3MidBeloved": "tập trung vào danh tính, sự gần gũi, sự linh hoạt cảm xúc, và chấn thương lịch sử. Nó giúp những người tham gia hiểu rõ hơn về chính họ, mối quan hệ của họ, và các hệ thống rộng lớn hơn định hình cách họ di chuyển qua thế giới.",
+    "p3PillRestorative": "II. Thực Hành Phục Hồi",
+    "p3MidRestorative": "giới thiệu vòng tròn, lắng nghe tích cực, viết lại câu chuyện, và các công cụ khác hỗ trợ lòng tin, suy ngẫm, trách nhiệm giải trình, và trách nhiệm chung.",
+    "p3PillMedia": "III. Phương Tiện Truyền Thông, Tường Thuật và Tương Lai",
+    "p3MidMedia": "khám phá kể chuyện, đại diện, và trí tưởng tượng. Nó mời những người tham gia kiểm tra các tường thuật chiếm ưu thế, kể những câu chuyện đầy đủ hơn về chính họ, và xây dựng khả năng tưởng tượng cho giải quyết vấn đề sáng tạo và tạo tương lai.",
+    "p4": "Chương Trình Giáo Dục Từ Bi được thiết kế như một khuôn khổ mở và sống động. Nó có thể được sử dụng trong các trường đại học, tổ chức cộng đồng, không gian vận động, các cài đặt nghiên cứu, và các bối cảnh nhóm khác nơi những người tạo điều kiện muốn hỗ trợ sự gần gũi, đối thoại, và học tập hợp tác. Một số nhóm có thể sử dụng nó như một loạt các hội thảo có cấu trúc. Những nhóm khác có thể sử dụng các phần hoặc hoạt động riêng lẻ và điều chỉnh chúng theo nhu cầu địa phương.",
+    "p5": "Về cốt lõi, chương trình được hướng dẫn bởi sự tham gia, cụ thể hóa, kể chuyện, và học tập đa phương thức. Nó nhằm tạo ra các điều kiện trong đó mọi người có thể suy nghĩ một cách phê phán, kết nối qua những khác biệt, và tưởng tượng theo những cách khác nhau cùng nhau. Theo nghĩa này, Chương Trình Giáo Dục Từ Bi không chỉ là một tập hợp các bài tập, mà là một cách thực hành hỗ trợ lẫn nhau, điều tra chung, và hy vọng cùng nhau."
+  },
+  "about": {
+    "metaTitle": "Giới thiệu — Kho Lưu Trữ Chương Trình Giáo Dục Từ Bi",
+    "heading": "Giới thiệu",
+    "p1": "Chương Trình Giáo Dục Từ Bi là một khuôn khổ tham gia cho học tập, suy ngẫm, và phát triển tập thể, được thiết kế với và cho những người có kinh nghiệm sống với chấn thương hoặc bất kỳ hình thức tổn hại cấu trúc nào. Nó dựa trên ý tưởng rằng kinh nghiệm sống là một hình thức kiến thức, và rằng chữa lành, hiểu biết phê phán, và trí tưởng tượng đều cần thiết để xây dựng những tương lai công bằng hơn.",
+    "p2": "Thay vì chỉ yêu cầu những người tham gia đơn thuần tiếp nhận thông tin, chương trình này mời họ hình thành ý nghĩa cùng nhau. Nó dựa trên quyền tác giả chung, hỗ trợ lẫn nhau, và một đạo đức về trách nhiệm."
+  },
+  "contact": {
+    "metaTitle": "Liên hệ — Kho Lưu Trữ Chương Trình Giáo Dục Từ Bi",
+    "heading": "Liên hệ",
+    "p1": "Để đặt câu hỏi, hợp tác, hoặc chia sẻ cách bạn đã sử dụng chương trình, vui lòng liên hệ với nhóm dự án."
+  },
+  "notFound": {
+    "heading": "Không tìm thấy trang",
+    "body": "Không thể tìm thấy trang bạn đang tìm kiếm.",
+    "returnHome": "Quay về Trang Chủ"
+  }
+}

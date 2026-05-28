@@ -1,1 +1,82 @@
-{"_meta":{"comment":"Stub. Populated by `npm run translate`."}}
+{
+  "site": {
+    "title": "Compassionate Curriculum Archive",
+    "description": "Een interactief, toegankelijk archief van het Compassionate Curriculum — een participatief raamwerk voor leren, reflectie en collectieve groei."
+  },
+  "toolbar": {
+    "back": "Terug",
+    "home": "Home",
+    "about": "Over",
+    "print": "Afdrukken",
+    "contact": "Contact",
+    "settings": "Instellingen & Toegankelijkheid",
+    "language": "Taal",
+    "switchToDark": "Schakel naar donkere modus",
+    "switchToLight": "Schakel naar lichte modus",
+    "decreaseZoom": "Zoom verkleinen",
+    "increaseZoom": "Zoom vergroten",
+    "accentSwatchesLabel": "Kleurstalen voor accentkleur",
+    "useAccentColor": "Gebruik accentkleur {color}",
+    "useMonochrome": "Gebruik monochromatische accentkleur",
+    "pickCustomColor": "Kies een aangepaste accentkleur",
+    "customColorPicker": "Aangepaste accentkleur picker",
+    "primaryNav": "Primair"
+  },
+  "section": {
+    "introduction": "Inleiding",
+    "curriculum": "Curriculum"
+  },
+  "nav": {
+    "intro": "Intro",
+    "sectionsLabel": "Curriculumsecties"
+  },
+  "table": {
+    "lesson": "Les",
+    "title": "Titel",
+    "activities": "Activiteiten",
+    "linksAndImages": "Links & Afbeeldingen",
+    "label": "Curriculum",
+    "openLesson": "Open les: {title}",
+    "activityAria": "{label}: {title}"
+  },
+  "activityTabs": {
+    "label": "Lesactiviteiten",
+    "overview": "Overzicht"
+  },
+  "activityBlock": {
+    "forFacilitators": "Voor Facilitators",
+    "intro": "Intro"
+  },
+  "intro": {
+    "metaTitle": "Inleiding — Compassionate Curriculum Archive",
+    "metaDescription": "Een praktijk van hoop. Het Compassionate Curriculum is een participatief raamwerk voor leren, reflectie en collectieve groei.",
+    "heading": "Inleiding: Een praktijk van hoop",
+    "p1": "Het Compassionate Curriculum is een participatief raamwerk voor leren, reflectie en collectieve groei, ontworpen met en voor mensen met levenservaring op het gebied van trauma of enige vorm van structureel schadegeval. Het is gebaseerd op het idee dat levenservaring een vorm van kennis is, en dat genezing, kritisch inzicht en verbeeldingskracht allemaal noodzakelijk zijn om meer rechtvaardige toekomsten op te bouwen.",
+    "p2": "In plaats van deelnemers simpelweg informatie te laten ontvangen, nodigt het curriculum hen uit om samen betekenis te geven. Het is gebaseerd op gezamenlijk auteurschap, wederzijdse steun en een verantwoordingsethiek. Het is ook op sterke punten gericht. Het werk begint niet met wat mensen missen, maar met wat zij al weten, hebben overleefd en samen kunnen opbouwen. Door het hele curriculum heen worden deelnemers aangemoedigd om te reflecteren op hun eigen ervaring, naar elkaar te luisteren en vormen van collectief leren te oefenen die zowel persoonlijke transformatie als bredere maatschappelijke verandering kunnen ondersteunen.",
+    "p3Intro": "Het curriculum heeft drie verbonden secties.",
+    "p3PillBeloved": "I. Beloved Community",
+    "p3MidBeloved": "richt zich op identiteit, thuisbehoren, emotionele vaardigheid en historisch trauma. Het helpt deelnemers zichzelf, hun relaties en de bredere systemen die bepalen hoe zij zich door de wereld bewegen beter te begrijpen.",
+    "p3PillRestorative": "II. Restorative Practice",
+    "p3MidRestorative": "introduceert cirkels, actief luisteren, herschrijving en andere gereedschappen die vertrouwen, reflectie, verantwoording en gedeelde verantwoordelijkheid ondersteunen.",
+    "p3PillMedia": "III. Media, Narrative and Futuring",
+    "p3MidMedia": "verkent verhalen vertellen, representatie en verbeeldingskracht. Het nodigt deelnemers uit om dominante verhalen te onderzoeken, vollere verhalen over zichzelf te vertellen en creatieve probleemoplossing en toekomstvorming mogelijk te maken.",
+    "p4": "Het Compassionate Curriculum is ontworpen als een open en levend raamwerk. Het kan worden gebruikt op universiteiten, in communityorganisaties, advocatieruimtes, onderzoeksinstellingen en andere groepscontexten waar facilitators thuisbehoren, dialoog en samenwerkend leren willen ondersteunen. Sommige groepen gebruiken het als een gestructureerde reeks workshops. Anderen kunnen individuele secties of activiteiten gebruiken en ze aanpassen aan lokale behoeften.",
+    "p5": "Het curriculum wordt op zijn grondslag geleid door participatie, inbedding, verhalen vertellen en multimodale lering. Het beoogt omstandigheden te creëren waarin mensen kritisch kunnen denken, over verschillen heen kunnen verbinden en anders samen kunnen voorstellen. In deze zin is het Compassionate Curriculum niet alleen een reeks oefeningen, maar een manier van praktiseren van wederzijdse steun, gedeeld onderzoeken en hoop in het gemeenschappelijk."
+  },
+  "about": {
+    "metaTitle": "Over — Compassionate Curriculum Archive",
+    "heading": "Over",
+    "p1": "Het Compassionate Curriculum is een participatief raamwerk voor leren, reflectie en collectieve groei, ontworpen met en voor mensen met levenservaring op het gebied van trauma of enige vorm van structureel schadegeval. Het is gebaseerd op het idee dat levenservaring een vorm van kennis is, en dat genezing, kritisch inzicht en verbeeldingskracht allemaal noodzakelijk zijn om meer rechtvaardige toekomsten op te bouwen.",
+    "p2": "In plaats van deelnemers simpelweg informatie te laten ontvangen, nodigt het curriculum hen uit om samen betekenis te geven. Het is gebaseerd op gezamenlijk auteurschap, wederzijdse steun en een verantwoordingsethiek."
+  },
+  "contact": {
+    "metaTitle": "Contact — Compassionate Curriculum Archive",
+    "heading": "Contact",
+    "p1": "Voor vragen, samenwerkingen of om te delen hoe u het curriculum heeft gebruikt, neem alstublieft contact op met het projectteam."
+  },
+  "notFound": {
+    "heading": "Pagina niet gevonden",
+    "body": "De pagina die u zoekt kan niet worden gevonden.",
+    "returnHome": "Terug naar Home"
+  }
+}

@@ -1,0 +1,688 @@
+{
+  "id": "restorative-practices",
+  "label": "II. Những Thực Hành Hàn Gắn",
+  "title": "Những Thực Hành Hàn Gắn",
+  "overview": "Phần này giới thiệu thực hành hàn gắn như một cách học tập tham gia và quan hệ. Nó đặt trọng tâm vào kể chuyện miệng, lắng nghe, tác giả chung, và trách nhiệm tập thể. Những thực hành trong phần này giúp những người tham gia xây dựng niềm tin, phản ánh trên kinh nghiệm, và phát triển những cách có lòng trắc ẩn hơn để ở cùng nhau.",
+  "lessons": [
+    {
+      "id": "entering-the-circle",
+      "label": "L1",
+      "title": "Bước Vào Vòng Tròn",
+      "sectionId": "restorative-practices",
+      "facilitatorBlocks": [
+        {
+          "kind": "p",
+          "text": "Hoạt động này giới thiệu những người tham gia vào thực hành hàn gắn và những yếu tố cơ bản của công việc vòng tròn. Vòng tròn là thực hành hàn gắn chính được sử dụng trong chương trình giáo dục này. Như Kay Pranis và Carolyn Boyes-Watson mô tả trong Circle Forward, chúng hoạt động tốt nhất khi các nhóm bắt đầu bằng cách tìm hiểu nhau, thiết lập các giá trị chung, và xây dựng niềm tin trước khi đi sâu vào cuộc thảo luận. Vòng tròn có thể được sử dụng cho nhiều mục đích, bao gồm chữa lành, tưởng nhớ, hỗ trợ, giải quyết xung đột, tái hòa nhập, và kỷ niệm."
+        },
+        {
+          "kind": "p",
+          "text": "Một mẩu nói chuyện là một vật thể được truyền xung quanh vòng tròn đánh dấu ai đang nói và nhắc nhở những người khác lắng nghe chủ động; nó cũng cho phép bất kỳ người tham gia nào có thể bỏ qua. Một chiếc áo choàng là một miếng vải hoặc không gian trung tâm nơi các vật thể có ý nghĩa có thể được đặt để giúp đánh dấu vòng tròn như một ý định và khác biệt. Một lời thừa nhận đất đai là một cách để đặt tên cho các lịch sử, các dân tộc, và những di sản đang diễn ra hình thành nơi vòng tròn diễn ra."
+        },
+        {
+          "kind": "p",
+          "text": "Sắp xếp phòng theo hình tròn nếu có thể, với đủ không gian giữa các chia sẻ để những người tham gia có thể nhìn thấy nhau một cách rõ ràng. Chú ý đến nhu cầu tiếp cận trước. Giữ giấy và bút gần đó để ghi chú hoặc nhận xét theo dõi, và chuẩn bị một tờ giấy lớn hoặc giá đỡ nếu bạn dự định ghi lại các thỏa thuận cộng đồng."
+        },
+        {
+          "kind": "p",
+          "bold": true,
+          "text": "Một vòng tròn thường sẽ đi qua trình tự sau:"
+        },
+        {
+          "kind": "ul",
+          "items": [
+            "chào mừng và mục đích",
+            "khai mạc hoặc phá băng và khi thích hợp, lời thừa nhận đất đai",
+            "thỏa thuận cộng đồng",
+            "kiểm tra",
+            "vòng thảo luận",
+            "kiểm tra lại và đóng"
+          ]
+        }
+      ],
+      "activities": [
+        {
+          "id": "a1",
+          "label": "A1",
+          "title": "Chào Mừng, Khai Mạc & Thỏa Thuận Cộng Đồng",
+          "blocks": [
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Chào mừng và mục đích:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "người giữ vòng tròn giới thiệu chính mình và mẩu nói chuyện;",
+                "nếu những người tham gia mới đối với thực hành hàn gắn, người giữ vòng tròn giải thích vai trò của họ và cách sử dụng mẩu nói chuyện;",
+                "nếu sử dụng một chiếc áo choàng, giải thích nó là gì và tại sao các vật thể quan trọng."
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Khai Mạc và Phá Băng"
+            },
+            {
+              "kind": "p",
+              "text": "Bắt đầu với một câu hỏi giới thiệu đơn giản để giúp những người tham gia vào không gian và quy trình. Một số câu hỏi có thể yêu cầu nhiều niềm tin và sự cởi mở hơn, vì vậy không phải tất cả sẽ phù hợp cho mọi nhóm. Ví dụ:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Nếu bạn có thể có một siêu năng lực, nó sẽ là gì?",
+                "Những anh hùng của bạn là ai và tại sao?",
+                "Một mục tiêu cho thời gian của bạn trong hội thảo này là...",
+                "Một điều mà bạn sẽ không biết về tôi chỉ bằng cách nhìn thấy tôi là...",
+                "Một khía cạnh về bản sắc của tôi mà tôi cảm thấy quan trọng khi mang vào vòng tròn là..."
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Thỏa thuận cộng đồng"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Người giữ vòng tròn, giữ mẩu nói chuyện, mời những người tham gia đặt tên những gì họ cần để có thể nói mở và trung thực trong vòng tròn.",
+                "Gợi ý: Những thỏa thuận nào quan trọng với bạn để đảm bảo rằng bản thân bạn sẽ cảm thấy can đảm hơn khi nói mở và trung thực trong vòng tròn này?",
+                "Mẩu nói chuyện được truyền sang trái, để mỗi người tham gia có cơ hội thêm hoặc bỏ qua.",
+                "Ghi lại các phản ứng và xem lại chúng khi cần thiết. Một số người giữ vòng tròn có thể mời những người tham gia ký các thỏa thuận cuối cùng."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a2",
+          "label": "A2",
+          "title": "Kiểm Tra & Vòng Thảo Luận",
+          "blocks": [
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Kiểm tra"
+            },
+            {
+              "kind": "p",
+              "text": "Sau lời chào mừng và thỏa thuận, hãy làm một vòng kiểm tra đơn giản kết nối với chủ đề của ngày. Các ví dụ có thể là, \"bạn thế nào hôm nay, trên thang điểm từ 1 đến 10, và tại sao?\""
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Vòng thảo luận"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Chỉ nên xảy ra sau khi những người tham gia kiểm tra, hiểu mục đích của vòng tròn, và biết ai đang hiện tại.",
+                "Các câu hỏi nên mở, có ý định, và kết nối với kinh nghiệm cá nhân.",
+                "Luôn kiểm tra sau một vòng và truyền mẩu nói chuyện lại trong trường hợp ai đó ban đầu bỏ qua muốn nói."
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Để sửa chữa các mối quan hệ:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Bạn nghĩ ai bị ảnh hưởng bởi tình huống này, và họ bị tác động theo những cách cụ thể nào?",
+                "Phần khó khăn nhất của trải nghiệm này đối với bạn là gì?",
+                "Điều gì cần xảy ra ngay bây giờ để làm cho mọi thứ đúng nhất có thể cho mọi người liên quan?"
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Để thay đổi tổ chức & xử lý chuyển đổi:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Bạn hiện đang giữ những lo ngại gì về sự thay đổi sắp tới của chúng ta? Những sợ hãi của bạn là gì?",
+                "Một tài nguyên hoặc hỗ trợ thực tế mà bạn cần để điều hướng thay đổi này thành công là gì?"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a3",
+          "label": "A3",
+          "title": "Đóng Vòng Tròn",
+          "blocks": [
+            {
+              "kind": "p",
+              "text": "Đóng với một vòng phản ứng đối với các câu nhắc phản ánh giúp những người tham gia rời khỏi vòng tròn với chăm sóc và ý định."
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Các câu gợi ý tiềm năng:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Bạn đang mang đi cái gì từ hôm nay?",
+                "Bạn sẽ tự chăm sóc bằng cách nào hôm nay?",
+                "Cam kết nào mà bạn sẵn sàng thực hiện hôm nay dựa trên vòng tròn của chúng ta hôm nay?"
+              ]
+            },
+            {
+              "kind": "p",
+              "text": "Sau vòng đóng, người giữ vòng tròn có thể hướng dẫn một bài tập nền tảng ngắn như hít thở, chuyển động, một bài thơ, một bài hát, hoặc một lời gọi và phản hồi."
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Tùy chọn theo dõi: Những Mẩu Nói Chuyện"
+            },
+            {
+              "kind": "p",
+              "text": "Sau vòng tròn thứ hai, khi những người tham gia đã quen thuộc hơn với nhau, người giữ vòng tròn có thể mời họ mang một vật thể có ý nghĩa cá nhân để phục vụ như một mẩu nói chuyện và, nếu họ muốn, chia sẻ tại sao nó có ý nghĩa với họ. Trong các vòng tròn kỹ thuật số, mẩu nói chuyện và áo choàng có thể mang tính biểu tượng hơn là vật lý, nhưng các nguyên tắc tương tự vẫn áp dụng."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reauthoring-circles",
+      "label": "L2",
+      "title": "Những Vòng Tròn Viết Lại Tác Giả",
+      "sectionId": "restorative-practices",
+      "facilitatorBlocks": [
+        {
+          "kind": "p",
+          "text": "Viết lại tác giả là một cách hiểu biết cách những câu chuyện mà chúng ta kể về chính mình được hình thành bởi các lực lượng xã hội lớn hơn, bao gồm các thể chế, văn hóa, và các hệ thống quyền lực. Thuật ngữ này lần đầu tiên được phát triển bởi Michael White và David Epston (1990) như một phần của Liệu pháp Tường thuật. Trong chương trình giáo dục này, viết lại tác giả không phải là liệu pháp. Nó là một thực hành cộng đồng giúp mọi người phản ánh cách các huyền thoại thống trị về chủng tộc, giai cấp, giới tính, khuyết tật, tội phạm, và thuộc về hình thành bản sắc, và cách những huyền thoại đó có thể bị thách thức."
+        },
+        {
+          "kind": "p",
+          "text": "Thực hành viết lại tác giả tìm kiếm những gì đôi khi được gọi là những tường thuật bão hòa vấn đề: những câu chuyện mà trong đó một người trở thành được định nghĩa bởi khó khăn, kỳ thị, hoặc một trải nghiệm duy nhất. Viết lại tác giả hỏi: điều gì khác là sự thật? Những sức mạnh, giá trị, kiến thức, và sự hiểu biết nào đã có mặt bên cạnh khó khăn, kỳ thị, hoặc một câu chuyện định nghĩa duy nhất? Nó từ chối câu chuyện duy nhất và tạo không gian cho một tài khoản đầy đủ hơn."
+        },
+        {
+          "kind": "p",
+          "bold": true,
+          "text": "Một vòng tròn viết lại tác giả là một cuộc trò chuyện có cấu trúc với ba vai trò:"
+        },
+        {
+          "kind": "ul",
+          "items": [
+            "người kể chuyện: một người chia sẻ một câu chuyện, thách thức, hoặc câu hỏi",
+            "những nhân chứng: nhóm lắng nghe và phản ánh lại sức mạnh, giá trị, và khả năng",
+            "người giữ vòng tròn: người giữ cấu trúc và hỗ trợ quá trình"
+          ]
+        },
+        {
+          "kind": "p",
+          "text": "Mục đích không phải để đánh giá, sửa chữa, hoặc đưa ra lời khuyên. Nó là để lắng nghe cùng nhau để tìm những gì quan trọng, những gì đã được sống sót, và những gì đã được học."
+        }
+      ],
+      "activities": [
+        {
+          "id": "a1",
+          "label": "A1",
+          "title": "Những Câu Hỏi Mạnh Mẽ",
+          "blocks": [
+            {
+              "kind": "p",
+              "text": "Trước khi bắt đầu, người giữ vòng tròn yêu cầu một tình nguyện viên người kể chuyện sẵn sàng chia sẻ một thách thức, câu hỏi, hoặc khoảnh khắc tăng trưởng, và kiểm tra với họ để đảm bảo sự đồng ý. Giới thiệu quy trình một cách rõ ràng: một người sẽ chia sẻ, những người khác sẽ lắng nghe và phản ánh lại những gì họ nghe, nhóm lắng nghe để tìm sức mạnh và những gì quan trọng, không có lời khuyên được đưa ra."
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Ví dụ về các câu hỏi tốt:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Bạn nhận thấy điều gì về bản thân mình vào thời điểm đó?",
+                "Điều này cho bạn biết điều gì về những gì quan trọng với bạn?",
+                "Mất bao nhiêu sức lực để vượt qua điều đó?",
+                "Bạn cần gì vào thời điểm đó?",
+                "Điều gì có thể giúp bạn suy nghĩ về điều này khác đi?"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a2",
+          "label": "A2",
+          "title": "Chứng Kiến",
+          "blocks": [
+            {
+              "kind": "p",
+              "text": "Chứng kiến có nghĩa là lắng nghe tìm kiếm khả năng phục hồi, công nhận kiến thức và năng lực, và phản ánh những cái này lại. Mục đích không phải để sửa chữa, mà để đặt tên những gì đã có mặt."
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Ví dụ về chứng kiến:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Những gì tôi nghe là bạn...",
+                "Bạn tiếp tục đi trước...",
+                "Tôi nhận thấy các chiến lược mà bạn đã phát triển để đối phó với điều đó...",
+                "Có vẻ như chăm sóc, tôn riêng, hoặc công bằng thực sự quan trọng với bạn",
+                "Tôi nghe một cam kết sâu sắc để...",
+                "Bạn đã học một cái gì đó quan trọng thông qua trải nghiệm đó",
+                "Những gì tôi nghe là một câu chuyện về cách bạn chăm sóc, kháng cự, hoặc học hỏi theo cách"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a3",
+          "label": "A3",
+          "title": "Quá Trình & Phản Ánh Đóng",
+          "blocks": [
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Quá Trình"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Người giữ vòng tròn triệu tập lễ khai mạc của vòng tròn.",
+                "Người kể chuyện chia sẻ trong khi giữ mẩu nói chuyện.",
+                "Nhóm tạm dừng.",
+                "Mẩu nói chuyện được truyền xung quanh vòng tròn. Những nhân chứng phản ánh những gì họ nghe.",
+                "Khi mẩu nói chuyện quay lại người kể chuyện, mời phản ánh."
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Các câu gợi ý phản ánh đóng:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Bạn nghe được cái gì?",
+                "Điều gì cảm thấy đúng?",
+                "Điều gì khiến bạn ngạc nhiên?",
+                "Bạn muốn mang theo những gì?",
+                "Điều gì nổi bật với bạn?",
+                "Điều gì cảm thấy có thể xảy ra trong quá trình này?",
+                "Bạn sẽ sử dụng nó ở đâu trong công việc riêng của bạn?",
+                "Hỗ trợ nào sẽ giúp bạn cảm thấy tự tin hơn khi tạo điều kiện cho nó?"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sharing-our-stories",
+      "label": "L3",
+      "title": "Chia Sẻ Câu Chuyện Của Chúng Ta",
+      "sectionId": "restorative-practices",
+      "facilitatorBlocks": [
+        {
+          "kind": "p",
+          "text": "Hoạt động này có thể bắt đầu là viết nhật ký, hoặc trong hoặc giữa các phiên, và sau đó chuyển sang chia sẻ vòng tròn. Nhiệm vụ là viết \"câu chuyện của bạn.\""
+        },
+        {
+          "kind": "p",
+          "text": "Tùy thuộc vào kích thước nhóm, hoạt động này có thể diễn ra qua nhiều phiên. Nó có thể giúp nếu một trong những người giữ vòng tròn chia sẻ trước tiên để mô hình hóa hoạt động, hoặc nếu một vài người tham gia được chuẩn bị trước, để xem liệu họ có cảm thấy thoải mái chia sẻ sớm hay không. Những người tham gia nên luôn có tùy chọn bỏ qua. Cho phép nghỉ giữa các câu chuyện. Những vòng tròn này có thể mang tính chất cường độ, và các khoảng tạm dừng giúp nhóm vẫn có mặt cho nhau."
+        }
+      ],
+      "activities": [
+        {
+          "id": "a1",
+          "label": "A1",
+          "title": "Các Gợi Ý Viết Nhật Ký",
+          "blocks": [
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Các Gợi Ý:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Tên của bạn là gì?",
+                "Bạn sống ở đâu? Bạn có luôn sống ở đó không?",
+                "Bạn lớn lên ở đâu?",
+                "Những kỷ niệm tuổi thơ nào vẫn lại với bạn?",
+                "Bạn sống với ai?",
+                "Bạn có anh chị em không? Mối quan hệ của bạn với họ như thế nào?",
+                "Mối quan hệ của bạn với cha mẹ hoặc người giám hộ của bạn như thế nào?",
+                "Bạn đã phải đối mặt với những khó khăn nào? Bạn đã vượt qua những chướng ngại nào?",
+                "Những thành tích nào mà bạn tự hào?",
+                "Bạn đến công việc này như thế nào?",
+                "Tại sao công việc này quan trọng với bạn?",
+                "Bạn sẽ kích hoạt những gì mà bạn đang học như thế nào?",
+                "Những sở thích và mục tiêu dài hạn của bạn là gì?"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "land-ancestor-acknowledgement",
+      "label": "L4",
+      "title": "Lời Thừa Nhận Đất Đai & Tổ Tiên",
+      "sectionId": "restorative-practices",
+      "facilitatorBlocks": [
+        {
+          "kind": "p",
+          "text": "Hoạt động này mời những người tham gia phản ánh về những lịch sử, nơi chốn, tổ tiên, và dòng dõi hình thành không gian họ đang ở. Nó dựa trên các tài nguyên của Native Land Digital để vượt ra ngoài các khung làm việc mang tính hiệu suất hoặc giao dịch."
+        },
+        {
+          "kind": "p",
+          "text": "Trước khi tạo điều kiện cho hoạt động này, hãy tìm hiểu về những ai là chủ nhân đất đai mà vòng tròn đang diễn ra, những ai sống ở đó trong quá khứ, và những ai sống ở đó bây giờ. Điều này có thể yêu cầu nghiên cứu chính thức cũng như các cuộc trò chuyện với các thành viên cộng đồng."
+        },
+        {
+          "kind": "p",
+          "text": "Đây có thể là một hoạt động khó khăn. Những người tham gia có thể được nhận nuôi, có thể không biết lịch sử của họ, hoặc có thể mang chấn thương liên quan đến gia đình, nô lệ, thuộc địa, di cư, hoặc bị dịch chuyển. Đi từ từ. Xây dựng trong các khoảng tạm dừng."
+        }
+      ],
+      "activities": [
+        {
+          "id": "a1",
+          "label": "A1",
+          "title": "Các Gợi Ý Phản Ánh",
+          "blocks": [
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Các gợi ý tiềm năng"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Những tổ tiên và những người nào mà chúng ta nên đánh giá cao khi chúng ta tập hợp?",
+                "Câu chuyện di cư của bạn là gì?",
+                "Những bậc thầy của bạn, còn sống và đã chuyển tiếp, là ai và làm thế nào họ có mặt trong bạn?"
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Các tùy chọn theo dõi"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "viết lời thừa nhận đất đai riêng của bạn",
+                "chia sẻ nó trong vòng tròn",
+                "phát triển một lời thừa nhận tập thể trong các nhóm nhỏ hoặc toàn bộ nhóm"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a2",
+          "label": "A2",
+          "title": "Lời Thừa Nhận Ví Dụ",
+          "blocks": [
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Ví dụ từ Lenapehoking (NJ, Eastern PA, Southeastern NY):"
+            },
+            {
+              "kind": "p",
+              "text": "\"Tôi muốn bắt đầu bằng lời thừa nhận rằng chúng ta đang ở trên lãnh thổ không được nhận một cách chính thức của những người Lenape. Tôi muốn công nhận và cảm tạ những tổ tiên Lenape và những thế hệ hiện tại và tương lai trên vùng đất Lenape này, cũng như khắp cộng đồng Lenape bị rải rác. Tôi cũng muốn mở rộng lời thừa nhận này cho tất cả các dân tộc bản địa những người hiện tại và trong tương lai gọi những vùng đất Lenape này, Lenapehoking, là nhà. Lời thừa nhận này là cam kết giải quyết các di sản đang diễn ra của chủ nghĩa thực dân người định cư, chủ nghĩa phân biệt chủng tộc, giam giữ hàng loạt, và phức hợp công nghiệp kỳ lạo.\""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "circle-questions",
+      "label": "L5",
+      "title": "Các Câu Hỏi Vòng Tròn và Thực Hành Lắng Nghe",
+      "sectionId": "restorative-practices",
+      "facilitatorBlocks": [
+        {
+          "kind": "p",
+          "text": "Tài liệu nguồn bao gồm Mediators Beyond Borders và The Art of Powerful Questions bởi Eric E. Vogt, Juanita Brown, và David Isaacs. Trong thực hành Circle, các câu hỏi được gọi là các gợi ý và được sắp xếp thứ tự cẩn thận di chuyển từ các câu hỏi dễ bị tổn thương thấp (để xây dựng sự an toàn) đến các câu hỏi dễ bị tổn thương cao (để giải quyết chủ đề cốt lõi), và kết thúc bằng phản ánh."
+        },
+        {
+          "kind": "p",
+          "bold": true,
+          "text": "Mẹo Tạo Điều Kiện Nhanh Chóng cho Các Câu Hỏi Vòng"
+        },
+        {
+          "kind": "ul",
+          "items": [
+            "Giữ chúng mở: tránh những câu hỏi có thể được trả lời bằng một \"có\" hoặc \"không\" đơn giản. Sử dụng Cái gì, Làm thế nào, hoặc Bạn có thể mô tả ... thay vì Tại sao.",
+            "Mô hình hóa câu nhắc: là điều tạo điều kiện, thường hữu ích để trả lời câu hỏi trước tiên khi bạn giới thiệu nó.",
+            "Đi qua là luôn luôn một tùy chọn: nhắc nhở những người tham gia rằng khi mẩu nói chuyện đến với họ, họ có thể chọn bỏ qua, giữ nó trong im lặng, hoặc nói."
+          ]
+        }
+      ],
+      "activities": [
+        {
+          "id": "a1",
+          "label": "A1",
+          "title": "Những Câu Hỏi Mở & Sâu Hơn",
+          "blocks": [
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Những Câu Hỏi Mở — Xin vui lòng nói tên của bạn và..."
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "chia sẻ điều gì mà bạn hy vọng sẽ trải nghiệm hoặc học được trong khi bạn đang ở đây",
+                "chia sẻ điều gì sẽ khiến bạn vui rằng bạn chọn tham gia",
+                "nói những gì hấp dẫn bạn để theo dõi này",
+                "đặt tên điều gì mà bạn để lại để có mặt tại đây hôm nay"
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Những Câu Hỏi Sâu Hơn"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Điều gì là trung tâm của vấn đề này cho bạn?",
+                "Những hy vọng, nỗi sợ, lo ngại, hoặc nhu cầu chưa được đáp ứng nào mà bạn có xung quanh vấn đề này?",
+                "Bạn thấy những dilema hoặc cơ hội nào?"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a2",
+          "label": "A2",
+          "title": "Xử Lý, Chuyển Động Về Phía Trước & Những Câu Hỏi Đóng",
+          "blocks": [
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Các Câu Hỏi Xử Lý"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Điều gì đang hình thành ở đây?",
+                "Bạn nghe được gì phía dưới các ý kiến khác nhau được thể hiện?",
+                "Điều gì có ý nghĩa thực sự cho bạn trong những gì bạn nghe?",
+                "Có điều gì mà chúng ta không thấy rõ ràng?"
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Những Câu Hỏi Chuyển Động Về Phía Trước"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Điều gì có thể xảy ra để giúp bạn cảm thấy hoàn toàn tham gia vào công việc này?",
+                "Điều gì có thể xảy ra ở đây, và ai quan tâm?",
+                "Bạn muốn thực hiện những bước tiếp theo nào, riêng lẻ hoặc tập thể?",
+                "Chúng ta có thể hỗ trợ nhau như thế nào khi thực hiện những bước đó?",
+                "Chúng ta có thể gieo những gì hạt giống cùng nhau có thể tạo ra sự khác biệt lớn nhất cho tương lai của tình huống này?"
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Những Câu Hỏi Đóng"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Bạn đang mang đi cái gì từ vòng tròn này?",
+                "Bạn đã đóng góp gì, hoặc ước bạn đã đóng góp?",
+                "Bạn hy vọng thực hiện những bước tiếp theo nào?",
+                "Bạn hy vọng nhóm này giải quyết những điều gì tiếp theo?",
+                "Bạn cần hỗ trợ nào, hoặc muốn cung cấp, khi bạn rời khỏi?"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a3",
+          "label": "A3",
+          "title": "Kỹ Năng Lắng Nghe Chủ Động",
+          "blocks": [
+            {
+              "kind": "ul",
+              "items": [
+                "Ngôn ngữ cơ thể: duy trì ngôn ngữ cơ thể mở và chú ý. Duy trì liên lạc mắt khi thích hợp, hướng về phía người nói, áp dụng tư thế thư giãn, và tránh đa nhiệm vụ.",
+                "Theo dõi: cho phép người nói không gian nói mà không bị gián đoạn. Điều này có nghĩa là giảm câu hỏi không cần thiết, dung nạp im lặng, và để một suy nghĩ triển khai.",
+                "Paraphrasing và phản ánh: tóm tắt những gì bạn nghe, bao gồm cả nội dung và cảm xúc. Ví dụ: \"Những gì tôi nghe là...\"",
+                "Hỏi những câu hỏi mở: mời phản ánh hơn là những câu trả lời có/không.",
+                "Xác nhận: giả sử rằng bất kỳ điều gì được chia sẻ, tuy rõ ràng hay không hoàn hảo, đều đến từ điều gì đó thực sự trong trải nghiệm của người nói."
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Một hoạt động lắng nghe chánh niệm:"
+            },
+            {
+              "kind": "p",
+              "text": "Đóng mắt của bạn và: chú ý đến bao nhiêu âm thanh mà bạn có thể nghe xung quanh bạn và trong bạn; chú ý đến những phán xét phát sinh mà không gắn bó với chúng; tập trung vào âm thanh, luồng, và nhịp độ của hơi thở của bạn; thực hiện một danh sách hàng tồn kho somatique, di chuyển từ từ thông qua cơ thể và làm lỏng mỗi phần."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "grounding-activities",
+      "label": "L6",
+      "title": "Các Hoạt Động Nền Tảng",
+      "sectionId": "restorative-practices",
+      "facilitatorBlocks": [
+        {
+          "kind": "p",
+          "text": "Các bài tập nền tảng là những kỹ thuật được thiết kế để nhanh chóng kéo bạn ra khỏi lo âu, hoảng loạn, hoặc nhớ lại bằng cách kết nối lại bạn với hiện tại và các xung quanh vật lý của bạn. Chúng có thể là một phần của việc thiết lập ý định cho một hội thảo cũng như kết nối với các thành viên của một nhóm."
+        }
+      ],
+      "activities": [
+        {
+          "id": "a1",
+          "label": "A1",
+          "title": "Kết Nối Với Đất Đai",
+          "blocks": [
+            {
+              "kind": "p",
+              "text": "Tốc độ là điều quan trọng ở đây. Cho phép chuyển động cho cả ngồi và hít thở. Người tạo điều kiện nói: \"Tìm một nơi nơi bạn đang ngồi hoặc có thể ngồi thoải mái.\""
+            },
+            {
+              "kind": "p",
+              "text": "\"Nếu bạn cảm thấy tốt khi làm như vậy, hãy đóng mắt của bạn. Nếu bạn không muốn, hãy chỉ tìm một nơi phía trước bạn nơi bạn có thể nhẹ nhàng tập trung. Bây giờ hãy hít thở sâu bốn lần. Cảm nhận ngực của bạn nâng cao và rơi khi bạn hít vào không khí và để nó ra ngoài. Mỗi lần bạn hít thở vào, hãy tưởng tượng lấy trong một cảm giác bình tĩnh, yên bình. Khi bạn thở ra, để tất cả căng thẳng rời khỏi cơ thể của bạn. Để vai của bạn thư giãn và mềm mại. Để mắt và mặt của bạn thư giãn và mềm mại. Để tất cả căng thẳng rời khỏi toàn bộ cơ thể của bạn. Cảm nhận kết nối với những tổ tiên của chúng ta, tính thiêng liêng của không gian, và kết nối với đất đai.\""
+            }
+          ]
+        },
+        {
+          "id": "a2",
+          "label": "A2",
+          "title": "Nhận Thức Giác Quan (5-4-3-2-1)",
+          "blocks": [
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Mục đích: khôi phục bộ não nhanh chóng"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "5: Tìm kiếm 5 thứ mà bạn có thể nhìn thấy xung quanh bạn (ví dụ: một chiếc ghế, một cây, bầu trời).",
+                "4: Tập trung vào 4 thứ mà bạn có thể chạm vào (ví dụ: tóc của bạn, bàn, sàn).",
+                "3: Lắng nghe 3 thứ mà bạn có thể nghe (ví dụ: giao thông, chim, hơi thở của bạn).",
+                "2: Xác định 2 thứ mà bạn có thể ngửi (ví dụ: xà phòng, không khí, thực phẩm).",
+                "1: Chú ý 1 thứ mà bạn có thể nếm (ví dụ: kem đánh răng, cà phê)."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a3",
+          "label": "A3",
+          "title": "Nền Tảng Vật Lý & Xúc Giác",
+          "blocks": [
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Mục đích: Nhận Thức Cơ Thể Của Bạn Và Kết Nối Của Nó Với Môi Trường"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Đào gót chân: tập trung vào chân của bạn chống lại mặt đất, chú ý đến trọng lượng.",
+                "Thay đổi nhiệt độ: chạy nước lạnh hoặc ấm trên tay của bạn.",
+                "Siết chặt/Phát hành: siết chặt bàn tay của bạn, giữ trong 5-10 giây, sau đó thả ra và cảm nhận sự thư giãn.",
+                "Mang một vật thể bình tĩnh: mang một tảng đá nhỏ, vải, hoặc trang sức trong túi của bạn để chạm vào.",
+                "Kéo dài: kéo dài tay và chân của bạn để cảm nhận các cảm giác của căng thẳng và giải phóng.",
+                "Vuốt vỗ bướm: nhẹ nhàng vuốt vỗ ngực hoặc vai của bạn bằng tay, xen kẽ các cạnh."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a4",
+          "label": "A4",
+          "title": "Thiền Lòng Yêu Thương Tử Tế",
+          "blocks": [
+            {
+              "kind": "p",
+              "text": "Thiền lòng yêu thương tử tế (còn được gọi là Metta) là một thực hành chánh niệm được thiết kế để nuôi dưỡng lòng trắc ẩn, ấm áp, và lòng tốt. Đặt một tay trên trái tim của bạn nếu bạn cảm thấy kháng cự cảm xúc. Không có cách đúng để cảm thấy — chỉ cần dự định điều ước cho ai đó làm tốt mang lại cùng một lợi ích tâm thần."
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Chính Bạn"
+            },
+            {
+              "kind": "p",
+              "text": "\"Mong tôi hạnh phúc. Mong tôi khỏe mạnh. Mong tôi an toàn. Mong tôi sống với thoải mái.\""
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Một Người Yêu Thương"
+            },
+            {
+              "kind": "p",
+              "text": "\"Mong bạn hạnh phúc. Mong bạn khỏe mạnh. Mong bạn an toàn. Mong bạn sống với thoải mái.\""
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Tất Cả Các Sinh Vật"
+            },
+            {
+              "kind": "p",
+              "text": "\"Mong tất cả các sinh vật ở khắp mọi nơi hạnh phúc, khỏe mạnh, và tự do.\""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

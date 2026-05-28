@@ -1,1 +1,82 @@
-{"_meta":{"comment":"Stub. Populated by `npm run translate`."}}
+{
+  "site": {
+    "title": "Mitfühlender Lehrplan-Archiv",
+    "description": "Ein interaktives, barrierefreies Archiv des Mitfühlenden Lehrplans — ein partizipatives Rahmenwerk für Lernen, Reflexion und kollektives Wachstum."
+  },
+  "toolbar": {
+    "back": "Zurück",
+    "home": "Startseite",
+    "about": "Über",
+    "print": "Drucken",
+    "contact": "Kontakt",
+    "settings": "Einstellungen & Barrierefreiheit",
+    "language": "Sprache",
+    "switchToDark": "In den dunklen Modus wechseln",
+    "switchToLight": "In den hellen Modus wechseln",
+    "decreaseZoom": "Zoom verringern",
+    "increaseZoom": "Zoom erhöhen",
+    "accentSwatchesLabel": "Akzentfarbmuster",
+    "useAccentColor": "Akzentfarbe {color} verwenden",
+    "useMonochrome": "Monochromen Akzent verwenden",
+    "pickCustomColor": "Eine benutzerdefinierte Akzentfarbe wählen",
+    "customColorPicker": "Benutzerdefinierten Akzentfarbwähler",
+    "primaryNav": "Primär"
+  },
+  "section": {
+    "introduction": "Einführung",
+    "curriculum": "Lehrplan"
+  },
+  "nav": {
+    "intro": "Einführung",
+    "sectionsLabel": "Lehrplanabschnitte"
+  },
+  "table": {
+    "lesson": "Lektion",
+    "title": "Titel",
+    "activities": "Aktivitäten",
+    "linksAndImages": "Links & Bilder",
+    "label": "Lehrplan",
+    "openLesson": "Lektion öffnen: {title}",
+    "activityAria": "{label}: {title}"
+  },
+  "activityTabs": {
+    "label": "Lektionsaktivitäten",
+    "overview": "Übersicht"
+  },
+  "activityBlock": {
+    "forFacilitators": "Für Lehrende",
+    "intro": "Einführung"
+  },
+  "intro": {
+    "metaTitle": "Einführung — Mitfühlender Lehrplan-Archiv",
+    "metaDescription": "Eine Praxis der Hoffnung. Der Mitfühlende Lehrplan ist ein partizipatives Rahmenwerk für Lernen, Reflexion und kollektives Wachstum.",
+    "heading": "Einführung: Eine Praxis der Hoffnung",
+    "p1": "Der Mitfühlende Lehrplan ist ein partizipatives Rahmenwerk für Lernen, Reflexion und kollektives Wachstum, das mit und für Menschen mit Lebenserfahrung von Trauma oder strukturellen Schäden entwickelt wurde. Er basiert auf der Idee, dass gelebte Erfahrung eine Form von Wissen ist, und dass Heilung, kritisches Verständnis und Vorstellungskraft alle notwendig sind, um gerechtere Zukünfte aufzubauen.",
+    "p2": "Anstatt die Teilnehmer einfach Informationen zu empfangen, lädt der Lehrplan sie ein, Bedeutung gemeinsam zu schaffen. Er ist in gemeinsamer Autorenschaft, gegenseitiger Unterstützung und einer Ethik der Rechenschaftspflicht verwurzelt. Er ist auch stärkenorientiert. Die Arbeit beginnt nicht damit, was Menschen mangelt, sondern damit, was sie bereits wissen, überlebt haben und gemeinsam aufbauen können. Im gesamten Lehrplan werden die Teilnehmer ermutigt, über ihre eigene Erfahrung nachzudenken, einander zuzuhören und Formen des kollektiven Lernens zu praktizieren, die sowohl persönliche Transformation als auch breitere gesellschaftliche Veränderungen unterstützen können.",
+    "p3Intro": "Der Lehrplan hat drei verbundene Abschnitte.",
+    "p3PillBeloved": "I. Geliebte Gemeinschaft",
+    "p3MidBeloved": "konzentriert sich auf Identität, Zugehörigkeit, emotionale Fähigkeit und historisches Trauma. Er hilft den Teilnehmern, sich selbst, ihre Beziehungen und die breiteren Systeme, die ihre Bewegung durch die Welt prägen, besser zu verstehen.",
+    "p3PillRestorative": "II. Wiederherstellende Praxis",
+    "p3MidRestorative": "führt Kreise, aktives Zuhören, Neuverfassung und andere Werkzeuge ein, die Vertrauen, Reflexion, Rechenschaftspflicht und gemeinsame Verantwortung unterstützen.",
+    "p3PillMedia": "III. Medien, Narrativ und Zukunftsgestaltung",
+    "p3MidMedia": "erforscht Geschichtenerzählung, Darstellung und Vorstellungskraft. Es lädt die Teilnehmer ein, dominante Narrative zu untersuchen, vollständigere Geschichten über sich selbst zu erzählen und imaginative Kapazität für kreatives Problemlösen und Zukunftsgestaltung aufzubauen.",
+    "p4": "Der Mitfühlende Lehrplan ist als ein offenes und lebendes Rahmenwerk konzipiert. Er kann an Universitäten, Gemeinschaftsorganisationen, Advocacy-Räumen, Forschungsumgebungen und anderen Gruppenkontexten eingesetzt werden, in denen Lehrende Zugehörigkeit, Dialog und kollaboratives Lernen unterstützen möchten. Einige Gruppen können ihn als eine strukturierte Reihe von Workshops nutzen. Andere können auf einzelne Abschnitte oder Aktivitäten zurückgreifen und sie an lokale Bedürfnisse anpassen.",
+    "p5": "Im Kern wird der Lehrplan durch Partizipation, Verkörperung, Geschichtenerzählung und multimodales Lernen geleitet. Er zielt darauf ab, Bedingungen zu schaffen, unter denen Menschen kritisch denken, über Unterschiede hinweg verbinden und gemeinsam anders imaginieren können. In diesem Sinne ist der Mitfühlende Lehrplan nicht nur eine Reihe von Übungen, sondern eine Weise, gegenseitige Unterstützung, gemeinsame Untersuchung und Hoffnung in gemeinsamer Praxis auszuüben."
+  },
+  "about": {
+    "metaTitle": "Über — Mitfühlender Lehrplan-Archiv",
+    "heading": "Über",
+    "p1": "Der Mitfühlende Lehrplan ist ein partizipatives Rahmenwerk für Lernen, Reflexion und kollektives Wachstum, das mit und für Menschen mit Lebenserfahrung von Trauma oder strukturellen Schäden entwickelt wurde. Er basiert auf der Idee, dass gelebte Erfahrung eine Form von Wissen ist, und dass Heilung, kritisches Verständnis und Vorstellungskraft alle notwendig sind, um gerechtere Zukünfte aufzubauen.",
+    "p2": "Anstatt die Teilnehmer einfach Informationen zu empfangen, lädt der Lehrplan sie ein, Bedeutung gemeinsam zu schaffen. Er ist in gemeinsamer Autorenschaft, gegenseitiger Unterstützung und einer Ethik der Rechenschaftspflicht verwurzelt."
+  },
+  "contact": {
+    "metaTitle": "Kontakt — Mitfühlender Lehrplan-Archiv",
+    "heading": "Kontakt",
+    "p1": "Für Fragen, Zusammenarbeit oder um zu berichten, wie Sie den Lehrplan verwendet haben, kontaktieren Sie bitte das Projektteam."
+  },
+  "notFound": {
+    "heading": "Seite nicht gefunden",
+    "body": "Die gesuchte Seite konnte nicht gefunden werden.",
+    "returnHome": "Zur Startseite zurückkehren"
+  }
+}

@@ -1,0 +1,372 @@
+{
+  "id": "media-narrative-futuring",
+  "label": "III. Medien, Narrative und Zukunftsgestaltung",
+  "title": "Medien, Narrative und Zukunftsgestaltung",
+  "overview": "Dieser Abschnitt unterstützt Teilnehmende dabei, vollständigere Geschichten über sich selbst zu erzählen, die von den Medien erzählten Geschichten zu analysieren und ihre imaginative Kapazität für Zukunftsgestaltung zu entwickeln. Er beginnt mit individueller Reflexion, führt durch verkörperte Erzählungen und visuelle Analyse und endet mit partizipativer Zukunftsgestaltung.",
+  "lessons": [
+    {
+      "id": "individual-reflection",
+      "label": "L1",
+      "title": "Individuelle Reflexion, Selbstporträt",
+      "sectionId": "media-narrative-futuring",
+      "facilitatorBlocks": [
+        {
+          "kind": "p",
+          "text": "Diese Übungen helfen Teilnehmenden, über Identität, Erinnerung, Stimmung und Selbstbeschreibung durch Farbe, Klang, Schreiben und Bild nachzudenken."
+        },
+        {
+          "kind": "p",
+          "text": "Wie könnte Mangel an Ressourcen, kulturelle Marginalisierung und die Erfahrung von Trauma die Fähigkeit oder Bereitschaft hemmen, sich vorzustellen oder an die Relevanz der Phantasie selbst zu glauben? Dieser Abschnitt basiert auf der Erkenntnis, dass die herrschende Kultur Identität oft vereinfacht. Menschen, die kriminalisiert oder stereotypisiert werden, könnten beginnen, sich selbst durch einschränkende Narrative zu beschreiben, anstatt durch die volle Komplexität ihrer Leben."
+        },
+        {
+          "kind": "p",
+          "text": "Phantasie ist eine Praxis der Hoffnung. Sie beinhaltet das Neuordnen gegenwärtiger Ideen in neue mögliche Kombinationen. Für Menschen, deren Erfahrung von Wahlfreiheit begrenzt war, kann es verständlicherweise schwierig sein, zu hoffen, dass irgendeine Art von Handlungsfähigkeit in der Zukunft möglich sein könnte. Beginnen Sie mit niedrig einsatzigen Formen der Reflexion und des Geschichtenerzählens und bauen Sie dann schrittweise zur Medienanalyse und Zukunftsgestaltung auf."
+        }
+      ],
+      "activities": [
+        {
+          "id": "a1",
+          "label": "A1",
+          "title": "Farbkreis",
+          "blocks": [
+            {
+              "kind": "ul",
+              "items": [
+                "Laden Sie Teilnehmende ein, sich ein Bild eines Farbkreises anzusehen oder stellen Sie sich einen vor Ihrem inneren Auge vor und beschreiben Sie die Assoziationen, die Sie mit jeder Farbe haben. Assoziationen könnten sich auf ein Gefühl, eine Erinnerung oder eine Geschichte beziehen, die Sie erzählen möchten.",
+                "Optional: Erstellen Sie auf einem großen Blatt Papier oder einer Tafel einen gemeinsamen Farbkreis oder eine Farbkarte, die die gesamte Gruppe darstellt. Dies könnte Form, Gestalt, Farben nach Wahl oder geschriebene Sprache beinhalten, wie gewünscht."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a2",
+          "label": "A2",
+          "title": "Farbfeld-Porträt (nach Mark Rothko)",
+          "blocks": [
+            {
+              "kind": "ul",
+              "items": [
+                "Erstellen Sie ein Selbstporträt mit einem Stapel von 2–3 Farbfeldern.",
+                "Teilnehmende können über verschiedene Arten nachdenken, den Stapel zu erstellen, und ihre Designentscheidungen mit einem Partner teilen.",
+                "Zum Beispiel: Sind die Farbfelder in einem größeren Hintergrund einer anderen Farbe gerahmt? Gibt es Abstände zwischen den Feldern, und wenn ja, wie groß sind sie?"
+              ]
+            },
+            {
+              "kind": "p",
+              "text": "Anmerkung für Facilitator: Sie können Mark Rothkos Farbfeldmalereien entweder vor oder nach der Übung als Teil der Diskussion zeigen."
+            }
+          ]
+        },
+        {
+          "id": "a3",
+          "label": "A3",
+          "title": "Leben in 3 Liedern",
+          "blocks": [
+            {
+              "kind": "ul",
+              "items": [
+                "Laden Sie Teilnehmende ein, drei Lieder zu erwägen, die ihr Leben beschreiben.",
+                "Spielen Sie jedes Lied ab und nehmen Sie sich 1–2 Minuten vor oder nach jedem Zeit, um seine Bedeutung zu erklären.",
+                "Erstellen Sie die Playlist und teilen Sie sie.",
+                "Mit Zustimmung jedes Lied mit einer Einführung aufzeichnen."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a4",
+          "label": "A4",
+          "title": "Ich komme aus... Gedicht",
+          "blocks": [
+            {
+              "kind": "ul",
+              "items": [
+                "Verwenden Sie George Ella Lyons Format \"Ich komme aus...\", um Teilnehmenden dabei zu helfen, Erinnerung und alltägliche Details in poetische Form zu übersetzen; kopieren Sie nach Bedarf auf leere Blätter. http://www.georgeellalyon.com/where.html",
+                "Teilen Sie mit und nehmen Sie, falls eingewilligt, Menschen beim lauten Vorlesen auf.",
+                "Überlegen Sie, wie die Gedichte zu weiterem Schreiben führen könnten; zum Beispiel könnten Ortsangaben zum Schreiben über die Erinnerung an ein dort stattgefundenes Ereignis führen; Erwähnungen von Musik oder Essen könnten zum Schreiben über Menschen, Orte oder Ereignisse führen, die damit verbunden sind."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "embodied-storytelling",
+      "label": "L2",
+      "title": "Verkörpertes Geschichtenerzählen",
+      "sectionId": "media-narrative-futuring",
+      "facilitatorBlocks": [
+        {
+          "kind": "p",
+          "text": "Diese Übungen übersetzen persönliche Erfahrung in Gesten, Tableaus, Stimme und Bild. Sie ermöglichen es Teilnehmenden, emotionale Erinnerung und gemeinsame Interpretation zu erforschen, ohne vollständige Offenbarung zu erfordern."
+        }
+      ],
+      "activities": [
+        {
+          "id": "a1",
+          "label": "A1",
+          "title": "Geschichtentausch > Bildtheater (nach Augusto Boal)",
+          "blocks": [
+            {
+              "kind": "ul",
+              "items": [
+                "In Paaren beschreiben Teilnehmende eine Szene oder ein Ereignis aus ihrem Leben, als wäre es eingefroren in der Zeit, das sie basierend auf einem emotionalen Impuls in Erinnerung haben.",
+                "Mögliche Impulse sind: Hindernis, Hoffnung, Flucht, Isolation, Stille finden.",
+                "Beschreiben Sie alles Mögliche basierend auf sensorischer Erinnerung: Welche Jahreszeit war es und welche Tageszeit? Wenn draußen, wie sahen die umliegenden Gebäude oder die Landschaft aus? Wenn drinnen, wie sah das Innere aus? Wie klangen und rochen die Dinge? Wie waren die Farben und das Licht?",
+                "Beschreiben Sie Beziehungen: War jemand anderes da? Falls ja, wer waren sie, wie waren sie mit Ihnen verwandt und was passierte?",
+                "Der Zuhörer überlegt, was sie oder er als den Kern der Geschichte erachtet, ihren oder seinen emotionalen oder konzeptionellen Kern.",
+                "Mit Zustimmung des Partners stellt der Zuhörer die Geschichte mit einer einzigen eingefrorenen Geste dar.",
+                "Andere Teilnehmende besprechen, was sie sehen. Falls gewünscht, kann die erzählende Person Details der ursprünglichen Geschichte preisgeben."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a2",
+          "label": "A2",
+          "title": "Innerer Monolog",
+          "blocks": [
+            {
+              "kind": "ul",
+              "items": [
+                "Basierend auf der vorherigen Übung positioniert die erzählende Person andere in einem Tableau (eine Gruppe von Menschen, die in \"Standbild\" stehen), um den Kernmoment der Geschichte darzustellen.",
+                "Die erzählende Person gibt den Teilnehmenden die minimal notwendigen Kontextinformationen, um zu verstehen, wo und wer sie sind, zum Beispiel: \"Wir sind draußen, in einer Stadt, im Jahr 1992. Du bist ein Mann um die 35 Jahre alt.\"",
+                "Jeder Teilnehmende stellt sich vor, was ihre oder seine Figur denkt, und spricht nacheinander diesen inneren Monolog."
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Optionale Dokumentation mit Zustimmung:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Fotografieren Sie Teilnehmende im Tableau",
+                "Zeichnen Sie die Stimmen auf",
+                "Video: Gehen Sie um die Gruppe herum, während Teilnehmende ihren Monolog sprechen"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a3",
+          "label": "A3",
+          "title": "Sensorisches Triptychon",
+          "blocks": [
+            {
+              "kind": "ul",
+              "items": [
+                "Laden Sie Teilnehmende ein, sich vorzustellen, wie sie sich durch einen zukünftigen Raum bewegen, den sie gerne bewohnen möchten.",
+                "Teilnehmende sollten kritische sensorische Details von Sicht, Klang, Geruch, Gefühl und dem Gefühl ihres Körpers beschreiben, während dieser sich in Bezug auf den Raum bewegt.",
+                "Teilnehmende erstellen drei Bilder, die drei Schlüsselteile der Geschichte darstellen, wie Anfang, Mitte und Ende, 3 verschiedene sensorische Wahrnehmungen, 3 Emotionen usw.",
+                "Teilnehmende beobachten die Bilder anderer und beschreiben Assoziationen.",
+                "Diese Aktivität kann mit Photovoice oder Partizipativer Zukunftsgestaltung kombiniert werden."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "media-analysis",
+      "label": "L3",
+      "title": "Medienanalyse und visuelle Erzählweise",
+      "sectionId": "media-narrative-futuring",
+      "facilitatorBlocks": [
+        {
+          "kind": "p",
+          "text": "Diese Übungen helfen Teilnehmenden zu analysieren, wie Geschichten über Menschen in Medien erzählt werden, und visuelle Antworten zu schaffen, die in ihrer eigenen Erfahrung verwurzelt sind."
+        }
+      ],
+      "activities": [
+        {
+          "id": "a1",
+          "label": "A1",
+          "title": "Bilder neu beschriften",
+          "blocks": [
+            {
+              "kind": "p",
+              "text": "Das Ziel dieser Aktivität ist es, suggestive oder mehrdeutige Bilder aus populären Medien auf verschiedene Weise zu analysieren und als Impulse für Diskussionen zu verwenden. Sie kann Medienanalyse erleichtern, um zu verstehen und zu kritisieren, wie Medien Botschaften vermitteln, die negative Stereotypen unterstützen; oder um Diskussionen über die gelebte Erfahrung der Teilnehmenden anzuregen."
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Impulse zum Markieren von Bildern:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Was siehst du? Analysiere Farbe und Formen; gibt es welche, die vorherrschen? Gibt es Muster?",
+                "Was ist die Hintergrundgeschichte dieses Bildes? Was ist bis zu diesem Moment passiert? Markiere frühere Stadien der Geschichte.",
+                "Wer ist hier und was tun sie?",
+                "Was sind die Machtbeziehungen in diesem Bild? Markiere die Beziehung von Menschen zu anderen Menschen, Objekten, Gebäuden, Landschaft.",
+                "Was ist unsichtbar im Gegensatz zu sichtbar? Wird etwas impliziert, aber nicht gezeigt?",
+                "Wer könnte dieses Bild gemacht haben, von welchem Standpunkt?",
+                "Was könnte als Nächstes passieren? Markiere mögliche zukünftige Stadien der Geschichte."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a2",
+          "label": "A2",
+          "title": "Photovoice",
+          "blocks": [
+            {
+              "kind": "p",
+              "text": "Photovoice ist eine partizipative visuelle Methode, bei der eine Gruppe eine Frage zu einem Problem definiert, das ihre Gemeinschaft beeinflusst, Fotos als Antwort aufnimmt und diese Bilder nutzt, um Diskussionen anzuregen. Der Prozess unterstützt Teilnehmende dabei, über gelebte Erfahrung nachzudenken, Probleme zu identifizieren, die sie ändern möchten, und mögliche Handlungsformen zu erkunden."
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Prozess"
+            },
+            {
+              "kind": "ol",
+              "items": [
+                "Definieren Sie gemeinsam das Problem, das Sie angehen möchten",
+                "Erstellen Sie Ihre Leitfrage (seien Sie persönlich, konzentrieren Sie sich auf ein Problem, bestimmen Sie einen guten Umfang)",
+                "Fotos aufnehmen — Teilnehmende machen Bilder als Antwort auf die Frage, die ihre Perspektive ausdrücken",
+                "Diskussieren Sie mit der SHMIR-Methode: See (Sehen), Happening (Geschehen), Meaning (Bedeutung), Issue (Problem), Response (Antwort)",
+                "Zusammenfassen — identifizieren Sie Schlüsselthemen, Muster oder gemeinsame Erfahrungen",
+                "Verbreiten (optional) — Zine, Ausstellung, Online, öffentliche Präsentation",
+                "Reflektieren — was ist hervorstechend? Was hat funktioniert oder könnte verbessert werden? Was fühlte sich sinnvoll an?"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "participatory-futuring",
+      "label": "L4",
+      "title": "Partizipative Zukunftsgestaltung und Weltaufbau",
+      "sectionId": "media-narrative-futuring",
+      "facilitatorBlocks": [
+        {
+          "kind": "p",
+          "text": "Diese Übungen unterstützen Teilnehmende dabei, alternative Zukünfte zu imaginieren, mit Möglichkeiten zu experimentieren und zukünftige Vision mit gegenwärtiger Aktion zu verbinden."
+        },
+        {
+          "kind": "p",
+          "bold": true,
+          "text": "Inhalte"
+        },
+        {
+          "kind": "ul",
+          "items": [
+            "Backcasting — Teilnehmende stellen sich gemeinsam Designs aus einer funktionierenden Zukunft vor, um zu sehen, ob einige Dinge inspirieren könnten, die in der Gegenwart gebaut werden",
+            "Weltaufbau — stellt sich die Logik einer zukünftigen Gesellschaft vor, in der möglicherweise Veränderung modelliert werden könnte",
+            "Zukunftskegel — ermöglicht es, sich selbst positiv in der Zukunft existierend vorzustellen"
+          ]
+        }
+      ],
+      "activities": [
+        {
+          "id": "a1",
+          "label": "A1",
+          "title": "Backcasting (Gemeinsames Imaginieren)",
+          "blocks": [
+            {
+              "kind": "p",
+              "text": "Basierend auf der Zukunftsübung Prescriptions for Just Communities, entwickelt von Melanie Crean mit Ayodamola Okunseinde, lädt diese Aktivität Teilnehmende ein, sich eine Zukunft vorzustellen, etwa 10–15 Jahre entfernt, in der ein spezifisches gesellschaftliches Problem gelöst wurde."
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Beispielimpulse:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Stellen Sie sich eine Zukunft vor, in der Übergänge von Inhaftierung oder Militärdienst zum zivilen Leben nahtlos ablaufen.",
+                "Stellen Sie sich eine Welt ohne Gefängnisse vor, in der Gemeinschaften sowohl sicher als auch gerecht sind."
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Vorbereitung"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Die Gruppe entscheidet, welches Problem sie angehen möchte.",
+                "Überlegen Sie sich eine Zukunft ~10–15 Jahre entfernt, in der dieses Problem nicht mehr existiert.",
+                "Teilen Sie sich in Gruppen von 2–3 auf, geben Sie jedem Papier, etwas zum Zeichnen und drei Karten mit Impulsen: eine soziale oder emotionale Geisteshaltung, einen Inhaltsbereich, ein Designattribut."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a2",
+          "label": "A2",
+          "title": "Weltaufbau",
+          "blocks": [
+            {
+              "kind": "p",
+              "text": "Weltaufbau ist eine kreative Methode zum Imaginieren alternativer Lebensweisen durch Geschichtenerzählung. Durch die Konstruktion einer fiktiven oder spekulativen Welt können Teilnehmende erkunden, wie Systeme, Beziehungen und Machtstrukturen funktionieren, und überlegen, wie sie transformiert werden könnten."
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Prozess"
+            },
+            {
+              "kind": "ol",
+              "items": [
+                "Geografie, Klima & Ökologie — stellen Sie sich eine Welt als miteinander verbundenes System vor",
+                "Kultur & Glaubenssysteme — schaffen Sie mindestens zwei unterschiedliche Kulturen, die in dieser Welt koexistieren",
+                "Macht & Konflikt — überlegen Sie, wie Macht operiert",
+                "Charaktere & Perspektive — schaffen Sie mindestens zwei Charaktere in dieser Welt",
+                "Ritual & Reflexion — schaffen Sie ein Ritual, eine Tradition oder ein Ereignis, das einen Kernglauben offenbart",
+                "Reflexion — wie formt Ihre eigene gelebte Erfahrung die Art, wie Sie diese Welt konstruiert haben?"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a3",
+          "label": "A3",
+          "title": "Zukunftskegel",
+          "blocks": [
+            {
+              "kind": "p",
+              "text": "Angepasst von einer Übung von Ashley Jane Lewis basierend auf Stuart Candys Future Cone. Diese Übung führt Teilnehmende darin, sich selbst drei bis fünf Jahre in der Zukunft vorzustellen. Unter Verwendung eines Zukunftskegeldiagramms erkunden sie, was wahrscheinlich, plausibel, möglich und wünschenswert in ihrer eigenen zukünftigen Entwicklung ist."
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Der Zukunftskegel ist ein Werkzeug zum Imaginieren mehrerer möglicher Zukünfte:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Wahrscheinlich: Was wahrscheinlich basierend auf gegenwärtigen Trajektorien geschehen wird.",
+                "Plausibel: Was realistisch geschehen könnte, auch wenn weniger wahrscheinlich.",
+                "Möglich: Was passieren könnte, einschließlich unerwarteter Ideen.",
+                "Wünschenswert: Die überzeugendsten, sinnvollsten Ergebnisse — Ihre gewünschte Zukunft."
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Schritte:"
+            },
+            {
+              "kind": "ol",
+              "items": [
+                "Setup — zeichnen Sie einen kleinen Kreis auf der linken Seite mit der Beschriftung \"Du\" oder \"Jetzt\" und einen größeren Kreis auf der rechten Seite mit einem zukünftigen Jahr. Verbinden Sie sie, um einen horizontalen Kegel zu bilden.",
+                "Tragen Sie das Wahrscheinliche ein — schreiben Sie 2–3 Dinge auf, die Sie in ein paar Jahren wahrscheinlich tun werden.",
+                "Stellen Sie sich das Mögliche vor — listen Sie 8–20 \"Mögliches\" auf: Werkzeuge, Praktiken, Medien, Zusammenarbeit, Residenzen, Ambitionen.",
+                "Identifizieren Sie das Plausible — wählen Sie 3–5 Elemente aus der \"Mögliches\"-Liste, die sich in den nächsten 1–2 Jahren realistisch anfühlen.",
+                "Definieren Sie das Wünschenswerte — kreisen Sie 1–2 Elemente aus dem Plausible-Ring ein, die sich am aufregendsten, sinnvollsten oder am weitesten mit Ihren Werten ausgerichtet anfühlen."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

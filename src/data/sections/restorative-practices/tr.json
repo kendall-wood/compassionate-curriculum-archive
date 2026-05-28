@@ -1,0 +1,688 @@
+{
+  "id": "restorative-practices",
+  "label": "II. Onarıcı Uygulamalar",
+  "title": "Onarıcı Uygulamalar",
+  "overview": "Bu bölüm, onarıcı uygulamayı katılımcı ve ilişkisel bir öğrenme biçimi olarak tanıtır. Sözlü hikâye anlatımı, dinleme, ortak yazarlık ve kolektif sorumluluğu merkeze alır. Bu bölümdeki uygulamalar, katılımcıların güven oluşturmasına, deneyimleri üzerine yansınlama yapmasına ve birlikte yaşamanın daha şefkatli yollarını geliştirmesine yardımcı olur.",
+  "lessons": [
+    {
+      "id": "entering-the-circle",
+      "label": "L1",
+      "title": "Daireye Girme",
+      "sectionId": "restorative-practices",
+      "facilitatorBlocks": [
+        {
+          "kind": "p",
+          "text": "Bu aktivite katılımcıları onarıcı uygulamaya ve daire çalışmasının temel öğelerine tanıştırır. Daireler, bu müfredatta kullanılan birincil onarıcı uygulamadır. Kay Pranis ve Carolyn Boyes-Watson'ın Circle Forward adlı eserinde tanımladığı gibi, gruplar daha derin tartışmalara geçmeden önce tanışarak başladığında, paylaşılan değerleri belirlediklerinde ve güven oluşturduklarında en iyi sonucu verirler. Daireler, iyileştirme, yas tutma, destek, çatışma çözme, yeniden entegrasyon ve kutlama da dahil olmak üzere birçok amaç için kullanılabilir."
+        },
+        {
+          "kind": "p",
+          "text": "Konuşma parçası, daire etrafında dolaştırılan ve kimin konuştuğunu işaretleyen, diğerlerini aktif olarak dinlemeye hatırlatan bir nesnedir; aynı zamanda herhangi bir katılımcının geçmesine izin verir. Manto, anlamlı nesnelerin dairenin kasıtlı ve farklı olduğunu işaretlemesine yardımcı olmak için yerleştirilebileceği bir kumaş veya merkezi alandır. Toprak kabullenme, bir dairenin gerçekleştiği yerdeki tarihleri, halkları ve devam eden mirası adlandırmanın bir yoludur."
+        },
+        {
+          "kind": "p",
+          "text": "Mümkünse odayı bir daire şeklinde ayarlayın, katılımcıların birbirlerini net bir şekilde görebilmeleri için paylaşımlar arasında yeterli alan olacak şekilde. Erişilebilirlik ihtiyaçlarına önceden dikkat edin. Not alma veya takip gözlemleri için kağıt ve kalem yakın yerde bulundurun ve topluluk anlaşmalarını kaydetmeyi planlıyorsanız büyük bir kağıt sayfası veya şövale hazır tutun."
+        },
+        {
+          "kind": "p",
+          "bold": true,
+          "text": "Bir daire, genellikle aşağıdaki sıra içinde ilerler:"
+        },
+        {
+          "kind": "ul",
+          "items": [
+            "hoşgeldiniz ve amaç",
+            "açılış veya buzun kırılması ve uygun olduğu yerde, toprak kabullenme",
+            "topluluk anlaşmaları",
+            "kontrol",
+            "tartışma turları",
+            "kontrol çıkışı ve kapanış"
+          ]
+        }
+      ],
+      "activities": [
+        {
+          "id": "a1",
+          "label": "A1",
+          "title": "Hoşgeldiniz, Açılış ve Topluluk Anlaşmaları",
+          "blocks": [
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Hoşgeldiniz ve amaç:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "daire tutucusu kendisini ve konuşma parçasını tanıtır;",
+                "katılımcılar onarıcı uygulamaya yeniyse, daire tutucusu kendi rolünü ve konuşma parçasının nasıl kullanıldığını açıklar;",
+                "manto kullanılıyorsa, bunun ne olduğunu ve nesnelerin neden önemli olduğunu açıklayın."
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Açılış ve Buzun Kırılması"
+            },
+            {
+              "kind": "p",
+              "text": "Katılımcıların alana girme ve süreci işleme yardımcı olmak için basit bir giriş sorusuyla başlayın. Bazı sorular daha fazla güven ve açıklık gerektirebilir, bu nedenle tümü her grup için uygun olmayacaktır. Örnekler:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Eğer bir harika güce sahip olabilseydin, ne olurdu?",
+                "Kahramanların kim ve neden?",
+                "Bu atölyede geçireceğim zamanın bir hedefi ...",
+                "Beni görerek bilemeyeceğin bir şey ...",
+                "Daireye getirmek önemli hissettirdiğim kimliğimin bir yönü ..."
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Topluluk anlaşmaları"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Konuşma parçasını tutarak daire tutucusu, katılımcıları dairede açık ve dürüst konuşabilmek için gerekli olan şeyleri söylemeleri için davet eder.",
+                "Örnek istem: Kişisel olarak bu dairede daha cesur bir şekilde açık ve dürüst konuşabilmek için neyi hissetmeniz gerekiyor?",
+                "Konuşma parçası sola doğru geçirilir, böylece her katılımcı ekleme veya geçme fırsatına sahip olur.",
+                "Yanıtları kaydedin ve gerektiğinde yeniden ziyaret edin. Bazı daire tutucuları katılımcıları son anlaşmaları imzalamaya davet edebilir."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a2",
+          "label": "A2",
+          "title": "Kontrol ve Tartışma Turları",
+          "blocks": [
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Kontrol"
+            },
+            {
+              "kind": "p",
+              "text": "Hoşgeldiniz ve anlaşmalardan sonra, günün temasıyla bağlantılı basit bir kontrol turu yapın. Örnekler: \"bugün nasılsın, 1-10 arasında bir ölçekte ve neden?\" olabilir."
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Tartışma turları"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Katılımcılar kontrol ettikten, dairenin amacını anladıktan ve hazır olduktan sonra gerçekleşmelidir.",
+                "Sorular açık uçlu, kasıtlı ve kişisel deneyimle bağlantılı olmalıdır.",
+                "Bir turdan sonra her zaman kontrol edin ve başlangıçta geçenlerin konuşmak istedikleri durumda konuşma parçasını tekrar geçin."
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "İlişkileri onarmak için:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Bu durumdan kimin etkilendiğini düşünüyorsunuz ve belirli yollarla nasıl etkilenmiştir?",
+                "Bu deneyimin en zor kısmı sizin için kişisel olarak ne olmuş?",
+                "Herkes için işleri doğru hale getirmek için şu anda ne olması gerekiyor?"
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Örgütsel değişim ve geçişlerin işlenmesi için:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Yaklaşan değişimimiz hakkında şu anda hangi endişeleri taşıyorsunuz? Korkularınız neler?",
+                "Bu değişimi başarıyla yönetmek için ihtiyacınız olan pratik bir kaynak veya destek nedir?"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a3",
+          "label": "A3",
+          "title": "Dairenin Kapanması",
+          "blocks": [
+            {
+              "kind": "p",
+              "text": "Katılımcıların daireden bakım ve niyetle çıkmasına yardımcı olan düşündürücü istemler için yanıt turlarıyla kapatın."
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Olası istemler:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Bugünden ne götürüyorsunuz?",
+                "Bugün kendi bakımını nasıl yapacaksınız?",
+                "Bugün daire dönüşümümüzün sonucunda yapmaya istekli olduğunuz bir taahhüt nedir?"
+              ]
+            },
+            {
+              "kind": "p",
+              "text": "Kapanış turundan sonra, daire tutucusu nefes alma, hareket, bir şiir, bir şarkı veya çağrı ve cevap gibi kısa bir topraklama egzersizi yapabilir."
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "İsteğe Bağlı Takip: Konuşma Parçaları"
+            },
+            {
+              "kind": "p",
+              "text": "İkinci daireden sonra, katılımcılar birbirlerine daha çok tanıdık olduktan sonra, daire tutucusu onları konuşma parçası olarak kişisel bir anlamı olan bir nesne getirmeye ve eğer isterlerse bunun neden anlamlı olduğunu paylaşmaya davet edebilir. Dijital dairelerde, konuşma parçası ve manto sembolik olabilir, fiziksel olmasa da, aynı ilkeler hala geçerlidir."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reauthoring-circles",
+      "label": "L2",
+      "title": "Yeniden Yazma Daireleri",
+      "sectionId": "restorative-practices",
+      "facilitatorBlocks": [
+        {
+          "kind": "p",
+          "text": "Yeniden yazma, kendimiz hakkında anlattığımız hikayelerin kurumlar, kültür ve güç sistemleri dahil olmak üzere daha geniş sosyal güçler tarafından nasıl şekillendiğini anlamanın bir yoludur. Terim ilk olarak Michael White ve David Epston (1990) tarafından Anlatı Terapisinin bir parçası olarak geliştirilmiştir. Bu müfredatta, yeniden yazma terapisi değildir. İnsanların ırk, sınıf, cinsiyet, engelli olma, suçlulaştırma ve aidiyet hakkındaki baskın mitosların kimliği nasıl şekillendirdiğini ve bu mitlerin nasıl sorgulanabileceğini yansıtmasına yardımcı olan bir topluluk uygulamasıdır."
+        },
+        {
+          "kind": "p",
+          "text": "Yeniden yazma uygulaması, bazen sorunla dolu anlatılar olarak adlandırılan şeyler arar: bir kişinin zorluk, damga veya tek bir deneyim tarafından tanımlanmasına neden olan hikâyeler. Yeniden yazma sorular: başka ne doğru? Zorluk, damga veya tek bir tanımlayıcı hikâyenin yanında zaten mevcut olan hangi güçler, değerler, bilgi ve içgörü var? Tek hikâyeyi reddeder ve daha tam bir hesap için alan açar."
+        },
+        {
+          "kind": "p",
+          "bold": true,
+          "text": "Yeniden yazma dairesi, üç rol ile yapılandırılmış bir konuşmadır:"
+        },
+        {
+          "kind": "ul",
+          "items": [
+            "hikâyeci: bir kişi bir hikâye, meydan okuma veya soru paylaşır",
+            "tanıklar: grup dinler ve güçleri, değerleri ve olanakları geri yansıtır",
+            "daire tutucusu: yapıyı tutan ve süreci destekleyen kişi"
+          ]
+        },
+        {
+          "kind": "p",
+          "text": "Amaç, yargılamak, düzeltmek veya tavsiye vermek değildir. Birlikte nelerin önemli olduğunu, neyin hayatta kaldığını ve nelerin öğrenildiğini dinlemektir."
+        }
+      ],
+      "activities": [
+        {
+          "id": "a1",
+          "label": "A1",
+          "title": "Güçlü Sorular",
+          "blocks": [
+            {
+              "kind": "p",
+              "text": "Başlamadan önce, daire tutucusu bir zorluk, soru veya büyüme anını paylaşmaya istekli gönüllü bir hikâyeci ister ve onayını sağlamak için onlarla kontrol eder. Süreci açıkça tanıtın: bir kişi paylaşacak, diğerleri dinleyecek ve ne duyduğunu geri yansıtacak, grup güç ve önemsenen şeyler için dinleyecek, hiçbir tavsiye verilmeyecek."
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "İyi soruların örnekleri:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "O an hakkında kendinizde ne fark ettiniz?",
+                "Bu size sizin için neyin önemli olduğu hakkında ne söylüyor?",
+                "Bunun içinden geçmek için ne gerekti?",
+                "O zaman neye ihtiyacınız vardı?",
+                "Bu konuyu farklı düşünmenize ne yardımcı olabilir?"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a2",
+          "label": "A2",
+          "title": "Tanıklık",
+          "blocks": [
+            {
+              "kind": "p",
+              "text": "Tanık olmak, esnekliği dinlemek, bilgi ve kapasiteyi tanımak ve bunları geri yansıtmak anlamına gelir. Amaç düzeltmek değil, zaten mevcut olanı adlandırmaktır."
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Tanıklık örnekleri:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "İşittiğim şey şu ki siz ...",
+                "Rağmen devam ettiniz ...",
+                "O durumla başa çıkmak için geliştirdiğiniz stratejileri fark ettim ...",
+                "Bakım, onur veya adalet sizin için gerçekten önemli görünüyor",
+                "Duyduğum şey ... için derin bir bağlılık",
+                "Bu deneyim aracılığıyla önemli bir şey öğrendiniz",
+                "İşittiğim şey, nasıl önem verdiğiniz, direniş gösterdiğiniz veya yol boyunca öğrendiğiniz hakkında bir hikâye"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a3",
+          "label": "A3",
+          "title": "Proses ve Kapanış Yansıması",
+          "blocks": [
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Proses"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Daire tutucusu dairenin açılışını düzenler.",
+                "Hikâyeci konuşma parçasını tutarken paylaşır.",
+                "Grup duraklıyor.",
+                "Konuşma parçası daire etrafında geçirilir. Tanıklar ne duydukları hakkında yansıtırlar.",
+                "Konuşma parçası hikâyeciye geri döndüğünde, yansıtmayı davet edin."
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Kapanış yansıması istemler:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Ne duydun?",
+                "Ne doğru hissettirdi?",
+                "Seni şaşırtan ne oldu?",
+                "İleriye taşımak istediğin ne var?",
+                "Seni etkileyen ne oldu?",
+                "Bu süreçte neyin mümkün olduğu hissettirdi?",
+                "Bunu kendi işinde nerede kullanabilirsin?",
+                "Bunu kolaylaştırmada daha özgüvenli hissetmene yardımcı olacak hangi destek?"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sharing-our-stories",
+      "label": "L3",
+      "title": "Hikâyelerimizi Paylaşmak",
+      "sectionId": "restorative-practices",
+      "facilitatorBlocks": [
+        {
+          "kind": "p",
+          "text": "Bu aktivite, oturumlar sırasında veya oturumlar arasında günlük tutma olarak başlayabilir ve daha sonra daire paylaşımına geçebilir. Görev, \"senin hikâyeni\" yazmaktır."
+        },
+        {
+          "kind": "p",
+          "text": "Grup boyutuna bağlı olarak, bu aktivite birkaç oturum içinde gerçekleşebilir. Aktiviteyi modellemek için daire tutucularından birinin önce paylaşması veya aktiviteyi erkence paylaşmakta kendilerini rahat hissedebilecek birkaç katılımcının önceden hazırlanması yardımcı olabilir. Katılımcıların her zaman geçme seçeneği olmalıdır. Hikâyeler arasında molalar verin. Bu daireler yoğun olabilir ve pauzlar, grubun birbirlerine hazır kalmasına yardımcı olur."
+        }
+      ],
+      "activities": [
+        {
+          "id": "a1",
+          "label": "A1",
+          "title": "Günlük İstemler",
+          "blocks": [
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "İstemler:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Adın nedir?",
+                "Nerede yaşıyorsun? Her zaman orada yaşadın mı?",
+                "Nerede büyüdün?",
+                "Hangi çocukluk anıları seninle kalıyor?",
+                "Kiminle yaşıyorsun?",
+                "Kardeşin var mı? Onlarla ilişkin nasıl?",
+                "Ebeveynlerin veya vasisilerin ile ilişkin nasıl?",
+                "Hangi zorluklarla yüzleştiniz? Hangi engelleri aştınız?",
+                "Hangi başarılarından gurur duyuyorsun?",
+                "Bu işe nasıl geldin?",
+                "Bu iş neden sana önemli?",
+                "Öğrendiklerini nasıl harekete geçireceksin?",
+                "Tutkuların ve uzun vadeli hedeflerin neler?"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "land-ancestor-acknowledgement",
+      "label": "L4",
+      "title": "Toprak ve Ata Kabullenme",
+      "sectionId": "restorative-practices",
+      "facilitatorBlocks": [
+        {
+          "kind": "p",
+          "text": "Bu aktivite, katılımcıları bulundukları alanı şekillendiren tarihleri, yerleri, ataları ve hattı yansıtmaya davet eder. Native Land Digital'in kaynakları temel alınarak, performatif veya işlemsel çerçevelerin ötesine geçmek için tasarlanmıştır."
+        },
+        {
+          "kind": "p",
+          "text": "Bu aktiviteyi kolaylaştırmadan önce, dairenin hangi toprağında gerçekleştiğini, orada geçmişte kimin yaşadığını ve şimdi kimin yaşadığını araştırın. Bu, resmi araştırmanın yanı sıra topluluk üyeleriyle yapılan konuşmaları gerektirebilir."
+        },
+        {
+          "kind": "p",
+          "text": "Bu zor bir aktivite olabilir. Katılımcılar evlat edinilmiş olabilir, tarihlerini bilmiyor olabilir veya aile, kölelik, sömürgecilik, göç veya yerinden etme ile ilgili travmaları taşıyor olabilirler. Yavaş git. Pauzlara yer aç."
+        }
+      ],
+      "activities": [
+        {
+          "id": "a1",
+          "label": "A1",
+          "title": "Yansıma İstemler",
+          "blocks": [
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Olası istemler"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Bir araya geldikçe takdir etmemiz gereken atalar ve insanlar kimlerdir?",
+                "Göç hikâyen nedir?",
+                "Canlı ve geçmiş atalarının kim olduğu ve onlar sende nasıl mevcut?"
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Takip seçenekleri"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "kendi toprak kabullenmenizi yazın",
+                "dairede paylaşın",
+                "küçük gruplar veya bütün grup olarak kolektif bir kabullenme geliştirin"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a2",
+          "label": "A2",
+          "title": "Örnek Kabullenme",
+          "blocks": [
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Lenapehoking'den (NJ, doğu PA, güneydoğu NY) örnek:"
+            },
+            {
+              "kind": "p",
+              "text": "\"Lenape halkının tanınmamış topraklarında olduğumuz gerçeğini itirafen başlamak istiyorum. Lenape atalarına ve bu anavatanda şimdi ve gelecekte yaşayan nesillere, ayrıca Lenape diyasporası boyunca saygı göstermek ve selamlamak istiyorum. Ayrıca bu Lenape yurdu olan Lenapehoking'de şimdi ve gelecekte ev olarak çağıran tüm Yerli halklara bu kabullenmeyi genişletmek istiyorum. Bu kabullenme, sömürgecilik, ırkçılık, kitlesel hapsedilme ve ceza endüstriyel kompleksinin devam eden miraslarını ele almaya bir bağlılıktır.\""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "circle-questions",
+      "label": "L5",
+      "title": "Daire Soruları ve Dinleme Uygulamaları",
+      "sectionId": "restorative-practices",
+      "facilitatorBlocks": [
+        {
+          "kind": "p",
+          "text": "Kaynak malzeme, Mediators Beyond Borders ve The Art of Powerful Questions (Eric E. Vogt, Juanita Brown ve David Isaacs tarafından) içerir. Daire uygulamasında, sorulara istemler denir ve güvenlik oluşturmak için düşük savunmasızlık sorularından (güvenlik inşa etmek) yüksek savunmasızlık sorularına (temel konuyu ele almak) ve yansıtma ile bitecek şekilde dikkatle sıralanır."
+        },
+        {
+          "kind": "p",
+          "bold": true,
+          "text": "Tur Soruları için Hızlı Kolaylaştırıcı İpuçları"
+        },
+        {
+          "kind": "ul",
+          "items": [
+            "Bunları açık uçlu tutun: basit \"evet\" veya \"hayır\" ile cevaplanabilen sorulardan kaçının. Bunun yerine Nedir, Nasıl veya Tanımla ... kullanın Neden yerine.",
+            "İstemi modelleyin: kolaylaştırıcı olarak, genellikle soruyu tanıttığınızda önce cevaplamanız faydalı olur.",
+            "Geçmek her zaman bir seçenektir: katılımcılara konuşma parçası kendilerine geldiğinde geçebileceklerini, sessizlikte tutabileceklerini veya konuşabileceklerini hatırlatın."
+          ]
+        }
+      ],
+      "activities": [
+        {
+          "id": "a1",
+          "label": "A1",
+          "title": "Açılış ve Derinleştirme Soruları",
+          "blocks": [
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Açılış soruları — Adını söyle ve ..."
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "burada olduğun sürece yaşamak veya öğrenmek istediğin bir şey paylaş",
+                "katılmayı seçtiğine memnun olacağın bir şey paylaş",
+                "seni bu araştırmaya ne çektiğini söyle",
+                "burada olabilmek için arkasında kalan bir şeyi adlandır"
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Derinleştirme soruları"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Bu konu sende temel olarak ne?",
+                "Bu konuya dair hangi umutlar, korkular, endişeler veya karşılanmamış ihtiyaçlar mevcut?",
+                "Hangi ikilemleri veya fırsatları görüyorsun?"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a2",
+          "label": "A2",
+          "title": "İşleme, İleri Hareket ve Kapanış Soruları",
+          "blocks": [
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "İşleme soruları"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Burada ne şekillenmeye başlıyor?",
+                "İfade edilen çeşitli görüşlerin altında ne duydunuz?",
+                "Ne işittiğiniz sizin için gerçekten bir anlam taşıyordu?",
+                "Açıkça görmediğimiz bir şey var mı?"
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "İleri hareket soruları"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Bu işte tam olarak meşgul olmak için seni ne kadar hissettirmek gerekir?",
+                "Burada neyin mümkün olduğu ve kimin umursadığı?",
+                "Bireysel veya toplu olarak hangi sonraki adımları almak istiyorsunuz?",
+                "Bu adımları atarken birbirimizi nasıl destekleyebiliriz?",
+                "Bu durumun geleceğinde en fazla fark yaratabilecek birlikte hangi tohumu ekebiliriz?"
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Kapanış soruları"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Bu daireden ne götürüyorsunuz?",
+                "Ne katkıda bulundunuz ya da katkıda bulunmayı dilediyseniz?",
+                "Almayı umarız hangi sonraki adımlar?",
+                "Bu grubun bundan sonra hangi konuları ele almasını umuyorsunuz?",
+                "Ayrıldığında ne destek ihtiyacın var veya sunmak istiyorsun?"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a3",
+          "label": "A3",
+          "title": "Aktif Dinleme Beceriler",
+          "blocks": [
+            {
+              "kind": "ul",
+              "items": [
+                "Vücut dili: açık vücut dilini ve dikkatini koruyun. Uygun olduğu yerde göz teması kurun, konuşmacıya yönelin, rahat bir duruş alın ve çoklu görevlerden kaçının.",
+                "Takip: konuşmacıya kesinti olmadan konuşma alanı verin. Bu, gereksiz soruları azaltmak, sessizliği tolere etmek ve bir düşünceyi açılmasına izin vermek anlamına gelir.",
+                "Parafraz etme ve yansıtma: ne duydunuz, hem içerik hem de duygu dahil olmak üzere özetleyin. Örneğin: \"İşittiğim şey ...\"",
+                "Açık uçlu sorular sorma: evet/hayır cevapları yerine yansıtmayı davet eden.",
+                "Doğrulama: hangi kadarını ve ne kadar anlaşılır bir şekilde paylaşılsa da, ne duydunuz konuşmacının deneyiminde gerçek bir şeyden geldiğini varsayın."
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Bilinçli bir dinleme aktivitesi:"
+            },
+            {
+              "kind": "p",
+              "text": "Gözlerini kapat ve: çevrenizde ve kendinizde kaç tane ses duyabileceğinize dikkat edin; ortaya çıkan yargıları fark edin, bunlara bağlanmadan; sesiniz, akışınız ve nefes ritminize odaklanın; vücudun her kısmından yavaşça geçerek ve her kısmı gevşeterek somatik bir envanter yapın."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "grounding-activities",
+      "label": "L6",
+      "title": "Topraklama Aktiviteleri",
+      "sectionId": "restorative-practices",
+      "facilitatorBlocks": [
+        {
+          "kind": "p",
+          "text": "Topraklama egzersizleri, sizi anksiyete, panik veya hatırlamalara götürmekten hızlı bir şekilde uzaklaştırmak için tasarlanmış tekniklerdir. Sizi su anda ve fiziksel çevrenizel yeniden bağlayarak. Bunlar, bir atölyenin niyet belirlenmesinin yanı sıra bir grup üyeleriyle bağlantı kurmanın parçası olabilir."
+        }
+      ],
+      "activities": [
+        {
+          "id": "a1",
+          "label": "A1",
+          "title": "Toprağa Bağlanma",
+          "blocks": [
+            {
+              "kind": "p",
+              "text": "Hız burada önemlidir. Oturma ve nefes alma için hareket etmesine izin verin. Kolaylaştırıcı şöyle der: \"Rahat bir şekilde oturabileceğiniz bir yer bulun.\""
+            },
+            {
+              "kind": "p",
+              "text": "\"Eğer bunu yapmakta kendini iyi hissediyorsan, gözlerini kapat. Eğer istemiyorsan, önünde nazikçe odaklanabileceğin bir yer bul. Şimdi dört derin nefes al. Nefes aldıkçan ve çıkardıkça göğsün yükselip alçalışını hisset. Her nefes aldığında, sakin ve barışçıl bir his alıyormuş gibi hayal et. Nefes çıkardığında, tüm stresi vücudundan çıkar. Omuzlarının rahat olmasına ve yumuşamasına izin ver. Gözlerin ve yüzünün rahat olmasına ve yumuşamasına izin ver. Tüm stresin tüm vücudundan çıkmasına izin ver. Atalarımızla, mekânın kutsallığı ile ve toprağla bağlantı hisset.\""
+            }
+          ]
+        },
+        {
+          "id": "a2",
+          "label": "A2",
+          "title": "Duyusal Farkındalık (5-4-3-2-1)",
+          "blocks": [
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Amaç: beyin hızlı sıfırlama"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "5: Çevrenizde görebileceğiniz 5 şey arayın (örn., bir sandalye, bir bitki, gökyüzü).",
+                "4: Dokunabileceğiniz 4 şeye odaklanın (örn., saçınız, masanız, zemin).",
+                "3: Duyabileceğiniz 3 şey dinleyin (örn., trafik, kuşlar, nefes).",
+                "2: Koklayabileceğiniz 2 şeyi tanımlayın (örn., sabun, hava, yemek).",
+                "1: Tadabileceğiniz 1 şeyi fark edin (örn., diş macunu, kahve)."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a3",
+          "label": "A3",
+          "title": "Fiziksel ve Taktil Topraklama",
+          "blocks": [
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Amaç: Vücudunuz ve çevrenizle bağlantısına farkındalık"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Topuklarını kazı: ayaklarının ağırlığına karşı zemin hissedişine odaklanın.",
+                "Sıcaklık değişikliği: ellerinize soğuk veya sıcak su akıt.",
+                "Sıkıştır/Serbest bırak: yumruğunu sıkıştır, 5-10 saniye tut, sonra serbest bırak ve gevşemenin keyfini çıkar.",
+                "Sakinleştirici bir nesne taşı: cebinde dokunabileceğin küçük bir taş, kumaş veya mücevher taşı.",
+                "Uzat: kollarını ve bacaklarını uzat, gerilim ve rahatlamanın hissiyatını hisset.",
+                "Kelebek vuruşu: göğsüne veya omuzlarına iki elinle nazikçe vurmaya değiştirerek."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a4",
+          "label": "A4",
+          "title": "Sevgi İçeren Yardım Meditasyonu",
+          "blocks": [
+            {
+              "kind": "p",
+              "text": "Sevgi içeren yardım meditasyonu (aynı zamanda Metta olarak bilinir), şefkat, sıcaklık ve iyilik oluşturmak için tasarlanmış bir mindfulness uygulamasıdır. Duygusal direniş hissedersen, elini kalbine koy. Doğru hissetmenin hiçbir yolu yoktur — sadece birinin iyi olmasını dilemek, aynı zihinsel faydaları taşır."
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Kendin"
+            },
+            {
+              "kind": "p",
+              "text": "\"Mutlu olmam diliyorum. Sağlıklı olmam diliyorum. Güvende olmam diliyorum. Rahatlıkla yaşamam diliyorum.\""
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Sevileni Biri"
+            },
+            {
+              "kind": "p",
+              "text": "\"Mutlu olmanı diliyorum. Sağlıklı olmanı diliyorum. Güvende olmanı diliyorum. Rahatlıkla yaşamanı diliyorum.\""
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Tüm İnsanlar"
+            },
+            {
+              "kind": "p",
+              "text": "\"Tüm canlılar her yerde mutlu, sağlıklı ve özgür olsunlar.\""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

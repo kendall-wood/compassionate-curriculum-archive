@@ -1,0 +1,464 @@
+{
+  "id": "beloved-community",
+  "label": "I. Sevgili Toplum",
+  "title": "Sevgili Toplum",
+  "overview": "Bu bölüm insanların kendilerini nasıl tanıdıklarını, topluluk bulduklarını, acı ve iyileşme için dil geliştirdiklerini ve başkaları tarafından ve kendileri tarafından taşınan tarihi travmayı daha iyi anlamalarını araştırır. Kişisel iyilik ve kolektif özgürlüğün derinden bağlantılı olduğu fikrine dayanır. Bu bölüm özfarkındalıkla başlar, daha sonra ilişkiler, duygusal yetkinlik ve tarihi anlayış doğrultusunda dışa doğru ilerler.",
+  "lessons": [
+    {
+      "id": "identity",
+      "label": "L1",
+      "title": "Kimlik: Kendimizi Tanımaya Yardımcı Olmak",
+      "sectionId": "beloved-community",
+      "heroImage": "/images/l1-hero.png",
+      "thumbnail": "/images/l1-thumb.png",
+      "facilitatorBlocks": [
+        {
+          "kind": "p",
+          "bold": true,
+          "text": "\"Sevgili toplum, farkın ortadan kaldırılması değil, onun onaylanması yoluyla biçimlenir — her birimiz kim olduğumuzu ve dünyada nasıl yaşadığımızı şekillendiren kimlikler ve kültürel mirası talep etmek yoluyla.\" (bell hooks)"
+        },
+        {
+          "kind": "p",
+          "text": "Kimlik çalışması öz yansıtma ile başlamalıdır. İnsanlar arasında gerçek farklar vardır ve bunları keşfetme hakkımız vardır. Ancak kendimizle başlamalıyız çünkü kimliklerimiz başkalarını ve çevremizi etkiler. Katılımcıların, başkaların kimliklerine ilişkin düşünceli bir şekilde bağlantı kurması, kendi kimliklerini ilk olarak göz önünde bulundurmuş olması halinde daha olasıdır. Yansıtıcı öz-konuşmayı teşvik etmek, kendimizi anlamak ve iyilik için anahtar olan şeydir. Amaç, benliğin sabit bir tanımına ulaşmak değil, kimliği katmanlı, ilişkisel ve değişken olarak tanımaktır. Bu bölüm, kimliğin farklı yönlerinin nasıl etkileşim kurduğunu ve bu etkileşimlerin deneyimi nasıl şekillendirdiğini anlamak için bir yol olarak kesişimselliği tanıtmak için de kullanılabilir."
+        },
+        {
+          "kind": "p",
+          "bold": true,
+          "text": "'Kimlik başarılı bir insan olmanın temel bir parçasıdır, kimliğin kim olduğunuzu bilmeden hiçbir şey yapamayacağınız sıklıkla söylenir. Sosyal yaratıklar olarak, kim olduğumuzu bilmenin bir kısmı hangi gruba ait olduğumuzu, başkalarıyla hangi özellikleri, değerleri veya inançları paylaştığımızı, hangi diğerlerini ve neden bilmektir' (Hirsch 2018:21)."
+        },
+        {
+          "kind": "p",
+          "bold": true,
+          "text": "'İyiliğin anahtarı kendinizi anlamak ve kimliğinize dikkat etmektir, çünkü bunun deneyimlerimiz üzerinde muazzam bir etkisi vardır' (Cousins 2019:41)."
+        },
+        {
+          "kind": "p",
+          "text": "'Kendinize iyice bakma alışkanlığı, toplum gündelik karmaşık zorluklar sunduğunda öz-bakım ve öz-beslenme için güçlü bir araçtır. Herhangi bir alışkanlık gibi, yeni keşfedilen farkındalığı yerleştirmek ve bunu günlük yaşantımıza aktarmak için pratik, azim ve sabır gerekir; ancak pozitif bir kimlik için fırsat yaratmaya başlayabilirseniz, ölçülemez bir iyilik ve yaşam doyumu yatırımı yapacaksınız' (Cousin 2019:41)."
+        }
+      ],
+      "activities": [
+        {
+          "id": "a1",
+          "label": "A1",
+          "title": "Kesişimsel Bilinçlilik Geliştirme",
+          "blocks": [
+            {
+              "kind": "image",
+              "src": "/images/l1-a1.png",
+              "alt": "Bakım jest olarak bir bilekten tutmak",
+              "width": 672,
+              "height": 376
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Facilitatör olarak kendi kimliğiniz hakkında tartışarak başlayın. Açıklık, karmaşıklık ve öz-farkındalık modelleyin. Daha sonra katılımcıları Susan Cousins'in (2019:41) sorularından gelen sorular hakkında düşünmeye davet edin:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Kimliğinizi nasıl tanımlarsınız?",
+                "Siz kimsiniz?",
+                "Kimliğinizin hangi yönleri sizin için en önemli hisset?",
+                "Kendiniz hakkındaki anlayışınızı kim veya ne şekillendirmiştir?",
+                "Diğer kimlikler hakkındaki anlayışınızı kim veya ne şekillendirmiştir?",
+                "Taşıdığınız kimlikler hakkında nasıl hissedersiniz?",
+                "Kendinizi ırksal olarak nasıl tanımlarsınız ve kimliğinizin bu bölümü hakkında nasıl hissedersiniz?",
+                "Farklı bir ırksal veya kültürel kimlikle dünyada hareket etmeyi hayal ederseniz, ne değişebilir? Ne kaybolabilir? Eğer varsa, ne farklı hissedebilir?"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a2",
+          "label": "A2",
+          "title": "Kesişimsellik Pratiği Olarak",
+          "blocks": [
+            {
+              "kind": "p",
+              "text": "Kesişimselliği güç sistemlerinin deneyimlenmiş deneyimi nasıl etkilediğini anlamak için bir yol olarak tanıtın. Bunu, ayrıcalık ve baskının nasıl üst üste gelebildiğini gösteren kısa video materyali, tartışma veya diyagramlarla desteklenebilir."
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Profesör Kimberle Crenshaw (2018) https://youtu.be/ViDtnfQ9FHc — kesişimsellik terimini icat etmiş ve bu da biz farklı rakip kimliklerden etkilenen deneyimleri ve bunların toplumda bireyler hariç tutmak için nasıl etki ettiğini keşfetmemizi sağlayan kişi (Bhopal, 2018:47).",
+                "Tasneem Chopra (2023) 'Kesişimsel Feminizm Peşinde' https://youtu.be/h4Us1dCRfFI"
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Olası tartışma ipuçları:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Kimliğinizin farklı bölümleri birbirini nasıl etkiler?",
+                "Nerede ayrıcalık yaşıyorsunuz?",
+                "Nerede dışlanma veya ayrımcılık yaşıyorsunuz?",
+                "Kesişimsellik, kendi yaşantılarımızı ve başkalarının yaşantılarını anlamamıza nasıl yardımcı olur?"
+              ]
+            },
+            {
+              "kind": "p",
+              "text": "Daha fazla eleştiri için, Kathryn Pauly Morgan (1996) tarafından ayrıcalık, egemenlik ve baskı eksenleri arasındaki kesişim diyagramını göz önünde bulundurun. Bu diyagram insanların güç ile ilişkili olarak farklı şekilde konumlandırıldığını açıklamaya yardımcı olur. Hepimiz bir baskı ve egemenlik ekseni üzerinde var oluyoruz. Bazı konumlar daha büyük erişim, tanınma ve avantajla gelirken, diğerleri ayrımcılık ve dışlanma tarafından şekillenir. Bu konumlar sabit değildir — kimliklerimiz farklı bağlamlarda kesişir ve değişir, karmaşık, katmanlı deneyimler yaratır. Bunu anlamak hem kendi konumumuz hakkında hem de başkalarının gezinmek zorunda olabileceği eşit olmayan koşullar hakkında daha farkında olmamıza yardımcı olur."
+            }
+          ]
+        },
+        {
+          "id": "a3",
+          "label": "A3",
+          "title": "Önyargının Doğası",
+          "blocks": [
+            {
+              "kind": "p",
+              "text": "Herkesin, bilinçsiz önyargı ve affinite önyargısı da dahil olmak üzere önyargısı olduğu fikrini tanıtın. Katılımcıları, insanların sık sık kendilerine tanıdık olanlar tarafından çekildiğini ve bunun algı ve davranışı nasıl etkilediğini yansıtmaya davet edin."
+            },
+            {
+              "kind": "p",
+              "text": "Dr Jennifer Eberhardt tarafından yapılan videonun 'Biased: Uncovering the hidden prejudice that shapes what we see, think and do' kitabından bilinçsiz önyargı hakkında çalışın. https://www.youtube.com/watch?v=-ri1IFCqGjQ"
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Olası ipuçları:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Günlük yaşamda hangi tür önyargılar görüyorsunuz?",
+                "Önyargı ve stereotipler insanları tek bir hikayeye nasıl indirger?",
+                "Bir hikayenin bütün bir grup için geçerli olmasını sağlamanın riskleri nelerdir?"
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Arka plan"
+            },
+            {
+              "kind": "p",
+              "text": "Bilinçsiz önyargı sadece istemeden tercihleridir. Önyargı genellikle bir saniyenin onda birinden kısa bir sürede karar verilir, bir görüntüyü işleyebileceğimizden çok daha hızlıdır. İnsanlar sıklıkla önyargıyı ırksal önyargı ile ilişkilendirir, ancak önyargı birçok formu alır. Affinite önyargısı, biz gibi olanları tercih ettiğimiz anlamına gelir. Düşüncelerimizi, korkularımızı ve geçmişimizi doğrulayan insanlarımız olduğunda ılık ve bulanık hissetmemizi sağlar. Ayrıca aynı eğitim, kariyer geçmişi, aksan, etnisite vs. olan kişileri tercih ederiz. Beyin varsa önyargın vardır."
+            }
+          ]
+        },
+        {
+          "id": "a4",
+          "label": "A4",
+          "title": "Sosyal Kimlik Tekerleği",
+          "blocks": [
+            {
+              "kind": "p",
+              "text": "Sosyal kimlik tekerleğine dayanarak, katılımcılar kimliklerini harita yapar ve aşağıdaki soruları göz önünde bulundurur."
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "En sık hangi kimlikler hakkında düşünüyorsunuz?",
+                "En az hangi kimlikler hakkında düşünüyorsunuz?",
+                "Hangi kimlikler hakkında daha fazla bilmek istersiniz?",
+                "Hangi kimlikler kendinizi nasıl algıladığınız üzerinde en güçlü etkiye sahip?",
+                "Hangi kimlikler başkaların sizi nasıl algıladığı üzerinde en güçlü etkiye sahip?"
+              ]
+            },
+            {
+              "kind": "p",
+              "text": "Alt versiyonu: Boş bir versiyon indirin ve grubun tartışma için kendi tekerleğini oluşturmasını sağlayın. [MIT Open Learning Library](https://openlearning.mit.edu/) adresinden daha fazla bilgi mevcuttur."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "finding-your-people",
+      "label": "L2",
+      "title": "Kendi İnsanlarını Bulmak, Kendi Takımını Bulmak",
+      "sectionId": "beloved-community",
+      "heroImage": "/images/l2-thumb.png",
+      "thumbnail": "/images/l2-thumb.png",
+      "facilitatorBlocks": [
+        {
+          "kind": "p",
+          "text": "Bu ders toplum, aidiyet ve ilişkilerin gücüne odaklanır. İnsanların nasıl destek bulduğunu, güven inşa ettiğini ve kolektif bakım biçimleri oluşturduğunu sorar. Kolektivizm, karşılıklı destek ve radikal iyileşme geleneklerine dayanır."
+        },
+        {
+          "kind": "p",
+          "text": "Bu, sağlığımızı etkileyen baskı sistemlerinin hepsini anlamak hakkındadır. Bunun bir çaresi ekibinizi, insanlarınızı bulmaktır. Siyah kadınlar her zaman kolektifler inşa ettiler, Combahee River Collective'den Liverpool Black Sisters'a The Goddess Projects'e kadar. Bu nedenle, insanlarla bağlantılı olan şekillerde hayatta kalmak, gülmek, sevmek ve iyileşmek için yollar bulmanız teşvik ederiz, çünkü insanlarda güç vardır."
+        },
+        {
+          "kind": "p",
+          "text": "Bu dersi, benliğin yalnız durmadığı fikri etrafında çerçevelendirin. Katılımcıları topluluğu ait oldukları bir şey olarak değil, aynı zamanda oluşturmaya yardımcı olduğu bir şey olarak düşünmeye teşvik edin. Toplum ortak kimlik, ortak deneyim, ortak değerler veya ortak çaba yoluyla inşa edilebilir."
+        }
+      ],
+      "activities": [
+        {
+          "id": "a1",
+          "label": "A1",
+          "title": "Pratikte Toplum",
+          "blocks": [
+            {
+              "kind": "p",
+              "text": "Katılımcıları toplum inşa etmenin örneklerine, özellikle karşılıklı destek, kolektif bakım ve grasrot organizmaya dayananları yansıtmaya davet edin. Bu iki videoyu izleyin:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Nikotris Perkins (2019), Siyah kadınlar ve toplum hakkında konuşma yapan kentsel çalışmalar doktora öğrencisi: https://youtu.be/e78v42tz4eY",
+                "Doug Shipman, TEDX Atlanta: https://youtu.be/cP5PAul3H4E"
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Olası ipuçları:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Siz hangi toplumla birliktesisiniz?",
+                "Sizin için toplum ne anlama geliyor?",
+                "Mevcut kolektiflerden ve destek ağlarından ne öğrenebiliriz?",
+                "Nasıl arkadaş yapıyoruz? Diğer topluluklar ile nasıl bağlantı kuruyoruz?",
+                "Birlikte sevgili toplum yapabilir miyiz?",
+                "Fark üzerinden nasıl toplum inşa etmeye başlarız?"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a2",
+          "label": "A2",
+          "title": "Takımını Bul!",
+          "blocks": [
+            {
+              "kind": "p",
+              "text": "Katılımcılar destek ağlarında kimler olduğunu belirlemeli ve harita çıkarmalı — takımları."
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Olası ipuçları:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Takımınızda zaten kimler var?",
+                "Anahtar insanlarınız kimler? Ne nitelikleri var?",
+                "Kim eksik?",
+                "Hangi topluluk veya gruplara katılmanız gerekebilir?",
+                "Uzanmayı zor kılan ne?",
+                "İnsanlarınızı bulmak için hangi nitelikleri geliştirmeniz gerekebilir?"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "developing-your-language",
+      "label": "L3",
+      "title": "Dilinizi Geliştirmek",
+      "sectionId": "beloved-community",
+      "heroImage": "/images/l3-thumb.png",
+      "thumbnail": "/images/l3-thumb.png",
+      "facilitatorBlocks": [
+        {
+          "kind": "p",
+          "text": "Bu ders duygusal yetkinliğe odaklanır: duyguyu fark etme, adlandırma, anlama ve duyguyla çalışma yeteneği. Katılımcıları hissettikleri şeyi, nerede hissettiklerini adlandırma diline geliştirmelerine ve duyguların ilişkileri, liderliği ve iyileşmeyi nasıl şekillendirdiğini anlamalarını destekler."
+        },
+        {
+          "kind": "p",
+          "text": "Bu ders, özellikle savunmasızlık ifade etmek konusunda cesareti kırılan veya belirli duyguların kabul edilemez olduğunu öğretilen katılımcılar için anlamlı olabilir. Katılımcıları duyguları utanç duymadan yaklaşmaya teşvik edin. Amaç zor hisleri ortadan kaldırmak değil, bunlarla daha bilinçli ve merhamet ile bir arada yaşamaktır."
+        },
+        {
+          "kind": "p",
+          "bold": true,
+          "text": "Arka plan"
+        },
+        {
+          "kind": "p",
+          "text": "Duygusal Yetkinlik, duyguları yaşama ilişkisini tanımlar. Gerilim anlarında daha etkili bir şekilde dinlememize ve uygun şekilde yanıt vermemize, başkalarının neler hissedebildiğini ve bağlanmaya çalışıp çalışmadığını tanımamıza izin verir. Duyguları fark etmek bize onların nereden geldiğini ve hangi düşüncelerin onları tetiklediğini anlamaya başlamamıza izin verir. Duygusal yetkinliği geliştirmek, sadece duyguların tanınması ve etiketlenmesinin ötesine geçer — onlarla onları uzaklaştırma ihtiyacını hissetmeden birlikte yaşamayı öğrenme anlamına gelir. Sevgili topluluklarımız, kesişimsel, yaşanmış deneyimlerimizi tartışmamıza ve birlikte yaşamamıza yardımcı olur."
+        }
+      ],
+      "activities": [
+        {
+          "id": "a1",
+          "label": "A1",
+          "title": "Duygusal Yetkinlik",
+          "blocks": [
+            {
+              "kind": "p",
+              "text": "Duygusal yetkinliği sağlıklı ve üretken bir şekilde duyguyu hissetme, adlandırma ve duyguyla çalışma yeteneği olarak tanıtın."
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Anahtar fikirler:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Duygular kendi başlarına sorunlar değildir",
+                "Yargı, utanç ve baskılama genellikle duygularla yaşamayı zorlaştırır",
+                "Duyguları adlandırmak insanların tepkisellikten yansıtmaya geçmelerine yardımcı olabilir",
+                "Duygusal yetkinlik güven, empati ve liderliği destekler"
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Olası ipuçları:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Adlandırması kolay olan hangi duygular?",
+                "Hangi duygular kabullenmeyi daha zor hissettirir?",
+                "Hangi duyguların kabul edilebilir veya kabul edilemez olduğunu nerede öğrendiniz?",
+                "Duyguları bedeninizde nasıl ortaya çıkıyor?",
+                "Şu anda yaşadığınız duyguları adlandırabilir misiniz?",
+                "Bu duygular ne hissettiriyor? Yargı olmaksızın nerede ve ne hissettiğini, ve bu zihni durum bedeniniz boyunca nasıl açılıyor olduğunu açıklayın.",
+                "Baş kısmından ayaklara inen vücut boyunca çalışın ve nerede duyguyu hissettiğiniz konusunda gerçekçi olun. Kendinizi teselli edin ki her şey yolunda ve siz güvendosiniz.",
+                "Olumsuz duygular genellikle ilkel beyni aktive eder. Düşünen beyni aktive etmemiz gerekir, ve hissettiğini etiketlemek bunu yapmanıza yardımcı olur. Ayrıca kontrol edebileceğimiz şeyin üzerine odaklanmamıza yardımcı olur. Örneğin, çeneniz sıkılmışsa, onu rahatlatamanız gerekir ve daha yavaş ve derin nefes almanız gerekir."
+              ]
+            },
+            {
+              "kind": "p",
+              "text": "Olumsuz duygular genellikle ilkel beyni aktive eder. Düşünen beyni aktive etmemiz gerekir, ve hissettiğini etiketlemek bunu yapmanıza yardımcı olur. Ayrıca kontrol edebileceğimiz şeyin üzerine odaklanmamıza yardımcı olur. Örneğin, çeneniz sıkılmışsa, onu rahatlatamanız gerekir ve daha yavaş ve derin nefes almanız gerekir."
+            }
+          ]
+        },
+        {
+          "id": "a2",
+          "label": "A2",
+          "title": "Duygusal Tekerlek",
+          "blocks": [
+            {
+              "kind": "p",
+              "text": "Black Emotional and Mental Health Collective (BEAM) tarafından geliştirilen duygusal tekerleği göz önünde bulundurun. BEAM, akran liderliğinde eğitim programları aracılığıyla ruh sağlığı desteğine yönelik sistemik engelleri ortadan kaldırmayı amaçlayan bir kuruluştur. Kendi başınıza veya bir partnerle:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Sık sık hissettiğiniz duygular ve bunlarla ilişkili fiziksel duyumlar listesi yapın.",
+                "Hangi duygular tanıdık gelir?",
+                "Hangi duygulara karşı çıkarsınız?",
+                "Belirli duyguları vücudunuzun neresinde hissedersiniz?",
+                "Belirli hislere hangi yargıları eklersiniz?",
+                "Bu yargılar ilişkilerinizi ve empati yeteneğinizi nasıl etkiler?"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "understanding-historical-trauma",
+      "label": "L4",
+      "title": "Başkalarının Tarihi Travmasını Anlama",
+      "sectionId": "beloved-community",
+      "heroImage": "/images/l4-thumb.png",
+      "thumbnail": "/images/l4-thumb.png",
+      "facilitatorBlocks": [
+        {
+          "kind": "p",
+          "text": "Bu ders tarihi travmayı, sömürgecilik, ırkçılık, şiddet ve sistematik baskı tarafından şekillendirilen kolektif ve kuşaklararası bir zarar biçimi olarak tanıtır. Katılımcıları travmanın nasıl iletildiğini, mevcut yaşantıyı nasıl şekillendirdiğini ve daha fazla farkındalığın empati ve iyileşmeyi nasıl destekleyebileceğini yansıtmaya davet eder."
+        },
+        {
+          "kind": "p",
+          "text": "Tarihi travma zor ve aktiviteleştirici olabilir. Yavaş gidin. Yansıtma, bakım ve temelli tartışmayı teşvik edin. Katılımcılar hem kişisel hem de miras travmasını taşıyabilir ve farklı şekillerde yanıt verebilir. Karmaşıklığa yer açın."
+        },
+        {
+          "kind": "p",
+          "bold": true,
+          "text": "Arka plan"
+        },
+        {
+          "kind": "p",
+          "text": "Travma, önemli bir tek olay veya devam eden sinsi hareketler, mikro tahkirler veya sürekli farklı bir şekilde davranılmanın sonucu olabilir. Hartmann ve Gone (2014) tarihi travmayı yaygın yaşam boyutu psikolojik travmasından dört temel şekilde farklı olduğu şekilde tanımlarlar: sömürgecilik kökenlidir, kolektif etkilidir, olumsuz olaylar arasında kümülatif ve risk ve kırılganlığın kuşaklararası aktarımıdır."
+        },
+        {
+          "kind": "p",
+          "text": "Örnekler arasında Kuzey Amerika'da Birinci Ulus insanlarının deneyimleri, Avustralyalı Aborjinler ve Afrika diasporaları arasında anti-Siyah ırkçılık yer alır. Tarihi travmanın izleri genellikle derinden kazınmıştır ve birçok insan onun varlığının farkında olmayabilir (Mate, 2022). Bu, olumsuz duyguları ve fiziksel sağlık sorunlarını, psikosomatik hastalık da dahil olmak üzere sebep olabilir. Tarihi kuşaklararası travma genellikle günlük akut kronik stres tarafından yoğunlaştırılır, zarar verici fiziksel ve duygusal sonuçları ortaya çıkarır."
+        }
+      ],
+      "activities": [
+        {
+          "id": "a1",
+          "label": "A1",
+          "title": "İnsanlar Tarihi Travmayı Nasıl Yaşarlar?",
+          "blocks": [
+            {
+              "kind": "p",
+              "text": "1. İnsanlar Tarihi Travmayı Nasıl Yaşarlar videosunu izleyin: https://youtu.be/sjJUQlodh0g"
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Çiftler halinde, aşağıdaki soruları tartışın:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Hangi tarihi travma örneklerini biliyorsunuz?",
+                "Tarihi travma hakkında bilmek, ırk, kimlik ve kültür hakkında düşünme biçiminizi nasıl etkiler?",
+                "Tarihi travma günümüzde nasıl taşınır?",
+                "Tarihi travma ile mikro tahkiriler arasındaki ilişki nedir?",
+                "Kültürel kutlama ve toplum desteği zararla nasıl karşı çıkabilir?",
+                "Kültürel kutlamayı nasıl teşvik edebilir ve destekleyebilirsiniz?"
+              ]
+            },
+            {
+              "kind": "p",
+              "text": "2. Dr Gabor Mate, video https://youtu.be/ak_nLWQ8EtY — travmayı ve onun gerçek benliği nasıl etkilediğini tartışın."
+            }
+          ]
+        },
+        {
+          "id": "a2",
+          "label": "A2",
+          "title": "Öz-Yansıtma Pratiği",
+          "blocks": [
+            {
+              "kind": "ul",
+              "items": [
+                "Yaşantınızın hangi yönlerini iyi hissedersiniz? (olumlu nitelikler/güçler)",
+                "Yaşantınızın hangi yönleri sizi doldurur? (zenginleştirilmiş hissettiğiniz alanlar)",
+                "Tarihi veya doğrudan travmanın etkileri size nasıl gösteriyor? (Kırılganlıkları belirleyin).",
+                "Kişisel/tarihi veya doğrudan travmanızı aşmak için ne yapıyorsunuz?"
+              ]
+            },
+            {
+              "kind": "p",
+              "text": "Aktif Dinleme YouTube videosu: https://youtu.be/Qg8PIK74KO4"
+            }
+          ]
+        },
+        {
+          "id": "a3",
+          "label": "A3",
+          "title": "Temelleme Alıştırması",
+          "blocks": [
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Geçmişi bırakma ve alındı için açık olmayı pratiği yapın:"
+            },
+            {
+              "kind": "p",
+              "text": "Nefes alın, bir ayakla ileri adım atın ve avuçlarınızı aşağı çevirin; Nefes verin, kollarınızı yatay konuma kaldırın, tüm gerginlik ve negatifliği bırakın. Nefes alın, avuçlarınızı yukarı çevirin ve onları göğsün itibaren geriye çekin, barışı ve iyileşmeyi içeri çekin."
+            },
+            {
+              "kind": "p",
+              "text": "Diğer ayakla tekrarlayın. Acı solunum çıkarın. Sakinlik ve iyileşme fırsatını nefes alın."
+            },
+            {
+              "kind": "p",
+              "text": "Bu ders, ırksal travma, kuşaklararası hayatta kalma stratejileri ve toplum, adalet ve kurumsal değişimin gerekliliği hakkında yansıtmayla sonuçlanabilir. Dr. Shelley Harrell'in altı seviyeli çerçevesi, ırkçılığa maruz kalmayı takip edebilecek fiziksel ve duygusal etkileri tanımlamaya yardımcı olur, ırk ile ilgili yaşam olayları, başsağı ırkçılığı, günlük ırkçı mikro-stresörleri, kronik bağlamsal stresörleri, kolektif ırkçılık deneyimleri ve travmanın kuşaklararası aktarımını içerir."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

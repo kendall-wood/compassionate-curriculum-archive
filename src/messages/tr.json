@@ -1,1 +1,82 @@
-{"_meta":{"comment":"Stub. Populated by `npm run translate`."}}
+{
+  "site": {
+    "title": "Şefkatli Müfredat Arşivi",
+    "description": "Şefkatli Müfredatın — öğrenme, yansıtma ve kolektif büyüme için katılımcı bir çerçeve — etkileşimli, erişilebilir arşivi."
+  },
+  "toolbar": {
+    "back": "Geri",
+    "home": "Ana Sayfa",
+    "about": "Hakkında",
+    "print": "Yazdır",
+    "contact": "İletişim",
+    "settings": "Ayarlar & Erişilebilirlik",
+    "language": "Dil",
+    "switchToDark": "Koyu moda geç",
+    "switchToLight": "Açık moda geç",
+    "decreaseZoom": "Yakınlaştırmayı azalt",
+    "increaseZoom": "Yakınlaştırmayı artır",
+    "accentSwatchesLabel": "Vurgu rengi örnekleri",
+    "useAccentColor": "{color} vurgu rengini kullan",
+    "useMonochrome": "Monokrom vurguyu kullan",
+    "pickCustomColor": "Özel bir vurgu rengi seç",
+    "customColorPicker": "Özel vurgu rengi seçici",
+    "primaryNav": "Ana"
+  },
+  "section": {
+    "introduction": "Giriş",
+    "curriculum": "Müfredat"
+  },
+  "nav": {
+    "intro": "Giriş",
+    "sectionsLabel": "Müfredat bölümleri"
+  },
+  "table": {
+    "lesson": "Ders",
+    "title": "Başlık",
+    "activities": "Etkinlikler",
+    "linksAndImages": "Bağlantılar & Görseller",
+    "label": "Müfredat",
+    "openLesson": "Dersi aç: {title}",
+    "activityAria": "{label}: {title}"
+  },
+  "activityTabs": {
+    "label": "Ders etkinlikleri",
+    "overview": "Genel Bakış"
+  },
+  "activityBlock": {
+    "forFacilitators": "Kolaylaştırıcılar İçin",
+    "intro": "Giriş"
+  },
+  "intro": {
+    "metaTitle": "Giriş — Şefkatli Müfredat Arşivi",
+    "metaDescription": "Umut Pratiği. Şefkatli Müfredat, öğrenme, yansıtma ve kolektif büyüme için katılımcı bir çerçevedir.",
+    "heading": "Giriş: Umut Pratiği",
+    "p1": "Şefkatli Müfredat, travma veya herhangi bir yapısal zarar konusunda yaşanmış deneyimi olan insanlar tarafından ve onlar için tasarlanmış, öğrenme, yansıtma ve kolektif büyüme için katılımcı bir çerçevedir. Yaşanmış deneyimin bir bilgi biçimi olduğu ve iyileşmenin, eleştirel anlayışın ve hayal gücünün daha adil geleceğin inşası için gerekli olduğu fikrine dayanmaktadır.",
+    "p2": "Müfredat, katılımcılardan basitçe bilgi almalarını istemek yerine, anlamı birlikte şekillendirmelerine davet eder. Paylaşılan yazarlık, karşılıklı yardım ve hesap verebilirlik etiğine dayanmaktadır. Aynı zamanda güçlü tabanlıdır. Çalışma, insanların neyi kaybettiklerinden değil, neyi zaten bildiklerinden, hayatta kaldıklarından ve birlikte inşa edebileceklerinden başlar. Müfredat genelinde, katılımcılara kendi deneyimleri üzerinde yansıtma yapmaya, birbirlerini dinlemeye ve hem kişisel dönüşümü hem de daha geniş toplumsal değişimi destekleyebilecek kolektif öğrenme biçimlerini uygulamaya teşvik edilir.",
+    "p3Intro": "Müfredatın üç bağlantılı bölümü vardır.",
+    "p3PillBeloved": "I. Sevgili Topluluk",
+    "p3MidBeloved": "kimlik, aidiyet, duygusal akıcılık ve tarihi travmaya odaklanır. Katılımcıların kendilerini, ilişkilerini ve dünyadaki hareketlerini şekillendiren daha geniş sistemleri daha iyi anlamalarına yardımcı olur.",
+    "p3PillRestorative": "II. Restoratif Uygulama",
+    "p3MidRestorative": "çevreleri, aktif dinlemeyi, yeniden yazımı ve güven, yansıtma, hesap verebilirlik ve paylaşılan sorumluluğu destekleyen diğer araçları tanıtır.",
+    "p3PillMedia": "III. Medya, Anlatı ve Gelecek Oluşturma",
+    "p3MidMedia": "hikaye anlatımını, temsili ve hayal gücünü inceler. Katılımcıları baskın anlatıları incelemeye, kendileri hakkında daha tam öyküler anlatmaya ve yaratıcı problem çözme ve gelecek oluşturma için hayal gücü kapasitesi inşa etmeye davet eder.",
+    "p4": "Şefkatli Müfredat, açık ve yaşayan bir çerçeve olarak tasarlanmıştır. Üniversitelerde, toplum örgütlerinde, savunuculuk mekanlarında, araştırma ortamlarında ve kolaylaştırıcıların aidiyet, diyalog ve işbirlikçi öğrenmeyi desteklemek istedikleri diğer grup bağlamlarında kullanılabilir. Bazı gruplar bunu yapılandırılmış bir dizi çalıştay olarak kullanabilir. Diğerleri bireysel bölümler veya etkinlikler kullanabilir ve bunları yerel ihtiyaçlara göre uyarlayabilir.",
+    "p5": "Özünde, müfredat katılım, bedensellik, hikaye anlatımı ve çok modlu öğrenme tarafından yönlendirilir. İnsanların eleştirel olarak düşünebilecekleri, farklılıklar arasında bağlantı kurabileceği ve birlikte başka şekillerde hayal edebileceği koşullar yaratmayı amaçlamaktadır. Bu anlamda, Şefkatli Müfredat sadece bir dizi alıştırma değil, karşılıklı destek, paylaşılan araştırma ve ortak umut pratiği yapmak için bir yoldur."
+  },
+  "about": {
+    "metaTitle": "Hakkında — Şefkatli Müfredat Arşivi",
+    "heading": "Hakkında",
+    "p1": "Şefkatli Müfredat, travma veya herhangi bir yapısal zarar konusunda yaşanmış deneyimi olan insanlar tarafından ve onlar için tasarlanmış, öğrenme, yansıtma ve kolektif büyüme için katılımcı bir çerçevedir. Yaşanmış deneyimin bir bilgi biçimi olduğu ve iyileşmenin, eleştirel anlayışın ve hayal gücünün daha adil geleceğin inşası için gerekli olduğu fikrine dayanmaktadır.",
+    "p2": "Müfredat, katılımcılardan basitçe bilgi almalarını istemek yerine, anlamı birlikte şekillendirmelerine davet eder. Paylaşılan yazarlık, karşılıklı yardım ve hesap verebilirlik etiğine dayanmaktadır."
+  },
+  "contact": {
+    "metaTitle": "İletişim — Şefkatli Müfredat Arşivi",
+    "heading": "İletişim",
+    "p1": "Sorularınız, işbirliği fırsatları veya müfredatı nasıl kullandığınızı paylaşmak için lütfen proje ekibi ile iletişime geçin."
+  },
+  "notFound": {
+    "heading": "Sayfa bulunamadı",
+    "body": "Aradığınız sayfa bulunamadı.",
+    "returnHome": "Ana Sayfaya Dön"
+  }
+}

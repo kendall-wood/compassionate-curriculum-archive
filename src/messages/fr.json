@@ -1,1 +1,82 @@
-{"_meta":{"comment":"Stub. Populated by `npm run translate`."}}
+{
+  "site": {
+    "title": "Archives du Curriculum Bienveillant",
+    "description": "Un archive interactif et accessible du Curriculum Bienveillant — un cadre participatif pour l'apprentissage, la réflexion et la croissance collective."
+  },
+  "toolbar": {
+    "back": "Retour",
+    "home": "Accueil",
+    "about": "À propos",
+    "print": "Imprimer",
+    "contact": "Contact",
+    "settings": "Paramètres et accessibilité",
+    "language": "Langue",
+    "switchToDark": "Passer au mode sombre",
+    "switchToLight": "Passer au mode clair",
+    "decreaseZoom": "Réduire le zoom",
+    "increaseZoom": "Augmenter le zoom",
+    "accentSwatchesLabel": "Échantillons de couleurs d'accent",
+    "useAccentColor": "Utiliser la couleur d'accent {color}",
+    "useMonochrome": "Utiliser un accent monochrome",
+    "pickCustomColor": "Choisir une couleur d'accent personnalisée",
+    "customColorPicker": "Sélecteur de couleur d'accent personnalisée",
+    "primaryNav": "Principal"
+  },
+  "section": {
+    "introduction": "Introduction",
+    "curriculum": "Curriculum"
+  },
+  "nav": {
+    "intro": "Intro",
+    "sectionsLabel": "Sections du curriculum"
+  },
+  "table": {
+    "lesson": "Leçon",
+    "title": "Titre",
+    "activities": "Activités",
+    "linksAndImages": "Liens et images",
+    "label": "Curriculum",
+    "openLesson": "Ouvrir la leçon : {title}",
+    "activityAria": "{label} : {title}"
+  },
+  "activityTabs": {
+    "label": "Activités de la leçon",
+    "overview": "Aperçu"
+  },
+  "activityBlock": {
+    "forFacilitators": "Pour les animateurs",
+    "intro": "Intro"
+  },
+  "intro": {
+    "metaTitle": "Introduction — Archives du Curriculum Bienveillant",
+    "metaDescription": "Une pratique d'espoir. Le Curriculum Bienveillant est un cadre participatif pour l'apprentissage, la réflexion et la croissance collective.",
+    "heading": "Introduction : Une pratique d'espoir",
+    "p1": "Le Curriculum Bienveillant est un cadre participatif pour l'apprentissage, la réflexion et la croissance collective, conçu avec et pour les personnes ayant une expérience vécue du trauma ou de toute forme de préjudice structurel. Il s'appuie sur l'idée que l'expérience vécue est une forme de connaissance, et que la guérison, la compréhension critique et l'imagination sont toutes nécessaires pour construire des avvenirs plus justes.",
+    "p2": "Plutôt que de demander aux participant·e·s de simplement recevoir de l'information, le curriculum les invite à construire ensemble du sens. Il s'enracine dans l'auteur·e·ship partagé, l'entraide mutuelle et une éthique de responsabilité. Il est aussi fondé sur les forces. Le travail ne commence pas par ce que les gens manquent, mais par ce qu'ils et elles savent déjà, ce qu'ils et elles ont survécu, et ce qu'ils et elles peuvent construire ensemble. Au fil du curriculum, les participant·e·s sont encouragé·e·s à réfléchir sur leur propre expérience, à écouter les uns les autres, et à pratiquer des formes d'apprentissage collectif qui peuvent soutenir à la fois la transformation personnelle et des changements sociaux plus larges.",
+    "p3Intro": "Le curriculum compte trois sections interdépendantes.",
+    "p3PillBeloved": "I. Communauté bien-aimée",
+    "p3MidBeloved": "se concentre sur l'identité, l'appartenance, la fluidité émotionnelle et le trauma historique. Il aide les participant·e·s à mieux se comprendre, ainsi que leurs relations et les systèmes plus larges qui façonnent la façon dont ils et elles se déplacent dans le monde.",
+    "p3PillRestorative": "II. Pratique restaurative",
+    "p3MidRestorative": "présente les cercles, l'écoute active, la réappropriation narrative et d'autres outils qui soutiennent la confiance, la réflexion, la responsabilité et la responsabilité partagée.",
+    "p3PillMedia": "III. Médias, narrative et futurs",
+    "p3MidMedia": "explore la narration, la représentation et l'imagination. Il invite les participant·e·s à examiner les narratives dominantes, à raconter des histoires plus complètes sur eux et elles-mêmes, et à développer leur capacité imaginative pour la résolution créative de problèmes et la création de futurs.",
+    "p4": "Le Curriculum Bienveillant est conçu comme un cadre ouvert et vivant. Il peut être utilisé dans les universités, les organisations communautaires, les espaces de plaidoyer, les contextes de recherche et d'autres contextes de groupe où les animateurs et animatrices veulent soutenir l'appartenance, le dialogue et l'apprentissage collaboratif. Certains groupes peuvent l'utiliser comme une série structurée d'ateliers. D'autres peuvent puiser dans des sections ou activités individuelles et les adapter aux besoins locaux.",
+    "p5": "À sa base, le curriculum est guidé par la participation, l'incarnation, la narration et l'apprentissage multimodal. Il vise à créer des conditions dans lesquelles les gens peuvent réfléchir de manière critique, se connecter à travers les différences et imaginer autrement ensemble. En ce sens, le Curriculum Bienveillant n'est pas seulement un ensemble d'exercices, mais une façon de pratiquer l'entraide mutuelle, l'enquête partagée et l'espoir en commun."
+  },
+  "about": {
+    "metaTitle": "À propos — Archives du Curriculum Bienveillant",
+    "heading": "À propos",
+    "p1": "Le Curriculum Bienveillant est un cadre participatif pour l'apprentissage, la réflexion et la croissance collective, conçu avec et pour les personnes ayant une expérience vécue du trauma ou de toute forme de préjudice structurel. Il s'appuie sur l'idée que l'expérience vécue est une forme de connaissance, et que la guérison, la compréhension critique et l'imagination sont toutes nécessaires pour construire des avvenirs plus justes.",
+    "p2": "Plutôt que de demander aux participant·e·s de simplement recevoir de l'information, le curriculum les invite à construire ensemble du sens. Il s'enracine dans l'auteur·e·ship partagé, l'entraide mutuelle et une éthique de responsabilité."
+  },
+  "contact": {
+    "metaTitle": "Contact — Archives du Curriculum Bienveillant",
+    "heading": "Contact",
+    "p1": "Pour des questions, des collaborations ou pour partager comment vous avez utilisé le curriculum, veuillez communiquer avec l'équipe du projet."
+  },
+  "notFound": {
+    "heading": "Page non trouvée",
+    "body": "La page que vous recherchez n'a pas pu être localisée.",
+    "returnHome": "Retour à l'accueil"
+  }
+}

@@ -1,0 +1,463 @@
+{
+  "id": "beloved-community",
+  "label": "I. Ukochana Społeczność",
+  "title": "Ukochana Społeczność",
+  "overview": "Ta sekcja bada, jak ludzie poznają siebie, znajdują społeczność, rozwijają język dla bólu i uzdrawiania oraz lepiej rozumieją historyczną traumę niesioną przez innych i przez samych siebie. Opiera się na ideę, że osobiste dobrostan i wyzwolenie zbiorowe są głęboko ze sobą powiązane. Sekcja rozpoczyna się od autorefleksji, a następnie rozszerza się w kierunku relacji, biegłości emocjonalnej i zrozumienia historycznego.",
+  "lessons": [
+    {
+      "id": "identity",
+      "label": "L1",
+      "title": "Tożsamość: Pomaganie w poznaniu samych siebie",
+      "sectionId": "beloved-community",
+      "heroImage": "/images/l1-hero.png",
+      "thumbnail": "/images/l1-thumb.png",
+      "facilitatorBlocks": [
+        {
+          "kind": "p",
+          "bold": true,
+          "text": "\"Ukochana społeczność jest formowana nie przez wyeliminowanie różnic, ale przez ich potwierdzenie, poprzez każdego z nas rościący sobie prawa do tożsamości i spuścizny kulturowej, które kształtują, kim jesteśmy i jak żyjemy na świecie.\" (bell hooks)"
+        },
+        {
+          "kind": "p",
+          "text": "Praca nad tożsamością powinna rozpocząć się od autorefleksji. Istnieją rzeczywiste różnice między grupami ludzi, a mamy prawo je badać. Ale musimy zacząć od siebie, ponieważ nasze tożsamości wpływają na innych i na nasze otoczenie. Uczestnicy są bardziej skłonni do refleksyjnego zaangażowania się w tożsamości innych, jeśli najpierw rozważyli własną. Zachęcanie do refleksyjnego dialogu wewnętrznego jest niezbędne do zrozumienia samych siebie i jest kluczowe dla dobrostanu. Celem nie jest osiągnięcie stałej definicji siebie, ale uznanie tożsamości za warstwową, relacyjną i zmienną. Ta sekcja może być również używana do wprowadzenia interseksualizmu jako sposobu rozumienia, jak różne aspekty tożsamości się przenikają i jak te interakcje kształtują doświadczenie."
+        },
+        {
+          "kind": "p",
+          "bold": true,
+          "text": "'Tożsamość jest taką fundamentalną częścią bycia udanym człowiekiem, że często się mówi, że nie możesz nic robić, dopóki nie wiesz, kim jesteś. Jako istoty społeczne, część poznawania siebie to wiedza, do której grupy należymy, jakie cechy, wartości lub przekonania dzielimy z innymi, którzy inni i dlaczego' (Hirsch 2018:21)."
+        },
+        {
+          "kind": "p",
+          "bold": true,
+          "text": "'Kluczem do dobrostanu jest zrozumienie siebie i zwrócenie uwagi na swoją tożsamość, ponieważ ma to ogromny wpływ na nasze doświadczenia' (Cousins 2019:41)."
+        },
+        {
+          "kind": "p",
+          "text": "'Zwyczaj sprawdzania się ze sobą jest potężnym narzędziem samoopieki i samopielęgnacji, gdy społeczeństwo oferuje codzienne złożone wyzwania. Jak w przypadku każdego nawyku, wymaga to praktyki, wytrwałości i cierpliwości, aby osadzić nowo odkryte świadomość i realizować to w naszych codziennych życiach; jednak jeśli potrafisz zacząć tworzyć możliwości dla pozytywnej tożsamości, będziesz dokonywać inwestycji w swoje dobrostan i zadowolenie z życia, które jest niemierzalne' (Cousin 2019:41)."
+        }
+      ],
+      "activities": [
+        {
+          "id": "a1",
+          "label": "A1",
+          "title": "Rozwijanie interseksjonalnej uważności",
+          "blocks": [
+            {
+              "kind": "image",
+              "src": "/images/l1-a1.png",
+              "alt": "Dłonie trzymające przegub jako gest troski",
+              "width": 672,
+              "height": 376
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Zacznij od omówienia własnej tożsamości jako ułatwiającego. Modeluj otwartość, złożoność i świadomość siebie. Następnie zaproś uczestników do refleksji nad pytaniami Susan Cousins (2019:41):"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Jak opisałbyś swoją tożsamość?",
+                "Kim jesteś?",
+                "Jakie aspekty twojej tożsamości czują się dla ciebie najważniejsze?",
+                "Kto lub co ukształtowało twoje rozumienie siebie?",
+                "Kto lub co ukształtowało twoje rozumienie innych tożsamości?",
+                "Jak czujesz się wobec tożsamości, którą noszysz?",
+                "Jak opisałbyś się rasowo i jak czujesz się z tego aspektu twojej tożsamości?",
+                "Jeśli wyobrażasz sobie poruszanie się po świecie z inną rasową lub kulturową tożsamością, co mogłoby się zmienić? Co mogłoby być stracone? Co, jeśli w ogóle, mogłoby się czuć inaczej?"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a2",
+          "label": "A2",
+          "title": "Interseksualizm jako praktyka",
+          "blocks": [
+            {
+              "kind": "p",
+              "text": "Wprowadź interseksualizm jako sposób rozumienia, jak systemy władzy wpływają na doświadczenie życiowe. Może to być wspierane poprzez krótkie materiały wideo, dyskusję lub diagramy pokazujące, jak przywilej i opresja mogą się nakładać."
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Profesor Kimberle Crenshaw (2018) https://youtu.be/ViDtnfQ9FHc — która ukuła termin interseksualizm, który umożliwia nam badanie, jak doświadczenia są dotknięte różnymi konkurencyjnymi tożsamościami i jak te wpływają na wykluczenie jednostek w społeczeństwie (Bhopal, 2018:47).",
+                "Tasneem Chopra (2023) 'The pursuit of intersectional feminism' https://youtu.be/h4Us1dCRfFI"
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Możliwe pytania dyskusyjne:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Jak różne części twojej tożsamości wpływają na siebie?",
+                "Gdzie doświadczasz przywileju?",
+                "Gdzie doświadczasz wykluczenia lub dyskryminacji?",
+                "Jak interseksualizm pomaga nam zrozumieć nasze własne życia i życia innych?"
+              ]
+            },
+            {
+              "kind": "p",
+              "text": "Aby uzyskać dalszą krytykę, rozważ ten diagram przecinających się osi przywileju, dominacji i opresji autorstwa Kathryn Pauly Morgan (1996), który pomaga wyjaśnić, jak ludzie są pozycjonowani inaczej w stosunku do władzy. My wszyscy istniejemy na osi opresji i dominacji. Niektóre pozycje wiążą się z większym dostępem, uznaniem i zaletą, podczas gdy inne są kształtowane przez dyskryminację i wykluczenie. Te pozycje nie są stałe — nasze tożsamości przecinają się i przesuwają w różnych kontekstach, tworząc złożone, warstwowe doświadczenia. Zrozumienie tego pomaga nam uświadomić sobie zarówno naszą pozycję, jak i nierówne warunki, które inni mogą nawigować."
+            }
+          ]
+        },
+        {
+          "id": "a3",
+          "label": "A3",
+          "title": "Natura uprzedzenia",
+          "blocks": [
+            {
+              "kind": "p",
+              "text": "Wprowadź ideę, że wszyscy mają uprzedzenia, w tym nieświadome uprzedzenia i uprzedzenia affinitetu. Zaproś uczestników do refleksji nad tym, jak ludzie są często przyciągani do osób, które czują się znane, i jak to wpływa na postrzeganie i zachowanie."
+            },
+            {
+              "kind": "p",
+              "text": "Obejrzyj wideo Dr Jennifer Eberhardt, aby uzyskać wgląd w nieświadome uprzedzenia z jej książki, Biased: Uncovering the hidden prejudice that shapes what we see, think and do. https://www.youtube.com/watch?v=-ri1IFCqGjQ"
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Potencjalne pytania:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Jakie rodzaje uprzedzeń widzisz w codziennym życiu?",
+                "Jak uprzedzenia i stereotypy spłaszczają ludzi do jednej historii?",
+                "Jakie są zagrożenia pozwolenia jednej historii na zastąpienie całej grupy?"
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Tło"
+            },
+            {
+              "kind": "p",
+              "text": "Nieświadome uprzedzenie to po prostu nasze niezamierzone preferencje. Uprzedzenie jest często decydowane w mniej niż jedną dziesiątą sekundy, wiele razy szybciej niż możemy przetwarzać obraz. Ludzie często kojarzą uprzedzenia z uprzedzeniami rasowymi, chociaż uprzedzenia przybierają wiele form. Uprzedzenie affinitetu oznacza, że wolimy tych, którzy są do nas podobni. To sprawia, że czujemy się ciepło i przyjemnie, gdy mamy ludzi, którzy potwierdzają nasze myśli, obawy i pochodzenie. Wolimy również tych, którzy mają to samo wykształcenie, doświadczenie zawodowe, akcent, pochodzenie etniczne itp. Jeśli masz mózg, masz uprzedzenia."
+            }
+          ]
+        },
+        {
+          "id": "a4",
+          "label": "A4",
+          "title": "Koło społecznej tożsamości",
+          "blocks": [
+            {
+              "kind": "p",
+              "text": "Na podstawie koła społecznej tożsamości, uczestnicy mapują swoje tożsamości i rozważają poniższe pytania."
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "O których tożsamościach myślisz najczęściej?",
+                "O których tożsamościach myślisz najrzadziej?",
+                "O którym z twoich własnych tożsamości chciałbyś się dowiedzieć więcej?",
+                "Które tożsamości mają najmocniejszy wpływ na to, jak się postrzegasz?",
+                "Które tożsamości mają najmocniejszy wpływ na to, jak inni cię postrzegają?"
+              ]
+            },
+            {
+              "kind": "p",
+              "text": "Wersja alternatywna: Pobierz wersję pustą i poproś grupę, aby stworzyła swoje własne koło do dyskusji. Więcej informacji dostępnych w [MIT Open Learning Library](https://openlearning.mit.edu/)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "finding-your-people",
+      "label": "L2",
+      "title": "Znajdowanie swoich ludzi, znajdowanie swojej drużyny",
+      "sectionId": "beloved-community",
+      "heroImage": "/images/l2-thumb.png",
+      "thumbnail": "/images/l2-thumb.png",
+      "facilitatorBlocks": [
+        {
+          "kind": "p",
+          "text": "Ta lekcja skupia się na społeczności, przynależności i sile relacji. Zadaje pytania, jak ludzie znajdują wsparcie, budują zaufanie i tworzą formy zbiorowej opieki. Jest zakorzeniona w tradycjach kolektywizmu, wzajemnego wsparcia i radykalnego uzdrawiania."
+        },
+        {
+          "kind": "p",
+          "text": "Chodzi o zrozumienie wszystkich systemów opresji, które wpływają na nasze wellness. Lekarstwem na to jest znalezienie swojej załogi, swoich ludzi. Czarne kobiety zawsze budowały kolektywy, od Combahee River Collective do Liverpool Black Sisters po The Goddess Projects. Dlatego zachęcamy cię do znalezienia sposobów na przeżycie, śmiech, miłość i uzdrawianie się w sposób powiązany z ludźmi, ponieważ w ludziach tkwi moc."
+        },
+        {
+          "kind": "p",
+          "text": "Opracuj tę lekcję wokół idei, że ja nie stoi samo. Zachęcaj uczestników do myślenia o społeczności nie tylko jako o czymś, do czego należą, ale jako o czymś, co pomagają tworzyć. Społeczność może być budowana poprzez wspólną tożsamość, wspólne doświadczenie, wspólne wartości lub wspólne wysiłki."
+        }
+      ],
+      "activities": [
+        {
+          "id": "a1",
+          "label": "A1",
+          "title": "Społeczność w praktyce",
+          "blocks": [
+            {
+              "kind": "p",
+              "text": "Zaproś uczestników do refleksji nad przykładami budowania społeczności, szczególnie tymi zakorzenionych we wzajemnym wsparciu, zbiorowej opiece i oddolnej organizacji. Obejrzyj te dwa filmy:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Nikotris Perkins (2019), doktorantka studiów miejskich, która wygłosiła wykład na temat czarnych kobiet i społeczności: https://youtu.be/e78v42tz4eY",
+                "Doug Shipman, TEDX Atlanta: https://youtu.be/cP5PAul3H4E"
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Możliwe pytania:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Kim jesteś w społeczności?",
+                "Co oznacza dla ciebie społeczność?",
+                "Co możemy się nauczyć od istniejących kolektywów i sieci wsparcia?",
+                "Jak robimy przyjaciół? Jak angażujemy się w inne społeczności?",
+                "Czy możemy razem zbudować ukochaną społeczność?",
+                "Jak zaczynamy budować społeczność poprzez różnice?"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a2",
+          "label": "A2",
+          "title": "Znajdź swoją drużynę!",
+          "blocks": [
+            {
+              "kind": "p",
+              "text": "Uczestnicy powinni zidentyfikować i zmapować, kto jest w ich sieci wsparcia — ich drużynie."
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Możliwe pytania:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Kto jest już w twojej drużynie?",
+                "Kim są twoje kluczowe osoby? Jakie cechy mają?",
+                "Kogo brakuje?",
+                "Do jakich społeczności lub grup mógłbyś się przyłączyć?",
+                "Co utrudnia sięgnięcie?",
+                "Jakie cechy mógłbyś rozwinąć, aby znaleźć swoich ludzi?"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "developing-your-language",
+      "label": "L3",
+      "title": "Rozwijanie swojego języka",
+      "sectionId": "beloved-community",
+      "heroImage": "/images/l3-thumb.png",
+      "thumbnail": "/images/l3-thumb.png",
+      "facilitatorBlocks": [
+        {
+          "kind": "p",
+          "text": "Ta lekcja skupia się na biegłości emocjonalnej: zdolności do dostrzegania, nazewnictwa, zrozumienia i pracy z emocją. Wspiera uczestników w rozwijaniu języka dla tego, co czują, gdzie to czują i jak emocje kształtują relacje, przywództwo i uzdrawianie."
+        },
+        {
+          "kind": "p",
+          "text": "Ta lekcja może być szczególnie znacząca dla uczestników, którzy byli zniechęcani do wyrażania podatności, lub którzy byli nauczani, że pewne emocje są niedopuszczalne. Zachęcaj uczestników do podejścia do emocji bez wstydu. Celem nie jest wyeliminowanie trudnych uczuć, ale wspólistnienie z nimi w sposób bardziej świadomy i wspaniały."
+        },
+        {
+          "kind": "p",
+          "bold": true,
+          "text": "Tło"
+        },
+        {
+          "kind": "p",
+          "text": "Biegłość emocjonalna opisuje relacje, jakie mamy z naszymi emocjami. Pozwala nam słuchać bardziej efektywnie i odpowiadać odpowiednio podczas napięty rozmów, rozpoznając, co inni mogą czuć i czy starają się nawiązać kontakt. Świadomość naszych emocji pozwala nam zacząć rozumieć, skąd się biorą i które myśli je wyzwalają. Rozwijanie biegłości emocjonalnej wykracza poza samo rozpoznawanie i etykietowanie naszych emocji — oznacza nauczenie się wspólistnienia z nimi bez potrzeby ich odrzucania. Nasze ukochane społeczności pomagają nam dyskutować i wspólistnieć z naszymi interseksjoonalnymi, doświadczeniami życiowymi."
+        }
+      ],
+      "activities": [
+        {
+          "id": "a1",
+          "label": "A1",
+          "title": "Biegłość emocjonalna",
+          "blocks": [
+            {
+              "kind": "p",
+              "text": "Wprowadź biegłość emocjonalną jako zdolność do czucia, nazwania i pracy z emocjami w zdrowy i produktywny sposób."
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Kluczowe idee:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Emocje nie są problemami same w sobie",
+                "Osąd, wstyd i tłumienie często utrudniają współistnienie emocji",
+                "Nazewnictwo emocji może pomóc ludziom przejść od reaktywności do refleksji",
+                "Biegłość emocjonalna wspiera zaufanie, empatię i przywództwo"
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Możliwe pytania:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Które emocje łatwo ci się nazywać?",
+                "Które emocje czują się trudniej do przyjęcia?",
+                "Gdzie nauczyłeś się, które emocje są akceptowalne, a które nie?",
+                "Jak twoje emocje się objawią w twoim ciele?",
+                "Czy potrafisz nazwać emocje, które teraz doświadczasz?",
+                "Co te emocje czują? Opisz, gdzie i co czujesz, i jak ten stan umysłu się rozwija w całym twoim ciele bez oceniania.",
+                "Pracuj w dół swojego ciała od głowy do palców u nóg i bądź rzeczowy w kwestii, gdzie czujesz emocję. Zapewniaj się, że wszystko jest w porządku i że jesteś bezpieczny."
+              ]
+            },
+            {
+              "kind": "p",
+              "text": "Negatywne emocje często zaangażują pierwotny mózg. Musimy zaangażować myślący mózg, a etykietowanie tego, co czujesz, pomaga to zrobić. Pomaga to również skupić się na tym, co możemy kontrolować. Na przykład, jeśli moja szczęka jest zaciśnięta, muszę ją rozluźnić i muszę oddychać wolniej i głębiej."
+            }
+          ]
+        },
+        {
+          "id": "a2",
+          "label": "A2",
+          "title": "Koło emocjonalne",
+          "blocks": [
+            {
+              "kind": "p",
+              "text": "Rozważ koło emocji opracowane przez Black Emotional and Mental Health Collective (BEAM), organizację, której celem jest rozmontowanie systemowych barier dostępu do wsparcia zdrowia psychicznego poprzez programy szkoleniowe prowadzone przez rówieśników. Samodzielnie lub z partnerem:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Stwórz listę emocji, które często czujesz, i fizycznych wrażeń, które czujesz w powiązaniu z nimi.",
+                "Które emocje czują się znane?",
+                "Którym emocjom się opierasz?",
+                "Gdzie czujesz pewne emocje w swoim ciele?",
+                "Jakie osądy przywiązujesz do pewnych uczuć?",
+                "Jak te osądy wpływają na twoje relacje i empatię?"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "understanding-historical-trauma",
+      "label": "L4",
+      "title": "Zrozumienie historycznej traumy innych",
+      "sectionId": "beloved-community",
+      "heroImage": "/images/l4-thumb.png",
+      "thumbnail": "/images/l4-thumb.png",
+      "facilitatorBlocks": [
+        {
+          "kind": "p",
+          "text": "Ta lekcja wprowadza traumę historyczną jako zbiorową i międzypokoleniową formę krzywdy kształtowaną przez kolonizację, rasizm, przemoc i systemową opresję. Prosi uczestników do refleksji nad tym, jak trauma jest transmitowana, jak kształtuje obecne życie i jak większa świadomość może wspierać empatię i uzdrawianie."
+        },
+        {
+          "kind": "p",
+          "text": "Trauma historyczna może być materiałem trudnym i aktywizującym. Idź powoli. Zachęcaj refleksję, opiekę i ugruntowaną dyskusję. Uczestnicy mogą niesć zarówno osobistą, jak i odziedziczoną traumę i mogą reagować na różne sposoby. Stwórz przestrzeń dla złożoności."
+        },
+        {
+          "kind": "p",
+          "bold": true,
+          "text": "Tło"
+        },
+        {
+          "kind": "p",
+          "text": "Trauma może być znaczącym jednorazowym zdarzeniem lub konsekwencją trwających insidious działań, microaggressions lub bycia stale traktowanym inaczej. Hartmann i Gone (2014) opisują traumę historyczną jako różniącą się od powszechnej, dożywotniej traumy psychologicznej na cztery kluczowe sposoby: jest kolonialna w pochodzeniu, zbiorowa w wpływie, kumulacyjna na rozległych zdarzeniach i międzygeneracyjna w transmisji ryzyka i podatności."
+        },
+        {
+          "kind": "p",
+          "text": "Przykładami są doświadczenia ludzi First Nation w Ameryce Północnej, Aborygenów australijskich i anty-czarnego rasizmu wśród afrykańskiej diaspory. Ślady traumy historycznej są często głęboko zakorzenione, a wielu ludzi może nie być nawet świadomych jej obecności (Mate, 2022). Może to prowadzić do negatywnych emocji i fizycznych chorób, w tym choroby psychosomatycznej. Historyczna międzypokoleniowa trauma jest często intensyfikowana przez codzienne ostre chroniczne stres, skutkując niszczącymi fizycznymi i emocjonalnymi konsekwencjami."
+        }
+      ],
+      "activities": [
+        {
+          "id": "a1",
+          "label": "A1",
+          "title": "Jak ludzie doświadczają historycznej traumy?",
+          "blocks": [
+            {
+              "kind": "p",
+              "text": "1. Obejrzyj wideo How Do People Experience Historical Trauma: https://youtu.be/sjJUQlodh0g"
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "W parach omówcie następujące pytania:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Jakie przykłady historycznej traumy znasz?",
+                "Jak nauka o historycznej traumie zmienia sposób, w jaki myślisz o rasie, tożsamości i kulturze?",
+                "Jak trauma historyczna jest przenoszona do teraźniejszości?",
+                "Jaki jest związek między historyczną traumą a microaggressions?",
+                "Jak celebracja kulturalna i wsparcie społeczności mogą pomóc w przeciwdziałaniu krzywdzie?",
+                "Jak możesz zachęcać i wspierać celebrację kulturalną?"
+              ]
+            },
+            {
+              "kind": "p",
+              "text": "2. Obejrzyj Dr Gabor Mate, wideo https://youtu.be/ak_nLWQ8EtY — omów traumę i jak wpływa na autentyczne ja."
+            }
+          ]
+        },
+        {
+          "id": "a2",
+          "label": "A2",
+          "title": "Praktykuj autorefleksję",
+          "blocks": [
+            {
+              "kind": "ul",
+              "items": [
+                "Jakie aspekty twojego życia czują się dla ciebie dobre? (pozytywne atrybuty/mocne strony)",
+                "Jakie aspekty twojego życia cię ożywiają? (przestrzenie, w których czujesz się wzbogacony)",
+                "Jak efekty historycznej lub bezpośredniej traumy się w tobie przejawiają? (Zidentyfikuj podatności).",
+                "Co robisz, aby przezwyciężyć swoją osobistą/historyczną lub bezpośrednią traumę?"
+              ]
+            },
+            {
+              "kind": "p",
+              "text": "Active listening YouTube video: https://youtu.be/Qg8PIK74KO4"
+            }
+          ]
+        },
+        {
+          "id": "a3",
+          "label": "A3",
+          "title": "Ćwiczenie uziemiające",
+          "blocks": [
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Praktykuj puszczanie przeszłości i bycie otwartym na przyjęcie:"
+            },
+            {
+              "kind": "p",
+              "text": "Wdech, krocz naprzód jedną nogą i obróć dłonie w dół; Wydech, podnosząc ramiona do pozycji poziomej, puszczając całe napięcie i negatywność. Wdech, obracając dłonie w górę i rysując je z powrotem w kierunku piersi, wdychając pokój i uzdrawianie."
+            },
+            {
+              "kind": "p",
+              "text": "Powtórz drugą nogą w przód. Wydech bólu. Wdech spokoju i możliwości uzdrowienia się."
+            },
+            {
+              "kind": "p",
+              "text": "Ta lekcja może się skończyć refleksją na temat rasowej traumy, międzypokoleniowych strategii przetrwania i potrzeby społeczności, sprawiedliwości i zmian instytucjonalnych. Sześciopoziomowy framework Dr. Shelley Harrell pomaga opisać fizyczne i emocjonalne skutki, które mogą następować po ekspozycji na rasizm, w tym życiowe wydarzenia związane z rasizmem, wikariańskim rasizmem, codziennymi rasowymi mikro-stressorami, chronicznych kontekstowych stressorach, zbiorowych doświadczeniach rasizmu i transgeneracyjnej transmisji traumy."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

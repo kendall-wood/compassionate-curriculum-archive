@@ -1,0 +1,372 @@
+{
+  "id": "media-narrative-futuring",
+  "label": "III. Mídia, Narrativa e Futuro",
+  "title": "Mídia, Narrativa e Futuro",
+  "overview": "Esta seção apoia os participantes na construção de histórias mais completas sobre si mesmos, na análise das histórias contadas pela mídia e no desenvolvimento da capacidade imaginativa para a criação do futuro. Começa com reflexão individual, passa pela contação de histórias encarnada e análise visual, e termina com futuro participativo.",
+  "lessons": [
+    {
+      "id": "individual-reflection",
+      "label": "L1",
+      "title": "Reflexão Individual, Autorretrato",
+      "sectionId": "media-narrative-futuring",
+      "facilitatorBlocks": [
+        {
+          "kind": "p",
+          "text": "Esses exercícios ajudam os participantes a refletir sobre identidade, memória, humor e auto-descrição através de cor, som, escrita e imagem."
+        },
+        {
+          "kind": "p",
+          "text": "Como a falta de recursos, a marginalização cultural e a experiência de trauma podem impedir a capacidade ou disposição de imaginar, ou a crença na relevância da imaginação em si? Esta seção parte da compreensão de que a cultura dominante frequentemente achata a identidade. Pessoas que são criminalizadas ou estereotipadas podem começar a se descrever através de narrativas limitantes em vez de através da complexidade total de suas vidas."
+        },
+        {
+          "kind": "p",
+          "text": "A imaginação é uma prática de esperança. Envolve reorganizar ideias presentes em novas combinações possíveis. Para pessoas cuja experiência de escolha foi limitada, pode ser compreensível ser difícil esperar que qualquer tipo de agência futura seja possível. Comece com formas de baixo risco de reflexão e contação de histórias, e construa gradualmente em direção à análise de mídia e futuro."
+        }
+      ],
+      "activities": [
+        {
+          "id": "a1",
+          "label": "A1",
+          "title": "Roda de Cores",
+          "blocks": [
+            {
+              "kind": "ul",
+              "items": [
+                "Convide os participantes a olhar para a imagem de uma roda de cores, ou a imaginá-la em sua mente e descrever as associações que têm com cada cor. As associações podem estar relacionadas a uma emoção, uma memória ou uma história que gostariam de contar.",
+                "Opcional: em um grande pedaço de papel ou quadro branco, crie uma roda de cores compartilhada ou mapa de cores que os participantes sintam que representa todo o grupo. Isso pode envolver forma, formato, cores de escolha ou linguagem escrita conforme desejado."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a2",
+          "label": "A2",
+          "title": "Retrato de Campo de Cores (após Mark Rothko)",
+          "blocks": [
+            {
+              "kind": "ul",
+              "items": [
+                "Crie um autorretrato usando um conjunto de 2-3 campos de cores.",
+                "Os participantes podem refletir sobre diferentes formas de criar o conjunto e compartilhar suas escolhas de design com um parceiro.",
+                "Por exemplo, os campos de cores estão enquadrados em um fundo maior de uma cor diferente? Há espaços entre os campos, e se houver, qual é o tamanho?"
+              ]
+            },
+            {
+              "kind": "p",
+              "text": "Nota do facilitador: você pode desejar mostrar as pinturas de Campo de Cores de Mark Rothko, seja antes ou depois do exercício, como parte da discussão."
+            }
+          ]
+        },
+        {
+          "id": "a3",
+          "label": "A3",
+          "title": "Vida em 3 Músicas",
+          "blocks": [
+            {
+              "kind": "ul",
+              "items": [
+                "Convide os participantes a considerar 3 músicas que descrevem suas vidas.",
+                "Toque cada música, levando 1-2 minutos antes ou depois de cada uma para explicar sua significância.",
+                "Crie e compartilhe a playlist.",
+                "Com consentimento, grave cada introdução, seguida pela música."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a4",
+          "label": "A4",
+          "title": "Poema Eu Sou De",
+          "blocks": [
+            {
+              "kind": "ul",
+              "items": [
+                "Use o formato 'I Am From' de George Ella Lyon para ajudar os participantes a traduzir memória e detalhes cotidianos em forma poética; copie em folhas em branco conforme necessário. http://www.georgeellalyon.com/where.html",
+                "Compartilhe e, se dado consentimento, grave pessoas lendo em voz alta.",
+                "Considere como os poemas podem levar a mais escrita; por exemplo, menções de um lugar podem levar a escrever sobre a memória de um evento que aconteceu lá; menções de música ou comida podem levar a escrever sobre pessoas, lugares ou eventos associados a essas coisas."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "embodied-storytelling",
+      "label": "L2",
+      "title": "Contação de Histórias Encarnada",
+      "sectionId": "media-narrative-futuring",
+      "facilitatorBlocks": [
+        {
+          "kind": "p",
+          "text": "Esses exercícios traduzem experiência pessoal em gesto, quadro, voz e imagem. Eles permitem que os participantes explorem memória emocional e interpretação compartilhada sem exigir divulgação completa."
+        }
+      ],
+      "activities": [
+        {
+          "id": "a1",
+          "label": "A1",
+          "title": "Troca de Histórias > Teatro de Imagem (após Augusto Boal)",
+          "blocks": [
+            {
+              "kind": "ul",
+              "items": [
+                "Em pares, os participantes descrevem uma cena ou evento de suas vidas como se estivesse congelado no tempo, que lembram com base em uma sugestão emocional.",
+                "As sugestões potenciais incluem: obstáculo, esperança, fuga, isolamento, encontrar silêncio.",
+                "Descreva tudo o que é possível com base na lembrança sensorial: Qual foi a estação e que horas do dia? Se ao ar livre, como eram os prédios ou paisagem ao redor? Se dentro, como era o interior? Como as coisas soavam e cheiravam? Como eram as cores e a luz?",
+                "Descreva relacionamentos: havia alguém mais presente? Se sim, quem eram, como estavam relacionados a você e o que estava acontecendo?",
+                "O ouvinte considera o que pensa ser o coração da história, seu núcleo emocional ou conceitual.",
+                "Com consentimento do seu parceiro, o ouvinte representa a história com um único gesto congelado.",
+                "Outros participantes discutem o que veem. Se o contador de histórias escolher, pode divulgar detalhes da história original."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a2",
+          "label": "A2",
+          "title": "Monólogo Interior",
+          "blocks": [
+            {
+              "kind": "ul",
+              "items": [
+                "Com base no exercício anterior, o contador de histórias posiciona outros em um quadro (um grupo de pessoas em \"quadro congelado\"), para representar o momento central da história.",
+                "O Contador fornece aos participantes as informações contextuais mínimas necessárias para entender onde e quem eles são, por exemplo: \"Estamos do lado de fora, em uma cidade, em 1992. Você é um homem com cerca de 35 anos.\"",
+                "Cada participante imagina o que seu personagem está pensando e, um de cada vez, expressa esse monólogo interior."
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Documentação opcional, com consentimento:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Fotografe participantes em quadro",
+                "Grave áudio das vozes",
+                "Vídeo caminhando ao redor do grupo enquanto os participantes expressam seu monólogo"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a3",
+          "label": "A3",
+          "title": "Tríptico Sensorial",
+          "blocks": [
+            {
+              "kind": "ul",
+              "items": [
+                "Convide os participantes a imaginarem a si mesmos se movimentando através de um espaço futuro que gostariam de habitar.",
+                "Os participantes devem descrever detalhes sensoriais críticos de visão, som, cheiro, toque e como seus corpos se sentem enquanto se movem em relação ao espaço.",
+                "Os participantes criam três imagens que representam três partes-chave da história, como um começo, meio e fim, 3 percepções sensoriais diferentes, 3 emoções, etc.",
+                "Os participantes observam as imagens uns dos outros e descrevem associações.",
+                "Esta atividade pode ser combinada com exercícios de Photovoice ou Futuro Participativo."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "media-analysis",
+      "label": "L3",
+      "title": "Análise de Mídia e Contação de Histórias Visuais",
+      "sectionId": "media-narrative-futuring",
+      "facilitatorBlocks": [
+        {
+          "kind": "p",
+          "text": "Esses exercícios ajudam os participantes a analisar como histórias sobre pessoas são contadas na mídia e criar respostas visuais enraizadas em suas próprias experiências."
+        }
+      ],
+      "activities": [
+        {
+          "id": "a1",
+          "label": "A1",
+          "title": "Relabelagem de Imagem",
+          "blocks": [
+            {
+              "kind": "p",
+              "text": "O objetivo desta atividade é analisar de diferentes formas imagens evocativas ou ambíguas retiradas da mídia popular, para usar como estímulos para discussão. Pode facilitar análise de mídia, para entender e criticar como a mídia transmite mensagens que apoiam estereótipos negativos; ou para provocar discussão sobre a experiência vivida dos participantes."
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Sugestões para marcar imagens:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "O que você vê? Analise cores e formas; alguma predomina? Há algum padrão?",
+                "Qual é a história anterior desta imagem? O que ocorreu até este momento? Marque estágios anteriores da história.",
+                "Quem está aqui e o que está fazendo?",
+                "Quais são as relações de poder nesta imagem? Marque a relação das pessoas com outras pessoas, objetos, prédios, paisagem.",
+                "O que não é visto versus o que é visto? Algo está implícito mas não mostrado?",
+                "Quem pode ter tirado esta imagem, de que ponto de vista?",
+                "O que pode acontecer a seguir? Marque estágios potenciais futuros da história."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a2",
+          "label": "A2",
+          "title": "Photovoice",
+          "blocks": [
+            {
+              "kind": "p",
+              "text": "Photovoice é um método visual participativo no qual um grupo define uma pergunta sobre um problema que afeta sua comunidade, tira fotografias em resposta e usa essas imagens para estimular discussão. O processo apoia os participantes na reflexão sobre experiência vivida, identificação de problemas que querem mudar e exploração de possíveis formas de ação."
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Processo"
+            },
+            {
+              "kind": "ol",
+              "items": [
+                "Co-defina o problema que você gostaria de abordar como um grupo",
+                "Crie sua pergunta orientadora (seja pessoal, concentre-se em um problema, determine um escopo bom)",
+                "Tire Fotos — os participantes tiram fotos em resposta à pergunta que expressam sua perspectiva",
+                "Discuta usando o método SHMIR: See, Happening, Meaning, Issue, Response",
+                "Sintetize — identifique temas-chave, padrões ou experiências compartilhadas",
+                "Disseminar (opcional) — zine, exposição, online, apresentação pública",
+                "Reflita — o que se destacou? O que funcionou ou poderia ser melhorado? O que se sentiu significativo?"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "participatory-futuring",
+      "label": "L4",
+      "title": "Futuro Participativo e Construção de Mundos",
+      "sectionId": "media-narrative-futuring",
+      "facilitatorBlocks": [
+        {
+          "kind": "p",
+          "text": "Esses exercícios apoiam os participantes na imaginação de futuros alternativos, na experimentação com possibilidade e na vinculação da visão futura à ação presente."
+        },
+        {
+          "kind": "p",
+          "bold": true,
+          "text": "Conteúdos"
+        },
+        {
+          "kind": "ul",
+          "items": [
+            "Backcasting — os participantes imaginam coletivamente designs a partir de um futuro funcionando, para ver se algum pode inspirar coisas a serem construídas no presente",
+            "Construção de Mundos — imagina a lógica de uma sociedade futura na qual modelar mudança potencial",
+            "Cones de Futuro — facilita imaginar a si mesmo existindo positivamente no futuro"
+          ]
+        }
+      ],
+      "activities": [
+        {
+          "id": "a1",
+          "label": "A1",
+          "title": "Backcasting (Imaginação Coletiva)",
+          "blocks": [
+            {
+              "kind": "p",
+              "text": "Com base no exercício de futurismo Prescriptions for Just Communities desenvolvido por Melanie Crean com Ayodamola Okunseinde, esta atividade convida os participantes a imaginar um futuro, aproximadamente 10-15 anos a partir de agora, onde um problema social específico foi resolvido."
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Exemplos de sugestões:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Imagine um futuro onde as transições de encarceramento ou serviço militar para a vida civil aconteçam perfeitamente.",
+                "Imagine um mundo sem prisões, onde as comunidades são simultaneamente seguras e justas."
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Preparação"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "O grupo decide sobre um problema que gostaria de abordar.",
+                "Considere um futuro ~10-15 anos a partir de agora no qual esse problema não existe mais.",
+                "Divida em grupos de 2-3, dê a cada um papel, algo para desenhar e três sugestões de cartão: uma mentalidade social ou emocional, um domínio temático, um atributo de design."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a2",
+          "label": "A2",
+          "title": "Construção de Mundos",
+          "blocks": [
+            {
+              "kind": "p",
+              "text": "Construção de mundos é um método criativo para imaginar formas alternativas de ser através da contação de histórias. Ao construir um mundo fictício ou especulativo, os participantes podem explorar como os sistemas, relacionamentos e estruturas de poder operam e considerar como poderiam ser transformados."
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Processo"
+            },
+            {
+              "kind": "ol",
+              "items": [
+                "Geografia, Clima e Ecologia — imagine um mundo como um sistema interconectado",
+                "Sistemas Culturais e de Crenças — crie pelo menos duas culturas distintas que coexistem neste mundo",
+                "Poder e Conflito — considere como o poder opera",
+                "Personagens e Perspectiva — crie pelo menos dois personagens neste mundo",
+                "Ritual e Reflexão — crie um ritual, tradição ou evento que revele uma crença central",
+                "Reflexão — como sua própria experiência vivida molda como você construiu este mundo?"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a3",
+          "label": "A3",
+          "title": "Cones de Futuro",
+          "blocks": [
+            {
+              "kind": "p",
+              "text": "Adaptado de um exercício de Ashley Jane Lewis baseado no Future Cone de Stuart Candy. Este exercício guia os participantes na imaginação de si mesmos três a cinco anos no futuro. Usando um diagrama de Cones de Futuro, eles exploram o que é provável, plausível, possível e preferível no seu próprio desenvolvimento futuro."
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "O Cone de Futuro é uma ferramenta para imaginar múltiplos futuros potenciais:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Provável: O que é provável que aconteça com base nas trajetórias atuais.",
+                "Plausível: O que poderia realistically acontecer, mesmo que menos provável.",
+                "Possível: O que poderia acontecer, incluindo ideias inesperadas.",
+                "Preferível: Os resultados mais compelentes e significativos — seu futuro desejado."
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Passos:"
+            },
+            {
+              "kind": "ol",
+              "items": [
+                "Configuração — desenhe um pequeno círculo à esquerda rotulado \"Você\" ou \"Agora\" e um círculo maior à direita rotulado com um ano futuro. Conecte-os para formar um cone horizontal.",
+                "Plotar o Provável — escreva 2-3 coisas que provavelmente estará fazendo em alguns anos.",
+                "Imagine o Possível — liste 8-20 \"Possíveis\": ferramentas, práticas, meios, colaborações, residências, ambições.",
+                "Identifique o Plausível — escolha 3-5 itens da lista \"Possível\" que parecem realistas durante 1-2 anos.",
+                "Defina o Preferível — circule 1-2 itens do anel Plausível que parecem mais excitantes, significativos ou alinhados com seus valores."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

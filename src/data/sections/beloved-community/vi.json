@@ -1,0 +1,463 @@
+{
+  "id": "beloved-community",
+  "label": "I. Cộng đồng được yêu thích",
+  "title": "Cộng đồng được yêu thích",
+  "overview": "Phần này khám phá cách mà mọi người đến để biết chính mình, tìm thấy cộng đồng, phát triển ngôn ngữ cho nỗi đau và chữa lành, và hiểu rõ hơn về chấn thương lịch sử mà những người khác và chính họ đang mang. Nó được dựa trên ý tưởng rằng phúc lợi cá nhân và giải phóng tập thể có liên kết sâu sắc. Phần này bắt đầu bằng tự suy ngẫm, sau đó tiến xa hơn đến các mối quan hệ, năng lực cảm xúc, và sự hiểu biết về lịch sử.",
+  "lessons": [
+    {
+      "id": "identity",
+      "label": "L1",
+      "title": "Bản sắc: Giúp chúng ta biết chính mình",
+      "sectionId": "beloved-community",
+      "heroImage": "/images/l1-hero.png",
+      "thumbnail": "/images/l1-thumb.png",
+      "facilitatorBlocks": [
+        {
+          "kind": "p",
+          "bold": true,
+          "text": "\"Cộng đồng được yêu thích được hình thành không phải bởi sự xóa bỏ sự khác biệt mà bởi sự khẳng định của nó, bởi mỗi người trong chúng ta tuyên bố những bản sắc và di sản văn hóa mà định hình ai chúng ta là và cách chúng ta sống trong thế giới.\" (bell hooks)"
+        },
+        {
+          "kind": "p",
+          "text": "Công việc về bản sắc nên bắt đầu bằng tự suy ngẫm. Có những sự khác biệt thực sự giữa các nhóm người, và chúng ta có quyền khám phá những điều này. Nhưng chúng ta phải bắt đầu với chính mình vì bản sắc của chúng ta ảnh hưởng đến những người khác và môi trường của chúng ta. Những người tham gia có khả năng suy ngẫm sâu hơn về bản sắc của những người khác nếu họ trước tiên đã xem xét bản sắc của riêng mình. Khuyến khích tự nói chuyện suy ngẫm là điều cần thiết để hiểu chính mình và là chìa khóa cho sức khỏe. Mục tiêu không phải đến được một định nghĩa cố định của bản thân, mà là nhận ra bản sắc như là nhiều tầng, có liên quan, và thay đổi. Phần này cũng có thể được sử dụng để giới thiệu intersectionality như một cách để hiểu cách mà các khía cạnh khác nhau của bản sắc tương tác với nhau, và cách mà những tương tác này định hình trải nghiệm."
+        },
+        {
+          "kind": "p",
+          "bold": true,
+          "text": "'Bản sắc là một phần cơ bản của việc trở thành một con người thành công, thường được nói rằng bạn không thể làm bất cứ điều gì cho đến khi bạn biết bạn là ai. Là những sinh vật xã hội, một phần của việc biết bạn là ai là biết nhóm nào mà bạn thuộc về, những đặc điểm, giá trị, hoặc niềm tin nào mà chúng ta chia sẻ với những người khác, những người khác và tại sao' (Hirsch 2018:21)."
+        },
+        {
+          "kind": "p",
+          "bold": true,
+          "text": "'Chìa khóa cho sức khỏe là hiểu bản thân bạn và chú ý đến bản sắc của bạn, vì nó có ảnh hưởng rất lớn đến những trải nghiệm của chúng ta' (Cousins 2019:41)."
+        },
+        {
+          "kind": "p",
+          "text": "'Thói quen kiểm tra với bản thân là một phương tiện mạnh mẽ cho chăm sóc bản thân và nuôi dưỡng bản thân khi xã hội cung cấp những thách thức phức tạp hàng ngày. Như với bất kỳ thói quen nào, cần phải thực hành, kiên trì, và kiên nhẫn để nhúng những hiểu biết mới được phát hiện và theo dõi điều này vào cuộc sống hàng ngày của chúng ta; tuy nhiên, nếu bạn có thể bắt đầu tạo ra những cơ hội cho một bản sắc tích cực, bạn sẽ đang đầu tư vào sức khỏe của bạn và sự hài lòng cuộc sống mà là vô thương lượng' (Cousin 2019:41)."
+        }
+      ],
+      "activities": [
+        {
+          "id": "a1",
+          "label": "A1",
+          "title": "Phát triển chánh niệm intersectional",
+          "blocks": [
+            {
+              "kind": "image",
+              "src": "/images/l1-a1.png",
+              "alt": "Tay cầm cổ tay như một cử chỉ chăm sóc",
+              "width": 672,
+              "height": 376
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Bắt đầu bằng cách thảo luận bản sắc của riêng bạn như một người dẫn dắt. Mô hình sự cởi mở, phức tạp, và tự nhận thức. Sau đó mời những người tham gia suy ngẫm về các câu hỏi từ Susan Cousins (2019:41):"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Bạn sẽ mô tả bản sắc của mình như thế nào?",
+                "Bạn là ai?",
+                "Những khía cạnh nào của bản sắc của bạn cảm thấy quan trọng nhất với bạn?",
+                "Ai hoặc cái gì đã định hình sự hiểu biết của bạn về bản thân?",
+                "Ai hoặc cái gì đã định hình sự hiểu biết của bạn về những bản sắc khác?",
+                "Bạn cảm thấy như thế nào về những bản sắc mà bạn mang?",
+                "Bạn sẽ mô tả bản thân như thế nào về mặt chủng tộc, và bạn cảm thấy như thế nào về phần bản sắc đó của bạn?",
+                "Nếu bạn tưởng tượng di chuyển qua thế giới với một bản sắc chủng tộc hoặc văn hóa khác, điều gì có thể thay đổi? Điều gì có thể bị mất? Điều gì, nếu có, có thể cảm thấy khác?"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a2",
+          "label": "A2",
+          "title": "Intersectionality như một thực hành",
+          "blocks": [
+            {
+              "kind": "p",
+              "text": "Giới thiệu intersectionality như một cách để hiểu cách mà các hệ thống quyền lực ảnh hưởng đến trải nghiệm sống. Điều này có thể được hỗ trợ thông qua tài liệu video ngắn, thảo luận, hoặc sơ đồ cho thấy cách mà đặc quyền và áp bức có thể chồng chéo."
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Giáo sư Kimberle Crenshaw (2018) https://youtu.be/ViDtnfQ9FHc — người đã đặt ra thuật ngữ intersectionality, điều này cho phép chúng ta khám phá cách mà các trải nghiệm bị ảnh hưởng bởi các bản sắc cạnh tranh khác nhau và cách mà những điều này ảnh hưởng đến loại trừ các cá nhân trong xã hội (Bhopal, 2018:47).",
+                "Tasneem Chopra (2023) 'Sự theo đuổi của chủ nghĩa nữ quyền intersectional' https://youtu.be/h4Us1dCRfFI"
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Những lời mời thảo luận có thể:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Các phần khác nhau của bản sắc bạn ảnh hưởng đến nhau như thế nào?",
+                "Bạn trải nghiệm đặc quyền ở đâu?",
+                "Bạn trải nghiệm sự loại trừ hoặc phân biệt đối xử ở đâu?",
+                "Cách mà intersectionality giúp chúng ta hiểu cuộc sống của riêng mình và cuộc sống của những người khác như thế nào?"
+              ]
+            },
+            {
+              "kind": "p",
+              "text": "Để có phê bình thêm, hãy xem xét sơ đồ này của trục giao nhau của đặc quyền, thống trị và áp bức từ Kathryn Pauly Morgan (1996), điều này giúp giải thích cách mà mọi người được định vị khác nhau liên quan đến quyền lực. Chúng ta tất cả đều tồn tại trên một trục của áp bức và thống trị. Một số vị trí có kèm theo sự tiếp cận lớn hơn, công nhận, và lợi thế, trong khi những người khác được định hình bởi sự phân biệt đối xử và loại trừ. Những vị trí này không cố định — bản sắc của chúng ta giao nhau và thay đổi qua các ngữ cảnh khác nhau, tạo ra những trải nghiệm phức tạp, nhiều tầng. Hiểu điều này giúp chúng ta nhận thức hơn về vị trí của riêng mình và các điều kiện không bằng nhau mà những người khác có thể đang điều hướng."
+            }
+          ]
+        },
+        {
+          "id": "a3",
+          "label": "A3",
+          "title": "Bản chất của Thiên kiến",
+          "blocks": [
+            {
+              "kind": "p",
+              "text": "Giới thiệu ý tưởng rằng mọi người đều có thiên kiến, bao gồm thiên kiến không có ý thức và thiên kiến anh em. Mời những người tham gia suy ngẫm về cách mà mọi người thường bị thu hút đến những người cảm thấy quen thuộc, và cách mà điều này ảnh hưởng đến nhận thức và hành vi."
+            },
+            {
+              "kind": "p",
+              "text": "Xem video của Dr Jennifer Eberhardt để có những hiểu biết về thiên kiến không có ý thức từ cuốn sách của cô, Biased: Uncovering the hidden prejudice that shapes what we see, think and do. https://www.youtube.com/watch?v=-ri1IFCqGjQ"
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Những lời mời tiềm năng:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Bạn thấy những loại thiên kiến nào trong cuộc sống hàng ngày?",
+                "Cách mà thiên kiến và khuôn mẫu làm phẳng mọi người thành một câu chuyện duy nhất?",
+                "Những rủi ro của việc để một câu chuyện đứng vào vị trí của một nhóm toàn bộ là gì?"
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Thông tin nền"
+            },
+            {
+              "kind": "p",
+              "text": "Thiên kiến không có ý thức là đơn giản là những sở thích không cố ý của chúng ta. Thiên kiến thường được quyết định trong ít hơn một phần mười giây, nhiều lần nhanh hơn so với chúng ta có thể xử lý một hình ảnh. Mọi người thường liên kết thiên kiến với thiên kiến chủng tộc, mặc dù thiên kiến có nhiều hình thức. Một thiên kiến anh em có nghĩa là chúng ta thích những người giống chúng ta. Nó làm cho chúng ta cảm thấy ấm áp và mơ hồ khi chúng ta có những người để xác nhận lại những suy nghĩ, nỗi sợ và nền tảng của chúng ta. Chúng ta cũng thích những người có cùng giáo dục, nền tảng sự nghiệp, giọng nói, dân tộc, v.v. Nếu bạn có một bộ não, bạn có thiên kiến."
+            }
+          ]
+        },
+        {
+          "id": "a4",
+          "label": "A4",
+          "title": "Bánh xe Bản sắc Xã hội",
+          "blocks": [
+            {
+              "kind": "p",
+              "text": "Dựa trên bánh xe bản sắc xã hội, những người tham gia ánh xạ bản sắc của họ và xem xét các câu hỏi dưới đây."
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Bạn nghĩ rằng bạn thường xuyên nhất về những bản sắc nào?",
+                "Bạn nghĩ rằng bạn ít thường xuyên nhất về những bản sắc nào?",
+                "Bạn muốn tìm hiểu thêm về những bản sắc nào của riêng bạn?",
+                "Những bản sắc nào có tác động mạnh nhất đến cách mà bạn nhận thức bản thân?",
+                "Những bản sắc nào có tác động mạnh nhất đến cách mà những người khác nhận thức bạn?"
+              ]
+            },
+            {
+              "kind": "p",
+              "text": "Phiên bản thay thế: Tải xuống một phiên bản trống và có nhóm tạo bánh xe của riêng họ để thảo luận. Thông tin thêm có sẵn từ [Thư viện Học tập Mở MIT](https://openlearning.mit.edu/)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "finding-your-people",
+      "label": "L2",
+      "title": "Tìm thấy những người của bạn, tìm thấy đội ngũ của bạn",
+      "sectionId": "beloved-community",
+      "heroImage": "/images/l2-thumb.png",
+      "thumbnail": "/images/l2-thumb.png",
+      "facilitatorBlocks": [
+        {
+          "kind": "p",
+          "text": "Bài học này tập trung vào cộng đồng, sự thân thuộc, và sức mạnh của các mối quan hệ. Nó yêu cầu cách mà mọi người tìm thấy sự hỗ trợ, xây dựng lòng tin, và tạo ra các hình thức chăm sóc tập thể. Nó được dựa trên truyền thống của chủ nghĩa tập thể, hỗ trợ lẫn nhau, và chữa lành triệt để."
+        },
+        {
+          "kind": "p",
+          "text": "Điều này là về việc hiểu tất cả các hệ thống áp bức ảnh hưởng đến sức khỏe của chúng ta. Một cách khắc phục cho điều này là tìm thấy đội ngũ của bạn, những người của bạn. Phụ nữ Đen luôn xây dựng tập thể, từ Combahee River Collective đến Liverpool Black Sisters đến The Goddess Projects. Do đó, chúng tôi khuyến khích bạn tìm ra các cách để sống sót, cười, yêu, và chữa lành theo những cách được kết nối với mọi người, vì có sức mạnh trong mọi người."
+        },
+        {
+          "kind": "p",
+          "text": "Khung bài học này xung quanh ý tưởng rằng bản thân không đứng riêng lẻ. Khuyến khích những người tham gia suy nghĩ về cộng đồng không chỉ là thứ mà họ thuộc về, mà là thứ mà họ giúp tạo ra. Cộng đồng có thể được xây dựng thông qua bản sắc được chia sẻ, trải nghiệm được chia sẻ, giá trị được chia sẻ, hoặc nỗ lực được chia sẻ."
+        }
+      ],
+      "activities": [
+        {
+          "id": "a1",
+          "label": "A1",
+          "title": "Cộng đồng trong thực hành",
+          "blocks": [
+            {
+              "kind": "p",
+              "text": "Mời những người tham gia suy ngẫm về các ví dụ về xây dựng cộng đồng, đặc biệt là những ví dụ về hỗ trợ lẫn nhau, chăm sóc tập thể, và tổ chức từ cơ sở. Xem hai video này:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Nikotris Perkins (2019), một sinh viên tiến sĩ nghiên cứu đô thị đã trình bày một bài nói về phụ nữ Đen và cộng đồng: https://youtu.be/e78v42tz4eY",
+                "Doug Shipman, TEDX Atlanta: https://youtu.be/cP5PAul3H4E"
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Những lời mời tiềm năng:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Bạn nằm trong cộng đồng với ai?",
+                "Cộng đồng có nghĩa là gì đối với bạn?",
+                "Chúng ta có thể học gì từ các tập thể và mạng lưới hỗ trợ hiện có?",
+                "Chúng ta kết bạn như thế nào? Chúng ta tham gia với các cộng đồng khác như thế nào?",
+                "Chúng ta có thể tạo cộng đồng được yêu thích với nhau không?",
+                "Chúng ta bắt đầu xây dựng cộng đồng trên những sự khác biệt như thế nào?"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a2",
+          "label": "A2",
+          "title": "Tìm thấy đội ngũ của bạn!",
+          "blocks": [
+            {
+              "kind": "p",
+              "text": "Những người tham gia nên xác định và ánh xạ ai nằm trong mạng lưới hỗ trợ của họ — đội ngũ của họ."
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Những lời mời tiềm năng:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Ai đã nằm trong đội ngũ của bạn?",
+                "Những người chủ chốt của bạn là ai? Họ có những phẩm chất nào?",
+                "Ai bị thiếu?",
+                "Những cộng đồng hoặc nhóm nào mà bạn có thể cần tham gia?",
+                "Điều gì làm cho việc tiếp cận khó khăn?",
+                "Những phẩm chất nào mà bạn có thể cần phát triển để tìm thấy những người của bạn?"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "developing-your-language",
+      "label": "L3",
+      "title": "Phát triển ngôn ngữ của bạn",
+      "sectionId": "beloved-community",
+      "heroImage": "/images/l3-thumb.png",
+      "thumbnail": "/images/l3-thumb.png",
+      "facilitatorBlocks": [
+        {
+          "kind": "p",
+          "text": "Bài học này tập trung vào năng lực cảm xúc: khả năng nhận thấy, đặt tên, hiểu, và làm việc với cảm xúc. Nó hỗ trợ những người tham gia trong việc phát triển ngôn ngữ cho những gì họ cảm thấy, nơi họ cảm thấy, và cách mà cảm xúc định hình các mối quan hệ, lãnh đạo, và chữa lành."
+        },
+        {
+          "kind": "p",
+          "text": "Bài học này có thể đặc biệt có ý nghĩa đối với những người tham gia bị chủ trương không thể biểu đạt sự yếu đuối, hoặc những người được dạy rằng những cảm xúc nhất định là không thể chấp nhận. Khuyến khích những người tham gia tiếp cận cảm xúc mà không có xấu hổ. Mục tiêu không phải loại bỏ những cảm xúc khó khăn, mà là cùng sống với chúng một cách có ý thức và thương yêu."
+        },
+        {
+          "kind": "p",
+          "bold": true,
+          "text": "Thông tin nền"
+        },
+        {
+          "kind": "p",
+          "text": "Năng lực cảm xúc mô tả các mối quan hệ mà chúng ta có với cảm xúc của mình. Nó cho phép chúng ta lắng nghe hiệu quả hơn và phản ứng một cách thích hợp trong những cuộc trò chuyện căng thẳng, công nhận cảm xúc mà những người khác có thể có và nếu họ đang cố gắng tiếp cận để kết nối. Nhận biết cảm xúc của chúng ta cho phép chúng ta bắt đầu hiểu nơi chúng đến từ đâu và những suy nghĩ nào kích hoạt chúng. Phát triển năng lực cảm xúc vượt quá đơn giản chỉ nhận ra và gắn nhãn cảm xúc của chúng ta — nó có nghĩa là học cách cùng sống với chúng mà không cảm thấy cần phải đẩy chúng đi. Những cộng đồng được yêu thích của chúng ta giúp chúng ta thảo luận và cùng sống với những trải nghiệm sống intersectional của chúng ta."
+        }
+      ],
+      "activities": [
+        {
+          "id": "a1",
+          "label": "A1",
+          "title": "Năng lực cảm xúc",
+          "blocks": [
+            {
+              "kind": "p",
+              "text": "Giới thiệu năng lực cảm xúc như khả năng cảm nhận, đặt tên, và làm việc với cảm xúc theo một cách lành mạnh và mang lại kết quả."
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Những ý tưởng chính:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Cảm xúc không phải là các vấn đề trong chính chúng",
+                "Phán xét, xấu hổ, và áp chế thường làm cho cảm xúc khó sống hơn",
+                "Đặt tên cảm xúc có thể giúp mọi người chuyển từ tính phản ứng đến suy ngẫm",
+                "Năng lực cảm xúc hỗ trợ lòng tin, sự đồng cảm, và lãnh đạo"
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Những lời mời tiềm năng:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Bạn tìm thấy dễ dàng để đặt tên những cảm xúc nào?",
+                "Những cảm xúc nào cảm thấy khó khăn hơn để thừa nhận?",
+                "Bạn học từ đâu những cảm xúc nào là có thể chấp nhận hoặc không thể chấp nhận?",
+                "Cảm xúc của bạn xuất hiện trong cơ thể của bạn như thế nào?",
+                "Bạn có thể đặt tên những cảm xúc mà bạn đang trải nghiệm ngay bây giờ không?",
+                "Những cảm xúc này cảm thấy như thế nào? Mô tả nơi và những gì bạn đang cảm thấy, và cách mà trạng thái tâm trí này đang bộc lộ trong toàn bộ cơ thể của bạn mà không có phán xét.",
+                "Làm việc xuống cơ thể của bạn từ đầu đến chân, và hãy thực tế về nơi bạn cảm thấy cảm xúc. Yên tâm bản thân rằng mọi thứ đều ổn và bạn đang an toàn."
+              ]
+            },
+            {
+              "kind": "p",
+              "text": "Những cảm xúc tiêu cực thường kích hoạt bộ não nguyên thủy. Chúng ta cần kích hoạt bộ não suy nghĩ, và gắn nhãn những gì bạn cảm thấy giúp làm điều đó. Nó cũng giúp chúng ta tập trung vào những gì chúng ta có thể kiểm soát. Ví dụ, nếu hàm của tôi bị cắn, tôi cần nới lỏng nó, và tôi cần thở chậm và sâu hơn."
+            }
+          ]
+        },
+        {
+          "id": "a2",
+          "label": "A2",
+          "title": "Bánh xe Cảm xúc",
+          "blocks": [
+            {
+              "kind": "p",
+              "text": "Xem xét các cảm xúc bánh xe được phát triển bởi Black Emotional and Mental Health Collective (BEAM), một tổ chức nhằm mục đích loại bỏ những rào cản hệ thống trước sự hỗ trợ sức khỏe tinh thần thông qua các chương trình đào tạo dẫn dắt bởi đồng nghiệp. Một mình hoặc với một đối tác:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Tạo một danh sách các cảm xúc mà bạn thường xuyên cảm thấy và các cảm giác vật lý mà bạn cảm thấy liên kết với chúng.",
+                "Những cảm xúc nào cảm thấy quen thuộc?",
+                "Những cảm xúc nào bạn kháng cự?",
+                "Bạn cảm thấy những cảm xúc nhất định ở đâu trong cơ thể của bạn?",
+                "Bạn gắn những phán xét nào vào những cảm xúc nhất định?",
+                "Cách mà những phán xét này ảnh hưởng đến các mối quan hệ và sự đồng cảm của bạn như thế nào?"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "understanding-historical-trauma",
+      "label": "L4",
+      "title": "Hiểu chấn thương lịch sử của những người khác",
+      "sectionId": "beloved-community",
+      "heroImage": "/images/l4-thumb.png",
+      "thumbnail": "/images/l4-thumb.png",
+      "facilitatorBlocks": [
+        {
+          "kind": "p",
+          "text": "Bài học này giới thiệu chấn thương lịch sử như một hình thức tập thể và liên thế hệ của tổn hại được định hình bởi thuộc địa hóa, chủng tộc, bạo lực, và áp bức hệ thống. Nó yêu cầu những người tham gia suy ngẫm về cách mà chấn thương được truyền đạt, cách mà nó định hình cuộc sống hiện tại, và cách mà nhận thức lớn hơn có thể hỗ trợ sự đồng cảm và chữa lành."
+        },
+        {
+          "kind": "p",
+          "text": "Chấn thương lịch sử có thể là tài liệu khó khăn và kích hoạt. Đi chậm. Khuyến khích suy ngẫm, chăm sóc, và thảo luận có cơ sở. Những người tham gia có thể mang cả chấn thương cá nhân và di truyền, và có thể phản ứng theo những cách khác nhau. Tạo ra không gian cho sự phức tạp."
+        },
+        {
+          "kind": "p",
+          "bold": true,
+          "text": "Thông tin nền"
+        },
+        {
+          "kind": "p",
+          "text": "Chấn thương có thể là một sự kiện lớn một lần hoặc hệ quả của các hành động khó hiểu, những vi phạm, hoặc bị đối xử khác nhau liên tục. Hartmann và Gone (2014) mô tả chấn thương lịch sử như khác biệt từ chấn thương tâm lý suốt đời phổ biến theo bốn cách chính: nó có nguồn gốc thuộc địa, tác động tập thể, tích lũy qua các sự kiện bất lợi, và truyền đạt xuyên thế hệ của rủi ro và sự dễ tổn thương."
+        },
+        {
+          "kind": "p",
+          "text": "Các ví dụ bao gồm trải nghiệm của dân tộc First Nation ở Bắc Mỹ, người Australia bản địa và chủng tộc chống Đen giữa các nhân vật Africa. Những dấu vết của chấn thương lịch sử thường được sâu sắc, và nhiều người thậm chí có thể không nhận thức được sự hiện diện của nó (Mate, 2022). Điều này có thể dẫn đến những cảm xúc tiêu cực và sức khỏe thể chất kém, bao gồm bệnh tâm lý học. Chấn thương liên thế hệ lịch sử thường bị cường độ bằng căng thẳng cấp tính mãn tính hàng ngày, dẫn đến những hậu quả thể chất và cảm xúc gây hại."
+        }
+      ],
+      "activities": [
+        {
+          "id": "a1",
+          "label": "A1",
+          "title": "Mọi người trải nghiệm chấn thương lịch sử như thế nào?",
+          "blocks": [
+            {
+              "kind": "p",
+              "text": "1. Xem video How Do People Experience Historical Trauma: https://youtu.be/sjJUQlodh0g"
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Thành cặp, thảo luận các câu hỏi sau:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Bạn biết những ví dụ nào về chấn thương lịch sử?",
+                "Cách mà học về chấn thương lịch sử ảnh hưởng đến cách bạn nghĩ về chủng tộc, bản sắc, và văn hóa như thế nào?",
+                "Chấn thương lịch sử được mang vào hiện tại như thế nào?",
+                "Mối quan hệ giữa chấn thương lịch sử và những vi phạm là gì?",
+                "Cách mà lễ kỷ niệm văn hóa và hỗ trợ cộng đồng giúp chống lại tổn hại như thế nào?",
+                "Cách mà bạn có thể khuyến khích và hỗ trợ lễ kỷ niệm văn hóa?"
+              ]
+            },
+            {
+              "kind": "p",
+              "text": "2. Xem Dr Gabor Mate, video https://youtu.be/ak_nLWQ8EtY — thảo luận chấn thương và cách mà nó ảnh hưởng đến bản thân chính hãng."
+            }
+          ]
+        },
+        {
+          "id": "a2",
+          "label": "A2",
+          "title": "Thực hành tự suy ngẫm",
+          "blocks": [
+            {
+              "kind": "ul",
+              "items": [
+                "Bạn cảm thấy tốt về những khía cạnh nào của cuộc sống của bạn? (những thuộc tính tích cực / sức mạnh)",
+                "Những khía cạnh nào của cuộc sống của bạn làm cho bạn được lấp đầy? (những không gian mà bạn cảm thấy được làm giàu)",
+                "Cách mà tác động của chấn thương lịch sử hoặc trực tiếp đang xuất hiện trong bạn? (Xác định những điểm yếu).",
+                "Bạn đang làm gì để vượt qua chấn thương cá nhân / lịch sử hoặc trực tiếp của bạn?"
+              ]
+            },
+            {
+              "kind": "p",
+              "text": "Video lắng nghe tích cực: https://youtu.be/Qg8PIK74KO4"
+            }
+          ]
+        },
+        {
+          "id": "a3",
+          "label": "A3",
+          "title": "Bài tập Grounding",
+          "blocks": [
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Thực hành buông bỏ quá khứ và sẵn sàng để nhận:"
+            },
+            {
+              "kind": "p",
+              "text": "Thở vào, bước phía trước với một bàn chân và quay lòng bàn tay xuống; Thở ra, nâng tay lên vị trí ngang, buông bỏ tất cả căng thẳng và tiêu cực. Thở vào, quay lòng bàn tay lên trên và kéo chúng trở lại về phía ngực, thở vào sự bình yên và chữa lành."
+            },
+            {
+              "kind": "p",
+              "text": "Lặp lại với bàn chân khác phía trước. Thở ra nỗi đau. Thở vào sự bình tĩnh và cơ hội để chữa lành."
+            },
+            {
+              "kind": "p",
+              "text": "Bài học này có thể kết luận với suy ngẫm về chấn thương chủng tộc, chiến lược sống sót liên thế hệ, và nhu cầu về cộng đồng, công lý, và thay đổi thể chế. Khung công tác sáu cấp độ của Dr. Shelley Harrell giúp mô tả các tác động thể chất và cảm xúc có thể theo sau sự phơi nhiễm với chủng tộc, bao gồm các sự kiện liên quan đến chủng tộc trong cuộc sống, chủng tộc thay thế, căng thẳng vi mô hàng ngày liên quan đến chủng tộc, căng thẳng ngữ cảnh mãn tính, trải nghiệm tập thể của chủng tộc, và truyền đạt xuyên thế hệ của chấn thương."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

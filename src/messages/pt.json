@@ -1,1 +1,82 @@
-{"_meta":{"comment":"Stub. Populated by `npm run translate`."}}
+{
+  "site": {
+    "title": "Arquivo de Currículo Compassivo",
+    "description": "Um arquivo interativo e acessível do Currículo Compassivo — um marco participativo para aprendizagem, reflexão e crescimento coletivo."
+  },
+  "toolbar": {
+    "back": "Voltar",
+    "home": "Início",
+    "about": "Sobre",
+    "print": "Imprimir",
+    "contact": "Contato",
+    "settings": "Configurações e Acessibilidade",
+    "language": "Idioma",
+    "switchToDark": "Ativar modo escuro",
+    "switchToLight": "Ativar modo claro",
+    "decreaseZoom": "Diminuir zoom",
+    "increaseZoom": "Aumentar zoom",
+    "accentSwatchesLabel": "Amostras de cor de destaque",
+    "useAccentColor": "Usar cor de destaque {color}",
+    "useMonochrome": "Usar destaque monocromático",
+    "pickCustomColor": "Escolher uma cor de destaque personalizada",
+    "customColorPicker": "Selecionador de cor de destaque personalizada",
+    "primaryNav": "Principal"
+  },
+  "section": {
+    "introduction": "Introdução",
+    "curriculum": "Currículo"
+  },
+  "nav": {
+    "intro": "Intro",
+    "sectionsLabel": "Seções do currículo"
+  },
+  "table": {
+    "lesson": "Aula",
+    "title": "Título",
+    "activities": "Atividades",
+    "linksAndImages": "Links e Imagens",
+    "label": "Currículo",
+    "openLesson": "Abrir aula: {title}",
+    "activityAria": "{label}: {title}"
+  },
+  "activityTabs": {
+    "label": "Atividades da aula",
+    "overview": "Visão Geral"
+  },
+  "activityBlock": {
+    "forFacilitators": "Para Facilitadores",
+    "intro": "Intro"
+  },
+  "intro": {
+    "metaTitle": "Introdução — Arquivo de Currículo Compassivo",
+    "metaDescription": "Uma Prática de Esperança. O Currículo Compassivo é um marco participativo para aprendizagem, reflexão e crescimento coletivo.",
+    "heading": "Introdução: Uma Prática de Esperança",
+    "p1": "O Currículo Compassivo é um marco participativo para aprendizagem, reflexão e crescimento coletivo, desenvolvido com e para pessoas com experiência vivida de trauma ou qualquer forma de opressão estrutural. Ele se baseia na ideia de que a experiência vivida é uma forma de conhecimento, e que cura, compreensão crítica e imaginação são todas necessárias para construir futuros mais justos.",
+    "p2": "Em vez de simplesmente pedir aos participantes que recebam informações, o currículo os convida a construir significado juntos. Ele está fundamentado na autoria compartilhada, ajuda mútua e uma ética de responsabilidade. Também é baseado em forças. O trabalho não começa a partir do que as pessoas carecem, mas do que elas já sabem, do que sobreviveram e do que podem construir juntas. Em todo o currículo, os participantes são incentivados a refletir sobre sua própria experiência, ouvir uns aos outros e praticar formas de aprendizagem coletiva que possam apoiar tanto a transformação pessoal quanto a mudança social mais ampla.",
+    "p3Intro": "O currículo tem três seções conectadas.",
+    "p3PillBeloved": "I. Comunidade Amada",
+    "p3MidBeloved": "concentra-se em identidade, pertencimento, fluência emocional e trauma histórico. Ajuda os participantes a entender melhor a si mesmos, seus relacionamentos e os sistemas mais amplos que moldam como eles se movem pelo mundo.",
+    "p3PillRestorative": "II. Prática Restaurativa",
+    "p3MidRestorative": "apresenta círculos, escuta ativa, reautoria e outras ferramentas que apoiam confiança, reflexão, responsabilidade e responsabilidade compartilhada.",
+    "p3PillMedia": "III. Mídia, Narrativa e Futurologia",
+    "p3MidMedia": "explora narrativas, representação e imaginação. Convida os participantes a examinar narrativas dominantes, contar histórias mais completas sobre si mesmos e desenvolver capacidade imaginativa para resolução criativa de problemas e construção de futuros.",
+    "p4": "O Currículo Compassivo é projetado como um marco aberto e vivo. Pode ser usado em universidades, organizações comunitárias, espaços de defesa, contextos de pesquisa e outros contextos de grupo onde facilitadores desejam apoiar pertencimento, diálogo e aprendizagem colaborativa. Alguns grupos podem usá-lo como uma série estruturada de oficinas. Outros podem utilizar seções ou atividades individuais e adaptá-las às necessidades locais.",
+    "p5": "Em seu cerne, o currículo é guiado por participação, incorporação, narrativas e aprendizagem multimodal. Ele visa criar condições nas quais as pessoas possam pensar criticamente, conectar-se através de diferenças e imaginar de forma diferente juntas. Nesse sentido, o Currículo Compassivo não é apenas um conjunto de exercícios, mas uma forma de praticar apoio mútuo, investigação compartilhada e esperança em comum."
+  },
+  "about": {
+    "metaTitle": "Sobre — Arquivo de Currículo Compassivo",
+    "heading": "Sobre",
+    "p1": "O Currículo Compassivo é um marco participativo para aprendizagem, reflexão e crescimento coletivo, desenvolvido com e para pessoas com experiência vivida de trauma ou qualquer forma de opressão estrutural. Ele se baseia na ideia de que a experiência vivida é uma forma de conhecimento, e que cura, compreensão crítica e imaginação são todas necessárias para construir futuros mais justos.",
+    "p2": "Em vez de simplesmente pedir aos participantes que recebam informações, o currículo os convida a construir significado juntos. Ele está fundamentado na autoria compartilhada, ajuda mútua e uma ética de responsabilidade."
+  },
+  "contact": {
+    "metaTitle": "Contato — Arquivo de Currículo Compassivo",
+    "heading": "Contato",
+    "p1": "Para perguntas, colaborações ou para compartilhar como você usou o currículo, entre em contato com a equipe do projeto."
+  },
+  "notFound": {
+    "heading": "Página não encontrada",
+    "body": "A página que você está procurando não pôde ser localizada.",
+    "returnHome": "Voltar ao Início"
+  }
+}

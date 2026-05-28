@@ -1,0 +1,688 @@
+{
+  "id": "restorative-practices",
+  "label": "II. Praktyki Naprawcze",
+  "title": "Praktyki Naprawcze",
+  "overview": "Ta sekcja wprowadza praktyki naprawcze jako uczestniczący i relacyjny sposób uczenia się. Skupia się na ustnych opowieściach, słuchaniu, wspólnym tworzeniu i zbiorowej odpowiedzialności. Praktyki w tej sekcji pomagają uczestnikom budować zaufanie, refleksję nad doświadczeniem oraz rozwijać bardziej współczujące sposoby bycia razem.",
+  "lessons": [
+    {
+      "id": "entering-the-circle",
+      "label": "L1",
+      "title": "Wchodzenie w Krąg",
+      "sectionId": "restorative-practices",
+      "facilitatorBlocks": [
+        {
+          "kind": "p",
+          "text": "Ta aktywność wprowadza uczestników w praktyki naprawcze i podstawowe elementy pracy w kręgu. Kręgi są podstawową praktyką naprawczą stosowaną w tym programie. Jak opisują Kay Pranis i Carolyn Boyes-Watson w книге Circle Forward, działają one najlepiej, gdy grupy zaczynają od zapoznania się, ustalenia wspólnych wartości i budowania zaufania przed przejściem do głębszej dyskusji. Kręgi mogą być używane do wielu celów, w tym uzdrawiania, żałoby, wsparcia, rozwiązywania konfliktów, reintegracji i celebracji."
+        },
+        {
+          "kind": "p",
+          "text": "Przedmiot mowy to obiekt przekazywany w kręgu, który oznacza, kto mówi i przypomina innym, aby aktywnie słuchali; pozwala również każdemu uczestnikowi na przejście. Płaszcz to tkanina lub centralna przestrzeń, gdzie można umieścić znaczące przedmioty, aby oznaczyć krąg jako celowy i odrębny. Potwierdzenie terenu to jeden ze sposobów nazwania historii, ludzi i trwających dziedzictw, które kształtują miejsce, w którym odbywa się krąg."
+        },
+        {
+          "kind": "p",
+          "text": "Jeśli to możliwe, ustaw pokój w kręgu z wystarczającą przestrzenią między wypowiedziami, aby uczestnicy mogli się nawzajem wyraźnie widzieć. Zwróć uwagę na potrzeby dostępności z wyprzedzeniem. Trzymaj papier i długopis w pobliżu do notatek lub obserwacji następczych oraz przygotuj duży arkusz papieru lub sztalugę, jeśli planujesz zapisać umowy społeczności."
+        },
+        {
+          "kind": "p",
+          "bold": true,
+          "text": "Krąg zwykle przechodzi przez następującą sekwencję:"
+        },
+        {
+          "kind": "ul",
+          "items": [
+            "powitanie i cel",
+            "otwarcie lub breaker lodowy i, gdzie odpowiednie, potwierdzenie terenu",
+            "umowy społeczności",
+            "sprawdzenie",
+            "rundy dyskusji",
+            "sprawdzenie i zamknięcie"
+          ]
+        }
+      ],
+      "activities": [
+        {
+          "id": "a1",
+          "label": "A1",
+          "title": "Powitanie, Otwarcie i Umowy Społeczności",
+          "blocks": [
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Powitanie i cel:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "opiekun kręgu przedstawia się i przedmiot mowy;",
+                "jeśli uczestnicy są nowi w praktykach naprawczych, opiekun kręgu wyjaśnia swoją rolę i sposób użycia przedmiotu mowy;",
+                "jeśli używasz płaszcza, wyjaśnij, czym jest i dlaczego obiekty są ważne."
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Otwarcie i Breaker Lodowy"
+            },
+            {
+              "kind": "p",
+              "text": "Zacznij od prostego pytania wprowadzającego, które pomoże uczestnikom wejść w przestrzeń i przetworzyć. Niektóre pytania mogą wymagać więcej zaufania i otwartości, więc nie wszystkie będą odpowiednie dla każdej grupy. Przykłady:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Gdybyś mógł mieć jedną supermoc, jaka by to była?",
+                "Kim są Twoi bohaterowie i dlaczego?",
+                "Jeden cel na Twój czas w tym warsztacie to...",
+                "Jedna rzecz, której nie wiedziałbyś o mnie, patrząc na mnie, to...",
+                "Jeden aspekt mojej tożsamości, który czuję się ważny, aby przynieść do kręgu, to..."
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Umowy społeczności"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Opiekun kręgu, trzymając przedmiot mowy, zachęca uczestników do nazwania tego, czego potrzebują, aby móc mówić otwarcie i szczerze w kręgu.",
+                "Przykładowy prompt: Jakie umowy są dla ciebie ważne, aby zapewnić, że będziesz osobiście odważniejszy w mówieniu otwarcie i szczerze w tym kręgu?",
+                "Przedmiot mowy jest przekazywany w lewo, aby każdy uczestnik miał możliwość dodania lub przejścia.",
+                "Rejestruj odpowiedzi i ponownie je odwiedzaj w razie potrzeby. Niektórzy opikunowie kręgu mogą zachęcić uczestników do podpisania ostatecznych umów."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a2",
+          "label": "A2",
+          "title": "Sprawdzenie i Rundy Dyskusji",
+          "blocks": [
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Sprawdzenie"
+            },
+            {
+              "kind": "p",
+              "text": "Po powitaniu i umowach wykonaj prostą rundę sprawdzenia połączoną z tematem dnia. Przykłady mogą być: \"jak się masz dzisiaj, w skali 1-10 i dlaczego?\""
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Rundy dyskusji"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Powinny się odbywać tylko po sprawdzeniu uczestników, zrozumieniu celu kręgu i poznaniu, kto jest obecny.",
+                "Pytania powinny być otwarte, celowe i połączone z osobistym doświadczeniem.",
+                "Zawsze sprawdzaj po rundzie i przekazuj ponownie przedmiot mowy w przypadku, gdyby ktoś, kto początkowo przeszedł, chciał mówić."
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Dla naprawy relacji:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Kto Twoim zdaniem został dotknięty tą sytuacją i w jaki konkretny sposób zostali dotknięci?",
+                "Jaka była najtrudniejsza część tego doświadczenia dla ciebie osobiście?",
+                "Co musi się stać teraz, aby wszystko było tak dobrze, jak to możliwe dla wszystkich zaangażowanych?"
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Dla zmian organizacyjnych i przetwarzania przejść:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Jakie obawy nosisz teraz w związku z naszą nadchodzącą zmianą? Jakie są Twoje obawy?",
+                "Jaki jest jeden praktyczny zasób lub wsparcie, które potrzebujesz, aby pomyślnie przejść tę zmianę?"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a3",
+          "label": "A3",
+          "title": "Zamknięcie Kręgu",
+          "blocks": [
+            {
+              "kind": "p",
+              "text": "Zamknij rundę odpowiedzi na pytania refleksyjne, które pomagają uczestnikom opuścić krąg z opieką i intencją."
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Potencjalne prompty:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Co zabierasz ze sobą z dzisiaj?",
+                "Jak będziesz praktykować samopielęgnację dzisiaj?",
+                "Jakie jest zobowiązanie, które jesteś gotów podjąć dzisiaj na podstawie naszego kręgu dzisiaj?"
+              ]
+            },
+            {
+              "kind": "p",
+              "text": "Po rundzie zamknięcia opiekun kręgu może poprowadzić krótkie ćwiczenie uziemiające, takie jak oddychanie, ruch, wiersz, piosenkę lub wzywanie i odpowiedź."
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Opcjonalne uzupełnienie: Przedmioty Mowy"
+            },
+            {
+              "kind": "p",
+              "text": "Po drugim kręgu, gdy uczestnicy lepiej się znają, opiekun kręgu może zaproponować im przynieść przedmiot osobistego znaczenia, który będzie służyć jako przedmiot mowy i, jeśli życzą sobie, podzielić się, dlaczego jest dla nich znaczący. W cyfrowych kręgach przedmiot mowy i płaszcz mogą być symboliczne niż fizyczne, ale te same zasady nadal mają zastosowanie."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reauthoring-circles",
+      "label": "L2",
+      "title": "Kręgi Przeformułowania",
+      "sectionId": "restorative-practices",
+      "facilitatorBlocks": [
+        {
+          "kind": "p",
+          "text": "Przeformułowanie to sposób zrozumienia, jak opowieści, które opowiadamy o sobie, są kształtowane przez większe siły społeczne, w tym instytucje, kulturę i systemy władzy. Termin został pierwszy raz opracowany przez Michaela White'a i Davida Epstona (1990) jako część Terapii Narracyjnej. W tym programie przeformułowanie nie jest terapią. Jest to praktyka społeczna, która pomaga ludziom zastanowić się nad tym, jak dominujące mity dotyczące rasy, klasy, płci, niepełnosprawności, kryminalizacji i przynależności kształtują tożsamość i jak te mity mogą być kwestionowane."
+        },
+        {
+          "kind": "p",
+          "text": "Praktyka przeformułowania szuka tak zwanych narracji nasyconych problemami: opowieści, w których osoba staje się zdefiniowana przez trudności, piętno lub jedno doświadczenie. Przeformułowanie pyta: co jeszcze jest prawdą? Jakie mocne strony, wartości, wiedza i wgląd są już obecne razem z trudnościami, piętnem lub jedną definiującą opowieścią? Odrzuca pojedynczą opowieść i robi miejsce dla pełniejszego rachunku."
+        },
+        {
+          "kind": "p",
+          "bold": true,
+          "text": "Krąg przeformułowania to ustrukturyzowana rozmowa z trzema rolami:"
+        },
+        {
+          "kind": "ul",
+          "items": [
+            "opowiadacz: jedna osoba dzieli się opowieścią, wyzwaniem lub pytaniem",
+            "świadkowie: grupa słucha i odzwierciedla mocne strony, wartości i możliwości",
+            "opiekun kręgu: osoba, która trzyma strukturę i wspiera proces"
+          ]
+        },
+        {
+          "kind": "p",
+          "text": "Celem nie jest osądzanie, naprawianie lub udzielanie porad. Jest to słuchanie razem o tym, co ma znaczenie, co przetrwało i czego nauczono."
+        }
+      ],
+      "activities": [
+        {
+          "id": "a1",
+          "label": "A1",
+          "title": "Potężne Pytania",
+          "blocks": [
+            {
+              "kind": "p",
+              "text": "Przed rozpoczęciem opiekun kręgu prosi o wolontariusza opowiadacza chętnego do podzielenia się wyzwaniem, pytaniem lub momentem wzrostu i sprawdza się z nimi, aby zapewnić zgodę. Wyraźnie wprowadź proces: jedna osoba będzie dzielić, inni będą słuchać i odzwierciedlać to, co słyszą, grupa słucha do siły i tego, co ma znaczenie, nie jest udzielana żadna rada."
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Przykłady dobrych pytań:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Co zauważyłeś o sobie w tym momencie?",
+                "Co to mówi ci o tym, co dla ciebie ważne?",
+                "Co przeszkadzało ci przejść to?",
+                "Czego potrzebowałeś w tym czasie?",
+                "Co mogłoby pomóc ci pomyśleć o tym inaczej?"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a2",
+          "label": "A2",
+          "title": "Świadectwo",
+          "blocks": [
+            {
+              "kind": "p",
+              "text": "Świadectwo oznacza słuchanie w poszukiwaniu odporności, uznawanie wiedzy i zdolności oraz odzwierciedlanie ich z powrotem. Celem nie jest naprawianie, ale nazwanie tego, co jest już obecne."
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Przykłady świadectwa:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "To, co słyszę, to że ty...",
+                "Ciągle szedłeś mimo...",
+                "Zauważam strategie, które opracowałeś, aby poradzić sobie z tym...",
+                "Wygląda na to, że troska, godność lub sprawiedliwość są dla ciebie naprawdę ważne",
+                "Słyszę głębokie zaangażowanie w...",
+                "Nauczyłeś się czegoś ważnego przez to doświadczenie",
+                "To, co słyszę, to opowieść o tym, jak opiekowałeś się, opierałeś się lub uczyłeś się po drodze"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a3",
+          "label": "A3",
+          "title": "Proces i Refleksja Zamknięcia",
+          "blocks": [
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Proces"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Opiekun kręgu zwoła otwarcie kręgu.",
+                "Opowiadacz dzieli się, trzymając przedmiot mowy.",
+                "Grupa robi pauzę.",
+                "Przedmiot mowy jest przekazywany wokół kręgu. Świadkowie odzwierciedlają to, co słyszeli.",
+                "Kiedy przedmiot mowy powraca do opowiadacza, zaproś refleksję."
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Prompty refleksji zamknięcia:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Co słyszałeś?",
+                "Co czuło się jak prawda?",
+                "Co cię zaskoczyło?",
+                "Co chcesz zanieść dalej?",
+                "Co wyróżniało się dla ciebie?",
+                "Co czuło się możliwe w tym procesie?",
+                "Gdzie możesz to użyć w swojej własnej pracy?",
+                "Jakie wsparcie pomogłoby ci czuć się bardziej pewnie je ułatwiając?"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sharing-our-stories",
+      "label": "L3",
+      "title": "Dzielenie się Naszymi Opowieściami",
+      "sectionId": "restorative-practices",
+      "facilitatorBlocks": [
+        {
+          "kind": "p",
+          "text": "Ta aktywność może zacząć się jako dziennik, w sesjach lub między sesjami, a później przejść do dzielenia się kręgu. Zadaniem jest napisanie \"twojej opowieści\"."
+        },
+        {
+          "kind": "p",
+          "text": "W zależności od wielkości grupy ta aktywność może rozwinąć się na kilka sesji. Może pomóc, jeśli jeden z opiekunów kręgu będzie udostępniać pierwszy, aby modelować aktywność, lub jeśli kilka uczestników zostanie wcześniej przygotowanych, aby zobaczyć, czy mogą czuć się komfortowo dzielić się wcześnie. Uczestnicy powinni zawsze mieć możliwość przejścia. Zrób przerwy między opowieściami. Te kręgi mogą być intensywne, a pauzy pomagają grupie pozostać obecną dla siebie nawzajem."
+        }
+      ],
+      "activities": [
+        {
+          "id": "a1",
+          "label": "A1",
+          "title": "Prompty Dziennika",
+          "blocks": [
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Prompty:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Jak się masz?",
+                "Gdzie mieszkasz? Zawsze tam mieszkałeś?",
+                "Gdzie dorastałeś?",
+                "Jakie wspomnienia z dzieciństwa zostają z tobą?",
+                "Z kim mieszkasz?",
+                "Czy masz rodzeństwo? Jaki jest twój stosunek do nich?",
+                "Jaki jest twój stosunek do swoich rodziców lub opiekunów?",
+                "Jakie trudności napotykałeś? Jakie przeszkody pokonałeś?",
+                "Jakie osiągnięcia jesteś z siebie dumny?",
+                "Jak znalazłeś się w tej pracy?",
+                "Dlaczego ta praca jest dla ciebie ważna?",
+                "Jak aktywujesz to, czego się uczysz?",
+                "Jakie są twoje pasje i długoterminowe cele?"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "land-ancestor-acknowledgement",
+      "label": "L4",
+      "title": "Uznanie Terenu i Przodków",
+      "sectionId": "restorative-practices",
+      "facilitatorBlocks": [
+        {
+          "kind": "p",
+          "text": "Ta aktywność zaprasza uczestników do refleksji nad historiami, miejscami, przodkami i liniami, które kształtują przestrzeń, w której się znajdują. Opiera się na zasobach Native Land Digital, aby przejść poza performatywne lub transakcyjne ramy."
+        },
+        {
+          "kind": "p",
+          "text": "Przed ułatwieniem tej aktywności zbadaj, czyjej ziemi odbywa się krąg, kto tam mieszkał w przeszłości i kto mieszka tam teraz. Może to wymagać formalnych badań, a także rozmów z członkami społeczności."
+        },
+        {
+          "kind": "p",
+          "text": "To może być trudna aktywność. Uczestnicy mogą być adoptowani, mogą nie znać swoich historii lub mogą nosić urazę związaną z rodziną, niewolnictwem, kolonizacją, migracją lub przemieszczeniem. Idź powoli. Wbuduj pauzy."
+        }
+      ],
+      "activities": [
+        {
+          "id": "a1",
+          "label": "A1",
+          "title": "Prompty Refleksji",
+          "blocks": [
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Potencjalne prompty"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Kim są przodkami i ludźmi, którym powinniśmy się dziękować, gdy się zbieramy?",
+                "Jaka jest twoja historia migracji?",
+                "Kim są twoi starsi, żywi i przejściu, i jak są obecni w tobie?"
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Możliwości pracy"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "napisz własne uznanie terenu",
+                "podziel się tym w kręgu",
+                "opracuj zbiorowe uznanie w małych grupach lub jako całą grupę"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a2",
+          "label": "A2",
+          "title": "Przykładowe Uznanie",
+          "blocks": [
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Przykład z Lenapehoking (NJ, wschodnia PA, południowo-wschodnia NY):"
+            },
+            {
+              "kind": "p",
+              "text": "\"Chciałbym zacząć od uznania, że jesteśmy na niezłamanym terytorium narodu Lenape. Chciałbym wyrazić szacunek przodkom Lenape oraz obecnym i przyszłym pokoleniom na tej ojczyźnie, a także w całej diasporze Lenape. Chciałbym również rozciągnąć to uznanie na wszystkie narody tubylcze, które teraz i w przyszłości będą nazywać te ojczyzny Lenape, Lenapehoking, domem. To uznanie jest zobowiązaniem do radzenia sobie z trwającymi dziedzictwami kolonializmu osadniczego, rasizmu, masowych więzień i przemysłu więziennego.\""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "circle-questions",
+      "label": "L5",
+      "title": "Pytania Kręgu i Praktyki Słuchania",
+      "sectionId": "restorative-practices",
+      "facilitatorBlocks": [
+        {
+          "kind": "p",
+          "text": "Materiał źródłowy obejmuje Mediators Beyond Borders i The Art of Powerful Questions Erica E. Vogta, Juanity Brown i Davida Isaacs. W praktyce Circle pytania są nazywane podpowiedziami i są sekwencjonowane ostrożnie, przesuwając się z pytań niskiego ryzyka (aby zbudować bezpieczeństwo) do pytań wysokiego ryzyka (aby rozwiązać temat główny) i zakończyć się refleksją."
+        },
+        {
+          "kind": "p",
+          "bold": true,
+          "text": "Szybkie Wskazówki Ułatwiającego dla Pytań Rundy"
+        },
+        {
+          "kind": "ul",
+          "items": [
+            "Zachowaj je otwarte: unikaj pytań, na które można odpowiedzieć prostym \"tak\" lub \"nie\". Zamiast tego użyj Co, Jak lub Czy możesz opisać... zamiast Dlaczego.",
+            "Modeluj pytanie: jako ułatwiający, często pomocne jest najpierw odpowiedzieć na pytanie, gdy je wprowadzasz.",
+            "Przejście jest zawsze opcją: przypomnij uczestnikom, że kiedy przedmiot mowy do nich dochodzi, mogą wybrać przejście, trzymać go w milczeniu lub mówić."
+          ]
+        }
+      ],
+      "activities": [
+        {
+          "id": "a1",
+          "label": "A1",
+          "title": "Pytania Otwarcia i Pogłębiające",
+          "blocks": [
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Pytania otwarcia — Proszę powiedz swoje imię i..."
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "podziel się czymś, co masz nadzieję doświadczyć lub nauczyć się, podczas gdy tu jesteś",
+                "podziel się czymś, co byś się cieszył, że wybrałeś uczestnictwo",
+                "powiedz, co cię przyciąga do tej obserwacji",
+                "nazwij coś, co zostawiłeś za sobą, aby być tutaj dzisiaj"
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Pytania pogłębiające"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Jaka jest istota tego problemu dla ciebie?",
+                "Jakie nadzieje, obawy, troski lub niezaspokojone potrzeby są obecne dla ciebie w tej sprawie?",
+                "Jakie dylematy lub szanse widzisz?"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a2",
+          "label": "A2",
+          "title": "Przetwarzanie, Pytania Naprzód i Zamknięcia",
+          "blocks": [
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Pytania przetwarzania"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Co się tutaj formuje?",
+                "Co słyszysz pod różnością wyrażanych opinii?",
+                "Co miało dla ciebie rzeczywiste znaczenie w tym, co słyszałeś?",
+                "Czy jest coś, czego nie widzimy wyraźnie?"
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Pytania naprzód poruszające"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Co mogłoby się stać, aby pomóc ci czuć się całkowicie zaangażowanym w tę pracę?",
+                "Co jest możliwe tutaj i kto się martwi?",
+                "Jakie następne kroki chciałbyś podjąć, indywidualnie lub zbiorowo?",
+                "Jak możemy wspierać się nawzajem w podjęciu tych kroków?",
+                "Jakie nasiono moglibyśmy razem posadzić, które mogłoby mieć największe znaczenie dla przyszłości tej sytuacji?"
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Pytania zamknięcia"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Co zabierasz ze sobą z tego kręgu?",
+                "Co przyczyniłeś się lub chciałbyś przyczynić się?",
+                "Jakie następne kroki masz nadzieję podjąć?",
+                "Jakie pytania masz nadzieję, że ta grupa zbadzi dalej?",
+                "Jakie wsparcie potrzebujesz lub chciałbyś zaoferować, gdy odchodzisz?"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a3",
+          "label": "A3",
+          "title": "Umiejętności Aktywnego Słuchania",
+          "blocks": [
+            {
+              "kind": "ul",
+              "items": [
+                "Mowa ciała: utrzymuj otwartą mowę ciała i uwagę. Utrzymuj kontakt wzrokowy, gdzie to odpowiednie, zwróć się do mówiącego, przyjmij zrelaksowaną pozycję i unikaj wielozadaniowości.",
+                "Śledzenie: pozwól mówiącemu na miejsce do mówienia bez przerwy. To oznacza zmniejszenie zbędnych pytań, tolerancję ciszy i pozwolenie myśli na rozwinięcie.",
+                "Parafrazowanie i odzwierciedlanie: podsumuj to, co słyszałeś, w tym zarówno treść, jak i uczucie. Na przykład: \"To, co słyszę, to...\"",
+                "Zadawaj otwarte pytania: które zachęcają do refleksji, a nie odpowiedzi tak/nie.",
+                "Walidacja: załóż, że cokolwiek jest udostępniane, jak wyraźnie lub niedoskonale, pochodzi z czegoś rzeczywistego w doświadczeniu mówcy."
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Aktywność uważnego słuchania:"
+            },
+            {
+              "kind": "p",
+              "text": "Zamknij oczy i: zwróć uwagę na to, ile dźwięków słyszysz wokół siebie i w sobie; zauważ sądy pojawiające się bez przywiązywania się do nich; skupić się na dźwięku, przepływie i rytmie oddychania; wykonać somatyczną inwentaryzację, powoli poruszając się przez ciało i rozluźniając każdą część."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "grounding-activities",
+      "label": "L6",
+      "title": "Aktywności Uziemienia",
+      "sectionId": "restorative-practices",
+      "facilitatorBlocks": [
+        {
+          "kind": "p",
+          "text": "Ćwiczenia uziemienia to techniki zaprojektowane do szybkiego odciągnięcia cię od lęku, paniki lub flashbacków poprzez ponowne połączenie z obecną chwilą i twoim fizycznym otoczeniem. Mogą być częścią ustanawiania intencji warsztatu, a także łączenia się z członkami grupy."
+        }
+      ],
+      "activities": [
+        {
+          "id": "a1",
+          "label": "A1",
+          "title": "Łączenie się z Ziemią",
+          "blocks": [
+            {
+              "kind": "p",
+              "text": "Tempo jest tutaj ważne. Zezwól na ruch zarówno siedzenia, jak i oddychania. Ułatwiający mówi: \"Znajdź miejsce, w którym siedzisz lub możesz wygodnie siedzieć.\""
+            },
+            {
+              "kind": "p",
+              "text": "\"Jeśli czujesz się dobrze, zamknij oczy. Jeśli nie chcesz, po prostu znajdź miejsce przed sobą, gdzie możesz delikatnie skupić się. Teraz weź cztery głębokie oddechy. Poczuj, jak twoja klatka piersiowa podnosi się i opada, gdy wciągasz powietrze i wypuszczasz je. Każdy raz, gdy wciągasz powietrze, wyobraź sobie, że wciągasz spokojny, spokojny nastrój. Gdy wydychasz, pozwól wszystkim stresowi opuścić twoje ciało. Pozwól twoim ramienom rozluźnić się i złagodzić. Pozwól twoim oczom i twarzy rozluźnić się i złagodzić. Pozwól całemu stresowi opuścić twoje całe ciało. Poczuj połączenie z naszymi przodkami, świętością przestrzeni i połączenie z ziemią.\""
+            }
+          ]
+        },
+        {
+          "id": "a2",
+          "label": "A2",
+          "title": "Świadomość Sensoryczna (5-4-3-2-1)",
+          "blocks": [
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Cel: szybki reset mózgu"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "5: Poszukaj 5 rzeczy, które widzisz wokół siebie (np. krzesła, rośliny, niebo).",
+                "4: Skupić się na 4 rzeczach, które możesz dotknąć (np. twoje włosy, biurko, podłoga).",
+                "3: Słuchaj 3 rzeczy, które możesz usłyszeć (np. ruch, ptaki, twój oddech).",
+                "2: Zidentyfikuj 2 rzeczy, które możesz pachnieć (np. mydło, powietrze, jedzenie).",
+                "1: Zauważ 1 rzecz, którą możesz smakiem (np. pasta do zębów, kawa)."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a3",
+          "label": "A3",
+          "title": "Uziemienie Fizyczne i Dotykowe",
+          "blocks": [
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Cel: Świadomość twojego ciała i jego połączenia ze środowiskiem"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Kopnij obcasy: skupij się na stopach na ziemi, zauważ wagę.",
+                "Zmiana temperatury: przepłyń zimną lub ciepłą wodę po rękach.",
+                "Zacisnąć/Zwolnić: zacisnąć pięści, przytrzymaj na 5-10 sekund, a następnie zwolnij i poczuj relaksację.",
+                "Niosę uspokajający przedmiot: noś mały kamień, tkaninę lub biżuterię w kieszeni, aby dotknąć.",
+                "Rozciągnij: rozciągnij ramiona i nogi, aby poczuć uczucia napięcia i zwolnienia.",
+                "Dotyk motyla: delikatnie stuknij w klatkę piersiową lub ramiona rękami, naprzemieniając boki."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a4",
+          "label": "A4",
+          "title": "Meditacja Miłości i Dobroci",
+          "blocks": [
+            {
+              "kind": "p",
+              "text": "Medytacja miłości i dobroci (znana również jako Metta) to ćwiczenie uważności zaprojektowane do kultywowania współczucia, ciepła i życzliwości. Umieść rękę na sercu, jeśli czujesz emocjonalny opór. Nie ma prawidłowego sposobu na czucie — po prostu intencja życzenia komuś dobrze niesie te same mentalne korzyści."
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Siebie"
+            },
+            {
+              "kind": "p",
+              "text": "\"Mogę być szczęśliwy. Mogę być zdrowy. Mogę być bezpieczny. Mogę żyć z łatwością.\""
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Ukochana Osoba"
+            },
+            {
+              "kind": "p",
+              "text": "\"Mogę być szczęśliwy. Mogę być zdrowy. Mogę być bezpieczny. Mogę żyć z łatwością.\""
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Wszystkie Istoty"
+            },
+            {
+              "kind": "p",
+              "text": "\"Wszystkie istoty wszędzie mogą być szczęśliwe, zdrowe i wolne.\""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

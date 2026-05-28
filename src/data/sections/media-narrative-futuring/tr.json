@@ -1,0 +1,372 @@
+{
+  "id": "media-narrative-futuring",
+  "label": "III. Medya, Anlatı ve Geleceğin İnşası",
+  "title": "Medya, Anlatı ve Geleceğin İnşası",
+  "overview": "Bu bölüm, katılımcıların kendileri hakkında daha kapsamlı hikayeler anlatmalarında, medya tarafından anlatılan hikayeleri analiz etmelerinde ve gelecek oluşturmaya yönelik hayal kurma kapasitesini geliştirmelerinde destek sağlar. Bireysel yansıtmayla başlar, bedensel hikaye anlatma ve görsel analiz aracılığıyla ilerler ve katılımcı geleceğin inşasıyla sonlanır.",
+  "lessons": [
+    {
+      "id": "individual-reflection",
+      "label": "L1",
+      "title": "Bireysel Yansıtma, Öz-Portre",
+      "sectionId": "media-narrative-futuring",
+      "facilitatorBlocks": [
+        {
+          "kind": "p",
+          "text": "Bu alıştırmalar katılımcıların renk, ses, yazı ve imaj aracılığıyla kimlik, bellek, ruh hali ve kendilerini tanımlama konularında yansıtma yapmasına yardımcı olur."
+        },
+        {
+          "kind": "p",
+          "text": "Kaynakların eksikliği, kültürel marjinalleştirilme ve travma deneyimi, hayal kurma yeteneğini veya istekliliğini ya da hayal kurmanın kendisinin uygunluğuna olan inancı nasıl engelle yebilir? Bu bölüm, egemen kültürün sıklıkla kimliği basitleştirdiğine dair anlayıştan yola çıkar. Suçlulaştırılan veya kalıplaştırılan kişiler, kendilerini yaşamlarının tam karmaşıklığı yerine sınırlayıcı anlatılar aracılığıyla tanımlamaya başlayabilirler."
+        },
+        {
+          "kind": "p",
+          "text": "Hayal kurma, umut pratiğidir. Mevcut fikirleri yeni olası kombinasyonlara yeniden düzenlemek demektir. Seçim deneyimi sınırlı olan insanlar için, gelecekte herhangi bir türde ajanse yaşanabileceğine dair umut duymak anlaşılır şekilde zor olabilir. Düşük riskli yansıtma ve hikaye anlatma biçimleriyle başlayın, ardından kademeli olarak medya analizine ve geleceğin inşasına doğru ilerleyin."
+        }
+      ],
+      "activities": [
+        {
+          "id": "a1",
+          "label": "A1",
+          "title": "Renk Tekerleği",
+          "blocks": [
+            {
+              "kind": "ul",
+              "items": [
+                "Katılımcıları bir renk tekerleğinin görüntüsüne bakmaya ya da zihinlerinde canlandırmaya davet edin ve her renkle ilişkili asosiyasyonlarını tanımlayın. Asosiyasyonlar bir emosyonla, bir bellekle veya anlatmak istedikleri bir hikayeyle ilişkili olabilir.",
+                "İsteğe bağlı: büyük bir kağıt parçası üzerinde veya beyaz tahtada, tüm grubu temsil ettiğine inanılan paylaşılan bir renk tekerleği veya renk haritası oluşturun. Bu, şekil, form, seçilen renkler veya istenirse yazılı dil içerebilir."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a2",
+          "label": "A2",
+          "title": "Renk Alanı Portresi (Mark Rothko'dan Esinlenerek)",
+          "blocks": [
+            {
+              "kind": "ul",
+              "items": [
+                "2–3 renk alanı yığını kullanarak kendinizin bir portresini oluşturun.",
+                "Katılımcılar, yığını oluşturmanın farklı yollarını düşünebilir ve tasarım seçimlerini bir partnerle paylaşabilirler.",
+                "Örneğin, renk alanları farklı bir rengin daha geniş bir arka planı içinde mi çerçevelenmiştir? Alanlar arasında boşluklar var mı ve varsa, ne kadar büyük?"
+              ]
+            },
+            {
+              "kind": "p",
+              "text": "Kolaylaştırıcı notu: Alıştırmadan önce veya sonra Mark Rothko'nun Renk Alanı resimlerini göstermek isteyebilirsiniz; bu, tartışmanın bir parçası olarak sunulabilir."
+            }
+          ]
+        },
+        {
+          "id": "a3",
+          "label": "A3",
+          "title": "Yaşam 3 Şarkıda",
+          "blocks": [
+            {
+              "kind": "ul",
+              "items": [
+                "Katılımcıları hayatlarını tanımlayan 3 şarkıyı düşünmeye davet edin.",
+                "Her şarkıyı çalın ve her birinden önce veya sonra 1–2 dakika süresinde anlamını açıklayın.",
+                "Çalma listesini oluşturun ve paylaşın.",
+                "Rıza ile, her girişi ve ardından şarkıyı kaydedin."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a4",
+          "label": "A4",
+          "title": "Ben Neredeliyim Şiiri",
+          "blocks": [
+            {
+              "kind": "ul",
+              "items": [
+                "George Ella Lyon'un 'Ben Neredeliyim' biçimini kullanarak katılımcıların hafızayı ve günlük detayları şiirsel forma çevirmelerine yardımcı olun; gerektiğinde boş sayfalara kopyalayın. http://www.georgeellalyon.com/where.html",
+                "Sırasıyla paylaşın ve rıza verilirse insanları yüksek sesle okurken kaydedin.",
+                "Şiirlerin daha ileri yazılara nasıl yol açabileceğini düşünün; örneğin, bir yerin bahsedilmesi, orada meydana gelen bir olayın anısı hakkında yazılara yol açabilir; müzik veya yemeğin bahsedilmesi, bu şeylerle ilişkili kişiler, yerler veya olaylar hakkında yazılara yol açabilir."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "embodied-storytelling",
+      "label": "L2",
+      "title": "Bedensel Hikaye Anlatma",
+      "sectionId": "media-narrative-futuring",
+      "facilitatorBlocks": [
+        {
+          "kind": "p",
+          "text": "Bu alıştırmalar kişisel deneyimi hareket, tablo, ses ve imaja çevirirler. Katılımcıların tam açıklama gerektirmeden duygusal hafızayı ve paylaşılan yorumlamayı keşfetmelerine izin verirler."
+        }
+      ],
+      "activities": [
+        {
+          "id": "a1",
+          "label": "A1",
+          "title": "Hikaye Değişimi > İmaj Tiyatrosu (Augusto Boal'dan Esinlenerek)",
+          "blocks": [
+            {
+              "kind": "ul",
+              "items": [
+                "İkili olarak katılımcılar, duygusal bir uyaran temelinde hatırladıkları hayatlarından zamanda donmuş bir sahneyi veya olayı tanımlarlar.",
+                "Potansiyel uyaranlar şunlardır: engel, umut, kaçış, yalıtılmışlık, sessizliği bulma.",
+                "Duyu hatırlaması temelinde mümkün olan her şeyi tanımlayın: Hangi mevsimde ve günün hangi saatiydi? Dışarıdaysa, çevreleyen binalar veya manzara nasıldı? İçerideyse, iç mekan nasıldı? Şeyler nasıl ses verdi ve koku verdi? Renkler ve ışık nasıldı?",
+                "İlişkileri tanımlayın: başka biri orada mıydı? Öyleyse, kim were, siz onunla nasıl ilişkilidiniz ve ne oluyordu?",
+                "Dinleyici, hikayenin kalbinin ne olduğunu düşünür—duygusal veya kavramsal özü.",
+                "Partnerlerinden rıza ile, dinleyici hikayeyi tek bir donmuş hareketle temsil eder.",
+                "Diğer katılımcılar gördüklerini tartışırlar. Hikaye anlatıcı isterse, orijinal hikayenin ayrıntılarını açıklayabilirler."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a2",
+          "label": "A2",
+          "title": "İç Monolog",
+          "blocks": [
+            {
+              "kind": "ul",
+              "items": [
+                "Önceki alıştırmanın temelinde, hikaye anlatıcı diğerlerini tabloda (hikayenin temel anını temsil eden \"dondurulmuş karede\" duran bir insan grubu) konumlandırır.",
+                "Hikaye anlatıcı katılımcılara nerede olduklarını ve kim olduklarını anlamak için gerekli olan minimum bağlamsal bilgiyi verir, örneğin: \"Dışarıdayız, şehirde, 1992'de. Siz 35 yaşında bir erkeksiniz.\"",
+                "Her katılımcı karakterlerinin ne düşündüğünü hayal eder ve sırasıyla bu iç monologu söyler."
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "İsteğe bağlı dokümantasyon, rıza ile:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Katılımcıları tabloda fotoğrafla",
+                "Sesleri kaydedin",
+                "Katılımcılar monologlarını söylerken grup etrafında yürüyün ve kaydedin"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a3",
+          "label": "A3",
+          "title": "Duyu Üçlemesi",
+          "blocks": [
+            {
+              "kind": "ul",
+              "items": [
+                "Katılımcıları kendilerini içinde bulunmak istedikleri gelecek bir alanda hareket ederken hayal etmeye davet edin.",
+                "Katılımcılar, görme, duyma, koklama, dokunma duyusu ve vücutlarının alandaki hareketiyle ilişkili hissettiği şeyler hakkında kritik duyu ayrıntılarını tanımlamalıdırlar.",
+                "Katılımcılar hikayenin üç önemli bölümünü temsil eden üç imaj oluştururlar; örneğin, başlangıç, orta ve son; 3 farklı duyu algısı; 3 emosyon, vb.",
+                "Katılımcılar birbirinin imajlarını gözlemler ve asosiyasyonları tanımlarlar.",
+                "Bu etkinlik, Fotoğrafla Ses Verme veya Katılımcı Geleceğin İnşası alıştırmalarıyla birleştirilebilir."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "media-analysis",
+      "label": "L3",
+      "title": "Medya Analizi ve Görsel Hikaye Anlatma",
+      "sectionId": "media-narrative-futuring",
+      "facilitatorBlocks": [
+        {
+          "kind": "p",
+          "text": "Bu alıştırmalar katılımcıların medyada insanlar hakkında hikayelerin nasıl anlatıldığını analiz etmelerine ve kendi deneyimlerine dayanan görsel yanıtlar oluşturmalarına yardımcı olur."
+        }
+      ],
+      "activities": [
+        {
+          "id": "a1",
+          "label": "A1",
+          "title": "İmaj Yeniden Etiketleme",
+          "blocks": [
+            {
+              "kind": "p",
+              "text": "Bu etkinliğin amacı, popüler medyadan alınan çekici veya belirsiz imajları farklı şekillerde analiz etmek ve tartışma için ipuçları olarak kullanmaktır. Medya analizini kolaylaştırabilir, medyanın olumsuz kalıp yargıları destekleyen mesajları nasıl ilettiğini anlamak ve eleştirmek; veya katılımcıların yaşanan deneyimi tartışmasını tetiklemek için."
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "İmajları işaretlemek için ipuçları:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Ne görüyorsunuz? Renk ve şekilleri analiz edin; herhangi biri baskın mı? Herhangi bir örüntü var mı?",
+                "Bu imajın arka hikayesi nedir? Bu ana kadar ne olmuştur? Hikayenin önceki aşamalarını işaretleyin.",
+                "Burada kimler var ve ne yapıyorlar?",
+                "Bu imajdaki güç ilişkileri nelerdir? Kişilerin diğer kişilere, nesnelere, binalara, manzaraya olan ilişkisini işaretleyin.",
+                "Görülmeyen nedir ve görülen nedir? Hiçbir şey ima edildi mi ancak gösterilmedi mi?",
+                "Bu imajı kim çekmiş olabilir, hangi açıdan?",
+                "Bundan sonra ne olabilir? Hikayenin potansiyel gelecek aşamalarını işaretleyin."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a2",
+          "label": "A2",
+          "title": "Fotoğrafla Ses Verme",
+          "blocks": [
+            {
+              "kind": "p",
+              "text": "Fotoğrafla Ses Verme, bir grubun topluluğunu etkileyen bir mesele hakkında bir soru tanımladığı, buna yanıt olarak fotoğraf çektiği ve bu imajları tartışmayı tetiklemek için kullandığı bir katılımcı görsel yöntemidir. Süreç, katılımcıların yaşanmış deneyim hakkında yansıtma yapmalarını, değiştirmek istedikleri sorunları belirlemelerini ve olası eylem biçimlerini keşfetmelerini destekler."
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Süreç"
+            },
+            {
+              "kind": "ol",
+              "items": [
+                "Bir grup olarak ele almak istediğiniz sorunu birlikte tanımlayın",
+                "Rehber sorunuzu oluşturun (kişisel olun, bir soruna odaklanın, iyi bir kapsam belirleyin)",
+                "Fotoğraf Çekin — katılımcılar, perspektiflerini ifade eden sorulara yanıt olarak resim çekerler",
+                "SHMIR yöntemi kullanarak tartışın: Gör, Olup Bitenler, Anlam, Sorun, Yanıt",
+                "Sentezleyin — önemli temaları, desenleri veya paylaşılan deneyimleri belirleyin",
+                "Yayınlayın (isteğe bağlı) — zine, sergisi, çevrimiçi, halk sunumu",
+                "Yansıtın — ne öne çıktı? Ne işe yaradı veya iyileştirilebilir? Ne hissi anlamlı geldi?"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "participatory-futuring",
+      "label": "L4",
+      "title": "Katılımcı Geleceğin İnşası ve Dünya Oluşturma",
+      "sectionId": "media-narrative-futuring",
+      "facilitatorBlocks": [
+        {
+          "kind": "p",
+          "text": "Bu alıştırmalar katılımcıların alternatif geleceği hayal etmelerinde, olanakla deneyim yapmalarında ve gelecek vizyonunu güncel harekete bağlamalarında destek sağlar."
+        },
+        {
+          "kind": "p",
+          "bold": true,
+          "text": "İçerik"
+        },
+        {
+          "kind": "ul",
+          "items": [
+            "Geriye Doğru Planlama — katılımcılar işleyen bir gelecekten toplu olarak tasarımlar hayal ederler, bunlardan herhangi birinin günümüzde inşa edilecek şeyleri ilham verebileceğini görmek için",
+            "Dünya Oluşturma — değişim modeline potansiyel olarak koymak için bir gelecek toplumunun mantığını hayal eder",
+            "Gelecek Konileri — kendilerini geleceğe pozitif bir şekilde varken hayal etmeyi kolaylaştırır"
+          ]
+        }
+      ],
+      "activities": [
+        {
+          "id": "a1",
+          "label": "A1",
+          "title": "Geriye Doğru Planlama (Toplu Hayal Kurma)",
+          "blocks": [
+            {
+              "kind": "p",
+              "text": "Melanie Crean tarafından Ayodamola Okunseinde ile geliştirilen Adil Toplumlar için Reçeteler geleceğin bu alıştırmasına dayanan, bu etkinlik katılımcıları belirli bir sosyal sorunun çözüldüğü yaklaşık 10–15 yıl sonraki bir geleceği hayal etmeye davet eder."
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Örnek ipuçları:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Hapsedilmeden ya da askeri hizmetten sivil yaşama geçişlerin sorunsuzca meydana geldiği bir gelecek hayal edin.",
+                "Toplulukların hem güvenli hem de adil olduğu hapishanesi olmayan bir dünya hayal edin."
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Hazırlık"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Grup ele almak istediği bir soruna karar verir.",
+                "~10–15 yıl sonraki ve o sorun artık var olmayan bir geleceği düşünün.",
+                "2–3'lü gruplara bölün, her birine kağıt, çizecek birşey verin ve üç kart ipucu veyin: Sosyal veya duygusal bir mindset, Konu alanı, Tasarım niteliği."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a2",
+          "label": "A2",
+          "title": "Dünya Oluşturma",
+          "blocks": [
+            {
+              "kind": "p",
+              "text": "Dünya Oluşturma, katılımcıların hikaye anlatı aracılığıyla alternatif varlık biçimlerini hayal etmek için yaratıcı bir yöntemdir. Hayali veya spekülatif bir dünya inşa ederek, katılımcılar sistemlerin, ilişkilerin ve güç yapılarının nasıl işlediğini keşfedebilir ve bunların nasıl dönüştürülebileceğini düşünebilirler."
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Süreç"
+            },
+            {
+              "kind": "ol",
+              "items": [
+                "Coğrafya, İklim ve Ekoloji — dünyayı bağlantılı bir sistem olarak hayal edin",
+                "Kültür ve İnanç Sistemleri — bu dünyada bir arada yaşayan en az iki farklı kültür yaratın",
+                "Güç ve Çatışma — gücün nasıl işlediğini düşünün",
+                "Karakterler ve Perspektif — bu dünyada en az iki karakter yaratın",
+                "Ritüel ve Yansıtma — bir inancı ortaya koyan bir ritüel, gelenek veya olay yaratın",
+                "Yansıtma — kendi yaşanmış deneyiminiz bu dünyayı nasıl inşa ettiğinizi nasıl şekillendirdi?"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a3",
+          "label": "A3",
+          "title": "Gelecek Konileri",
+          "blocks": [
+            {
+              "kind": "p",
+              "text": "Ashley Jane Lewis tarafından, Stuart Candy'nin Future Cone'a dayanan bir alıştırma. Bu alıştırma katılımcıları üç ila beş yıl sonrası hayal etmekte rehberlik eder. Futures Cone diyagramını kullanarak, kendi geleceklerinde olası, makul, mümkün ve tercih edilir olanları keşfederler."
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Gelecek Konisi, çok sayıda potansiyel geleceği hayal etmek için bir araçtır:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Olası: Mevcut yörüngelere göre neler olabilir.",
+                "Makul: Daha az olası olsa da gerçekçi bir şekilde neler olabilir.",
+                "Mümkün: Beklenmeyen fikirler de dahil olmak üzere neler olabilir.",
+                "Tercih Edilir: En ikna edici, anlamlı sonuçlar — istediğiniz gelecek."
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Adımlar:"
+            },
+            {
+              "kind": "ol",
+              "items": [
+                "Kurmak — solda \"Siz\" veya \"Şimdi\" etiketli küçük bir daire çizin ve sağda gelecek bir yılla etiketli daha büyük bir daire. Yatay bir koni oluşturmak için bunları bağlayın.",
+                "Olası Olanı Çizin — sonraki birkaç yıl içinde yapabilir olduğunuz 2–3 şey yazın.",
+                "Mümkünü Hayal Edin — \"Mümkünler\" listesi oluşturun: araçlar, uygulamalar, ortamlar, işbirlikleri, kalış yerleri, hevesler.",
+                "Makülü Tanımlayın — \"Mümkün\" listesinden 3–5 maddesi seçin ve sonraki 1–2 yıl içinde gerçekçi hissettiriyorsa.",
+                "Tercihliyi Tanımlayın — Makul halkanın 1–2 maddesi daire içine alın ve en heyecan verici, anlamlı veya değerlerinizle uyumlu hissettiriyorsa."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

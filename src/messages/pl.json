@@ -1,1 +1,82 @@
-{"_meta":{"comment":"Stub. Populated by `npm run translate`."}}
+{
+  "site": {
+    "title": "Archiwum Kurrikulum Współczujące",
+    "description": "Interaktywne, dostępne archiwum Kurrikulum Współczującego — partycypacyjne ramy do nauki, refleksji i zbiorowego wzrostu."
+  },
+  "toolbar": {
+    "back": "Wstecz",
+    "home": "Strona główna",
+    "about": "O projekcie",
+    "print": "Drukuj",
+    "contact": "Kontakt",
+    "settings": "Ustawienia i dostępność",
+    "language": "Język",
+    "switchToDark": "Przejdź do trybu ciemnego",
+    "switchToLight": "Przejdź do trybu jasnego",
+    "decreaseZoom": "Zmniejsz zoom",
+    "increaseZoom": "Zwiększ zoom",
+    "accentSwatchesLabel": "Próbki koloru akcentu",
+    "useAccentColor": "Użyj koloru akcentu {color}",
+    "useMonochrome": "Użyj monochromatycznego akcentu",
+    "pickCustomColor": "Wybierz niestandardowy kolor akcentu",
+    "customColorPicker": "Niestandardowy selektor koloru akcentu",
+    "primaryNav": "Główna"
+  },
+  "section": {
+    "introduction": "Wprowadzenie",
+    "curriculum": "Kurrikulum"
+  },
+  "nav": {
+    "intro": "Intro",
+    "sectionsLabel": "Sekcje kurrikulum"
+  },
+  "table": {
+    "lesson": "Lekcja",
+    "title": "Tytuł",
+    "activities": "Aktywności",
+    "linksAndImages": "Linki i obrazy",
+    "label": "Kurrikulum",
+    "openLesson": "Otwórz lekcję: {title}",
+    "activityAria": "{label}: {title}"
+  },
+  "activityTabs": {
+    "label": "Aktywności lekcji",
+    "overview": "Przegląd"
+  },
+  "activityBlock": {
+    "forFacilitators": "Dla Facylitatorów",
+    "intro": "Intro"
+  },
+  "intro": {
+    "metaTitle": "Wprowadzenie — Archiwum Kurrikulum Współczującego",
+    "metaDescription": "Praktyka Nadziei. Kurrikulum Współczujące to partycypacyjne ramy do nauki, refleksji i zbiorowego wzrostu.",
+    "heading": "Wprowadzenie: Praktyka Nadziei",
+    "p1": "Kurrikulum Współczujące to partycypacyjne ramy do nauki, refleksji i zbiorowego wzrostu, zaprojektowane ze wspólnotami i dla osób o doświadczeniu traumy lub jakiejkolwiek formy strukturalnej szkody. Opiera się na idei, że doświadczenie życiowe jest formą wiedzy, a uzdrawianie, krytyczne rozumienie i wyobraźnia są konieczne do budowania bardziej sprawiedliwych przyszłości.",
+    "p2": "Zamiast prosić uczestników o zwykłe odbieranie informacji, kurrikulum zaprasza ich do wspólnego nadawania znaczenia. Opiera się na współtwórczości, wzajemnej pomocy i etyce odpowiedzialności. Jest również oparty na mocnych stronach. Praca nie zaczyna się od tego, czego ludziom brakuje, ale od tego, co już wiedzą, co przetrwali i co mogą budować razem. W całym kurrykulum uczestnicy są zachęcani do refleksji nad własnym doświadczeniem, słuchania się nawzajem i praktykowania form wspólnego uczenia się, które mogą wspierać zarówno transformację osobistą, jak i szerszą zmianę społeczną.",
+    "p3Intro": "Kurrikulum ma trzy powiązane sekcje.",
+    "p3PillBeloved": "I. Społeczność Umiłowana",
+    "p3MidBeloved": "skupia się na tożsamości, przynależności, płynności emocjonalnej i traumie historycznej. Pomaga uczestnikom lepiej zrozumieć siebie, swoje relacje i szersze systemy, które kształtują sposób ich poruszania się po świecie.",
+    "p3PillRestorative": "II. Praktyka Przywracająca",
+    "p3MidRestorative": "wprowadza koła, aktywne słuchanie, reautoryzację i inne narzędzia wspierające zaufanie, refleksję, odpowiedzialność i wspólną odpowiedzialność.",
+    "p3PillMedia": "III. Media, Narracja i Tworzenie Przyszłości",
+    "p3MidMedia": "bada opowiadanie historii, reprezentację i wyobraźnię. Zaprasza uczestników do zbadania dominujących narracji, opowiedzenia pełniejszych historii o sobie i rozwinięcia zdolności wyobraźni do twórczego rozwiązywania problemów i kreowania przyszłości.",
+    "p4": "Kurrikulum Współczujące jest zaprojektowane jako otwarte i żywe ramy. Może być używane na uniwersytetach, w organizacjach społecznych, przestrzeniach rzecznictwa, ustawieniach badawczych i innych kontekstach grupowych, w których facylitatorzy chcą wspierać przynależność, dialog i wspólne uczenie się. Niektóre grupy mogą używać go jako strukturalną serię warsztatów. Inne mogą czerpać z poszczególnych sekcji lub aktywności i dostosowywać je do lokalnych potrzeb.",
+    "p5": "U podstaw kurrikulum leżą partycypacja, ucieleśnienie, opowiadanie historii i uczenie się wielomodalne. Jego celem jest stworzenie warunków, w których ludzie mogą myśleć krytycznie, łączyć się w różnicach i razem wyobrażać sobie inaczej. W tym sensie Kurrikulum Współczujące to nie tylko zbiór ćwiczeń, ale sposób praktykowania wzajemnego wsparcia, wspólnych poszukiwań i nadziei w komunii."
+  },
+  "about": {
+    "metaTitle": "O projekcie — Archiwum Kurrikulum Współczującego",
+    "heading": "O projekcie",
+    "p1": "Kurrikulum Współczujące to partycypacyjne ramy do nauki, refleksji i zbiorowego wzrostu, zaprojektowane ze wspólnotami i dla osób o doświadczeniu traumy lub jakiejkolwiek formy strukturalnej szkody. Opiera się na idei, że doświadczenie życiowe jest formą wiedzy, a uzdrawianie, krytyczne rozumienie i wyobraźnia są konieczne do budowania bardziej sprawiedliwych przyszłości.",
+    "p2": "Zamiast prosić uczestników o zwykłe odbieranie informacji, kurrikulum zaprasza ich do wspólnego nadawania znaczenia. Opiera się na współtwórczości, wzajemnej pomocy i etyce odpowiedzialności."
+  },
+  "contact": {
+    "metaTitle": "Kontakt — Archiwum Kurrikulum Współczującego",
+    "heading": "Kontakt",
+    "p1": "W przypadku pytań, współpracy lub aby podzielić się informacją o tym, jak wykorzystałeś kurrikulum, prosimy o kontakt z zespołem projektu."
+  },
+  "notFound": {
+    "heading": "Strona nie znaleziona",
+    "body": "Szukana strona nie mogła być zlokalizowana.",
+    "returnHome": "Powróć na stronę główną"
+  }
+}

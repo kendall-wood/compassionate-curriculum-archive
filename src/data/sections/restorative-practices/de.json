@@ -1,0 +1,688 @@
+{
+  "id": "restorative-practices",
+  "label": "II. Wiederherstellende Praktiken",
+  "title": "Wiederherstellende Praktiken",
+  "overview": "Dieser Abschnitt führt wiederherstellende Praktiken als partizipativen und relationalen Lernmodus ein. Der Fokus liegt auf mündlichem Geschichtenerzählen, Zuhören, gemeinsamer Autorenschaft und kollektiver Verantwortung. Die Praktiken in diesem Abschnitt helfen Teilnehmenden, Vertrauen aufzubauen, über Erfahrungen nachzudenken und mitfühlendere Wege des Zusammenseins zu entwickeln.",
+  "lessons": [
+    {
+      "id": "entering-the-circle",
+      "label": "L1",
+      "title": "Den Kreis Betreten",
+      "sectionId": "restorative-practices",
+      "facilitatorBlocks": [
+        {
+          "kind": "p",
+          "text": "Diese Aktivität führt Teilnehmende in wiederherstellende Praktiken und die grundlegenden Elemente der Kreisarbeit ein. Kreise sind die primäre wiederherstellende Praktik, die in diesem Lehrplan verwendet wird. Wie Kay Pranis und Carolyn Boyes-Watson in Circle Forward beschreiben, funktionieren sie am besten, wenn Gruppen damit beginnen, sich kennenzulernen, gemeinsame Werte zu etablieren und Vertrauen aufzubauen, bevor sie in tiefere Diskussionen übergehen. Kreise können für viele Zwecke verwendet werden, einschließlich Heilung, Trauerbewältigung, Unterstützung, Konfliktlösung, Reintegration und Feiern."
+        },
+        {
+          "kind": "p",
+          "text": "Ein Sprechstab ist ein Objekt, das im Kreis weitergegeben wird und markiert, wer spricht, und erinnert andere, aktiv zuzuhören; es ermöglicht auch jedem Teilnehmenden zu passen. Ein Mantel ist ein Tuch oder ein zentraler Raum, in dem bedeutungsvolle Objekte platziert werden können, um den Kreis als absichtsvoll und unterschiedlich zu markieren. Eine Landbestätigung ist eine Möglichkeit, die Geschichten, Menschen und andauernden Vermächtnisse zu benennen, die den Ort prägen, an dem ein Kreis stattfindet."
+        },
+        {
+          "kind": "p",
+          "text": "Richten Sie den Raum nach Möglichkeit in einem Kreis ein, mit ausreichend Platz zwischen den Beiträgen, damit die Teilnehmenden sich gegenseitig klar sehen können. Achten Sie im Voraus auf Barrierefreiheitsanforderungen. Halten Sie Papier und Stift in der Nähe für Notizen oder Folgeanmerkungen bereit, und haben Sie ein großes Blatt Papier oder eine Staffelei bereit, falls Sie planen, Vereinbarungen zur Gemeinschaft festzuhalten."
+        },
+        {
+          "kind": "p",
+          "bold": true,
+          "text": "Ein Kreis wird normalerweise die folgende Abfolge durchlaufen:"
+        },
+        {
+          "kind": "ul",
+          "items": [
+            "Willkommen und Zweck",
+            "Eröffnung oder Eisbrecher und gegebenenfalls Landbestätigung",
+            "Vereinbarungen zur Gemeinschaft",
+            "Einchecken",
+            "Diskussionsrunden",
+            "Auschecken und Abschluss"
+          ]
+        }
+      ],
+      "activities": [
+        {
+          "id": "a1",
+          "label": "A1",
+          "title": "Willkommen, Eröffnung & Vereinbarungen zur Gemeinschaft",
+          "blocks": [
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Willkommen und Zweck:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "die Kreisverantwortliche stellt sich selbst und den Sprechstab vor;",
+                "wenn Teilnehmende neu in wiederherstellenden Praktiken sind, erklärt die Kreisverantwortliche ihre Rolle und wie der Sprechstab verwendet wird;",
+                "wenn ein Mantel verwendet wird, erklären Sie, was er ist und warum die Objekte wichtig sind."
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Eröffnung und Eisbrecher"
+            },
+            {
+              "kind": "p",
+              "text": "Beginnen Sie mit einer einfachen Einleitungsfrage, um Teilnehmenden zu helfen, in den Raum einzutreten und zu verarbeiten. Einige Fragen erfordern möglicherweise mehr Vertrauen und Offenheit, daher sind nicht alle für jede Gruppe geeignet. Beispiele:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Wenn du eine Superkraft haben könntest, welche wäre es?",
+                "Wer sind deine Helden und warum?",
+                "Ein Ziel für deine Zeit in diesem Workshop ist...",
+                "Eine Sache, die du nicht über mich wissen würdest, wenn du mich nur siehst, ist...",
+                "Ein Aspekt meiner Identität, den ich in den Kreis bringen möchte, ist..."
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Vereinbarungen zur Gemeinschaft"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Die Kreisverantwortliche, die den Sprechstab hält, lädt Teilnehmende ein, zu benennen, was sie brauchen, um offen und ehrlich im Kreis sprechen zu können.",
+                "Beispielprompt: Welche Vereinbarungen sind dir wichtig, damit du dich persönlich braver fühlst, offen und ehrlich in diesem Kreis zu sprechen?",
+                "Der Sprechstab wird nach links weitergegeben, damit jede Teilnehmende die Möglichkeit hat, hinzuzufügen oder zu passen.",
+                "Dokumentieren Sie die Antworten und kehren Sie bei Bedarf zu ihnen zurück. Einige Kreisverantwortliche können Teilnehmende einladen, die endgültigen Vereinbarungen zu unterzeichnen."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a2",
+          "label": "A2",
+          "title": "Einchecken & Diskussionsrunden",
+          "blocks": [
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Einchecken"
+            },
+            {
+              "kind": "p",
+              "text": "Nach der Willkommensrunde und Vereinbarungen machen Sie eine einfache Einchecken-Runde, die mit dem Thema des Tages verbunden ist. Beispiele könnten sein: \"Wie geht es dir heute auf einer Skala von 1-10 und warum?\""
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Diskussionsrunden"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Sollten nur stattfinden, nachdem Teilnehmende eingecheckt haben, den Zweck des Kreises verstehen und wissen, wer anwesend ist.",
+                "Fragen sollten offen, absichtsvoll und mit persönlicher Erfahrung verbunden sein.",
+                "Checken Sie immer nach einer Runde ein und geben Sie den Sprechstab erneut weiter, falls jemand, der anfangs gepasst hat, sprechen möchte."
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Zur Reparatur von Beziehungen:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Wer deiner Meinung nach ist von dieser Situation betroffen, und auf welche spezifischen Wege haben sie darunter gelitten?",
+                "Was war der schwierigste Teil dieser Erfahrung für dich persönlich?",
+                "Was muss jetzt geschehen, um die Dinge für alle Beteiligten so richtig wie möglich zu machen?"
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Für organisatorischen Wandel & Verarbeitung von Übergängen:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Welche Bedenken hast du bezüglich unserer bevorstehenden Veränderung? Welche Ängste hast du?",
+                "Was ist eine praktische Ressource oder Unterstützung, die du brauchst, um diese Veränderung erfolgreich zu meistern?"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a3",
+          "label": "A3",
+          "title": "Den Kreis Schließen",
+          "blocks": [
+            {
+              "kind": "p",
+              "text": "Schließen Sie mit einer Runde von Antworten auf reflektierende Prompts, die Teilnehmenden helfen, den Kreis mit Sorgfalt und Absicht zu verlassen."
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Mögliche Prompts:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Was nimmst du heute mit dir?",
+                "Wie wirst du heute Selbstfürsorge praktizieren?",
+                "Welche Verpflichtung bist du bereit einzugehen, basierend auf unserem heutigen Kreis?"
+              ]
+            },
+            {
+              "kind": "p",
+              "text": "Nach der Abschlussrunde kann die Kreisverantwortliche eine kurze Erdungsübung wie Atmung, Bewegung, ein Gedicht, ein Lied oder einen Aufruf und eine Antwort leiten."
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Optional Folgemaßnahmen: Sprechstäbe"
+            },
+            {
+              "kind": "p",
+              "text": "Nach dem zweiten Kreis, wenn Teilnehmende sich besser kennen, kann die Kreisverantwortliche sie einladen, ein Objekt persönlicher Bedeutung als Sprechstab mitzubringen und, wenn sie möchten, zu teilen, warum es ihnen bedeutungsvoll ist. In digitalen Kreisen können der Sprechstab und der Mantel eher symbolisch als physisch sein, aber die gleichen Prinzipien gelten noch immer."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reauthoring-circles",
+      "label": "L2",
+      "title": "Umgeschriebene Kreise",
+      "sectionId": "restorative-practices",
+      "facilitatorBlocks": [
+        {
+          "kind": "p",
+          "text": "Umschreiben ist eine Weise zu verstehen, wie die Geschichten, die wir über uns selbst erzählen, durch größere soziale Kräfte geprägt sind, einschließlich Institutionen, Kultur und Machtsysteme. Der Begriff wurde zunächst von Michael White und David Epston (1990) als Teil der Narrativen Therapie entwickelt. In diesem Lehrplan ist Umschreiben keine Therapie. Es ist eine Gemeinschaftspraxis, die Menschen hilft, nachzudenken, wie dominante Mythen über Rasse, Klasse, Geschlecht, Behinderung, Kriminalisierung und Zugehörigkeit die Identität prägen, und wie diese Mythen in Frage gestellt werden könnten."
+        },
+        {
+          "kind": "p",
+          "text": "Die Umschreib-Praxis sucht nach dem, was manchmal problemgesättigte Narrative genannt wird: Geschichten, in denen eine Person durch Schwierigkeiten, Stigma oder eine einzelne Erfahrung definiert wird. Umschreiben fragt: Was ist noch wahr? Welche Stärken, Werte, Wissen und Einsicht sind bereits neben Schwierigkeiten, Stigma oder einer einzelnen definierenden Geschichte vorhanden? Es weigert sich, die einzelne Geschichte zu akzeptieren, und schafft Platz für eine vollständigere Darstellung."
+        },
+        {
+          "kind": "p",
+          "bold": true,
+          "text": "Ein umgeschriebener Kreis ist ein strukturiertes Gespräch mit drei Rollen:"
+        },
+        {
+          "kind": "ul",
+          "items": [
+            "Erzähler: eine Person teilt eine Geschichte, Herausforderung oder Frage",
+            "Zeugen: die Gruppe hört zu und spiegelt Stärken, Werte und Möglichkeiten wider",
+            "Kreisverantwortliche: die Person, die die Struktur hält und den Prozess unterstützt"
+          ]
+        },
+        {
+          "kind": "p",
+          "text": "Das Ziel ist nicht, zu urteilen, zu reparieren oder Ratschläge zu geben. Es ist, gemeinsam zuzuhören, was wichtig ist, was überlebt wurde und was gelernt wurde."
+        }
+      ],
+      "activities": [
+        {
+          "id": "a1",
+          "label": "A1",
+          "title": "Mächtige Fragen",
+          "blocks": [
+            {
+              "kind": "p",
+              "text": "Bevor Sie beginnen, bittet die Kreisverantwortliche um einen freiwilligen Erzähler, der bereit ist, eine Herausforderung, Frage oder einen Moment des Wachstums zu teilen, und checkt mit ihm ein, um die Zustimmung zu gewährleisten. Stellen Sie den Prozess klar vor: Eine Person wird teilen, andere werden zuhören und zurückspiegeln, was sie hören, die Gruppe hört auf Stärke und auf das, was wichtig ist, es wird kein Rat gegeben."
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Beispiele für gute Fragen:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Was hast du in jenem Moment über dich selbst bemerkt?",
+                "Was sagt dir das über das, was dir wichtig ist?",
+                "Was hat es gebraucht, um das durchzustehen?",
+                "Was hast du damals gebraucht?",
+                "Was könnte dir helfen, über das anders nachzudenken?"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a2",
+          "label": "A2",
+          "title": "Zeuge Sein",
+          "blocks": [
+            {
+              "kind": "p",
+              "text": "Zeuge sein bedeutet, auf Widerstandsfähigkeit zu hören, Wissen und Kapazität zu erkennen und diese zurückzuspiegeln. Das Ziel ist nicht zu reparieren, sondern zu benennen, was bereits vorhanden ist."
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Beispiele für Zeuge sein:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Was ich höre, ist, dass du...",
+                "Du hast weitermacht trotz...",
+                "Mir fallen die Strategien auf, die du entwickelt hast, um damit umzugehen...",
+                "Es scheint, als wären Fürsorge, Würde oder Fairness dir wirklich wichtig",
+                "Ich höre ein tiefes Engagement für...",
+                "Du hast etwas Wichtiges durch diese Erfahrung gelernt",
+                "Was ich höre, ist eine Geschichte darüber, wie du gesorgt, dich gewehrt oder gelernt hast"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a3",
+          "label": "A3",
+          "title": "Prozess & Abschließende Reflexion",
+          "blocks": [
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Prozess"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Die Kreisverantwortliche leitet die Eröffnung des Kreises.",
+                "Der Erzähler teilt, während er den Sprechstab hält.",
+                "Die Gruppe pausiert.",
+                "Der Sprechstab wird im Kreis weitergegeben. Zeugen spiegeln wider, was sie gehört haben.",
+                "Wenn der Sprechstab zum Erzähler zurückkehrt, laden Sie zur Reflexion ein."
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Abschließende Reflexions-Prompts:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Was hast du gehört?",
+                "Was fühlte sich wahr an?",
+                "Was hat dich überrascht?",
+                "Was möchtest du mitnehmen?",
+                "Was ist dir aufgefallen?",
+                "Was fühlte sich möglich in diesem Prozess an?",
+                "Wo könntest du das in deiner eigenen Arbeit nutzen?",
+                "Welche Unterstützung würde dir helfen, dich sicherer zu fühlen, sie zu erleichtern?"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sharing-our-stories",
+      "label": "L3",
+      "title": "Unsere Geschichten Teilen",
+      "sectionId": "restorative-practices",
+      "facilitatorBlocks": [
+        {
+          "kind": "p",
+          "text": "Diese Aktivität kann mit Tagebuchschreiben beginnen, entweder während oder zwischen Sitzungen, und später in Kreis-Sharing übergehen. Die Aufgabe ist, \"deine Geschichte\" zu schreiben."
+        },
+        {
+          "kind": "p",
+          "text": "Je nach Gruppengröße kann sich diese Aktivität über mehrere Sitzungen entfalten. Es kann hilfreich sein, wenn eine der Kreisverantwortlichen zunächst die Aktivität modeliert, oder wenn einige Teilnehmende im Voraus vorbereitet sind, um zu sehen, ob sie sich wohl fühlen, früh zu teilen. Teilnehmende sollten immer die Möglichkeit haben zu passen. Machen Sie Pausen zwischen Geschichten. Diese Kreise können intensiv sein, und Pausen helfen der Gruppe, füreinander präsent zu bleiben."
+        }
+      ],
+      "activities": [
+        {
+          "id": "a1",
+          "label": "A1",
+          "title": "Tagebuch-Prompts",
+          "blocks": [
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Prompts:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Wie heißt du?",
+                "Wo wohnst du? Hast du immer dort gelebt?",
+                "Wo bist du aufgewachsen?",
+                "Welche Kindheitserinnerungen bleiben bei dir?",
+                "Mit wem wohnst du zusammen?",
+                "Hast du Geschwister? Wie ist deine Beziehung zu ihnen?",
+                "Wie ist deine Beziehung zu deinen Eltern oder Erziehungsberechtigten?",
+                "Mit welchen Schwierigkeiten hast du dich auseinandergesetzt? Welche Hindernisse hast du überwunden?",
+                "Auf welche Leistungen bist du stolz?",
+                "Wie bist du zu dieser Arbeit gekommen?",
+                "Warum ist diese Arbeit für dich wichtig?",
+                "Wie wirst du das aktivieren, was du lernst?",
+                "Was sind deine Leidenschaften und langfristigen Ziele?"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "land-ancestor-acknowledgement",
+      "label": "L4",
+      "title": "Land- & Ahnenbestätigung",
+      "sectionId": "restorative-practices",
+      "facilitatorBlocks": [
+        {
+          "kind": "p",
+          "text": "Diese Aktivität lädt Teilnehmende ein, über die Geschichten, Orte, Ahnen und Abstammungslinien nachzudenken, die den Raum prägen, in dem sie sich befinden. Sie basiert auf Ressourcen der Native Land Digital, um über performative oder transaktionale Rahmen hinauszugehen."
+        },
+        {
+          "kind": "p",
+          "text": "Bevor Sie diese Aktivität erleichtern, recherchieren Sie, auf wessen Land der Kreis stattfindet, wer dort in der Vergangenheit lebte und wer dort jetzt lebt. Dies kann sowohl formale Recherche als auch Gespräche mit Gemeindemitgliedern erfordern."
+        },
+        {
+          "kind": "p",
+          "text": "Dies kann eine schwierige Aktivität sein. Teilnehmende können adoptiert sein, ihre Geschichten nicht kennen oder Trauma im Zusammenhang mit Familie, Sklaverei, Kolonisierung, Migration oder Vertreibung tragen. Gehen Sie langsam vor. Bauen Sie Pausen ein."
+        }
+      ],
+      "activities": [
+        {
+          "id": "a1",
+          "label": "A1",
+          "title": "Reflexions-Prompts",
+          "blocks": [
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Mögliche Prompts"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Wer sind die Ahnen und Menschen, die wir schätzen sollten, wenn wir uns versammeln?",
+                "Wie ist deine Migrationsstory?",
+                "Wer sind deine Ältesten, lebend und verstorben, und wie sind sie in dir präsent?"
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Nachfolgende Optionen"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "schreib deine eigene Landbestätigung",
+                "teil sie im Kreis",
+                "entwickle eine gemeinsame Bestätigung in kleinen Gruppen oder als ganze Gruppe"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a2",
+          "label": "A2",
+          "title": "Beispiel-Bestätigung",
+          "blocks": [
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Beispiel aus der Lenapehoking (NJ, östliches PA, südöstliches NY):"
+            },
+            {
+              "kind": "p",
+              "text": "\"Ich möchte mit einer Bestätigung beginnen, dass wir auf dem unkedierten Territorium des Lenape-Volkes sind. Ich möchte meine Achtung vor den Lenape-Ahnen und vor gegenwärtigen und zukünftigen Generationen auf dieser Heimat erweisen, sowie vor den Lenape in der Diaspora. Ich möchte diese Bestätigung auch auf alle indigenen Völker ausdehnen, die jetzt und in Zukunft diese Lenape-Heimaten, Lenapehoking, als Heimat nennen. Diese Bestätigung ist ein Engagement zum Adressieren der andauernden Vermächtnisse von Siedler-Kolonialismus, Rassismus, Massenincarcerierung und des Gefängnissystems.\""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "circle-questions",
+      "label": "L5",
+      "title": "Kreis-Fragen und Zuhör-Praktiken",
+      "sectionId": "restorative-practices",
+      "facilitatorBlocks": [
+        {
+          "kind": "p",
+          "text": "Das Quellenmaterial umfasst Mediators Beyond Borders und The Art of Powerful Questions von Eric E. Vogt, Juanita Brown und David Isaacs. In der Circle-Praxis werden Fragen Prompts genannt und sorgfältig angeordnet, die sich von Fragen mit niedriger Verletzlichkeit (um Sicherheit aufzubauen) zu Fragen mit hoher Verletzlichkeit (um das Kernthema zu adressieren) bewegen, und mit Reflexion abschließen."
+        },
+        {
+          "kind": "p",
+          "bold": true,
+          "text": "Schnelle Facilitator-Tipps für Runden-Fragen"
+        },
+        {
+          "kind": "ul",
+          "items": [
+            "Halten Sie sie offen: vermeiden Sie Fragen, die mit einem einfachen \"ja\" oder \"nein\" beantwortet werden können. Nutzen Sie Was, Wie oder Kannst du beschreiben... statt Warum.",
+            "Modellieren Sie den Prompt: als Facilitator ist es oft hilfreich, die Frage selbst zu beantworten, wenn Sie sie vorstellen.",
+            "Passen ist immer eine Option: erinnern Sie Teilnehmende daran, dass sie, wenn der Sprechstab zu ihnen kommt, wählen können zu passen, in Stille zu halten oder zu sprechen."
+          ]
+        }
+      ],
+      "activities": [
+        {
+          "id": "a1",
+          "label": "A1",
+          "title": "Öffnungs- & Vertiefungs-Fragen",
+          "blocks": [
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Öffnungs-Fragen — Bitte sag deinen Namen und..."
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "teile etwas, das du erfahren oder lernen möchtest, während du hier bist",
+                "teile etwas, das dir zeigen würde, dass du froh bist, dich zu beteiligen",
+                "sag, was dich zu dieser Untersuchung zieht",
+                "benenne etwas, das du hinter dir gelassen hast, um hier heute zu sein"
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Vertiefungs-Fragen"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Was ist das Herz dieser Angelegenheit für dich?",
+                "Welche Hoffnungen, Ängste, Bedenken oder unerfüllten Bedürfnisse sind für dich um diese Angelegenheit herum präsent?",
+                "Welche Dilemmata oder Chancen siehst du?"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a2",
+          "label": "A2",
+          "title": "Verarbeitungs-, Vorwärts-Bewegungs- & Abschluss-Fragen",
+          "blocks": [
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Verarbeitungs-Fragen"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Was nimmt Gestalt an hier?",
+                "Was hörest du unter der Vielfalt der ausgedrückten Meinungen?",
+                "Was hatte wirkliche Bedeutung für dich in dem, was du gehört hast?",
+                "Gibt es etwas, das wir nicht klar sehen?"
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Vorwärts-Bewegungs-Fragen"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Was könnte passieren, das dir helfen würde, dich vollständig in diese Arbeit engagiert zu fühlen?",
+                "Was ist möglich hier, und wen kümmert es?",
+                "Welche nächsten Schritte möchtest du einzeln oder kollektiv unternehmen?",
+                "Wie können wir uns gegenseitig unterstützen, um diese Schritte zu unternehmen?",
+                "Welcher Samen könnte wir gemeinsam pflanzen, der den größten Unterschied für die Zukunft dieser Situation machen könnte?"
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Abschluss-Fragen"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Was nimmst du aus diesem Kreis mit?",
+                "Was hast du beigetragen, oder hättest du gerne beigetragen?",
+                "Welche nächsten Schritte hoffst du zu unternehmen?",
+                "Welche Fragen erhoffst du, dass diese Gruppe als nächstes adressiert?",
+                "Welche Unterstützung brauchst du, oder möchtest du anbieten, wenn du gehst?"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a3",
+          "label": "A3",
+          "title": "Fähigkeiten für Aktives Zuhören",
+          "blocks": [
+            {
+              "kind": "ul",
+              "items": [
+                "Körpersprache: bewahren Sie offene Körpersprache und Aufmerksamkeit. Halten Sie Augenkontakt, wo angemessen, schauen Sie zum Sprechenden, adoptieren Sie eine entspannte Körperhaltung und vermeiden Sie Multitasking.",
+                "Folgen: geben Sie dem Sprechenden Platz zu sprechen ohne Unterbrechung. Das bedeutet, unnötige Fragen zu reduzieren, Stille zu tolerieren und einen Gedanken sich entfalten zu lassen.",
+                "Umformulieren und Spiegeln: fassen Sie zusammen, was Sie gehört haben, einschließlich sowohl Inhalt als auch Gefühl. Zum Beispiel: \"Was ich höre, ist...\"",
+                "Stellen Sie offene Fragen: die Reflexion einladen statt ja/nein Antworten.",
+                "Validierung: nehmen Sie an, dass alles, was geteilt wird, so klar oder unvollkommen, aus etwas Realem in der Erfahrung des Sprechenden kommt."
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Eine achtsame Zuhör-Aktivität:"
+            },
+            {
+              "kind": "p",
+              "text": "Schließe deine Augen und: beachte, wie viele Geräusche du um dich herum und in dir wahrnehmen kannst; beachte Urteile, die entstehen, ohne dich an sie zu klammern; konzentriere dich auf den Klang, Fluss und Rhythmus deines Atems; mache eine somatische Bestandsaufnahme, bewege dich langsam durch den Körper und entspanne jeden Teil."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "grounding-activities",
+      "label": "L6",
+      "title": "Erdungs-Aktivitäten",
+      "sectionId": "restorative-practices",
+      "facilitatorBlocks": [
+        {
+          "kind": "p",
+          "text": "Erdungsübungen sind Techniken, die entwickelt sind, um dich schnell von Angst, Panik oder Flashbacks weg und zurück zu bewegen in den gegenwärtigen Moment und deine physischen Umgebung. Sie können Teil der Absichtsetzung für einen Workshop sowie der Verbindung mit Mitgliedern einer Gruppe sein."
+        }
+      ],
+      "activities": [
+        {
+          "id": "a1",
+          "label": "A1",
+          "title": "Verbindung mit dem Land",
+          "blocks": [
+            {
+              "kind": "p",
+              "text": "Das Tempo ist hier wichtig. Erlaube die Bewegung sowohl für das Sitzen als auch für die Atmung. Die Facilitatorin sagt: \"Finde einen Platz, wo du bequem sitzen kannst oder sitzen kannst.\""
+            },
+            {
+              "kind": "p",
+              "text": "\"Wenn du dich dabei wohl fühlst, schließ deine Augen. Wenn du das nicht möchtest, finde einfach einen Ort vor dir, auf den du sanft fokussieren kannst. Mache nun vier tiefe Atemzüge. Spüre deine Brust heben und senken, während du die Luft einatmest und abgibst. Jedes Mal, wenn du einatmest, stell dir vor, eine ruhige, friedliche Gefühl einzuatmen. Während du ausatmest, lass all den Stress deinen Körper verlassen. Lass deine Schultern entspannen und weich werden. Lass deine Augen und dein Gesicht entspannen und weich werden. Lass all den Stress deinen ganzen Körper verlassen. Spüre die Verbindung mit unseren Ahnen, die Heiligkeit des Raums und die Verbindung mit dem Land.\""
+            }
+          ]
+        },
+        {
+          "id": "a2",
+          "label": "A2",
+          "title": "Sensorische Awareness (5-4-3-2-1)",
+          "blocks": [
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Zweck: Gehirn schneller Neustart"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "5: Suche nach 5 Dingen, die du um dich herum sehen kannst (z.B. ein Stuhl, eine Pflanze, der Himmel).",
+                "4: Konzentriere dich auf 4 Dinge, die du berühren kannst (z.B. dein Haar, der Schreibtisch, der Boden).",
+                "3: Höre auf 3 Dinge, die du hören kannst (z.B. Verkehr, Vögel, dein Atem).",
+                "2: Stelle 2 Dinge fest, die du riechen kannst (z.B. Seife, Luft, Essen).",
+                "1: Beachte 1 Ding, das du schmecken kannst (z.B. Zahnpasta, Kaffee)."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a3",
+          "label": "A3",
+          "title": "Physische & Taktile Erdung",
+          "blocks": [
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Zweck: Bewusstsein für deinen Körper und seine Verbindung zur Umwelt"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Drücke deine Fersen ein: konzentriere dich auf deine Füße auf dem Boden, beachte das Gewicht.",
+                "Temperaturwechsel: lass kaltes oder warmes Wasser über deine Hände laufen.",
+                "Anspannen/Loslassen: spanne deine Fäuste an, halte sie 5-10 Sekunden, dann lass los und spüre die Entspannung.",
+                "Trage ein beruhigendes Objekt: trage einen kleinen Stein, ein Tuch oder Schmuck in deiner Tasche, um ihn zu berühren.",
+                "Dehne dich: strecke deine Arme und Beine, um Spannungs- und Entspannungsempfindungen zu spüren.",
+                "Schmetterlingstippen: tippe sanft auf deine Brust oder Schultern mit deinen Händen, wechsle die Seiten ab."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a4",
+          "label": "A4",
+          "title": "Liebevolle-Güte-Meditation",
+          "blocks": [
+            {
+              "kind": "p",
+              "text": "Liebevolle-Güte-Meditation (auch Metta bekannt) ist eine Achtsamkeitspraxis, die entwickelt ist, um Mitgefühl, Wärme und guten Willen zu kultivieren. Lege eine Hand auf dein Herz, wenn du emotionalen Widerstand fühlst. Es gibt keine richtige Weise zu fühlen — einfach die Absicht zu haben, jemandem Gutes zu wünschen trägt den gleichen mentalen Nutzen."
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Du selbst"
+            },
+            {
+              "kind": "p",
+              "text": "\"Möge ich glücklich sein. Möge ich gesund sein. Möge ich sicher sein. Möge ich mit Leichtigkeit leben.\""
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Ein Geliebter"
+            },
+            {
+              "kind": "p",
+              "text": "\"Mögest du glücklich sein. Mögest du gesund sein. Mögest du sicher sein. Mögest du mit Leichtigkeit leben.\""
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Alle Wesen"
+            },
+            {
+              "kind": "p",
+              "text": "\"Mögen alle Wesen überall glücklich, gesund und frei sein.\""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

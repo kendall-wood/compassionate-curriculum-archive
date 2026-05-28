@@ -1,0 +1,372 @@
+{
+  "id": "media-narrative-futuring",
+  "label": "III. Media, Narracja i Przyszłość",
+  "title": "Media, Narracja i Przyszłość",
+  "overview": "Ta sekcja wspomaga uczestników w opowiadaniu pełniejszych historii o sobie, analizie historii opowiadanych przez media oraz rozwijaniu zdolności wyobraźni do tworzenia przyszłości. Zaczyna się od refleksji indywidualnej, przechodzi przez opowiadanie ucieleśnione i analizę wizualną, a kończy się na przyszłości partycypacyjnej.",
+  "lessons": [
+    {
+      "id": "individual-reflection",
+      "label": "L1",
+      "title": "Refleksja Indywidualna, Autoportret",
+      "sectionId": "media-narrative-futuring",
+      "facilitatorBlocks": [
+        {
+          "kind": "p",
+          "text": "Te ćwiczenia pomagają uczestnikom refleksji nad tożsamością, pamięcią, nastrojem i samookreśleniem poprzez kolor, dźwięk, pismo i obraz."
+        },
+        {
+          "kind": "p",
+          "text": "W jaki sposób brak zasobów, marginalizacja kulturowa i doświadczenie traumy mogą uniemożliwić zdolność lub chęć do wyobraźni, czy nawet przekonanie o znaczeniu samej wyobraźni? Ta sekcja wychodzi z założenia, że kultura dominująca często spłaszcza tożsamość. Osoby, które są kryminalizowane lub stereotypizowane, mogą zacząć opisywać siebie poprzez ograniczające narracje zamiast pełnej złożoności ich życia."
+        },
+        {
+          "kind": "p",
+          "text": "Wyobraźnia jest praktyką nadziei. Polega na reorganizowaniu obecnych idei w nowe możliwe kombinacje. Dla osób, których doświadczenie wyboru było ograniczone, może być zrozumiałe trudne w nadziewać się, że jakakolwiek przyszła sprawczość mogłaby być możliwa. Zacznij od niskich stawek form refleksji i opowiadania, a następnie stopniowo rozwijaj się w kierunku analizy mediów i przyszłości."
+        }
+      ],
+      "activities": [
+        {
+          "id": "a1",
+          "label": "A1",
+          "title": "Koło Barw",
+          "blocks": [
+            {
+              "kind": "ul",
+              "items": [
+                "Zaproś uczestników do spojrzenia na obraz koła barw, lub wyobraź sobie je umysłowo i opisz asocjacje, które mają z każdym kolorem. Asocjacje mogą odnosić się do emocji, wspomnienia lub historii, którą chcielibyśmy opowiedzieć.",
+                "Opcjonalnie: na dużej kartce papieru lub tablicy, stwórz wspólne koło barw lub mapę barw, którą uczestnicy czują, że reprezentuje całą grupę. Może to obejmować kształt, formę, wybrane kolory lub język pisany, jeśli jest pożądany."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a2",
+          "label": "A2",
+          "title": "Portret Pola Barw (wzorem Marka Rothki)",
+          "blocks": [
+            {
+              "kind": "ul",
+              "items": [
+                "Stwórz autoportret używając stosu 2-3 pól barw.",
+                "Uczestnicy mogą refleksji nad różnymi sposobami tworzenia stosu i dzielą się swoimi decyzjami projektowymi z partnerem.",
+                "Na przykład, czy pola barw są ujęte w większym tle innego koloru? Czy między polami są przestrzenie, a jeśli tak, jak duże?"
+              ]
+            },
+            {
+              "kind": "p",
+              "text": "Notatka dla facylitatora: Możesz chcieć pokazać malarstwa Pola Barw Marka Rothkiego, albo przed, albo po ćwiczeniu, w ramach dyskusji."
+            }
+          ]
+        },
+        {
+          "id": "a3",
+          "label": "A3",
+          "title": "Życie w 3 Piosenkach",
+          "blocks": [
+            {
+              "kind": "ul",
+              "items": [
+                "Zaproś uczestników do rozważenia 3 piosenek, które opisują ich życie.",
+                "Odtwórz każdą piosenkę, poświęcając 1-2 minuty przed lub po każdej, aby wyjaśnić jej znaczenie.",
+                "Utwórz i udostępnij playlistę.",
+                "Za zgodą, nagrywaj każde wstęp, a następnie piosenkę."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a4",
+          "label": "A4",
+          "title": "Jestem Z Poematu",
+          "blocks": [
+            {
+              "kind": "ul",
+              "items": [
+                "Użyj formatu George'a Ella Lyon'a 'Jestem Z', aby pomóc uczestnikom przetłumaczyć pamięć i codzienne szczegóły na formę poetycką; kopiuj na puste kartki w razie potrzeby. http://www.georgeellalyon.com/where.html",
+                "Podziel się i, jeśli udzielona jest zgoda, nagrywaj ludzi czytających na głos.",
+                "Rozważ, jak poematy mogą prowadzić do dalszego pisania; np. wspomnienia o miejscu mogą prowadzić do pisania o wspomnieniu zdarzenia, które tam się odbyło; wspomnienia o muzyce lub jedzeniu mogły prowadzić do pisania o osobach, miejscach lub zdarzeniach związanych z tymi rzeczami."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "embodied-storytelling",
+      "label": "L2",
+      "title": "Opowiadanie Ucieleśnione",
+      "sectionId": "media-narrative-futuring",
+      "facilitatorBlocks": [
+        {
+          "kind": "p",
+          "text": "Te ćwiczenia tłumaczą osobiste doświadczenie na gest, tablicę, głos i obraz. Pozwalają uczestnikom eksplorować emocjonalną pamięć i współdzielone interpretacje bez wymagania pełnego ujawnienia."
+        }
+      ],
+      "activities": [
+        {
+          "id": "a1",
+          "label": "A1",
+          "title": "Story Swap > Image Theater (wzorem Augusto Boala)",
+          "blocks": [
+            {
+              "kind": "ul",
+              "items": [
+                "W parach, uczestnicy opisują scenę lub zdarzenie z ich życia, jakby było zamrożone w czasie, które pamiętają na podstawie emocjonalnego podpowiedzi.",
+                "Potencjalne podpowiedzi obejmują: przeszkodę, nadzieję, ucieczkę, izolację, znalezienie ciszy.",
+                "Opisz wszystko możliwe na podstawie wspomnień sensorycznych: Jaką porę roku była, o której porze dnia? Jeśli na zewnątrz, jakie były otaczające budynki lub krajobraz? Jeśli wewnątrz, jak wyglądało wnętrze? Jak rzeczy brzmiały i pachniały? Jakie były kolory i światło?",
+                "Opisz relacje: czy ktoś inny tam był? Jeśli tak, kim byli, jak byli związani z tobą i co się działo?",
+                "Słuchacz rozważa, co uważa za serce historii, jej emocjonalne lub konceptualne jądro.",
+                "Za zgodą partnera, słuchacz reprezentuje historię jednym zamrożonym gestem.",
+                "Inni uczestnicy dyskutują o tym, co widzą. Jeśli opowiadacz się zgodzi, mogą ujawnić szczegóły pierwotnej historii."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a2",
+          "label": "A2",
+          "title": "Monolog Wewnętrzny",
+          "blocks": [
+            {
+              "kind": "ul",
+              "items": [
+                "Na podstawie poprzedniego ćwiczenia, opowiadacz pozycjonuje innych w tablicy (grupa osób stojąca w \"zamraża-klatce\"), aby reprezentować kluczowy moment historii.",
+                "Opowiadacz daje uczestnikom minimalne informacje kontekstowe niezbędne do zrozumienia, gdzie i kim są, np.: \"Jesteśmy na zewnątrz, w mieście, w 1992 roku. Jesteś mężczyzną w wieku około 35 lat.\"",
+                "Każdy uczestnik wyobraża sobie, o czym myśli jego postać, i jeden po drugim, wypowiada ten monolog wewnętrzny."
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Opcjonalna dokumentacja, za zgodą:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Sfotografuj uczestników w tablicy",
+                "Nagrywaj audio głosów",
+                "Filmuj spacer wokół grupy, gdy uczestnicy wypowiadają swój monolog wewnętrzny"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a3",
+          "label": "A3",
+          "title": "Tryptyk Sensoryczny",
+          "blocks": [
+            {
+              "kind": "ul",
+              "items": [
+                "Zaproś uczestników do wyobrażenia sobie, że poruszają się przez przyszłą przestrzeń, którą chcieliby zamieszkać.",
+                "Uczestnicy powinni opisać krytyczne szczegóły sensoryczne widzenia, słyszenia, zapachania, dotyku i to, jak ich ciało się czuje, gdy porusza się w stosunku do przestrzeni.",
+                "Uczestnicy tworzą trzy obrazy, które reprezentują trzy kluczowe części historii, takie jak początek, środek i koniec, 3 różne percepcje sensoryczne, 3 emocje itp.",
+                "Uczestnicy obserwują obrazy siebie nawzajem i opisują asocjacje.",
+                "Ta czynność może być połączona z ćwiczeniami Photovoice lub Participatory Futuring."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "media-analysis",
+      "label": "L3",
+      "title": "Analiza Mediów i Opowiadanie Wizualne",
+      "sectionId": "media-narrative-futuring",
+      "facilitatorBlocks": [
+        {
+          "kind": "p",
+          "text": "Te ćwiczenia pomagają uczestnikom analizie, jak opowiadane są historie o ludziach w mediach, i tworzenia wizualnych odpowiedzi zakorzenionej w ich własnym doświadczeniu."
+        }
+      ],
+      "activities": [
+        {
+          "id": "a1",
+          "label": "A1",
+          "title": "Zmiana Etykiet Obrazów",
+          "blocks": [
+            {
+              "kind": "p",
+              "text": "Celem tej czynności jest analiza wywoływujących lub wieloznacznych obrazów ze współczesnych mediów na różne sposoby, aby użyć je jako podpowiedzi do dyskusji. Może to ułatwić analizę mediów, aby zrozumieć i krytykować, jak media przekazują wiadomości wspierające negatywne stereotypy; lub wymawiać dyskusję doświadczenia uczestników."
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Podpowiedzi do oznaczania obrazów:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Co widzisz? Analizuj kolor i kształty; czy jakieś dominują? Czy istnieją jakieś wzorce?",
+                "Jaka jest historia tego obrazu? Co się stało do tego momentu? Zaznacz poprzednie etapy historii.",
+                "Kto tu jest i co robi?",
+                "Jakie są stosunki władzy na tym obrazie? Zaznacz stosunki ludzi do innych ludzi, przedmiotów, budynków, krajobrazu.",
+                "Co jest niewidoczne a co widoczne? Czy coś jest implikowane, ale nie pokazane?",
+                "Kto mógł zrobić ten obraz, z jakie perspektywy?",
+                "Co może się stać dalej? Zaznacz potencjalne przyszłe etapy historii."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a2",
+          "label": "A2",
+          "title": "Photovoice",
+          "blocks": [
+            {
+              "kind": "p",
+              "text": "Photovoice to uczestnicza metoda wizualna, w której grupa definiuje pytanie o kwestię wpływającą na ich społeczność, bierze fotografie w odpowiedzi i używa tych obrazów do stymulowania dyskusji. Proces wspomaga uczestników w refleksji nad doświadczeniem życiowym, identyfikowaniu problemów, które chcą zmienić, i eksploracji możliwych form działania."
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Proces"
+            },
+            {
+              "kind": "ol",
+              "items": [
+                "Wspólnie zdefiniuj problem, który chciałbyś rozwiązać jako grupa",
+                "Stwórz swoje kierunkowe pytanie (bądź osobisty, skoncentruj się na jednym problemie, określ dobry zakres)",
+                "Bierz Fotografie — uczestnicy robią zdjęcia w odpowiedzi na pytanie, które wyrażają ich perspektywę",
+                "Dyskutuj używając metody SHMIR: Widzisz, Stanie się, Znaczenie, Problem, Odpowiedź",
+                "Syntezuj — identyfikuj kluczowe tematy, wzorce lub wspólne doświadczenia",
+                "Rozpowszechniaj (opcjonalnie) — zine, wystawę, online, publiczną prezentację",
+                "Refleksja — co się wyróżniało? co zadziałało lub mogłoby być ulepszone? co czuło się znaczące?"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "participatory-futuring",
+      "label": "L4",
+      "title": "Przyszłość Partycypacyjna i Budowanie Światów",
+      "sectionId": "media-narrative-futuring",
+      "facilitatorBlocks": [
+        {
+          "kind": "p",
+          "text": "Te ćwiczenia wspierają uczestników w wyobrażeniu sobie alternatywnych przyszłości, eksperymentowaniu z możliwościami i łączeniu wizji przyszłości z teraźniejszym działaniem."
+        },
+        {
+          "kind": "p",
+          "bold": true,
+          "text": "Zawartość"
+        },
+        {
+          "kind": "ul",
+          "items": [
+            "Backcasting — uczestnicy wspólnie wyobrażają sobie projekty z funkcjonującej przyszłości, aby zobaczyć, czy jakieś mogą zainspirować rzeczy do zbudowania w teraźniejszości",
+            "Budowanie Światów — wyobraża sobie logikę przyszłego społeczeństwa, w którym potencjalnie modelować zmianę",
+            "Future Cones — ułatwia wyobrażenie sobie siebie pozytywnie istniejącego w przyszłości"
+          ]
+        }
+      ],
+      "activities": [
+        {
+          "id": "a1",
+          "label": "A1",
+          "title": "Backcasting (Wspólna Wyobraźnia)",
+          "blocks": [
+            {
+              "kind": "p",
+              "text": "Na podstawie ćwiczenia przyszłości Przepisy dla Sprawiedliwych Społeczności opracowane przez Melanie Crean ze Ayodamolą Okunseinde, ta czynność zaprasza uczestników do wyobrażenia sobie przyszłości, mniej więcej 10-15 lat od teraz, gdzie określony problem społeczny został rozwiązany."
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Przykładowe podpowiedzi:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Wyobraź sobie przyszłość, gdzie przejścia z więzienia lub służby wojskowej do życia cywilnego odbywają się bezproblemowo.",
+                "Wyobraź sobie świat bez więzień, gdzie społeczności są zarówno bezpieczne, jak i sprawiedliwe."
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Przygotowanie"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Grupa decyduje o problemie, który chciałaby rozwiązać.",
+                "Rozważ przyszłość ~10-15 lat od teraz, w której problem ten już nie istnieje.",
+                "Podziel się na grupy po 2-3 osoby, daj każdej papier, coś do rysowania i trzy karty z podpowiedziami: Nastawienie społeczne lub emocjonalne, domenę przedmiotu, atrybut projektowy."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a2",
+          "label": "A2",
+          "title": "Budowanie Światów",
+          "blocks": [
+            {
+              "kind": "p",
+              "text": "Budowanie Światów to twórcza metoda wyobrażania sobie alternatywnych sposobów bycia poprzez opowiadanie historii. Konstruując fikcyjny lub spekulatywny świat, uczestnicy mogą eksplorować, jak działają systemy, relacje i struktury władzy, i rozważyć, jak mogą być transformowane."
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Proces"
+            },
+            {
+              "kind": "ol",
+              "items": [
+                "Geografia, Klimat i Ekologia — wyobraź sobie świat jako powiązany system",
+                "Kultura i Systemy Wiary — stwórz co najmniej dwie odrębne kultury, które współistnieją w tym świecie",
+                "Władza i Konflikt — rozważ, jak władza funkcjonuje",
+                "Postacie i Perspektywa — stwórz co najmniej dwie postacie w tym świecie",
+                "Rytuał i Refleksja — stwórz rytuał, tradycję lub zdarzenie, które ujawniają wiarę podstawową",
+                "Refleksja — jak twoje własne doświadczenie życiowe kształtuje, w jaki sposób skonstruowałeś ten świat?"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a3",
+          "label": "A3",
+          "title": "Future Cones",
+          "blocks": [
+            {
+              "kind": "p",
+              "text": "Zaadaptowane z ćwiczenia Ashley Jane Lewis oparte na Future Cone Stuart Candy'ego. To ćwiczenie prowadzi uczestników w wyobrażeniu sobie siebie trzy do pięciu lat w przyszłość. Korzystając z diagramu Futures Cone, eksplorują to, co jest prawdopodobne, wiarygodne, możliwe i preferowane w ich własnym rozwoju przyszłości."
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Future Cone to narzędzie do wyobrażania sobie wielu potencjalnych przyszłości:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Prawdopodobne: Co jest prawdopodobne, że się stanie na podstawie obecnych trajektorii.",
+                "Wiarygodne: Co mogło realnie się stać, nawet jeśli mniej prawdopodobne.",
+                "Możliwe: Co może się stać, w tym nieoczekiwane idee.",
+                "Preferowane: Najuczenie, znaczące wyniki — twoją pożądaną przyszłość."
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Kroki:"
+            },
+            {
+              "kind": "ol",
+              "items": [
+                "Nastawiaj — narysuj mały krąg po lewej oznaczony \"Ty\" lub \"Teraz\" i większy krąg po prawej oznaczony rokiem przyszłości. Połącz je, aby utworzyć poziomą stożek.",
+                "Kreśl Prawdopodobne — napisz 2-3 rzeczy, które prawdopodobnie będziesz robić za kilka lat.",
+                "Wyobraź sobie Możliwe — wylistuj 8-20 \"Możliwych\": narzędzi, praktyk, mediów, wspólprac, rezydencji, ambicji.",
+                "Zidentyfikuj Wiarygodne — wybierz 3-5 pozycji z listy \"Możliwe\", które czują się realistycznie w ciągu następnych 1-2 lat.",
+                "Zdefiniuj Preferowane — zakreśli 1-2 pozycje z pierścienia Wiarygodne, które czują się najbardziej ekscytujące, znaczące, lub dostosowane do twoich wartości."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,372 @@
+{
+  "id": "media-narrative-futuring",
+  "label": "III. Phương Tiện Truyền Thông, Tường Thuật & Hình Dung Tương Lai",
+  "title": "Phương Tiện Truyền Thông, Tường Thuật & Hình Dung Tương Lai",
+  "overview": "Phần này giúp những người tham gia kể những câu chuyện đầy đủ hơn về chính mình, phân tích những câu chuyện do phương tiện truyền thông kể ra, và xây dựng khả năng tưởng tượng để tạo ra tương lai. Nó bắt đầu bằng sự tự phản tỉnh cá nhân, tiếp tục với kể chuyện thể chất và phân tích hình ảnh, và kết thúc bằng hình dung tương lai có sự tham gia.",
+  "lessons": [
+    {
+      "id": "individual-reflection",
+      "label": "L1",
+      "title": "Tự Phản Tỉnh Cá Nhân, Chân Dung Tự Họa",
+      "sectionId": "media-narrative-futuring",
+      "facilitatorBlocks": [
+        {
+          "kind": "p",
+          "text": "Những bài tập này giúp những người tham gia tự phản tỉnh về bản sắc, ký ức, tâm trạng và tự mô tả thông qua màu sắc, âm thanh, viết và hình ảnh."
+        },
+        {
+          "kind": "p",
+          "text": "Làm thế nào mà thiếu tài nguyên, sự biên độc lập của văn hóa và trải nghiệm chấn thương có thể cản trở khả năng hoặc sẵn sàng tưởng tượng, hoặc niềm tin vào sự liên quan của chính tưởng tượng? Phần này bắt đầu từ sự hiểu biết rằng văn hóa thống trị thường san bằng bản sắc. Những người bị tội phạm hóa hoặc bị định kiến có thể bắt đầu mô tả chính mình thông qua những tường thuật hạn chế thay vì thông qua độ phức tạp đầy đủ của cuộc sống của họ."
+        },
+        {
+          "kind": "p",
+          "text": "Tưởng tượng là một thực hành của hy vọng. Nó liên quan đến việc sắp xếp lại các ý tưởng hiện tại thành những kết hợp mới có thể. Đối với những người có trải nghiệm lựa chọn hạn chế, có thể dễ hiểu rằng khó hy vọng rằng bất kỳ loại hành động tương lai nào có thể xảy ra. Hãy bắt đầu với các hình thức tự phản tỉnh và kể chuyện ít rủi ro, sau đó dần dần xây dựng hướng tới phân tích phương tiện truyền thông và hình dung tương lai."
+        }
+      ],
+      "activities": [
+        {
+          "id": "a1",
+          "label": "A1",
+          "title": "Vòng Tròn Màu Sắc",
+          "blocks": [
+            {
+              "kind": "ul",
+              "items": [
+                "Mời những người tham gia xem ảnh của vòng tròn màu sắc, hoặc hình dung nó trong tâm mắt của họ và mô tả những liên kết họ có với mỗi màu sắc. Những liên kết có thể liên quan đến một cảm xúc, một kỷ ức hoặc một câu chuyện mà họ muốn kể.",
+                "Tùy chọn: trên một tờ giấy lớn hoặc bảng trắng, tạo một vòng tròn màu sắc hoặc bản đồ màu sắc được chia sẻ mà những người tham gia cảm thấy đại diện cho toàn bộ nhóm. Điều này có thể liên quan đến hình dạng, dạng, các màu sắc được lựa chọn hoặc ngôn ngữ được viết theo ý muốn."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a2",
+          "label": "A2",
+          "title": "Chân Dung Trường Màu Sắc (theo Mark Rothko)",
+          "blocks": [
+            {
+              "kind": "ul",
+              "items": [
+                "Tạo một bức tự họa bằng cách sử dụng một chồng 2-3 trường màu sắc.",
+                "Những người tham gia có thể tự phản tỉnh về các cách khác nhau để tạo chồng và chia sẻ những lựa chọn thiết kế của họ với một đối tác.",
+                "Ví dụ, các trường màu sắc được khung trong một nền lớn hơn của một màu sắc khác không? Có những không gian giữa các trường, và nếu có, chúng lớn bao nhiêu?"
+              ]
+            },
+            {
+              "kind": "p",
+              "text": "Ghi chú của người tạo điều kiện: Bạn có thể muốn cho thấy các bức tranh Trường Màu Sắc của Mark Rothko, trước hoặc sau bài tập, như một phần của cuộc thảo luận."
+            }
+          ]
+        },
+        {
+          "id": "a3",
+          "label": "A3",
+          "title": "Cuộc Sống Trong 3 Bài Hát",
+          "blocks": [
+            {
+              "kind": "ul",
+              "items": [
+                "Mời những người tham gia cân nhắc 3 bài hát mô tả cuộc sống của họ.",
+                "Phát mỗi bài hát, dành 1-2 phút trước hoặc sau mỗi bài để giải thích ý nghĩa của nó.",
+                "Tạo và chia sẻ danh sách phát.",
+                "Với sự đồng ý, hãy ghi âm mỗi phần giới thiệu, theo sau là bài hát."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a4",
+          "label": "A4",
+          "title": "Tôi Là Bài Thơ Từ",
+          "blocks": [
+            {
+              "kind": "ul",
+              "items": [
+                "Sử dụng định dạng 'I Am From' của George Ella Lyon để giúp những người tham gia dịch ký ức và chi tiết hàng ngày thành dạng thơ; sao chép vào các tờ giấy trắng khi cần thiết. http://www.georgeellalyon.com/where.html",
+                "Chia sẻ ngoài và, nếu được đồng ý, ghi âm mọi người đọc to.",
+                "Cân nhắc cách các bài thơ có thể dẫn đến viết thêm; ví dụ, những đề cập đến một địa điểm có thể dẫn đến viết về ký ức của một sự kiện xảy ra ở đó; những đề cập đến âm nhạc hoặc thực phẩm có thể dẫn đến viết về mọi người, địa điểm hoặc sự kiện liên quan đến những điều đó."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "embodied-storytelling",
+      "label": "L2",
+      "title": "Kể Chuyện Thể Chất",
+      "sectionId": "media-narrative-futuring",
+      "facilitatorBlocks": [
+        {
+          "kind": "p",
+          "text": "Những bài tập này dịch trải nghiệm cá nhân thành cử chỉ, bảng, giọng nói và hình ảnh. Chúng cho phép những người tham gia khám phá ký ức cảm xúc và diễn giải chia sẻ mà không yêu cầu tiết lộ đầy đủ."
+        }
+      ],
+      "activities": [
+        {
+          "id": "a1",
+          "label": "A1",
+          "title": "Trao Đổi Câu Chuyện > Sân Khấu Hình Ảnh (theo Augusto Boal)",
+          "blocks": [
+            {
+              "kind": "ul",
+              "items": [
+                "Theo cặp, những người tham gia mô tả một cảnh hoặc sự kiện từ cuộc sống của họ như thể nó bị đóng băng trong thời gian, mà họ nhớ lại dựa trên một gợi ý cảm xúc.",
+                "Những gợi ý tiềm năng bao gồm: chướng ngại vật, hy vọng, thoát thoát, cô lập, tìm kiếm sự im lặng.",
+                "Mô tả tất cả những gì có thể dựa trên sự nhớ lại các giác quan: Nó là mùa gì và thời gian nào trong ngày? Nếu ở ngoài trời, các tòa nhà hoặc cảnh quan xung quanh trông như thế nào? Nếu ở trong nhà, phía trong trông như thế nào? Các vật có âm thanh gì và mùi gì? Các màu sắc và ánh sáng trông như thế nào?",
+                "Mô tả các mối quan hệ: có ai khác ở đó không? Nếu có, ai là họ, họ có liên quan gì đến bạn và điều gì đang xảy ra?",
+                "Người lắng nghe cân nhắc những gì họ nghĩ là trái tim của câu chuyện, lõi cảm xúc hoặc khái niệm của nó.",
+                "Với sự đồng ý của đối tác của họ, người lắng nghe đại diện cho câu chuyện với một cử chỉ đóng băng duy nhất.",
+                "Những người tham gia khác thảo luận về những gì họ thấy. Nếu người kể chuyện chọn, họ có thể tiết lộ chi tiết về câu chuyện gốc."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a2",
+          "label": "A2",
+          "title": "Độc Thoại Nội Tâm",
+          "blocks": [
+            {
+              "kind": "ul",
+              "items": [
+                "Dựa trên bài tập trước đó, người kể chuyện sắp xếp những người khác trong một bảng (một nhóm mọi người đứng trong \"khung đóng băng\"), để đại diện cho thời điểm cốt lõi của câu chuyện.",
+                "The Teller cung cấp cho những người tham gia thông tin bối cảnh tối thiểu cần thiết để hiểu họ ở đâu và ai, ví dụ: \"Chúng ta đang ở ngoài trời, trong một thành phố, vào năm 1992. Bạn là một người đàn ông khoảng 35 tuổi.\"",
+                "Mỗi người tham gia tưởng tượng những gì nhân vật của họ đang nghĩ, và lần lượt, phát ra độc thoại nội tâm đó."
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Tài liệu tùy chọn, với sự đồng ý:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Chụp ảnh những người tham gia trong bảng",
+                "Ghi âm giọng nói",
+                "Video đi bộ xung quanh nhóm khi những người tham gia phát ra độc thoại nội tâm của họ"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a3",
+          "label": "A3",
+          "title": "Ba Bức Tranh Nhạy Cảm",
+          "blocks": [
+            {
+              "kind": "ul",
+              "items": [
+                "Mời những người tham gia tưởng tượng chính mình di chuyển qua một không gian tương lai mà họ muốn cư trú.",
+                "Những người tham gia nên mô tả các chi tiết nhạy cảm quan trọng về tầm nhìn, âm thanh, mùi, cảm giác và cảm xúc của cơ thể khi nó di chuyển liên quan đến không gian.",
+                "Những người tham gia tạo ba hình ảnh đại diện cho ba phần chính của câu chuyện, chẳng hạn như một điểm bắt đầu, giữa và kết thúc, 3 nhận thức giác quan khác nhau, 3 cảm xúc, v.v.",
+                "Những người tham gia quan sát hình ảnh của nhau và mô tả các liên kết.",
+                "Hoạt động này có thể được kết hợp với các bài tập Photovoice hoặc Participatory Futuring."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "media-analysis",
+      "label": "L3",
+      "title": "Phân Tích Phương Tiện Truyền Thông & Kể Chuyện Hình Ảnh",
+      "sectionId": "media-narrative-futuring",
+      "facilitatorBlocks": [
+        {
+          "kind": "p",
+          "text": "Những bài tập này giúp những người tham gia phân tích cách kể chuyện về con người trong phương tiện truyền thông, và tạo ra những phản ứng hình ảnh có gốc rễ trong trải nghiệm của chính họ."
+        }
+      ],
+      "activities": [
+        {
+          "id": "a1",
+          "label": "A1",
+          "title": "Ghi Nhãn Lại Hình Ảnh",
+          "blocks": [
+            {
+              "kind": "p",
+              "text": "Mục tiêu của hoạt động này là phân tích các hình ảnh gợi dục hoặc không rõ ràng được lấy từ các phương tiện truyền thông phổ biến theo những cách khác nhau, để sử dụng làm lời nhắc nhở cho cuộc thảo luận. Nó có thể tạo điều kiện cho phân tích phương tiện truyền thông, để hiểu và phê bình cách phương tiện truyền thông truyền đạt những thông điệp hỗ trợ các định kiến tiêu cực; hoặc để khuyến khích thảo luận về trải nghiệm sống của những người tham gia."
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Gợi ý để đánh dấu hình ảnh:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Bạn thấy gì? Phân tích màu sắc và hình dạng; có cái nào nổi bật không? Có bất kỳ mô hình nào không?",
+                "Câu chuyện đằng sau hình ảnh này là gì? Điều gì đã xảy ra cho đến thời điểm này? Đánh dấu các giai đoạn trước của câu chuyện.",
+                "Ai ở đây và họ đang làm gì?",
+                "Các mối quan hệ quyền lực trong hình ảnh này là gì? Đánh dấu mối quan hệ của mọi người với những người khác, đồ vật, tòa nhà, cảnh quan.",
+                "Cái gì không thấy so với cái gì thấy? Có gì được ngụ ý nhưng không hiển thị không?",
+                "Ai có thể đã chụp hình ảnh này, từ quan điểm nào?",
+                "Điều gì có thể xảy ra tiếp theo? Đánh dấu các giai đoạn tương lai tiềm năng của câu chuyện."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a2",
+          "label": "A2",
+          "title": "Photovoice",
+          "blocks": [
+            {
+              "kind": "p",
+              "text": "Photovoice là một phương pháp trực quan có sự tham gia trong đó một nhóm xác định một câu hỏi về một vấn đề ảnh hưởng đến cộng đồng của họ, chụp ảnh để đáp ứng và sử dụng những hình ảnh đó để khuyến khích cuộc thảo luận. Quá trình này hỗ trợ những người tham gia trong việc tự phản tỉnh về trải nghiệm sống, xác định những vấn đề họ muốn thay đổi và khám phá các hình thức hành động có thể."
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Quá trình"
+            },
+            {
+              "kind": "ol",
+              "items": [
+                "Xác định chung vấn đề bạn muốn giải quyết như một nhóm",
+                "Tạo câu hỏi hướng dẫn của bạn (hãy cá nhân, tập trung vào một vấn đề, xác định phạm vi tốt)",
+                "Chụp Ảnh — những người tham gia chụp ảnh để phản ứng với câu hỏi mà bày tỏ quan điểm của họ",
+                "Thảo luận bằng phương pháp SHMIR: See, Happening, Meaning, Issue, Response",
+                "Tổng hợp — xác định các chủ đề, mô hình hoặc trải nghiệm chia sẻ chính",
+                "Phát tán (tùy chọn) — zine, triển lãm, trực tuyến, trình bày công khai",
+                "Phản ánh — cái gì nổi bật? cái gì hoạt động hoặc có thể cải thiện? cái gì cảm thấy có ý nghĩa?"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "participatory-futuring",
+      "label": "L4",
+      "title": "Hình Dung Tương Lai Có Sự Tham Gia và Xây Dựng Thế Giới",
+      "sectionId": "media-narrative-futuring",
+      "facilitatorBlocks": [
+        {
+          "kind": "p",
+          "text": "Những bài tập này hỗ trợ những người tham gia trong việc tưởng tượng các tương lai thay thế, thử nghiệm khả năng, và liên kết tầm nhìn tương lai với hành động hiện tại."
+        },
+        {
+          "kind": "p",
+          "bold": true,
+          "text": "Nội dung"
+        },
+        {
+          "kind": "ul",
+          "items": [
+            "Backcasting — những người tham gia tập thể tưởng tượng các thiết kế từ một tương lai hoạt động, để xem bất kỳ cái nào có thể truyền cảm hứng cho những thứ được xây dựng trong hiện tại",
+            "Worldbuilding — tưởng tượng logic của một xã hội tương lai trong đó có thể mô hình hóa sự thay đổi",
+            "Future Cones — tạo điều kiện cho việc tưởng tượng chính mình tích cực tồn tại trong tương lai"
+          ]
+        }
+      ],
+      "activities": [
+        {
+          "id": "a1",
+          "label": "A1",
+          "title": "Backcasting (Tưởng Tượng Tập Thể)",
+          "blocks": [
+            {
+              "kind": "p",
+              "text": "Dựa trên bài tập hình dung Prescriptions for Just Communities do Melanie Crean phát triển với Ayodamola Okunseinde, hoạt động này mời những người tham gia tưởng tượng một tương lai, khoảng 10-15 năm nữa, nơi một vấn đề xã hội cụ thể đã được giải quyết."
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Gợi ý ví dụ:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Tưởng tượng một tương lai nơi những quá trình chuyển đổi từ bị giam giữ hoặc phục vụ quân sự sang đời sống dân sự xảy ra một cách liền mạch.",
+                "Tưởng tượng một thế giới không có nhà tù, nơi các cộng đồng vừa an toàn vừa công bằng."
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Chuẩn bị"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Nhóm quyết định một vấn đề mà nó muốn giải quyết.",
+                "Hãy cân nhắc một tương lai khoảng 10-15 năm nữa trong đó vấn đề đó không còn tồn tại.",
+                "Chia thành các nhóm 2-3 người, cung cấp cho mỗi nhóm giấy, thứ gì đó để vẽ, và ba gợi ý thẻ: một Tâm trạng xã hội hoặc cảm xúc, một lĩnh vực chủ đề, một thuộc tính Thiết kế."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a2",
+          "label": "A2",
+          "title": "Xây Dựng Thế Giới",
+          "blocks": [
+            {
+              "kind": "p",
+              "text": "Worldbuilding là một phương pháp sáng tạo để tưởng tượng những cách sống thay thế thông qua kể chuyện. Bằng cách xây dựng một thế giới hư cấu hoặc suy đoán, những người tham gia có thể khám phá cách các hệ thống, mối quan hệ và cấu trúc quyền lực hoạt động, và xem xét cách chúng có thể được chuyển đổi."
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Quá trình"
+            },
+            {
+              "kind": "ol",
+              "items": [
+                "Địa lý, Khí hậu & Sinh thái — tưởng tượng một thế giới như một hệ thống kết nối",
+                "Văn hóa & Hệ thống Niềm tin — tạo ít nhất hai nền văn hóa khác nhau tồn tại trong thế giới này",
+                "Quyền Lực & Xung Đột — hãy xem xét cách quyền lực hoạt động",
+                "Nhân Vật & Quan Điểm — tạo ít nhất hai nhân vật trong thế giới này",
+                "Nghi Thức & Phản Ánh — tạo một nghi thức, truyền thống hoặc sự kiện tiết lộ một niềm tin cốt lõi",
+                "Phản Ánh — trải nghiệm sống của chính bạn hình thành cách bạn xây dựng thế giới này như thế nào?"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a3",
+          "label": "A3",
+          "title": "Future Cones",
+          "blocks": [
+            {
+              "kind": "p",
+              "text": "Được điều chỉnh từ một bài tập của Ashley Jane Lewis dựa trên Stuart Candy's Future Cone. Bài tập này hướng dẫn những người tham gia tưởng tượng chính mình ba đến năm năm trong tương lai. Sử dụng sơ đồ Futures Cone, họ khám phá những gì có thể xảy ra, hợp lý, có thể và thích hợp nhất trong sự phát triển tương lai của chính họ."
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Future Cone là một công cụ để tưởng tượng nhiều tương lai tiềm năng:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Có khả năng: Điều gì có khả năng xảy ra dựa trên quỹ đạo hiện tại.",
+                "Hợp lý: Những gì có thể thực sự xảy ra, ngay cả khi ít có khả năng hơn.",
+                "Có thể: Những gì có thể xảy ra, bao gồm các ý tưởng không mong đợi.",
+                "Thích hợp: Các kết quả hấp dẫn, có ý nghĩa nhất — tương lai mong muốn của bạn."
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Các bước:"
+            },
+            {
+              "kind": "ol",
+              "items": [
+                "Thiết lập — vẽ một vòng tròn nhỏ ở bên trái được gắn nhãn \"You\" hoặc \"Now\", và một vòng tròn lớn hơn ở bên phải được gắn nhãn bằng một năm tương lai. Kết nối chúng để tạo thành một nón ngang.",
+                "Vẽ Có Khả Năng — viết 2-3 điều bạn có khả năng làm trong vài năm nữa.",
+                "Tưởng Tượng Có Thể — liệt kê 8-20 \"Possibles\": công cụ, thực hành, môi trường, cộng tác, thư viện dư, tham vọng.",
+                "Xác định Hợp Lý — chọn 3-5 mục từ danh sách \"Possible\" mà cảm thấy thực tế trong vòng 1-2 năm tới.",
+                "Xác định Thích Hợp — khoanh tròn 1-2 mục từ vòng Plausible cảm thấy phấn khích nhất, có ý nghĩa nhất hoặc phù hợp với các giá trị của bạn."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
