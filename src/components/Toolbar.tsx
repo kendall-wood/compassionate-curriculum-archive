@@ -106,26 +106,6 @@ export function Toolbar({ showBack = false, backHref = "/" }: ToolbarProps) {
             </span>
           </button>
 
-          <button
-            type="button"
-            onClick={zoomOut}
-            className={utilBtn}
-            aria-label={t("decreaseZoom")}
-          >
-            -
-          </button>
-          <span className={utilBtn} aria-live="polite">
-            {zoomLabel}
-          </span>
-          <button
-            type="button"
-            onClick={zoomIn}
-            className={utilBtn}
-            aria-label={t("increaseZoom")}
-          >
-            +
-          </button>
-
           <div
             className={`inline-flex items-center justify-center gap-[0.625rem] px-[0.625rem] border border-fg bg-bg ${UTIL_H}`}
             role="group"
@@ -193,6 +173,26 @@ export function Toolbar({ showBack = false, backHref = "/" }: ToolbarProps) {
           </div>
 
           <LanguageSwitcher />
+
+          <button
+            type="button"
+            onClick={zoomOut}
+            className={utilBtn}
+            aria-label={t("decreaseZoom")}
+          >
+            -
+          </button>
+          <span className={utilBtn} aria-live="polite">
+            {zoomLabel}
+          </span>
+          <button
+            type="button"
+            onClick={zoomIn}
+            className={utilBtn}
+            aria-label={t("increaseZoom")}
+          >
+            +
+          </button>
         </div>
       ) : null}
     </div>
