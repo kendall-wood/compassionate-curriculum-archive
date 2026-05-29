@@ -187,6 +187,10 @@ export function VoiceoverManager() {
   const pendingHoverEl = useRef<HTMLElement | null>(null);
   const hoverDebounceTimer = useRef<number | null>(null);
   const speakTimer = useRef<number | null>(null);
+  // Last speakable element the cursor entered, regardless of whether Option
+  // was held. We replay it on Alt-keydown so "hover the text, then press
+  // Option" works (otherwise no mouseover ever fires while Option is down).
+  const lastHoveredEl = useRef<HTMLElement | null>(null);
 
   useEffect(() => {
     if (!voiceover) return;
@@ -194,6 +198,17 @@ export function VoiceoverManager() {
     if (!("speechSynthesis" in window)) return;
 
     const coarse = isCoarsePointer();
+
+    // Opt-in verbose logging for production debugging. Enable by appending
+    // `?vo-debug` to the URL or by running `localStorage.setItem('cc-vo-debug','1')`
+    // in the console. Silent in normal use.
+    const debug =
+      (typeof location !== "undefined" &&
+        new URLSearchParams(location.search).has("vo-debug")) ||
+      localStorage.getItem("cc-vo-debug") === "1";
+    // eslint-disable-next-line no-console
+    const log = debug ? (...a: unknown[]) => console.log("[vo]", ...a) : () => {};
+    log("enabled", { locale, coarse });
 
     // Kick off voice loading immediately so by the time the user hovers a
     // word the engine has a matched voice ready. Without this, the very
@@ -203,6 +218,19 @@ export function VoiceoverManager() {
     loadVoices().then((voices) => {
       if (cancelled) return;
       voiceRef.current = pickVoice(voices, locale) ?? null;
+      log("voices loaded", {
+        count: voices.length,
+        picked: voiceRef.current
+          ? { name: voiceRef.current.name, lang: voiceRef.current.lang }
+          : null,
+      });
+      if (voices.length === 0) {
+        // eslint-disable-next-line no-console
+        console.warn(
+          "[voiceover] no voices available — speech engine returned an empty list. " +
+            "On Chrome this can mean OS TTS is disabled or no language packs are installed."
+        );
+      }
     });
 
     function clearTimers() {
@@ -245,6 +273,12 @@ export function VoiceoverManager() {
 
       const { original, spans, offsets, text } = wrapWords(el);
       if (!text) return;
+      log("speak", {
+        tag: el.tagName,
+        chars: text.length,
+        words: spans.length,
+        preview: text.slice(0, 40),
+      });
 
       activeEl.current = el;
       activeOriginalHTML.current = original;
@@ -268,7 +302,10 @@ export function VoiceoverManager() {
       utter.onerror = (ev) => {
         // "canceled" / "interrupted" are expected churn whenever the user
         // moves to a new element mid-speech; only surface genuine failures.
-        if (ev.error === "canceled" || ev.error === "interrupted") return;
+        if (ev.error === "canceled" || ev.error === "interrupted") {
+          log("utter canceled/interrupted (expected)", ev.error);
+          return;
+        }
         // eslint-disable-next-line no-console
         console.warn("[voiceover] utterance error:", ev.error, {
           lang: utter.lang,
@@ -276,11 +313,16 @@ export function VoiceoverManager() {
         });
       };
 
+      utter.onstart = () => log("utter onstart");
+
       // `boundary` fires before each word with charIndex into `text`. We
       // accumulate the .cc-vo-spoken class on every word whose offset is
       // <= charIndex so the highlight grows progressively to the right.
+      let boundaryCount = 0;
       utter.onboundary = (ev) => {
         if (ev.name && ev.name !== "word") return;
+        if (boundaryCount === 0) log("utter first onboundary", ev.charIndex);
+        boundaryCount++;
         const idx = ev.charIndex ?? 0;
         for (let i = 0; i < offsets.length; i++) {
           if (offsets[i] <= idx) spans[i].classList.add("cc-vo-spoken");
@@ -292,6 +334,7 @@ export function VoiceoverManager() {
       // "fill the rest" so the visual still completes even without
       // per-word timing.
       utter.onend = () => {
+        log("utter onend", { boundaryCount });
         spans.forEach((s) => s.classList.add("cc-vo-spoken"));
       };
 
@@ -301,8 +344,9 @@ export function VoiceoverManager() {
     // Debounce hover-triggered speech. Rapid mouseovers (which happen
     // naturally when the cursor crosses between adjacent speakables) would
     // otherwise stack speak/cancel cycles and lock up Chrome's engine.
-    // Wait 140ms of hover stillness before committing to read an element.
-    function scheduleSpeak(el: HTMLElement) {
+    // 80ms is short enough to feel instant but long enough to absorb
+    // micro-jitter while the user settles on a paragraph.
+    function scheduleSpeak(el: HTMLElement, immediate = false) {
       if (activeEl.current === el) return;
       if (pendingHoverEl.current === el && hoverDebounceTimer.current !== null) {
         return; // already queued for this exact element
@@ -311,21 +355,26 @@ export function VoiceoverManager() {
       if (hoverDebounceTimer.current !== null) {
         window.clearTimeout(hoverDebounceTimer.current);
       }
+      const delay = immediate ? 0 : 80;
+      log("schedule", { tag: el.tagName, delay });
       hoverDebounceTimer.current = window.setTimeout(() => {
         hoverDebounceTimer.current = null;
         const target = pendingHoverEl.current;
         pendingHoverEl.current = null;
         if (target && document.contains(target)) actuallySpeak(target);
-      }, 140);
+      }, delay);
     }
 
     // --- Desktop: Option/Alt + hover ---------------------------------------
     function onMouseOver(e: MouseEvent) {
       if (coarse) return;
-      if (!altDown.current && !e.altKey) return;
-      // mouseover bubbles — find nearest speakable from the actual target.
+      // Always track the most recent speakable under the cursor so a later
+      // Alt-keydown can replay it (covers "hover first, then press Option").
       const target = findSpeakable(e.target as Element);
+      if (target) lastHoveredEl.current = target;
+      if (!altDown.current && !e.altKey) return;
       if (!target) return;
+      // mouseover bubbles — findSpeakable gave us the nearest speakable.
       scheduleSpeak(target);
     }
 
@@ -340,7 +389,18 @@ export function VoiceoverManager() {
     }
 
     function onKeyDown(e: KeyboardEvent) {
-      if (e.key === "Alt" || e.altKey) altDown.current = true;
+      if (e.key === "Alt" || e.altKey) {
+        const wasDown = altDown.current;
+        altDown.current = true;
+        // Pressing Option AFTER the cursor is already on a speakable doesn't
+        // fire mouseover, so we'd otherwise be silent until the user wiggled
+        // the mouse. Replay the last hovered element on the rising edge so
+        // "hover, then press Option" works the way the user expects.
+        if (!wasDown && lastHoveredEl.current) {
+          log("alt down → replay last hover", lastHoveredEl.current.tagName);
+          scheduleSpeak(lastHoveredEl.current, true);
+        }
+      }
       // Esc always cancels.
       if (e.key === "Escape") restore();
     }
