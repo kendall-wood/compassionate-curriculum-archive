@@ -51,6 +51,54 @@ function speakSoon(utter: SpeechSynthesisUtterance) {
   }));
 }
 
+// `speechSynthesis.getVoices()` is empty until the engine fires
+// `voiceschanged`. Localhost often has voices warm-cached, but a fresh tab on
+// the production domain doesn't — so the first speak() before voices arrive
+// uses no voice and silently no-ops on Safari/iOS. We resolve once voices
+// land, or after a 1.5s safety timeout (some browsers never fire the event
+// but do populate the list after a tick).
+function loadVoices(): Promise<SpeechSynthesisVoice[]> {
+  return new Promise((resolve) => {
+    const synth = window.speechSynthesis;
+    const initial = synth.getVoices();
+    if (initial.length) {
+      resolve(initial);
+      return;
+    }
+    const onChange = () => {
+      const v = synth.getVoices();
+      if (v.length) {
+        synth.removeEventListener?.("voiceschanged", onChange);
+        resolve(v);
+      }
+    };
+    synth.addEventListener?.("voiceschanged", onChange);
+    setTimeout(() => {
+      synth.removeEventListener?.("voiceschanged", onChange);
+      resolve(synth.getVoices());
+    }, 1500);
+  });
+}
+
+// Given a list of voices and a locale like "en" / "zh" / "pt", pick the best
+// match. Voice .lang is always BCP47 (e.g. "en-US", "zh-CN"); our locales
+// are bare 2-letter codes, so we have to broaden the match. Prefer the
+// default voice for the language when one is marked default — those tend to
+// sound the most natural per platform.
+function pickVoice(
+  voices: SpeechSynthesisVoice[],
+  locale: string
+): SpeechSynthesisVoice | undefined {
+  if (!voices.length) return undefined;
+  const lc = locale.toLowerCase();
+  const base = lc.slice(0, 2);
+  const langMatch = voices.filter(
+    (v) => v.lang.toLowerCase().slice(0, 2) === base
+  );
+  if (!langMatch.length) return undefined;
+  return langMatch.find((v) => v.default) ?? langMatch[0];
+}
+
 type WrapResult = {
   /** Original innerHTML, restored when speech ends or moves to another node. */
   original: string;
@@ -120,6 +168,7 @@ export function VoiceoverManager() {
   const altDown = useRef(false);
   const activeEl = useRef<HTMLElement | null>(null);
   const activeOriginalHTML = useRef<string | null>(null);
+  const voiceRef = useRef<SpeechSynthesisVoice | null>(null);
 
   useEffect(() => {
     if (!voiceover) return;
@@ -127,6 +176,29 @@ export function VoiceoverManager() {
     if (!("speechSynthesis" in window)) return;
 
     const coarse = isCoarsePointer();
+
+    // Kick off voice loading immediately so by the time the user hovers a
+    // word the engine has a matched voice ready. Without this, the very
+    // first utterance on a cold tab uses no voice and silently fails on
+    // Safari/iOS Chrome. We re-resolve whenever the locale changes.
+    let cancelled = false;
+    loadVoices().then((voices) => {
+      if (cancelled) return;
+      voiceRef.current = pickVoice(voices, locale) ?? null;
+    });
+
+    // Safari/iOS require the FIRST utterance to come from inside a user-
+    // gesture handler. Enabling voiceover via the ear button is a gesture,
+    // but our first real speak() happens later on hover/tap, which Safari
+    // rejects. Prime the engine with a silent (volume 0) utterance now so
+    // the gesture-permission token carries over to subsequent speaks.
+    try {
+      const primer = new SpeechSynthesisUtterance(" ");
+      primer.volume = 0;
+      window.speechSynthesis.speak(primer);
+    } catch {
+      /* ignore */
+    }
 
     function restore() {
       if (activeEl.current && activeOriginalHTML.current !== null) {
@@ -156,10 +228,30 @@ export function VoiceoverManager() {
       activeOriginalHTML.current = original;
 
       const utter = new SpeechSynthesisUtterance(text);
-      // BCP47-ish: "en", "es", "zh"... Browsers normalize and pick a voice.
-      utter.lang = locale;
+      // Prefer an explicitly matched voice over relying on the engine to
+      // resolve from `.lang` alone — some browsers (Safari especially) do
+      // nothing when given a bare "en" / "zh" because their voice list is
+      // keyed by full BCP47 tags like "en-US". `voiceRef` is populated
+      // asynchronously when VO is enabled; if it's still null we fall
+      // back to setting `.lang` and hoping the engine picks something.
+      if (voiceRef.current) {
+        utter.voice = voiceRef.current;
+        utter.lang = voiceRef.current.lang;
+      } else {
+        utter.lang = locale;
+      }
       utter.rate = 1;
       utter.pitch = 1;
+
+      utter.onerror = (ev) => {
+        // Surface synthesis failures (e.g. "not-allowed", "language-unavailable")
+        // so prod issues are diagnosable from the browser console.
+        // eslint-disable-next-line no-console
+        console.warn("[voiceover] utterance error:", ev.error, {
+          lang: utter.lang,
+          voice: utter.voice?.name,
+        });
+      };
 
       // `boundary` fires before each word with charIndex into `text`. We
       // accumulate the .cc-vo-spoken class on every word whose offset is
@@ -250,6 +342,7 @@ export function VoiceoverManager() {
     window.addEventListener("blur", onBlur);
 
     return () => {
+      cancelled = true;
       document.removeEventListener("mouseover", onMouseOver);
       document.removeEventListener("mouseout", onMouseOut);
       document.removeEventListener("keydown", onKeyDown);
