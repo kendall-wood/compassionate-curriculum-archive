@@ -40,28 +40,21 @@ function isCoarsePointer(): boolean {
   );
 }
 
-// Chrome has a documented bug where calling `cancel()` while no utterance is
-// actively playing puts the engine in a "paused" state, and subsequent
-// speak() calls queue but never play. The reliable workaround is to call
-// resume() right after cancel(), and to leave a real (not RAF-sized) gap
-// before the next speak. ~100ms is below human perception and is enough
-// for the engine queue to settle on every browser we've tested.
-function speakAfterCancel(utter: SpeechSynthesisUtterance): number {
+// Cancel any in-flight utterance and immediately queue a new one in the same
+// JS tick. This is the documented-stable pattern for Chrome — putting any
+// gap (setTimeout, RAF) between cancel() and speak() opens a race window
+// where another scheduleSpeak can fire and cancel the new utterance before
+// the engine ever starts it. `resume()` is included to unstick the engine
+// in case a prior cancel() left it in the (documented) paused state.
+function cancelAndSpeak(utter: SpeechSynthesisUtterance) {
   const synth = window.speechSynthesis;
   try {
     synth.cancel();
     synth.resume();
+    synth.speak(utter);
   } catch {
     /* ignore */
   }
-  return window.setTimeout(() => {
-    try {
-      synth.resume();
-      synth.speak(utter);
-    } catch {
-      /* ignore */
-    }
-  }, 100);
 }
 
 // `speechSynthesis.getVoices()` is empty until the engine fires
@@ -182,11 +175,10 @@ export function VoiceoverManager() {
   const activeEl = useRef<HTMLElement | null>(null);
   const activeOriginalHTML = useRef<string | null>(null);
   const voiceRef = useRef<SpeechSynthesisVoice | null>(null);
-  // Pending speak debounce + in-flight speak setTimeout, so we can cancel
-  // both when the user keeps moving the cursor.
+  // Pending speak debounce, so we can cancel it when the user keeps moving
+  // the cursor.
   const pendingHoverEl = useRef<HTMLElement | null>(null);
   const hoverDebounceTimer = useRef<number | null>(null);
-  const speakTimer = useRef<number | null>(null);
   // Last speakable element the cursor entered, regardless of whether Option
   // was held. We replay it on Alt-keydown so "hover the text, then press
   // Option" works (otherwise no mouseover ever fires while Option is down).
@@ -237,10 +229,6 @@ export function VoiceoverManager() {
       if (hoverDebounceTimer.current !== null) {
         window.clearTimeout(hoverDebounceTimer.current);
         hoverDebounceTimer.current = null;
-      }
-      if (speakTimer.current !== null) {
-        window.clearTimeout(speakTimer.current);
-        speakTimer.current = null;
       }
       pendingHoverEl.current = null;
     }
@@ -338,16 +326,29 @@ export function VoiceoverManager() {
         spans.forEach((s) => s.classList.add("cc-vo-spoken"));
       };
 
-      speakTimer.current = speakAfterCancel(utter);
+      cancelAndSpeak(utter);
     }
 
     // Debounce hover-triggered speech. Rapid mouseovers (which happen
     // naturally when the cursor crosses between adjacent speakables) would
     // otherwise stack speak/cancel cycles and lock up Chrome's engine.
     // 80ms is short enough to feel instant but long enough to absorb
-    // micro-jitter while the user settles on a paragraph.
+    // micro-jitter while the user settles on a paragraph. `immediate=true`
+    // bypasses the debounce entirely — used for deliberate triggers like
+    // Alt-keydown and touch-tap.
     function scheduleSpeak(el: HTMLElement, immediate = false) {
       if (activeEl.current === el) return;
+      if (immediate) {
+        log("schedule (immediate)", { tag: el.tagName });
+        // Clear any pending debounce so it doesn't fire on top of us.
+        if (hoverDebounceTimer.current !== null) {
+          window.clearTimeout(hoverDebounceTimer.current);
+          hoverDebounceTimer.current = null;
+        }
+        pendingHoverEl.current = null;
+        actuallySpeak(el);
+        return;
+      }
       if (pendingHoverEl.current === el && hoverDebounceTimer.current !== null) {
         return; // already queued for this exact element
       }
@@ -355,14 +356,13 @@ export function VoiceoverManager() {
       if (hoverDebounceTimer.current !== null) {
         window.clearTimeout(hoverDebounceTimer.current);
       }
-      const delay = immediate ? 0 : 80;
-      log("schedule", { tag: el.tagName, delay });
+      log("schedule", { tag: el.tagName, delay: 80 });
       hoverDebounceTimer.current = window.setTimeout(() => {
         hoverDebounceTimer.current = null;
         const target = pendingHoverEl.current;
         pendingHoverEl.current = null;
         if (target && document.contains(target)) actuallySpeak(target);
-      }, delay);
+      }, 80);
     }
 
     // --- Desktop: Option/Alt + hover ---------------------------------------
