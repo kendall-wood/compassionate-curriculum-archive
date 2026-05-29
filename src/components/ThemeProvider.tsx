@@ -253,7 +253,25 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
   }, [theme]);
 
   const toggleVoiceover = useCallback(() => {
-    setVoiceoverState((v) => !v);
+    setVoiceoverState((v) => {
+      const next = !v;
+      // Safari/iOS gate speechSynthesis behind a user gesture: the FIRST
+      // speak() call must happen synchronously inside a gesture handler,
+      // or every subsequent speak() silently fails. The toggle's click is
+      // that gesture, so we prime the engine with a silent utterance right
+      // here. (No-op on browsers that don't gate, and harmless if Web
+      // Speech isn't available at all.)
+      if (next && typeof window !== "undefined" && "speechSynthesis" in window) {
+        try {
+          const primer = new SpeechSynthesisUtterance(" ");
+          primer.volume = 0;
+          window.speechSynthesis.speak(primer);
+        } catch {
+          /* ignore */
+        }
+      }
+      return next;
+    });
   }, []);
   const setVoiceover = useCallback((v: boolean) => setVoiceoverState(v), []);
 

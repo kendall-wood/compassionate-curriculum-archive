@@ -40,15 +40,28 @@ function isCoarsePointer(): boolean {
   );
 }
 
-// Some browsers (notably Chrome) get stuck if you call speak() immediately
-// after cancel() in the same tick. A microtask gap is enough to recover.
-function speakSoon(utter: SpeechSynthesisUtterance) {
-  window.speechSynthesis.cancel();
-  // Two RAFs ≈ ~32ms — generous enough for Chrome's queue to flush without
-  // adding human-noticeable latency.
-  requestAnimationFrame(() => requestAnimationFrame(() => {
-    window.speechSynthesis.speak(utter);
-  }));
+// Chrome has a documented bug where calling `cancel()` while no utterance is
+// actively playing puts the engine in a "paused" state, and subsequent
+// speak() calls queue but never play. The reliable workaround is to call
+// resume() right after cancel(), and to leave a real (not RAF-sized) gap
+// before the next speak. ~100ms is below human perception and is enough
+// for the engine queue to settle on every browser we've tested.
+function speakAfterCancel(utter: SpeechSynthesisUtterance): number {
+  const synth = window.speechSynthesis;
+  try {
+    synth.cancel();
+    synth.resume();
+  } catch {
+    /* ignore */
+  }
+  return window.setTimeout(() => {
+    try {
+      synth.resume();
+      synth.speak(utter);
+    } catch {
+      /* ignore */
+    }
+  }, 100);
 }
 
 // `speechSynthesis.getVoices()` is empty until the engine fires
@@ -169,6 +182,11 @@ export function VoiceoverManager() {
   const activeEl = useRef<HTMLElement | null>(null);
   const activeOriginalHTML = useRef<string | null>(null);
   const voiceRef = useRef<SpeechSynthesisVoice | null>(null);
+  // Pending speak debounce + in-flight speak setTimeout, so we can cancel
+  // both when the user keeps moving the cursor.
+  const pendingHoverEl = useRef<HTMLElement | null>(null);
+  const hoverDebounceTimer = useRef<number | null>(null);
+  const speakTimer = useRef<number | null>(null);
 
   useEffect(() => {
     if (!voiceover) return;
@@ -187,20 +205,20 @@ export function VoiceoverManager() {
       voiceRef.current = pickVoice(voices, locale) ?? null;
     });
 
-    // Safari/iOS require the FIRST utterance to come from inside a user-
-    // gesture handler. Enabling voiceover via the ear button is a gesture,
-    // but our first real speak() happens later on hover/tap, which Safari
-    // rejects. Prime the engine with a silent (volume 0) utterance now so
-    // the gesture-permission token carries over to subsequent speaks.
-    try {
-      const primer = new SpeechSynthesisUtterance(" ");
-      primer.volume = 0;
-      window.speechSynthesis.speak(primer);
-    } catch {
-      /* ignore */
+    function clearTimers() {
+      if (hoverDebounceTimer.current !== null) {
+        window.clearTimeout(hoverDebounceTimer.current);
+        hoverDebounceTimer.current = null;
+      }
+      if (speakTimer.current !== null) {
+        window.clearTimeout(speakTimer.current);
+        speakTimer.current = null;
+      }
+      pendingHoverEl.current = null;
     }
 
     function restore() {
+      clearTimers();
       if (activeEl.current && activeOriginalHTML.current !== null) {
         // Element may have been unmounted by a route change; guard.
         if (document.contains(activeEl.current)) {
@@ -211,14 +229,18 @@ export function VoiceoverManager() {
       activeOriginalHTML.current = null;
       try {
         window.speechSynthesis.cancel();
+        // Chrome can leave the engine in a `paused` state after cancel()
+        // when nothing was actively speaking. resume() unsticks it so the
+        // next speak() actually plays.
+        window.speechSynthesis.resume();
       } catch {
         /* ignore */
       }
     }
 
-    function speakElement(el: HTMLElement) {
-      // Already speaking this exact node — leave it be.
+    function actuallySpeak(el: HTMLElement) {
       if (activeEl.current === el) return;
+      // Tear down any previous speech & DOM mutation before starting a new one.
       restore();
 
       const { original, spans, offsets, text } = wrapWords(el);
@@ -244,8 +266,9 @@ export function VoiceoverManager() {
       utter.pitch = 1;
 
       utter.onerror = (ev) => {
-        // Surface synthesis failures (e.g. "not-allowed", "language-unavailable")
-        // so prod issues are diagnosable from the browser console.
+        // "canceled" / "interrupted" are expected churn whenever the user
+        // moves to a new element mid-speech; only surface genuine failures.
+        if (ev.error === "canceled" || ev.error === "interrupted") return;
         // eslint-disable-next-line no-console
         console.warn("[voiceover] utterance error:", ev.error, {
           lang: utter.lang,
@@ -272,7 +295,28 @@ export function VoiceoverManager() {
         spans.forEach((s) => s.classList.add("cc-vo-spoken"));
       };
 
-      speakSoon(utter);
+      speakTimer.current = speakAfterCancel(utter);
+    }
+
+    // Debounce hover-triggered speech. Rapid mouseovers (which happen
+    // naturally when the cursor crosses between adjacent speakables) would
+    // otherwise stack speak/cancel cycles and lock up Chrome's engine.
+    // Wait 140ms of hover stillness before committing to read an element.
+    function scheduleSpeak(el: HTMLElement) {
+      if (activeEl.current === el) return;
+      if (pendingHoverEl.current === el && hoverDebounceTimer.current !== null) {
+        return; // already queued for this exact element
+      }
+      pendingHoverEl.current = el;
+      if (hoverDebounceTimer.current !== null) {
+        window.clearTimeout(hoverDebounceTimer.current);
+      }
+      hoverDebounceTimer.current = window.setTimeout(() => {
+        hoverDebounceTimer.current = null;
+        const target = pendingHoverEl.current;
+        pendingHoverEl.current = null;
+        if (target && document.contains(target)) actuallySpeak(target);
+      }, 140);
     }
 
     // --- Desktop: Option/Alt + hover ---------------------------------------
@@ -282,7 +326,7 @@ export function VoiceoverManager() {
       // mouseover bubbles — find nearest speakable from the actual target.
       const target = findSpeakable(e.target as Element);
       if (!target) return;
-      speakElement(target);
+      scheduleSpeak(target);
     }
 
     function onMouseOut(e: MouseEvent) {
@@ -325,7 +369,8 @@ export function VoiceoverManager() {
       // Prevent the tap from also activating a button/link underneath when
       // we're using it as a "read me" gesture.
       if (target.matches("a, button")) e.preventDefault();
-      speakElement(target);
+      // Tap is itself a deliberate gesture — speak immediately, no debounce.
+      actuallySpeak(target);
     }
 
     function onBlur() {
