@@ -96,11 +96,19 @@ a:focus-visible {
   /* page text inherits root font-size, no further scaling needed here */
 }
 
-/* Voiceover mode — wraps each word in a <span class="cc-vo-word"> at hover
-   time. `.cc-vo-spoken` is added as the SpeechSynthesis boundary event
-   advances, so the highlight accumulates left-to-right and the whole
-   paragraph is accent-colored by the time speech ends. box-decoration-break
-   makes the highlight wrap cleanly across line breaks. */
+/* Voiceover mode — primary path uses the CSS Custom Highlight API. Per-word
+   Ranges are painted via ::highlight(cc-vo) WITHOUT mutating the DOM, so
+   there is no inline-element boundary to trigger letter-spacing / tracking
+   shifts on hover. Modern Chrome, Safari 17.2+, and Firefox 140+ support it. */
+::highlight(cc-vo) {
+  background-color: var(--color-accent);
+  color: var(--color-accent-fg);
+}
+
+/* Fallback path — used only when the Custom Highlight API is unavailable.
+   `wrapWords()` replaces each non-whitespace token with a <span class="cc-vo-word">
+   and toggles `.cc-vo-spoken` as boundary events advance. Kept for graceful
+   degradation; on modern browsers the spans are never inserted. */
 .cc-vo-word {
   transition: background-color 80ms linear, color 80ms linear;
   -webkit-box-decoration-break: clone;

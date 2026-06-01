@@ -116,10 +116,83 @@ type WrapResult = {
   text: string;
 };
 
+type RangeResult = {
+  /** Range objects covering each non-whitespace word, in reading order. */
+  ranges: Range[];
+  /** Char offsets (into the utterance's `text`) where each word begins. */
+  offsets: number[];
+  /** The full text passed to the utterance. */
+  text: string;
+};
+
+// True when the browser supports the CSS Custom Highlight API. When true we
+// can paint per-word highlights via Range objects + CSS ::highlight() WITHOUT
+// touching the DOM at all — which is what the no-tracking-shift path needs.
+// Splitting text into <span>s (the wrapWords path) introduces inline-element
+// boundaries that some engines treat as letter-spacing breakpoints, causing a
+// visible horizontal nudge on hover. Range-based highlighting avoids that.
+const HAS_HIGHLIGHT_API =
+  typeof window !== "undefined" &&
+  typeof (window as unknown as { Highlight?: unknown }).Highlight !==
+    "undefined" &&
+  typeof CSS !== "undefined" &&
+  // `CSS.highlights` is the registry; presence of both gates the feature.
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  !!(CSS as any).highlights;
+
+// Walk text nodes inside `el` and produce a Range per non-whitespace word.
+// Crucially does NOT mutate the DOM — preserves the exact text node graph the
+// browser already laid out, so there is no reflow / tracking shift on hover.
+// Char offsets are into the joined raw text (we trim only at the boundary the
+// utterance receives, matching the engine's `charIndex` accounting).
+function collectRanges(el: HTMLElement): RangeResult {
+  const ranges: Range[] = [];
+  const offsets: number[] = [];
+  let charCursor = 0;
+  let textBuf = "";
+
+  const walker = document.createTreeWalker(el, NodeFilter.SHOW_TEXT);
+  const textNodes: Text[] = [];
+  let n: Node | null;
+  while ((n = walker.nextNode())) textNodes.push(n as Text);
+
+  for (const tn of textNodes) {
+    const raw = tn.nodeValue ?? "";
+    if (!raw) continue;
+    // Find every run of non-whitespace; each becomes a Range.
+    const re = /\S+/g;
+    let m: RegExpExecArray | null;
+    while ((m = re.exec(raw)) !== null) {
+      const range = document.createRange();
+      range.setStart(tn, m.index);
+      range.setEnd(tn, m.index + m[0].length);
+      ranges.push(range);
+      offsets.push(charCursor + m.index);
+    }
+    textBuf += raw;
+    charCursor += raw.length;
+  }
+
+  // Account for any leading whitespace that .trim() will strip — the engine's
+  // charIndex is into the trimmed string, so offsets need to shift left by
+  // however many chars trim() removed at the front.
+  const trimmed = textBuf.trim();
+  const leadingTrim = textBuf.length - textBuf.trimStart().length;
+  if (leadingTrim > 0) {
+    for (let i = 0; i < offsets.length; i++) offsets[i] -= leadingTrim;
+  }
+
+  return { ranges, offsets, text: trimmed };
+}
+
 // Walk every text node inside `el`, splitting on whitespace and replacing each
 // non-whitespace token with a <span class="cc-vo-word">. Preserves nested
 // elements (links, <strong>, etc.) by only touching TEXT_NODEs. Returns the
 // original HTML so we can restore it verbatim on cleanup.
+//
+// Used only as a fallback for browsers without CSS.highlights (the
+// `HAS_HIGHLIGHT_API` path is preferred because it doesn't mutate DOM and
+// therefore can't introduce a tracking shift).
 function wrapWords(el: HTMLElement): WrapResult {
   const original = el.innerHTML;
   const spans: HTMLSpanElement[] = [];
@@ -200,7 +273,28 @@ export function VoiceoverManager() {
       localStorage.getItem("cc-vo-debug") === "1";
     // eslint-disable-next-line no-console
     const log = debug ? (...a: unknown[]) => console.log("[vo]", ...a) : () => {};
-    log("enabled", { locale, coarse });
+    log("enabled", { locale, coarse, highlightApi: HAS_HIGHLIGHT_API });
+
+    // Register a Highlight under the name `cc-vo`. The matching ::highlight()
+    // CSS rule lives in globals.css. We re-register on every effect run so a
+    // hot reload can't strand a stale Highlight reference. Cleared on teardown.
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const HighlightCtor = (window as any).Highlight as
+      | (new (...ranges: AbstractRange[]) => {
+          add: (r: AbstractRange) => void;
+          clear: () => void;
+        })
+      | undefined;
+    const highlight =
+      HAS_HIGHLIGHT_API && HighlightCtor ? new HighlightCtor() : null;
+    if (highlight) {
+      try {
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        (CSS as any).highlights.set("cc-vo", highlight);
+      } catch {
+        /* ignore — older Chrome had a slightly different shape */
+      }
+    }
 
     // Kick off voice loading immediately so by the time the user hovers a
     // word the engine has a matched voice ready. Without this, the very
@@ -235,6 +329,17 @@ export function VoiceoverManager() {
 
     function restore() {
       clearTimers();
+      // Highlight-API path: clear the painted ranges; nothing to "restore"
+      // because we never mutated the DOM.
+      if (highlight) {
+        try {
+          highlight.clear();
+        } catch {
+          /* ignore */
+        }
+      }
+      // Fallback path: undo the wrapWords mutation by writing the captured
+      // innerHTML back. Only runs when activeOriginalHTML was set.
       if (activeEl.current && activeOriginalHTML.current !== null) {
         // Element may have been unmounted by a route change; guard.
         if (document.contains(activeEl.current)) {
@@ -256,20 +361,43 @@ export function VoiceoverManager() {
 
     function actuallySpeak(el: HTMLElement) {
       if (activeEl.current === el) return;
-      // Tear down any previous speech & DOM mutation before starting a new one.
+      // Tear down any previous speech & (fallback) DOM mutation before starting.
       restore();
 
-      const { original, spans, offsets, text } = wrapWords(el);
+      // Two paths:
+      // - Highlight API (modern Chrome / Safari 17.2+ / Firefox 140+): collect
+      //   Ranges, paint via CSS.highlights — DOM is untouched, so there is
+      //   ZERO tracking shift on hover. This is the only path the user sees
+      //   in any current evergreen browser.
+      // - Fallback (older browsers): wrapWords mutates the element's HTML and
+      //   toggles a class per word. Cosmetically identical to before.
+      let ranges: Range[] | null = null;
+      let spans: HTMLSpanElement[] | null = null;
+      let offsets: number[];
+      let text: string;
+      if (HAS_HIGHLIGHT_API) {
+        const r = collectRanges(el);
+        ranges = r.ranges;
+        offsets = r.offsets;
+        text = r.text;
+      } else {
+        const w = wrapWords(el);
+        spans = w.spans;
+        offsets = w.offsets;
+        text = w.text;
+        activeOriginalHTML.current = w.original;
+      }
+
       if (!text) return;
       log("speak", {
         tag: el.tagName,
         chars: text.length,
-        words: spans.length,
+        words: (ranges ?? spans ?? []).length,
+        path: HAS_HIGHLIGHT_API ? "highlight-api" : "wrap-words",
         preview: text.slice(0, 40),
       });
 
       activeEl.current = el;
-      activeOriginalHTML.current = original;
 
       const utter = new SpeechSynthesisUtterance(text);
       // Prefer an explicitly matched voice over relying on the engine to
@@ -304,17 +432,29 @@ export function VoiceoverManager() {
       utter.onstart = () => log("utter onstart");
 
       // `boundary` fires before each word with charIndex into `text`. We
-      // accumulate the .cc-vo-spoken class on every word whose offset is
-      // <= charIndex so the highlight grows progressively to the right.
+      // grow the highlight one word at a time so it visually tracks speech.
+      // - Highlight-API path: add Range objects to the registered Highlight.
+      // - Fallback path: toggle .cc-vo-spoken on the wrapping <span>s.
       let boundaryCount = 0;
+      let nextWordIdx = 0;
       utter.onboundary = (ev) => {
         if (ev.name && ev.name !== "word") return;
         if (boundaryCount === 0) log("utter first onboundary", ev.charIndex);
         boundaryCount++;
         const idx = ev.charIndex ?? 0;
-        for (let i = 0; i < offsets.length; i++) {
-          if (offsets[i] <= idx) spans[i].classList.add("cc-vo-spoken");
-          else break;
+        // Iterate forward only — offsets are sorted, so once we hit a word
+        // past charIndex we can stop (and resume from there next event).
+        while (nextWordIdx < offsets.length && offsets[nextWordIdx] <= idx) {
+          if (highlight && ranges) {
+            try {
+              highlight.add(ranges[nextWordIdx]);
+            } catch {
+              /* ignore — Range can become invalid if DOM changed */
+            }
+          } else if (spans) {
+            spans[nextWordIdx].classList.add("cc-vo-spoken");
+          }
+          nextWordIdx++;
         }
       };
 
@@ -323,7 +463,17 @@ export function VoiceoverManager() {
       // per-word timing.
       utter.onend = () => {
         log("utter onend", { boundaryCount });
-        spans.forEach((s) => s.classList.add("cc-vo-spoken"));
+        if (highlight && ranges) {
+          for (let i = nextWordIdx; i < ranges.length; i++) {
+            try {
+              highlight.add(ranges[i]);
+            } catch {
+              /* ignore */
+            }
+          }
+        } else if (spans) {
+          spans.forEach((s) => s.classList.add("cc-vo-spoken"));
+        }
       };
 
       cancelAndSpeak(utter);
