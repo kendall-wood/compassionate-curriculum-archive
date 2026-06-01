@@ -88,7 +88,9 @@
             }
           ]
         }
-      ]
+      ],
+      "thumbnail": "/images/FACT_ChapelGarage_011520-45.jpg",
+      "heroImage": "/images/FACT_ChapelGarage_011520-45.jpg"
     },
     {
       "id": "embodied-storytelling",
@@ -166,7 +168,9 @@
             }
           ]
         }
-      ]
+      ],
+      "thumbnail": "/images/FACT_chapel_Block_HandsReach.2%20copy.jpg",
+      "heroImage": "/images/FACT_chapel_Block_HandsReach.2%20copy.jpg"
     },
     {
       "id": "media-analysis",
@@ -366,7 +370,9 @@
             }
           ]
         }
-      ]
+      ],
+      "thumbnail": "/images/FACT_DoubleHug_2000%20copy.jpg",
+      "heroImage": "/images/FACT_DoubleHug_2000%20copy.jpg"
     }
   ]
 }

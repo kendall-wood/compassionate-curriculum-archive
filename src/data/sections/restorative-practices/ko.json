@@ -184,7 +184,9 @@
             }
           ]
         }
-      ]
+      ],
+      "thumbnail": "/images/FACT_chapel_Block_HandsReach.2.jpg",
+      "heroImage": "/images/FACT_chapel_Block_HandsReach.2.jpg"
     },
     {
       "id": "reauthoring-circles",
@@ -361,7 +363,9 @@
             }
           ]
         }
-      ]
+      ],
+      "thumbnail": "/images/AFrame_horizontal.3.png",
+      "heroImage": "/images/AFrame_horizontal.3.png"
     },
     {
       "id": "land-ancestor-acknowledgement",
@@ -570,7 +574,9 @@
             }
           ]
         }
-      ]
+      ],
+      "thumbnail": "/images/FACT_AltcourseChapel_080920-3.jpg",
+      "heroImage": "/images/FACT_AltcourseChapel_080920-3.jpg"
     },
     {
       "id": "grounding-activities",
@@ -682,7 +688,9 @@
             }
           ]
         }
-      ]
+      ],
+      "thumbnail": "/images/FACT_DoubleHug_2000.jpg",
+      "heroImage": "/images/FACT_DoubleHug_2000.jpg"
     }
   ]
 }
