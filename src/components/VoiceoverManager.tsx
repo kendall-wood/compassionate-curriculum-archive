@@ -207,6 +207,11 @@ function wrapWords(el: HTMLElement): WrapResult {
   let n: Node | null;
   while ((n = walker.nextNode())) textNodes.push(n as Text);
 
+  // Persist across text nodes so a whitespace run that begins a later text
+  // node still gets attached to the previous word span (e.g. paragraphs that
+  // contain inline links create separate text nodes around the link).
+  let lastSpan: HTMLSpanElement | null = null;
+
   for (const tn of textNodes) {
     const raw = tn.nodeValue ?? "";
     if (!raw) continue;
@@ -218,7 +223,16 @@ function wrapWords(el: HTMLElement): WrapResult {
     for (const part of parts) {
       if (part === "") continue;
       if (/^\s+$/.test(part)) {
-        frag.appendChild(document.createTextNode(part));
+        // Attach whitespace to the previous word's span when one exists, so
+        // when that span is highlighted the trailing space is highlighted
+        // too — making consecutive highlighted words read as one continuous
+        // block instead of partitioned chips. Leading whitespace (no prior
+        // span) stays a bare text node.
+        if (lastSpan) {
+          lastSpan.appendChild(document.createTextNode(part));
+        } else {
+          frag.appendChild(document.createTextNode(part));
+        }
         textBuf += part;
         charCursor += part.length;
       } else {
@@ -228,6 +242,7 @@ function wrapWords(el: HTMLElement): WrapResult {
         spans.push(span);
         offsets.push(charCursor);
         frag.appendChild(span);
+        lastSpan = span;
         textBuf += part;
         charCursor += part.length;
       }
@@ -432,9 +447,33 @@ export function VoiceoverManager() {
       utter.onstart = () => log("utter onstart");
 
       // `boundary` fires before each word with charIndex into `text`. We
-      // grow the highlight one word at a time so it visually tracks speech.
-      // - Highlight-API path: add Range objects to the registered Highlight.
-      // - Fallback path: toggle .cc-vo-spoken on the wrapping <span>s.
+      // paint a SINGLE growing Range that runs from the first word's start
+      // through the latest spoken word's end — so the inter-word whitespace
+      // is part of the highlight too, giving one continuous accent block
+      // instead of a partitioned word-by-word look.
+      // - Highlight-API path: clear() + add(growing) on each boundary.
+      // - Fallback path: toggle .cc-vo-spoken on the wrapping <span>s
+      //   (which now include their trailing whitespace, so adjacent
+      //   highlighted spans visually merge).
+      const firstStart =
+        ranges && ranges.length > 0
+          ? { node: ranges[0].startContainer, offset: ranges[0].startOffset }
+          : null;
+      const paintGrowing = (lastWordIdx: number) => {
+        if (!highlight || !ranges || !firstStart) return;
+        if (lastWordIdx < 0) return;
+        try {
+          const growing = document.createRange();
+          growing.setStart(firstStart.node, firstStart.offset);
+          const endRange = ranges[lastWordIdx];
+          growing.setEnd(endRange.endContainer, endRange.endOffset);
+          highlight.clear();
+          highlight.add(growing);
+        } catch {
+          /* ignore — Range can become invalid if DOM changed */
+        }
+      };
+
       let boundaryCount = 0;
       let nextWordIdx = 0;
       utter.onboundary = (ev) => {
@@ -445,17 +484,10 @@ export function VoiceoverManager() {
         // Iterate forward only — offsets are sorted, so once we hit a word
         // past charIndex we can stop (and resume from there next event).
         while (nextWordIdx < offsets.length && offsets[nextWordIdx] <= idx) {
-          if (highlight && ranges) {
-            try {
-              highlight.add(ranges[nextWordIdx]);
-            } catch {
-              /* ignore — Range can become invalid if DOM changed */
-            }
-          } else if (spans) {
-            spans[nextWordIdx].classList.add("cc-vo-spoken");
-          }
+          if (spans) spans[nextWordIdx].classList.add("cc-vo-spoken");
           nextWordIdx++;
         }
+        paintGrowing(nextWordIdx - 1);
       };
 
       // Safari/Firefox often skip `boundary` entirely. Treat `end` as a
@@ -463,14 +495,8 @@ export function VoiceoverManager() {
       // per-word timing.
       utter.onend = () => {
         log("utter onend", { boundaryCount });
-        if (highlight && ranges) {
-          for (let i = nextWordIdx; i < ranges.length; i++) {
-            try {
-              highlight.add(ranges[i]);
-            } catch {
-              /* ignore */
-            }
-          }
+        if (ranges) {
+          paintGrowing(ranges.length - 1);
         } else if (spans) {
           spans.forEach((s) => s.classList.add("cc-vo-spoken"));
         }
