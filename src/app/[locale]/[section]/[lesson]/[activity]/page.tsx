@@ -6,8 +6,9 @@ import {
   loadLesson,
   loadActivity,
 } from "@/data/curriculum";
-import { Link, routing } from "@/i18n/routing";
+import { routing } from "@/i18n/routing";
 import { Toolbar } from "@/components/Toolbar";
+import { LessonHero } from "@/components/LessonHero";
 import { ActivityTabs } from "@/components/ActivityTabs";
 import { ActivityBlock } from "@/components/ActivityBlock";
 
@@ -70,16 +71,13 @@ export default async function ActivityPage({
       <div className="flex flex-col gap-[2.25rem] w-full">
         <Toolbar showBack backHref={`/${section.id}/${lesson.id}`} />
 
-        <div className="flex flex-col gap-[1.5rem]">
-          <p className="text-[1.25rem] tracking-[-0.02em] leading-none text-fg">
-            <Link href={`/${section.id}`} className="hover:text-accent transition-colors">
-              / {section.title}
-            </Link>
-          </p>
-          <h1 className="text-[5.375rem] leading-[1.05] tracking-[-0.03em] text-fg font-normal">
-            {lesson.title}
-          </h1>
-        </div>
+        <LessonHero
+          title={lesson.title}
+          image={lesson.heroImage}
+          imageAlt={`${lesson.title} hero image`}
+          sectionHref={`/${section.id}`}
+          sectionLabel={section.title}
+        />
 
         <ActivityTabs
           sectionId={section.id}

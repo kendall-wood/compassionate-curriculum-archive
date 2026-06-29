@@ -175,7 +175,7 @@
         {
           "id": "a3",
           "label": "A3",
-          "title": "Sensory Triptych",
+          "title": "Three-Act Future Story (Sensory Triptych)",
           "blocks": [
             {
               "kind": "ul",
@@ -183,9 +183,17 @@
                 "Invite participants to imagine themselves moving through a future space they'd like to inhabit.",
                 "Participants should describe critical sensory details of sight, sound, smell, touch and what their body feels like as it moves in relation to the space.",
                 "Participants create three images that represent three key parts of the story, such as a beginning, middle and end, 3 different sensory perceptions, 3 emotions etc.",
-                "Participants observe each other's images and describe associations.",
-                "This activity can be combined with Photovoice or Participatory Futuring exercises."
+                "Participants observe each other's images and describe their own associations with the imagery.",
+                "This activity can be combined with Image Theater, Photovoice or Participatory Futuring exercises."
               ]
+            },
+            {
+              "kind": "image",
+              "src": "/images/mnf-embodied-storytelling-a3-sensory-triptych.webp",
+              "alt": "A three-panel sensory triptych of a group identifying and studying plants outdoors: walking a path, searching a flooded area, and holding a plant in cupped hands, each panel paired with a short narrative.",
+              "width": 672,
+              "height": 528,
+              "caption": "An example of the Three-Act Future storytelling exercise by Lorraine Cruz."
             }
           ]
         }
