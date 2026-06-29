@@ -1,3 +1,4 @@
+import { Fragment } from "react";
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { Toolbar } from "@/components/Toolbar";
 import { REFERENCE_GROUPS } from "@/data/references";
@@ -84,23 +85,56 @@ export default async function AboutPage({
           <p className="text-[1.5rem] leading-[1.3] tracking-[-0.02em] opacity-70 max-w-[79rem]">
             {t("referencesIntro")}
           </p>
-          {REFERENCE_GROUPS.map((group) => (
-            <div key={group.title} className="flex flex-col gap-[0.75rem]">
-              <h3 className="text-[1.5rem] font-bold leading-[1.2] tracking-[-0.02em] text-fg">
-                {group.title}
-              </h3>
-              <ul className="flex flex-col gap-[0.625rem] max-w-[79rem]">
-                {group.entries.map((entry, i) => (
-                  <li
-                    key={i}
-                    className="text-[1.25rem] leading-[1.4] tracking-[-0.02em] text-fg"
-                  >
-                    {linkifyCitation(entry)}
-                  </li>
-                ))}
-              </ul>
+
+          <div className="w-full overflow-x-auto">
+            <div
+              className="grid items-start"
+              style={{
+                gridTemplateColumns: "234px minmax(420px, 1fr)",
+                rowGap: 0,
+              }}
+              role="table"
+              aria-label={t("referencesHeading")}
+            >
+              <div className="contents" role="row">
+                <div role="columnheader">
+                  <span className="text-[1.25rem] tracking-[-0.02em] leading-none ps-[0.375rem]">
+                    {t("referencesColSection")}
+                  </span>
+                </div>
+                <div role="columnheader">
+                  <span className="text-[1.25rem] tracking-[-0.02em] leading-none ps-[0.375rem]">
+                    {t("referencesColReference")}
+                  </span>
+                </div>
+              </div>
+
+              <div className="col-span-2 mt-[0.8125rem] border-t border-fg" />
+
+              {REFERENCE_GROUPS.map((group) => (
+                <Fragment key={group.title}>
+                  <div className="pt-[1.25rem] pb-[1.25rem]" role="cell">
+                    <span className="text-[1.25rem] font-bold leading-[1.3] tracking-[-0.02em] text-fg ps-[0.375rem]">
+                      {group.title}
+                    </span>
+                  </div>
+                  <div className="pt-[1.25rem] pb-[1.25rem]" role="cell">
+                    <ul className="flex flex-col gap-[0.625rem]">
+                      {group.entries.map((entry, i) => (
+                        <li
+                          key={i}
+                          className="text-[1.25rem] leading-[1.4] tracking-[-0.02em] text-fg ps-[0.375rem]"
+                        >
+                          {linkifyCitation(entry)}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  <div className="col-span-2 border-b border-fg" />
+                </Fragment>
+              ))}
             </div>
-          ))}
+          </div>
         </section>
       </div>
     </div>

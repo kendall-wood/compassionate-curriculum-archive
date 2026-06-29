@@ -76,7 +76,9 @@
     "ack2": "We are deeply grateful to all participants and contributors for their time, trust, and feedback. Thanks go to the Learning Team at FACT, and to the working group — Dominique Walker, Dianne Garrison, Sian Phillips, and Paula Harriott — for their insights and dedication, and to Dr Helena Gosling for her support at the test site.",
     "ack3": "This project was conducted as an interdisciplinary collaboration. The first author was commissioned by FACT Liverpool and worked in accordance with their duty of care policies. The second author received ethical approval from Liverpool John Moores University Research Ethics Committee (UREC: 23/LCP/020). Informed consent was obtained from all participants.",
     "referencesHeading": "Appendix: References",
-    "referencesIntro": "The full reference list for the curriculum, grouped by section."
+    "referencesIntro": "The full reference list for the curriculum, grouped by section.",
+    "referencesColSection": "Section",
+    "referencesColReference": "Reference"
   },
   "lessonNav": {
     "previous": "Previous lesson",
