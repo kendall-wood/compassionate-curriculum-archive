@@ -7,6 +7,7 @@
     "back": "Back",
     "home": "Home",
     "about": "About",
+    "appendix": "Appendix",
     "print": "Print",
     "contact": "Contact",
     "settings": "Settings & Accessibility",
@@ -80,6 +81,11 @@
   "lessonNav": {
     "previous": "Previous lesson",
     "next": "Next lesson"
+  },
+  "appendix": {
+    "metaTitle": "Appendix — Compassionate Curriculum Archive",
+    "heading": "Appendix",
+    "iceBreakersHeading": "Ice Breakers"
   },
   "contact": {
     "metaTitle": "Contact — Compassionate Curriculum Archive",
