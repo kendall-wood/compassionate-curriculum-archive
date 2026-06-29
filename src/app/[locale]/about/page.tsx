@@ -122,13 +122,25 @@ export default async function AboutPage({
                   <Fragment key={`${section.section}-${lesson.lessonLabel}`}>
                     <div className="pt-[1.25rem] pb-[1.25rem]" role="cell">
                       {li === 0 ? (
-                        <span className="text-[1.25rem] font-bold leading-[1.3] tracking-[-0.02em] text-fg ps-[0.375rem]">
+                        <span
+                          className="text-[1.25rem] font-bold leading-[1.3] tracking-[-0.02em] text-fg px-[0.375rem] py-[0.125rem] hover:bg-accent hover:text-accent-fg transition-colors duration-100"
+                          style={{
+                            boxDecorationBreak: "clone",
+                            WebkitBoxDecorationBreak: "clone",
+                          }}
+                        >
                           {section.section}
                         </span>
                       ) : null}
                     </div>
                     <div className="pt-[1.25rem] pb-[1.25rem]" role="cell">
-                      <span className="text-[1.25rem] leading-[1.3] tracking-[-0.02em] text-fg ps-[0.375rem]">
+                      <span
+                        className="text-[1.25rem] leading-[1.3] tracking-[-0.02em] text-fg px-[0.375rem] py-[0.125rem] hover:bg-accent hover:text-accent-fg transition-colors duration-100"
+                        style={{
+                          boxDecorationBreak: "clone",
+                          WebkitBoxDecorationBreak: "clone",
+                        }}
+                      >
                         <span className="font-bold">{lesson.lessonLabel}</span>{" "}
                         {lesson.lessonTitle}
                       </span>
