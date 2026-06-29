@@ -78,7 +78,8 @@
     "referencesHeading": "Appendix: References",
     "referencesIntro": "The full reference list for the curriculum, grouped by section.",
     "referencesColSection": "Section",
-    "referencesColReference": "Reference"
+    "referencesColLesson": "Lesson",
+    "referencesColSource": "Source"
   },
   "lessonNav": {
     "previous": "Previous lesson",

@@ -1,7 +1,11 @@
 import { Fragment } from "react";
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { Toolbar } from "@/components/Toolbar";
-import { REFERENCE_GROUPS } from "@/data/references";
+import { REFERENCE_SECTIONS } from "@/data/references";
+
+// Section / Lesson / Source — mirrors the section-page curriculum table widths
+// (a fixed label column + flexible content columns).
+const REFERENCE_COLS = "234px minmax(280px, 0.9fr) minmax(440px, 1.7fr)";
 
 export async function generateMetadata({
   params,
@@ -89,10 +93,7 @@ export default async function AboutPage({
           <div className="w-full overflow-x-auto">
             <div
               className="grid items-start"
-              style={{
-                gridTemplateColumns: "234px minmax(420px, 1fr)",
-                rowGap: 0,
-              }}
+              style={{ gridTemplateColumns: REFERENCE_COLS, rowGap: 0 }}
               role="table"
               aria-label={t("referencesHeading")}
             >
@@ -104,35 +105,50 @@ export default async function AboutPage({
                 </div>
                 <div role="columnheader">
                   <span className="text-[1.25rem] tracking-[-0.02em] leading-none ps-[0.375rem]">
-                    {t("referencesColReference")}
+                    {t("referencesColLesson")}
+                  </span>
+                </div>
+                <div role="columnheader">
+                  <span className="text-[1.25rem] tracking-[-0.02em] leading-none ps-[0.375rem]">
+                    {t("referencesColSource")}
                   </span>
                 </div>
               </div>
 
-              <div className="col-span-2 mt-[0.8125rem] border-t border-fg" />
+              <div className="col-span-3 mt-[0.8125rem] border-t border-fg" />
 
-              {REFERENCE_GROUPS.map((group) => (
-                <Fragment key={group.title}>
-                  <div className="pt-[1.25rem] pb-[1.25rem]" role="cell">
-                    <span className="text-[1.25rem] font-bold leading-[1.3] tracking-[-0.02em] text-fg ps-[0.375rem]">
-                      {group.title}
-                    </span>
-                  </div>
-                  <div className="pt-[1.25rem] pb-[1.25rem]" role="cell">
-                    <ul className="flex flex-col gap-[0.625rem]">
-                      {group.entries.map((entry, i) => (
-                        <li
-                          key={i}
-                          className="text-[1.25rem] leading-[1.4] tracking-[-0.02em] text-fg ps-[0.375rem]"
-                        >
-                          {linkifyCitation(entry)}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                  <div className="col-span-2 border-b border-fg" />
-                </Fragment>
-              ))}
+              {REFERENCE_SECTIONS.map((section) =>
+                section.lessons.map((lesson, li) => (
+                  <Fragment key={`${section.section}-${lesson.lessonLabel}`}>
+                    <div className="pt-[1.25rem] pb-[1.25rem]" role="cell">
+                      {li === 0 ? (
+                        <span className="text-[1.25rem] font-bold leading-[1.3] tracking-[-0.02em] text-fg ps-[0.375rem]">
+                          {section.section}
+                        </span>
+                      ) : null}
+                    </div>
+                    <div className="pt-[1.25rem] pb-[1.25rem]" role="cell">
+                      <span className="text-[1.25rem] leading-[1.3] tracking-[-0.02em] text-fg ps-[0.375rem]">
+                        <span className="font-bold">{lesson.lessonLabel}</span>{" "}
+                        {lesson.lessonTitle}
+                      </span>
+                    </div>
+                    <div className="pt-[1.25rem] pb-[1.25rem]" role="cell">
+                      <ul className="flex flex-col gap-[0.625rem]">
+                        {lesson.sources.map((source, si) => (
+                          <li
+                            key={si}
+                            className="text-[1.25rem] leading-[1.4] tracking-[-0.02em] text-fg ps-[0.375rem]"
+                          >
+                            {linkifyCitation(source)}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                    <div className="col-span-3 border-b border-fg" />
+                  </Fragment>
+                ))
+              )}
             </div>
           </div>
         </section>
