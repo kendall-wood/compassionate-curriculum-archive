@@ -100,7 +100,7 @@ export function ContentRenderer({ blocks }: { blocks: ContentBlock[] }) {
             return (
               <span
                 key={i}
-                className="inline-flex items-center justify-center self-start px-[0.625rem] py-[0.375rem] border border-fg text-accent-fg text-[1.25rem] tracking-[-0.02em] leading-[1.2]"
+                className="inline-flex items-center justify-center self-start px-[0.625rem] py-[0.375rem] border border-fg text-accent-fg text-[2rem] font-normal leading-[1.25] tracking-[-0.02em]"
                 style={{ background: "var(--color-accent)" }}
               >
                 {block.text}
