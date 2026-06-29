@@ -87,7 +87,10 @@
   "appendix": {
     "metaTitle": "Appendix — Compassionate Curriculum Archive",
     "heading": "Appendix",
-    "iceBreakersHeading": "Ice Breakers"
+    "iceBreakersHeading": "Ice Breakers",
+    "colNumber": "#",
+    "colTitle": "Ice Breaker",
+    "colInstructions": "Instructions"
   },
   "contact": {
     "metaTitle": "Contact — Compassionate Curriculum Archive",
