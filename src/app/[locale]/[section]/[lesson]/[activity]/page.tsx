@@ -5,10 +5,12 @@ import {
   loadSection,
   loadLesson,
   loadActivity,
+  loadLessonNeighbors,
 } from "@/data/curriculum";
 import { routing } from "@/i18n/routing";
 import { Toolbar } from "@/components/Toolbar";
 import { LessonHero } from "@/components/LessonHero";
+import { LessonNav } from "@/components/LessonNav";
 import { ActivityTabs } from "@/components/ActivityTabs";
 import { ActivityBlock } from "@/components/ActivityBlock";
 
@@ -66,6 +68,8 @@ export default async function ActivityPage({
   const activity = await loadActivity(sectionId, lessonId, activityId, locale);
   if (!section || !lesson || !activity) return notFound();
 
+  const { prev, next } = await loadLessonNeighbors(sectionId, lessonId, locale);
+
   return (
     <div className="cc-page bg-bg text-fg min-h-screen pl-[2rem] pr-[2rem] pt-[1.6875rem] pb-[5rem]">
       <div className="flex flex-col gap-[2.25rem] w-full">
@@ -77,6 +81,7 @@ export default async function ActivityPage({
           imageAlt={`${lesson.title} hero image`}
           sectionHref={`/${section.id}`}
           sectionLabel={section.title}
+          lessonLabel={lesson.label}
         />
 
         <ActivityTabs
@@ -92,6 +97,8 @@ export default async function ActivityPage({
           heading={activity.title}
           blocks={activity.blocks}
         />
+
+        <LessonNav prev={prev} next={next} />
       </div>
     </div>
   );

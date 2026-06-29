@@ -6,6 +6,7 @@ type LessonHeroProps = {
   imageAlt?: string;
   sectionHref?: string;
   sectionLabel?: string;
+  lessonLabel?: string;
 };
 
 export function LessonHero({
@@ -14,6 +15,7 @@ export function LessonHero({
   imageAlt = "",
   sectionHref,
   sectionLabel,
+  lessonLabel,
 }: LessonHeroProps) {
   return (
     <div className="flex flex-col gap-[1.5rem] w-full">
@@ -37,6 +39,7 @@ export function LessonHero({
           ) : (
             `/ ${sectionLabel}`
           )}
+          {lessonLabel ? <span className="opacity-70"> / {lessonLabel}</span> : null}
         </p>
       ) : null}
       <h1 className="text-[5.375rem] leading-[1.05] tracking-[-0.03em] text-fg font-normal">

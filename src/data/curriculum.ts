@@ -73,6 +73,39 @@ export async function loadActivity(
   return l?.activities.find((a) => a.id === activityId);
 }
 
+export type LessonRef = {
+  sectionId: string;
+  lessonId: string;
+  label: string;
+  title: string;
+};
+
+// Flat, ordered list of every lesson across all sections (the "lesson trail"),
+// used to walk prev/next between lessons — including across section boundaries.
+export async function loadLessonNeighbors(
+  sectionId: string,
+  lessonId: string,
+  locale: string = DEFAULT_LOCALE
+): Promise<{ prev?: LessonRef; next?: LessonRef }> {
+  const all = await loadAllSections(locale);
+  const flat: LessonRef[] = all.flatMap((s) =>
+    s.lessons.map((l) => ({
+      sectionId: s.id,
+      lessonId: l.id,
+      label: l.label,
+      title: l.title,
+    }))
+  );
+  const idx = flat.findIndex(
+    (x) => x.sectionId === sectionId && x.lessonId === lessonId
+  );
+  if (idx === -1) return {};
+  return {
+    prev: idx > 0 ? flat[idx - 1] : undefined,
+    next: idx < flat.length - 1 ? flat[idx + 1] : undefined,
+  };
+}
+
 // --- Locale-independent metadata (for static generation, navigation) ---
 
 export const sections: Section[] = SECTION_ORDER.map(
