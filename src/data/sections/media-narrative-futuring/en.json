@@ -248,6 +248,41 @@
               ]
             },
             {
+              "kind": "p",
+              "text": "Optionally, participants can analyze images inspired by different ways of seeing, such as:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "as a crime scene to be studied, marking forensics that reveal its undisclosed story;",
+                "as reconnaissance of a landscape, analyzing and marking its sight lines, movement vectors;",
+                "as a film studies student mapping power, intent and aesthetic choices in a staged visual composition."
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Discuss:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Does this relate to anything in your life in any way, or anyone you know?"
+              ]
+            },
+            {
+              "kind": "label",
+              "text": "Facilitators' Note"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Choose images drawn from media related to themes, power structures or social phenomena your group is discussing. E.g.: stills from military recruitment advertisements were used in workshops with incarcerated veterans. In-between moments, or images that might have multiple interpretations, work well.",
+                "Example images from the film Is This England? British Poverty in the '90s and the TV series Top Boy can be found in the download below (see the References section for citations).",
+                "This activity is based on Nigel Poor's San Quentin project. Printing and showing San Quentin Project #2, Archive Mapping, can be helpful to model the activity."
+              ]
+            },
+            {
               "kind": "download",
               "href": "/downloads/mnf-media-analysis-a1-image-relabel-examples.pdf",
               "label": "Download example images (PDF)"
@@ -261,7 +296,34 @@
           "blocks": [
             {
               "kind": "p",
-              "text": "Photovoice is a participatory visual method in which a group defines a question about an issue affecting their community, takes photographs in response, and uses those images to prompt discussion. The process supports participants in reflecting on lived experience, identifying issues they want to change, and exploring possible forms of action."
+              "text": "Photovoice is a participatory visual method in which a group defines a question about an issue affecting their community, takes photographs in response, and uses those images to prompt discussion. The process supports participants in reflecting on lived experience, identifying issues they want to change, and exploring possible forms of action. Images may also be shared through exhibition, publication, or other forms of public engagement."
+            },
+            {
+              "kind": "label",
+              "text": "Background"
+            },
+            {
+              "kind": "p",
+              "text": "Photography can express nuance and poetics concerning people's lived experience that might otherwise be difficult to articulate in words. It allows participants to document their realities and present them on their own terms. For example, Paolo Freire asked children in a Brazilian favela to take photos based on the theme of exploitation. One child photographed a nail in a wall, which revealed a system in which shopkeepers rented nails to children so they could hang heavy shoe-shine kits instead of carrying them home. The image opened up a deeper conversation about everyday forms of exploitation that might otherwise remain unseen."
+            },
+            {
+              "kind": "label",
+              "text": "Facilitator Notes"
+            },
+            {
+              "kind": "p",
+              "text": "Photovoice can be conducted over multiple sessions or adapted into a shorter format."
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Multi-session format: Session 1 — define the theme, guiding question, and process; between sessions — participants take photographs; Session 2 — view, analyze, and discuss images; Session 3 — identify next steps (action, exhibition, documentation).",
+                "Short format (approx. 90 minutes): define a guiding question; 30 minutes — participants take photos (e.g. on phones); return to upload and discuss images using a shared platform (e.g. Miro, Mural)."
+              ]
+            },
+            {
+              "kind": "p",
+              "text": "Be attentive to consent, especially if images include other people or are shared publicly."
             },
             {
               "kind": "p",
@@ -269,16 +331,114 @@
               "text": "Process"
             },
             {
-              "kind": "ol",
+              "kind": "p",
+              "bold": true,
+              "text": "1. Co-define the issue you'd like to address as a group"
+            },
+            {
+              "kind": "ul",
               "items": [
-                "Co-define the issue you'd like to address as a group",
-                "Create your guiding question (be personal, focus on one issue, determine a good scope)",
-                "Take Photos — participants take pictures in response to the question that express their perspective",
-                "Discuss using the SHMIR method: See, Happening, Meaning, Issue, Response",
-                "Synthesize — identify key themes, patterns or shared experiences",
-                "Disseminate (optional) — zine, exhibition, online, public presentation",
-                "Reflect — what stood out? what worked or could be improved? what felt meaningful?"
+                "What is the question you would like to explore?",
+                "What kind of general change or action would you like to see as a result?"
               ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "2. Create your guiding question"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Be personal (include the word 'you').",
+                "Focus on one issue.",
+                "Determine a good scope: questions should be relatively specific, allowing for more than one answer, but not too broad.",
+                "Example, potentially broad: What are the qualities of a university that \"centers gender and sexuality\"?",
+                "Example, more personal: What are the qualities of a space / organization / setting where you have felt your body and identity to be in harmony with the surroundings?"
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "3. Take Photos"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Participants take pictures in response to the question that express their perspective.",
+                "Photos can be of anything in any style. They can include people, objects or locations; they can document life, be staged, or be abstract.",
+                "Depending on the group size and time allotted, each person should take several photos (e.g. 4-8), then pick 1-2 favorites to share for discussion.",
+                "Optional: participants can write a short written reflection about the image set."
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "4. Discuss (SHMIR method)"
+            },
+            {
+              "kind": "p",
+              "text": "Review submitted photos one at a time:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "See: What do we notice?",
+                "Happening: What is taking place?",
+                "Meaning: How does the photo create meaning; why do we find it meaningful?",
+                "Issue: How does it relate to the issue we are discussing?",
+                "Response: Does the photo or discussion point to anything we might do in response?"
+              ]
+            },
+            {
+              "kind": "p",
+              "text": "Participants may share their intentions if they choose."
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "5. Synthesize"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Identify key themes, patterns or shared experiences.",
+                "Consider whether anything in the discussion points to ideas for action, design prototypes, pilots, storytelling or creative experiments."
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "6. Disseminate (optional)"
+            },
+            {
+              "kind": "p",
+              "text": "If sharing the work in any form, you're encouraged to use all images from the main discussion that participants consent to share; it's possible to use full names, initials, or remain anonymous."
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Consider formats — zine, exhibition, online, public presentation.",
+                "Ask: whose voice is being centered? How is dissemination giving participants voice?",
+                "Who needs to hear the message? Why?"
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "7. Reflect"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "What stood out?",
+                "What worked or could be improved?",
+                "What felt meaningful or enjoyable through this process?"
+              ]
+            },
+            {
+              "kind": "p",
+              "text": "Please see the References section on the About page for resources on Photovoice."
             }
           ]
         }
@@ -316,7 +476,7 @@
           "blocks": [
             {
               "kind": "p",
-              "text": "Based on the futuring exercise Prescriptions for Just Communities developed by Melanie Crean with Ayodamola Okunseinde, this activity invites participants to imagine a future, roughly 10-15 years from now, where a specific social problem has been resolved."
+              "text": "Based on the futuring exercise Prescriptions for Just Communities developed by Melanie Crean with Ayodamola Okunseinde, this activity invites participants to imagine a future, roughly 10-15 years from now, where a specific social problem has been resolved. Rather than focusing on how the problem was solved, participants envision what systems, technologies, services, or designs now exist that allow this new society to function in healthy and just ways. What would that society look like? What structures or mindsets would need to exist to support it?"
             },
             {
               "kind": "p",
@@ -331,6 +491,18 @@
               ]
             },
             {
+              "kind": "label",
+              "text": "Why Design for the Future?"
+            },
+            {
+              "kind": "p",
+              "text": "Designing for the future activates a different mode of thinking than reacting only to present-day problems. Rather than working incrementally within current limits, this method begins with a desirable outcome and works backward — asking what steps might be taken now to make that vision possible. This reframing helps break out of limiting frameworks and opens up space for more transformative ideas."
+            },
+            {
+              "kind": "p",
+              "text": "A \"wicked problem,\" such as climate change or racial injustice, is something so complex that it has no singular solution. They require many responses, created from different perspectives, at different scales, in different forms. Designers often begin by creating functional interventions that help shift perspective and reorient people, systems, or institutions, disrupting familiar assumptions to enable new understanding."
+            },
+            {
               "kind": "p",
               "bold": true,
               "text": "Preparation"
@@ -340,7 +512,38 @@
               "items": [
                 "The group decides on a problem it would like to address.",
                 "Consider a future ~10-15 years from now in which that problem no longer exists.",
-                "Break into groups of 2-3, give each paper, something to draw with, and three card prompts: a Social or emotional mindset, a Subject domain, a Design attribute."
+                "There's no need to explain how the issue was resolved. Instead, focus on what allows this future society to function well.",
+                "Break into groups of 2-3, give each paper, something to draw with, and three card prompts, one from each category: a Social or emotional mindset (e.g. transformation, stability, hope); a Subject domain (e.g. education, wellness, justice, fashion); a Design attribute (e.g. spherical, intelligent, motorized)."
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Ideation"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Using the prompts, participants imagine a new design, service, or object that helps their future society function. What systems, services, technologies, or cultural norms would need to be in place?",
+                "Each group writes down their prompts, sketches the concept, gives it a name, and writes a short explanation."
+              ]
+            },
+            {
+              "kind": "p",
+              "text": "Example: The combination of transformative, wellness, and artificial intelligence led to a design that reuses predictive policing data to power \"predictive care,\" anticipatory support that interrupts pathways into incarceration."
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Group Discussion"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "What design decisions did each group make, and why?",
+                "What needs or values does each design address?",
+                "How could elements of these concepts be prototyped today?",
+                "What challenges might arise in implementation, and how could they be overcome?"
               ]
             }
           ]
@@ -352,7 +555,19 @@
           "blocks": [
             {
               "kind": "p",
-              "text": "Worldbuilding is a creative method for imagining alternative ways of being through storytelling. By constructing a fictional or speculative world, participants can explore how systems, relationships, and power structures operate, and consider how they might be transformed."
+              "text": "Worldbuilding is a creative method for imagining alternative ways of being through storytelling. By constructing a fictional or speculative world, participants can explore how systems, relationships, and power structures operate, and consider how they might be transformed. This process helps people to experiment with creating new social possibilities and to consider their potential impact before taking action in real-world contexts."
+            },
+            {
+              "kind": "label",
+              "text": "Background"
+            },
+            {
+              "kind": "p",
+              "text": "Worldbuilding draws on the idea that the stories we inherit shape how we understand reality. As N.K. Jemisin suggests, stories help us make sense of the world, helping us structure both personal and collective memory, and influence what we perceive as possible or \"normal.\" By examining how worlds are constructed in fiction — through environment, culture, and power — we can better recognize how similar dynamics operate in society."
+            },
+            {
+              "kind": "p",
+              "text": "Understanding that systems are designed is essential to imagining how they might be dismantled, redesigned or transformed. The more clearly we understand the interrelation of cultural elements and systems of power, the more effectively we can intervene, both in imagined and lived worlds. Worldbuilding therefore becomes a method for analyzing power, imagining alternatives, and giving form to values, identities, and strategies of resistance."
             },
             {
               "kind": "p",
@@ -360,14 +575,105 @@
               "text": "Process"
             },
             {
-              "kind": "ol",
+              "kind": "p",
+              "bold": true,
+              "text": "1. Geography, Climate & Ecology"
+            },
+            {
+              "kind": "p",
+              "text": "Begin by imagining a world as an interconnected system, where landscapes, climates, and life forms shape each other."
+            },
+            {
+              "kind": "ul",
               "items": [
-                "Geography, Climate & Ecology — imagine a world as an interconnected system",
-                "Culture & Belief Systems — create at least two distinct cultures that coexist in this world",
-                "Power & Conflict — consider how power operates",
-                "Characters & Perspective — create at least two characters in this world",
-                "Ritual & Reflection — create a ritual, tradition or event that reveals a core belief",
-                "Reflection — how does your own lived experience shape how you have constructed this world?"
+                "What is the terrain: mountains, forests, oceans, deserts, ruins?",
+                "What natural resources exist, and how are they harvested, used or protected?",
+                "What's the climate and how does it affect daily life?",
+                "Are there recurring natural events (floods, droughts, storms)?",
+                "What forms of life exist: human, animal, vegetal, technological, hybrid?",
+                "How do these beings sustain or disrupt the ecosystem?"
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "2. Culture & Belief Systems"
+            },
+            {
+              "kind": "p",
+              "text": "Create at least two distinct cultures that coexist in this world."
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "What values, beliefs or taboos shape each culture?",
+                "What rituals, symbols, or practices define daily life?",
+                "How are identity and belonging expressed?",
+                "How is knowledge created, shared or controlled?",
+                "How do their histories or cosmologies shape how they see the world?",
+                "How does geography and environment influence culture (e.g. scarcity of water, abundance of wind)?"
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "3. Power & Conflict"
+            },
+            {
+              "kind": "p",
+              "text": "Consider how power operates."
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Who or what holds power (institutions, technologies, groups)?",
+                "What conflicts exist (social, political, economic, environmental, philosophical)?",
+                "How are roles, resources, or opportunities distributed?",
+                "What privileges or constraints are attached to different positions?",
+                "What is defined as normal? How is this expressed?",
+                "What stories or myths support or resist dominant power structures?"
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "4. Characters & Perspective"
+            },
+            {
+              "kind": "p",
+              "text": "Create at least two characters in this world."
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "What are their backgrounds, goals and relationships?",
+                "How do they navigate, benefit from, struggle with or challenge the world's systems?",
+                "What do they hope to protect, change or survive?",
+                "How does your own lived experience and perspective relate to the world?"
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "5. Ritual & Reflection"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Create a ritual, tradition or event that reveals a core belief, value or quality of the world (celebration, mourning ritual, rite of passage).",
+                "What does this tradition reveal about power, belonging, resistance, or joy?"
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "6. Reflection"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "How does your own lived experience shape how you have constructed this world, or interpret its meaning?",
+                "Are there aspects of this world that could be explored, adapted or prototyped in real life?"
               ]
             }
           ]
@@ -406,17 +712,109 @@
             {
               "kind": "p",
               "bold": true,
-              "text": "Steps:"
+              "text": "Example: In chair design"
             },
             {
-              "kind": "ol",
+              "kind": "ul",
               "items": [
-                "Set up — draw a small circle on the left labeled \"You\" or \"Now\", and a larger circle on the right labeled with a future year. Connect them to form a horizontal cone.",
-                "Plot the Probable — write down 2-3 things you are likely to be doing in a few years.",
-                "Imagine the Possible — list 8-20 \"Possibles\": tools, practices, mediums, collaborations, residencies, ambitions.",
-                "Identify the Plausible — choose 3-5 items from the \"Possible\" list that feel realistic over the next 1-2 years.",
-                "Define the Preferable — circle 1-2 items from the Plausible ring that feel most exciting, meaningful, or aligned with your values."
+                "Probable: Slightly more sustainable versions of today's chairs.",
+                "Plausible: Fully biodegradable, zero-waste chairs.",
+                "Possible: Hovering chairs or AI-integrated adaptive seats.",
+                "Preferable: Designs aligned with personal values and long-term ecological goals."
               ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Instructions"
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Set up"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Draw a small circle on the left labeled \"You\" or \"Now\".",
+                "Draw a larger circle on the right labeled with a future year.",
+                "Connect the top and bottom of the circles to form a horizontal cone."
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Step 1: Plot the Probable"
+            },
+            {
+              "kind": "p",
+              "text": "Inside the center of the large circle, write down 2-3 things you are likely to be doing in a few years, based on current work or ongoing projects."
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Step 2: Imagine the Possible"
+            },
+            {
+              "kind": "p",
+              "text": "Around the outer edge of the large circle, list 8-20 \"Possibles\":"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Tools, practices, or mediums you want to explore.",
+                "Collaborations, residencies, or fields of study you're curious about.",
+                "Ambitions like publishing a book, hosting a podcast, creating a curriculum, or organizing a community archive."
+              ]
+            },
+            {
+              "kind": "p",
+              "text": "Prompting questions: What do you want to be known for? What conversations do you want to be part of? Where would you like your work being shown, taught, or used? In what field, method or genre does your name come up?"
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Step 3: Identify the Plausible"
+            },
+            {
+              "kind": "p",
+              "text": "Draw a middle ring inside the large circle."
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Choose 3-5 items from the \"Possible\" list that feel realistic over the next 1-2 years.",
+                "These might include projects you're equipped to begin soon, or opportunities you're close to accessing."
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Step 4: Define the Preferable"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Circle 1-2 items from the Plausible ring that feel most exciting, meaningful, or aligned with your values.",
+                "These become your guiding star, a preferred future you want to work toward. These can inform future goals, even beyond school or immediate obligations."
+              ]
+            },
+            {
+              "kind": "label",
+              "text": "Facilitators' Notes"
+            },
+            {
+              "kind": "p",
+              "text": "Encourage participants to reflect on: What future work feels most meaningful? What forms or themes feel resonant? What kind of community or context do participants want to be part of? What do they want to be recognized for?"
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Optional Add-On: Core Values as Stories"
+            },
+            {
+              "kind": "p",
+              "text": "Invite participants to describe a personal story that reflects what drives their decisions. Distill two or three core values from that story and use them to anchor the Futures Cone."
             }
           ]
         }
