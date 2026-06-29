@@ -30,6 +30,14 @@
           "title": "Color Wheel",
           "blocks": [
             {
+              "kind": "image",
+              "src": "/images/mnf-individual-reflection-a1-color-wheel.webp",
+              "alt": "A six-segment color wheel showing red, orange, yellow, green, blue, and purple.",
+              "width": 672,
+              "height": 608,
+              "caption": "A color wheel."
+            },
+            {
               "kind": "ul",
               "items": [
                 "Invite participants to look at the image of a color wheel, or picture one in their mind's eye and describe associations they have with each color. Associations might relate to an emotion, a memory, or a story they would like to tell.",
@@ -43,6 +51,14 @@
           "label": "A2",
           "title": "Color Field Portrait (after Mark Rothko)",
           "blocks": [
+            {
+              "kind": "image",
+              "src": "/images/mnf-individual-reflection-a2-color-field-rothko.webp",
+              "alt": "A person standing in front of a large Mark Rothko color field painting with a glowing orange-red field above a deep blue field.",
+              "width": 460,
+              "height": 677,
+              "caption": "A viewer with a Mark Rothko color field painting. Photo: Dana Gordon."
+            },
             {
               "kind": "ul",
               "items": [
@@ -85,6 +101,11 @@
                 "Share out and, if given consent, record people reading aloud.",
                 "Consider how the poems might lead to further writing; e.g., mentions of a place might lead to writing about the memory of an event that happened there; mentions of music or food could lead to writing about people, places or events associated with those things."
               ]
+            },
+            {
+              "kind": "download",
+              "href": "/downloads/mnf-individual-reflection-a4-i-am-from-poem.pdf",
+              "label": "Download the \"I Am From\" worksheet (PDF)"
             }
           ]
         }
@@ -190,6 +211,14 @@
           "title": "Image Re-labelling",
           "blocks": [
             {
+              "kind": "image",
+              "src": "/images/mnf-media-analysis-a1-image-relabel-example.webp",
+              "alt": "A black-and-white photograph of a segregated prison yard, hand-annotated in colored ink with questions and observations marking the story, power relationships, and details within the image.",
+              "width": 672,
+              "height": 438,
+              "caption": "Re-Creation 1.6.75 by Tommy Shakur Ross (2013), from Nigel Poor's San Quentin Project, Part 2."
+            },
+            {
               "kind": "p",
               "text": "The goal of this activity is to analyze evocative or ambiguous images taken from popular media in different ways, to use as prompts for discussion. It can facilitate media analysis, to understand and critique how media conveys messages that support negative stereotypes; or to prompt discussion of participants' lived experience."
             },
@@ -209,6 +238,11 @@
                 "Who might have taken this image, from what point of view?",
                 "What might happen next? Mark potential future stages of the story."
               ]
+            },
+            {
+              "kind": "download",
+              "href": "/downloads/mnf-media-analysis-a1-image-relabel-examples.pdf",
+              "label": "Download example images (PDF)"
             }
           ]
         },
@@ -335,6 +369,14 @@
           "label": "A3",
           "title": "Future Cones",
           "blocks": [
+            {
+              "kind": "image",
+              "src": "/images/mnf-participatory-futuring-a3-futures-cone.webp",
+              "alt": "A Futures Cone diagram: a point labeled 'you / now' on the left opens into nested ovals on the right labeled possible, plausible, probable, with a small circle marking a preferable future.",
+              "width": 672,
+              "height": 591,
+              "caption": "The Futures Cone, after Stuart Candy."
+            },
             {
               "kind": "p",
               "text": "Adapted from an exercise by Ashley Jane Lewis based on Stuart Candy's Future Cone. This exercise guides participants in imagining themselves three to five years into the future. Using a Futures Cone diagram, they explore what is probable, plausible, possible, and preferable in their own future development."

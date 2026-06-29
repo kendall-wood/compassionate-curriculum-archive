@@ -116,16 +116,23 @@ export function ActivityWithImage({
       </div>
 
       {heroImage ? (
-        // eslint-disable-next-line @next/next/no-img-element
-        <img
-          src={heroImage.src}
-          alt={heroImage.alt}
-          className="object-cover max-w-full h-auto"
-          style={{
-            width: `${(heroImage.width ?? 672) / 16}rem`,
-            aspectRatio: `${heroImage.width ?? 672} / ${heroImage.height ?? 376}`,
-          }}
-        />
+        <figure className="flex flex-col gap-[0.5rem] max-w-full">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={heroImage.src}
+            alt={heroImage.alt}
+            className="object-cover max-w-full h-auto"
+            style={{
+              width: `${(heroImage.width ?? 672) / 16}rem`,
+              aspectRatio: `${heroImage.width ?? 672} / ${heroImage.height ?? 376}`,
+            }}
+          />
+          {heroImage.caption ? (
+            <figcaption className="text-[1.25rem] leading-[1.3] tracking-[-0.02em] opacity-70 max-w-full">
+              {heroImage.caption}
+            </figcaption>
+          ) : null}
+        </figure>
       ) : null}
 
       <div

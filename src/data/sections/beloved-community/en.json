@@ -102,6 +102,14 @@
             {
               "kind": "p",
               "text": "For further critique, consider this diagram of the intersecting axis of privilege, domination and oppression from Kathryn Pauly Morgan (1996), that helps explain how people are positioned differently in relation to power. We all exist on an axis of oppression and domination. Some positions come with greater access, recognition, and advantage, while others are shaped by discrimination and exclusion. These positions are not fixed — our identities intersect and shift across different contexts, creating complex, layered experiences. Understanding this helps us become more aware of both our own position and the unequal conditions others may be navigating."
+            },
+            {
+              "kind": "image",
+              "src": "/images/bc-identity-a2-axes-of-privilege.webp",
+              "alt": "Diagram of the intersecting axes of privilege, domination, and oppression, with spokes labeled by identity category running from privilege at the top to oppression at the bottom.",
+              "width": 672,
+              "height": 584,
+              "caption": "The intersecting axes of privilege, domination, and oppression. Adapted from Kathryn Pauly Morgan (1996)."
             }
           ]
         },
@@ -147,6 +155,14 @@
           "label": "A4",
           "title": "Social Identity Wheel",
           "blocks": [
+            {
+              "kind": "image",
+              "src": "/images/bc-identity-a4-social-identity-wheel.webp",
+              "alt": "The Social Identity Wheel: a colorful circle divided into segments labeled with identity categories such as race/ethnicity, age, gender identity, sexual orientation, national origin, religion, income, and ability.",
+              "width": 672,
+              "height": 667,
+              "caption": "Social Identity Wheel (Johns Hopkins University)."
+            },
             {
               "kind": "p",
               "text": "Based on the social identity wheel, participants map out their identities and consider the questions below."
@@ -332,6 +348,14 @@
           "label": "A2",
           "title": "Emotional Wheel",
           "blocks": [
+            {
+              "kind": "image",
+              "src": "/images/bc-developing-your-language-a2-feelings-wheel.webp",
+              "alt": "The BEAM feelings wheel: a watercolor circle organized into core feelings — Sad, Shook, Joyful, Beast Mode, Peaceful — radiating outward into more specific emotion words.",
+              "width": 672,
+              "height": 677,
+              "caption": "Feelings wheel, Black Emotional and Mental Health Collective (BEAM)."
+            },
             {
               "kind": "p",
               "text": "Consider the emotions wheel developed by the Black Emotional and Mental Health Collective (BEAM), an organization which aims to dismantle systemic barriers to mental health support through peer-led training programs. On your own or with a partner:"

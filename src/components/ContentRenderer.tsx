@@ -101,21 +101,39 @@ export function ContentRenderer({ blocks }: { blocks: ContentBlock[] }) {
               // aspect-ratio + max-w-full keeps the image fitted to its
               // natural ratio even when the viewport shrinks below the
               // configured rem width.
-              // eslint-disable-next-line @next/next/no-img-element
-              <img
-                key={i}
-                src={block.src}
-                alt={block.alt}
-                width={w}
-                height={h}
-                className="object-cover max-w-full h-auto"
-                style={{
-                  width: `${w / 16}rem`,
-                  aspectRatio: `${w} / ${h}`,
-                }}
-              />
+              <figure key={i} className="flex flex-col gap-[0.5rem] max-w-full">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={block.src}
+                  alt={block.alt}
+                  width={w}
+                  height={h}
+                  className="object-cover max-w-full h-auto"
+                  style={{
+                    width: `${w / 16}rem`,
+                    aspectRatio: `${w} / ${h}`,
+                  }}
+                />
+                {block.caption ? (
+                  <figcaption className="text-[1.25rem] leading-[1.3] tracking-[-0.02em] opacity-70 max-w-full">
+                    {renderText(block.caption)}
+                  </figcaption>
+                ) : null}
+              </figure>
             );
           }
+          case "download":
+            return (
+              <a
+                key={i}
+                href={block.href}
+                download
+                className="inline-flex items-center gap-[0.5rem] self-start px-[0.625rem] py-[0.375rem] border border-fg text-fg bg-bg text-[1.25rem] tracking-[-0.02em] leading-[1.2] hover:bg-accent hover:text-accent-fg transition-colors"
+              >
+                <span>{block.label}</span>
+                <span aria-hidden="true">↓</span>
+              </a>
+            );
           default:
             return null;
         }

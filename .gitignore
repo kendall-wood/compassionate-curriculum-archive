@@ -12,3 +12,7 @@ dist/
 *.tsbuildinfo
 next-env.d.ts.bak
 .translation-cache/
+
+# Raw source assets — only optimized derivatives in public/ are committed
+/CC_images/
+CC_images*.zip

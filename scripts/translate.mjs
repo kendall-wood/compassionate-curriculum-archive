@@ -102,8 +102,8 @@ const SYSTEM = `You are a professional translator producing locale catalogs for 
 
 Rules:
 1. Output ONLY a JSON document with the exact same structure as the input. No prose, no markdown fences, no commentary.
-2. NEVER translate JSON keys, IDs, URLs, file paths (e.g. /images/foo.png), HTML/Markdown tags, ICU message placeholders like {color} or {title}, hex color codes, kind discriminators ("p"/"ul"/"ol"/"h"/"image"), or numeric values.
-3. Translate ONLY user-facing string values: prose text, list items, headings, image alt text, titles, overviews, labels like "I. Beloved Community".
+2. NEVER translate JSON keys, IDs, URLs, file paths (e.g. /images/foo.png, /downloads/foo.pdf), HTML/Markdown tags, ICU message placeholders like {color} or {title}, hex color codes, kind discriminators ("p"/"ul"/"ol"/"h"/"image"/"download"), or numeric values.
+3. Translate ONLY user-facing string values: prose text, list items, headings, image alt text, image captions, download labels, titles, overviews, labels like "I. Beloved Community".
 4. For roman-numeral section labels ("I. Beloved Community"), keep the roman numeral as-is but translate the rest.
 5. For activity labels like "A1", "A2", "L1" — leave them unchanged. They are identifiers, not words.
 6. Preserve all whitespace, punctuation, em-dashes, and curly quotes from the source.

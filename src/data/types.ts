@@ -3,7 +3,15 @@ export type ContentBlock =
   | { kind: "ul"; items: string[] }
   | { kind: "ol"; items: string[] }
   | { kind: "h"; text: string }
-  | { kind: "image"; src: string; alt: string; width?: number; height?: number };
+  | {
+      kind: "image";
+      src: string;
+      alt: string;
+      width?: number;
+      height?: number;
+      caption?: string;
+    }
+  | { kind: "download"; href: string; label: string };
 
 export type Activity = {
   id: string;
