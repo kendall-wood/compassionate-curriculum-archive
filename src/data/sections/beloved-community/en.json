@@ -113,7 +113,7 @@
             },
             {
               "kind": "p",
-              "text": "For further critique, consider this diagram of the intersecting axis of privilege, domination and oppression from Kathryn Pauly Morgan (1996), that helps explain how people are positioned differently in relation to power. We all exist on an axis of oppression and domination. Some positions come with greater access, recognition, and advantage, while others are shaped by discrimination and exclusion. These positions are not fixed — our identities intersect and shift across different contexts, creating complex, layered experiences. Understanding this helps us become more aware of both our own position and the unequal conditions others may be navigating."
+              "text": "For further critique, consider this diagram of the intersecting axis of privilege, domination and oppression from Kathryn Pauly Morgan (1996), that helps explain how people are positioned differently in relation to power. We all exist on an axis of oppression & domination as demonstrated here. Some positions come with greater access, recognition, and advantage, while others are shaped by discrimination and exclusion. These positions are not fixed—our identities intersect and shift across different contexts, creating complex, layered experiences. Understanding this helps us become more aware of both our own position and the unequal conditions others may be navigating."
             }
           ]
         },
@@ -150,7 +150,7 @@
             },
             {
               "kind": "p",
-              "text": "Unconscious bias is simply our unintentional preferences. Bias is often decided in less than one tenth of a second, many times faster than we can process an image. People often associate bias with racial bias, though bias takes many forms. An affinity bias means we prefer those who are like us. It makes us feel warm and fuzzy when we have people to reconfirm our thoughts, fears and background. We also prefer those who have the same education, career background, accent, ethnicity, etc. If you have a brain you have bias."
+              "text": "Unconscious bias is simply our unintentional people's preferences. Bias is often decided in less than one tenth of a second, many times faster than we can process an image. People often associate bias with racial bias, though bias takes many forms. An affinity bias means we prefer those who are like us. It makes us feel warm and fuzzy when we have people to reconfirm our thoughts, fears and background. We also prefer those who have the same education, career background, accent (scouserssss stand up), ethnicity etc. For example, I might have an affinity bias for anyone who supports Arsenal, and this makes me believe they are a good and somehow better person than any Manchester United fan. If you have a brain you have bias."
             }
           ]
         },
@@ -297,7 +297,11 @@
         },
         {
           "kind": "p",
-          "text": "Emotional Fluency describes the relationships we have with our emotions. It allows us to listen more effectively and respond appropriately during tense conversations, recognising what others might be feeling and if they are reaching out to connect. Being aware of our emotions allows us to start understanding where they come from and what thoughts trigger them. Developing emotional fluency goes beyond just recognizing and labelling our emotions — it means learning to coexist with them without feeling the need to push them away. Our beloved communities help us discuss and co-exist with our intersectional, lived experiences."
+          "text": "Emotional Fluency describes the relationships we have with our emotions. It allows us to listen more effectively and respond appropriately during tense conversations, recognising what others might be feeling and if they are reaching out to connect. In the workplace, it's important to acknowledge and embrace emotions. Historically, male-dominated work environments have selectively acknowledged the value of emotions and who is entitled to express them."
+        },
+        {
+          "kind": "p",
+          "text": "Being aware of our emotions allows us to start understanding where they come from and what thoughts trigger them. Developing emotional fluency goes beyond just recognizing and labelling our emotions - it means learning to coexist with them without feeling the need to push them away. To be emotionally fluent, we need to be present enough to notice and name our judgments so that we can start peacefully coexisting with however we feel. Our beloved communities help us discuss and co-exist with our intersectional, lived experiences."
         }
       ],
       "activities": [
@@ -337,8 +341,8 @@
                 "Where did you learn which emotions are acceptable or unacceptable?",
                 "How do your emotions show up in your body?",
                 "Can you name the emotions you are experiencing now?",
-                "What do these emotions feel like? Describe where and what you are feeling, and how this state of mind is unfolding throughout your body without judgement.",
-                "Work down your body from head to toe, and be factual about where you feel the emotion. Reassure yourself that everything is okay and that you are safe."
+                "What do these emotions feel like? Describe where and what you are feeling, and how this state of mind is unfolding throughout your body without judgement. E.g My chest is tight. My legs are restless.",
+                "Work down your body from head to toe, and be factual about where you feel the emotion, is it in your scalp, your brow, eyebrows, ear lobes, cheeks, jaw? Reassure yourself that everything is okay and that you are safe."
               ]
             },
             {
@@ -403,6 +407,10 @@
         {
           "kind": "p",
           "text": "Trauma may be a significant one-off event or the consequence of ongoing insidious actions, microaggressions, or being constantly treated differently. Hartmann and Gone (2014) describe historical trauma as differing from common lifetime psychological trauma in four key ways: it is colonial in origin, collective in impact, cumulative across adverse events, and cross-generational in transmission of risk and vulnerability."
+        },
+        {
+          "kind": "p",
+          "text": "Historical trauma consists of psychological and emotional injuries shared collectively across generations resulting from past collective traumatic experiences or events, manifesting in perceived discrimination and oppression, learned mistrust, exhaustion and feelings of humiliation, cultural-related syndromes, and historical thoughts of loss, associated with various clinical psychological disorders and risk behaviours within a group that share a similar social, historical, and political background (Mutuyimana and Maercker, 2023)."
         },
         {
           "kind": "p",
@@ -480,8 +488,28 @@
               "text": "Repeat with the other foot forward. Breathe out pain. Breath in calm and the opportunity to heal."
             },
             {
+              "kind": "label",
+              "text": "Closing discussion"
+            },
+            {
               "kind": "p",
-              "text": "This lesson may conclude with reflection on racial trauma, intergenerational survival strategies, and the need for community, justice, and institutional change. Dr. Shelley Harrell's six-level framework helps describe the physical and emotional effects that can follow exposure to racism, including racism-related life events, vicarious racism, daily racist micro-stressors, chronic contextual stressors, collective experiences of racism, and transgenerational transmission of trauma."
+              "text": "This section may conclude with reflection on racial trauma, intergenerational survival strategies, and the need for community, justice, and institutional change."
+            },
+            {
+              "kind": "label",
+              "text": "Background"
+            },
+            {
+              "kind": "p",
+              "text": "Dr. Shelley Harrell's six-level framework helps describe the physical and emotional effects that can follow exposure to racism. These harms are reflected in broader patterns of inequality: the Race Disparity Audit (2017) found that Black and Brown people in the UK are more likely to be admitted to psychiatric hospitals, more likely to be sectioned under the Mental Health Act, and more likely to receive poorer care and worse outcomes. Despite this evidence, there has been limited sustained effort to reduce racial inequalities in mental health or reform the institutions that reproduce them."
+            },
+            {
+              "kind": "p",
+              "text": "Harrell's framework shows that racial trauma operates at multiple levels. These include racism-related life events, such as racist abuse or assault; vicarious racism, or indirect exposure through hearing about or witnessing racism; and daily racist micro-stressors, the subtle but repeated acts often referred to as microaggressions. It also includes chronic contextual stressors, such as living with the constant awareness of racial inequality and the unequal distribution of resources; collective experiences of racism, in which violence against one's racial group is witnessed and felt communally; and transgenerational transmission of trauma, in which survival strategies and the effects of oppression are passed across generations."
+            },
+            {
+              "kind": "p",
+              "text": "The final three levels in particular help explain the group-based and cumulative nature of racial trauma, which is often overlooked. They show why events such as the deaths of Stephen Lawrence, Anthony Walker, George Floyd, Tamir Rice, and Alton Sterling resonate so deeply across communities, and why anti-racist movements remain necessary. Harrell's framework makes visible the chronic, layered, and collective harms of racism, while also helping distinguish racial trauma from more individualized accounts of trauma."
             }
           ]
         }
