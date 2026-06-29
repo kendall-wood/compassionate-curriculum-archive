@@ -1,9 +1,6 @@
-import { Fragment } from "react";
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { Toolbar } from "@/components/Toolbar";
 import { ICE_BREAKERS, ICE_BREAKERS_INTRO } from "@/data/appendix";
-
-const ICE_BREAKER_COLS = "96px minmax(320px, 1fr) minmax(440px, 1.7fr)";
 
 export async function generateMetadata({
   params,
@@ -40,67 +37,26 @@ export default async function AppendixPage({
             {ICE_BREAKERS_INTRO}
           </p>
 
-          <div className="w-full overflow-x-auto">
-            <div
-              className="grid items-start"
-              style={{ gridTemplateColumns: ICE_BREAKER_COLS, rowGap: 0 }}
-              role="table"
-              aria-label={t("iceBreakersHeading")}
-            >
-              <div className="contents" role="row">
-                <div role="columnheader">
-                  <span className="text-[1.25rem] tracking-[-0.02em] leading-none ps-[0.375rem]">
-                    {t("colNumber")}
-                  </span>
-                </div>
-                <div role="columnheader">
-                  <span className="text-[1.25rem] tracking-[-0.02em] leading-none ps-[0.375rem]">
-                    {t("colTitle")}
-                  </span>
-                </div>
-                <div role="columnheader">
-                  <span className="text-[1.25rem] tracking-[-0.02em] leading-none ps-[0.375rem]">
-                    {t("colInstructions")}
-                  </span>
-                </div>
-              </div>
-
-              <div className="col-span-3 mt-[0.8125rem] border-t border-fg" />
-
-              {ICE_BREAKERS.map((ib, i) => (
-                <Fragment key={i}>
-                  <div className="pt-[1.25rem] pb-[1.25rem]" role="cell">
-                    <span className="text-[1.25rem] font-bold leading-[1.3] tracking-[-0.02em] text-fg ps-[0.375rem]">
-                      {i + 1}
-                    </span>
-                  </div>
-                  <div className="pt-[1.25rem] pb-[1.25rem]" role="cell">
-                    <span className="text-[1.25rem] leading-[1.3] tracking-[-0.02em] text-fg ps-[0.375rem]">
-                      {ib.title}
-                    </span>
-                  </div>
-                  <div className="pt-[1.25rem] pb-[1.25rem]" role="cell">
-                    {ib.blocks.length > 0 ? (
-                      <ul className="flex flex-col gap-[0.625rem]">
-                        {ib.blocks.map((b, j) => (
-                          <li
-                            key={j}
-                            className="text-[1.25rem] leading-[1.4] tracking-[-0.02em] text-fg ps-[0.375rem]"
-                          >
-                            {b.heading ? (
-                              <span className="font-bold">{b.heading}: </span>
-                            ) : null}
-                            {b.text}
-                          </li>
-                        ))}
-                      </ul>
+          <ol className="flex flex-col gap-[2rem]">
+            {ICE_BREAKERS.map((ib, i) => (
+              <li key={i} className="flex flex-col gap-[0.75rem] max-w-[79rem]">
+                <h3 className="text-[1.5rem] leading-[1.2] tracking-[-0.02em] text-fg font-bold">
+                  {i + 1}. {ib.title}
+                </h3>
+                {ib.blocks.map((b, j) => (
+                  <p
+                    key={j}
+                    className="text-[1.5rem] leading-[1.4] tracking-[-0.02em] text-fg"
+                  >
+                    {b.heading ? (
+                      <span className="font-bold">{b.heading}: </span>
                     ) : null}
-                  </div>
-                  <div className="col-span-3 border-b border-fg" />
-                </Fragment>
-              ))}
-            </div>
-          </div>
+                    {b.text}
+                  </p>
+                ))}
+              </li>
+            ))}
+          </ol>
         </section>
       </div>
     </div>
