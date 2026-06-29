@@ -3,6 +3,57 @@ import type { ContentBlock } from "@/data/types";
 // Matches either [label](url) or a bare https?:// URL
 const tokenRegex = /(\[[^\]]+\]\(https?:\/\/[^)]+\)|https?:\/\/[^\s)]+)/g;
 
+// Pulls the video id out of the YouTube URL forms that appear in the
+// curriculum (youtu.be/ID and youtube.com/watch?v=ID).
+function youTubeId(url: string): string | null {
+  const short = url.match(/youtu\.be\/([A-Za-z0-9_-]{6,})/);
+  if (short) return short[1];
+  const watch = url.match(/[?&]v=([A-Za-z0-9_-]{6,})/);
+  if (watch) return watch[1];
+  return null;
+}
+
+// Unique YouTube ids across a set of strings, in first-seen order.
+function collectYouTubeIds(strings: string[]): string[] {
+  const ids: string[] = [];
+  for (const s of strings) {
+    for (const token of s.split(tokenRegex)) {
+      const id = youTubeId(token);
+      if (id && !ids.includes(id)) ids.push(id);
+    }
+  }
+  return ids;
+}
+
+function YouTubeEmbed({ id }: { id: string }) {
+  return (
+    <div className="w-[42rem] max-w-full self-start">
+      <div className="relative w-full border border-fg" style={{ aspectRatio: "16 / 9" }}>
+        <iframe
+          className="absolute inset-0 h-full w-full"
+          src={`https://www.youtube-nocookie.com/embed/${id}`}
+          title="Embedded video"
+          loading="lazy"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowFullScreen
+        />
+      </div>
+    </div>
+  );
+}
+
+function VideoEmbeds({ from }: { from: string[] }) {
+  const ids = collectYouTubeIds(from);
+  if (ids.length === 0) return null;
+  return (
+    <div className="flex flex-col gap-[1rem]">
+      {ids.map((id) => (
+        <YouTubeEmbed key={id} id={id} />
+      ))}
+    </div>
+  );
+}
+
 function renderText(text: string) {
   const parts = text.split(tokenRegex);
   return parts.map((part, i) => {
@@ -21,6 +72,23 @@ function renderText(text: string) {
       );
     }
     if (/^https?:\/\//.test(part)) {
+      if (youTubeId(part)) {
+        // Compact "box with arrow" chip; the full player is embedded below
+        // the block by VideoEmbeds.
+        return (
+          <a
+            key={i}
+            href={part}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-[0.375rem] px-[0.5rem] py-[0.0625rem] border border-fg text-fg hover:bg-accent hover:text-accent-fg transition-colors align-baseline text-[0.85em] leading-snug"
+          >
+            <span aria-hidden="true">▶</span>
+            YouTube
+            <span aria-hidden="true">↗</span>
+          </a>
+        );
+      }
       return (
         <a
           key={i}
@@ -44,46 +112,48 @@ export function ContentRenderer({ blocks }: { blocks: ContentBlock[] }) {
         switch (block.kind) {
           case "p":
             return (
-              <p
-                key={i}
-                className={`text-[2rem] leading-[1.25] tracking-[-0.02em] ${
-                  block.bold ? "font-bold" : "font-normal"
-                }`}
-              >
-                {renderText(block.text)}
-              </p>
+              <div key={i} className="flex flex-col gap-[1rem]">
+                <p
+                  className={`text-[2rem] leading-[1.25] tracking-[-0.02em] ${
+                    block.bold ? "font-bold" : "font-normal"
+                  }`}
+                >
+                  {renderText(block.text)}
+                </p>
+                <VideoEmbeds from={[block.text]} />
+              </div>
             );
           case "ul":
             return (
-              <ul
-                key={i}
-                className="list-disc ps-[1.5em] flex flex-col gap-[0.75rem]"
-              >
-                {block.items.map((item, j) => (
-                  <li
-                    key={j}
-                    className="text-[2rem] leading-[1.4] tracking-[-0.02em]"
-                  >
-                    {renderText(item)}
-                  </li>
-                ))}
-              </ul>
+              <div key={i} className="flex flex-col gap-[1rem]">
+                <ul className="list-disc ps-[1.5em] flex flex-col gap-[0.75rem]">
+                  {block.items.map((item, j) => (
+                    <li
+                      key={j}
+                      className="text-[2rem] leading-[1.4] tracking-[-0.02em]"
+                    >
+                      {renderText(item)}
+                    </li>
+                  ))}
+                </ul>
+                <VideoEmbeds from={block.items} />
+              </div>
             );
           case "ol":
             return (
-              <ol
-                key={i}
-                className="list-decimal ps-[1.5em] flex flex-col gap-[0.75rem]"
-              >
-                {block.items.map((item, j) => (
-                  <li
-                    key={j}
-                    className="text-[2rem] leading-[1.4] tracking-[-0.02em]"
-                  >
-                    {renderText(item)}
-                  </li>
-                ))}
-              </ol>
+              <div key={i} className="flex flex-col gap-[1rem]">
+                <ol className="list-decimal ps-[1.5em] flex flex-col gap-[0.75rem]">
+                  {block.items.map((item, j) => (
+                    <li
+                      key={j}
+                      className="text-[2rem] leading-[1.4] tracking-[-0.02em]"
+                    >
+                      {renderText(item)}
+                    </li>
+                  ))}
+                </ol>
+                <VideoEmbeds from={block.items} />
+              </div>
             );
           case "h":
             return (
