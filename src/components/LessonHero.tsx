@@ -48,7 +48,7 @@ export function LessonHero({
           {lessonLabel ? <span className="opacity-70"> / {lessonLabel}</span> : null}
         </p>
       ) : null}
-      <h1 className="text-[5.375rem] leading-[1.05] tracking-[-0.03em] text-fg font-normal">
+      <h1 className="text-[4.5rem] leading-[1.05] tracking-[-0.03em] text-fg font-normal">
         {title}
       </h1>
       {imageBelow ? heroImage : null}

@@ -63,7 +63,7 @@ export default async function AboutPage({
         </p>
 
         <section className="flex flex-col gap-[1.5rem] mt-[1.5rem]">
-          <h2 className="text-[2.25rem] leading-[1.1] tracking-[-0.02em] text-fg font-normal">
+          <h2 className="text-[1.5rem] font-bold leading-[1.2] tracking-[-0.02em] text-fg">
             {t("acknowledgementsHeading")}
           </h2>
           <p className="text-[2rem] leading-[1.25] tracking-[-0.02em] text-fg max-w-[79rem]">
@@ -78,7 +78,7 @@ export default async function AboutPage({
         </section>
 
         <section className="flex flex-col gap-[1.5rem] mt-[1.5rem]">
-          <h2 className="text-[2.25rem] leading-[1.1] tracking-[-0.02em] text-fg font-normal">
+          <h2 className="text-[1.5rem] font-bold leading-[1.2] tracking-[-0.02em] text-fg">
             {t("referencesHeading")}
           </h2>
           <p className="text-[1.5rem] leading-[1.3] tracking-[-0.02em] opacity-70 max-w-[79rem]">

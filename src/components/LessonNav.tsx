@@ -12,7 +12,7 @@ export async function LessonNav({ prev, next }: LessonNavProps) {
   const t = await getTranslations("lessonNav");
 
   const navBtn =
-    "inline-flex items-center px-[0.875rem] py-[0.5rem] border border-fg text-fg text-[1.25rem] tracking-[-0.02em] leading-[1.2] hover:bg-accent hover:text-accent-fg transition-colors";
+    "inline-flex items-center px-[0.625rem] py-[0.375rem] border border-fg text-fg text-[1.25rem] tracking-[-0.02em] leading-[1.2] hover:bg-accent hover:text-accent-fg transition-colors";
 
   return (
     <nav

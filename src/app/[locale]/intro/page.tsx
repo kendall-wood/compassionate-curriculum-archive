@@ -40,20 +40,20 @@ export default async function IntroPage({
 
         <SectionTabs activeId="intro" locale={locale} />
 
-        <h2 className="text-[1.5rem] font-bold tracking-[-0.02em] leading-none text-fg">
+        <h2 className="text-[1.5rem] font-bold tracking-[-0.02em] leading-[1.2] text-fg">
           {t("heading")}
         </h2>
 
         <div className="flex flex-col gap-[1.5rem]">
-          <p className="text-[2rem] leading-[1.25] tracking-[-0.02em] text-fg font-normal">
+          <p className="text-[2rem] leading-[1.25] tracking-[-0.02em] text-fg font-normal max-w-[79rem]">
             {t("p1")}
           </p>
 
-          <p className="text-[2rem] leading-[1.25] tracking-[-0.02em] text-fg font-normal">
+          <p className="text-[2rem] leading-[1.25] tracking-[-0.02em] text-fg font-normal max-w-[79rem]">
             {t("p2")}
           </p>
 
-          <p className="text-[2rem] leading-[1.25] tracking-[-0.02em] text-fg font-normal">
+          <p className="text-[2rem] leading-[1.25] tracking-[-0.02em] text-fg font-normal max-w-[79rem]">
             {t("p3Intro")}{" "}
             <Link href="/beloved-community" className={sectionPill}>
               {t("p3PillBeloved")} <span aria-hidden="true">↗</span>
@@ -69,11 +69,11 @@ export default async function IntroPage({
             {t("p3MidMedia")}
           </p>
 
-          <p className="text-[2rem] leading-[1.25] tracking-[-0.02em] text-fg font-normal">
+          <p className="text-[2rem] leading-[1.25] tracking-[-0.02em] text-fg font-normal max-w-[79rem]">
             {t("p4")}
           </p>
 
-          <p className="text-[2rem] leading-[1.25] tracking-[-0.02em] text-fg font-normal">
+          <p className="text-[2rem] leading-[1.25] tracking-[-0.02em] text-fg font-normal max-w-[79rem]">
             {t("p5")}
           </p>
         </div>

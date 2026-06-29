@@ -30,7 +30,7 @@ export default async function AppendixPage({
         </h1>
 
         <section className="flex flex-col gap-[1.5rem]">
-          <h2 className="text-[2.25rem] leading-[1.1] tracking-[-0.02em] text-fg font-normal">
+          <h2 className="text-[1.5rem] font-bold leading-[1.2] tracking-[-0.02em] text-fg">
             {t("iceBreakersHeading")}
           </h2>
           <p className="text-[2rem] leading-[1.25] tracking-[-0.02em] text-fg max-w-[79rem]">
@@ -40,7 +40,7 @@ export default async function AppendixPage({
           <ol className="flex flex-col gap-[2rem]">
             {ICE_BREAKERS.map((ib, i) => (
               <li key={i} className="flex flex-col gap-[0.75rem] max-w-[79rem]">
-                <h3 className="text-[1.75rem] leading-[1.2] tracking-[-0.02em] text-fg font-bold">
+                <h3 className="text-[1.5rem] leading-[1.2] tracking-[-0.02em] text-fg font-bold">
                   {i + 1}. {ib.title}
                 </h3>
                 {ib.blocks.map((b, j) => (
