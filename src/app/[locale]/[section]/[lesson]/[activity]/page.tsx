@@ -82,6 +82,7 @@ export default async function ActivityPage({
           sectionHref={`/${section.id}`}
           sectionLabel={section.title}
           lessonLabel={lesson.label}
+          imageBelow
         />
 
         <ActivityTabs
