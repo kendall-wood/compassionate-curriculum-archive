@@ -9,10 +9,7 @@ import {
 import { Link, routing } from "@/i18n/routing";
 import { Toolbar } from "@/components/Toolbar";
 import { ActivityTabs } from "@/components/ActivityTabs";
-import {
-  ActivityBlock,
-  ActivityWithImage,
-} from "@/components/ActivityBlock";
+import { ActivityBlock } from "@/components/ActivityBlock";
 
 export function generateStaticParams() {
   return routing.locales.flatMap((locale) =>
@@ -68,9 +65,6 @@ export default async function ActivityPage({
   const activity = await loadActivity(sectionId, lessonId, activityId, locale);
   if (!section || !lesson || !activity) return notFound();
 
-  const hasImage = activity.blocks.some((b) => b.kind === "image");
-  const Block = hasImage ? ActivityWithImage : ActivityBlock;
-
   return (
     <div className="cc-page bg-bg text-fg min-h-screen pl-[2rem] pr-[2rem] pt-[1.6875rem] pb-[5rem]">
       <div className="flex flex-col gap-[2.25rem] w-full">
@@ -94,7 +88,7 @@ export default async function ActivityPage({
           activeActivityId={activity.id}
         />
 
-        <Block
+        <ActivityBlock
           id={activity.id}
           pillLabel={activity.label}
           heading={activity.title}

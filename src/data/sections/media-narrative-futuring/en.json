@@ -52,14 +52,6 @@
           "title": "Color Field Portrait (after Mark Rothko)",
           "blocks": [
             {
-              "kind": "image",
-              "src": "/images/mnf-individual-reflection-a2-color-field-rothko.webp",
-              "alt": "A person standing in front of a large Mark Rothko color field painting with a glowing orange-red field above a deep blue field.",
-              "width": 460,
-              "height": 677,
-              "caption": "A viewer with a Mark Rothko color field painting. Photo: Dana Gordon."
-            },
-            {
               "kind": "ul",
               "items": [
                 "Create a self portrait using a stack of 2-3 color fields.",
@@ -70,6 +62,14 @@
             {
               "kind": "p",
               "text": "Facilitator's note: You may wish to show Mark Rothko's Color Field paintings, either before or after the exercise, as part of the discussion."
+            },
+            {
+              "kind": "image",
+              "src": "/images/mnf-individual-reflection-a2-color-field-rothko.webp",
+              "alt": "A person standing in front of a large Mark Rothko color field painting with a glowing orange-red field above a deep blue field.",
+              "width": 460,
+              "height": 677,
+              "caption": "A viewer with a Mark Rothko color field painting. Photo: Dana Gordon."
             }
           ]
         },
@@ -370,16 +370,16 @@
           "title": "Future Cones",
           "blocks": [
             {
+              "kind": "p",
+              "text": "Adapted from an exercise by Ashley Jane Lewis based on Stuart Candy's Future Cone. This exercise guides participants in imagining themselves three to five years into the future. Using a Futures Cone diagram, they explore what is probable, plausible, possible, and preferable in their own future development."
+            },
+            {
               "kind": "image",
               "src": "/images/mnf-participatory-futuring-a3-futures-cone.webp",
               "alt": "A Futures Cone diagram: a point labeled 'you / now' on the left opens into nested ovals on the right labeled possible, plausible, probable, with a small circle marking a preferable future.",
               "width": 672,
               "height": 591,
-              "caption": "The Futures Cone, after Stuart Candy."
-            },
-            {
-              "kind": "p",
-              "text": "Adapted from an exercise by Ashley Jane Lewis based on Stuart Candy's Future Cone. This exercise guides participants in imagining themselves three to five years into the future. Using a Futures Cone diagram, they explore what is probable, plausible, possible, and preferable in their own future development."
+              "caption": "From [Cybernetic Futures Explained](https://benswift.me/blog/2022/01/20/cybernetic-futures-explained)."
             },
             {
               "kind": "p",
