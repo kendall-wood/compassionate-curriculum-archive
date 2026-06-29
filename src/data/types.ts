@@ -3,6 +3,7 @@ export type ContentBlock =
   | { kind: "ul"; items: string[] }
   | { kind: "ol"; items: string[] }
   | { kind: "h"; text: string }
+  | { kind: "label"; text: string }
   | {
       kind: "image";
       src: string;

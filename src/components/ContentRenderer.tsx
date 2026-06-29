@@ -94,6 +94,16 @@ export function ContentRenderer({ blocks }: { blocks: ContentBlock[] }) {
                 {block.text}
               </h3>
             );
+          case "label":
+            // Static pill, styled like the A1/Overview tabs but not interactive
+            return (
+              <span
+                key={i}
+                className="inline-flex items-center justify-center self-start px-[0.625rem] py-[0.375rem] border border-fg text-fg bg-bg text-[1.25rem] tracking-[-0.02em] leading-[1.2]"
+              >
+                {block.text}
+              </span>
+            );
           case "image": {
             const w = block.width ?? 672;
             const h = block.height ?? 376;
