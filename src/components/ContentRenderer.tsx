@@ -95,11 +95,13 @@ export function ContentRenderer({ blocks }: { blocks: ContentBlock[] }) {
               </h3>
             );
           case "label":
-            // Static pill, styled like the A1/Overview tabs but not interactive
+            // Static pill, styled like a filled (selected) A1/Overview tab but
+            // not interactive
             return (
               <span
                 key={i}
-                className="inline-flex items-center justify-center self-start px-[0.625rem] py-[0.375rem] border border-fg text-fg bg-bg text-[1.25rem] tracking-[-0.02em] leading-[1.2]"
+                className="inline-flex items-center justify-center self-start px-[0.625rem] py-[0.375rem] border border-fg text-accent-fg text-[1.25rem] tracking-[-0.02em] leading-[1.2]"
+                style={{ background: "var(--color-accent)" }}
               >
                 {block.text}
               </span>
