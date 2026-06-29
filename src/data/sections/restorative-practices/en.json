@@ -5,8 +5,143 @@
   "overview": "This section introduces restorative practice as a participatory and relational mode of learning. It centers oral storytelling, listening, shared authorship, and collective responsibility. The practices in this section help participants build trust, reflect on experience, and develop more compassionate ways of being together.",
   "lessons": [
     {
-      "id": "entering-the-circle",
+      "id": "preparation-before-the-circle",
       "label": "L1",
+      "title": "Preparation Before the Circle",
+      "sectionId": "restorative-practices",
+      "thumbnail": "/images/FACT_AltcourseChapel_080920-3.jpg",
+      "heroImage": "/images/FACT_AltcourseChapel_080920-3.jpg",
+      "facilitatorBlocks": [
+        {
+          "kind": "p",
+          "text": "Restorative practices activate oral storytelling within a participatory, non-hierarchical process. They help participants draw on lived experience as a source of knowledge, connection, and collective vision. Story sharing builds rapport and trust, while laying the groundwork for the idea that participants can foster positive transformation in others through a critical understanding of their own experience. Restorative practices also help shift learning away from expert-driven models and toward shared authorship. Participants are not asked simply to receive information, but to shape meaning together. In this sense, circles are both a pedagogical structure and a relational practice."
+        },
+        {
+          "kind": "p",
+          "text": "Restorative practices may operate within both restorative justice and transformative justice frameworks. At the center of both is the question: how do we define justice? A useful tension to hold is: Punishment ←→ Repair. The five Rs of restorative justice are: Relationship, Respect, Responsibility, Repair and Reintegration. This section can be used to support discussion of how circles relate both to interpersonal repair and to broader structural transformation."
+        },
+        {
+          "kind": "p",
+          "text": "Jean Stevenson, Cree of Peguis First Nation, Manitoba, in The Circle of Healing, names the tension that exists when non-Indigenous practitioners adapt healing circles without sustained accountability to the Indigenous communities, particularly from the Americas, from which such practices emerge. The need for Indigenous leadership and guidance in these processes is critical. We use circles, a central restorative justice process, with gratitude and with full acknowledgment of the leadership of Indigenous communities in our own training and ongoing learning of this practice and way of life."
+        },
+        {
+          "kind": "p",
+          "text": "In many educational settings, the word facilitator implies a power differential in which one person guides and others receive. In restorative practice, and especially in circle work, that role shifts. The facilitator becomes a circlekeeper: someone responsible for the integrity of the process while also participating in it with honesty and care."
+        },
+        {
+          "kind": "p",
+          "text": "The circlekeeper is not the expert whose job is to provide solutions. Solutions are built collectively. The circlekeeper helps establish a respectful, brave, and safer space. At the same time, circlekeepers do hold a particular kind of power: they shape openings and closings, frame questions, and guide the rhythm of the circle. An effective circlekeeper remains aware of that power, reflects on their own bias, and works to use structure in service of collective learning rather than control."
+        },
+        {
+          "kind": "p",
+          "text": "Ideally, circles are supported by at least two circlekeepers, seated across from one another. This allows one person to track the overall process while the other supports documentation, transitions, or follow-up as needed."
+        },
+        {
+          "kind": "label",
+          "text": "For Facilitators"
+        },
+        {
+          "kind": "p",
+          "text": "Circlekeeping requires preparation, trust in process, and careful listening. In general, circlekeepers should:"
+        },
+        {
+          "kind": "ul",
+          "items": [
+            "rely on open-ended questions",
+            "pre-work to ensure emotional safety, establish a shared purpose, and anticipate potential conflicts",
+            "listen to understand rather than to direct",
+            "participate in prompts alongside others",
+            "remain attentive to their own feelings and judgments",
+            "honor both individual and collective boundaries"
+          ]
+        },
+        {
+          "kind": "p",
+          "text": "This section works toward what Arao and Clemens name 'brave spaces,' where participants identify what they need in order to participate authentically, and where mutual care is shared."
+        }
+      ],
+      "activities": [
+        {
+          "id": "a1",
+          "label": "A1",
+          "title": "Preparation Before the Circle",
+          "blocks": [
+            {
+              "kind": "p",
+              "text": "Before a circle occurs there are processes that prepare all participants, including the circlekeepers/facilitators - for the process. The stages of pre-work are:"
+            },
+            {
+              "kind": "label",
+              "text": "Stage 1: Assessment and Intake (The \"Why\" and \"Who\")"
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Elements include:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Meeting individually with participants—especially in conflict or high-stakes settings—to assess readiness, explain the process, and manage expectations.",
+                "Defining the duties and responsibilities for the co-facilitators: meeting with your co-leader to assign roles, map out who opens/closes, decide how to hand off leadership, and create an invisible signal if someone needs to pause the room.",
+                "Mapping the stakeholder context: this could include the group's hidden history, including recent organizational changes, unspoken tensions, or cultural dynamics that might affect participation."
+              ]
+            },
+            {
+              "kind": "label",
+              "text": "Stage 2: Design and Prompt Engineering (The Curriculum)"
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Elements include:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "The Sequential Arc Script: Map out the timeline on paper to ensure the group is not rushed into deep vulnerability too quickly. Example: Allocating 10 minutes for an introductory check-in, 15 minutes for community-building, 30 minutes for the core deep prompt, and 10 minutes for the closing reflection.",
+                "Drafting \"Powerful Questions\": Crafting open-ended, storytelling prompts that encourage reflection rather than defensive reactions or quick intellectual answers. Development of the Circle questions including grounding activities, circle round questions, closing, and any other prompts.",
+                "Community Agreements: Drafting a baseline list of community agreements to present to the room for collective editing and consensus. This list should be informed by Stage 1. Example: Have the classic four pillars of circle keeping on a flipchart: 1) Speak from the heart, 2) Listen from the heart, 3) Speak with relevance, 4) Bring spontaneous, lean expression."
+              ]
+            },
+            {
+              "kind": "label",
+              "text": "Stage 3: Physical Environment Setup (The Space)"
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Elements include:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Space assessment: when and where logistics, how will the circle 'sit' in the space; what are the circle elements that will be used, including the mantle and talking pieces."
+              ]
+            },
+            {
+              "kind": "label",
+              "text": "Stage 4: Facilitator Self-Regulation (The Internal Prep)"
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Elements include:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Bias and Trigger Tracking: Pausing to clear your mind of personal assumptions regarding the incoming participants. Example: Imagining the circle process with each of the persons who will be participating. If you have time, journaling about your feelings, naming them without judgment and creating action plans to address the biases and/or triggers identified.",
+                "The Grounding Routine: Engaging in physical and mental decompression to ensure you do not absorb or mirror the nervous energy of the room. Example: Grounding breathing techniques in the space where the circle will occur."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "entering-the-circle",
+      "label": "L2",
       "title": "Entering the Circle",
       "sectionId": "restorative-practices",
       "facilitatorBlocks": [
@@ -190,7 +325,7 @@
     },
     {
       "id": "reauthoring-circles",
-      "label": "L2",
+      "label": "L3",
       "title": "Reauthoring Circles",
       "sectionId": "restorative-practices",
       "facilitatorBlocks": [
@@ -319,7 +454,7 @@
     },
     {
       "id": "sharing-our-stories",
-      "label": "L3",
+      "label": "L4",
       "title": "Sharing Our Stories",
       "sectionId": "restorative-practices",
       "facilitatorBlocks": [
@@ -369,7 +504,7 @@
     },
     {
       "id": "land-ancestor-acknowledgement",
-      "label": "L4",
+      "label": "L5",
       "title": "Land & Ancestor Acknowledgement",
       "sectionId": "restorative-practices",
       "facilitatorBlocks": [
@@ -440,7 +575,7 @@
     },
     {
       "id": "circle-questions",
-      "label": "L5",
+      "label": "L6",
       "title": "Circle Questions and Listening Practices",
       "sectionId": "restorative-practices",
       "facilitatorBlocks": [
@@ -580,7 +715,7 @@
     },
     {
       "id": "grounding-activities",
-      "label": "L6",
+      "label": "L7",
       "title": "Grounding Activities",
       "sectionId": "restorative-practices",
       "facilitatorBlocks": [
@@ -691,6 +826,82 @@
       ],
       "thumbnail": "/images/FACT_DoubleHug_2000.jpg",
       "heroImage": "/images/FACT_DoubleHug_2000.jpg"
+    },
+    {
+      "id": "after-care",
+      "label": "L8",
+      "title": "After Care",
+      "sectionId": "restorative-practices",
+      "thumbnail": "/images/FACT_DoubleHug_2000%20copy.jpg",
+      "heroImage": "/images/FACT_DoubleHug_2000%20copy.jpg",
+      "facilitatorBlocks": [
+        {
+          "kind": "p",
+          "text": "After care for circlekeepers and facilitators of the Compassionate Care Curriculum is essential. We are facilitating community healing processes which may include heavy emotions and trauma. After care includes releasing absorbed trauma, acknowledging that this work is not finite and self care practices that help prevent burnout. After care involves intentional debriefing, structured wellness practices, and establishing safer boundaries to separate your personal well-being from the emotional labor of facilitation. This is a proactive practice of protecting your physical, emotional, and mental energy!"
+        }
+      ],
+      "activities": [
+        {
+          "id": "a1",
+          "label": "A1",
+          "title": "Co-Keeper / Facilitator Debriefing",
+          "blocks": [
+            {
+              "kind": "ul",
+              "items": [
+                "Process the space: Debriefing with the co-keeper has multiple functions including to evaluate the energy of the space, learn from the experience and assess the need for checking in with any participants. This may also include planning for further circles if the group decided to meet again.",
+                "Identify triggers: Take time to honestly identify where your personal \"buttons\" and \"triggers\" may have been pushed. Ask yourself: What was a success? What drained me?",
+                "Monitor agreements: Establish a plan for monitoring any commitments or agreements made by the group. There may also be agreements between co-facilitators that are separate from the larger group ones; take time to establish and revisit these as well."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a2",
+          "label": "A2",
+          "title": "Somatic Release & Grounding",
+          "blocks": [
+            {
+              "kind": "ul",
+              "items": [
+                "Fuel and hydrate; flush stress chemicals: Drink water and engage in light movement to physically reset your nervous system after absorbing intense emotional energy.",
+                "Disconnect: Intentionally release anything that isn't yours to carry through physical activities, a hot bath, or time in nature.",
+                "Meditate: Use centering, grounding visualizations to return to your 'normal.'"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a3",
+          "label": "A3",
+          "title": "Support Systems",
+          "blocks": [
+            {
+              "kind": "ul",
+              "items": [
+                "Connect to your support systems: Family, friends, spiritual leaders, confidantes - the list is endless and there are no rights or wrongs regarding who are your supports. The important thing is to be intentional about releasing anything that is not yours to carry.",
+                "Reach out to peers: Debrief difficult circles with a mentor or peer support group who understands the unique emotional labor of restorative practices.",
+                "Follow-up with participants: Check in on any specific participants who found the circle process particularly stressful or upsetting."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a4",
+          "label": "A4",
+          "title": "Boundary Setting",
+          "blocks": [
+            {
+              "kind": "ul",
+              "items": [
+                "Hold boundaries: Remember that a circle is a community space, not therapy, and the keeper is not a licensed counselor. Let participants know what is your availability after the CC process; boundary setting may be important for what happens afterwards.",
+                "Prioritize your own needs: Dedicate time for regular self-care (adequate sleep, nutrition, and exercise) to sustain yourself for future circles.",
+                "Pre-program transition time immediately following a workshop. Avoid jumping right back into deep work or new workshops."
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }
