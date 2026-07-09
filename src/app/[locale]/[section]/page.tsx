@@ -52,15 +52,16 @@ export default async function SectionPage({
 
         <SectionTabs activeId={section.id} locale={locale} />
 
-        <h2 className="text-[1.5rem] font-bold tracking-[-0.02em] leading-[1.2] text-fg">
-          {t("introduction")}
-        </h2>
+        <div className="flex flex-col gap-[1.5rem] w-full">
+          <h2 className="text-[1.5rem] font-bold tracking-[-0.02em] leading-[1.2] text-fg">
+            {t("introduction")}
+          </h2>
+          <p className="text-[2rem] leading-[1.25] tracking-[-0.02em] text-fg font-normal max-w-[79rem]">
+            {section.overview}
+          </p>
+        </div>
 
-        <p className="text-[2rem] leading-[1.25] tracking-[-0.02em] text-fg font-normal max-w-[79rem]">
-          {section.overview}
-        </p>
-
-        <div className="flex flex-col gap-[3rem] w-full">
+        <div className="flex flex-col gap-[1.5rem] w-full">
           <h2 className="text-[1.5rem] font-bold tracking-[-0.02em] leading-[1.2] text-fg">
             {t("curriculum")}
           </h2>

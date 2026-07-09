@@ -100,9 +100,12 @@ export async function loadLessonNeighbors(
     (x) => x.sectionId === sectionId && x.lessonId === lessonId
   );
   if (idx === -1) return {};
+  // Wrap the trail around so every lesson always has both a previous and a
+  // next: the first lesson's "previous" is the last lesson of the curriculum,
+  // and the last lesson's "next" is the very first lesson.
   return {
-    prev: idx > 0 ? flat[idx - 1] : undefined,
-    next: idx < flat.length - 1 ? flat[idx + 1] : undefined,
+    prev: flat[(idx - 1 + flat.length) % flat.length],
+    next: flat[(idx + 1) % flat.length],
   };
 }
 

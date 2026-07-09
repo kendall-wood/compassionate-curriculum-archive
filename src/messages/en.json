@@ -99,5 +99,16 @@
     "heading": "Page not found",
     "body": "The page you are looking for could not be located.",
     "returnHome": "Return Home"
+  },
+  "print": {
+    "metaTitle": "Print Edition — Compassionate Curriculum Archive",
+    "preparing": "Preparing print layout…",
+    "pages": "{count} pages · 8.5 × 11 in",
+    "error": "Something went wrong while building the print layout. Please reload the page.",
+    "saveAsPdf": "Save as PDF",
+    "contents": "Contents",
+    "appendixReferences": "References",
+    "printedEdition": "Printed edition",
+    "page": "Page"
   }
 }

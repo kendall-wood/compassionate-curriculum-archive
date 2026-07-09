@@ -1,6 +1,7 @@
 import { Fragment } from "react";
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { Toolbar } from "@/components/Toolbar";
+import { ReferenceSource } from "@/components/ReferenceSource";
 import { REFERENCE_SECTIONS } from "@/data/references";
 
 // Section / Lesson / Source — mirrors the section-page curriculum table widths
@@ -15,33 +16,6 @@ export async function generateMetadata({
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "about" });
   return { title: t("metaTitle") };
-}
-
-// Splits a citation on http(s) URLs and renders the URLs as links so the
-// bibliography stays clickable without a client component.
-const urlRegex = /(https?:\/\/[^\s)]+)/g;
-
-function linkifyCitation(text: string) {
-  return text.split(urlRegex).map((part, i) => {
-    if (!/^https?:\/\//.test(part)) return <span key={i}>{part}</span>;
-    // Keep trailing sentence punctuation out of the linked URL.
-    const m = part.match(/^(.*?)([.,;:]+)$/);
-    const href = m ? m[1] : part;
-    const trail = m ? m[2] : "";
-    return (
-      <span key={i}>
-        <a
-          href={href}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="underline decoration-fg underline-offset-2 hover:text-accent hover:decoration-accent transition-colors break-words"
-        >
-          {href}
-        </a>
-        {trail}
-      </span>
-    );
-  });
 }
 
 export default async function AboutPage({
@@ -60,14 +34,16 @@ export default async function AboutPage({
         <h1 className="text-[4.5rem] leading-[1.05] tracking-[-0.03em] text-fg font-normal">
           {t("heading")}
         </h1>
-        <p className="text-[2rem] leading-[1.25] tracking-[-0.02em] text-fg max-w-[79rem]">
-          {t("p1")}
-        </p>
-        <p className="text-[2rem] leading-[1.25] tracking-[-0.02em] text-fg max-w-[79rem]">
-          {t("p2")}
-        </p>
+        <div className="flex flex-col gap-[1.5rem]">
+          <p className="text-[2rem] leading-[1.25] tracking-[-0.02em] text-fg max-w-[79rem]">
+            {t("p1")}
+          </p>
+          <p className="text-[2rem] leading-[1.25] tracking-[-0.02em] text-fg max-w-[79rem]">
+            {t("p2")}
+          </p>
+        </div>
 
-        <section className="flex flex-col gap-[1.5rem] mt-[1.5rem]">
+        <section className="flex flex-col gap-[1.5rem]">
           <h2 className="text-[1.5rem] font-bold leading-[1.2] tracking-[-0.02em] text-fg">
             {t("acknowledgementsHeading")}
           </h2>
@@ -82,7 +58,7 @@ export default async function AboutPage({
           </p>
         </section>
 
-        <section className="flex flex-col gap-[1.5rem] mt-[1.5rem]">
+        <section className="flex flex-col gap-[1.5rem]">
           <h2 className="text-[1.5rem] font-bold leading-[1.2] tracking-[-0.02em] text-fg">
             {t("referencesHeading")}
           </h2>
@@ -148,12 +124,7 @@ export default async function AboutPage({
                     <div className="pt-[1.25rem] pb-[1.25rem]" role="cell">
                       <ul className="flex flex-col gap-[0.625rem]">
                         {lesson.sources.map((source, si) => (
-                          <li
-                            key={si}
-                            className="text-[1.25rem] leading-[1.4] tracking-[-0.02em] text-fg ps-[0.375rem]"
-                          >
-                            {linkifyCitation(source)}
-                          </li>
+                          <ReferenceSource key={si} text={source} />
                         ))}
                       </ul>
                     </div>

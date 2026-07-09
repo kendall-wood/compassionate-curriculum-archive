@@ -1,0 +1,673 @@
+/* Print edition stylesheet — processed by Paged.js (see PagedPreview.tsx).
+   ================================================================
+   DOCUMENT GRID (InDesign-style)
+   ================================================================
+   Page: US Letter 8.5 × 11 in, facing pages.
+   Margins (user spec): top 0.75in · bottom 1in · inner 0.75in · outer 0.5in
+   Text block: 7.25 × 9.25 in  (522 × 666 pt)
+
+   Baseline grid: derived from the body type. Body is 16/20 (16pt type,
+   20pt leading), so the document unit is the half-leading: 1u = 10pt.
+   Every leading, block space, rule offset, and row padding is a whole
+   multiple of 1u so the vertical rhythm stays constant page to page.
+
+   Column grid: 6 columns, gutter = 1u (10pt) — even gaps everywhere.
+     column width c = (522 − 5×10) / 6 = 78.67pt
+   Tables, the activity label column, figures, and the TOC all snap to
+   whole columns of this grid (spans w1…w6 below).
+
+   ================================================================
+   HEADERS & FOOTERS (master-page furniture)
+   ================================================================
+   Every page slot is defined here — nothing appears in a margin that
+   is not specified in this table:
+
+   Slot            Content                          Style
+   -----------------------------------------------------------------
+   Verso @top-left    book title (string cc-book-title)       head
+   Recto @top-right   "/ Section / L#" (string cc-section)    head
+   @bottom-center     folio (page counter)                    folio
+
+   head style:  10pt regular, -0.02em tracking (site breadcrumb
+                voice — sentence case, never caps), outside-aligned,
+                baseline sits 1u above the text block.
+   folio style: 9pt tabular figures, centered, 1u below the text block.
+
+   Master hierarchy (which pages show what):
+     A (default)      — head + folio          (all body pages)
+     B (opener)       — folio only, no head   (.cc-section-opener)
+     Cover            — nothing               (.cc-cover)
+     Blank versos     — nothing               (:blank, auto-inserted)
+     Front matter     — folio only in practice: the TOC precedes the
+                        first cc-section string, so its recto head
+                        resolves empty by design.
+
+   Running-head strings are set by zero-height .cc-run markers at the
+   start of every article (see page.tsx). Recto heads use the SHORT
+   form (section label + lesson label, e.g. "I. BELOVED COMMUNITY ·
+   L1") so they can never overflow the 0.75in top margin.
+   ================================================================ */
+
+.cc-book {
+  /* grid tokens */
+  --u: 10pt;                                  /* baseline unit (half-leading) */
+  --gutter: var(--u);                         /* column gutter = 1u          */
+  --col: calc((522pt - 5 * var(--gutter)) / 6);
+  --w1: var(--col);
+  --w2: calc(2 * var(--col) + 1 * var(--gutter));
+  --w3: calc(3 * var(--col) + 2 * var(--gutter));
+  --w4: calc(4 * var(--col) + 3 * var(--gutter));
+  --w5: calc(5 * var(--col) + 4 * var(--gutter));
+  --accent: #fff75d;                          /* site --color-accent */
+  --hairline: 0.75pt solid #000000;
+}
+
+/* ---------------------------------------------------------------- */
+/* Master pages                                                       */
+/* ---------------------------------------------------------------- */
+
+@page {
+  size: 8.5in 11in;
+  margin-top: 0.75in;
+  margin-bottom: 1in;
+
+  /* Folio: 9pt tabular, centered, top-aligned 1u below the text block
+     so its position is identical on every page regardless of margin
+     box height. */
+  @bottom-center {
+    content: counter(page);
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 9pt;
+    font-variant-numeric: tabular-nums;
+    color: #000000;
+    vertical-align: top;
+    padding-top: 10pt; /* 1u */
+  }
+}
+
+/* Facing pages: inner (binding) edge 0.75in, outer edge 0.5in. */
+@page :left {
+  margin-left: 0.5in;
+  margin-right: 0.75in;
+
+  /* Verso running head, outside-aligned: book title */
+  @top-left {
+    content: string(cc-book-title);
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 10pt;
+    letter-spacing: -0.02em;
+    color: #000000;
+    vertical-align: bottom;
+    padding-bottom: 10pt; /* 1u clearance above the text block */
+  }
+}
+
+@page :right {
+  margin-left: 0.75in;
+  margin-right: 0.5in;
+
+  /* Recto running head, outside-aligned: breadcrumb to current spot */
+  @top-right {
+    content: string(cc-section, last);
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 10pt;
+    letter-spacing: -0.02em;
+    color: #000000;
+    vertical-align: bottom;
+    padding-bottom: 10pt;
+  }
+}
+
+/* B-master: section openers — folio only, no running head. */
+@page opener {
+  @top-left {
+    content: none;
+  }
+  @top-right {
+    content: none;
+  }
+}
+
+/* Cover master: symmetric margins, no head, no folio. */
+@page cover {
+  margin: 0.75in;
+
+  @top-left {
+    content: none;
+  }
+  @top-right {
+    content: none;
+  }
+  @bottom-center {
+    content: none;
+  }
+}
+
+/* Blank versos inserted before right-page starts: completely quiet. */
+@page :blank {
+  @top-left {
+    content: none;
+  }
+  @top-right {
+    content: none;
+  }
+  @bottom-center {
+    content: none;
+  }
+}
+
+/* Running-head string sources: zero-height markers in the flow. */
+.cc-run {
+  display: block;
+  height: 0;
+  overflow: hidden;
+  font-size: 0;
+  line-height: 0;
+}
+
+.cc-run-book {
+  string-set: cc-book-title content(text);
+}
+
+.cc-run-section {
+  string-set: cc-section content(text);
+}
+
+/* ---------------------------------------------------------------- */
+/* Base typography — body 16/20 on the 10pt grid                      */
+/* ---------------------------------------------------------------- */
+
+.cc-book {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16pt;
+  line-height: 20pt;                 /* 2u */
+  letter-spacing: -0.02em;
+  color: #000000;
+  hanging-punctuation: first allow-end last;
+}
+
+.cc-book p,
+.cc-book li {
+  orphans: 2;
+  widows: 2;
+}
+
+/* Site masthead title (web 4.5rem): 36pt type on a 40pt (4u) line box */
+.cc-site-title {
+  margin: 0 0 calc(2 * var(--u));
+  font-size: 36pt;
+  font-weight: 400;
+  line-height: 40pt;
+  letter-spacing: -0.03em;
+  break-after: avoid;
+}
+
+/* Bold section heading (web 1.5rem): 12pt on a 20pt (2u) line box,
+   2u above / 1u below so following text re-enters the rhythm */
+.cc-heading {
+  margin: calc(2 * var(--u)) 0 var(--u);
+  font-size: 12pt;
+  font-weight: 700;
+  line-height: 20pt;
+  letter-spacing: -0.02em;
+  break-after: avoid;
+}
+
+/* ---------------------------------------------------------------- */
+/* Pills & tabs                                                       */
+/* ---------------------------------------------------------------- */
+
+.cc-pill {
+  display: inline-block;
+  border: 0.75pt solid #000000;
+  padding: 2pt 5pt;
+  font-size: 10pt;
+  font-weight: 400;
+  line-height: 11pt;
+  letter-spacing: -0.02em;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
+.cc-pill-active {
+  background: var(--accent, #fff75d);
+  color: #000000;
+}
+
+.cc-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5pt;
+  margin: 0 0 calc(2 * var(--u));
+  break-inside: avoid;
+}
+
+/* ---------------------------------------------------------------- */
+/* Body content blocks — all spacing in whole units                   */
+/* ---------------------------------------------------------------- */
+
+.cc-print-p {
+  margin: 0 0 var(--u);
+}
+
+.cc-print-bold {
+  font-weight: 700;
+}
+
+.cc-print-small {
+  font-size: 11pt;
+  line-height: 15pt; /* 1.5u — small-text sub-rhythm */
+}
+
+ul.cc-print-list,
+ol.cc-print-list {
+  margin: 0 0 var(--u);
+  padding: 0 0 0 calc(2 * var(--u));
+}
+
+ul.cc-print-list {
+  list-style: disc;
+}
+
+ol.cc-print-list {
+  list-style: decimal;
+}
+
+.cc-print-list li {
+  margin: 0 0 calc(0.5 * var(--u));
+}
+
+.cc-print-link {
+  text-decoration: underline;
+  text-underline-offset: 2pt;
+}
+
+.cc-print-url {
+  font-size: 0.72em;
+  color: #333333;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+/* Web's "▶ YouTube" chip */
+.cc-print-chip {
+  display: inline-block;
+  border: 0.75pt solid #000000;
+  padding: 1pt 4pt;
+  font-size: 0.6em;
+  line-height: 1.3;
+  white-space: nowrap;
+}
+
+.cc-print-block-heading {
+  margin: var(--u) 0 0;
+  font-size: 12pt;
+  font-weight: 700;
+  line-height: 20pt; /* 2u */
+  break-after: avoid;
+}
+
+/* Figures snap to whole grid columns (span set in PrintBlocks.tsx) */
+.cc-print-figure {
+  margin: var(--u) 0 calc(2 * var(--u));
+  max-width: 100%;
+  break-inside: avoid;
+}
+
+.cc-span-3 { width: var(--w3); }
+.cc-span-4 { width: var(--w4); }
+.cc-span-5 { width: var(--w5); }
+.cc-span-6 { width: 100%; }
+
+.cc-print-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.cc-print-figure figcaption {
+  margin-top: calc(0.5 * var(--u));
+  font-size: 10pt;
+  line-height: 15pt;
+  letter-spacing: -0.02em;
+  color: #4d4d4d;
+}
+
+/* ---------------------------------------------------------------- */
+/* Cover                                                              */
+/* ---------------------------------------------------------------- */
+
+.cc-cover {
+  page: cover;
+  break-after: right;
+}
+
+.cc-cover-title {
+  margin-top: 120pt; /* 12u */
+  font-size: 44pt;
+  line-height: 50pt; /* 5u */
+}
+
+.cc-cover-tabs {
+  margin: var(--u) 0 0;
+}
+
+.cc-cover-subtitle {
+  margin: calc(4 * var(--u)) 0 0;
+  max-width: var(--w4);
+  font-size: 14pt;
+  line-height: 20pt; /* 2u */
+}
+
+.cc-cover-edition {
+  margin: calc(3 * var(--u)) 0 0;
+}
+
+/* ---------------------------------------------------------------- */
+/* Table of contents — Section (2 col) | Lesson (3 col) | Page (1 col) */
+/* ---------------------------------------------------------------- */
+
+.cc-toc {
+  break-after: page;
+}
+
+.cc-toc-table {
+  width: 100%;
+  font-size: 10pt;
+  line-height: 15pt; /* 1.5u */
+  letter-spacing: -0.02em;
+}
+
+/* Header: Section | Lesson | Page over one hairline. */
+.cc-toc-header {
+  display: grid;
+  grid-template-columns: var(--w2) 1fr var(--w1);
+  column-gap: var(--gutter);
+  padding-bottom: calc(0.5 * var(--u));
+  border-bottom: var(--hairline);
+}
+
+/* Group row, following the curriculum table's system: the section name
+   in column 1, all of its entry lines stacked in one bordered row —
+   one hairline per group, not per line. */
+.cc-toc-group {
+  display: grid;
+  grid-template-columns: var(--w2) 1fr;
+  column-gap: var(--gutter);
+  align-items: baseline;
+  padding: var(--u) 0;
+  border-bottom: var(--hairline);
+  break-inside: avoid;
+}
+
+.cc-toc-lines {
+  display: flex;
+  flex-direction: column;
+  gap: calc(0.5 * var(--u));
+}
+
+.cc-toc-line {
+  display: grid;
+  grid-template-columns: 1fr var(--w1);
+  column-gap: var(--gutter);
+  align-items: baseline;
+}
+
+.cc-toc-col-section {
+  font-weight: 700;
+}
+
+.cc-toc-header .cc-toc-col-page,
+.cc-toc-line .cc-toc-col-page {
+  text-align: right;
+}
+
+.cc-toc a {
+  color: #000000;
+  text-decoration: none;
+}
+
+/* Destination page number, resolved by Paged.js target-counter. */
+.cc-toc-pagenum::after {
+  content: target-counter(attr(href), page);
+  font-weight: 400;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ---------------------------------------------------------------- */
+/* Curriculum table — Lesson 1 | Title 2 | Activities 2 | Images 1    */
+/* ---------------------------------------------------------------- */
+
+.cc-table {
+  width: 100%;
+  font-size: 10pt;
+  line-height: 15pt; /* 1.5u */
+  letter-spacing: -0.02em;
+}
+
+.cc-table-header {
+  display: grid;
+  grid-template-columns: var(--w1) var(--w2) 1fr var(--w1);
+  column-gap: var(--gutter);
+  padding-bottom: calc(0.5 * var(--u));
+  border-bottom: var(--hairline);
+}
+
+.cc-table-row {
+  display: grid;
+  grid-template-columns: 1fr var(--w1);
+  column-gap: var(--gutter);
+  padding: var(--u) 0;
+  border-bottom: var(--hairline);
+  break-inside: avoid;
+}
+
+.cc-table-main {
+  display: flex;
+  flex-direction: column;
+  gap: var(--u);
+}
+
+/* Same tracks as the header's first three columns, so activity lines
+   align exactly under the column heads. */
+.cc-table-line {
+  display: grid;
+  grid-template-columns: var(--w1) var(--w2) 1fr;
+  column-gap: var(--gutter);
+  align-items: baseline;
+}
+
+.cc-table-lnum {
+  font-weight: 700;
+}
+
+.cc-table-activity {
+  display: flex;
+  align-items: baseline;
+  gap: 6pt;
+}
+
+.cc-table-alabel {
+  flex-shrink: 0;
+  width: 15pt;
+}
+
+.cc-table-thumb img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 201 / 112;
+  object-fit: cover;
+}
+
+/* ---------------------------------------------------------------- */
+/* Chapters, sections, lessons                                        */
+/* ---------------------------------------------------------------- */
+
+.cc-chapter {
+  break-before: right;
+}
+
+/* Section openers use the B-master (no running head). */
+.cc-section-opener {
+  page: opener;
+  break-before: right;
+}
+
+.cc-lesson {
+  break-before: page;
+}
+
+/* Breadcrumb (web: "/ Section / L1") */
+.cc-breadcrumb {
+  margin: 0 0 var(--u);
+  font-size: 10pt;
+  line-height: 10pt; /* 1u */
+  letter-spacing: -0.02em;
+}
+
+.cc-breadcrumb-dim {
+  opacity: 0.7;
+}
+
+/* Lesson title (web 4.5rem): 36pt on a 40pt (4u) line box */
+.cc-lesson-title {
+  margin: 0 0 calc(2 * var(--u));
+  font-size: 36pt;
+  font-weight: 400;
+  line-height: 40pt;
+  letter-spacing: -0.03em;
+  break-after: avoid;
+}
+
+/* Hero: full text-block width; height clipped to 29u so the block
+   below re-enters the baseline rhythm (522 × 634/1140 ≈ 290pt). */
+.cc-hero-figure {
+  margin: 0 0 calc(2 * var(--u));
+  break-inside: avoid;
+}
+
+.cc-hero-figure img {
+  display: block;
+  width: 100%;
+  height: 290pt;
+  object-fit: cover;
+}
+
+.cc-activity-tabs {
+  margin: 0 0 var(--u);
+}
+
+/* Activity block: heading, hairline, then pill hanging in column 1
+   with content occupying columns 2–6. Implemented as padding-left +
+   absolute pill (grids collapse when Paged.js splits them across
+   pages; padding survives fragmentation). */
+.cc-activity {
+  margin-top: calc(2 * var(--u));
+}
+
+/* The lead unit (heading + rule + pill + first content block) is one
+   unbreakable box — Paged.js does not reliably honor break-after: avoid,
+   so keep-with-next is enforced structurally (see PrintActivity). */
+.cc-activity-lead {
+  break-inside: avoid;
+}
+
+.cc-activity-heading {
+  margin: 0 0 var(--u);
+  padding-bottom: var(--u);
+  border-bottom: var(--hairline);
+  font-size: 12pt;
+  font-weight: 700;
+  line-height: 20pt; /* 2u */
+  letter-spacing: -0.02em;
+}
+
+.cc-activity-grid {
+  position: relative;
+  padding-left: calc(var(--col) + var(--gutter)); /* content = cols 2–6 */
+}
+
+.cc-activity-pill-col {
+  position: absolute;
+  left: 0;
+  top: 3pt;
+}
+
+/* ---------------------------------------------------------------- */
+/* Appendix                                                           */
+/* ---------------------------------------------------------------- */
+
+.cc-icebreaker-list {
+  list-style: none;
+  margin: var(--u) 0 0;
+  padding: 0;
+}
+
+.cc-icebreaker-list > li {
+  margin: 0 0 calc(2 * var(--u));
+  break-inside: avoid;
+}
+
+.cc-icebreaker-title {
+  margin: 0;
+  font-size: 12pt;
+  font-weight: 700;
+  line-height: 20pt; /* 2u */
+  break-after: avoid;
+}
+
+/* ---------------------------------------------------------------- */
+/* References — Section (1 col) | Lesson (2 col) | Source (3 col)     */
+/* ---------------------------------------------------------------- */
+
+.cc-references-intro {
+  font-size: 11pt;
+  line-height: 15pt;
+  color: #4d4d4d;
+}
+
+.cc-ref-table {
+  width: 100%;
+  font-size: 10pt;
+  line-height: 15pt; /* 1.5u */
+  letter-spacing: -0.02em;
+}
+
+.cc-ref-header,
+.cc-ref-row {
+  display: grid;
+  grid-template-columns: var(--w1) var(--w2) 1fr;
+  column-gap: var(--gutter);
+}
+
+.cc-ref-header {
+  padding-bottom: calc(0.5 * var(--u));
+  border-bottom: var(--hairline);
+}
+
+.cc-ref-row {
+  padding: var(--u) 0;
+  border-bottom: var(--hairline);
+  break-inside: avoid;
+}
+
+.cc-ref-section-name {
+  font-weight: 700;
+}
+
+.cc-ref-sources {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 9pt;
+  line-height: 12.5pt;
+}
+
+.cc-ref-sources li {
+  margin: 0 0 calc(0.5 * var(--u));
+  overflow-wrap: anywhere;
+}
+
+/* Screen preview chrome lives in the print page component (PagedPreview
+   sibling <style>), not here: Paged.js strips @media screen rules when it
+   processes this stylesheet for print. */
