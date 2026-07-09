@@ -6,11 +6,13 @@ import {
   loadLesson,
   loadActivity,
   loadLessonNeighbors,
+  buildGlobalLessonIndex,
 } from "@/data/curriculum";
 import { routing } from "@/i18n/routing";
+import { Link } from "@/i18n/routing";
 import { Toolbar } from "@/components/Toolbar";
 import { LessonHero } from "@/components/LessonHero";
-import { LessonNav } from "@/components/LessonNav";
+import { LessonNav, type NavItem } from "@/components/LessonNav";
 import { ActivityTabs } from "@/components/ActivityTabs";
 import { ActivityBlock } from "@/components/ActivityBlock";
 
@@ -68,7 +70,37 @@ export default async function ActivityPage({
   const activity = await loadActivity(sectionId, lessonId, activityId, locale);
   if (!section || !lesson || !activity) return notFound();
 
-  const { prev, next } = await loadLessonNeighbors(sectionId, lessonId, locale);
+  const [{ next: nextLesson }, globalMap] = await Promise.all([
+    loadLessonNeighbors(sectionId, lessonId, locale),
+    buildGlobalLessonIndex(locale),
+  ]);
+
+  const globalIndex = globalMap.get(`${sectionId}/${lessonId}`) ?? 0;
+  const activityIndex = lesson.activities.findIndex((a) => a.id === activityId);
+  const prevActivity = lesson.activities[activityIndex - 1];
+  const nextActivity = lesson.activities[activityIndex + 1];
+
+  const prevNav: NavItem | undefined = prevActivity
+    ? {
+        href: `/${sectionId}/${lessonId}/${prevActivity.id}`,
+        label: prevActivity.label,
+        title: prevActivity.title,
+      }
+    : undefined;
+
+  const nextNav: NavItem | undefined = nextActivity
+    ? {
+        href: `/${sectionId}/${lessonId}/${nextActivity.id}`,
+        label: nextActivity.label,
+        title: nextActivity.title,
+      }
+    : nextLesson
+    ? {
+        href: `/${nextLesson.sectionId}/${nextLesson.lessonId}`,
+        label: `L${globalMap.get(`${nextLesson.sectionId}/${nextLesson.lessonId}`) ?? ""}`,
+        title: nextLesson.title,
+      }
+    : undefined;
 
   return (
     <div className="cc-page bg-bg text-fg min-h-screen pl-[2rem] pr-[2rem] pt-[1.6875rem] pb-[5rem]">
@@ -79,11 +111,14 @@ export default async function ActivityPage({
           title={lesson.title}
           image={lesson.heroImage}
           imageAlt={`${lesson.title} hero image`}
-          sectionHref={`/${section.id}`}
-          sectionLabel={section.title}
-          lessonLabel={lesson.label}
-          imageBelow
         />
+
+        <p className="text-[1.25rem] tracking-[-0.02em] leading-none text-fg">
+          <Link href={`/${section.id}`} className="hover:text-accent transition-colors">
+            / {section.title}
+          </Link>
+          <span className="opacity-70"> / L{globalIndex}</span>
+        </p>
 
         <ActivityTabs
           sectionId={section.id}
@@ -99,7 +134,7 @@ export default async function ActivityPage({
           blocks={activity.blocks}
         />
 
-        <LessonNav prev={prev} next={next} />
+        <LessonNav prev={prevNav} next={nextNav} />
       </div>
     </div>
   );

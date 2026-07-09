@@ -1,18 +1,21 @@
-import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/routing";
-import type { LessonRef } from "@/data/curriculum";
 
-type LessonNavProps = {
-  prev?: LessonRef;
-  next?: LessonRef;
+export type NavItem = {
+  href: string;
+  label: string; // "L7", "A2", etc.
+  title: string;
 };
 
-export async function LessonNav({ prev, next }: LessonNavProps) {
+type LessonNavProps = {
+  prev?: NavItem;
+  next?: NavItem;
+};
+
+export function LessonNav({ prev, next }: LessonNavProps) {
   if (!prev && !next) return null;
-  const t = await getTranslations("lessonNav");
 
   const navBtn =
-    "inline-flex items-center px-[0.625rem] py-[0.375rem] border border-fg text-fg text-[1.25rem] tracking-[-0.02em] leading-[1.2] hover:bg-accent hover:text-accent-fg transition-colors";
+    "inline-flex items-center gap-[0.5rem] px-[0.625rem] py-[0.375rem] border border-fg text-fg text-[1.25rem] tracking-[-0.02em] leading-[1.2] hover:bg-accent hover:text-accent-fg transition-colors";
 
   return (
     <nav
@@ -20,16 +23,22 @@ export async function LessonNav({ prev, next }: LessonNavProps) {
       className="flex justify-between items-center gap-[1rem] w-full border-t border-fg pt-[1.5rem]"
     >
       {prev ? (
-        <Link href={`/${prev.sectionId}/${prev.lessonId}`} className={navBtn}>
-          ← {t("previous")}
+        <Link href={prev.href} className={navBtn} aria-label={`Previous: ${prev.label} ${prev.title}`}>
+          <span aria-hidden="true">←</span>
+          <span>
+            <span className="font-bold">{prev.label}</span> {prev.title}
+          </span>
         </Link>
       ) : (
         <span aria-hidden="true" />
       )}
 
       {next ? (
-        <Link href={`/${next.sectionId}/${next.lessonId}`} className={navBtn}>
-          {t("next")} →
+        <Link href={next.href} className={navBtn} aria-label={`Next: ${next.label} ${next.title}`}>
+          <span>
+            <span className="font-bold">{next.label}</span> {next.title}
+          </span>
+          <span aria-hidden="true">→</span>
         </Link>
       ) : (
         <span aria-hidden="true" />

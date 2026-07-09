@@ -5,6 +5,7 @@ import { routing } from "@/i18n/routing";
 import { Toolbar } from "@/components/Toolbar";
 import { SectionTabs } from "@/components/SectionTabs";
 import { CurriculumTable } from "@/components/CurriculumTable";
+import { ContentRenderer } from "@/components/ContentRenderer";
 
 export function generateStaticParams() {
   return routing.locales.flatMap((locale) =>
@@ -56,9 +57,12 @@ export default async function SectionPage({
           <h2 className="text-[1.5rem] font-bold tracking-[-0.02em] leading-[1.2] text-fg">
             {t("introduction")}
           </h2>
-          <p className="text-[2rem] leading-[1.25] tracking-[-0.02em] text-fg font-normal max-w-[79rem]">
+          <p className="text-[2rem] leading-[1.25] tracking-[-0.02em] text-fg font-normal">
             {section.overview}
           </p>
+          {section.facilitatorBlocks && section.facilitatorBlocks.length > 0 ? (
+            <ContentRenderer blocks={section.facilitatorBlocks} />
+          ) : null}
         </div>
 
         <div className="flex flex-col gap-[1.5rem] w-full">

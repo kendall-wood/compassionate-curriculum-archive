@@ -24,7 +24,7 @@ export function ActivityBlock({
       <div className="flex flex-col">
         <h2
           id={`${id}-heading`}
-          className="text-[1.5rem] font-bold leading-[1.2] tracking-[-0.02em] text-fg"
+          className="text-[2.5rem] font-bold leading-[1.1] tracking-[-0.03em] text-fg"
         >
           {heading}
         </h2>
@@ -59,7 +59,7 @@ export async function FacilitatorBlock({ blocks }: { blocks: ContentBlock[] }) {
       <div className="flex flex-col">
         <h2
           id="overview-heading"
-          className="text-[1.5rem] font-bold leading-[1.2] tracking-[-0.02em] text-fg"
+          className="text-[2.5rem] font-bold leading-[1.1] tracking-[-0.03em] text-fg"
         >
           {t("forFacilitators")}
         </h2>

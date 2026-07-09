@@ -71,13 +71,9 @@
               "text": "Before a circle occurs there are processes that prepare all participants, including the circlekeepers/facilitators - for the process. The stages of pre-work are:"
             },
             {
-              "kind": "label",
-              "text": "Stage 1: Assessment and Intake (The \"Why\" and \"Who\")"
-            },
-            {
               "kind": "p",
               "bold": true,
-              "text": "Elements include:"
+              "text": "Assessment and Intake"
             },
             {
               "kind": "ul",
@@ -88,13 +84,9 @@
               ]
             },
             {
-              "kind": "label",
-              "text": "Stage 2: Design and Prompt Engineering (The Curriculum)"
-            },
-            {
               "kind": "p",
               "bold": true,
-              "text": "Elements include:"
+              "text": "Design and Prompt Engineering"
             },
             {
               "kind": "ul",
@@ -105,13 +97,9 @@
               ]
             },
             {
-              "kind": "label",
-              "text": "Stage 3: Physical Environment Setup (The Space)"
-            },
-            {
               "kind": "p",
               "bold": true,
-              "text": "Elements include:"
+              "text": "Physical Environment Setup"
             },
             {
               "kind": "ul",
@@ -120,13 +108,9 @@
               ]
             },
             {
-              "kind": "label",
-              "text": "Stage 4: Facilitator Self-Regulation (The Internal Prep)"
-            },
-            {
               "kind": "p",
               "bold": true,
-              "text": "Elements include:"
+              "text": "Facilitator Self-Regulation"
             },
             {
               "kind": "ul",
@@ -356,8 +340,66 @@
       ]
     },
     {
-      "id": "reauthoring-circles",
+      "id": "sharing-our-stories",
       "label": "L3",
+      "title": "Sharing Our Stories",
+      "sectionId": "restorative-practices",
+      "facilitatorBlocks": [
+        {
+          "kind": "p",
+          "text": "This activity can begin as journaling, either in or between sessions, and later move into circle sharing. The task is to write \"your story.\""
+        },
+        {
+          "kind": "label",
+          "text": "For Facilitators"
+        },
+        {
+          "kind": "p",
+          "text": "Depending on group size, this activity may unfold across several sessions. It can help if one of the circlekeepers shares first to model the activity, or if a few participants are prepared in advance, to see if they might be comfortable sharing early on. Participants should always have the option to pass."
+        },
+        {
+          "kind": "p",
+          "text": "Allow breaks between stories. These circles can be intense, and pauses help the group remain present for one another."
+        }
+      ],
+      "activities": [
+        {
+          "id": "a1",
+          "label": "A1",
+          "title": "Journaling Prompts",
+          "blocks": [
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Prompts:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "What is your name?",
+                "Where do you live? Did you always live there?",
+                "Where did you grow up?",
+                "What childhood memories stay with you?",
+                "Who do you live with?",
+                "Do you have siblings? What is your relationship with them?",
+                "What is your relationship like with your parents or guardians?",
+                "What hardships have you faced? What obstacles have you overcome?",
+                "What accomplishments are you proud of?",
+                "How did you come to this work?",
+                "Why is this work important to you?",
+                "How will you activate what you are learning?",
+                "What are your passions and long-term goals?"
+              ]
+            }
+          ]
+        }
+      ],
+      "thumbnail": "/images/AFrame_horizontal.3.png",
+      "heroImage": "/images/AFrame_horizontal.3.png"
+    },
+    {
+      "id": "reauthoring-circles",
+      "label": "L4",
       "title": "Reauthoring Circles",
       "sectionId": "restorative-practices",
       "facilitatorBlocks": [
@@ -517,64 +559,6 @@
           ]
         }
       ]
-    },
-    {
-      "id": "sharing-our-stories",
-      "label": "L4",
-      "title": "Sharing Our Stories",
-      "sectionId": "restorative-practices",
-      "facilitatorBlocks": [
-        {
-          "kind": "p",
-          "text": "This activity can begin as journaling, either in or between sessions, and later move into circle sharing. The task is to write \"your story.\""
-        },
-        {
-          "kind": "label",
-          "text": "For Facilitators"
-        },
-        {
-          "kind": "p",
-          "text": "Depending on group size, this activity may unfold across several sessions. It can help if one of the circlekeepers shares first to model the activity, or if a few participants are prepared in advance, to see if they might be comfortable sharing early on. Participants should always have the option to pass."
-        },
-        {
-          "kind": "p",
-          "text": "Allow breaks between stories. These circles can be intense, and pauses help the group remain present for one another."
-        }
-      ],
-      "activities": [
-        {
-          "id": "a1",
-          "label": "A1",
-          "title": "Journaling Prompts",
-          "blocks": [
-            {
-              "kind": "p",
-              "bold": true,
-              "text": "Prompts:"
-            },
-            {
-              "kind": "ul",
-              "items": [
-                "What is your name?",
-                "Where do you live? Did you always live there?",
-                "Where did you grow up?",
-                "What childhood memories stay with you?",
-                "Who do you live with?",
-                "Do you have siblings? What is your relationship with them?",
-                "What is your relationship like with your parents or guardians?",
-                "What hardships have you faced? What obstacles have you overcome?",
-                "What accomplishments are you proud of?",
-                "How did you come to this work?",
-                "Why is this work important to you?",
-                "How will you activate what you are learning?",
-                "What are your passions and long-term goals?"
-              ]
-            }
-          ]
-        }
-      ],
-      "thumbnail": "/images/AFrame_horizontal.3.png",
-      "heroImage": "/images/AFrame_horizontal.3.png"
     },
     {
       "id": "land-ancestor-acknowledgement",

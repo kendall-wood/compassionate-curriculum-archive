@@ -5,8 +5,10 @@ import {
   loadSection,
   loadLesson,
   loadLessonNeighbors,
+  buildGlobalLessonIndex,
 } from "@/data/curriculum";
 import { routing } from "@/i18n/routing";
+import { Link } from "@/i18n/routing";
 import { Toolbar } from "@/components/Toolbar";
 import { LessonHero } from "@/components/LessonHero";
 import { LessonNav } from "@/components/LessonNav";
@@ -47,7 +49,25 @@ export default async function LessonPage({
   const lesson = await loadLesson(sectionId, lessonId, locale);
   if (!section || !lesson) return notFound();
 
-  const { prev, next } = await loadLessonNeighbors(sectionId, lessonId, locale);
+  const [{ prev, next }, globalMap] = await Promise.all([
+    loadLessonNeighbors(sectionId, lessonId, locale),
+    buildGlobalLessonIndex(locale),
+  ]);
+  const globalIndex = globalMap.get(`${sectionId}/${lessonId}`) ?? 0;
+  const prevNav = prev
+    ? {
+        href: `/${prev.sectionId}/${prev.lessonId}`,
+        label: `L${globalMap.get(`${prev.sectionId}/${prev.lessonId}`) ?? ""}`,
+        title: prev.title,
+      }
+    : undefined;
+  const nextNav = next
+    ? {
+        href: `/${next.sectionId}/${next.lessonId}`,
+        label: `L${globalMap.get(`${next.sectionId}/${next.lessonId}`) ?? ""}`,
+        title: next.title,
+      }
+    : undefined;
 
   return (
     <div className="cc-page bg-bg text-fg min-h-screen pl-[2rem] pr-[2rem] pt-[1.6875rem] pb-[5rem]">
@@ -58,11 +78,14 @@ export default async function LessonPage({
           title={lesson.title}
           image={lesson.heroImage}
           imageAlt={`${lesson.title} hero image`}
-          sectionHref={`/${section.id}`}
-          sectionLabel={section.title}
-          lessonLabel={lesson.label}
-          imageBelow
         />
+
+        <p className="text-[1.25rem] tracking-[-0.02em] leading-none text-fg">
+          <Link href={`/${section.id}`} className="hover:text-accent transition-colors">
+            / {section.title}
+          </Link>
+          <span className="opacity-70"> / L{globalIndex}</span>
+        </p>
 
         <ActivityTabs
           sectionId={section.id}
@@ -72,7 +95,7 @@ export default async function LessonPage({
 
         <FacilitatorBlock blocks={lesson.facilitatorBlocks} />
 
-        <LessonNav prev={prev} next={next} />
+        <LessonNav prev={prevNav} next={nextNav} />
       </div>
     </div>
   );

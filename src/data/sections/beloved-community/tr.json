@@ -43,13 +43,6 @@
           "title": "Kesişimsel Bilinçlilik Geliştirme",
           "blocks": [
             {
-              "kind": "image",
-              "src": "/images/l1-a1.webp",
-              "alt": "Bakım jest olarak bir bilekten tutmak",
-              "width": 672,
-              "height": 376
-            },
-            {
               "kind": "p",
               "bold": true,
               "text": "Facilitatör olarak kendi kimliğiniz hakkında tartışarak başlayın. Açıklık, karmaşıklık ve öz-farkındalık modelleyin. Daha sonra katılımcıları Susan Cousins'in (2019:41) sorularından gelen sorular hakkında düşünmeye davet edin:"

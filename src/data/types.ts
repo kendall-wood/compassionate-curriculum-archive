@@ -37,5 +37,6 @@ export type Section = {
   label: string;
   title: string;
   overview: string;
+  facilitatorBlocks?: ContentBlock[];
   lessons: Lesson[];
 };

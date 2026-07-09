@@ -2,9 +2,7 @@ import { setRequestLocale, getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/routing";
 import { Toolbar } from "@/components/Toolbar";
 import { SectionTabs } from "@/components/SectionTabs";
-
-const sectionPill =
-  "inline-flex items-baseline gap-[0.375rem] px-[0.625rem] py-[0.25rem] border border-fg text-fg hover:bg-accent hover:text-accent-fg transition-colors align-baseline text-[1.875rem] leading-snug";
+import { loadAllSections } from "@/data/curriculum";
 
 export async function generateMetadata({
   params,
@@ -19,6 +17,9 @@ export async function generateMetadata({
   };
 }
 
+const listItem =
+  "flex items-center justify-between px-[0.625rem] py-[1rem] border-t border-fg text-fg text-[2rem] leading-[1.25] tracking-[-0.02em] hover:bg-accent hover:text-accent-fg transition-colors";
+
 export default async function IntroPage({
   params,
 }: {
@@ -28,6 +29,8 @@ export default async function IntroPage({
   setRequestLocale(locale);
   const t = await getTranslations("intro");
   const site = await getTranslations("site");
+  const appendixT = await getTranslations("appendix");
+  const sections = await loadAllSections(locale);
 
   return (
     <div className="cc-page bg-bg text-fg min-h-screen pl-[2rem] pr-[2rem] pt-[1.6875rem] pb-[5rem]">
@@ -53,21 +56,18 @@ export default async function IntroPage({
             {t("p2")}
           </p>
 
-          <p className="text-[2rem] leading-[1.25] tracking-[-0.02em] text-fg font-normal">
-            {t("p3Intro")}{" "}
-            <Link href="/beloved-community" className={sectionPill}>
-              {t("p3PillBeloved")} <span aria-hidden="true">↗</span>
-            </Link>{" "}
-            {t("p3MidBeloved")}{" "}
-            <Link href="/restorative-practices" className={sectionPill}>
-              {t("p3PillRestorative")} <span aria-hidden="true">↗</span>
-            </Link>{" "}
-            {t("p3MidRestorative")}{" "}
-            <Link href="/media-narrative-futuring" className={sectionPill}>
-              {t("p3PillMedia")} <span aria-hidden="true">↗</span>
-            </Link>{" "}
-            {t("p3MidMedia")}
-          </p>
+          <nav aria-label="Curriculum sections" className="flex flex-col border-b border-fg w-full">
+            {sections.map((s) => (
+              <Link key={s.id} href={`/${s.id}`} className={listItem}>
+                <span>{s.label}</span>
+                <span aria-hidden="true">↗</span>
+              </Link>
+            ))}
+            <Link href="/appendix" className={listItem}>
+              <span>{appendixT("heading")}</span>
+              <span aria-hidden="true">↗</span>
+            </Link>
+          </nav>
 
           <p className="text-[2rem] leading-[1.25] tracking-[-0.02em] text-fg font-normal">
             {t("p4")}

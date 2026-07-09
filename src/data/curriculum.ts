@@ -80,6 +80,21 @@ export type LessonRef = {
   title: string;
 };
 
+// Returns a map of "sectionId/lessonId" → 1-based global lesson number (L1–L16).
+export async function buildGlobalLessonIndex(
+  locale: string = DEFAULT_LOCALE
+): Promise<Map<string, number>> {
+  const all = await loadAllSections(locale);
+  const map = new Map<string, number>();
+  let n = 0;
+  for (const s of all) {
+    for (const l of s.lessons) {
+      map.set(`${s.id}/${l.id}`, ++n);
+    }
+  }
+  return map;
+}
+
 // Flat, ordered list of every lesson across all sections (the "lesson trail"),
 // used to walk prev/next between lessons — including across section boundaries.
 export async function loadLessonNeighbors(

@@ -13,14 +13,6 @@
         {
           "kind": "p",
           "text": "These exercises help participants reflect on identity, memory, mood, and self description through color, sound, writing, and image."
-        },
-        {
-          "kind": "p",
-          "text": "How might lack of resources, cultural marginalization and the experience of trauma forestall the ability or willingness to imagine, or belief in the relevance of imagination itself? This section begins from the understanding that dominant culture often flattens identity. People who are criminalized or stereotyped may begin to describe themselves through limiting narratives rather than through the full complexity of their lives."
-        },
-        {
-          "kind": "p",
-          "text": "Imagination is a practice of hope. It involves rearranging present ideas into new possible combinations. For people whose experience of choice has been limited, it may understandably be difficult to hope that any kind of future agency might be possible. Begin with low stakes forms of reflection and storytelling, then build gradually toward media analysis and futuring."
         }
       ],
       "activities": [
@@ -821,6 +813,16 @@
       ],
       "thumbnail": "/images/FACT_DoubleHug_2000%20copy.jpg",
       "heroImage": "/images/FACT_DoubleHug_2000%20copy.jpg"
+    }
+  ],
+  "facilitatorBlocks": [
+    {
+      "kind": "p",
+      "text": "How might lack of resources, cultural marginalization and the experience of trauma forestall the ability or willingness to imagine, or belief in the relevance of imagination itself? This section begins from the understanding that dominant culture often flattens identity. People who are criminalized or stereotyped may begin to describe themselves through limiting narratives rather than through the full complexity of their lives."
+    },
+    {
+      "kind": "p",
+      "text": "Imagination is a practice of hope. It involves rearranging present ideas into new possible combinations. For people whose experience of choice has been limited, it may understandably be difficult to hope that any kind of future agency might be possible. Begin with low stakes forms of reflection and storytelling, then build gradually toward media analysis and futuring."
     }
   ]
 }
