@@ -24,7 +24,8 @@ export default async function AppendixPage({
   const site = await getTranslations("site");
 
   const TYPE = "text-[1.25rem] tracking-[-0.02em] leading-[1.3]";
-  const COLS = "64px 1fr 2fr";
+  // Matches CurriculumTable's SUB_ROW_COLS for visual alignment across pages
+  const COLS = "234px minmax(560px, 1fr) 469px";
 
   return (
     <div className="cc-page bg-bg text-fg min-h-screen pl-[2rem] pr-[2rem] pt-[1.6875rem] pb-[5rem]">
@@ -46,7 +47,7 @@ export default async function AppendixPage({
           </p>
 
           <div className="w-full overflow-x-auto">
-            <div style={{ minWidth: "640px" }}>
+            <div>
               {/* Header */}
               <div className="grid" style={{ gridTemplateColumns: COLS }}>
                 <span className={`${TYPE} ps-[0.375rem] leading-none`}>
