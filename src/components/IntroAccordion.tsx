@@ -15,7 +15,7 @@ export function IntroAccordion({ items }: { items: AccordionItem[] }) {
           <div key={i}>
             <button
               onClick={() => setOpenIndex(isOpen ? null : i)}
-              className="w-full flex items-baseline justify-between py-[1.25rem] px-[0.625rem] text-fg transition-colors duration-100 hover:bg-accent hover:text-accent-fg"
+              className="w-full flex items-baseline justify-between py-[1.25rem] px-[0.375rem] text-fg transition-colors duration-100 hover:bg-accent hover:text-accent-fg"
             >
               <span className="text-[2rem] leading-[1.25] tracking-[-0.02em] font-normal text-left">
                 <span className="text-[1.875rem] leading-snug">

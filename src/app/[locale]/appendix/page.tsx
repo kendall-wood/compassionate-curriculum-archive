@@ -24,7 +24,7 @@ export default async function AppendixPage({
   const site = await getTranslations("site");
 
   const TYPE = "text-[1.25rem] tracking-[-0.02em] leading-[1.3]";
-  const COLS = "120px minmax(300px, 1fr) minmax(400px, 1.5fr)";
+  const COLS = "64px 1fr 2fr";
 
   return (
     <div className="cc-page bg-bg text-fg min-h-screen pl-[2rem] pr-[2rem] pt-[1.6875rem] pb-[5rem]">
@@ -46,7 +46,7 @@ export default async function AppendixPage({
           </p>
 
           <div className="w-full overflow-x-auto">
-            <div style={{ minWidth: "820px" }}>
+            <div style={{ minWidth: "640px" }}>
               {/* Header */}
               <div className="grid" style={{ gridTemplateColumns: COLS }}>
                 <span className={`${TYPE} ps-[0.375rem] leading-none`}>
