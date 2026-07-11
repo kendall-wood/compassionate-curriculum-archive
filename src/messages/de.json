@@ -28,7 +28,8 @@
   },
   "nav": {
     "intro": "Einführung",
-    "sectionsLabel": "Lehrplanabschnitte"
+    "sectionsLabel": "Lehrplanabschnitte",
+    "appendix": "Appendix"
   },
   "table": {
     "lesson": "Lektion",

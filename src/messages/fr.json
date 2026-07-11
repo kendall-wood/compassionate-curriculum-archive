@@ -28,7 +28,8 @@
   },
   "nav": {
     "intro": "Intro",
-    "sectionsLabel": "Sections du curriculum"
+    "sectionsLabel": "Sections du curriculum",
+    "appendix": "Appendix"
   },
   "table": {
     "lesson": "Leçon",

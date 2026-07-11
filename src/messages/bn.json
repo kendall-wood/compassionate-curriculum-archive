@@ -28,7 +28,8 @@
   },
   "nav": {
     "intro": "পরিচিতি",
-    "sectionsLabel": "পাঠ্যক্রম বিভাগ"
+    "sectionsLabel": "পাঠ্যক্রম বিভাগ",
+    "appendix": "Appendix"
   },
   "table": {
     "lesson": "পাঠ",

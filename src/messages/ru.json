@@ -28,7 +28,8 @@
   },
   "nav": {
     "intro": "Введение",
-    "sectionsLabel": "Разделы программы обучения"
+    "sectionsLabel": "Разделы программы обучения",
+    "appendix": "Appendix"
   },
   "table": {
     "lesson": "Урок",

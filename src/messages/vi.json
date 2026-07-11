@@ -28,7 +28,8 @@
   },
   "nav": {
     "intro": "Giới thiệu",
-    "sectionsLabel": "Các phần của chương trình giáo dục"
+    "sectionsLabel": "Các phần của chương trình giáo dục",
+    "appendix": "Appendix"
   },
   "table": {
     "lesson": "Bài học",

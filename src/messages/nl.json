@@ -28,7 +28,8 @@
   },
   "nav": {
     "intro": "Intro",
-    "sectionsLabel": "Curriculumsecties"
+    "sectionsLabel": "Curriculumsecties",
+    "appendix": "Appendix"
   },
   "table": {
     "lesson": "Les",

@@ -28,7 +28,8 @@
   },
   "nav": {
     "intro": "イントロ",
-    "sectionsLabel": "カリキュラムのセクション"
+    "sectionsLabel": "カリキュラムのセクション",
+    "appendix": "Appendix"
   },
   "table": {
     "lesson": "レッスン",

@@ -28,7 +28,8 @@
   },
   "nav": {
     "intro": "소개",
-    "sectionsLabel": "교육과정 섹션"
+    "sectionsLabel": "교육과정 섹션",
+    "appendix": "Appendix"
   },
   "table": {
     "lesson": "수업",

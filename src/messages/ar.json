@@ -28,7 +28,8 @@
   },
   "nav": {
     "intro": "المقدمة",
-    "sectionsLabel": "أقسام المنهج"
+    "sectionsLabel": "أقسام المنهج",
+    "appendix": "Appendix"
   },
   "table": {
     "lesson": "الدرس",

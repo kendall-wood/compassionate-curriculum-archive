@@ -28,7 +28,8 @@
   },
   "nav": {
     "intro": "介绍",
-    "sectionsLabel": "课程部分"
+    "sectionsLabel": "课程部分",
+    "appendix": "Appendix"
   },
   "table": {
     "lesson": "课程",

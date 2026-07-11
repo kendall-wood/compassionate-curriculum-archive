@@ -28,7 +28,8 @@
   },
   "nav": {
     "intro": "परिचय",
-    "sectionsLabel": "पाठ्यक्रम के भाग"
+    "sectionsLabel": "पाठ्यक्रम के भाग",
+    "appendix": "Appendix"
   },
   "table": {
     "lesson": "पाठ",

@@ -28,7 +28,8 @@
   },
   "nav": {
     "intro": "Giriş",
-    "sectionsLabel": "Müfredat bölümleri"
+    "sectionsLabel": "Müfredat bölümleri",
+    "appendix": "Appendix"
   },
   "table": {
     "lesson": "Ders",
