@@ -24,8 +24,8 @@ export default async function AppendixPage({
   const site = await getTranslations("site");
 
   const TYPE = "text-[1.25rem] tracking-[-0.02em] leading-[1.3]";
-  // # column matches CurriculumTable; directions narrower than activities col to give title room
-  const COLS = "234px minmax(400px, 1fr) 340px";
+  // # column matches CurriculumTable; directions wide to hold paragraph-length content
+  const COLS = "234px minmax(300px, 1fr) 750px";
 
   return (
     <div className="cc-page bg-bg text-fg min-h-screen pl-[2rem] pr-[2rem] pt-[1.6875rem] pb-[5rem]">
