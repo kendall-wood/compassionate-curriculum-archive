@@ -51,6 +51,14 @@ export async function SectionTabs({
           {s.label}
         </Link>
       ))}
+      <Link
+        href="/appendix"
+        role="tab"
+        aria-selected={activeId === "appendix"}
+        {...tabStyle("appendix")}
+      >
+        {t("nav.appendix")}
+      </Link>
     </div>
   );
 }

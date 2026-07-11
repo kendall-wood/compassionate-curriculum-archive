@@ -60,9 +60,6 @@ export function Toolbar({ showBack = false, backHref = "/" }: ToolbarProps) {
           <Link href="/about" className={navBtn}>
             {t("about")}
           </Link>
-          <Link href="/appendix" className={navBtn}>
-            {t("appendix")}
-          </Link>
           <button
             type="button"
             onClick={() => window.print()}
