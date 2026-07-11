@@ -194,6 +194,8 @@
       "heroImage": "/images/FACT_chapel_Block_HandsReach.2%20copy.jpg"
     },
     {
+      "heroImage": "/images/imge-addi-1.png",
+      "thumbnail": "/images/imge-addi-1.png",
       "id": "media-analysis",
       "label": "L3",
       "title": "Media Analysis & Visual Storytelling",

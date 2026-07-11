@@ -402,6 +402,8 @@
       "label": "L4",
       "title": "Reauthoring Circles",
       "sectionId": "restorative-practices",
+      "heroImage": "/images/imge-addi-2.png",
+      "thumbnail": "/images/imge-addi-2.png",
       "facilitatorBlocks": [
         {
           "kind": "p",
@@ -565,6 +567,8 @@
       "label": "L5",
       "title": "Land & Ancestor Acknowledgement",
       "sectionId": "restorative-practices",
+      "heroImage": "/images/imge-addi-3.png",
+      "thumbnail": "/images/imge-addi-3.png",
       "facilitatorBlocks": [
         {
           "kind": "p",

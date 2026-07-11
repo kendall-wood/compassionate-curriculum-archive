@@ -1,8 +1,7 @@
 import { setRequestLocale, getTranslations } from "next-intl/server";
-import { Link } from "@/i18n/routing";
 import { Toolbar } from "@/components/Toolbar";
 import { SectionTabs } from "@/components/SectionTabs";
-import { loadAllSections } from "@/data/curriculum";
+import { IntroAccordion } from "@/components/IntroAccordion";
 
 export async function generateMetadata({
   params,
@@ -17,9 +16,6 @@ export async function generateMetadata({
   };
 }
 
-const listItem =
-  "flex items-center justify-between px-[0.625rem] py-[1rem] border-t border-fg text-fg text-[2rem] leading-[1.25] tracking-[-0.02em] hover:bg-accent hover:text-accent-fg transition-colors";
-
 export default async function IntroPage({
   params,
 }: {
@@ -29,8 +25,6 @@ export default async function IntroPage({
   setRequestLocale(locale);
   const t = await getTranslations("intro");
   const site = await getTranslations("site");
-  const appendixT = await getTranslations("appendix");
-  const sections = await loadAllSections(locale);
 
   return (
     <div className="cc-page bg-bg text-fg min-h-screen pl-[2rem] pr-[2rem] pt-[1.6875rem] pb-[5rem]">
@@ -56,18 +50,17 @@ export default async function IntroPage({
             {t("p2")}
           </p>
 
-          <nav aria-label="Curriculum sections" className="flex flex-col border-b border-fg w-full">
-            {sections.map((s) => (
-              <Link key={s.id} href={`/${s.id}`} className={listItem}>
-                <span>{s.label}</span>
-                <span aria-hidden="true">↗</span>
-              </Link>
-            ))}
-            <Link href="/appendix" className={listItem}>
-              <span>{appendixT("heading")}</span>
-              <span aria-hidden="true">↗</span>
-            </Link>
-          </nav>
+          <p className="text-[2rem] leading-[1.25] tracking-[-0.02em] text-fg font-normal">
+            {t("p3Intro")}
+          </p>
+
+          <IntroAccordion
+            items={[
+              { label: t("p3PillBeloved"), description: t("p3MidBeloved") },
+              { label: t("p3PillRestorative"), description: t("p3MidRestorative") },
+              { label: t("p3PillMedia"), description: t("p3MidMedia") },
+            ]}
+          />
 
           <p className="text-[2rem] leading-[1.25] tracking-[-0.02em] text-fg font-normal">
             {t("p4")}
