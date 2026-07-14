@@ -68,9 +68,6 @@ export function Toolbar({ showBack = false, backHref = "/" }: ToolbarProps) {
           >
             {t("print")}
           </button>
-          <Link href="/contact" className={navBtn}>
-            {t("contact")}
-          </Link>
           <button
             type="button"
             onClick={() => setShowUtilityRow((v) => !v)}

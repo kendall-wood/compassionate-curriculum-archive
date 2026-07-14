@@ -13,46 +13,6 @@ function youTubeId(url: string): string | null {
   return null;
 }
 
-// Unique YouTube ids across a set of strings, in first-seen order.
-function collectYouTubeIds(strings: string[]): string[] {
-  const ids: string[] = [];
-  for (const s of strings) {
-    for (const token of s.split(tokenRegex)) {
-      const id = youTubeId(token);
-      if (id && !ids.includes(id)) ids.push(id);
-    }
-  }
-  return ids;
-}
-
-function YouTubeEmbed({ id }: { id: string }) {
-  return (
-    <div className="w-[42rem] max-w-full self-start">
-      <div className="relative w-full border border-fg" style={{ aspectRatio: "16 / 9" }}>
-        <iframe
-          className="absolute inset-0 h-full w-full"
-          src={`https://www.youtube-nocookie.com/embed/${id}`}
-          title="Embedded video"
-          loading="lazy"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowFullScreen
-        />
-      </div>
-    </div>
-  );
-}
-
-function VideoEmbeds({ from }: { from: string[] }) {
-  const ids = collectYouTubeIds(from);
-  if (ids.length === 0) return null;
-  return (
-    <div className="flex flex-col gap-[1rem]">
-      {ids.map((id) => (
-        <YouTubeEmbed key={id} id={id} />
-      ))}
-    </div>
-  );
-}
 
 function renderText(text: string) {
   const parts = text.split(tokenRegex);
@@ -112,48 +72,40 @@ export function ContentRenderer({ blocks }: { blocks: ContentBlock[] }) {
         switch (block.kind) {
           case "p":
             return (
-              <div key={i} className="flex flex-col gap-[1rem]">
-                <p
-                  className={`text-[2rem] leading-[1.25] tracking-[-0.02em] ${
-                    block.bold ? "font-bold" : "font-normal"
-                  }`}
-                >
-                  {renderText(block.text)}
-                </p>
-                <VideoEmbeds from={[block.text]} />
-              </div>
+              <p
+                key={i}
+                className={`text-[2rem] leading-[1.25] tracking-[-0.02em] ${
+                  block.bold ? "font-bold" : "font-normal"
+                }`}
+              >
+                {renderText(block.text)}
+              </p>
             );
           case "ul":
             return (
-              <div key={i} className="flex flex-col gap-[1rem]">
-                <ul className="list-disc ps-[1.5em] flex flex-col gap-[0.75rem]">
-                  {block.items.map((item, j) => (
-                    <li
-                      key={j}
-                      className="text-[2rem] leading-[1.4] tracking-[-0.02em]"
-                    >
-                      {renderText(item)}
-                    </li>
-                  ))}
-                </ul>
-                <VideoEmbeds from={block.items} />
-              </div>
+              <ul key={i} className="list-disc ps-[1.5em] flex flex-col gap-[0.75rem]">
+                {block.items.map((item, j) => (
+                  <li
+                    key={j}
+                    className="text-[2rem] leading-[1.4] tracking-[-0.02em]"
+                  >
+                    {renderText(item)}
+                  </li>
+                ))}
+              </ul>
             );
           case "ol":
             return (
-              <div key={i} className="flex flex-col gap-[1rem]">
-                <ol className="list-decimal ps-[1.5em] flex flex-col gap-[0.75rem]">
-                  {block.items.map((item, j) => (
-                    <li
-                      key={j}
-                      className="text-[2rem] leading-[1.4] tracking-[-0.02em]"
-                    >
-                      {renderText(item)}
-                    </li>
-                  ))}
-                </ol>
-                <VideoEmbeds from={block.items} />
-              </div>
+              <ol key={i} className="list-decimal ps-[1.5em] flex flex-col gap-[0.75rem]">
+                {block.items.map((item, j) => (
+                  <li
+                    key={j}
+                    className="text-[2rem] leading-[1.4] tracking-[-0.02em]"
+                  >
+                    {renderText(item)}
+                  </li>
+                ))}
+              </ol>
             );
           case "h":
             return (

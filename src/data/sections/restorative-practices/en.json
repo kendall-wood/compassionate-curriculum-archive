@@ -257,7 +257,7 @@
             {
               "kind": "p",
               "bold": true,
-              "text": "For repairing relationships:"
+              "text": "Discussion Round Prompts"
             },
             {
               "kind": "ul",
@@ -265,42 +265,6 @@
                 "Who do you think has been affected by this situation, and in what specific ways have they been impacted?",
                 "What has been the hardest part of this experience for you personally?",
                 "What needs to happen right now to make things as right as possible for everyone involved?"
-              ]
-            },
-            {
-              "kind": "p",
-              "bold": true,
-              "text": "For Organizational Change & Processing Transitions"
-            },
-            {
-              "kind": "ul",
-              "items": [
-                "What concerns are you holding right now regarding our upcoming shift? What are your fears?",
-                "What is one practical resource or support you need to successfully navigate this change?"
-              ]
-            },
-            {
-              "kind": "p",
-              "bold": true,
-              "text": "For Intersectional Equity & Identity Exploration"
-            },
-            {
-              "kind": "ul",
-              "items": [
-                "What is a unique aspect of your cultural heritage that significantly shapes how you show up to this work every day?",
-                "What is one intentional step we can take as a collective to ensure every person in this room feels heard and valued?"
-              ]
-            },
-            {
-              "kind": "p",
-              "bold": true,
-              "text": "For Post-Crisis Debriefing & Community Healing"
-            },
-            {
-              "kind": "ul",
-              "items": [
-                "What is a collective lesson we have learned about ourselves as a group?",
-                "How can we better look out for one another's well-being?"
               ]
             }
           ]
@@ -819,7 +783,7 @@
               "kind": "ul",
               "items": [
                 "Body language: maintain open body language and attention. Maintain eye contact where appropriate, face the speaker, adopt a relaxed posture, and avoid multitasking.",
-                "Following: allow the speaker space to speak without interruption. This means reducing unnecessary questions, tolerating silence, and letting a thought unfold.",
+                "Following: allow the speaker space to speak without interruption. This means reducing unnecessary questions, sitting with silence, and letting a thought unfold.",
                 "Paraphrasing and reflecting: summarize what you heard, including both content and feeling. For example: \"What I'm hearing is…\"",
                 "Ask open-ended questions: that invite reflection rather than yes/no answers.",
                 "Validation: assume that whatever is being shared however clearly or imperfectly, comes from something real in the speaker's experience."
