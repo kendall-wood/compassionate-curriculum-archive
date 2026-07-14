@@ -56,9 +56,9 @@ export default async function IntroPage({
 
           <IntroAccordion
             items={[
-              { label: t("p3PillBeloved"), description: t("p3MidBeloved") },
-              { label: t("p3PillRestorative"), description: t("p3MidRestorative") },
-              { label: t("p3PillMedia"), description: t("p3MidMedia") },
+              { label: t("p3PillBeloved"), description: t("p3MidBeloved"), href: "/beloved-community" },
+              { label: t("p3PillRestorative"), description: t("p3MidRestorative"), href: "/restorative-practices" },
+              { label: t("p3PillMedia"), description: t("p3MidMedia"), href: "/media-narrative-futuring" },
             ]}
           />
 
