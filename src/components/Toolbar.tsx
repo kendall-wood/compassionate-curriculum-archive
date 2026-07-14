@@ -221,7 +221,7 @@ export function Toolbar({ showBack = false, backHref = "/" }: ToolbarProps) {
       <PdfPreviewModal
         open={pdfOpen}
         onClose={() => setPdfOpen(false)}
-        pdfUrl="/CC_editorial_draft.pdf"
+        pdfUrl="/compassionate-curriculum.pdf"
         downloadLabel={t("downloadPdf")}
         closeLabel={t("closePdf")}
       />
