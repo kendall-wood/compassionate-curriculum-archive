@@ -20,7 +20,9 @@
     "useMonochrome": "Использовать монохромный акцент",
     "pickCustomColor": "Выбрать пользовательский цвет акцента",
     "customColorPicker": "Средство выбора пользовательского цвета акцента",
-    "primaryNav": "Основная"
+    "primaryNav": "Основная",
+    "downloadPdf": "Download PDF",
+    "closePdf": "Close preview"
   },
   "section": {
     "introduction": "Введение",

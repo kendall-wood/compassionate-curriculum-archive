@@ -20,7 +20,9 @@
     "useMonochrome": "単色アクセントを使用",
     "pickCustomColor": "カスタムアクセントカラーを選択",
     "customColorPicker": "カスタムアクセントカラーピッカー",
-    "primaryNav": "メイン"
+    "primaryNav": "メイン",
+    "downloadPdf": "Download PDF",
+    "closePdf": "Close preview"
   },
   "section": {
     "introduction": "イントロダクション",

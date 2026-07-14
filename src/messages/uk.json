@@ -20,7 +20,9 @@
     "useMonochrome": "Використовувати монохромне акцентування",
     "pickCustomColor": "Вибрати власний колір акцентування",
     "customColorPicker": "Засіб вибору власного кольору акцентування",
-    "primaryNav": "Основна"
+    "primaryNav": "Основна",
+    "downloadPdf": "Download PDF",
+    "closePdf": "Close preview"
   },
   "section": {
     "introduction": "Вступ",

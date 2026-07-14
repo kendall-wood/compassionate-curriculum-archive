@@ -20,7 +20,9 @@
     "useMonochrome": "Gebruik monochromatische accentkleur",
     "pickCustomColor": "Kies een aangepaste accentkleur",
     "customColorPicker": "Aangepaste accentkleur picker",
-    "primaryNav": "Primair"
+    "primaryNav": "Primair",
+    "downloadPdf": "Download PDF",
+    "closePdf": "Close preview"
   },
   "section": {
     "introduction": "Inleiding",

@@ -20,7 +20,9 @@
     "useMonochrome": "मोनोक्रोम उच्चारण का उपयोग करें",
     "pickCustomColor": "एक कस्टम उच्चारण रंग चुनें",
     "customColorPicker": "कस्टम उच्चारण रंग चयनकर्ता",
-    "primaryNav": "प्राथमिक"
+    "primaryNav": "प्राथमिक",
+    "downloadPdf": "Download PDF",
+    "closePdf": "Close preview"
   },
   "section": {
     "introduction": "परिचय",

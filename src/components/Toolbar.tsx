@@ -1,11 +1,13 @@
 "use client";
 
+import { useState } from "react";
 import { useTranslations } from "next-intl";
 import { Link, useRouter } from "@/i18n/routing";
 
 import { ACCENT_SWATCHES, useTheme } from "./ThemeProvider";
 import { EarIcon, MoonIcon, SunIcon } from "./icons";
 import { LanguageSwitcher } from "./LanguageSwitcher";
+import { PdfPreviewModal } from "./PdfPreviewModal";
 
 type ToolbarProps = {
   showBack?: boolean;
@@ -32,6 +34,7 @@ const utilBtn =
 export function Toolbar({ showBack = false, backHref = "/" }: ToolbarProps) {
   const router = useRouter();
   const t = useTranslations("toolbar");
+  const [pdfOpen, setPdfOpen] = useState(false);
   const { theme, toggleTheme, accent, setAccent, mono, setMono, zoomIn, zoomOut, zoomLabel, showUtilityRow, setShowUtilityRow, voiceover, toggleVoiceover } =
     useTheme();
 
@@ -62,7 +65,7 @@ export function Toolbar({ showBack = false, backHref = "/" }: ToolbarProps) {
           </Link>
           <button
             type="button"
-            onClick={() => window.print()}
+            onClick={() => setPdfOpen(true)}
             className={navBtn}
             aria-label={t("print")}
           >
@@ -214,6 +217,14 @@ export function Toolbar({ showBack = false, backHref = "/" }: ToolbarProps) {
           </button>
         </div>
       ) : null}
+
+      <PdfPreviewModal
+        open={pdfOpen}
+        onClose={() => setPdfOpen(false)}
+        pdfUrl="/CC_editorial_draft.pdf"
+        downloadLabel={t("downloadPdf")}
+        closeLabel={t("closePdf")}
+      />
     </div>
   );
 }

@@ -20,7 +20,9 @@
     "useMonochrome": "使用单色强调",
     "pickCustomColor": "选择自定义强调色",
     "customColorPicker": "自定义强调色选择器",
-    "primaryNav": "主导航"
+    "primaryNav": "主导航",
+    "downloadPdf": "Download PDF",
+    "closePdf": "Close preview"
   },
   "section": {
     "introduction": "介绍",

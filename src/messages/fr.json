@@ -20,7 +20,9 @@
     "useMonochrome": "Utiliser un accent monochrome",
     "pickCustomColor": "Choisir une couleur d'accent personnalisée",
     "customColorPicker": "Sélecteur de couleur d'accent personnalisée",
-    "primaryNav": "Principal"
+    "primaryNav": "Principal",
+    "downloadPdf": "Download PDF",
+    "closePdf": "Close preview"
   },
   "section": {
     "introduction": "Introduction",

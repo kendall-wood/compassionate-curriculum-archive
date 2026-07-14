@@ -20,7 +20,9 @@
     "useMonochrome": "Monochromen Akzent verwenden",
     "pickCustomColor": "Eine benutzerdefinierte Akzentfarbe wählen",
     "customColorPicker": "Benutzerdefinierten Akzentfarbwähler",
-    "primaryNav": "Primär"
+    "primaryNav": "Primär",
+    "downloadPdf": "Download PDF",
+    "closePdf": "Close preview"
   },
   "section": {
     "introduction": "Einführung",

@@ -20,7 +20,9 @@
     "useMonochrome": "Sử dụng màu nhấn đơn sắc",
     "pickCustomColor": "Chọn một màu nhấn tùy chỉnh",
     "customColorPicker": "Công cụ chọn màu nhấn tùy chỉnh",
-    "primaryNav": "Chính"
+    "primaryNav": "Chính",
+    "downloadPdf": "Download PDF",
+    "closePdf": "Close preview"
   },
   "section": {
     "introduction": "Giới thiệu",

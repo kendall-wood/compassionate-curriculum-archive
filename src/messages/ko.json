@@ -20,7 +20,9 @@
     "useMonochrome": "단색 강조 사용",
     "pickCustomColor": "사용자 지정 강조 색상 선택",
     "customColorPicker": "사용자 지정 강조 색상 선택기",
-    "primaryNav": "주요"
+    "primaryNav": "주요",
+    "downloadPdf": "Download PDF",
+    "closePdf": "Close preview"
   },
   "section": {
     "introduction": "소개",

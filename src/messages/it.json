@@ -20,7 +20,9 @@
     "useMonochrome": "Usa accentato monocromatico",
     "pickCustomColor": "Scegli un colore accentato personalizzato",
     "customColorPicker": "Selettore colore accentato personalizzato",
-    "primaryNav": "Principale"
+    "primaryNav": "Principale",
+    "downloadPdf": "Download PDF",
+    "closePdf": "Close preview"
   },
   "section": {
     "introduction": "Introduzione",

@@ -20,7 +20,9 @@
     "useMonochrome": "Monokrom vurguyu kullan",
     "pickCustomColor": "Özel bir vurgu rengi seç",
     "customColorPicker": "Özel vurgu rengi seçici",
-    "primaryNav": "Ana"
+    "primaryNav": "Ana",
+    "downloadPdf": "Download PDF",
+    "closePdf": "Close preview"
   },
   "section": {
     "introduction": "Giriş",

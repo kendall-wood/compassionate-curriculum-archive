@@ -23,7 +23,9 @@
     "customColorPicker": "Custom accent color picker",
     "primaryNav": "Primary",
     "enableVoiceover": "Enable voiceover (hold Option and hover over text)",
-    "disableVoiceover": "Disable voiceover"
+    "disableVoiceover": "Disable voiceover",
+    "downloadPdf": "Download PDF",
+    "closePdf": "Close preview"
   },
   "section": {
     "introduction": "Introduction",

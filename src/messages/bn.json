@@ -20,7 +20,9 @@
     "useMonochrome": "একবর্ণীয় অ্যাক্সেন্ট ব্যবহার করুন",
     "pickCustomColor": "একটি কাস্টম অ্যাক্সেন্ট রঙ নির্বাচন করুন",
     "customColorPicker": "কাস্টম অ্যাক্সেন্ট রঙ নির্বাচক",
-    "primaryNav": "প্রধান"
+    "primaryNav": "প্রধান",
+    "downloadPdf": "Download PDF",
+    "closePdf": "Close preview"
   },
   "section": {
     "introduction": "পরিচিতি",

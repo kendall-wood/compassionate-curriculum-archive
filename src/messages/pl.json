@@ -20,7 +20,9 @@
     "useMonochrome": "Użyj monochromatycznego akcentu",
     "pickCustomColor": "Wybierz niestandardowy kolor akcentu",
     "customColorPicker": "Niestandardowy selektor koloru akcentu",
-    "primaryNav": "Główna"
+    "primaryNav": "Główna",
+    "downloadPdf": "Download PDF",
+    "closePdf": "Close preview"
   },
   "section": {
     "introduction": "Wprowadzenie",

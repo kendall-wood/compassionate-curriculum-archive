@@ -20,7 +20,9 @@
     "useMonochrome": "استخدام تمييز أحادي اللون",
     "pickCustomColor": "اختيار لون تمييز مخصص",
     "customColorPicker": "منتقي لون التمييز المخصص",
-    "primaryNav": "الأساسي"
+    "primaryNav": "الأساسي",
+    "downloadPdf": "Download PDF",
+    "closePdf": "Close preview"
   },
   "section": {
     "introduction": "المقدمة",

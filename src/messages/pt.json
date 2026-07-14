@@ -20,7 +20,9 @@
     "useMonochrome": "Usar destaque monocromático",
     "pickCustomColor": "Escolher uma cor de destaque personalizada",
     "customColorPicker": "Selecionador de cor de destaque personalizada",
-    "primaryNav": "Principal"
+    "primaryNav": "Principal",
+    "downloadPdf": "Download PDF",
+    "closePdf": "Close preview"
   },
   "section": {
     "introduction": "Introdução",
