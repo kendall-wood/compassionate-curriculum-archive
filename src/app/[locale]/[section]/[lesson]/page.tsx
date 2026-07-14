@@ -61,11 +61,12 @@ export default async function LessonPage({
         title: prev.title,
       }
     : undefined;
-  const nextNav = next
+  const a1 = lesson.activities[0];
+  const nextNav = a1
     ? {
-        href: `/${next.sectionId}/${next.lessonId}`,
-        label: `L${globalMap.get(`${next.sectionId}/${next.lessonId}`) ?? ""}`,
-        title: next.title,
+        href: `/${sectionId}/${lessonId}/${a1.id}`,
+        label: a1.label,
+        title: a1.title,
       }
     : undefined;
 
