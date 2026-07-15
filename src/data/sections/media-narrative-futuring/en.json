@@ -820,11 +820,38 @@
   "facilitatorBlocks": [
     {
       "kind": "p",
-      "text": "How might lack of resources, cultural marginalization and the experience of trauma forestall the ability or willingness to imagine, or belief in the relevance of imagination itself? This section begins from the understanding that dominant culture often flattens identity. People who are criminalized or stereotyped may begin to describe themselves through limiting narratives rather than through the full complexity of their lives."
+      "text": "How might lack of resources, cultural marginalization and the experience of trauma forestall the ability or willingness to imagine, or belief in the relevance of imagination itself?"
     },
     {
       "kind": "p",
-      "text": "Imagination is a practice of hope. It involves rearranging present ideas into new possible combinations. For people whose experience of choice has been limited, it may understandably be difficult to hope that any kind of future agency might be possible. Begin with low stakes forms of reflection and storytelling, then build gradually toward media analysis and futuring."
+      "text": "This section begins from the understanding that dominant culture often flattens identity. People who are criminalized or stereotyped may begin to describe themselves through limiting narratives rather than through the full complexity of their lives, i.e. a young Black man who is arrested is compressed to \"criminal.\" If people describe themselves from this constrained space, rather than telling their story as an individual, they are deprived of their distinct subjectivity."
+    },
+    {
+      "kind": "p",
+      "text": "Imagination is a practice of hope. It involves rearranging present ideas into new possible combinations. For people whose experience of choice has been limited, it may understandably be difficult to hope that any kind of future agency might be possible. Facilitators should avoid immediately confronting people who have had limited choice with an immediate request to imagine potential positive futures. It is often more effective to begin with low stakes forms of reflection and storytelling, then build gradually toward media analysis and futuring."
+    },
+    {
+      "kind": "p",
+      "bold": true,
+      "text": "This work should be guided by clear values:"
+    },
+    {
+      "kind": "ul",
+      "items": [
+        "Center lived experience of participants from historically marginalized groups. Support and care required to facilitate such participants scales up to support all participants.",
+        "Ensure that all participants gain something from the process; the group as a whole should have a say in co-determining issues being discussed and means of disseminating any outcomes.",
+        "Make clear how imagination connects to present action — as a mechanism to inform designs & systems the group might build, or ways the group might work together, in the present, to point toward a more positive future.",
+        "Support storytelling through multiple forms and modalities.",
+        "Allow for play, experimentation, and gradual confidence building."
+      ]
+    },
+    {
+      "kind": "p",
+      "text": "This section begins by supporting participants in telling their own stories through multiple means, enabling them to describe life events in ways not constrained by systems of oppression. This work draws on different imagination-based methods, each directed toward distinct ends: to better understand how harmful cultural narratives are constructed and maintained; to experiment with reframing one's story from multiple perspectives; and to translate these stories through varied aesthetic forms that prompt reflection and dialogue."
+    },
+    {
+      "kind": "p",
+      "text": "Play matters here both as a loose, exploratory space and as a way of putting new ideas into motion. The activities in this section are designed to move from individual reflection to collective imagination in stages. This begins with individual reflection and different modes of storytelling, followed by media analysis, and finally individual and collective futuring."
     }
   ]
 }
