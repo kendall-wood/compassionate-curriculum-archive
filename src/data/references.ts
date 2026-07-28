@@ -169,8 +169,10 @@ export const REFERENCE_SECTIONS: ReferenceSection[] = [
         lessonLabel: "L4",
         lessonTitle: "Participatory Futuring and Worldbuilding",
         sources: [
+          "Buchanan, R., 1992. Wicked problems in design thinking. Design Issues, 8(2), pp. 5–21. Available at: https://doi.org/10.2307/1511637.",
           "Candy, S., 2010. The Futures of Everyday Life: Politics and the design of experiential scenarios. PhD Dissertation. Honolulu: University of Hawai'i at Mānoa. Available at: https://transmediastories.supdigital.org/ts/media/hand-drawn-futures-cone-by-stuart-candy [Accessed 16 May 2026].",
           "Crean, M. and Okunseinde, A., 2019. Prescriptions for Just Communities. Workshop curriculum and design framework. New York: Parsons School of Design.",
+          "Hunt, J., 2019. Anticipating future system states. Journal of Futures Studies, 23(3), pp. 119–128. Available at: https://doi.org/10.6531/JFS.201903_23(3).0011.",
           "Salen, K. and Zimmerman, E., 2004. Rules of play: Game design fundamentals. Cambridge, MA: MIT Press.",
           "Swift, B. (2022) Cybernetic futures explained (maybe). 20 January. Available at: https://benswift.me/blog/2022/01/20/cybernetic-futures-explained (Accessed: 16 May 2026).",
         ],

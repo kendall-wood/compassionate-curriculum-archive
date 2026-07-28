@@ -45,6 +45,24 @@ export default async function AboutPage({
 
         <section className="flex flex-col gap-[1.5rem]">
           <h2 className="text-[1.5rem] font-bold leading-[1.2] tracking-[-0.02em] text-fg">
+            {t("storyHeading")}
+          </h2>
+          <p className="text-[2rem] leading-[1.25] tracking-[-0.02em] text-fg max-w-[79rem]">
+            {t("story1")}
+          </p>
+          <p className="text-[2rem] leading-[1.25] tracking-[-0.02em] text-fg max-w-[79rem]">
+            {t("story2")}
+          </p>
+          <p className="text-[2rem] leading-[1.25] tracking-[-0.02em] text-fg max-w-[79rem]">
+            {t("story3")}
+          </p>
+          <p className="text-[2rem] leading-[1.25] tracking-[-0.02em] text-fg max-w-[79rem]">
+            {t("story4")}
+          </p>
+        </section>
+
+        <section className="flex flex-col gap-[1.5rem]">
+          <h2 className="text-[1.5rem] font-bold leading-[1.2] tracking-[-0.02em] text-fg">
             {t("acknowledgementsHeading")}
           </h2>
           <p className="text-[2rem] leading-[1.25] tracking-[-0.02em] text-fg max-w-[79rem]">
@@ -53,12 +71,22 @@ export default async function AboutPage({
           <p className="text-[2rem] leading-[1.25] tracking-[-0.02em] text-fg max-w-[79rem]">
             {t("ack2")}
           </p>
+          <ul className="flex flex-col gap-[0.75rem] list-disc pl-[2rem] max-w-[79rem]">
+            {t.raw("ackThanks").map((item: string, i: number) => (
+              <li
+                key={i}
+                className="text-[2rem] leading-[1.25] tracking-[-0.02em] text-fg"
+              >
+                {item}
+              </li>
+            ))}
+          </ul>
           <p className="text-[2rem] leading-[1.25] tracking-[-0.02em] text-fg max-w-[79rem]">
             {t("ack3")}
           </p>
         </section>
 
-        <section className="flex flex-col gap-[1.5rem]">
+        <section id="references" className="flex flex-col gap-[1.5rem] scroll-mt-[6rem]">
           <h2 className="text-[1.5rem] font-bold leading-[1.2] tracking-[-0.02em] text-fg">
             {t("referencesHeading")}
           </h2>

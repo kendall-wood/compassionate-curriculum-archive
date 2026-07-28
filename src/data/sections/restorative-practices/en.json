@@ -92,8 +92,7 @@
               "kind": "ul",
               "items": [
                 "The Sequential Arc Script: Map out the timeline on paper to ensure the group is not rushed into deep vulnerability too quickly. Example: Allocating 10 minutes for an introductory check-in, 15 minutes for community-building, 30 minutes for the core deep prompt, and 10 minutes for the closing reflection.",
-                "Drafting \"Powerful Questions\": Crafting open-ended, storytelling prompts that encourage reflection rather than defensive reactions or quick intellectual answers. Development of the Circle questions including grounding activities, circle round questions, closing, and any other prompts.",
-                "Community Agreements: Drafting a baseline list of community agreements to present to the room for collective editing and consensus. This list should be informed by Stage 1. Example: Have the classic four pillars of circle keeping on a flipchart: 1) Speak from the heart, 2) Listen from the heart, 3) Speak with relevance, 4) Bring spontaneous, lean expression."
+                "Drafting \"Powerful Questions\": Crafting open-ended, storytelling prompts that encourage reflection rather than defensive reactions or quick intellectual answers. Development of the Circle questions including grounding activities, circle round questions, closing, and any other prompts."
               ]
             },
             {
@@ -118,6 +117,141 @@
                 "Bias and Trigger Tracking: Pausing to clear your mind of personal assumptions regarding the incoming participants. Example: Imagining the circle process with each of the persons who will be participating. If you have time, journaling about your feelings, naming them without judgment and creating action plans to address the biases and/or triggers identified.",
                 "The Grounding Routine: Engaging in physical and mental decompression to ensure you do not absorb or mirror the nervous energy of the room. Example: Grounding breathing techniques in the space where the circle will occur."
               ]
+            }
+          ]
+        },
+        {
+          "id": "a2",
+          "label": "A2",
+          "title": "Community Agreements",
+          "blocks": [
+            {
+              "kind": "p",
+              "text": "There are many ways to create community agreements. They can be created in circle formation or outside of it. Facilitators/circlekeepers can also prepare a basic list of agreements to present to the group for discussion and editing."
+            },
+            {
+              "kind": "p",
+              "text": "This activity offers one way to create community agreements outside of a formal circle process, using small-group discussion, writing, sharing, and consolidation. If the group later moves into circle practice, these agreements can be brought into the circle, reviewed, and revised as needed."
+            },
+            {
+              "kind": "p",
+              "text": "The central consideration is for group members to think about what they need to:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "be fully present in the moment;",
+                "be open to new ideas;",
+                "establish and build trust with each other;",
+                "and feel able to learn, contribute, create, and simply be themselves in the space."
+              ]
+            },
+            {
+              "kind": "p",
+              "text": "The process should acknowledge power dynamics, and how power and agency might be distributed so that people can imagine together. It is helpful for the process to be led by those in the position of greatest precarity, though the diverse needs of all participants should be considered."
+            },
+            {
+              "kind": "p",
+              "text": "Areas to discuss might include punctuality, confidentiality, consent, frequency of status check-ins to see how people are feeling, need for bio & movement breaks, preferences about receiving feedback, best practices for decision making, division of labor and communication styles and methods."
+            },
+            {
+              "kind": "label",
+              "text": "Community Agreement exercise for classroom settings & youth groups"
+            },
+            {
+              "kind": "p",
+              "text": "Group members consider the below list of questions, meet in the group configurations described, and spend the time allotted to writing their sentence contribution to an online document or large sheets of paper. This activity was inspired by the educator Ben Norskov."
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Consider, what do you need to…"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "be fully present in this space?",
+                "be open to new ideas?",
+                "establish trust with each other?",
+                "do well as someone who learns, works and engages in this space?"
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Overview"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Part 1: Two sentences, 2 people (5 min)",
+                "Part 2: Three sentences, 4 people (7 min)",
+                "Part 3: Four sentences, 8 people (9 min)",
+                "Part 4: each group reads their four sentences, which get combined into a draft agreement",
+                "Part 5: evaluate the draft agreement — duplicate themes are combined, similar themes are grouped together"
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "1. Two Sentences, 2 People"
+            },
+            {
+              "kind": "p",
+              "text": "Time: 5 minutes. Write two sentences that respond to the questions above to address your needs. Refer to example agreements as needed."
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "2. Three Sentences, 4 People"
+            },
+            {
+              "kind": "p",
+              "text": "Time: 7 minutes. Write three sentences for the community agreement which address your needs."
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "3. Four Sentences, 8 People"
+            },
+            {
+              "kind": "p",
+              "text": "Time: 9 minutes. Write four sentences for the community agreement which address your needs."
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "4. Share as a Group"
+            },
+            {
+              "kind": "p",
+              "text": "Time: as needed. Each group shares their four sentences, which are listed into a very rough draft community agreement."
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "5. Consolidate and Edit"
+            },
+            {
+              "kind": "p",
+              "text": "Time: 10–15 minutes."
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Review the draft agreement for duplicate themes and combine them.",
+                "Review similar themes and group them together.",
+                "Revise the agreement so that it is clear, concise, and usable by the group."
+              ]
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Optional Follow-Up"
+            },
+            {
+              "kind": "p",
+              "text": "If the group later enters a circle process, bring the draft agreement into the circle. The circlekeeper may invite participants to review, revise, or add to the agreements using the talking piece."
             }
           ]
         }
@@ -172,7 +306,7 @@
         {
           "id": "a1",
           "label": "A1",
-          "title": "Welcome, Opening & Community Agreements",
+          "title": "Welcome, Opening & Icebreaker",
           "blocks": [
             {
               "kind": "p",
@@ -209,20 +343,21 @@
             {
               "kind": "p",
               "bold": true,
-              "text": "Community agreements"
+              "text": "Community Agreements in Circle"
             },
             {
               "kind": "ul",
               "items": [
+                "Community agreements may already have been drafted before the circle, as part of the Community Agreements activity in Preparation Before the Circle, or they may be created within the circle itself. If agreements have already been drafted, the circlekeeper can read them aloud and invite participants to revise, add to, or affirm them. If agreements have not yet been created, the circlekeeper can use the process below.",
                 "The circlekeeper, holding the talking piece, invites participants to name what they need in order to feel able to speak openly and honestly in the circle.",
-                "Example prompt: What agreements are important to you to ensure that you personally will feel braver in speaking openly and honestly in this circle?",
-                "The talking piece is passed to the left, so that each participant has the opportunity to add, or pass.",
+                "Example prompt: What agreements are important to you so that you personally feel braver speaking openly and honestly in this circle?",
+                "The talking piece is passed to the left, so that each participant has the opportunity to add an agreement or pass.",
                 "Record responses and revisit them as needed. Some circlekeepers may invite participants to sign the final agreements."
               ]
             },
             {
               "kind": "p",
-              "text": "This process helps strengthen consensus-based decision making. The agreements may take time to develop across multiple rounds. They should also be revisited over time."
+              "text": "This process helps strengthen consensus-based decision making. Agreements may take time to develop across multiple rounds and should be revisited over time."
             }
           ]
         },

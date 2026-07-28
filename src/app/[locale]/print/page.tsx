@@ -408,9 +408,21 @@ export default async function PrintPage({
             <h1 className="cc-site-title">{about("heading")}</h1>
             <p className="cc-print-p">{about("p1")}</p>
             <p className="cc-print-p">{about("p2")}</p>
+            <h2 className="cc-heading">{about("storyHeading")}</h2>
+            <p className="cc-print-p">{about("story1")}</p>
+            <p className="cc-print-p">{about("story2")}</p>
+            <p className="cc-print-p">{about("story3")}</p>
+            <p className="cc-print-p">{about("story4")}</p>
             <h2 className="cc-heading">{about("acknowledgementsHeading")}</h2>
             <p className="cc-print-p">{about("ack1")}</p>
             <p className="cc-print-p">{about("ack2")}</p>
+            <ul className="cc-print-list">
+              {(about.raw("ackThanks") as string[]).map((item, i) => (
+                <li key={i} className="cc-print-p cc-print-small">
+                  {item}
+                </li>
+              ))}
+            </ul>
             <p className="cc-print-p">{about("ack3")}</p>
           </article>
 
