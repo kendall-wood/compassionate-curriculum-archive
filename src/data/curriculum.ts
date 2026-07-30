@@ -12,11 +12,19 @@ import { DEFAULT_LOCALE } from "@/i18n/locales";
 import belovedEn from "./sections/beloved-community/en.json";
 import restorativeEn from "./sections/restorative-practices/en.json";
 import mediaEn from "./sections/media-narrative-futuring/en.json";
+import appendixEn from "./sections/appendix/en.json";
 
 const EN_SECTIONS: Record<string, Section> = {
   "beloved-community": belovedEn as Section,
   "restorative-practices": restorativeEn as Section,
   "media-narrative-futuring": mediaEn as Section,
+  // Not part of SECTION_ORDER: Appendix has its own static route
+  // (src/app/[locale]/appendix) rather than a generic curriculum-table
+  // index page, so it's deliberately excluded from loadAllSections/
+  // SectionTabs/print. It's still registered here so loadSection/
+  // loadLesson/loadActivity work for its lessons, and buildGlobalLessonIndex
+  // + loadLessonNeighbors pull it in explicitly below.
+  appendix: appendixEn as Section,
 };
 
 // Display order of sections in nav/curriculum. Locale-independent.
@@ -80,14 +88,17 @@ export type LessonRef = {
   title: string;
 };
 
-// Returns a map of "sectionId/lessonId" → 1-based global lesson number (L1–L16).
+// Returns a map of "sectionId/lessonId" → 1-based global lesson number
+// (L1–L16). Appendix isn't part of SECTION_ORDER (see EN_SECTIONS above),
+// but its lessons still get the final numbers in the sequence, after MNF.
 export async function buildGlobalLessonIndex(
   locale: string = DEFAULT_LOCALE
 ): Promise<Map<string, number>> {
   const all = await loadAllSections(locale);
+  const appendix = await loadSection("appendix", locale);
   const map = new Map<string, number>();
   let n = 0;
-  for (const s of all) {
+  for (const s of [...all, ...(appendix ? [appendix] : [])]) {
     for (const l of s.lessons) {
       map.set(`${s.id}/${l.id}`, ++n);
     }
@@ -103,13 +114,15 @@ export async function loadLessonNeighbors(
   locale: string = DEFAULT_LOCALE
 ): Promise<{ prev?: LessonRef; next?: LessonRef }> {
   const all = await loadAllSections(locale);
-  const flat: LessonRef[] = all.flatMap((s) =>
-    s.lessons.map((l) => ({
-      sectionId: s.id,
-      lessonId: l.id,
-      label: l.label,
-      title: l.title,
-    }))
+  const appendix = await loadSection("appendix", locale);
+  const flat: LessonRef[] = [...all, ...(appendix ? [appendix] : [])].flatMap(
+    (s) =>
+      s.lessons.map((l) => ({
+        sectionId: s.id,
+        lessonId: l.id,
+        label: l.label,
+        title: l.title,
+      }))
   );
   const idx = flat.findIndex(
     (x) => x.sectionId === sectionId && x.lessonId === lessonId
@@ -129,6 +142,12 @@ export async function loadLessonNeighbors(
 export const sections: Section[] = SECTION_ORDER.map(
   (id) => EN_SECTIONS[id]
 );
+
+// `sections` plus Appendix, for generateStaticParams on the generic
+// lesson/activity routes only ([section]/[lesson] and .../[activity]).
+// Deliberately not used by [section]'s own generateStaticParams — Appendix
+// has its own static route there, so including it would collide.
+export const sectionsWithAppendix: Section[] = [...sections, EN_SECTIONS.appendix];
 
 // Backwards-compatible sync getters (English). Used by static param
 // generators and any client-side code that just needs IDs/counts.

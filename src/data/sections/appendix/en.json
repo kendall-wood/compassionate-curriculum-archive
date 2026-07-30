@@ -1,0 +1,407 @@
+{
+  "id": "appendix",
+  "label": "Appendix",
+  "title": "Appendix",
+  "overview": "Supporting material referenced across the curriculum, gathered in one place.",
+  "lessons": [
+    {
+      "id": "grounding-activities",
+      "label": "L1",
+      "title": "Grounding Activities",
+      "sectionId": "appendix",
+      "thumbnail": "/images/FACT_DoubleHug_2000.jpg",
+      "heroImage": "/images/FACT_DoubleHug_2000.jpg",
+      "facilitatorBlocks": [
+        {
+          "kind": "p",
+          "text": "Grounding exercises are techniques designed to quickly pull you away from anxiety, panic, or flashbacks by reconnecting you to the present moment and your physical surroundings. It can be part of intention setting for a workshop as well as connecting with members of a group."
+        }
+      ],
+      "activities": [
+        {
+          "id": "a1",
+          "label": "A1",
+          "title": "Connecting to the Land",
+          "blocks": [
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Directions"
+            },
+            {
+              "kind": "p",
+              "text": "The pace is important here. Allow for the movement for both the sitting and breathing."
+            },
+            {
+              "kind": "p",
+              "text": "The facilitator reads or says: \"Find a place where you are sitting or can sit comfortably.\""
+            },
+            {
+              "kind": "p",
+              "text": "Once folks are sitting: \"If you feel okay doing so, close your eyes. If you don't want to, then just find a place in front of you where you can gently focus—maybe on the table, floor, or the wall across from where you are sitting. Now take four deep breaths. Feel your chest rise and fall as you take in the air and let it out. Each time you breathe in, imagine taking in a calm, peaceful feeling. As you breathe out, let all the stress leave your body. Let your shoulders relax and soften. Let your eyes and face relax and soften. Let all the stress leave your whole body. Feel the connection with our ancestors, the sacredness of the space, and the connection with the land. [You may insert the indigenous name of the land you are in.]\""
+            }
+          ]
+        },
+        {
+          "id": "a2",
+          "label": "A2",
+          "title": "Feel Your Body",
+          "blocks": [
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Purpose: Reconnecting to the body without judgement"
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Directions"
+            },
+            {
+              "kind": "p",
+              "text": "You can do this sitting or standing. Focus on how your body feels from head to toe, noticing each part. Consider:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "your hair on your shoulders or forehead",
+                "the weight of your shirt on your shoulders",
+                "whether your arms feel loose or stiff at your sides",
+                "your heartbeat, and whether it's rapid or steady",
+                "whether your stomach feels full or you feel hungry",
+                "whether your legs are crossed or your feet are resting on the floor",
+                "Curl your fingers and wiggle your toes. Are you barefoot or in shoes? How does the floor feel against your feet?"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a3",
+          "label": "A3",
+          "title": "Sensory Awareness (5-4-3-2-1 Technique)",
+          "blocks": [
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Purpose: brain rapid reset"
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Directions"
+            },
+            {
+              "kind": "p",
+              "text": "The facilitator reads the following prompts:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "5: Look for 5 things you can see around you (e.g., a chair, a plant, the sky).",
+                "4: Focus on 4 things you can touch (e.g., your hair, the desk, the floor).",
+                "3: Listen for 3 things you can hear (e.g., traffic, birds, your breath).",
+                "2: Identify 2 things you can smell (e.g., soap, air, food).",
+                "1: Notice 1 thing you can taste (e.g., toothpaste, coffee)"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a4",
+          "label": "A4",
+          "title": "Physical & Tactile Grounding",
+          "blocks": [
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Purpose: Awareness to your body and its connection to the environment"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Dig your heels in: Focus on your feet against the ground, noticing the weight.",
+                "Temperature change: Run cold or warm water over your hands.",
+                "Clench/Release: Tighten your fists, hold for 5-10 seconds, then release and feel the relaxation.",
+                "Carry a calming object: Carry a small rock, fabric, or jewelry in your pocket to touch.",
+                "Stretch: Extend your arms and legs to feel sensations of tension and release.",
+                "Butterfly tapping: Tap your chest or shoulders gently with your hands, alternating sides."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a5",
+          "label": "A5",
+          "title": "Breathing & Movement",
+          "blocks": [
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Purpose: Using breath or movement to help regulate the nervous system."
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Box breathing: Inhale for 4 counts, hold for 4, exhale for 4, pause for 4.",
+                "Legs-up-the-wall: Lie down with your legs extended up a wall to calm the body.",
+                "Movement: Stretching, jumping jacks or running in place to bring your focus to the physical sensation of movement."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a6",
+          "label": "A6",
+          "title": "Mental Grounding",
+          "blocks": [
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Purpose: These techniques challenge the mind to focus, diverting it from stressful thoughts."
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Category Game: List as many items as possible in a category (e.g., states, bands, foods).",
+                "Describe your surroundings: Describe your environment in detail (e.g., \"The wall is blue, the chair is wooden\").",
+                "Alphabet Game: Pick a topic (e.g., animals) and name one for every letter of the alphabet.",
+                "Say a calming phrase: Repeat a phrase like \"I am safe right now\"."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a7",
+          "label": "A7",
+          "title": "Soothing Techniques",
+          "blocks": [
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Purpose: These techniques work best when practiced regularly, allowing you to quickly employ them when needed to manage, for instance, high stress or panic."
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Use pleasant scents: Light a scented candle or use essential oils. A facilitator may use these in a workshop or session by having them readily available for folks to place on their wrists or behind the ears (pressure points). Assessing smell sensitivities is required prior to activating this technique.",
+                "Squeeze hug: Wrap your arms tightly around yourself."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a8",
+          "label": "A8",
+          "title": "Loving Kindness Meditation",
+          "blocks": [
+            {
+              "kind": "p",
+              "text": "Loving-kindness meditation (also known as Metta) is a mindfulness practice designed to cultivate compassion, warmth, and goodwill."
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Directions"
+            },
+            {
+              "kind": "p",
+              "text": "Facilitator shares with participants these tips:"
+            },
+            {
+              "kind": "ul",
+              "items": [
+                "Place a hand on your heart: If you feel emotional resistance or have trouble feeling the phrases, placing a hand on your chest can help anchor a feeling of warmth.",
+                "No \"right\" way to feel: Don't force the emotion. Simply intending to wish someone well carries the same mental benefits, even if it doesn't feel natural at first"
+              ]
+            },
+            {
+              "kind": "p",
+              "text": "Find a comfortable seat, take a few deep breaths, and slowly repeat the following phrases for each stage of the meditation after the facilitator reads it:"
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Yourself"
+            },
+            {
+              "kind": "p",
+              "text": "\"May I be happy. May I be healthy. May I be safe. May I live with ease.\""
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "A Loved One"
+            },
+            {
+              "kind": "p",
+              "text": "(Think of someone who brings you joy, and offer these wishes to them.)"
+            },
+            {
+              "kind": "p",
+              "text": "\"May you be happy. May you be healthy. May you be safe. May you live with ease.\""
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "A Neutral Person"
+            },
+            {
+              "kind": "p",
+              "text": "(Think of someone you see regularly but don't know well, like a barista or coworker, and offer the same wishes.)"
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "A Difficult Person"
+            },
+            {
+              "kind": "p",
+              "text": "(Bring to mind someone you struggle with. If it causes too much distress, it is perfectly fine to skip this step for now.)"
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "All Beings"
+            },
+            {
+              "kind": "p",
+              "text": "(Expand your circle of compassion to your community, the world, and all living creatures.)"
+            },
+            {
+              "kind": "p",
+              "text": "\"May all beings everywhere be happy, healthy, and free.\""
+            }
+          ]
+        },
+        {
+          "id": "a9",
+          "label": "A9",
+          "title": "Closing Groundings",
+          "blocks": [
+            {
+              "kind": "p",
+              "text": "May the sun bring you new energy by day, may the moon softly restore you by night, may the rain wash away your worries, may the breeze blow new strength into your being, may you walk gently through the world and know its beauty all the days of your life."
+            },
+            {
+              "kind": "p",
+              "text": "The following poem can be used to introduce a circle practice or as a way to reaffirm the community gathered in a circle process. It grounds the community in the ancient (indigenous) practice of circles."
+            },
+            {
+              "kind": "p",
+              "bold": true,
+              "text": "Circle Poem by Hehaka Sapa a.k.a Black Elk"
+            },
+            {
+              "kind": "p",
+              "text": "You have noticed that everything an Indian does in a circle, and that is because the Power of the World always works in circles and everything tries to be round."
+            },
+            {
+              "kind": "p",
+              "text": "In the old days all our power came to us from the sacred hoop of the nation and so long as the hoop was unbroken the people flourished. The flowering tree was the living center of the hoop, and the circle of the four quarters nourished it. The east gave peace and light, the south gave warmth, the west gave rain and the north with its cold and mighty wind gave strength and endurance. This knowledge came to us from the outer world with our religion."
+            },
+            {
+              "kind": "p",
+              "text": "Everything the power of the world does is done in a circle."
+            },
+            {
+              "kind": "p",
+              "text": "The sky is round and I have heard that the earth is round like a ball and so are all the stars. The wind, in its greatest power, whirls."
+            },
+            {
+              "kind": "p",
+              "text": "Birds make their nests in circles, for theirs is the same religion as ours."
+            },
+            {
+              "kind": "p",
+              "text": "The sun comes forth and goes down again in a circle. The moon does the same and both are round. Even the seasons form a great circle in their changing and always come back again to where they were."
+            },
+            {
+              "kind": "p",
+              "text": "The life of a man is a circle from childhood to childhood, and so it is in everything where power moves. Our teepees were round like the nests of birds, and these were always set in a circle, the nation's hoop, a nest of many nests, where the Great Spirit meant for us to hatch our children."
+            },
+            {
+              "kind": "p",
+              "text": "— Black Elk, Holy Man of the Oglala Sioux, 1863-1950"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "after-care",
+      "label": "L2",
+      "title": "After Care",
+      "sectionId": "appendix",
+      "thumbnail": "/images/FACT_DoubleHug_2000%20copy.jpg",
+      "heroImage": "/images/FACT_DoubleHug_2000%20copy.jpg",
+      "facilitatorBlocks": [
+        {
+          "kind": "p",
+          "text": "After care for circlekeepers and facilitators of the Compassionate Care Curriculum is essential. We are facilitating community healing processes which may include heavy emotions and trauma. After care includes releasing absorbed trauma, acknowledging that this work is not finite and self care practices that help prevent burnout. After care involves intentional debriefing, structured wellness practices, and establishing safer boundaries to separate your personal well-being from the emotional labor of facilitation. This is a proactive practice of protecting your physical, emotional, and mental energy!"
+        }
+      ],
+      "activities": [
+        {
+          "id": "a1",
+          "label": "A1",
+          "title": "Co-Keeper / Facilitator Debriefing",
+          "blocks": [
+            {
+              "kind": "ul",
+              "items": [
+                "Process the space: Debriefing with the co-keeper has multiple functions including to evaluate the energy of the space, learn from the experience and assess the need for checking in with any participants. This may also include planning for further circles if the group decided to meet again.",
+                "Identify triggers: Take time to honestly identify where your personal \"buttons\" and \"triggers\" may have been pushed. Ask yourself: What was a success? What drained me?",
+                "Monitor agreements: Establish a plan for monitoring any commitments or agreements made by the group. There may also be agreements between co-facilitators that are separate from the larger group ones; take time to establish and revisit these as well."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a2",
+          "label": "A2",
+          "title": "Somatic Release & Grounding",
+          "blocks": [
+            {
+              "kind": "ul",
+              "items": [
+                "Fuel and hydrate; flush stress chemicals: Drink water and engage in light movement to physically reset your nervous system after absorbing intense emotional energy.",
+                "Disconnect: Intentionally release anything that isn't yours to carry through physical activities, a hot bath, or time in nature.",
+                "Meditate: Use centering, grounding visualizations to return to your 'normal.'"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a3",
+          "label": "A3",
+          "title": "Support Systems",
+          "blocks": [
+            {
+              "kind": "ul",
+              "items": [
+                "Connect to your support systems: Family, friends, spiritual leaders, confidantes - the list is endless and there are no rights or wrongs regarding who are your supports. The important thing is to be intentional about releasing anything that is not yours to carry.",
+                "Reach out to peers: Debrief difficult circles with a mentor or peer support group who understands the unique emotional labor of restorative practices.",
+                "Follow-up with participants: Check in on any specific participants who found the circle process particularly stressful or upsetting."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a4",
+          "label": "A4",
+          "title": "Boundary Setting",
+          "blocks": [
+            {
+              "kind": "ul",
+              "items": [
+                "Hold boundaries: Remember that a circle is a community space, not therapy, and the keeper is not a licensed counselor. Let participants know what is your availability after the CC process; boundary setting may be important for what happens afterwards.",
+                "Prioritize your own needs: Dedicate time for regular self-care (adequate sleep, nutrition, and exercise) to sustain yourself for future circles.",
+                "Pre-program transition time immediately following a workshop. Avoid jumping right back into deep work or new workshops."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

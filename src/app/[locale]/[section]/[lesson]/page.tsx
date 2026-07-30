@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import {
-  sections,
+  sectionsWithAppendix,
   loadSection,
   loadLesson,
   loadLessonNeighbors,
@@ -17,7 +17,7 @@ import { FacilitatorBlock } from "@/components/ActivityBlock";
 
 export function generateStaticParams() {
   return routing.locales.flatMap((locale) =>
-    sections.flatMap((s) =>
+    sectionsWithAppendix.flatMap((s) =>
       s.lessons.map((l) => ({ locale, section: s.id, lesson: l.id }))
     )
   );
