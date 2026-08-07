@@ -1,13 +1,14 @@
 import { notFound } from "next/navigation";
 import { setRequestLocale, getTranslations } from "next-intl/server";
-import { sections, loadSection } from "@/data/curriculum";
+import { loadAllSections, loadSection, sectionLessonOffset } from "@/data/curriculum";
 import { routing } from "@/i18n/routing";
 import { Toolbar } from "@/components/Toolbar";
 import { SectionTabs } from "@/components/SectionTabs";
 import { CurriculumTable } from "@/components/CurriculumTable";
 import { ContentRenderer } from "@/components/ContentRenderer";
 
-export function generateStaticParams() {
+export async function generateStaticParams() {
+  const sections = await loadAllSections();
   return routing.locales.flatMap((locale) =>
     sections.map((s) => ({ locale, section: s.id }))
   );
@@ -39,8 +40,11 @@ export default async function SectionPage({
   const section = await loadSection(sectionId, locale);
   if (!section) return notFound();
 
-  const t = await getTranslations("section");
-  const site = await getTranslations("site");
+  const [t, site, lessonOffset] = await Promise.all([
+    getTranslations("section"),
+    getTranslations("site"),
+    sectionLessonOffset(sectionId, locale),
+  ]);
 
   return (
     <div className="cc-page bg-bg text-fg min-h-screen pl-[2rem] pr-[2rem] pt-[1.6875rem] pb-[5rem]">
@@ -69,7 +73,11 @@ export default async function SectionPage({
           <h2 className="text-[1.5rem] font-bold tracking-[-0.02em] leading-[1.2] text-fg">
             {t("curriculum")}
           </h2>
-          <CurriculumTable sectionId={section.id} lessons={section.lessons} />
+          <CurriculumTable
+            sectionId={section.id}
+            lessons={section.lessons}
+            offset={lessonOffset}
+          />
         </div>
       </div>
     </div>

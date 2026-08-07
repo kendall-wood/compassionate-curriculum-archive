@@ -1,0 +1,56 @@
+name: Translate new content
+
+# Runs the existing translation script (scripts/translate.mjs) whenever
+# English content changes on main, and commits the translated locale files
+# it produces back to the repo. This is what lets a lesson, activity, or
+# page added through /editor (authored only in English) show up
+# automatically in the site's other languages, without anyone running
+# `npm run translate` by hand.
+#
+# This can't create an infinite loop: it only triggers on changes to
+# `en.json`/index files, and its own commit only writes the *other* locale
+# files, which aren't in the trigger path.
+on:
+  push:
+    branches: [main]
+    paths:
+      - "src/data/sections/**/en.json"
+      - "src/data/pages/**/en.json"
+      - "src/data/sections-index.json"
+      - "src/data/pages-index.json"
+      - "src/messages/en.json"
+  # Lets you (or the client) run this by hand from the GitHub Actions tab —
+  # useful the first time, to confirm it's wired up correctly.
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  translate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - run: npm ci
+
+      - name: Translate English content into every other locale
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: npm run translate
+
+      - name: Commit translated files
+        run: |
+          git config user.name "compassionate-curriculum-bot"
+          git config user.email "actions@github.com"
+          git add src/messages src/data/sections src/data/pages
+          if git diff --cached --quiet; then
+            echo "No translation changes to commit."
+          else
+            git commit -m "Auto-translate updated English content"
+            git push
+          fi

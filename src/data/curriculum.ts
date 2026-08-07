@@ -1,40 +1,53 @@
 import type { Section } from "./types";
 import { DEFAULT_LOCALE } from "@/i18n/locales";
+import sectionsIndexData from "./sections-index.json";
 
-// All section JSON files are pre-known so the bundler can statically
-// resolve them. A dynamic `import(`./sections/${id}/${locale}.json`)`
-// would also work at runtime but breaks server-side static analysis.
-// New section? Add it here (and create matching JSON files).
-//
-// English is always imported eagerly so we can fall back synchronously
-// when a non-English catalog is missing a section.
+// Single source of truth for which sections exist and their curriculum
+// order. Adding a section (e.g. from the client editor) means appending a
+// row here plus creating `src/data/sections/<id>/en.json` — no code change.
+// `inCurriculum: false` sections (currently just Appendix) are still
+// loadable via loadSection/loadLesson/loadActivity, but excluded from
+// SECTION_ORDER/loadAllSections/CurriculumTable/SectionTabs/print, which
+// all render Appendix through its own dedicated route instead.
+interface SectionIndexEntry {
+  id: string;
+  inCurriculum: boolean;
+}
 
-import belovedEn from "./sections/beloved-community/en.json";
-import restorativeEn from "./sections/restorative-practices/en.json";
-import mediaEn from "./sections/media-narrative-futuring/en.json";
-import appendixEn from "./sections/appendix/en.json";
+const SECTIONS_INDEX = sectionsIndexData as SectionIndexEntry[];
 
-const EN_SECTIONS: Record<string, Section> = {
-  "beloved-community": belovedEn as Section,
-  "restorative-practices": restorativeEn as Section,
-  "media-narrative-futuring": mediaEn as Section,
-  // Not part of SECTION_ORDER: Appendix has its own static route
-  // (src/app/[locale]/appendix) rather than a generic curriculum-table
-  // index page, so it's deliberately excluded from loadAllSections/
-  // SectionTabs/print. It's still registered here so loadSection/
-  // loadLesson/loadActivity work for its lessons, and buildGlobalLessonIndex
-  // + loadLessonNeighbors pull it in explicitly below.
-  appendix: appendixEn as Section,
-};
+export const SECTION_ORDER = SECTIONS_INDEX.filter((s) => s.inCurriculum).map(
+  (s) => s.id
+);
 
-// Display order of sections in nav/curriculum. Locale-independent.
-export const SECTION_ORDER = [
-  "beloved-community",
-  "restorative-practices",
-  "media-narrative-futuring",
-] as const;
+export type SectionId = string;
 
-export type SectionId = (typeof SECTION_ORDER)[number];
+// Every registered section id, curriculum or not (i.e. including Appendix) —
+// for the editor's content tree, which lets the client edit Appendix content
+// too even though it's excluded from the public curriculum nav/print/index.
+export function allSectionIds(): string[] {
+  return SECTIONS_INDEX.map((s) => s.id);
+}
+
+// English is the fallback for every locale, so it's cached rather than
+// re-imported on every call. Populated lazily via loadSection's dynamic
+// import rather than eager static imports — this is what lets a brand-new
+// section (added after this file was last edited) load without a code
+// change: webpack's template-literal import() bundles every file matching
+// `./sections/*/en.json` regardless of which id is requested at runtime.
+const enCache = new Map<string, Section>();
+
+async function loadEnSection(id: string): Promise<Section | undefined> {
+  if (enCache.has(id)) return enCache.get(id);
+  try {
+    const mod = await import(`./sections/${id}/en.json`);
+    const section = mod.default as Section;
+    enCache.set(id, section);
+    return section;
+  } catch {
+    return undefined;
+  }
+}
 
 // Async loader: pulls the locale-specific JSON if it exists, else falls
 // back to English. The translation script populates `<id>/<locale>.json`
@@ -43,13 +56,13 @@ export async function loadSection(
   id: string,
   locale: string = DEFAULT_LOCALE
 ): Promise<Section | undefined> {
-  if (!(id in EN_SECTIONS)) return undefined;
-  if (locale === DEFAULT_LOCALE) return EN_SECTIONS[id];
+  if (!SECTIONS_INDEX.some((s) => s.id === id)) return undefined;
+  if (locale === DEFAULT_LOCALE) return loadEnSection(id);
   try {
     const mod = await import(`./sections/${id}/${locale}.json`);
     return mod.default as Section;
   } catch {
-    return EN_SECTIONS[id];
+    return loadEnSection(id);
   }
 }
 
@@ -60,6 +73,18 @@ export async function loadAllSections(
     SECTION_ORDER.map((id) => loadSection(id, locale))
   );
   return loaded.filter((s): s is Section => Boolean(s));
+}
+
+// `loadAllSections` plus Appendix, for generateStaticParams on the generic
+// lesson/activity routes only ([section]/[lesson] and .../[activity]).
+// Deliberately not used for [section]'s own generateStaticParams — Appendix
+// has its own static route there, so including it would collide.
+export async function loadSectionsWithAppendix(
+  locale: string = DEFAULT_LOCALE
+): Promise<Section[]> {
+  const all = await loadAllSections(locale);
+  const appendix = await loadSection("appendix", locale);
+  return appendix ? [...all, appendix] : all;
 }
 
 export async function loadLesson(
@@ -89,8 +114,8 @@ export type LessonRef = {
 };
 
 // Returns a map of "sectionId/lessonId" → 1-based global lesson number
-// (L1–L16). Appendix isn't part of SECTION_ORDER (see EN_SECTIONS above),
-// but its lessons still get the final numbers in the sequence, after MNF.
+// (L1–L16). Appendix isn't part of SECTION_ORDER, but its lessons still get
+// the final numbers in the sequence, after the last curriculum section.
 export async function buildGlobalLessonIndex(
   locale: string = DEFAULT_LOCALE
 ): Promise<Map<string, number>> {
@@ -137,34 +162,19 @@ export async function loadLessonNeighbors(
   };
 }
 
-// --- Locale-independent metadata (for static generation, navigation) ---
-
-export const sections: Section[] = SECTION_ORDER.map(
-  (id) => EN_SECTIONS[id]
-);
-
-// `sections` plus Appendix, for generateStaticParams on the generic
-// lesson/activity routes only ([section]/[lesson] and .../[activity]).
-// Deliberately not used by [section]'s own generateStaticParams — Appendix
-// has its own static route there, so including it would collide.
-export const sectionsWithAppendix: Section[] = [...sections, EN_SECTIONS.appendix];
-
-// Backwards-compatible sync getters (English). Used by static param
-// generators and any client-side code that just needs IDs/counts.
-export function getSection(id: string): Section | undefined {
-  return EN_SECTIONS[id];
-}
-
-export function getLesson(sectionId: string, lessonId: string) {
-  return getSection(sectionId)?.lessons.find((l) => l.id === lessonId);
-}
-
-export function getActivity(
+// Cumulative lesson count for every curriculum section before `sectionId`
+// (locale-independent) — CurriculumTable's "L5, L6…" numbering needs this,
+// but as a client component it can't await a dynamic import itself, so the
+// server page computes it and passes it down as a prop.
+export async function sectionLessonOffset(
   sectionId: string,
-  lessonId: string,
-  activityId: string
-) {
-  return getLesson(sectionId, lessonId)?.activities.find(
-    (a) => a.id === activityId
-  );
+  locale: string = DEFAULT_LOCALE
+): Promise<number> {
+  const all = await loadAllSections(locale);
+  let offset = 0;
+  for (const s of all) {
+    if (s.id === sectionId) return offset;
+    offset += s.lessons.length;
+  }
+  return offset;
 }

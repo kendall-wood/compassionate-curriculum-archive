@@ -40,3 +40,13 @@ export type Section = {
   facilitatorBlocks?: ContentBlock[];
   lessons: Lesson[];
 };
+
+// Freeform standalone page (e.g. client-authored content outside the
+// curriculum structure), rendered at /[locale]/pages/[slug] through the
+// same ContentRenderer as everything else.
+export type StandalonePage = {
+  id: string;
+  slug: string;
+  title: string;
+  blocks: ContentBlock[];
+};

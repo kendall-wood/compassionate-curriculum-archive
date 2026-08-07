@@ -60,6 +60,20 @@ const { LOCALES, DEFAULT_LOCALE } = await import(
   resolve(ROOT, "src/i18n/locales.ts")
 );
 
+// Section and page ids come from their index manifests rather than a
+// hardcoded list, so a section or page the client adds through the editor
+// picks up translations automatically on the next run — no code change
+// needed here. (Matches curriculum.ts/pages.ts, which load section/page
+// content the same data-driven way.) Appendix is deliberately excluded,
+// matching this script's original hardcoded list — it was never part of
+// the translated set.
+const sectionsIndex = JSON.parse(
+  readFileSync(resolve(ROOT, "src/data/sections-index.json"), "utf8")
+);
+const pagesIndex = JSON.parse(
+  readFileSync(resolve(ROOT, "src/data/pages-index.json"), "utf8")
+);
+
 // Files to translate. Each entry is {src, outFor(locale)}.
 const TARGETS = [
   {
@@ -67,14 +81,19 @@ const TARGETS = [
     src: resolve(ROOT, "src/messages/en.json"),
     outFor: (locale) => resolve(ROOT, `src/messages/${locale}.json`),
   },
-  ...["beloved-community", "restorative-practices", "media-narrative-futuring"].map(
-    (id) => ({
+  ...sectionsIndex
+    .filter((s) => s.inCurriculum)
+    .map(({ id }) => ({
       name: `section:${id}`,
       src: resolve(ROOT, `src/data/sections/${id}/en.json`),
       outFor: (locale) =>
         resolve(ROOT, `src/data/sections/${id}/${locale}.json`),
-    })
-  ),
+    })),
+  ...pagesIndex.map((slug) => ({
+    name: `page:${slug}`,
+    src: resolve(ROOT, `src/data/pages/${slug}/en.json`),
+    outFor: (locale) => resolve(ROOT, `src/data/pages/${slug}/${locale}.json`),
+  })),
 ];
 
 const anthropic = new Anthropic({ apiKey });

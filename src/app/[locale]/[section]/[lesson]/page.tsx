@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import {
-  sectionsWithAppendix,
+  loadSectionsWithAppendix,
   loadSection,
   loadLesson,
   loadLessonNeighbors,
@@ -15,7 +15,8 @@ import { LessonNav } from "@/components/LessonNav";
 import { ActivityTabs } from "@/components/ActivityTabs";
 import { FacilitatorBlock } from "@/components/ActivityBlock";
 
-export function generateStaticParams() {
+export async function generateStaticParams() {
+  const sectionsWithAppendix = await loadSectionsWithAppendix();
   return routing.locales.flatMap((locale) =>
     sectionsWithAppendix.flatMap((s) =>
       s.lessons.map((l) => ({ locale, section: s.id, lesson: l.id }))

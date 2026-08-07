@@ -4,7 +4,6 @@ import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/routing";
 import { useState, useCallback } from "react";
 import type { Activity, Lesson } from "@/data/types";
-import { sections } from "@/data/curriculum";
 
 const headerCell =
   "text-[1.25rem] tracking-[-0.02em] leading-none ps-[0.375rem]";
@@ -23,26 +22,20 @@ const headerCell =
 const GRID_COLS = "234px minmax(560px, 1fr) 469px 203px";
 const SUB_ROW_COLS = "234px minmax(560px, 1fr) 469px";
 
-// Lessons are numbered cumulatively across the whole curriculum (L1–L14)
-// so a reader scanning Section II sees L5/L6/… continuing from where
-// Section I left off, instead of every section restarting at L1.
-function lessonNumberOffset(sectionId: string): number {
-  let offset = 0;
-  for (const s of sections) {
-    if (s.id === sectionId) return offset;
-    offset += s.lessons.length;
-  }
-  return offset;
-}
-
 export function CurriculumTable({
   sectionId,
   lessons,
+  offset,
 }: {
   sectionId: string;
   lessons: Lesson[];
+  // Cumulative lesson count across all prior curriculum sections (server-
+  // computed via curriculum.ts's sectionLessonOffset — this is a client
+  // component so it can't await that dynamic import itself) so lessons are
+  // numbered cumulatively across the whole curriculum (L1–L14) instead of
+  // every section restarting at L1.
+  offset: number;
 }) {
-  const offset = lessonNumberOffset(sectionId);
   const t = useTranslations("table");
 
   return (
