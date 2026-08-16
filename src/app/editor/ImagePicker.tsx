@@ -10,8 +10,19 @@ interface LibraryImage {
   size: number;
 }
 
-export function ImagePicker({ onPick }: { onPick: (url: string) => void }) {
-  const [open, setOpen] = useState(false);
+// Modal overlay, matching the Typography reference modal in EditorApp/
+// PortalApp (fixed inset-0 dim backdrop, centered bordered card) — the same
+// modal pattern already used elsewhere in this app, reused here instead of
+// inventing a second popover style.
+export function ImagePicker({
+  open,
+  onClose,
+  onPick,
+}: {
+  open: boolean;
+  onClose: () => void;
+  onPick: (url: string) => void;
+}) {
   const [library, setLibrary] = useState<LibraryImage[]>([]);
   const [search, setSearch] = useState("");
   const [uploading, setUploading] = useState(false);
@@ -35,7 +46,7 @@ export function ImagePicker({ onPick }: { onPick: (url: string) => void }) {
         handleUploadUrl: "/api/editor/upload",
       });
       onPick(blob.url);
-      setOpen(false);
+      onClose();
     } catch {
       setError("Upload failed. Check your connection and try again.");
     } finally {
@@ -43,38 +54,36 @@ export function ImagePicker({ onPick }: { onPick: (url: string) => void }) {
     }
   }
 
+  if (!open) return null;
+
   const filtered = library.filter((img) =>
     img.name.toLowerCase().includes(search.toLowerCase())
   );
 
   return (
-    <div className="relative">
-      <button
-        type="button"
-        onClick={() => setOpen((o) => !o)}
-        className="rounded border border-neutral-300 px-2 py-1.5 text-sm text-neutral-600 hover:border-neutral-900 hover:text-neutral-900"
+    <div
+      className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-6"
+      onClick={onClose}
+    >
+      <div
+        className="flex max-h-[85vh] w-full max-w-2xl flex-col rounded border border-neutral-200 bg-white text-neutral-900 shadow-xl dark:border-neutral-800 dark:bg-neutral-950 dark:text-neutral-100"
+        onClick={(e) => e.stopPropagation()}
       >
-        Browse…
-      </button>
-
-      {open ? (
-        <div className="absolute right-0 top-full z-10 mt-1 flex max-h-[28rem] w-[24rem] flex-col gap-2 rounded border border-neutral-300 bg-white p-3 shadow-lg">
-          <div className="flex items-center justify-between">
-            <span className="text-sm font-semibold">Choose an image</span>
-            <button
-              type="button"
-              onClick={() => setOpen(false)}
-              className="text-sm text-neutral-400 hover:text-neutral-900"
-            >
-              ✕
-            </button>
-          </div>
-
+        <div className="flex items-center justify-between border-b border-neutral-200 px-4 py-3 dark:border-neutral-800">
+          <h2 className="text-sm font-semibold">Choose an image</h2>
           <button
-            type="button"
+            onClick={onClose}
+            className="rounded border border-neutral-300 px-2.5 py-1.5 text-xs hover:bg-neutral-100 dark:border-neutral-700 dark:hover:bg-neutral-800"
+          >
+            Close
+          </button>
+        </div>
+
+        <div className="border-b border-neutral-200 p-3 dark:border-neutral-800">
+          <button
             disabled={uploading}
             onClick={() => fileInput.current?.click()}
-            className="rounded bg-neutral-900 px-3 py-1.5 text-sm text-white disabled:opacity-50"
+            className="rounded border border-emerald-400 px-2.5 py-1.5 text-xs text-emerald-600 hover:bg-emerald-50 disabled:opacity-40 dark:border-emerald-600 dark:text-emerald-400 dark:hover:bg-emerald-900/30"
           >
             {uploading ? "Uploading…" : "Upload a new image"}
           </button>
@@ -89,49 +98,45 @@ export function ImagePicker({ onPick }: { onPick: (url: string) => void }) {
               e.target.value = "";
             }}
           />
-          {error ? <p className="text-xs text-red-600">{error}</p> : null}
+          {error ? <p className="mt-2 text-xs text-red-500 dark:text-red-400">{error}</p> : null}
+          <input
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+            placeholder="Search existing images…"
+            className="mt-2 w-full rounded border border-neutral-300 bg-white px-2 py-1 text-xs dark:border-neutral-700 dark:bg-neutral-900"
+          />
+        </div>
 
-          <div className="border-t border-neutral-200 pt-2">
-            <input
-              className="w-full rounded border border-neutral-300 px-2 py-1 text-sm outline-none focus:border-neutral-900"
-              placeholder="Search existing images…"
-              value={search}
-              onChange={(e) => setSearch(e.target.value)}
-            />
-          </div>
-
-          <div className="grid grid-cols-3 gap-2 overflow-y-auto">
-            {filtered.slice(0, 60).map((img) => (
+        <div className="min-h-0 flex-1 overflow-y-auto p-3">
+          <div className="grid grid-cols-4 gap-2">
+            {filtered.slice(0, 80).map((img) => (
               <button
                 key={img.url}
-                type="button"
                 onClick={() => {
                   onPick(img.url);
-                  setOpen(false);
+                  onClose();
                 }}
-                className="flex flex-col gap-1 rounded border border-neutral-200 p-1 text-left hover:border-neutral-900"
                 title={img.name}
+                className="overflow-hidden rounded border border-neutral-200 bg-white text-left hover:border-emerald-400 dark:border-neutral-800 dark:bg-neutral-900"
               >
-                {img.previewable ? (
-                  // eslint-disable-next-line @next/next/no-img-element
-                  <img
-                    src={img.url}
-                    alt=""
-                    className="aspect-square w-full rounded object-cover"
-                  />
-                ) : (
-                  <div className="flex aspect-square w-full items-center justify-center rounded bg-neutral-100 text-xs text-neutral-400">
-                    no preview
-                  </div>
-                )}
-                <span className="truncate text-[0.65rem] text-neutral-500">
+                <div className="flex aspect-square items-center justify-center bg-neutral-100 dark:bg-neutral-950">
+                  {img.previewable ? (
+                    // eslint-disable-next-line @next/next/no-img-element
+                    <img src={img.url} alt="" className="h-full w-full object-cover" />
+                  ) : (
+                    <span className="text-[10px] text-neutral-400 dark:text-neutral-600">
+                      {img.name.split(".").pop()?.toUpperCase()}
+                    </span>
+                  )}
+                </div>
+                <p className="truncate p-1 text-[10px] text-neutral-500 dark:text-neutral-400">
                   {img.name}
-                </span>
+                </p>
               </button>
             ))}
           </div>
         </div>
-      ) : null}
+      </div>
     </div>
   );
 }

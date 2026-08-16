@@ -2,6 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Widow/orphan prevention: headlines get balanced lines, body copy just
+   avoids a lone last word. Both are progressive enhancements — browsers
+   without support (e.g. Firefox) silently fall back to normal wrapping. */
+@layer base {
+  h1, h2, h3 {
+    text-wrap: balance;
+  }
+
+  p, li {
+    text-wrap: pretty;
+  }
+}
+
 :root {
   --color-bg: #ffffff;
   --color-fg: #000000;

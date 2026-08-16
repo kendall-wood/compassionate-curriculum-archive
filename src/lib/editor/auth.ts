@@ -68,6 +68,12 @@ export async function createEditorSessionToken(): Promise<string> {
 export async function verifyEditorSession(
   token: string | undefined | null
 ): Promise<boolean> {
+  // TEMP: password gate disabled for client review — flip this back to
+  // false to re-enable (EDITOR_PASSWORD / EDITOR_SESSION_SECRET still work
+  // once it's off).
+  const AUTH_DISABLED = true;
+  if (AUTH_DISABLED) return true;
+
   if (!token) return false;
   const secret = process.env.EDITOR_SESSION_SECRET;
   if (!secret) return false;

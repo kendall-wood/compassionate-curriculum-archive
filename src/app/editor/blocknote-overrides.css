@@ -1,0 +1,26 @@
+/* Blend BlockNote's default chrome into the surrounding editor card
+   (bg-white/dark:bg-neutral-900 from cardClass in EditorApp.tsx) instead of
+   its own boxed-editor look — everything else (menus, toolbar positioning,
+   drag handle) stays BlockNote's default behavior, just recolored. */
+
+.cc-editor .bn-editor {
+  background: transparent;
+  color: inherit;
+  font-family: inherit;
+  padding: 0;
+}
+
+/* ContentRenderer spaces blocks with a 1.5rem (24px) flex gap — match that
+   here so adjacent blocks read at the same live spacing. */
+.cc-editor .bn-block-outer {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.cc-editor .bn-side-menu {
+  color: rgb(163 163 163);
+}
+:root[data-theme="dark"] .cc-editor .bn-side-menu,
+.dark .cc-editor .bn-side-menu {
+  color: rgb(115 115 115);
+}

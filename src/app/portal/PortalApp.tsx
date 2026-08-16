@@ -115,7 +115,7 @@ export default function PortalApp() {
   const [theme, setTheme] = useState<"light" | "dark">("dark");
   const [showTypography, setShowTypography] = useState(false);
   const [typographyCopyFlash, setTypographyCopyFlash] = useState(false);
-  const [viewMode, setViewMode] = useState<"spread" | "document">("spread");
+  const [viewMode, setViewMode] = useState<"spread" | "document" | "qa">("spread");
   const initializedFromStorage = useRef(false);
 
   useEffect(() => {
@@ -375,7 +375,7 @@ export default function PortalApp() {
             </span>
           </div>
         )}
-        {viewMode === "document" && <div className="flex-1" />}
+        {(viewMode === "document" || viewMode === "qa") && <div className="flex-1" />}
         <div className="flex items-center gap-2">
           <div className="flex overflow-hidden rounded border border-neutral-300 dark:border-neutral-700">
             <button
@@ -397,6 +397,16 @@ export default function PortalApp() {
               }`}
             >
               Website
+            </button>
+            <button
+              onClick={() => setViewMode("qa")}
+              className={`px-2.5 py-1.5 text-xs ${
+                viewMode === "qa"
+                  ? "bg-neutral-200 dark:bg-neutral-800"
+                  : "hover:bg-neutral-100 dark:hover:bg-neutral-800"
+              }`}
+            >
+              QA Check
             </button>
           </div>
           <button
@@ -424,6 +434,7 @@ export default function PortalApp() {
       </header>
 
       {viewMode === "document" && <SiteView />}
+      {viewMode === "qa" && <QAView />}
 
       {viewMode === "spread" && (
       <div className="grid min-h-0 flex-1 grid-cols-[220px_1fr_400px]">
@@ -1509,6 +1520,362 @@ function SiteView() {
       {hover && SITE_TYPE_SPECS[hover.role] && (
         <TypeHoverTooltip spec={SITE_TYPE_SPECS[hover.role]} x={hover.x} y={hover.y} rootPx={rootPx} />
       )}
+    </div>
+  );
+}
+
+interface OrderFinding {
+  severity: "error" | "warning" | "info";
+  message: string;
+  pages?: number[];
+}
+interface SpellcheckFinding {
+  word: string;
+  count: number;
+  pages: number[];
+}
+interface PageMapEntry {
+  page: number;
+  sectionId: string | null;
+  sectionTitle: string;
+  lessonNum: number;
+  lessonTitle: string;
+  matchesSite: boolean;
+}
+interface ContentUnit {
+  source: string;
+  text: string;
+}
+interface CheckedUnit extends ContentUnit {
+  found: boolean;
+}
+interface LessonContentReport {
+  lessonNum: number;
+  lessonTitle: string;
+  sectionTitle: string;
+  pages: number[];
+  totalUnits: number;
+  missing: ContentUnit[];
+  units: CheckedUnit[];
+  pdfText: string;
+}
+interface QAResult {
+  pageCount: number;
+  orderFindings: OrderFinding[];
+  spellcheck: SpellcheckFinding[];
+  pageMap: PageMapEntry[];
+  contentReport: LessonContentReport[];
+}
+
+const severityStyle: Record<OrderFinding["severity"], string> = {
+  error: "border-red-300 text-red-600 dark:border-red-800 dark:text-red-400",
+  warning: "border-amber-300 text-amber-600 dark:border-amber-800 dark:text-amber-400",
+  info: "border-neutral-200 text-neutral-500 dark:border-neutral-800 dark:text-neutral-400",
+};
+
+// Upload a PDF (e.g. a fresh InDesign export) and check it like an
+// editorialist/bookmaker would: does its section/lesson sequence match the
+// live site's own curriculum order, and does its text hold up to a
+// spellcheck pass (tuned against a curated allowlist of curriculum jargon
+// and citation authors so it doesn't cry wolf on every proper noun). Runs
+// fast text-only extraction (scripts/portal-qa-extract.py) rather than the
+// full page-render pipeline portal-extract.py does for the Spread viewer —
+// this never touches portal-data, so it's safe to run against any PDF
+// without disturbing whatever book is currently loaded there.
+function QAView() {
+  const [file, setFile] = useState<File | null>(null);
+  const [status, setStatus] = useState<"idle" | "running" | "done" | "error">("idle");
+  const [result, setResult] = useState<QAResult | null>(null);
+  const [error, setError] = useState<string | null>(null);
+  const [ignored, setIgnored] = useState<Set<string>>(new Set());
+  const [compareOpen, setCompareOpen] = useState<Set<number>>(new Set());
+
+  const toggleCompare = useCallback((lessonNum: number) => {
+    setCompareOpen((prev) => {
+      const next = new Set(prev);
+      if (next.has(lessonNum)) next.delete(lessonNum);
+      else next.add(lessonNum);
+      return next;
+    });
+  }, []);
+
+  const runCheck = useCallback(async () => {
+    if (!file) return;
+    setStatus("running");
+    setError(null);
+    try {
+      const body = new FormData();
+      body.append("file", file);
+      const res = await fetch("/api/portal/qa-check", { method: "POST", body });
+      const data = await res.json();
+      if (!res.ok) {
+        setError(data.error ?? "Check failed.");
+        setStatus("error");
+        return;
+      }
+      setResult(data);
+      setIgnored(new Set());
+      setCompareOpen(new Set());
+      setStatus("done");
+    } catch {
+      setError("Couldn't reach the server.");
+      setStatus("error");
+    }
+  }, [file]);
+
+  const ignoreWord = useCallback(async (word: string) => {
+    setIgnored((prev) => new Set(prev).add(word));
+    try {
+      await fetch("/api/portal/qa-check/ignore-word", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ word }),
+      });
+    } catch {
+      /* the word still stays hidden locally even if the write failed */
+    }
+  }, []);
+
+  const visibleSpellcheck = (result?.spellcheck ?? []).filter((e) => !ignored.has(e.word.toLowerCase()));
+
+  return (
+    <div className="min-h-0 flex-1 overflow-y-auto px-8 py-8">
+      <div className="mx-auto max-w-3xl">
+        <p className="mb-6 text-xs text-neutral-400 dark:text-neutral-600">
+          Upload a PDF (e.g. a fresh InDesign export) to check it like an editorialist would —
+          reads the running header printed on every spread to place each page, then checks
+          section/lesson order, titles, and the actual lesson/activity body content against the
+          live site, plus a spellcheck pass.
+        </p>
+
+        <div className="mb-8 flex items-center gap-3 rounded border border-neutral-200 p-4 dark:border-neutral-800">
+          <input
+            type="file"
+            accept="application/pdf"
+            onChange={(e) => setFile(e.target.files?.[0] ?? null)}
+            className="text-xs text-neutral-500 dark:text-neutral-400"
+          />
+          <button
+            onClick={runCheck}
+            disabled={!file || status === "running"}
+            className="rounded border border-neutral-300 px-3 py-1.5 text-xs hover:bg-neutral-100 disabled:opacity-40 dark:border-neutral-700 dark:hover:bg-neutral-800"
+          >
+            {status === "running" ? "Checking…" : "Run check"}
+          </button>
+          {result && status === "done" && (
+            <span className="text-xs text-neutral-400 dark:text-neutral-600">
+              {result.pageCount} pages checked
+            </span>
+          )}
+        </div>
+
+        {error && (
+          <div className="mb-6 rounded border border-red-300 p-3 text-sm text-red-600 dark:border-red-800 dark:text-red-400">
+            {error}
+          </div>
+        )}
+
+        {result && (
+          <>
+            <section className="mb-8">
+              <h2 className="mb-3 text-sm font-semibold">
+                Order consistency vs. website ({result.orderFindings.length})
+              </h2>
+              <div className="flex flex-col gap-2">
+                {result.orderFindings.map((f, i) => (
+                  <div
+                    key={i}
+                    className={`rounded border px-3 py-2 text-xs ${severityStyle[f.severity]}`}
+                  >
+                    <span className="mr-2 font-semibold uppercase">{f.severity}</span>
+                    {f.message}
+                    {f.pages && f.pages.length > 0 && (
+                      <span className="ml-2 text-neutral-400 dark:text-neutral-600">
+                        (pages: {f.pages.slice(0, 12).join(", ")}
+                        {f.pages.length > 12 ? "…" : ""})
+                      </span>
+                    )}
+                  </div>
+                ))}
+              </div>
+            </section>
+
+            <section className="mb-8">
+              <h2 className="mb-1 text-sm font-semibold">
+                Content map — where each page is from ({result.pageMap.length})
+              </h2>
+              <p className="mb-3 text-xs text-neutral-400 dark:text-neutral-600">
+                Read from each page&apos;s own running header (top-right of every spread in the
+                PDF), matched against the live site&apos;s section/lesson data.
+              </p>
+              {result.pageMap.length === 0 ? (
+                <p className="text-xs text-neutral-400 dark:text-neutral-600">
+                  No running headers found on any page.
+                </p>
+              ) : (
+                <div className="max-h-80 overflow-y-auto rounded border border-neutral-200 dark:border-neutral-800">
+                  <table className="w-full text-left text-xs">
+                    <thead className="sticky top-0 bg-neutral-50 dark:bg-neutral-900">
+                      <tr className="text-neutral-400 dark:text-neutral-600">
+                        <th className="px-3 py-1.5 font-medium">Page</th>
+                        <th className="px-3 py-1.5 font-medium">Lesson</th>
+                        <th className="px-3 py-1.5 font-medium">Section</th>
+                        <th className="px-3 py-1.5 font-medium">Title</th>
+                        <th className="px-3 py-1.5 font-medium">Site</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {result.pageMap.map((row, i) => (
+                        <tr
+                          key={i}
+                          className="border-t border-neutral-100 dark:border-neutral-800"
+                        >
+                          <td className="px-3 py-1.5 text-neutral-400 dark:text-neutral-600">
+                            {row.page}
+                          </td>
+                          <td className="px-3 py-1.5">L{row.lessonNum}</td>
+                          <td className="px-3 py-1.5">{row.sectionTitle}</td>
+                          <td className="px-3 py-1.5">{row.lessonTitle}</td>
+                          <td className="px-3 py-1.5">
+                            {row.matchesSite ? (
+                              <span className="text-emerald-600 dark:text-emerald-400">match</span>
+                            ) : (
+                              <span className="text-amber-600 dark:text-amber-400">differs</span>
+                            )}
+                          </td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              )}
+            </section>
+
+            <section className="mb-8">
+              {(() => {
+                const withIssues = result.contentReport.filter((r) => r.missing.length > 0);
+                const clean = result.contentReport.length - withIssues.length;
+                return (
+                  <>
+                    <h2 className="mb-1 text-sm font-semibold">
+                      Lesson content vs. website ({withIssues.length} with differences)
+                    </h2>
+                    <p className="mb-3 text-xs text-neutral-400 dark:text-neutral-600">
+                      Every paragraph, heading, and list item from each lesson&apos;s facilitator
+                      notes and activities (the site&apos;s own content, not just titles), checked
+                      against the PDF text on that lesson&apos;s pages. {clean} of{" "}
+                      {result.contentReport.length} lessons matched in full. Click a lesson to
+                      compare the website text and print text side by side.
+                    </p>
+                    <div className="flex flex-col gap-2">
+                      {result.contentReport.map((r) => {
+                        const isOpen = compareOpen.has(r.lessonNum);
+                        const hasIssues = r.missing.length > 0;
+                        return (
+                          <div
+                            key={r.lessonNum}
+                            className={`rounded border text-xs ${
+                              hasIssues
+                                ? "border-amber-300 dark:border-amber-800"
+                                : "border-neutral-200 dark:border-neutral-800"
+                            }`}
+                          >
+                            <button
+                              onClick={() => toggleCompare(r.lessonNum)}
+                              className="flex w-full items-baseline justify-between gap-2 px-3 py-2 text-left hover:bg-neutral-50 dark:hover:bg-neutral-900"
+                            >
+                              <span className="font-semibold">
+                                {isOpen ? "▾" : "▸"} L{r.lessonNum} {r.lessonTitle}
+                              </span>
+                              <span className="text-neutral-400 dark:text-neutral-600">
+                                {r.totalUnits - r.missing.length}/{r.totalUnits} found — pages{" "}
+                                {r.pages.join(",")}
+                              </span>
+                            </button>
+
+                            {isOpen && (
+                              <div className="grid grid-cols-2 gap-3 border-t border-neutral-100 p-3 dark:border-neutral-800">
+                                <div>
+                                  <div className="mb-1.5 font-semibold text-neutral-500 dark:text-neutral-400">
+                                    Website
+                                  </div>
+                                  <div className="max-h-96 overflow-y-auto rounded border border-neutral-200 p-2 dark:border-neutral-800">
+                                    {r.units.map((u, i) => (
+                                      <p
+                                        key={i}
+                                        className={`mb-2 last:mb-0 ${
+                                          u.found
+                                            ? "text-neutral-600 dark:text-neutral-300"
+                                            : "bg-amber-50 text-amber-900 dark:bg-amber-950/40 dark:text-amber-300"
+                                        }`}
+                                      >
+                                        <span className="mr-1 text-neutral-400 dark:text-neutral-600">
+                                          [{u.source}]
+                                        </span>
+                                        {u.text}
+                                      </p>
+                                    ))}
+                                  </div>
+                                </div>
+                                <div>
+                                  <div className="mb-1.5 font-semibold text-neutral-500 dark:text-neutral-400">
+                                    Print (PDF, pages {r.pages.join(",")})
+                                  </div>
+                                  <div className="max-h-96 overflow-y-auto whitespace-pre-wrap rounded border border-neutral-200 p-2 text-neutral-600 dark:border-neutral-800 dark:text-neutral-300">
+                                    {r.pdfText || (
+                                      <span className="text-neutral-400 dark:text-neutral-600">
+                                        No text extracted for these pages.
+                                      </span>
+                                    )}
+                                  </div>
+                                </div>
+                              </div>
+                            )}
+                          </div>
+                        );
+                      })}
+                    </div>
+                  </>
+                );
+              })()}
+            </section>
+
+            <section>
+              <h2 className="mb-3 text-sm font-semibold">
+                Possible misspellings ({visibleSpellcheck.length})
+              </h2>
+              {visibleSpellcheck.length === 0 ? (
+                <p className="text-xs text-neutral-400 dark:text-neutral-600">
+                  Nothing flagged — clean pass.
+                </p>
+              ) : (
+                <div className="flex flex-col gap-1">
+                  {visibleSpellcheck.map((e) => (
+                    <div
+                      key={e.word}
+                      className="flex items-center justify-between rounded border border-neutral-200 px-3 py-1.5 text-xs dark:border-neutral-800"
+                    >
+                      <span>
+                        <span className="font-medium">{e.word}</span>
+                        <span className="ml-2 text-neutral-400 dark:text-neutral-600">
+                          ×{e.count} — pages {e.pages.slice(0, 8).join(", ")}
+                          {e.pages.length > 8 ? "…" : ""}
+                        </span>
+                      </span>
+                      <button
+                        onClick={() => ignoreWord(e.word)}
+                        className="shrink-0 rounded border border-neutral-300 px-2 py-0.5 text-[10px] hover:bg-neutral-100 dark:border-neutral-700 dark:hover:bg-neutral-800"
+                      >
+                        Not a typo — ignore
+                      </button>
+                    </div>
+                  ))}
+                </div>
+              )}
+            </section>
+          </>
+        )}
+      </div>
     </div>
   );
 }

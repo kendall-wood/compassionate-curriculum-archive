@@ -37,10 +37,10 @@ export function LoginForm() {
   return (
     <form
       onSubmit={handleSubmit}
-      className="flex w-full max-w-[24rem] flex-col gap-4 rounded-lg border border-neutral-200 p-8 shadow-sm"
+      className="flex w-full max-w-sm flex-col gap-3 rounded border border-neutral-200 bg-white p-6 dark:border-neutral-800 dark:bg-neutral-900"
     >
-      <h1 className="text-2xl font-semibold text-neutral-900">Editor login</h1>
-      <p className="text-sm text-neutral-500">
+      <h1 className="text-sm font-semibold tracking-tight">Content Editor</h1>
+      <p className="text-xs text-neutral-500 dark:text-neutral-400">
         Enter the shared password to edit the site.
       </p>
       <input
@@ -49,13 +49,13 @@ export function LoginForm() {
         value={password}
         onChange={(e) => setPassword(e.target.value)}
         placeholder="Password"
-        className="rounded-md border border-neutral-300 px-3 py-2 text-base outline-none focus:border-neutral-900"
+        className="rounded border border-neutral-300 bg-white px-3 py-1.5 text-sm outline-none focus:ring-1 focus:ring-emerald-400 dark:border-neutral-700 dark:bg-neutral-900"
       />
-      {error ? <p className="text-sm text-red-600">{error}</p> : null}
+      {error ? <p className="text-xs text-red-500 dark:text-red-400">{error}</p> : null}
       <button
         type="submit"
         disabled={submitting || password.length === 0}
-        className="rounded-md bg-neutral-900 px-4 py-2 text-white transition-colors disabled:opacity-50"
+        className="rounded border border-neutral-300 px-3 py-1.5 text-xs hover:bg-neutral-100 disabled:opacity-40 dark:border-neutral-700 dark:hover:bg-neutral-800"
       >
         {submitting ? "Checking…" : "Log in"}
       </button>

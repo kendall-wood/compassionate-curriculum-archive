@@ -12,6 +12,9 @@
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.99.0",
+    "@blocknote/ariakit": "^0.54.0",
+    "@blocknote/core": "^0.54.0",
+    "@blocknote/react": "^0.54.0",
     "@vercel/blob": "^2.7.0",
     "next": "14.2.5",
     "next-intl": "^4.13.0",

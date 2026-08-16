@@ -1,0 +1,4 @@
+# Python deps for the /portal InDesign-prep tool's scripts (portal-extract.py,
+# portal-qa-extract.py). Install with: pip3 install -r scripts/requirements.txt
+PyMuPDF>=1.26
+pyspellchecker>=0.8
